@@ -274,12 +274,12 @@ export function ArizonaHeroSection() {
           <div className="max-w-[1360px] mx-auto h-full px-6 lg:px-8 xl:px-10 flex items-start justify-between pt-6 lg:pt-7 xl:pt-14">
             
             <div className="w-[44%] lg:w-[37%] xl:w-[42%] space-y-3 lg:space-y-4 xl:space-y-6 pt-1">
-              <h1 className="font-heading text-3xl md:text-4xl lg:text-[34px] xl:text-[56px] font-bold text-[#1E3E47] leading-[1.14] xl:leading-[64px] tracking-[-0.011em]">
-                Arizona ESA Letter
+              <h1 className="font-heading text-3xl md:text-4xl lg:text-[32px] xl:text-[56px] font-bold text-[#1E3E47] leading-[1.14] xl:leading-[64px] tracking-[-0.011em]">
+                Arizona ESA
                 <br />
-                Evaluations by
+                Letter Evaluations by
                 <br />
-                <span className="text-[#5F6B6F]">Licensed Therapists</span>
+                <span className="text-[#5F6B6F] whitespace-nowrap">Licensed Therapists</span>
               </h1>
 
               <p className="text-[13px] lg:text-[13px] xl:text-[16px] text-[#5F6B6F] font-semibold leading-[1.5] xl:leading-[26px] max-w-[340px] xl:max-w-[460px] font-sans">
