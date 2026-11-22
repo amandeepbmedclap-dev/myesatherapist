@@ -3,6 +3,8 @@ import { rhodeIslandSchema } from "./schemas/rhodeIslandSchema";
 import { tennesseeSchema } from "./schemas/tennesseeSchema";
 import { vermontSchema } from "./schemas/vermontSchema";
 import { washingtonDcSchema } from "./schemas/washingtonDcSchema";
+import { virginIslandsSchema } from "./schemas/virginIslandsSchema";
+import { puertoRicoSchema } from "./schemas/puertoRicoSchema";
 
 const THERAPISTS_SUBTITLE =
   "We connect individuals with licensed mental health professionals who are qualified to conduct evaluations and provide recommendations when clinically appropriate.";
@@ -1287,6 +1289,348 @@ export const EXTRA_STATES: Record<string, StateData> = {
       { id: "psd-vs-esa", label: "Psychiatric Service Dogs vs. Emotional Support Animals in District of Columbia" },
       { id: "available-cities", label: "Available Everywhere in Washington, DC" },
       { id: "faq", label: "Frequently Asked Questions About ESA Letters in District of Columbia" },
+    ],
+  },
+  "puerto-rico": {
+    slug: "puerto-rico",
+    name: "Puerto Rico",
+    abbreviation: "PR",
+    schema: puertoRicoSchema,
+    metaTitle: "ESA Letter in Puerto Rico Online | Licensed Evaluations | My ESA Therapist",
+    metaDescription:
+      "Get an ESA letter in Puerto Rico through a secure online evaluation with a licensed mental health professional. ESA documentation is provided when clinically appropriate under federal housing guidelines.",
+    heroTitle: "Legitimate ESA Letters\nfor Puerto Rico Residents\nby Licensed Mental Health Experts",
+    heroSubtitle:
+      "Connect with licensed mental health professionals serving Puerto Rico for ESA letter evaluations. ESA documentation is provided when clinically appropriate and in line with federal housing guidelines.",
+    therapistsTitle: SHARED.therapistsTitle,
+    therapistsSubtitle: SHARED.therapistsSubtitle,
+    therapistsLicensureNote: SHARED.therapistsLicensureNote,
+    therapistsList: SHARED.therapistsList,
+    benefitsRefundNote: "",
+    processTitle: "How to Get an ESA Letter Online in Puerto Rico",
+    processSubtitle:
+      "We connect Puerto Rico residents with licensed mental health professionals for personalized emotional wellness assessments.",
+    processSteps: steps([
+      ["Schedule an Evaluation", "Choose a convenient time to speak with a licensed mental health professional authorized to evaluate residents of Puerto Rico."],
+      ["Complete Your Evaluation", "Join a confidential session via secure phone or video call. The clinician reviews your mental health history and current emotional concerns to determine whether an emotional support animal would be beneficial."],
+      ["Clinical Determination", "Following the evaluation, the licensed professional makes an independent decision. If appropriate, your Puerto Rico ESA letter is delivered to you via secure email."],
+    ]),
+    processDifferentiatorsTitle: "Why Puerto Rico Residents Choose Our ESA Letter Process",
+    processDifferentiators: [
+      "No promises of instant approvals or guaranteed ESA letters.",
+      "Evaluations conducted by licensed mental health professionals authorized to evaluate residents of Puerto Rico.",
+      "Secure telehealth consultations designed to protect patient privacy and support HIPAA compliance.",
+      "ESA documentation provided only when supported by an independent clinical assessment.",
+    ],
+    whoQualifiesTitle: "Who Can Qualify for an ESA Letter in Puerto Rico?",
+    whoQualifiesSubtitle:
+      "A licensed mental health professional conducts an individualized evaluation through our secure, HIPAA-compliant telehealth platform. The assessment considers your mental health symptoms, their impact on daily activities, and whether an emotional support animal may provide disability-related support. Relevant conditions may include, but are not limited to:",
+    whoQualifiesConditions: conditions([
+      ["Anxiety Disorders", "Persistent worry or panic may disrupt sleep, work, and daily routines."],
+      ["Depressive Disorders", "Ongoing low mood may affect energy, motivation, and relationships."],
+      ["Post-Traumatic Stress Disorder (PTSD)", "Trauma-related symptoms may interfere with feeling safe at home."],
+      ["Attention-Deficit/Hyperactivity Disorder (ADHD)", "Difficulty with focus and regulation may affect daily functioning."],
+    ]),
+    requirementsTitle: "Basic Requirements for a Puerto Rico ESA Letter",
+    requirementsIntro: "During an ESA evaluation, the following factors may be considered:",
+    requirementsItems: [
+      "The individual is generally 18 or older or is a minor with consent from a parent or legal guardian.",
+      "A mental or emotional health condition is identified during the professional evaluation.",
+      "The symptoms significantly affect one or more aspects of daily life or functioning.",
+      "The clinician assesses whether an emotional support animal may provide support based on the individual's needs.",
+      "The individual lives in Puerto Rico or plans to move there.",
+    ],
+    benefitsTitle: "Benefits of Having an ESA Letter in Puerto Rico",
+    benefitsSubtitle:
+      "An ESA letter in Puerto Rico may help eligible individuals request housing accommodations for their emotional support animals and access the emotional support they need in their daily lives.",
+    financialBenefitsHeading: "Financial Benefits",
+    financialBenefits: benefits([
+      ["Potential Savings on Pet Fees", "Even in pet-friendly buildings, landlords often charge extra deposits or fees. An ESA letter may help eligible tenants request an exemption from those charges when fair housing law requires an accommodation."],
+      ["Fewer Breed and Size Barriers", "Many landlords restrict certain dog breeds or sizes. Approved ESA accommodations are generally not subject to standard pet breed and weight limits."],
+      ["Better Housing Budget Planning", "An ESA letter may help eligible tenants understand their accommodation options before signing a lease, allowing them to plan housing expenses more confidently."],
+    ], FIN_ICON),
+    emotionalBenefitsHeading: "Mental & Emotional Support",
+    emotionalBenefits: benefits([
+      ["Comfort During Stressful Moments", "An emotional support animal may provide comfort during stressful situations, helping individuals manage difficult emotions and feel less overwhelmed."],
+      ["Companionship and Reduced Loneliness", "Living with an emotional support animal may ease feelings of loneliness by offering consistent companionship at home."],
+      ["Support With Emotional Regulation", "The presence of an emotional support animal may help some individuals feel calmer during periods of anxiety or emotional distress."],
+    ], EMO_ICON),
+    lawsTitle: "What Protects You and Your Emotional Support Animal in Puerto Rico?",
+    lawsSubtitle:
+      "Puerto Rico follows the federal Fair Housing Act (FHA), which protects eligible individuals with disabilities from housing discrimination, including in condominiums and most rental housing.",
+    card1Title: "ESA Housing Laws in Puerto Rico",
+    card1Items: [
+      { title: "Federal Fair Housing Act (FHA)", description: "The Fair Housing Act applies in Puerto Rico as it does on the mainland. It generally requires housing providers to make reasonable accommodations for qualifying emotional support animals, including exceptions to no-pet policies." },
+      { title: "HUD Enforcement in Puerto Rico", description: "HUD has enforced these protections in Puerto Rico. In 2014, HUD found that a San Juan condominium association violated the Fair Housing Act by refusing to let a resident with disabilities keep his emotional support animal." },
+      { title: "Section 504 of the Rehabilitation Act", description: "Housing that receives federal financial assistance, such as many public housing properties, must also provide reasonable accommodations for individuals with disabilities." },
+    ],
+    card2Title: "Housing Provider Role & Responsibility",
+    card2Items: [
+      { title: "Consider Reasonable Accommodation Requests", description: "Housing providers must generally make exceptions to no-pet policies and other pet restrictions for qualifying ESAs when necessary to accommodate a tenant's disability." },
+      { title: "Limit Documentation Requests", description: "Providers may request reliable disability-related documentation when the disability or need for an ESA is not apparent, but cannot require detailed medical records. They generally cannot charge pet fees, pet rent, or pet deposits for qualifying assistance animals." },
+      { title: "Evaluate Requests Individually", description: "Housing providers must assess each request on its merits. A denial may be justified only when legally recognized exceptions apply, such as an unmitigable direct threat, significant property damage, or an undue financial or administrative burden." },
+    ],
+    legalNotice:
+      "Under the Fair Housing Act, eligible individuals in Puerto Rico may request reasonable housing accommodations for emotional support animals. However, the Americans with Disabilities Act generally does not grant ESAs the same public access rights as service animals. Airlines are also not required to recognize ESAs as service animals under the Air Carrier Access Act.",
+    scamsTitle: "Puerto Rico ESA Letter: Facts and Myths",
+    scamsSubtitle:
+      "Knowing the facts about ESA letters in Puerto Rico can help you understand eligibility requirements, housing protections, and the legal limitations of emotional support animals.",
+    scamsWhatYouNeedTitle: "What a Valid ESA Letter Should Include",
+    scamsWhatYouNeedItems: [
+      { title: "Licensed Mental Health Professional's Details", description: "A valid ESA letter should identify the mental health professional, including their name, credentials, and license information." },
+      { title: "Statement of Clinical Recommendation", description: "The letter should reflect an individual evaluation and explain that an emotional support animal is recommended when clinically appropriate for the person's mental health needs." },
+      { title: "Official Date and Professional Signature", description: "A genuine ESA letter generally includes the issue date and the professional's signature, and may appear on official letterhead." },
+    ],
+    scamsCommonTitle: "Common ESA Scams in Puerto Rico",
+    scamsCommonSubtitle: "Be cautious of platforms or services that:",
+    scamsCommonItems: [
+      "Claim to offer an official ESA registry in Puerto Rico.",
+      "Sell instant ESA certificates, badges, or ID cards as proof of eligibility.",
+      "Promise ESA approval without an appropriate mental health evaluation.",
+      "Provide documentation without a qualified mental health professional's assessment.",
+      "Guarantee automatic approval of housing accommodation requests.",
+    ],
+    scamsAlertTitle: "Important: ESA Registries Are Not Official",
+    scamsAlertText:
+      "There is no official registry for emotional support animals in Puerto Rico or anywhere in the United States. An ESA letter based on an appropriate assessment by a qualified mental health professional is the documentation used when requesting a housing accommodation.",
+    psdVsEsaTitle: "Psychiatric Service Dogs vs. Emotional Support Animals in Puerto Rico",
+    psdVsEsaSubtitle:
+      "Psychiatric service dogs and emotional support animals can support people with mental health conditions, but their roles, training requirements, and legal protections differ under federal law.",
+    esaCardBullets: [
+      "Provide emotional comfort and companionship to individuals with mental health-related needs.",
+      "Do not require specialized task training, but housing accommodations may require appropriate supporting documentation.",
+      "May qualify for housing protections under the Fair Housing Act.",
+      "Eligible approved housing accommodations generally exempt ESAs from pet fees and deposits.",
+    ],
+    psdCardBullets: [
+      "Trained to perform specific tasks that assist people with psychiatric disabilities.",
+      "Recognized under the Americans with Disabilities Act (ADA).",
+      "Generally permitted in public places such as restaurants and stores where the ADA applies.",
+    ],
+    psdCalloutTitle: "Getting a Psychiatric Service Dog Letter in Puerto Rico",
+    psdCalloutText:
+      "In Puerto Rico, a psychiatric service dog must be individually trained to perform specific tasks that assist a person with a qualifying psychiatric disability. Under the Americans with Disabilities Act (ADA), certification is not required for public access, but many handlers request a PSD letter from a licensed mental health professional to support housing requests. My ESA Therapist offers online PSD evaluations for Puerto Rico residents. Training time and costs vary depending on the dog and the tasks involved, and professional training can range from approximately $5,000 to $30,000 or more.",
+    citiesTitle: "Available Everywhere in Puerto Rico",
+    citiesSubtitle:
+      "From the San Juan metro area to the west coast, many condominiums and rentals across Puerto Rico have pet rules. Our secure telehealth platform makes licensed ESA evaluations available across the island.",
+    cities: cities([
+      ["San Juan", "San Juan's condominiums and apartment buildings often come with strict pet policies. Eligible residents can obtain an ESA letter in San Juan through secure online telehealth evaluations."],
+      ["Bayamón", "Bayamón offers a large mix of apartments and family housing. An ESA letter in Bayamón is available through licensed telehealth evaluations."],
+      ["Carolina", "Carolina's beachfront condos and residential communities frequently include pet restrictions. Eligible residents can get an ESA letter in Carolina through virtual evaluations."],
+      ["Ponce", "Ponce has a mix of historic homes and rental apartments on the south coast. An ESA letter in Ponce is available through online telehealth services."],
+      ["Caguas", "Caguas continues to grow with apartments and gated communities. Eligible individuals can obtain an ESA letter in Caguas through secure telehealth appointments."],
+      ["Guaynabo", "Guaynabo's condominiums and planned communities often have pet rules. An ESA letter in Guaynabo is available through convenient online evaluations."],
+      ["Mayagüez", "Mayagüez includes student housing and rentals on the west coast. Eligible residents can get an ESA letter in Mayagüez through licensed telehealth providers."],
+      ["All Other Municipalities", "Whether you live in Arecibo, Dorado, Humacao, or another municipality, an ESA letter is available through our telehealth platform across Puerto Rico."],
+    ]),
+    faqTitle: "Frequently Asked Questions About ESA Letters in Puerto Rico",
+    faqSubtitle:
+      "Find answers to common questions about getting an ESA letter in Puerto Rico, including eligibility, evaluation requirements, and housing protections.",
+    faqs: [
+      {
+        q: "How can an emotional support animal benefit my mental health?",
+        a: "An emotional support animal may help reduce anxiety, offer support after trauma, ease feelings of loneliness, and provide steady companionship. Whether an ESA is appropriate for you is decided by a licensed mental health professional after an evaluation.",
+      },
+      {
+        q: "What is the difference between psychiatric service dogs and emotional support animals in Puerto Rico?",
+        a: "Psychiatric service dogs are individually trained to perform specific tasks related to a disability and have public access rights under the ADA. Emotional support animals provide comfort through companionship, do not require task training, and are primarily protected for housing under the Fair Housing Act.",
+      },
+      {
+        q: "How long does it take to get an ESA letter in Puerto Rico?",
+        a: "Timing depends on scheduling and your evaluation. Many clients complete their evaluation within a day or two of booking. If the clinician determines an ESA letter is appropriate, it is delivered to you via secure email.",
+      },
+      {
+        q: "Are there any local emotional support animal laws in Puerto Rico?",
+        a: "Puerto Rico does not have a separate ESA statute. ESA housing accommodations in Puerto Rico are protected primarily by the federal Fair Housing Act, which applies there as it does in the 50 states.",
+      },
+      {
+        q: "Do I need to register my emotional support animal in Puerto Rico?",
+        a: "No. There is no official ESA registry in Puerto Rico. An online registration, ID card, or certificate alone does not establish eligibility for housing accommodations.",
+      },
+      {
+        q: "How much does an ESA letter cost in Puerto Rico?",
+        a: "At My ESA Therapist, the fee is $99, which includes the professional assessment and the ESA letter if you are approved.",
+      },
+    ],
+    tableOfContents: [
+      { id: "therapists", label: "Our Licensed Clinicians" },
+      { id: "process", label: "How to Get an ESA Letter Online in Puerto Rico" },
+      { id: "who-qualifies", label: "Who Can Qualify for an ESA Letter in Puerto Rico?" },
+      { id: "benefits", label: "Benefits of Having an ESA Letter in Puerto Rico" },
+      { id: "laws", label: "What Protects You and Your Emotional Support Animal in Puerto Rico?" },
+      { id: "scams", label: "Puerto Rico ESA Letter: Facts and Myths" },
+      { id: "psd-vs-esa", label: "Psychiatric Service Dogs vs. Emotional Support Animals in Puerto Rico" },
+      { id: "available-cities", label: "Available Everywhere in Puerto Rico" },
+      { id: "faq", label: "Frequently Asked Questions About ESA Letters in Puerto Rico" },
+    ],
+  },
+  "virgin-islands": {
+    slug: "virgin-islands",
+    name: "U.S. Virgin Islands",
+    abbreviation: "VI",
+    schema: virginIslandsSchema,
+    metaTitle: "ESA Letter in the U.S. Virgin Islands | Licensed Evaluations | My ESA Therapist",
+    metaDescription:
+      "Get an ESA letter in the U.S. Virgin Islands through a secure online evaluation with a licensed mental health professional. ESA documentation is provided when clinically appropriate under federal housing guidelines.",
+    heroTitle: "Virgin Islands ESA Letter\nEvaluations by Licensed\nMental Health Experts",
+    heroSubtitle:
+      "Reach out to qualified mental health professionals serving the Virgin Islands for one-on-one emotional health consultations. ESA documentation is provided when clinically appropriate and in line with federal housing guidelines.",
+    therapistsTitle: SHARED.therapistsTitle,
+    therapistsSubtitle: SHARED.therapistsSubtitle,
+    therapistsLicensureNote: SHARED.therapistsLicensureNote,
+    therapistsList: SHARED.therapistsList,
+    benefitsRefundNote: "",
+    processTitle: "How the ESA Evaluation Process Works in the Virgin Islands",
+    processSubtitle:
+      "Licensed mental health professionals conduct emotional support animal evaluations through a structured and confidential process, from the first consultation to receiving official documentation.",
+    processSteps: steps([
+      ["Schedule an Evaluation", "Pick a time that works best for you to connect with a licensed clinician authorized to evaluate Virgin Islands residents. Sessions are conducted through a safe, private platform."],
+      ["Complete Your Evaluation", "In a confidential phone or video session, the professional reviews your mental health history, current challenges, and overall well-being to determine whether an emotional support animal could be beneficial."],
+      ["Clinical Determination", "If the clinician determines that an ESA is suitable for your condition, a signed ESA letter is issued in line with applicable housing guidelines and delivered via secure email."],
+    ]),
+    processDifferentiatorsTitle: "What Sets Our Virgin Islands ESA Letter Process Apart",
+    processDifferentiators: [
+      "No promises of instant approvals or guaranteed ESA letters.",
+      "Evaluations conducted by licensed mental health professionals authorized to evaluate residents of the Virgin Islands.",
+      "Secure telehealth consultations designed to protect patient privacy and support HIPAA compliance.",
+      "ESA documentation provided only when supported by an independent clinical assessment.",
+    ],
+    whoQualifiesTitle: "Who May Be Eligible for an ESA Letter in the Virgin Islands?",
+    whoQualifiesSubtitle:
+      "For many individuals in the Virgin Islands, the process begins with a clinical mental health assessment, especially when emotional or psychological concerns start to impact day-to-day activities, concentration, or overall well-being. Commonly assessed conditions can include, but are not limited to:",
+    whoQualifiesConditions: conditions([
+      ["Relocation Stress", "Difficulty adjusting to a new environment or island life."],
+      ["Seasonal and Climate-Related Mood Changes", "Mood changes linked to climate patterns and storm seasons."],
+      ["Chronic Environmental Stress", "Ongoing stress from surroundings that affects daily functioning."],
+      ["Social Isolation Anxiety", "Anxiety caused by limited social interaction or distance from family."],
+    ]),
+    requirementsTitle: "Basic Requirements for an ESA Letter in the Virgin Islands",
+    requirementsIntro: "During an ESA evaluation, the following factors may be considered:",
+    requirementsItems: [
+      "The individual is generally 18 or older or is a minor with consent from a parent or legal guardian.",
+      "A mental or emotional health condition is identified during the professional evaluation.",
+      "The symptoms significantly affect one or more aspects of daily life or functioning.",
+      "The clinician assesses whether an emotional support animal may provide support based on the individual's needs.",
+      "The individual resides in the U.S. Virgin Islands or intends to move there in the near future.",
+    ],
+    benefitsTitle: "Benefits of Having an ESA Letter in the Virgin Islands",
+    benefitsSubtitle:
+      "Learn how an emotional support animal (ESA) letter in the Virgin Islands can support your well-being and make everyday life with your companion more balanced.",
+    financialBenefitsHeading: "Financial Benefits",
+    financialBenefits: benefits([
+      ["More Flexible Housing Options", "An ESA letter can help you request housing that may otherwise have pet restrictions, giving you greater flexibility when choosing where to live."],
+      ["Reduced Relocation Costs", "With broader housing acceptance, you may be less likely to face repeated moving expenses, application fees, or deposits due to pet limitations."],
+      ["Potential Savings on Pet Fees", "When fair housing law requires an accommodation, eligible tenants may request an exemption from pet deposits, pet fees, and pet rent."],
+    ], FIN_ICON),
+    emotionalBenefitsHeading: "Mental & Emotional Support",
+    emotionalBenefits: benefits([
+      ["Enhanced Emotional Stability", "ESAs offer comfort during stressful moments, helping reduce anxiety and promote a sense of calm."],
+      ["Healthier Daily Structure", "Caring for an ESA encourages routine, which can support better focus, sleep patterns, and overall balance."],
+      ["Stronger Sense of Companionship", "Consistent emotional support can ease feelings of loneliness and make social interactions feel more manageable over time."],
+    ], EMO_ICON),
+    lawsTitle: "Emotional Support Animal Housing Guidelines in the Virgin Islands",
+    lawsSubtitle:
+      "The federal Fair Housing Act (FHA) extends protections to individuals with emotional support animals, including those residing in the U.S. Virgin Islands.",
+    card1Title: "ESA Housing Laws in the Virgin Islands",
+    card1Items: [
+      { title: "Federal Fair Housing Act (FHA)", description: "The Fair Housing Act applies in the U.S. Virgin Islands and generally requires housing providers to make reasonable accommodations for qualifying emotional support animals, including exceptions to no-pet policies." },
+      { title: "Federal Court Enforcement", description: "The U.S. District Court for the Virgin Islands has applied the Fair Housing Act to ESA requests, recognizing an anxiety disorder as a disability and a request for an emotional support animal as reasonable." },
+      { title: "Section 504 of the Rehabilitation Act", description: "Housing that receives federal financial assistance, including public housing in the territory, must also provide reasonable accommodations for individuals with disabilities." },
+    ],
+    card2Title: "Housing Provider Role & Responsibility",
+    card2Items: [
+      { title: "Consider Reasonable Accommodation Requests", description: "Housing providers must generally make exceptions to no-pet policies and other pet restrictions for qualifying ESAs when necessary to accommodate a tenant's disability." },
+      { title: "Limit Documentation Requests", description: "Providers may request reliable disability-related documentation when the disability or need for an ESA is not apparent, but cannot require detailed medical records. They generally cannot charge pet fees, pet rent, or pet deposits for qualifying assistance animals." },
+      { title: "Evaluate Requests Individually", description: "Housing providers must assess each request on its merits. A denial may be justified only when legally recognized exceptions apply, such as an unmitigable direct threat, significant property damage, or an undue financial or administrative burden." },
+    ],
+    legalNotice:
+      "Under the Fair Housing Act, eligible individuals in the Virgin Islands may request reasonable housing accommodations for emotional support animals. However, the Americans with Disabilities Act generally does not grant ESAs the same public access rights as service animals. Airlines are also not required to recognize ESAs as service animals under the Air Carrier Access Act.",
+    scamsTitle: "ESA Letters in the Virgin Islands: Facts You Should Know",
+    scamsSubtitle:
+      "Having a clear understanding of how ESA rules work in the Virgin Islands can help you avoid misinformation and make confident, informed choices.",
+    scamsWhatYouNeedTitle: "What a Valid ESA Letter Should Include",
+    scamsWhatYouNeedItems: [
+      { title: "Licensed Mental Health Professional's Details", description: "A valid ESA letter should identify the mental health professional, including their name, credentials, and license information." },
+      { title: "Statement of Clinical Recommendation", description: "The letter should reflect an individual evaluation and explain that an emotional support animal is recommended when clinically appropriate for the person's mental health needs." },
+      { title: "Official Date and Professional Signature", description: "A genuine ESA letter generally includes the issue date and the professional's signature, and may appear on official letterhead." },
+    ],
+    scamsCommonTitle: "Common ESA Scams in the Virgin Islands",
+    scamsCommonSubtitle: "Be cautious of platforms or services that:",
+    scamsCommonItems: [
+      "Claim to offer an official ESA registry in the Virgin Islands.",
+      "Sell instant ESA certificates, badges, or ID cards as proof of eligibility.",
+      "Promise ESA approval without an appropriate mental health evaluation.",
+      "Provide documentation without a qualified mental health professional's assessment.",
+      "Guarantee automatic approval of housing accommodation requests.",
+    ],
+    scamsAlertTitle: "Important: ESA Registries Are Not Official",
+    scamsAlertText:
+      "There is no government-recognized registry, certification, or ID system for emotional support animals in the Virgin Islands or anywhere in the United States. An ESA letter should be based on an appropriate assessment by a qualified mental health professional.",
+    psdVsEsaTitle: "Psychiatric Service Dogs vs. Emotional Support Animals in the Virgin Islands",
+    psdVsEsaSubtitle:
+      "Psychiatric service dogs and emotional support animals can support people with mental health conditions, but their roles, training requirements, and legal protections differ under federal law.",
+    esaCardBullets: [
+      "Provide emotional comfort and companionship to individuals with mental health-related needs.",
+      "Do not require specialized task training, but housing accommodations may require appropriate supporting documentation.",
+      "May qualify for housing protections under the Fair Housing Act.",
+      "Eligible approved housing accommodations generally exempt ESAs from pet fees and deposits.",
+    ],
+    psdCardBullets: [
+      "Trained to perform specific tasks that assist people with psychiatric disabilities.",
+      "Recognized under the Americans with Disabilities Act (ADA).",
+      "Generally permitted in public places such as restaurants and stores where the ADA applies.",
+    ],
+    psdCalloutTitle: "Obtaining a Psychiatric Service Dog in the Virgin Islands",
+    psdCalloutText:
+      "Individuals with a qualifying mental health disability can obtain a psychiatric service dog trained to assist with their specific needs. Training must target tasks that alleviate symptoms of the disability. Under the ADA, certification is not required for public access. Training costs can range from approximately $5,000 to $30,000 and may take several months or longer.",
+    citiesTitle: "Available Everywhere in the U.S. Virgin Islands",
+    citiesSubtitle:
+      "From Charlotte Amalie to Christiansted, rentals across the islands often include pet rules. Our secure telehealth platform makes licensed ESA evaluations available on every island.",
+    cities: cities([
+      ["St. Thomas", "St. Thomas has a busy rental market around Charlotte Amalie, where many buildings limit pets. Eligible residents can obtain an ESA letter in St. Thomas through secure online evaluations."],
+      ["St. Croix", "St. Croix offers a mix of homes, condos, and rentals in Christiansted, Frederiksted, and beyond. An ESA letter in St. Croix is available through licensed telehealth evaluations."],
+      ["St. John", "St. John's limited housing inventory often comes with pet restrictions. Eligible residents can get an ESA letter in St. John through virtual evaluations."],
+      ["Water Island", "Even on Water Island, ESA evaluations are available through our online telehealth platform."],
+    ]),
+    faqTitle: "Frequently Asked Questions About ESA Letters in the Virgin Islands",
+    faqSubtitle:
+      "Look at the most frequently asked questions about an emotional support animal letter in the Virgin Islands to get your questions answered.",
+    faqs: [
+      {
+        q: "Can I have more than one ESA in my Virgin Islands residence?",
+        a: "Yes, but housing providers may evaluate multiple ESA requests individually, considering space, safety, and reasonable accommodation standards.",
+      },
+      {
+        q: "Can a licensed therapist outside the Virgin Islands issue a valid ESA letter for use in the Virgin Islands?",
+        a: "An ESA letter should come from a professional who is licensed or otherwise authorized to evaluate residents of the Virgin Islands, after an appropriate evaluation.",
+      },
+      {
+        q: "What is the cost of an ESA letter in the Virgin Islands?",
+        a: "Costs depend on the provider and consultation process. At My ESA Therapist, the fee is $99, which includes the professional assessment and issuance of the ESA letter if you are approved.",
+      },
+      {
+        q: "Can hotels in the Virgin Islands accept ESAs with a letter?",
+        a: "Hotels are not legally required to accept ESAs, but some may choose to accommodate them voluntarily. Always check hotel policies in advance.",
+      },
+      {
+        q: "What happens if my landlord in the Virgin Islands refuses my ESA request?",
+        a: "Tenants may ask for clarification, provide proper documentation, and if necessary, pursue their rights under the Fair Housing Act, including by filing a complaint with HUD.",
+      },
+      {
+        q: "Can I get an ESA letter online in the Virgin Islands?",
+        a: "Yes, if the service connects you with a licensed mental health professional who conducts a proper evaluation. Avoid services that promise instant approvals.",
+      },
+    ],
+    tableOfContents: [
+      { id: "therapists", label: "Our Licensed Clinicians" },
+      { id: "process", label: "How the ESA Evaluation Process Works in the Virgin Islands" },
+      { id: "who-qualifies", label: "Who May Be Eligible for an ESA Letter in the Virgin Islands?" },
+      { id: "benefits", label: "Benefits of Having an ESA Letter in the Virgin Islands" },
+      { id: "laws", label: "Emotional Support Animal Housing Guidelines in the Virgin Islands" },
+      { id: "scams", label: "ESA Letters in the Virgin Islands: Facts You Should Know" },
+      { id: "psd-vs-esa", label: "Psychiatric Service Dogs vs. Emotional Support Animals in the Virgin Islands" },
+      { id: "available-cities", label: "Available Everywhere in the U.S. Virgin Islands" },
+      { id: "faq", label: "Frequently Asked Questions About ESA Letters in the Virgin Islands" },
     ],
   },
 };

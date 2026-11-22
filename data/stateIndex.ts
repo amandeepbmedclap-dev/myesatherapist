@@ -56,6 +56,8 @@ export const STATE_INDEX: StateIndexEntry[] = [
   { slug: "west-virginia", name: "West Virginia", abbreviation: "WV" },
   { slug: "wisconsin", name: "Wisconsin", abbreviation: "WI" },
   { slug: "wyoming", name: "Wyoming", abbreviation: "WY" },
+  { slug: "puerto-rico", name: "Puerto Rico", abbreviation: "PR" },
+  { slug: "virgin-islands", name: "U.S. Virgin Islands", abbreviation: "VI" },
 ];
 
 export const STATE_INDEX_BY_SLUG: Record<string, StateIndexEntry> = Object.fromEntries(
