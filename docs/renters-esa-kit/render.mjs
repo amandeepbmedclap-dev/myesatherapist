@@ -1,9 +1,8 @@
-import { chromium } from '/home/claude/.npm-global/lib/node_modules/playwright/index.mjs';
-const b = await chromium.launch({ executablePath: '/usr/bin/google-chrome', args:['--no-sandbox','--allow-file-access-from-files'] });
+// Render: npx playwright install chromium (once), then: node docs/renters-esa-kit/render.mjs
+import { chromium } from 'playwright';
+const b = await chromium.launch({ args:['--no-sandbox','--allow-file-access-from-files'] });
 const p = await b.newPage({ viewport:{width:816,height:1056} });
-await p.goto('file:///home/claude/kit/kit.html', { waitUntil:'networkidle' });
+await p.goto('file://'+new URL('kit.html', import.meta.url).pathname+'', { waitUntil:'networkidle' });
 await p.evaluate(() => document.fonts.ready);
-await p.pdf({ path:'/home/claude/kit/renters-esa-kit-2026.pdf', width:'8.5in', height:'11in', printBackground:true, preferCSSPageSize:true });
-const n = await p.locator('section.page').count();
-for (let i=0;i<n;i++) await p.locator('section.page').nth(i).screenshot({ path:`/home/claude/kit/p${i+1}.png` });
-await b.close(); console.log('pages', n);
+await p.pdf({ path:new URL('../../public/downloads/renters-esa-kit-2026.pdf', import.meta.url).pathname, width:'8.5in', height:'11in', printBackground:true, preferCSSPageSize:true });
+await b.close(); console.log('PDF written');

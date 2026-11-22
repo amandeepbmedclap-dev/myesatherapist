@@ -4,340 +4,375 @@
 <meta charset="utf-8">
 <title>The Renter's ESA Kit 2026 | My ESA Therapist</title>
 <style>
-@font-face{font-family:Manrope;src:url(manrope-400.woff2);font-weight:400}
-@font-face{font-family:Manrope;src:url(manrope-500.woff2);font-weight:500}
-@font-face{font-family:Manrope;src:url(manrope-600.woff2);font-weight:600}
-@font-face{font-family:Manrope;src:url(manrope-700.woff2);font-weight:700}
-@font-face{font-family:Manrope;src:url(manrope-800.woff2);font-weight:800}
-@font-face{font-family:Playfair;src:url(playfair-display-400.woff2);font-weight:400}
-@font-face{font-family:Playfair;src:url(playfair-display-700.woff2);font-weight:700}
+@font-face{font-family:M;src:url(../../fonts/manrope-400.woff2);font-weight:400}
+@font-face{font-family:M;src:url(../../fonts/manrope-500.woff2);font-weight:500}
+@font-face{font-family:M;src:url(../../fonts/manrope-600.woff2);font-weight:600}
+@font-face{font-family:M;src:url(../../fonts/manrope-700.woff2);font-weight:700}
+@font-face{font-family:M;src:url(../../fonts/manrope-800.woff2);font-weight:800}
+@font-face{font-family:P;src:url(../../fonts/playfair-display-400.woff2);font-weight:400}
+@font-face{font-family:P;src:url(../../fonts/playfair-display-700.woff2);font-weight:700}
+@font-face{font-family:P;src:url(playfair-display-latin-900-normal.woff2);font-weight:900}
+@font-face{font-family:P;src:url(playfair-display-latin-400-italic.woff2);font-weight:400;font-style:italic}
+@font-face{font-family:P;src:url(playfair-display-latin-700-italic.woff2);font-weight:700;font-style:italic}
 @page{size:8.5in 11in;margin:0}
-:root{--deep:#1A3D4F;--teal:#2E5A66;--teal5:#1D6E72;--gold:#E8B92C;--gold6:#C9971A;--cream:#FAF7F2;--cream2:#F5EFE6;--line:#EAE5DC;--ink:#5F6B6F}
+:root{--deep:#163545;--teal:#2E5A66;--t5:#1D6E72;--gold:#E8B92C;--gold6:#B88A12;--cream:#FAF7F2;--cream2:#F3EBDD;--butter:#FBF1D6;--line:#E4DDD0;--ink:#55636A;--paper:#FFFDF9}
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-body{font-family:Manrope,sans-serif;color:var(--deep);font-size:11pt;line-height:1.5}
-.page{width:8.5in;height:11in;position:relative;overflow:hidden;page-break-after:always;background:#fff;padding:.7in .75in .8in}
-.page:last-child{page-break-after:auto}
-h1,h2,h3,.serif{font-family:Playfair,serif;font-weight:700;color:var(--teal)}
-h2{font-size:34pt;line-height:1.05;letter-spacing:-.3pt}
-h3{font-size:15pt;line-height:1.2;margin-bottom:6pt}
+body{font-family:M,sans-serif;color:var(--deep);font-size:10.5pt;line-height:1.5}
+.pg{width:8.5in;height:11in;position:relative;overflow:hidden;page-break-after:always;background:var(--paper)}
+.pg:last-child{page-break-after:auto}
+.P{font-family:P,serif}
+em{font-family:P;font-style:italic;font-weight:400}
+.kick{display:flex;align-items:center;gap:9pt;font-size:8pt;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--gold6)}
+.kick::before{content:"";width:22pt;height:1.5pt;background:currentColor}
+.dark .kick{color:var(--gold)}
+.folio{position:absolute;left:.7in;right:.7in;bottom:.4in;display:flex;justify-content:space-between;align-items:center;font-size:7.5pt;letter-spacing:.14em;text-transform:uppercase;color:#98a1a4;font-weight:700}
+.folio .n{font-family:P;font-size:13pt;letter-spacing:0;color:var(--deep);font-weight:700}
+.dark .folio{color:rgba(255,255,255,.5)}.dark .folio .n{color:var(--gold)}
+.dark{background:var(--deep);color:#fff}
+.dark p{color:rgba(255,255,255,.8)}
 p{color:var(--ink)}
-.kicker{font-size:8.5pt;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold6)}
-.runner{position:absolute;left:.75in;right:.75in;bottom:.38in;display:flex;justify-content:space-between;font-size:8pt;color:#8a9396;border-top:1px solid var(--line);padding-top:7pt}
-.runner b{color:var(--teal);font-weight:700}
-.lede{font-size:12.5pt;line-height:1.55;color:var(--ink);max-width:5.6in;margin-top:10pt}
-.tab{position:absolute;top:0;right:.75in;background:var(--deep);color:#fff;font-weight:800;font-size:9pt;letter-spacing:.12em;padding:22pt 12pt 10pt;border-radius:0 0 10pt 10pt}
-.tab span{display:block;font-family:Playfair;font-size:22pt;letter-spacing:0;color:var(--gold);line-height:1;margin-bottom:3pt}
+.dc::first-letter{font-family:P;font-weight:900;float:left;font-size:44pt;line-height:.82;padding:4pt 6pt 0 0;color:var(--t5)}
 
-/* cover */
-.cover{background:var(--cream);padding:0}
-.cover .top{padding:.6in .75in 0;display:flex;justify-content:space-between;align-items:center}
-.cover .top img{height:44pt}
-.cover .ed{font-size:8.5pt;font-weight:800;letter-spacing:.16em;color:var(--teal5);text-transform:uppercase;border:1.2pt solid var(--teal5);border-radius:20pt;padding:5pt 11pt}
-.cover h1{font-size:54pt;line-height:.98;color:var(--deep);padding:0 .75in;margin-top:.55in;letter-spacing:-.6pt}
-.cover h1 em{font-style:normal;color:var(--teal5)}
-.cover .sub{padding:0 .75in;margin-top:14pt;font-size:13.5pt;color:var(--ink);max-width:6.2in}
-.cover .photo{position:absolute;left:.75in;right:.75in;bottom:2.05in;height:3.55in;border-radius:18pt;overflow:hidden}
-.cover .photo img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
-.cover .stamp{position:absolute;z-index:2;right:1.05in;bottom:4.95in;width:1.25in;height:1.25in;border-radius:50%;background:var(--gold);color:var(--deep);display:grid;place-items:center;text-align:center;transform:rotate(-9deg);box-shadow:0 0 0 6pt rgba(232,185,44,.25)}
-.cover .stamp b{font-family:Playfair;font-size:24pt;line-height:.9;display:block}
-.cover .stamp small{font-size:7pt;font-weight:800;letter-spacing:.1em}
-.cover .inside{position:absolute;left:.75in;right:.75in;bottom:.62in;display:grid;grid-template-columns:repeat(4,1fr);gap:10pt}
-.cover .inside div{border-top:2pt solid var(--gold);padding-top:7pt;font-size:9pt;color:var(--ink);line-height:1.35}
-.cover .inside b{display:block;font-family:Playfair;font-size:12pt;color:var(--deep);margin-bottom:2pt}
+/* ===== COVER ===== */
+.cover{background:#000}
+.cover .ph{position:absolute;inset:0;background:url(cover.jpg) center 30%/cover}
+.cover .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,53,69,.94) 0%,rgba(22,53,69,.82) 30%,rgba(22,53,69,.45) 42%,rgba(22,53,69,0) 55%,rgba(22,53,69,0) 62%,rgba(22,53,69,.88) 86%,rgba(22,53,69,.97) 100%)}
+.cover .mast{position:absolute;top:.55in;left:.6in;right:.6in;display:flex;justify-content:space-between;align-items:flex-start;color:#fff}
+.wm{display:flex;align-items:center;gap:7pt;font-weight:800;font-size:12pt;letter-spacing:-.1pt}
+.wm img{height:30pt;background:#fff;border-radius:50%;padding:3pt}
+.wm small{display:block;font-weight:500;font-size:8.5pt;opacity:.8;letter-spacing:0}
+.cover .issue{text-align:right;font-size:7.8pt;letter-spacing:.18em;text-transform:uppercase;font-weight:700;line-height:1.7;opacity:.9}
+.cover h1{position:absolute;left:.6in;top:1.35in;font-family:P;font-weight:900;font-size:76pt;line-height:.86;color:#fff;letter-spacing:-1.5pt}
+.cover h1 em{display:block;font-weight:400;color:var(--gold);font-size:70pt;letter-spacing:-1pt;margin-top:6pt}
+.cover .dek{position:absolute;left:.62in;top:3.75in;width:3.4in;color:rgba(255,255,255,.9);font-size:11.5pt;line-height:1.45}
+.cover .seal{position:absolute;right:.6in;top:3.25in;width:1.3in;height:1.3in;border-radius:50%;background:var(--gold);color:var(--deep);display:grid;place-items:center;text-align:center;transform:rotate(10deg);box-shadow:0 0 0 7pt rgba(232,185,44,.3)}
+.cover .seal b{font-family:P;font-weight:900;font-size:26pt;display:block;line-height:.9}
+.cover .seal small{font-size:6.8pt;font-weight:800;letter-spacing:.14em;display:block;margin-top:4pt}
+.cover .lines{position:absolute;left:.6in;right:.6in;bottom:.55in;display:grid;grid-template-columns:repeat(4,1fr);gap:16pt;color:#fff}
+.cover .lines div{border-top:1.5pt solid var(--gold);padding-top:8pt}
+.cover .lines b{display:block;font-family:P;font-size:24pt;font-weight:900;color:var(--gold);line-height:1}
+.cover .lines span{display:block;font-size:8.6pt;line-height:1.35;margin-top:5pt;color:rgba(255,255,255,.88)}
 
-/* contents */
-.toc{margin-top:26pt;border-top:1px solid var(--line)}
-.toc .row{display:grid;grid-template-columns:.55in 1fr .5in;align-items:baseline;padding:13pt 0;border-bottom:1px solid var(--line)}
-.toc .n{font-family:Playfair;font-weight:700;color:var(--gold6);font-size:14pt}
-.toc .t{font-family:Playfair;font-weight:700;font-size:17pt;color:var(--deep)}
-.toc .d{display:block;font-family:Manrope;font-weight:500;font-size:10pt;color:var(--ink);margin-top:2pt}
-.toc .p{text-align:right;font-size:10pt;color:#8a9396;font-weight:700}
-.note{margin-top:24pt;background:var(--cream);border-radius:14pt;padding:16pt 18pt;display:grid;grid-template-columns:auto 1fr;gap:14pt;align-items:start}
-.note .ico{width:30pt;height:30pt;border-radius:50%;background:var(--deep);color:var(--gold);display:grid;place-items:center;font-family:Playfair;font-weight:700;font-size:15pt}
-.note p{font-size:10.5pt}
+/* ===== CONTENTS ===== */
+.toc{background:var(--cream);padding:.7in}
+.toc h2{font-family:P;font-weight:900;font-size:46pt;line-height:.95;letter-spacing:-.8pt;margin-top:14pt;color:var(--deep)}
+.toc h2 em{color:var(--t5)}
+.toc .grid{display:grid;grid-template-columns:1fr 1fr;gap:14pt;margin-top:26pt}
+.toc .it{display:grid;grid-template-columns:1.25in 1fr;gap:12pt;align-items:center;background:#fff;border-radius:14pt;padding:9pt;box-shadow:0 10pt 24pt -18pt rgba(22,53,69,.5)}
+.toc .it .im{height:1in;border-radius:9pt;background-size:cover;background-position:center}
+.toc .it .num{font-family:P;font-weight:900;font-size:20pt;color:var(--gold6);line-height:1}
+.toc .it b{display:block;font-family:P;font-size:13.5pt;line-height:1.15;color:var(--deep);margin-top:3pt}
+.toc .it span{display:block;font-size:8.6pt;color:var(--ink);margin-top:3pt;line-height:1.35}
+.toc .it.wide{grid-column:1/-1;grid-template-columns:1fr 1.6in;background:var(--deep)}
+.toc .it.wide b{color:#fff}.toc .it.wide span{color:rgba(255,255,255,.75)}
+.toc .it.wide .num{color:var(--gold)}
+.toc .it.wide .big{font-family:P;font-weight:900;font-size:64pt;color:var(--gold);text-align:center;line-height:.9}
+.toc .letter{margin-top:22pt;display:grid;grid-template-columns:1fr 1.85in;gap:24pt;align-items:end}
+.toc .letter p{font-size:10.4pt;line-height:1.6}
+.sig{font-family:P;font-style:italic;font-size:12pt;color:var(--t5);margin-top:6pt}
+.note{background:var(--butter);border-radius:12pt;padding:11pt 13pt;font-size:8.4pt;line-height:1.45;color:#6b5a2a}
+.note b{display:block;font-size:8pt;letter-spacing:.16em;text-transform:uppercase;color:var(--gold6);margin-bottom:3pt}
 
-/* timeline / two col */
-.two{display:grid;grid-template-columns:1fr 1fr;gap:16pt;margin-top:18pt}
-.box{border-radius:14pt;padding:16pt 17pt}
-.box.cream{background:var(--cream)}
-.box.deep{background:var(--deep);color:#fff}
-.box.deep h3{color:#fff}
-.box.deep li{color:rgba(255,255,255,.88)}
-.box h3{font-size:13pt}
-ul.ticks{list-style:none;margin-top:6pt}
-ul.ticks li{position:relative;padding-left:16pt;margin:6pt 0;font-size:10.2pt;color:var(--ink);line-height:1.45}
-ul.ticks li::before{content:"";position:absolute;left:0;top:5.5pt;width:7pt;height:7pt;border-radius:50%;background:var(--gold)}
-.box.deep ul.ticks li::before{background:var(--gold)}
-.quote{margin-top:18pt;border-left:3pt solid var(--gold);padding:4pt 0 4pt 14pt;font-family:Playfair;font-size:15pt;line-height:1.35;color:var(--deep)}
-.src{margin-top:12pt;font-size:8pt;color:#8a9396}
+/* ===== MAY 22 ===== */
+.may{padding:.7in}
+.may .date{font-family:P;font-weight:900;font-size:120pt;line-height:.78;letter-spacing:-3pt;margin-top:20pt;color:#fff}
+.may .date em{display:block;color:var(--gold);font-weight:400;font-size:104pt;letter-spacing:-2pt}
+.may .deck{font-family:P;font-size:19pt;line-height:1.25;color:#fff;margin-top:16pt;width:5.6in}
+.may .deck em{color:var(--gold)}
+.may .cols{display:grid;grid-template-columns:1fr 1fr;gap:26pt;margin-top:24pt}
+.may h3{font-size:8pt;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);padding-bottom:7pt;border-bottom:1px solid rgba(255,255,255,.2);margin-bottom:8pt}
+.may ul{list-style:none}
+.may li{font-size:9.8pt;line-height:1.5;color:rgba(255,255,255,.86);padding:5pt 0 5pt 16pt;position:relative}
+.may li::before{content:"";position:absolute;left:0;top:11pt;width:8pt;height:1.5pt;background:var(--gold)}
+.may .mean{margin-top:22pt;background:var(--cream);border-radius:16pt;padding:15pt 18pt;color:var(--deep);display:grid;grid-template-columns:auto 1fr;gap:16pt;align-items:center}
+.may .mean .q{font-family:P;font-weight:900;font-size:56pt;line-height:.6;color:var(--gold6);padding-top:16pt}
+.may .mean p{color:var(--deep);font-family:P;font-size:13.5pt;line-height:1.35}
+.may .src{position:absolute;left:.7in;right:.7in;bottom:.78in;font-size:7pt;line-height:1.45;color:rgba(255,255,255,.45)}
 
-/* annotated letter */
-.anat{display:grid;grid-template-columns:3.55in 1fr;gap:18pt;margin-top:18pt;align-items:start}
-.letter{background:#fff;border:1px solid var(--line);border-radius:6pt;box-shadow:0 16pt 30pt -20pt rgba(26,61,79,.55);padding:16pt 17pt;font-size:7.6pt;line-height:1.45;color:#45555a;position:relative}
-.letter .lh{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:7pt;margin-bottom:8pt}
-.letter .lh b{font-family:Playfair;font-size:10pt;color:var(--deep)}
-.letter .lh small{display:block;font-size:6.5pt;color:#8a9396}
-.letter p{font-size:7.6pt;color:#45555a;margin:5pt 0}
-.mk{display:inline-grid;place-items:center;width:13pt;height:13pt;border-radius:50%;background:var(--gold);color:var(--deep);font-weight:800;font-size:7pt;margin-right:3pt;vertical-align:1pt}
-.letter .sig{font-family:Playfair;font-style:italic;font-size:12pt;color:var(--deep);margin-top:6pt}
-.letter .void{position:absolute;right:10pt;top:58pt;transform:rotate(-12deg);border:1.5pt solid #c9971a;color:#c9971a;font-weight:800;font-size:7pt;letter-spacing:.14em;padding:3pt 7pt;border-radius:4pt}
-.keys{list-style:none}
-.keys li{display:grid;grid-template-columns:18pt 1fr;gap:6pt;padding:7pt 0;border-bottom:1px solid var(--line);font-size:9.6pt;color:var(--ink);line-height:1.4}
-.keys li b{color:var(--deep)}
-.keys .mk{width:16pt;height:16pt;font-size:8pt;margin:0}
-.flags{margin-top:16pt;background:#FFF6E0;border-radius:12pt;padding:12pt 15pt}
-.flags h3{font-size:12pt;color:#8a5a00}
-.flags ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:3pt 16pt;margin-top:4pt}
-.flags li{font-size:9.3pt;color:#6b5a33;padding-left:13pt;position:relative}
-.flags li::before{content:"\00d7";position:absolute;left:0;top:-1pt;font-weight:800;color:#b45309}
+/* ===== LETTER CHECK ===== */
+.chk .hero{position:absolute;top:0;left:2.2in;right:0;height:3.35in;background:url(c_about.jpg) 100% 22%/cover}
+.chk .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,53,69,1) 0%,rgba(22,53,69,.6) 30%,rgba(22,53,69,0) 60%)}.chk::before{content:"";position:absolute;top:0;left:0;width:2.25in;height:3.35in;background:var(--deep)}
+.chk .ht{position:absolute;left:.7in;top:.65in;z-index:2;color:#fff;width:4.2in}
+.chk .ht .kick{color:var(--gold)}
+.chk h2{font-family:P;font-weight:900;font-size:44pt;line-height:.95;letter-spacing:-.8pt;color:#fff;margin-top:10pt}
+.chk h2 em{color:var(--gold)}
+.chk .ht p{color:rgba(255,255,255,.88);margin-top:10pt;font-size:10.5pt}
+.chk .body{position:absolute;top:3.6in;left:.7in;right:.7in;display:grid;grid-template-columns:1fr 2.35in;gap:22pt}
+.marks{list-style:none;counter-reset:m}
+.marks li{counter-increment:m;display:grid;grid-template-columns:34pt 1fr;gap:8pt;padding:8.5pt 0;border-bottom:1px solid var(--line);align-items:start}
+.marks li::before{content:counter(m,decimal-leading-zero);font-family:P;font-weight:900;font-size:19pt;color:var(--gold6);line-height:1}
+.marks b{display:block;font-family:P;font-size:12.5pt;color:var(--deep);line-height:1.2}
+.marks span{display:block;font-size:9pt;color:var(--ink);line-height:1.4;margin-top:2pt}
+.flags{background:var(--deep);border-radius:16pt;padding:16pt;color:#fff}
+.flags h3{font-family:P;font-size:16pt;line-height:1.1;color:#fff}
+.flags h3 em{color:var(--gold)}
+.flags ul{list-style:none;margin-top:10pt}
+.flags li{font-size:9pt;line-height:1.4;color:rgba(255,255,255,.85);padding:6pt 0 6pt 18pt;position:relative;border-top:1px solid rgba(255,255,255,.12)}
+.flags li::before{content:"\00d7";position:absolute;left:0;top:3pt;font-weight:800;font-size:13pt;color:var(--gold)}
+.mini{margin-top:12pt;background:#fff;border:1px solid var(--line);border-radius:6pt;padding:11pt;font-size:6.4pt;line-height:1.5;color:#6a777b;box-shadow:0 14pt 26pt -18pt rgba(22,53,69,.5);transform:rotate(-2deg)}
+.mini b{font-family:P;font-size:8.5pt;color:var(--deep)}
+.mini .ln{height:3pt;background:#e9e4da;border-radius:2pt;margin:4pt 0}
+.mini .st{display:inline-block;border:1.2pt solid var(--gold6);color:var(--gold6);font-weight:800;letter-spacing:.14em;font-size:6pt;padding:2pt 5pt;border-radius:3pt;transform:rotate(-8deg);float:right}
 
-/* template */
-.tpl{margin-top:16pt;border:1.2pt dashed #c9c1b2;border-radius:12pt;padding:18pt 20pt;background:#fffdf9;font-size:10.2pt;line-height:1.62;color:#36474c}
-.tpl p{color:#36474c;margin:0 0 8pt}
-.fill{display:inline-block;min-width:1.2in;border-bottom:1pt solid #9aa5a8;color:#9aa5a8;font-size:8.5pt;line-height:1;padding:0 3pt 1pt;vertical-align:baseline}
-.fill.w{min-width:2.2in}
-.tips{display:grid;grid-template-columns:repeat(3,1fr);gap:12pt;margin-top:14pt}
-.tips div{background:var(--cream);border-radius:10pt;padding:10pt 12pt;font-size:9.2pt;color:var(--ink);line-height:1.4}
-.tips b{display:block;color:var(--deep);font-size:9.5pt;margin-bottom:2pt}
+/* ===== TEMPLATE ===== */
+.tpl{background:var(--cream);padding:.7in .7in 0}
+.tpl .top{display:grid;grid-template-columns:1fr 2.2in;gap:22pt;align-items:end}
+.tpl h2{font-family:P;font-weight:900;font-size:46pt;line-height:.95;letter-spacing:-.8pt;margin-top:12pt}
+.tpl h2 em{color:var(--t5)}
+.tpl .top p{margin-top:10pt;font-size:10.5pt}
+.tpl .photo{height:2.35in;border-radius:120pt 120pt 14pt 14pt;background:url(cat.jpg) center 30%/cover;box-shadow:0 18pt 30pt -22pt rgba(22,53,69,.7)}
+.sheet{position:relative;margin-top:20pt;background:#fff;border-radius:4pt;padding:22pt 26pt 20pt;box-shadow:0 22pt 40pt -26pt rgba(22,53,69,.6);font-size:10pt;line-height:1.75;color:#3d4c51}
+.sheet::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5pt;background:var(--gold);border-radius:4pt 0 0 4pt}
+.sheet p{color:#3d4c51;margin-bottom:7pt}
+.sheet .subj{font-weight:700;color:var(--deep);border-bottom:1px solid var(--line);padding-bottom:7pt;margin-bottom:10pt}
+.f{display:inline-block;min-width:1.15in;border-bottom:1.2pt dotted var(--t5);color:var(--t5);font-size:7.6pt;font-weight:700;letter-spacing:.04em;line-height:1.1;padding:0 2pt;text-transform:uppercase}
+.f.w{min-width:2.1in}
+.tips{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:16pt;border-top:1.5pt solid var(--deep)}
+.tips div{padding:10pt 12pt 0 0;font-size:8.8pt;line-height:1.4;color:var(--ink)}
+.tips b{display:block;font-family:P;font-size:12pt;color:var(--deep);margin-bottom:2pt}
 
-/* scripts */
-.qa{margin-top:14pt}
-.qa .item{display:grid;grid-template-columns:1.9in 1fr;gap:16pt;padding:11pt 0;border-bottom:1px solid var(--line)}
-.qa .q{font-family:Playfair;font-weight:700;font-size:12pt;color:var(--deep);line-height:1.3}
-.qa .q small{display:block;font-family:Manrope;font-weight:800;font-size:7.5pt;letter-spacing:.14em;color:var(--gold6);margin-bottom:3pt}
-.qa .a{font-size:9.8pt;color:var(--ink);line-height:1.5}
-.qa .a i{font-style:normal;background:var(--cream);border-radius:6pt;padding:6pt 9pt;display:block;margin-top:5pt;color:var(--deep);font-weight:500}
+.band{display:grid;grid-template-columns:repeat(3,1fr);margin-top:16pt;background:var(--deep);border-radius:12pt;padding:12pt 4pt}
+.band div{padding:0 14pt;font-size:9pt;line-height:1.35;color:rgba(255,255,255,.82);border-left:1px solid rgba(255,255,255,.15)}
+.band div:first-child{border:0}
+.band b{display:block;font-family:P;font-weight:900;font-size:15pt;color:var(--gold)}
+/* ===== SCRIPTS ===== */
+.scr .hero{position:absolute;top:0;right:0;width:2.9in;height:3.4in;background:url(c_faq.jpg) 30% center/cover;border-radius:0 0 0 140pt}
+.scr .head{padding:.7in .7in 0;width:5.2in}
+.scr h2{font-family:P;font-weight:900;font-size:38pt;line-height:.95;letter-spacing:-.8pt;margin-top:12pt}
+.scr h2 em{color:var(--t5)}
+.scr .head p{margin-top:10pt;font-size:10.5pt}
+.qa{position:absolute;top:3.65in;left:.7in;right:.7in}
+.qa .row{display:grid;grid-template-columns:2.05in 1fr;gap:18pt;padding:10pt 0;border-top:1px solid var(--line)}
+.qa .row:first-child{border-top:1.5pt solid var(--deep)}
+.qa .q{font-family:P;font-weight:700;font-size:14.5pt;line-height:1.15;color:var(--deep)}
+.qa .q small{display:block;font-family:M;font-size:7pt;font-weight:800;letter-spacing:.18em;color:var(--gold6);margin-bottom:4pt}
+.qa .a{font-size:9pt;line-height:1.45;color:var(--ink)}
+.qa .say{display:block;margin-top:5pt;font-family:P;font-style:italic;font-size:10.6pt;line-height:1.4;color:var(--t5);padding-left:12pt;border-left:2pt solid var(--gold)}
 
-/* states */
-.states{display:grid;grid-template-columns:repeat(5,1fr);gap:9pt;margin-top:18pt}
-.states div{background:var(--deep);color:#fff;border-radius:12pt;padding:12pt 10pt;text-align:center}
-.states b{display:block;font-family:Playfair;font-size:22pt;color:var(--gold);line-height:1}
-.states span{font-size:9pt;font-weight:600}
-.track{margin-top:20pt;display:grid;grid-template-columns:1fr 50pt 1fr 50pt 1fr;align-items:center}
-.track .st{background:var(--cream);border-radius:12pt;padding:12pt 13pt;font-size:9.4pt;color:var(--ink)}
-.track .st b{display:block;color:var(--deep);font-family:Playfair;font-size:12pt}
-.track .ar{height:2pt;background:var(--gold);position:relative;margin:0 6pt}
-.track .ar::after{content:"";position:absolute;right:-1pt;top:-4pt;border-left:7pt solid var(--gold);border-top:5pt solid transparent;border-bottom:5pt solid transparent}
+/* ===== 30 DAY + PLAN ===== */
+.thirty{background:var(--butter);padding:.7in}
+.thirty .big{position:absolute;right:-.2in;top:-.45in;font-family:P;font-weight:900;font-size:330pt;line-height:1;color:rgba(232,185,44,.38);letter-spacing:-10pt}
+.thirty h2{position:relative;font-family:P;font-weight:900;font-size:46pt;line-height:.95;letter-spacing:-.8pt;margin-top:12pt;width:5in}
+.thirty h2 em{color:var(--t5)}
+.thirty .lede{position:relative;width:4.6in;margin-top:10pt;font-size:10.5pt}
+.st5{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:8pt;margin-top:20pt}
+.st5 div{background:var(--deep);border-radius:12pt;padding:12pt 6pt 10pt;text-align:center;color:#fff}
+.st5 b{display:block;font-family:P;font-weight:900;font-size:26pt;line-height:1;color:var(--gold)}
+.st5 span{font-size:8pt;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.85}
+.road{position:relative;display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:18pt;background:#fff;border-radius:14pt;padding:14pt 16pt}
+.road div{position:relative;padding-left:30pt;font-size:8.8pt;color:var(--ink);line-height:1.35}
+.road div b{display:block;font-family:P;font-size:12.5pt;color:var(--deep)}
+.road div::before{content:attr(data-n);position:absolute;left:0;top:0;width:22pt;height:22pt;border-radius:50%;background:var(--gold);color:var(--deep);font-family:P;font-weight:900;display:grid;place-items:center;font-size:11pt}
+.plan{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:18pt;margin-top:18pt}
+.card{background:#fff;border-radius:14pt;padding:14pt 16pt}
+.card h3{font-family:P;font-size:15pt;line-height:1.15;color:var(--deep);margin-bottom:6pt}
+.card h3 em{color:var(--t5)}
+table.log{width:100%;border-collapse:collapse;font-size:8.6pt}
+table.log td{border-bottom:1px solid var(--line);height:23pt;color:var(--deep);font-weight:700}
+table.log td.e{color:#c4c8c9;font-weight:400;text-align:right}
+ol.no{list-style:none;counter-reset:r}
+ol.no li{counter-increment:r;position:relative;padding:5pt 0 5pt 22pt;font-size:8.8pt;line-height:1.4;color:var(--ink);border-bottom:1px solid var(--line)}
+ol.no li:last-child{border:0}
+ol.no li::before{content:counter(r);position:absolute;left:0;top:5pt;font-family:P;font-weight:900;font-size:12pt;color:var(--gold6)}
+ol.no b{color:var(--deep)}
+.dl{display:grid;grid-template-columns:1fr 1fr;gap:10pt;margin-top:10pt}
+.dl div{background:var(--deep);color:#fff;border-radius:10pt;padding:9pt 11pt;font-size:8pt;line-height:1.35;color:rgba(255,255,255,.8)}
+.dl b{display:block;font-family:P;font-weight:900;font-size:19pt;color:var(--gold);line-height:1}
 
-/* tracker */
-table.log{width:100%;border-collapse:collapse;margin-top:12pt;font-size:9.4pt}
-table.log th{text-align:left;font-size:7.8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--gold6);font-weight:800;padding:0 6pt 6pt 0;border-bottom:1.5pt solid var(--deep)}
-table.log td{height:26pt;border-bottom:1px solid var(--line);color:var(--deep);font-weight:600;padding-right:6pt}
-table.log td.e{color:#b9bfc1;font-weight:400}
-.steps{counter-reset:s;list-style:none;margin-top:10pt}
-.steps li{counter-increment:s;position:relative;padding:8pt 0 8pt 32pt;border-bottom:1px solid var(--line);font-size:9.8pt;color:var(--ink);line-height:1.45}
-.steps li::before{content:counter(s);position:absolute;left:0;top:7pt;width:21pt;height:21pt;border-radius:50%;background:var(--deep);color:var(--gold);font-family:Playfair;font-weight:700;display:grid;place-items:center;font-size:10.5pt}
-.steps b{color:var(--deep)}
-
-/* back */
-.back{background:var(--deep);color:#fff}
-.back h2{color:#fff;font-size:38pt}
-.back h2 em{font-style:normal;color:var(--gold)}
-.back p{color:rgba(255,255,255,.82)}
-.back .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12pt;margin-top:26pt}
-.back .cards div{border:1px solid rgba(255,255,255,.18);border-radius:14pt;padding:15pt}
-.back .cards b{display:block;font-family:Playfair;font-size:22pt;color:var(--gold);line-height:1}
-.back .cards span{font-size:9.6pt;color:rgba(255,255,255,.85);display:block;margin-top:6pt;line-height:1.4}
-.back .cta{margin-top:30pt;display:flex;align-items:center;gap:18pt}
-.back .btn{background:var(--gold);color:var(--deep);font-weight:800;border-radius:30pt;padding:13pt 24pt;font-size:12pt}
-.back .contact{margin-top:34pt;display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:28pt;font-size:10pt}
-.back .contact small{display:block;font-size:7.5pt;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:800;margin-bottom:3pt}
-.back .disc{position:absolute;left:.75in;right:.75in;bottom:.55in;font-size:7.8pt;line-height:1.5;color:rgba(255,255,255,.55);border-top:1px solid rgba(255,255,255,.15);padding-top:10pt}
-.back .logo{background:#fff;border-radius:12pt;padding:8pt 12pt;display:inline-block}
-.back .logo img{height:36pt;display:block}
+/* ===== BACK ===== */
+.back .ph{position:absolute;inset:0 0 auto 0;height:5.6in;background:url(c_guide.jpg) center 35%/cover}
+.back .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,53,69,0) 40%,rgba(22,53,69,1) 100%)}
+.back .wrap{position:absolute;left:.7in;right:.7in;top:4.55in}
+.back h2{font-family:P;font-weight:900;font-size:50pt;line-height:.93;letter-spacing:-1pt;color:#fff}
+.back h2 em{color:var(--gold)}
+.back .wrap>p{margin-top:12pt;width:5.2in;font-size:11pt;color:rgba(255,255,255,.85)}
+.back .three{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:20pt;border-top:1px solid rgba(255,255,255,.2)}
+.back .three div{padding:12pt 14pt 0 0}
+.back .three b{display:block;font-family:P;font-weight:900;font-size:26pt;color:var(--gold);line-height:1}
+.back .three span{display:block;font-size:8.8pt;line-height:1.4;margin-top:5pt;color:rgba(255,255,255,.8)}
+.back .cta{margin-top:24pt;display:flex;align-items:center;gap:20pt}
+.back .btn{background:var(--gold);color:var(--deep);font-weight:800;border-radius:40pt;padding:13pt 26pt;font-size:12pt}
+.back .cta div{font-size:9.6pt;line-height:1.6;color:rgba(255,255,255,.85)}
+.back .cta div b{color:#fff}
+.back .disc{position:absolute;left:.7in;right:.7in;bottom:.4in;font-size:6.8pt;line-height:1.5;color:rgba(255,255,255,.48);border-top:1px solid rgba(255,255,255,.14);padding-top:9pt}
+.back .wm{position:absolute;top:.5in;left:.7in;color:var(--deep);z-index:2;background:#fff;border-radius:40pt;padding:5pt 14pt 5pt 5pt}.back .wm small{opacity:.7}
 </style>
 </head>
 <body>
 
 <!-- 1 COVER -->
-<section class="page cover">
-  <div class="top"><img src="myesa-logo.svg" alt="My ESA Therapist"><span class="ed">2026 Renter's Edition</span></div>
-  <h1>The Renter's<br><em>ESA Kit</em></h1>
-  <p class="sub">Templates, scripts and a letter check for asking your landlord to keep your emotional support animal, updated for HUD's May 2026 change.</p>
-  <div class="stamp"><div><b>Free</b><small>FILL-IN<br>TEMPLATES</small></div></div>
-  <div class="photo"><img src="dog.jpg" alt=""></div>
-  <div class="inside">
-    <div><b>The 2026 change</b>What HUD did, and what still protects you</div>
-    <div><b>Letter check</b>Seven marks of a landlord-ready ESA letter</div>
-    <div><b>Request template</b>A fill-in message to send your landlord</div>
-    <div><b>Scripts and tracker</b>What to say, and how to keep a record</div>
+<section class="pg cover">
+  <div class="ph"></div><div class="shade"></div>
+  <div class="mast">
+    <div class="wm"><img src="myesa-logo.svg" alt=""><div>My ESA Therapist<small>The renter's guide series</small></div></div>
+    <div class="issue">2026 Renter's Edition<br>Free · 8 pages</div>
+  </div>
+  <h1>The Renter's<em>ESA Kit</em></h1>
+  <p class="dek">Templates, scripts and a letter check for keeping your emotional support animal at home, rewritten for HUD's May 2026 change.</p>
+  <div class="seal"><div><b>Fill-in</b><small>TEMPLATES<br>INSIDE</small></div></div>
+  <div class="lines">
+    <div><b>May 22</b><span>The HUD memo that changed how ESA requests are handled</span></div>
+    <div><b>7</b><span>marks of a letter your landlord will take seriously</span></div>
+    <div><b>1</b><span>fill-in request you can send today</span></div>
+    <div><b>5</b><span>states that need a 30-day head start</span></div>
   </div>
 </section>
 
 <!-- 2 CONTENTS -->
-<section class="page">
-  <div class="kicker">Inside this kit</div>
-  <h2 style="margin-top:8pt">Ask clearly.<br>Keep a record.<br>Stay calm.</h2>
-  <p class="lede">Most ESA requests go wrong for simple reasons: a vague message, a letter missing a detail, or a phone call with nothing in writing. This kit gives you the words and the order to do it in.</p>
-  <div class="toc">
-    <div class="row"><span class="n">01</span><span class="t">What changed in 2026<span class="d">HUD's new enforcement memo, and the rights that remain</span></span><span class="p">p. 3</span></div>
-    <div class="row"><span class="n">02</span><span class="t">Is your letter landlord-ready?<span class="d">An annotated sample, plus the red flags landlords look for</span></span><span class="p">p. 4</span></div>
-    <div class="row"><span class="n">03</span><span class="t">The request template<span class="d">A fill-in message you can email or print and sign</span></span><span class="p">p. 5</span></div>
-    <div class="row"><span class="n">04</span><span class="t">When your landlord asks questions<span class="d">Calm, short answers to the questions renters get most</span></span><span class="p">p. 6</span></div>
-    <div class="row"><span class="n">05</span><span class="t">The 30-day states and your tracker<span class="d">Plan ahead, log every step, and what to do if you're refused</span></span><span class="p">p. 7</span></div>
+<section class="pg toc">
+  <div class="kick">In this issue</div>
+  <h2>A calm, clear ask<br>beats a <em>long fight.</em></h2>
+  <div class="grid">
+    <div class="it"><div class="im" style="background-image:url(c_laws.jpg)"></div><div><div class="num">01</div><b>What changed in 2026</b><span>HUD's memo, and the rights that remain. p. 3</span></div></div>
+    <div class="it"><div class="im" style="background-image:url(c_about.jpg)"></div><div><div class="num">02</div><b>The letter check</b><span>Seven marks of a solid ESA letter. p. 4</span></div></div>
+    <div class="it"><div class="im" style="background-image:url(cat.jpg);background-position:center 25%"></div><div><div class="num">03</div><b>Your request, ready to send</b><span>A fill-in message for your landlord. p. 5</span></div></div>
+    <div class="it"><div class="im" style="background-image:url(c_faq.jpg)"></div><div><div class="num">04</div><b>When they ask questions</b><span>Short, calm answers that work. p. 6</span></div></div>
+    <div class="it wide"><div style="padding:6pt 8pt"><div class="num">05</div><b>The 30-day states, your tracker and what to do if refused</b><span>Plan ahead, keep a record, know your next step. p. 7</span></div><div class="big">30</div></div>
   </div>
-  <div class="note"><div class="ico">i</div><p><b style="color:var(--deep)">A note before you start.</b> This kit is general information to help you prepare. It is not legal or medical advice. Rules vary by state and city, so check your local fair housing agency or a housing attorney about your situation.</p></div>
-  <div class="runner"><span><b>The Renter's ESA Kit</b> · 2026</span><span>myesatherapist.com</span><span>2</span></div>
+  <div class="letter">
+    <p class="dc">Most ESA requests don't fail because the person doesn't qualify. They stall on small things: a vague message, a letter missing a license number, a phone call with nothing in writing. 2026 made those small things matter more. This kit is what we'd hand a friend the night before they talk to their landlord.</p>
+    <div class="note"><b>Before you read</b>General information to help you prepare, not legal or medical advice. Rules vary by state and city.</div>
+  </div>
+  <div class="sig" style="margin-top:4pt">The My ESA Therapist editorial team</div>
+  <div class="folio"><span>The Renter's ESA Kit · 2026</span><span class="n">02</span></div>
 </section>
 
-<!-- 3 WHAT CHANGED -->
-<section class="page">
-  <div class="tab"><span>01</span>2026</div>
-  <div class="kicker">What changed in 2026</div>
-  <h2 style="margin-top:8pt">May 22, 2026<br>changed the <em style="font-style:normal;color:var(--teal5)">process</em>,<br>not the law.</h2>
-  <p class="lede">HUD's Office of Fair Housing issued a memo that withdrew its earlier ESA guidance and changed which housing complaints it will pursue. The Fair Housing Act itself was not rewritten.</p>
-  <div class="two">
-    <div class="box deep">
-      <h3>What changed</h3>
-      <ul class="ticks">
-        <li>HUD withdrew its 2020 guidance on assistance animals, which had treated ESAs as assistance animals rather than pets.</li>
-        <li>HUD now focuses enforcement on animals individually trained to do disability-related work or tasks.</li>
-        <li>Landlords feel freer to ask questions and decide requests for untrained ESAs case by case.</li>
-        <li>HUD says it plans a formal rulemaking, with public comment, to update its assistance animal rules.</li>
-      </ul>
-    </div>
-    <div class="box cream">
-      <h3>What did not change</h3>
-      <ul class="ticks">
-        <li>The Fair Housing Act and its reasonable accommodation requirement are still law.</li>
-        <li>You can still make a written request and ask your landlord to consider it.</li>
-        <li>State and local fair housing laws still apply, and some protect ESAs on their own.</li>
-        <li>A private lawsuit under the Fair Housing Act remains possible.</li>
-      </ul>
-    </div>
+<!-- 3 MAY 22 -->
+<section class="pg dark may">
+  <div class="kick">01 · What changed in 2026</div>
+  <div class="date">May 22,<em>2026.</em></div>
+  <div class="deck">The day HUD changed how it handles ESA housing complaints. <em>The law stayed. The process moved.</em></div>
+  <div class="cols">
+    <div><h3>What changed</h3><ul>
+      <li>HUD withdrew its 2020 assistance animal guidance, which had treated ESAs as assistance animals rather than pets.</li>
+      <li>It now focuses enforcement on animals individually trained to do disability-related tasks.</li>
+      <li>Landlords feel freer to ask questions and decide untrained-ESA requests case by case.</li>
+      <li>HUD plans a formal rulemaking, with public comment, to update its rules.</li>
+    </ul></div>
+    <div><h3>What did not change</h3><ul>
+      <li>The Fair Housing Act and its reasonable accommodation requirement are still law.</li>
+      <li>You can still make a written request and ask your landlord to consider it.</li>
+      <li>State and local fair housing laws still apply, and some protect ESAs on their own.</li>
+      <li>A private lawsuit under the Fair Housing Act remains possible.</li>
+    </ul></div>
   </div>
-  <div class="quote">What this means for you: a clear written request, a solid letter and a good paper trail matter more in 2026 than they did before.</div>
-  <p class="src">Sources: HUD FHEO enforcement memo of May 22, 2026, as summarized by the National Association of Realtors, Baker Donelson and the Disability Rights Education and Defense Fund. Check for updates, as HUD has said new rules are coming.</p>
-  <div class="runner"><span><b>The Renter's ESA Kit</b> · 2026</span><span>myesatherapist.com</span><span>3</span></div>
+  <div class="mean"><div class="q">&ldquo;</div><p>For renters, that means a clear written request, a solid letter and a good paper trail now do more of the work.</p></div>
+  <div class="src">Sources: HUD FHEO enforcement memo of May 22, 2026, as summarized by the National Association of Realtors, Baker Donelson, Equal Rights Center and DREDF. HUD has said new rules are coming, so check for updates.</div>
+  <div class="folio"><span>The Renter's ESA Kit · 2026</span><span class="n">03</span></div>
 </section>
 
 <!-- 4 LETTER CHECK -->
-<section class="page">
-  <div class="tab"><span>02</span>LETTER</div>
-  <div class="kicker">Is your letter landlord-ready?</div>
-  <h2 style="margin-top:8pt">Seven marks of<br>a solid ESA letter.</h2>
-  <p class="lede">Landlords look harder at letters now. Hold yours next to this sample and check each numbered mark.</p>
-  <div class="anat">
-    <div class="letter">
-      <div class="lh"><div><b><span class="mk">1</span>Jordan Avery, LCSW</b><small>Licensed Clinical Social Worker</small></div><div style="text-align:right"><small><span class="mk">2</span>License #00000 · Texas</small><small>Phone · Email · Address</small></div></div>
-      <div class="void">SAMPLE</div>
-      <p><span class="mk">3</span>March 4, 2026</p>
-      <p>To whom it may concern,</p>
-      <p>Sam Rivera is my client. I have evaluated Sam and am familiar with Sam's history and functional limitations. <span class="mk">4</span>Sam has a mental health condition that substantially limits one or more major life activities.</p>
-      <p><span class="mk">5</span>Sam's emotional support animal, a dog named Rex, provides support that alleviates one or more symptoms of this condition. I recommend that Sam be allowed to keep Rex in their home as a reasonable accommodation.</p>
-      <p>Please contact me with any questions about this letter.</p>
-      <div class="sig"><span class="mk" style="font-style:normal">6</span>Jordan Avery</div>
-      <p style="margin-top:2pt">Jordan Avery, LCSW</p>
+<section class="pg chk">
+  <div class="hero"></div>
+  <div class="ht"><div class="kick">02 · The letter check</div><h2>Seven marks.<br><em>Check every one.</em></h2><p>Landlords look harder at letters now. Hold yours next to this list before you send it.</p></div>
+  <div class="body">
+    <ol class="marks">
+      <li><div><b>Written by a licensed professional</b><span>A therapist, counselor, clinical social worker, psychologist or psychiatrist.</span></div></li>
+      <li><div><b>Licensed in your state</b><span>License type, number and issuing state, so it can be checked.</span></div></li>
+      <li><div><b>On letterhead, signed and dated</b><span>With contact details so your landlord can verify it.</span></div></li>
+      <li><div><b>Recent</b><span>Many landlords expect a letter dated within the last 12 months.</span></div></li>
+      <li><div><b>A disability-related need</b><span>It confirms the need. It does not have to name your diagnosis.</span></div></li>
+      <li><div><b>Your animal, named</b><span>So it is clear which animal the request covers.</span></div></li>
+      <li><div><b>From a real evaluation</b><span>The professional spoke with you before writing it.</span></div></li>
+    </ol>
+    <div>
+      <div class="flags"><h3>Red flags that get letters <em>questioned</em></h3><ul>
+        <li>"Registration" numbers, IDs or certificates</li>
+        <li>No license number or state</li>
+        <li>Issued instantly, with no conversation</li>
+        <li>No animal named</li>
+        <li>More than a year old</li>
+        <li>Professional not licensed where you live</li>
+      </ul></div>
+      <div class="mini"><span class="st">SAMPLE</span><b>Jordan Avery, LCSW</b><br>License #00000 · Texas<div class="ln" style="width:100%;margin-top:7pt"></div><div class="ln" style="width:92%"></div><div class="ln" style="width:97%"></div><div class="ln" style="width:70%"></div><div style="font-family:P;font-style:italic;font-size:10pt;color:#163545;margin-top:5pt">Jordan Avery</div></div>
     </div>
-    <ul class="keys">
-      <li><span class="mk">1</span><span><b>A licensed professional</b>, such as a therapist, counselor, clinical social worker, psychologist or psychiatrist.</span></li>
-      <li><span class="mk">2</span><span><b>Licensed in your state</b>, with license type, number and state, so it can be checked.</span></li>
-      <li><span class="mk">3</span><span><b>Recent date.</b> Many landlords expect a letter dated within the last 12 months.</span></li>
-      <li><span class="mk">4</span><span><b>A disability-related need.</b> It does not have to name your diagnosis.</span></li>
-      <li><span class="mk">5</span><span><b>Your animal</b>, named or described, so it is clear which animal the request covers.</span></li>
-      <li><span class="mk">6</span><span><b>Signed</b> by the professional, on letterhead with contact details.</span></li>
-      <li><span class="mk">7</span><span><b>From a real evaluation.</b> The professional spoke with you before writing it.</span></li>
-    </ul>
   </div>
-  <div class="flags">
-    <h3>Red flags that get letters questioned</h3>
-    <ul>
-      <li>"Registration" numbers or certificates</li>
-      <li>No license number or state</li>
-      <li>Issued instantly, with no conversation</li>
-      <li>A generic letter with no animal named</li>
-      <li>Older than a year</li>
-      <li>Professional not licensed where you live</li>
-    </ul>
-  </div>
-  <div class="runner"><span><b>The Renter's ESA Kit</b> · 2026</span><span>myesatherapist.com</span><span>4</span></div>
+  <div class="folio"><span>The Renter's ESA Kit · 2026</span><span class="n">04</span></div>
 </section>
 
 <!-- 5 TEMPLATE -->
-<section class="page">
-  <div class="tab"><span>03</span>REQUEST</div>
-  <div class="kicker">The request template</div>
-  <h2 style="margin-top:8pt">Fill in the blanks.<br>Send it in writing.</h2>
-  <p class="lede">Email works well because it is dated. Attach your ESA letter and keep a copy of everything you send.</p>
-  <div class="tpl">
-    <p><b>Subject:</b> Reasonable accommodation request for <span class="fill">unit / address</span></p>
-    <p>Dear <span class="fill">landlord or property manager name</span>,</p>
-    <p>I live at <span class="fill w">address and unit</span> (or I am applying to rent it). I am writing to request a reasonable accommodation for a disability under the Fair Housing Act and applicable state law.</p>
-    <p>I am asking to keep my emotional support animal, <span class="fill">animal's name</span>, a <span class="fill">species and breed</span>, in my home. I have attached a letter from <span class="fill w">professional's name and license</span> confirming my disability-related need for this animal.</p>
-    <p>I will keep <span class="fill">animal's name</span> under control, clean up after them, and take responsibility for any damage they cause. If you need any other information to review this request, please let me know in writing.</p>
-    <p>I would appreciate a written reply by <span class="fill">date, about 10 days out</span>. Thank you for considering my request.</p>
-    <p style="margin:0">Sincerely,<br><span class="fill w">your name</span> · <span class="fill">phone</span> · <span class="fill">date</span></p>
+<section class="pg tpl">
+  <div class="top">
+    <div><div class="kick">03 · Your request</div><h2>Fill it in.<br><em>Send it in writing.</em></h2><p>Email works well because it is dated. Attach your ESA letter and keep a copy of everything.</p></div>
+    <div class="photo"></div>
   </div>
+  <div class="sheet">
+    <p class="subj">Subject: Reasonable accommodation request for <span class="f">unit / address</span></p>
+    <p>Dear <span class="f">landlord or manager</span>,</p>
+    <p>I live at <span class="f w">address and unit</span> (or I am applying to rent it). I am writing to request a reasonable accommodation for a disability under the Fair Housing Act and applicable state law.</p>
+    <p>I am asking to keep my emotional support animal, <span class="f">animal's name</span>, a <span class="f">species and breed</span>, in my home. I have attached a letter from <span class="f w">professional's name and license</span> confirming my disability-related need for this animal.</p>
+    <p>I will keep <span class="f">animal's name</span> under control, clean up after them, and take responsibility for any damage. If you need anything else to review this request, please let me know in writing.</p>
+    <p>I would appreciate a written reply by <span class="f">date, about 10 days out</span>. Thank you for considering my request.</p>
+    <p style="margin:0">Sincerely,<br><span class="f w">your name</span> &nbsp; <span class="f">phone</span> &nbsp; <span class="f">date</span></p>
+  </div>
+  <div class="band"><div><b>Attach</b>your ESA letter as a PDF.</div><div><b>Keep</b>your sent email, their reply, and the dates.</div><div><b>Log it</b>in the tracker on page 7.</div></div>
   <div class="tips">
-    <div><b>Keep it short</b>You don't need to share your diagnosis or medical history.</div>
-    <div><b>Send it early</b>Before you sign a lease or before the animal arrives, when you can.</div>
-    <div><b>Stay polite</b>A calm, simple request is easier to say yes to.</div>
+    <div><b>Keep it short.</b>You don't need to share your diagnosis or medical history.</div>
+    <div><b>Send it early.</b>Before you sign the lease or before your animal moves in.</div>
+    <div><b>Stay friendly.</b>A calm, simple request is easier to say yes to.</div>
   </div>
-  <div class="runner"><span><b>The Renter's ESA Kit</b> · 2026</span><span>myesatherapist.com</span><span>5</span></div>
+  <div class="folio"><span>The Renter's ESA Kit · 2026</span><span class="n">05</span></div>
 </section>
 
 <!-- 6 SCRIPTS -->
-<section class="page">
-  <div class="tab"><span>04</span>SCRIPTS</div>
-  <div class="kicker">When your landlord asks questions</div>
-  <h2 style="margin-top:8pt">Calm answers to<br>common questions.</h2>
-  <p class="lede">Questions are normal, especially after the 2026 change. Answer in writing where you can, and keep it brief.</p>
+<section class="pg scr">
+  <div class="hero"></div>
+  <div class="head"><div class="kick">04 · When they ask</div><h2>Five questions,<br><em>five calm answers.</em></h2><p>Questions are normal after the 2026 change. Answer in writing where you can, and keep it brief.</p></div>
   <div class="qa">
-    <div class="item"><div class="q"><small>THEY ASK</small>"What is your diagnosis?"</div><div class="a">You generally don't have to share it. Your letter confirms a disability-related need.<i>"My letter from a licensed professional confirms my disability-related need. I'd prefer to keep my medical details private. Is there anything else you need to review it?"</i></div></div>
-    <div class="item"><div class="q"><small>THEY ASK</small>"Can I verify your letter?"</div><div class="a">Yes. Landlords can check that the professional is licensed. That is one reason a license number matters.<i>"Of course. The professional's license number and contact details are on the letter."</i></div></div>
-    <div class="item"><div class="q"><small>THEY SAY</small>"We don't allow pets."</div><div class="a">A no-pets rule is the reason you are asking for an accommodation, not a reason to skip considering it.<i>"I understand. I'm asking for an exception as a disability accommodation. Could you review my request and reply in writing?"</i></div></div>
-    <div class="item"><div class="q"><small>THEY SAY</small>"There's a pet fee or deposit."</div><div class="a">Since May 2026 this depends more on your state and local law. Ask for the policy in writing and check your state's rules.<i>"Could you send me the fee policy in writing? I'd like to understand how it applies to an accommodation request."</i></div></div>
-    <div class="item"><div class="q"><small>THEY ASK</small>"Is your animal trained?"</div><div class="a">ESAs don't need task training, but basic manners help. Describe how you'll manage your animal.<i>"Rex is house-trained, quiet and stays with me or crated. I'll be responsible for any damage."</i></div></div>
+    <div class="row"><div class="q"><small>THEY ASK</small>"What is your diagnosis?"</div><div class="a">You generally don't have to share it. Your letter confirms the need.<span class="say">"My letter confirms my disability-related need. I'd like to keep medical details private. Is there anything else you need to review it?"</span></div></div>
+    <div class="row"><div class="q"><small>THEY ASK</small>"Can I verify your letter?"</div><div class="a">Yes. Landlords can check that the professional is licensed.<span class="say">"Of course. The license number and contact details are on the letter."</span></div></div>
+    <div class="row"><div class="q"><small>THEY SAY</small>"We don't allow pets."</div><div class="a">A no-pets rule is why you're asking for an accommodation, not a reason to skip considering it.<span class="say">"I understand. I'm asking for an exception as a disability accommodation. Could you review it and reply in writing?"</span></div></div>
+    <div class="row"><div class="q"><small>THEY SAY</small>"There's a pet fee."</div><div class="a">Since May 2026 this depends more on your state and local law.<span class="say">"Could you send me the fee policy in writing, so I can see how it applies to an accommodation?"</span></div></div>
+    <div class="row"><div class="q"><small>THEY ASK</small>"Is your animal trained?"</div><div class="a">ESAs don't need task training, but good manners help your case.<span class="say">"Rex is house-trained and quiet, and I'll be responsible for any damage."</span></div></div>
   </div>
-  <div class="runner"><span><b>The Renter's ESA Kit</b> · 2026</span><span>myesatherapist.com</span><span>6</span></div>
+  <div class="folio"><span>The Renter's ESA Kit · 2026</span><span class="n">06</span></div>
 </section>
 
-<!-- 7 STATES + TRACKER -->
-<section class="page">
-  <div class="tab"><span>05</span>PLAN</div>
-  <div class="kicker">The 30-day states</div>
-  <h2 style="margin-top:8pt;font-size:28pt">Five states need<br>a month's head start.</h2>
-  <p class="lede" style="font-size:11pt">Here the professional must have a client relationship with you for at least 30 days before an ESA letter for housing can be issued.</p>
-  <div class="states"><div><b>AR</b><span>Arkansas</span></div><div><b>CA</b><span>California</span></div><div><b>IA</b><span>Iowa</span></div><div><b>LA</b><span>Louisiana</span></div><div><b>MT</b><span>Montana</span></div></div>
-  <div class="track"><div class="st"><b>First session</b>The relationship starts</div><div class="ar"></div><div class="st"><b>30+ days</b>Plan this before your move-in date</div><div class="ar"></div><div class="st"><b>Letter</b>Issued if you qualify</div></div>
-
-  <div class="kicker" style="margin-top:22pt">Your request tracker</div>
-  <table class="log">
-    <tr><th style="width:26%">Step</th><th style="width:18%">Date</th><th>Notes</th></tr>
-    <tr><td>Request sent</td><td class="e">__ / __ / ____</td><td class="e">How sent, to whom</td></tr>
-    <tr><td>Reply received</td><td class="e">__ / __ / ____</td><td class="e">Approved, questions, or denied</td></tr>
-    <tr><td>Follow-up sent</td><td class="e">__ / __ / ____</td><td class="e"></td></tr>
-    <tr><td>Final answer</td><td class="e">__ / __ / ____</td><td class="e"></td></tr>
-  </table>
-
-  <div class="kicker" style="margin-top:18pt">If you're refused</div>
-  <ol class="steps">
-    <li><b>Ask for the reason in writing</b>, and whether another arrangement would work for them.</li>
-    <li><b>Check your state and city fair housing laws.</b> Some protect ESAs more than federal rules now do.</li>
-    <li><b>Contact your state or local fair housing agency</b> or a legal aid office for advice.</li>
-    <li><b>Watch the deadlines.</b> HUD complaints are generally due within one year, and private Fair Housing Act lawsuits within two years.</li>
-  </ol>
-  <div class="runner"><span><b>The Renter's ESA Kit</b> · 2026</span><span>myesatherapist.com</span><span>7</span></div>
+<!-- 7 THIRTY + PLAN -->
+<section class="pg thirty">
+  <div class="big">30</div>
+  <div class="kick" style="position:relative">05 · Plan ahead</div>
+  <h2>Five states need a <em>month's head start.</em></h2>
+  <p class="lede">Here the professional must know you for at least 30 days before an ESA letter for housing can be issued.</p>
+  <div class="st5"><div><b>AR</b><span>Arkansas</span></div><div><b>CA</b><span>California</span></div><div><b>IA</b><span>Iowa</span></div><div><b>LA</b><span>Louisiana</span></div><div><b>MT</b><span>Montana</span></div></div>
+  <div class="road"><div data-n="1"><b>First session</b>The relationship starts</div><div data-n="2"><b>30+ days</b>Plan it before move-in</div><div data-n="3"><b>Your letter</b>Issued if you qualify</div></div>
+  <div class="plan">
+    <div class="card"><h3>Your request <em>tracker</em></h3>
+      <table class="log">
+        <tr><td>Request sent</td><td class="e">__ / __ / ____</td></tr>
+        <tr><td>Reply received</td><td class="e">__ / __ / ____</td></tr>
+        <tr><td>Follow-up sent</td><td class="e">__ / __ / ____</td></tr>
+        <tr><td>Final answer</td><td class="e">__ / __ / ____</td></tr>
+      </table>
+    </div>
+    <div class="card"><h3>If you're <em>refused</em></h3>
+      <ol class="no">
+        <li><b>Ask why, in writing,</b> and whether another arrangement would work.</li>
+        <li><b>Check state and city law.</b> Some protect ESAs more than federal rules now do.</li>
+        <li><b>Call a fair housing agency</b> or legal aid office for advice.</li>
+      </ol>
+      <div class="dl"><div><b>1 year</b>to file a HUD complaint, generally</div><div><b>2 years</b>to file a private Fair Housing Act lawsuit</div></div>
+    </div>
+  </div>
+  <div class="folio"><span>The Renter's ESA Kit · 2026</span><span class="n">07</span></div>
 </section>
 
 <!-- 8 BACK -->
-<section class="page back">
-  <span class="logo"><img src="myesa-logo.svg" alt="My ESA Therapist"></span>
-  <h2 style="margin-top:30pt">Need a letter that<br>checks <em>every box?</em></h2>
-  <p class="lede" style="color:rgba(255,255,255,.82)">My ESA Therapist connects you with mental health professionals licensed in your state for a secure telehealth evaluation. If you qualify, your letter is written for your state's rules.</p>
-  <div class="cards">
-    <div><b>Free</b><span>Eligibility check, about one minute</span></div>
-    <div><b>100%</b><span>Money-back guarantee, as set out in our refund policy</span></div>
-    <div><b>HIPAA</b><span>Compliant telehealth platform</span></div>
+<section class="pg dark back">
+  <div class="ph"></div>
+  <div class="wm"><img src="myesa-logo.svg" alt=""><div>My ESA Therapist<small>myesatherapist.com</small></div></div>
+  <div class="wrap">
+    <h2>Need a letter that<br><em>checks every box?</em></h2>
+    <p>We connect you with mental health professionals licensed in your state for a secure telehealth evaluation. If you qualify, your letter is written for your state's rules.</p>
+    <div class="three">
+      <div><b>Free</b><span>Eligibility check, about a minute</span></div>
+      <div><b>100%</b><span>Money-back guarantee, as set out in our refund policy</span></div>
+      <div><b>HIPAA</b><span>Compliant, private telehealth</span></div>
+    </div>
+    <div class="cta"><span class="btn">Start at myesatherapist.com</span><div><b>+1 (888) 412-4041</b><br>info@myesatherapist.com</div></div>
   </div>
-  <div class="cta"><span class="btn">Start at myesatherapist.com</span><span style="color:rgba(255,255,255,.75);font-size:10pt">ESA and PSD letters, online and secure</span></div>
-  <div class="contact">
-    <div><small>Call</small>+1 (888) 412-4041</div>
-    <div><small>Email</small>info@myesatherapist.com</div>
-    <div><small>Web</small>myesatherapist.com</div>
-  </div>
-  <p class="disc">This kit is general information, current as of November 2026, and is not legal, medical or financial advice. Laws and agency guidance change; HUD has said it plans new assistance animal rules. An ESA letter is issued only after a licensed professional's evaluation finds a disability-related need, and no outcome with a landlord can be promised. The sample letter shown is illustrative and uses fictional names. © 2026 My ESA Therapist.</p>
+  <p class="disc">This kit is general information, current as of November 2026, and is not legal, medical or financial advice. Laws and agency guidance change, and HUD has said it plans new assistance animal rules. An ESA letter is issued only after a licensed professional's evaluation finds a disability-related need, and no outcome with a landlord can be promised. The sample letter shown uses fictional names. © 2026 My ESA Therapist.</p>
 </section>
 
 </body>
