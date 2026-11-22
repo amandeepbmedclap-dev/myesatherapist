@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState, useRef } from "react";
-import Image from "next/image";
 import { CtaButton } from "@/components/common/CtaButton";
+import { Play } from "lucide-react";
 
 const reviews = [
   {
@@ -25,8 +25,6 @@ const reviews = [
   },
 ];
 
-const TEAL_GRADIENT = "var(--color-gradient)";
-
 export function YouTubePlayIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,153 +44,124 @@ interface TestimonialsSectionProps {
   buttonHref?: string;
 }
 
+const thumb = (id: string) => `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+
 export function TestimonialsSection({
   title = "See What Our Clients Say",
   subtitle = "Here’s what our clients say about their experience.",
   buttonText = "See More Reviews",
   buttonHref = "/reviews",
 }: TestimonialsSectionProps = {}) {
-  const [activeVideo, setActiveVideo] = useState<string | null>(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(0);
+  const [playing, setPlaying] = useState(false);
+  const stageRef = useRef<HTMLDivElement>(null);
+  const current = reviews[active];
 
-  const handleScroll = () => {
-    if (scrollRef.current) {
-      const scrollLeft = scrollRef.current.scrollLeft;
-      const width = scrollRef.current.clientWidth;
-      if (width > 0) {
-        const index = Math.round(scrollLeft / (width * 0.85));
-        setCurrentIndex(Math.min(index, reviews.length - 1));
-      }
-    }
-  };
-
-  const scrollToIndex = (index: number) => {
-    if (scrollRef.current) {
-      const child = scrollRef.current.children[index] as HTMLElement;
-      if (child) {
-        child.scrollIntoView({
-          behavior: "smooth",
-          block: "nearest",
-          inline: "center",
-        });
-        setCurrentIndex(index);
-      }
-    }
+  const choose = (idx: number) => {
+    setActive(idx);
+    setPlaying(false);
+    // On small screens the player sits above the list, so bring it into view.
+    if (window.innerWidth < 1024) stageRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
   };
 
   return (
-    <section className="py-16 lg:py-20 xl:py-24 bg-background overflow-hidden">
-      <div className="max-w-[1251px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-10 lg:gap-14 xl:gap-[72px]">
-        <div className="flex flex-col items-center text-center gap-2 max-w-[512px] mx-auto">
-          <h2 className="heading-h2 capitalize">
-            {title}
-          </h2>
-          <p className="body-large max-w-[432px]">
-            {subtitle}
-          </p>
-        </div>
+    <section className="overflow-hidden bg-background py-16 lg:py-20 xl:py-24">
+      <div className="mx-auto grid max-w-[1180px] items-center gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:gap-16 lg:px-8">
+        <div className="lg:order-2">
+          <h2 className="heading-h2 capitalize text-center lg:text-left">{title}</h2>
+          <div className="body-large mt-3 text-center lg:text-left">{subtitle}</div>
 
-        <div className="flex flex-col items-center gap-8 w-full max-w-[1005px]">
-          <div className="flex flex-col items-center gap-4 w-full max-w-[1005px]">
-            <div
-              ref={scrollRef}
-              onScroll={handleScroll}
-              className="flex lg:grid lg:grid-cols-3 gap-6 lg:gap-5 xl:gap-[45px] w-full max-w-[1005px] overflow-x-auto lg:overflow-visible snap-x snap-mandatory pb-2 lg:pb-0 px-2 lg:px-0 scrollbar-none justify-items-center"
-              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-            >
-              {reviews.map((review) => {
-                const isPlaying = activeVideo === review.id;
-
-                return (
-                  <div
-                    key={review.id}
-                    className="w-[85vw] sm:w-[320px] lg:w-[300px] xl:w-[306px] h-[419px] shrink-0 snap-center bg-white rounded-[20px] overflow-hidden shadow-[0px_2px_4px_rgba(0,0,0,0.15)] flex flex-col justify-between relative"
-                  >
-                    <div
-                      className="relative w-full h-[276px] shrink-0 bg-black cursor-pointer group overflow-hidden"
-                      onClick={() => setActiveVideo(review.id)}
-                    >
-                      {isPlaying ? (
-                        <iframe
-                          className="absolute inset-0 w-full h-full"
-                          src={`https://www.youtube.com/embed/${review.id}?autoplay=1&rel=0`}
-                          title={review.name}
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          allowFullScreen
-                        />
-                      ) : (
-                        <>
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img
-                            src={`https://img.youtube.com/vi/${review.id}/hqdefault.jpg`}
-                            alt={review.name}
-                            loading="lazy"
-                            decoding="async"
-                            className="w-full h-full object-cover object-center absolute inset-0 transition-transform duration-300 group-hover:scale-105"
-                          />
-
-                          <div
-                            className="absolute inset-x-0 bottom-0 h-[150px] pointer-events-none"
-                            style={{
-                              background:
-                                "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 100%)",
-                            }}
-                          />
-
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <YouTubePlayIcon className="w-16 h-12 drop-shadow-lg transition-transform duration-200 group-hover:scale-110" />
-                          </div>
-
-                          <div className="absolute inset-x-0 bottom-[11px] text-center z-10 px-3 pointer-events-none">
-                            <h3 className="heading-h3 text-white text-center drop-shadow-md">
-                              {review.name}
-                            </h3>
-                          </div>
-                        </>
-                      )}
-                    </div>
-
-                    <div
-                      className="w-full h-[143px] shrink-0 flex flex-col items-center justify-center px-[17.5px] rounded-b-[20px] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] color-gradient selection:bg-white/30 selection:text-white"
-                    >
-                      <p className="body-text text-background text-center w-[271px] max-w-[271px] selection:bg-white/30 selection:text-white">
-                        {review.quote}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-
-            <div className="flex items-center justify-center gap-[6px] h-2">
-              {reviews.map((_, idx) => (
-                <button
-                  key={idx}
-                  type="button"
-                  onClick={() => scrollToIndex(idx)}
-                  aria-label={`Go to slide ${idx + 1}`}
-                  className="relative flex items-center justify-center min-w-[28px] min-h-[28px] p-2 cursor-pointer"
-                >
-                  <span
-                    className={`block transition-all duration-300 rounded-full ${
-                      currentIndex === idx
-                        ? "w-[8px] h-[8px] bg-primary"
-                        : "w-[5px] h-[5px] bg-accent opacity-50 hover:opacity-100"
-                    }`}
-                  />
-                </button>
-              ))}
-            </div>
+          <div className="mt-8 hidden flex-col gap-3 lg:flex">
+            {reviews.map((r, idx) => (
+              <QuoteCard key={r.id} review={r} active={idx === active} onSelect={() => choose(idx)} />
+            ))}
           </div>
 
-          <div className="flex flex-col items-center">
-            <CtaButton href={buttonHref} variant="accent" className="w-auto">
+          <div className="mt-8 hidden lg:block">
+            <CtaButton href={buttonHref} variant="secondary" className="w-auto">
+              {buttonText}
+            </CtaButton>
+          </div>
+        </div>
+
+        <div className="lg:order-1">
+          <div ref={stageRef} className="relative mx-auto w-full max-w-[420px]">
+            <span aria-hidden className="absolute -left-4 -top-4 hidden size-28 rounded-[28px] bg-accent/30 sm:block" />
+            <span aria-hidden className="absolute -bottom-4 -right-4 hidden size-40 rounded-[32px] color-gradient opacity-90 sm:block" />
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] bg-[#0f2a35] shadow-[0_30px_60px_-30px_rgba(26,61,79,0.7)]">
+              {playing ? (
+                <iframe
+                  key={current.id}
+                  className="absolute inset-0 size-full"
+                  src={`https://www.youtube.com/embed/${current.id}?autoplay=1&rel=0`}
+                  title={`${current.name} video review`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              ) : (
+                <button type="button" onClick={() => setPlaying(true)} className="group absolute inset-0 cursor-pointer" aria-label={`Play ${current.name}'s video review`}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    key={current.id}
+                    src={thumb(current.id)}
+                    alt={current.name}
+                    loading="lazy"
+                    decoding="async"
+                    className="absolute inset-0 size-full scale-[1.35] object-cover object-center transition-transform duration-500 group-hover:scale-[1.4]"
+                  />
+                  <span aria-hidden className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,42,53,0)_45%,rgba(15,42,53,0.92)_100%)]" />
+                  <span className="absolute left-1/2 top-1/2 flex size-[76px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 shadow-[0_10px_30px_rgba(0,0,0,0.35)] transition-transform duration-300 group-hover:scale-110">
+                    <span aria-hidden className="absolute inset-0 animate-ping rounded-full bg-white/40 [animation-duration:2.2s]" />
+                    <Play aria-hidden className="relative ml-1 size-7 fill-primary text-primary" />
+                  </span>
+                  <span className="absolute inset-x-0 bottom-0 p-6 text-left">
+                    <span className="block font-heading text-[28px] font-bold leading-tight text-white">{current.name}</span>
+                    <span className="mt-1 inline-flex items-center gap-1.5 font-sans text-[13px] font-semibold uppercase tracking-[0.1em] text-accent">
+                      <Play aria-hidden className="size-3 fill-accent" /> Video review
+                    </span>
+                  </span>
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-3 lg:hidden">
+          {reviews.map((r, idx) => (
+            <QuoteCard key={r.id} review={r} active={idx === active} onSelect={() => choose(idx)} />
+          ))}
+          <div className="mt-5 flex justify-center">
+            <CtaButton href={buttonHref} variant="secondary" className="w-auto">
               {buttonText}
             </CtaButton>
           </div>
         </div>
       </div>
     </section>
+  );
+}
+
+function QuoteCard({ review, active, onSelect }: { review: (typeof reviews)[number]; active: boolean; onSelect: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onSelect}
+      aria-pressed={active}
+      className={`group flex w-full cursor-pointer items-start gap-4 rounded-[20px] p-4 text-left transition-all duration-300 sm:p-5 ${
+        active ? "color-gradient shadow-[0_18px_36px_-22px_rgba(26,61,79,0.8)]" : "bg-white ring-1 ring-line-200 hover:-translate-y-0.5 hover:ring-accent/60"
+      }`}
+    >
+      <span className={`relative size-14 shrink-0 overflow-hidden rounded-full ring-2 ${active ? "ring-accent" : "ring-white shadow-sm"}`}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={thumb(review.id)} alt="" loading="lazy" decoding="async" className="absolute inset-0 size-full scale-[2] object-cover object-center" />
+        <span className="absolute inset-0 flex items-center justify-center bg-black/25">
+          <Play aria-hidden className="ml-0.5 size-4 fill-white text-white" />
+        </span>
+      </span>
+      <span className="min-w-0">
+        <span className={`block font-sans text-[15px] leading-[24px] sm:text-[16px] sm:leading-[26px] ${active ? "text-white" : "text-body-text"}`}>{review.quote}</span>
+        <span className={`mt-2 block font-sans text-[14px] font-bold ${active ? "text-accent" : "text-primary"}`}>{review.name}</span>
+      </span>
+    </button>
   );
 }
