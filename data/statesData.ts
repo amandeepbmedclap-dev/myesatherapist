@@ -3700,11 +3700,17 @@ export const STATES_DATA: Record<string, StateData> = {
     housingRequests: {
       mayRequestTitle: "What Can Florida Housing Providers Request for an ESA?",
       mayRequestIntro:
-        "If a disability is not readily apparent, a housing provider may request reliable information that reasonably supports the request, including documentation from a health care practitioner as defined under Florida law, including a telehealth provider licensed within the state of Florida. An out-of-state practitioner must be in good standing and must have provided in-person care or services to the tenant on at least one occasion. The practitioner must also have personal knowledge of the person’s disability and act within the scope of their practice. Information describing how the specific animal provides assistance or therapeutic emotional support related to the person’s disability. Proof of compliance with state or local licensing and vaccination requirements (e.g., rabies vaccination for dogs).",
-      mayRequestItems: [],
+        "If a disability is not readily apparent, a housing provider may request reliable information that reasonably supports the request, including documentation from a health care practitioner as defined under Florida law, including a telehealth provider licensed within the state of Florida. An out-of-state practitioner must be in good standing and must have provided in-person care or services to the tenant on at least one occasion. The practitioner must also have personal knowledge of the person’s disability and act within the scope of their practice.",
+      mayRequestItems: [
+        "Information describing how the specific animal provides assistance or therapeutic emotional support related to the person’s disability.",
+        "Proof of compliance with state or local licensing and vaccination requirements (e.g., rabies vaccination for dogs).",
+      ],
       cannotRequestTitle: "What Can't Housing Providers Request From ESA Owners?",
       cannotRequestItems: [
-        "Details about a specific diagnosis or severity of a disability. Access to patient medical records. A specific form, notarized statement, or mandatory process. Denial solely because a tenant did not use a preferred form or method for providing the ESA letter.",
+        "Details about a specific diagnosis or severity of a disability.",
+        "Access to patient medical records.",
+        "A specific form, notarized statement, or mandatory process.",
+        "Denial solely because a tenant did not use a preferred form or method for providing the ESA letter.",
       ],
     },
     legalNotice: "Under ESA laws in Florida and federal regulations, emotional support animals are protected in housing but do not have the same public access rights as service animals. ESAs are generally not allowed in restaurants, stores, or other public areas where pets are restricted. An ESA letter provides protections for your ESA at home, not in public facilities.",
@@ -3897,15 +3903,15 @@ export const STATES_DATA: Record<string, StateData> = {
         a: "Florida may accept ESA documentation from an out-of-state health care practitioner if the provider is in good standing and meets Florida’s legal requirements. Under Florida law, out-of-state providers must have conducted at least one in-person evaluation with the individual. ESA letters issued without a qualifying evaluation or based solely on online questionnaires may be rejected by housing providers.",
       },
       {
-        q: "Can I Get an ESA Letter in Florida for a Child or Dependent Under 18?",
+        q: "Can I get an ESA letter in Florida for a child or dependent under 18?",
         a: "Yes. A licensed mental health professional may determine that an emotional support animal benefits a minor's mental or emotional health. Parents or legal guardians are typically involved in the evaluation process, and often must sign consents before the evaluation can proceed.",
       },
       {
-        q: "Can a Florida Landlord Require Proof of Training for My Emotional Support Animal?",
+        q: "Can a Florida landlord require proof of training for my emotional support animal?",
         a: "No. Emotional support animals are not required to have specialized training. However, the animal should be well-behaved, under control, and not pose a significant health, safety, or property damage risk. It may be beneficial to obtain training for your ESA to ensure they do not cause property damage, as you can be held liable for these repair fees.",
       },
       {
-        q: "Can a Florida Landlord Ask My Therapist Directly to Verify the ESA Letter?",
+        q: "Can a Florida landlord ask my therapist directly to verify the ESA letter?",
         a: "In some cases, a landlord may seek to verify that the letter was issued by a licensed mental health professional. However, they generally cannot request detailed medical information or access to your treatment records. They cannot request the specific diagnosis to be disclosed, nor the severity of your disability.",
       },
       {
@@ -3925,31 +3931,31 @@ export const STATES_DATA: Record<string, StateData> = {
         a: "In many cases, no. HOAs and condo associations may also be subject to fair housing laws and must generally consider reasonable accommodation requests for qualified emotional support animals.",
       },
       {
-        q: "How Long Is a Florida ESA Letter Valid Before It Needs Renewal?",
+        q: "How long is a Florida ESA letter valid before it needs renewal?",
         a: "Florida law does not establish a fixed expiration date for an ESA letter. However, a housing provider may request updated reliable information when permitted under applicable fair housing requirements and based on the circumstances of the accommodation request.",
       },
       {
-        q: "Can I Have More Than One Emotional Support Animal in Florida?",
+        q: "Can I have more than one emotional support animal in Florida?",
         a: "Yes, if each animal is necessary for your disability-related needs and supported by appropriate documentation. Housing providers may evaluate whether the request is reasonable under fair housing laws.",
       },
       {
-        q: "Can My Florida Landlord Ask to Meet My ESA or Require Specific Breed/Size Documentation?",
+        q: "Can my Florida landlord ask to meet my ESA or require specific breed/size documentation?",
         a: "A landlord may request information necessary to evaluate an accommodation request, but they generally cannot deny an ESA solely because of breed, weight, or size. However, an animal that poses a direct threat or causes substantial property damage may not be protected.",
       },
       {
-        q: "Does Florida Law Require My Therapist to Have Met Me in Person Before Issuing an ESA Letter?",
+        q: "Does Florida law require my therapist to have met me in person before issuing an ESA letter?",
         a: "It depends on the provider’s licensing status. Florida law requires an out-of-state practitioner providing supporting information to have provided in-person care or services to the tenant on at least one occasion. Requirements may differ for Florida-licensed practitioners, who must still conduct an appropriate clinical evaluation within their scope of practice.",
       },
       {
-        q: "What Should I Do if a Florida Landlord Asks for My Medical Records to Approve My ESA?",
+        q: "What should I do if a Florida landlord asks for my medical records to approve my ESA?",
         a: "You generally do not need to provide detailed medical records. A valid ESA letter typically confirms the disability-related need for the animal while protecting your private health information.",
       },
       {
-        q: "Is a Florida ESA Letter Accepted if I'm Subleasing or Renting a Room (Not the Full Unit)?",
+        q: "Is a Florida ESA letter accepted if I'm subleasing or renting a room (not the full unit)?",
         a: "It depends on the housing arrangement and whether fair housing laws apply. Some shared housing situations and owner-occupied properties may qualify for exemptions under federal housing rules.",
       },
       {
-        q: "Does Florida Recognize Emotional Support Animals Other Than Dogs and Cats (Birds, Rabbits, etc.)?",
+        q: "Does Florida recognize emotional support animals other than dogs and cats (birds, rabbits, etc.)?",
         a: "Yes. Emotional support animals are not limited to dogs or cats. Other domesticated animals may qualify if they provide disability-related emotional support and are reasonable for the housing situation.",
       },
     ],

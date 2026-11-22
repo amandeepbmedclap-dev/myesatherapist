@@ -3,9 +3,14 @@ import React from "react";
 import Image from "next/image";
 import { Check } from "lucide-react";
 import { StateData } from "@/data/statesData";
+import { CollapsibleNote } from "@/components/common/CollapsibleNote";
+import { isSectionPilot } from "@/lib/sectionPilot";
 
 export function StateLawsSection({ data }: { data: StateData }) {
   const stateName = data.name;
+  const pilot = isSectionPilot(data.slug);
+  const checkClass = pilot ? "w-5 h-5 rounded-full bg-accent text-primary flex items-center justify-center" : "w-5 h-5 rounded-full text-white flex items-center justify-center shadow-xs";
+  const checkStyle = pilot ? undefined : { background: "var(--color-gradient)" };
 
   return (
     <section className="w-full bg-background py-10 sm:py-14 lg:py-16 px-4 sm:px-6 lg:px-8">
@@ -57,10 +62,7 @@ export function StateLawsSection({ data }: { data: StateData }) {
                 ]).map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <div className="flex h-7 shrink-0 items-end">
-                      <div
-                        className="w-5 h-5 rounded-full text-white flex items-center justify-center shadow-xs"
-                        style={{ background: "var(--color-gradient)" }}
-                      >
+                      <div className={checkClass} style={checkStyle}>
                         <Check className="w-3 h-3 stroke-[3]" />
                       </div>
                     </div>
@@ -114,10 +116,7 @@ export function StateLawsSection({ data }: { data: StateData }) {
                 ]).map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <div className="flex h-7 shrink-0 items-end">
-                      <div
-                        className="w-5 h-5 rounded-full text-white flex items-center justify-center shadow-xs"
-                        style={{ background: "var(--color-gradient)" }}
-                      >
+                      <div className={checkClass} style={checkStyle}>
                         <Check className="w-3 h-3 stroke-[3]" />
                       </div>
                     </div>
@@ -136,7 +135,15 @@ export function StateLawsSection({ data }: { data: StateData }) {
           </div>
         </div>
 
-        {data.legalNotice !== "" && (
+        {data.legalNotice !== "" && pilot && (
+          <CollapsibleNote
+            label="Legal notice"
+            collapse={false}
+            text={data.legalNotice || `Emotional support animals do not have public access rights like service animals under the ADA and are mainly considered for household housing accommodations in ${stateName}. Generally speaking, ESAs are not permitted in public places like restaurants or stores where pets are restricted.`}
+            className="mx-auto max-w-[880px] rounded-[18px] bg-white/70 p-4 ring-1 ring-line-200 sm:p-5"
+          />
+        )}
+        {data.legalNotice !== "" && !pilot && (
         <div className="max-w-[895px] mx-auto bg-[rgba(232,185,44,0.1)] rounded-[20px] overflow-hidden flex items-stretch shadow-xs">
           <div className="w-3 sm:w-3.5 bg-accent shrink-0" />
           <div className="p-4 sm:p-5 lg:p-6 flex-1">

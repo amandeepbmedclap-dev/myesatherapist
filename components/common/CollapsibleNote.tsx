@@ -4,10 +4,10 @@ import { useState } from "react";
 import { Info } from "lucide-react";
 
 /** "Important" callout used across state sections: full text in the DOM, long notes collapse to two lines. */
-export function CollapsibleNote({ text, label = "Important", className = "" }: { text: string; label?: string; className?: string }) {
+export function CollapsibleNote({ text, label = "Important", className = "", collapse = true }: { text: string; label?: string; className?: string; collapse?: boolean }) {
   const [open, setOpen] = useState(false);
   const body = text.replace(/^(important\s*note[:\s-]*|important[:\s-]*|note[:\s-]*)/i, "");
-  const long = body.length > 200;
+  const long = collapse && body.length > 200;
 
   return (
     <div className={`flex items-start gap-3 ${className}`}>

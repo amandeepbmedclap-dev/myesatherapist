@@ -63,6 +63,8 @@ interface FaqSectionProps {
   faqs?: FaqItem[];
   bg?: string;
   className?: string;
+  /** "light": white question rows with gold numbers (state-page redesign). */
+  variant?: "classic" | "light";
 }
 
 export function FaqSection({
@@ -72,6 +74,7 @@ export function FaqSection({
   faqs: customFaqs,
   bg = "bg-background",
   className,
+  variant = "classic",
 }: FaqSectionProps = {}) {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
 
@@ -114,10 +117,37 @@ export function FaqSection({
             </div>
           </div>
 
-          <div className="w-full max-w-[566px] lg:max-w-none lg:flex-1 space-y-3.5 sm:space-y-5 xl:space-y-[25px] flex flex-col justify-center">
+          <div className={`w-full max-w-[566px] lg:max-w-none lg:flex-1 ${variant === "light" ? "space-y-3" : "space-y-3.5 sm:space-y-5 xl:space-y-[25px]"} flex flex-col justify-center`}>
             {items.map((faq, idx) => {
               const isOpen = openIdx === idx;
               return (
+                variant === "light" ? (
+                <details
+                  key={idx}
+                  open={isOpen}
+                  className={`w-full rounded-[18px] bg-white transition-shadow duration-200 ${isOpen ? "ring-1 ring-accent/70 shadow-[0_18px_40px_-30px_rgba(26,61,79,0.55)]" : "ring-1 ring-line-200 hover:ring-primary/25"}`}
+                >
+                  <summary
+                    onClick={(event) => {
+                      event.preventDefault();
+                      setOpenIdx(isOpen ? null : idx);
+                    }}
+                    className="flex w-full cursor-pointer list-none items-start gap-4 px-5 py-4 text-left sm:gap-5 sm:px-6 sm:py-5 [&::-webkit-details-marker]:hidden"
+                  >
+                    <span className="mt-[2px] w-8 shrink-0 font-heading text-[18px] font-bold leading-[26px] text-gold-600">{faq.num?.replace(/\.$/, "")}</span>
+                    <h3 className="m-0 flex-1 font-heading !text-[18px] font-bold !leading-[26px] text-primary sm:!text-[19px]">{faq.q}</h3>
+                    <span
+                      aria-hidden
+                      className={`mt-[1px] flex size-7 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${isOpen ? "rotate-45 bg-primary text-white" : "bg-cream-100 text-primary"}`}
+                    >
+                      <svg width="12" height="12" viewBox="0 0 18 18" fill="none"><path d="M9 3V15M3 9H15" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" /></svg>
+                    </span>
+                  </summary>
+                  <div className="whitespace-pre-line px-5 pb-5 font-sans text-[15.5px] leading-[26px] text-body-text sm:px-6 sm:pl-[76px]">
+                    {faq.a}
+                  </div>
+                </details>
+                ) : (
                 <details
                   key={idx}
                   open={isOpen}
@@ -135,7 +165,7 @@ export function FaqSection({
                     </div>
 
                     <div className="flex-1 py-2.5 sm:py-3 px-3.5 sm:px-6 flex items-center justify-between gap-3 sm:gap-4">
-                      <h3 className="heading-h3 text-white m-0 capitalize">
+                      <h3 className="heading-h3 text-white m-0">
                         {faq.q}
                       </h3>
 
@@ -167,6 +197,7 @@ export function FaqSection({
                     {faq.a}
                   </div>
                 </details>
+                )
               );
             })}
           </div>

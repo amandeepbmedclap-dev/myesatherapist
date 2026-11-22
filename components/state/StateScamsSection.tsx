@@ -3,9 +3,11 @@ import React from "react";
 import Image from "next/image";
 import { Check, X } from "lucide-react";
 import { StateData } from "@/data/statesData";
+import { isSectionPilot } from "@/lib/sectionPilot";
 
 export function StateScamsSection({ data }: { data: StateData }) {
   const stateName = data.name;
+  const pilot = isSectionPilot(data.slug);
 
   const defaultWhatYouNeed = [
     {
@@ -103,8 +105,8 @@ export function StateScamsSection({ data }: { data: StateData }) {
                   <div key={idx} className="flex items-start gap-3.5">
                     <div className="flex h-7 shrink-0 items-end">
                       <div
-                        className="w-5 h-5 rounded-full text-white flex items-center justify-center shadow-xs"
-                        style={{ background: "var(--color-gradient)" }}
+                        className={pilot ? "w-5 h-5 rounded-full bg-accent text-primary flex items-center justify-center" : "w-5 h-5 rounded-full text-white flex items-center justify-center shadow-xs"}
+                        style={pilot ? undefined : { background: "var(--color-gradient)" }}
                       >
                         <Check className="w-3.5 h-3.5 stroke-[3]" />
                       </div>

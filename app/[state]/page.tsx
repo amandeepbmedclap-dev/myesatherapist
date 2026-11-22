@@ -13,6 +13,7 @@ import { StateTrustBar } from "@/components/state/StateTrustBar";
 import { StateProcessSection } from "@/components/state/StateProcessSection";
 import { StateWhoQualifiesV2 } from "@/components/state/StateWhoQualifiesSection";
 import { StateEligibilityPanels } from "@/components/state/StateEligibilityPanels";
+import { isSectionPilot } from "@/lib/sectionPilot";
 import { StateBenefitsV2 } from "@/components/state/StateBenefitsSection";
 import { StateLawsSection } from "@/components/state/StateLawsSection";
 import { StateHousingRequestsSection } from "@/components/state/StateHousingRequestsSection";
@@ -176,6 +177,7 @@ export default async function DynamicStatePage({ params }: Props) {
             title={data.faqTitle}
             subtitle={data.faqSubtitle}
             faqs={data.faqs}
+            variant={isSectionPilot(data.slug) ? "light" : "classic"}
           />
         </div>
         {data.ctaTitle && (

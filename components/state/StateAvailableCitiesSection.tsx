@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { StateData } from "@/data/statesData";
+import { isSectionPilot } from "@/lib/sectionPilot";
 
 export function StateAvailableCitiesSection({ data }: { data: StateData }) {
   const stateName = data.name;
@@ -12,6 +13,7 @@ export function StateAvailableCitiesSection({ data }: { data: StateData }) {
   if (cities.length === 0) return null;
 
   const hasDescriptions = cities.some((c) => !!c.description);
+  const pilot = isSectionPilot(data.slug);
 
   return (
     <section className="w-full bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
@@ -25,7 +27,23 @@ export function StateAvailableCitiesSection({ data }: { data: StateData }) {
           </p>
         </div>
 
-        {hasDescriptions ? (
+        {hasDescriptions && pilot ? (
+          <div className="mx-auto grid max-w-[1280px] grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+            {cities.map((city, idx) => (
+              <div key={idx} className="hover-card hover-surface flex h-full flex-col rounded-[22px] bg-background p-6 ring-1 ring-line-200">
+                <span className="hover-badge flex size-14 items-center justify-center rounded-[16px] bg-white shadow-[0_6px_16px_-10px_rgba(26,61,79,0.5)]">
+                  <span className="relative size-10">
+                    <Image quality={90} src={city.icon} alt={`${city.name} map`} fill unoptimized className="object-contain" sizes="40px" />
+                  </span>
+                </span>
+                <h3 className="mt-5 font-heading !text-[21px] font-bold !leading-[28px] text-primary">{city.name}</h3>
+                {city.description && (
+                  <p className="mt-2 flex-1 font-sans text-[14.5px] leading-[24px] text-body-text">{city.description}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        ) : hasDescriptions ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 max-w-[1280px] mx-auto">
             {cities.map((city, idx) => (
               <div
