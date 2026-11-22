@@ -1925,12 +1925,12 @@ export const STATES_DATA: Record<string, StateData> = {
       {
         icon: "/home/whychoose-section-license-professional.svg",
         title: "Licensed Professionals",
-        description: "ESA evaluations are conducted by independent US licensed mental health professionals authorized to assess ESA eligibility. All of our providers are fully licensed, meaning they are practicing under an active, unrestricted license to practice. Many of our providers are licensed in multiple states, which can help when you are in the process of moving from one state to another.",
+        description: "ESA evaluations are conducted by independent US-licensed mental health professionals with active, unrestricted licenses. Many are licensed in multiple states, which helps if you are moving.",
       },
       {
         icon: "/home/whychoose-section-secure-thealth.svg",
         title: "Secure Telehealth Platform",
-        description: "Our HIPAA-compliant systems ensure your information remains confidential and protected. Any mental health service provided over an audio-video platform should be HIPAA-compliant in order to be secure and protect your information.",
+        description: "Our HIPAA-compliant systems keep your information confidential and protected, as any audio-video mental health service should.",
       },
       {
         icon: "/home/whychoose-section-clinical-integrity.svg",
@@ -1945,12 +1945,12 @@ export const STATES_DATA: Record<string, StateData> = {
       {
         icon: "/home/whychoose-section-nationwide-access.svg",
         title: "Nationwide Access",
-        description: "Telehealth evaluations are available for individuals across the United States, subject to clinician availability. Telehealth allows for accessibility without the need to travel to an office, saving you time and money. Telehealth scheduling also allows for appointments sooner rather than later.",
+        description: "Telehealth evaluations are available across the United States, subject to clinician availability. No office visit means less travel, lower costs, and sooner appointments.",
       },
       {
         icon: "/home/whychoose-section-transparent-process.svg",
         title: "Transparent Process",
-        description: "Our California ESA letter evaluation process helps you understand each stage, from the initial assessment to the clinician’s final decision. Clear steps, clear expectations, and no misleading claims. Be wary of any service that markets itself as being an instant-approval process or simple online registry.",
+        description: "Our California evaluation process explains each stage, from the initial assessment to the clinician’s final decision, with no misleading claims. Be wary of instant-approval services or simple online registries.",
       },
     ],
     reviewsTitle: "See Why ESA Owners in California Choose My ESA Therapist",
@@ -3596,7 +3596,7 @@ export const STATES_DATA: Record<string, StateData> = {
       {
         icon: "/home/whychoose-section-license-professional.svg",
         title: "Licensed Professionals",
-        description: "ESA evaluations are conducted by independent US licensed mental health professionals authorized to assess ESA eligibility. All of our providers are fully-licensed, meaning they are practicing under an active, unrestricted license to practice. Many of our providers are licensed in multiple states, which can help when you are in the process of moving from one state to another.",
+        description: "ESA evaluations are conducted by independent US-licensed mental health professionals with active, unrestricted licenses. Many are licensed in multiple states, which helps if you are moving.",
       },
       {
         icon: "/home/whychoose-section-secure-thealth.svg",
@@ -3616,12 +3616,12 @@ export const STATES_DATA: Record<string, StateData> = {
       {
         icon: "/home/whychoose-section-nationwide-access.svg",
         title: "Nationwide Access",
-        description: "Telehealth evaluations are available for individuals across the United States, subject to clinician availability. Telehealth allows for accessibility without the need to travel to an office, saving you time and money. Telehealth scheduling also allows for appointments sooner rather than later.",
+        description: "Telehealth evaluations are available across the United States, subject to clinician availability. No office visit means less travel, lower costs, and sooner appointments.",
       },
       {
         icon: "/home/whychoose-section-transparent-process.svg",
         title: "Transparent Process",
-        description: "Clear steps, clear expectations, and no misleading claims. Be wary of any service that markets itself as being an instant-approval process or simple online registry.",
+        description: "Clear steps, clear expectations, and no misleading claims. Be wary of any service marketed as instant approval or a simple online registry.",
       },
     ],
     reviewsTitle: "See What Our Clients in Florida Say About Their ESA Evaluation",
