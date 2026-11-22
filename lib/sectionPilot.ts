@@ -1,2 +1,2 @@
-/** State pages that get the redesigned lower sections (laws, housing requests, scams, cities, FAQ) while they are being reviewed. */
-export const isSectionPilot = (slug: string) => slug === "florida";
+/** Redesigned lower state-page sections (laws, housing requests, scams, cities + guides, FAQ). Rolled out to every state. */
+export const isSectionPilot = (_slug: string) => true;

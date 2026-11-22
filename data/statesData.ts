@@ -435,7 +435,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams in Alabama",
-    scamsCommonSubtitle: "Be cautious of services that may claim:",
+    scamsCommonSubtitle: "Be cautious of services that may claim any of the following.",
     scamsCommonItems: [
       "Instant or guaranteed ESA letters without a clinical evaluation.",
       "ESA \"certification\" or \"registration,\" which is not a substitute for an appropriate clinical evaluation.",
@@ -510,19 +510,19 @@ export const STATES_DATA: Record<string, StateData> = {
         a: "During an ESA evaluation in Alabama, clinicians typically ask about your mental health history, current symptoms, daily functioning, housing situation, and how an animal may provide emotional support. Questions focus on clinical need, not pet ownership preferences.",
       },
       {
-        q: "How Much Does an ESA Letter Cost in Alabama?",
+        q: "How much does an ESA letter cost in Alabama?",
         a: "At My ESA Therapist, an ESA letter evaluation in Alabama starts at $99. It includes the clinical evaluation and ESA documentation when the clinician determines that a recommendation is appropriate.",
       },
       {
-        q: "Can Any Doctor Write an ESA Letter in Alabama?",
+        q: "Can any doctor write an ESA letter in Alabama?",
         a: "No, not every doctor can write an ESA letter in Alabama. The letter must be issued by a licensed healthcare professional authorized to assess mental health and establish a therapeutic relationship, such as a licensed therapist, psychologist, psychiatrist, or other qualified healthcare professional authorized to assess mental health.",
       },
       {
-        q: "Can Working Professionals in Alabama Qualify for an Emotional Support Animal?",
+        q: "Can working professionals in Alabama qualify for an emotional support animal?",
         a: "Yes, working professionals in Alabama may qualify for an ESA if they have a mental health condition that affects daily functioning. Employment status does not impact eligibility, as ESA evaluations are based on clinical need, not occupation or income.",
       },
       {
-        q: "Is a Single ESA Appointment Enough in Alabama?",
+        q: "Is a single ESA appointment enough in Alabama?",
         a: "A single ESA appointment in Alabama may be sufficient only if it includes a legitimate clinical evaluation and establishes a therapeutic relationship. Instant or cursory visits without proper assessment typically do not meet ethical or professional standards for ESA recommendations.",
       },
       {
@@ -830,7 +830,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams in Alaska",
-    scamsCommonSubtitle: "Be cautious of websites that offer:",
+    scamsCommonSubtitle: "Be cautious of websites that offer any of the following.",
     scamsCommonItems: [
       "Instant ESA letters",
       "Approval without a clinical evaluation",
@@ -899,27 +899,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "This section addresses common questions about emotional support animals, housing considerations, and the evaluation process in Alaska.",
     faqs: [
       {
-        q: "Can I Take My ESA on an Airline in Alaska?",
+        q: "Can I take my ESA on an airline in Alaska?",
         a: "No. Most U.S. airlines, including flights to or within Alaska, do not recognize emotional support animals. ESAs usually travel under standard pet policies. Only trained psychiatric service dogs may qualify for in-cabin access. Check your airline's current requirements before traveling.",
       },
       {
-        q: "How Much Does an ESA Letter Cost in Alaska?",
+        q: "How much does an ESA letter cost in Alaska?",
         a: "At My ESA Therapist, the cost of an ESA letter in Alaska starts at $99, which includes a professional evaluation and ESA documentation when the clinician determines that a recommendation is appropriate.",
       },
       {
-        q: "Does an ESA Letter Override All Breed Rules?",
+        q: "Does an ESA letter override all breed rules?",
         a: "No, an ESA letter does not automatically override housing rules. Under FHA, an assistance-animal request must be evaluated under the applicable reasonable-accommodation requirements. Housing providers may consider relevant, objective concerns when assessing a request, rather than relying only on general assumptions about an animal.",
       },
       {
-        q: "Does My ESA Have to Be a Dog or Cat in Alaska?",
+        q: "Does my ESA have to be a dog or cat in Alaska?",
         a: "No. Emotional support animals are not limited to dogs or cats. Other animals may qualify if the accommodation request is reasonable and does not create health, safety, or property concerns.",
       },
       {
-        q: "Can I Have More Than One ESA in Alaska?",
+        q: "Can I have more than one ESA in Alaska?",
         a: "Possibly yes. Multiple ESAs may be considered if each animal is supported by a documented, disability-related need and the request is reasonable under Fair Housing Act guidelines.",
       },
       {
-        q: "Can a Landlord in Alaska Require My ESA to Be Spayed or Neutered?",
+        q: "Can a landlord in Alaska require my ESA to be spayed or neutered?",
         a: "It depends. Requirements involving an assistance animal can vary based on the circumstances, housing rules, and applicable law. An ESA accommodation does not eliminate reasonable requirements related to health, safety, animal control, or property protection. If a housing provider imposes a specific requirement, review the request in light of applicable fair housing rules.",
       },
     ],
@@ -1246,7 +1246,7 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsAlertTitle: "Important: No Official ESA Registry Exists",
     scamsAlertText: "There is no official government-based certification, verification system, or registry for emotional support animals in Arizona or elsewhere in the U.S.",
     scamsCommonTitle: "Common Arizona ESA Scams to Watch Out For",
-    scamsCommonSubtitle: "Be cautious of websites that claim the following:",
+    scamsCommonSubtitle: "Be cautious of websites that claim any of the following.",
     scamsCommonItems: [
       "Promise ESA registration or certification (these are not legally required).",
       "Offer instant or guaranteed approvals without a therapist’s evaluation.",
@@ -1353,27 +1353,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "We’ve answered some common questions for you in this section.",
     faqs: [
       {
-        q: "What Happens to My ESA Rights When I Move to Arizona?",
+        q: "What happens to my ESA rights when I move to Arizona?",
         a: "When you move to Arizona with your emotional support animal, your housing rights remain protected under the federal Fair Housing Act (FHA). Some housing providers may request updated ESA documentation from an Arizona-licensed mental health professional. To avoid delays, review local housing policies and update your ESA letter if needed.",
       },
       {
-        q: "What Is The Typical Cost of an ESA Letter In Arizona?",
+        q: "What is the typical cost of an ESA letter in Arizona?",
         a: "In Arizona, the cost of an ESA letter can vary based on the provider and evaluation process, but most legitimate services typically fall between $100–$300 for a licensed assessment. At My ESA Therapist, the fee is $99, which includes a professional evaluation and the ESA letter issued upon approval.",
       },
       {
-        q: "What Are the Requirements for Emotional Support Animals in Arizona?",
+        q: "What are the requirements for emotional support animals in Arizona?",
         a: "To qualify for an emotional support animal in Arizona, you need a clinical evaluation and a valid ESA letter from a licensed mental health professional. Housing rights are protected under the federal Fair Housing Act.",
       },
       {
-        q: "Can My Child Qualify for an ESA If They Have Anxiety?",
+        q: "Can my child qualify for an ESA if they have anxiety?",
         a: "Yes. A child with anxiety may qualify for an emotional support animal if a licensed mental health professional determines it is clinically appropriate. Parental or guardian consent is required for minors.",
       },
       {
-        q: "If I have ADHD, Can I Get an Emotional Support Animal in Arizona?",
+        q: "If I have ADHD, can I get an emotional support animal in Arizona?",
         a: "Yes. If you have ADHD, you may qualify for an ESA in Arizona if a licensed mental health professional determines it is clinically appropriate and provides a valid ESA letter.",
       },
       {
-        q: "How to Spot a Fake ESA Service in Arizona?",
+        q: "How to spot a fake ESA service in Arizona?",
         a: "To avoid fake ESA services in Arizona, watch for sites that promise instant approvals, sell ESA registrations or certificates, lack licensed clinician details, or skip proper mental health evaluations. Legitimate ESA letters require a real clinical assessment.",
       },
     ],
@@ -1653,7 +1653,7 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsAlertTitle: "Important: No Official ESA Registry Exists",
     scamsAlertText: "There is no government-approved emotional support animal registry, certification, or licensing system in Arkansas or elsewhere in the United States.",
     scamsCommonTitle: "Common Arkansas ESA Scams to Watch Out For",
-    scamsCommonSubtitle: "Be cautious of services that:",
+    scamsCommonSubtitle: "Be cautious of services that do any of the following.",
     scamsCommonItems: [
       "Claim to register or certify emotional support animals",
       "Sell ESA certificates, ID cards, or vests as legal proof",
@@ -1768,7 +1768,7 @@ export const STATES_DATA: Record<string, StateData> = {
         a: "An emotional support animal letter may be issued through telehealth if the healthcare provider is properly licensed and complies with Arkansas HB 1420 requirements, including the 30-day client–provider relationship and a legitimate evaluation. Instant or same-day letters do not meet Arkansas legal standards.",
       },
       {
-        q: "How Much Does An ESA Letter Cost In Arkansas?",
+        q: "How much does an ESA letter cost in Arkansas?",
         a: "An ESA letter in Arkansas can cost anywhere between $150 and $300, depending on the provider and evaluation process. My ESA Therapist charges $99, which includes a professional evaluation conducted by a state-accredited mental health expert and an ESA letter upon approval.",
       },
       {
@@ -2047,7 +2047,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams",
-    scamsCommonSubtitle: "Be cautious of services that:",
+    scamsCommonSubtitle: "Be cautious of services that do any of the following.",
     scamsCommonItems: [
       "Claim to register or certify emotional support animals",
       "Sell ESA certificates, ID cards, or vests as ‘legal proof'",
@@ -2145,7 +2145,7 @@ export const STATES_DATA: Record<string, StateData> = {
         a: "If you pursue an ESA evaluation through our platform, the fee is $99. This covers the clinical evaluation, the legally required 30-day client-provider relationship, and ESA documentation if a recommendation is made. If an ESA is not determined to be clinically appropriate, no letter is issued, and 100% refund is provided. Approval for an ESA is not guaranteed.",
       },
       {
-        q: "Can I Get an ESA Letter Online in California?",
+        q: "Can I get an ESA letter online in California?",
         a: "Yes. California allows ESA evaluations to be conducted via telehealth, provided the professional is licensed in California, conducts a proper clinical assessment, and maintains the required 30-day therapeutic relationship before issuing any recommendation.",
       },
       {
@@ -2153,7 +2153,7 @@ export const STATES_DATA: Record<string, StateData> = {
         a: "California law does not establish a fixed expiration date for an ESA letter. However, a housing provider may request updated documentation when permitted under applicable housing laws and based on the circumstances of the accommodation request.",
       },
       {
-        q: "How Many ESAs Can I Have in California?",
+        q: "How many ESAs can I have in California?",
         a: "In some cases, more than one emotional support animal may be recommended. Each animal must be individually assessed, and a licensed mental health professional must determine that each provides a distinct therapeutic benefit.",
       },
       {
@@ -2193,7 +2193,7 @@ export const STATES_DATA: Record<string, StateData> = {
         a: "Generally, no. Emotional support animals do not have the same public access rights as trained service animals, meaning restaurants, retail stores, and other businesses may legally restrict access. Emotional Support Animals do not have public access rights under the Americans with Disabilities Act (ADA).",
       },
       {
-        q: "Can a California Landlord Require Proof of Training for My Emotional Support Animal?",
+        q: "Can a California landlord require proof of training for my emotional support animal?",
         a: "No. Emotional support animals are not required to have specialized training. However, the animal should be well-behaved, under control, and not pose a significant health, safety, or property damage risk. It may be beneficial to obtain training for your ESA to ensure they do not cause property damage, as you can be held liable for these repair fees.",
       },
       {
@@ -2217,7 +2217,7 @@ export const STATES_DATA: Record<string, StateData> = {
         a: "No. California does not require emotional support animals to wear vests, ID cards, tags, or special markings. Housing rights are generally based on documentation, not accessories or registration products.",
       },
       {
-        q: "Can a California Landlord Ask My Therapist Directly to Verify the ESA Letter?",
+        q: "Can a California landlord ask my therapist directly to verify the ESA letter?",
         a: "In some cases, a landlord may seek to verify that the letter was issued by a licensed mental health professional. However, they generally cannot request detailed medical information or access to your treatment records. They cannot request the specific diagnosis to be disclosed, nor the severity of your disability.",
       },
     ],
@@ -2495,7 +2495,7 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsAlertTitle: "Important: No Official ESA Registry Exists",
     scamsAlertText: "Colorado does not have any government-approved ESA registry, certification system, or official database, and neither does any other state.",
     scamsCommonTitle: "Common ESA Scams to Watch Out For",
-    scamsCommonSubtitle: "Be cautious of services that:",
+    scamsCommonSubtitle: "Be cautious of services that do any of the following.",
     scamsCommonItems: [
       "Sell ESA “registration” or “certification”.",
       "Sell fake ESA badges.",
@@ -2900,7 +2900,7 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsAlertTitle: "Important: No Official ESA Registry Exists",
     scamsAlertText: "There is no state- or federally approved registry, certification, or identification system for emotional support animals in Connecticut or anywhere else in the United States.",
     scamsCommonTitle: "Common ESA Scams",
-    scamsCommonSubtitle: "Watch out for services that:",
+    scamsCommonSubtitle: "Watch out for services that do any of the following.",
     scamsCommonItems: [
       "Advertise ESA registration or certification",
       "Sell ESA ID cards, certificates, or vests as proof",
@@ -3042,7 +3042,7 @@ export const STATES_DATA: Record<string, StateData> = {
         a: "Connecticut law does not establish a universal one-year expiration period for ESA documentation. A housing provider may request updated information when permitted under applicable housing laws and when necessary to evaluate an accommodation request.",
       },
       {
-        q: "What Is The Typical Cost Of An ESA Letter In Connecticut?",
+        q: "What is the typical cost of an ESA letter in Connecticut?",
         a: "In Connecticut, ESA letter costs vary by provider and evaluation method, with most legitimate services typically ranging between $100–$200 for a licensed assessment. At My ESA Therapist, the fee is $99, which includes a professional evaluation and the ESA letter upon approval.",
       },
       {
@@ -3304,7 +3304,7 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsAlertTitle: "Important: No Official ESA Registry Exists",
     scamsAlertText: "There is no state- or federally approved registry, certification, or identification system for emotional support animals in Delaware or anywhere else in the United States.",
     scamsCommonTitle: "Common ESA Scams",
-    scamsCommonSubtitle: "Be cautious of websites or services that:",
+    scamsCommonSubtitle: "Be cautious of websites or services that do any of the following.",
     scamsCommonItems: [
       "Promote “ESA registrations” or claim official certification programs",
       "Market non-recognized ESA paperwork, ID badges, or support animal gear",
@@ -3440,27 +3440,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Find clear and reliable information addressing your questions about obtaining an emotional support animal letter in Delaware.",
     faqs: [
       {
-        q: "Does an ESA Letter Need to Be Renewed Every Year in Delaware?",
+        q: "Does an ESA letter need to be renewed every year in Delaware?",
         a: "Although annual renewal is not universally required by law, a housing provider may request updated documentation when permitted under applicable fair housing laws and when reasonably necessary to evaluate an accommodation request.",
       },
       {
-        q: "What Is the Cost of Getting an ESA Letter in Delaware?",
+        q: "What is the cost of getting an ESA letter in Delaware?",
         a: "In Delaware, ESA letter pricing depends on the provider and consultation process, but most reliable services generally fall between $100 to $200 for a licensed evaluation. At My ESA Therapist, the fee is $99, covering the evaluation and issuance of the ESA letter if you qualify.",
       },
       {
-        q: "What Makes An ESA Letter Legally Valid In Delaware?",
+        q: "What makes an ESA letter legally valid in Delaware?",
         a: "ESA documentation should identify the qualified professional, include appropriate contact and licensing information, and provide reliable information supporting the disability-related need for the assistance animal when such information is necessary.",
       },
       {
-        q: "What Qualifies As “Reliable Documentation” For An ESA In Delaware?",
+        q: "What qualifies as “reliable documentation” for an ESA in Delaware?",
         a: "Reliable documentation must come from a Delaware-licensed healthcare or mental health professional who has personal knowledge of your condition and has evaluated you in a clinical setting. Generic online certificates or instant approvals do not meet this standard.",
       },
       {
-        q: "Do I Need To Register My Emotional Support Animal In Delaware?",
+        q: "Do I need to register my emotional support animal in Delaware?",
         a: "No. Delaware does not recognize any official ESA registry. Online registrations, ID cards, or certificates have no legal value without a valid ESA letter.",
       },
       {
-        q: "Can Landlords Charge Pet Fees For ESAs In Delaware?",
+        q: "Can landlords charge pet fees for ESAs in Delaware?",
         a: "No. ESAs are not considered pets under the FHA, so landlords generally cannot charge pet rent, pet deposits, or enforce breed or size restrictions.",
       },
     ],
@@ -4249,7 +4249,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams in Georgia",
-    scamsCommonSubtitle: "Be mindful of websites or services that:",
+    scamsCommonSubtitle: "Be mindful of websites or services that do any of the following.",
     scamsCommonItems: [
       "Advertise ESA registration or official certifications",
       "Sell unofficial ESA documents, ID cards, or animal vests",
@@ -4348,7 +4348,7 @@ export const STATES_DATA: Record<string, StateData> = {
         a: "Housing providers generally must consider reasonable accommodation requests for qualifying emotional support animals. However, a request may be denied in limited circumstances permitted by fair housing law, such as a documented direct threat or significant property damage that cannot be mitigated.",
       },
       {
-        q: "How Much Does An ESA Letter Cost In Georgia?",
+        q: "How much does an ESA letter cost in Georgia?",
         a: "The cost of an ESA letter in Georgia can differ based on the provider and how the evaluation is conducted. At My ESA Therapist, the fee is $99, covering an assessment by a licensed mental health professional and the issuance of an ESA letter if you qualify.",
       },
       {
@@ -4635,7 +4635,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Warning Signs of ESA Scams in Hawaii",
-    scamsCommonSubtitle: "Be cautious of platforms that:",
+    scamsCommonSubtitle: "Be cautious of platforms that do any of the following.",
     scamsCommonItems: [
       "Claim there is an “official ESA registry” in Hawaii.",
       "Sell instant ESA certificates, ID cards, vests, or badges as proof of legitimacy.",
@@ -4730,27 +4730,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Understand everything that revolves around emotional support animals in Hawaii!",
     faqs: [
       {
-        q: "Can Landlords In Hawaii Verify My ESA Letter Directly With The Therapist?",
+        q: "Can landlords in Hawaii verify my ESA letter directly with the therapist?",
         a: "Yes, landlords can verify the authenticity of the letter with the provider, but they cannot request detailed medical or personal health information.",
       },
       {
-        q: "Do Hawaii Landlords Have A Response Time For ESA Accommodation Requests?",
+        q: "Do Hawaii landlords have a response time for ESA accommodation requests?",
         a: "There is no fixed timeline, but landlords are expected to respond within a reasonable period without unnecessary delays.",
       },
       {
-        q: "What Is The Typical Cost Of An ESA Letter In Hawaii?",
+        q: "What is the typical cost of an ESA letter in Hawaii?",
         a: "In Hawaii, the cost of an ESA letter depends on the provider and evaluation process, with most legitimate services typically ranging between $100–$200 for a licensed assessment. At My ESA Therapist, the fee is $99, which includes a professional evaluation and the ESA letter upon approval.",
       },
       {
-        q: "Do I Need To Renew My ESA Letter Every Year In Hawaii?",
+        q: "Do I need to renew my ESA letter every year in Hawaii?",
         a: "While not strictly required by law, many landlords request updated documentation annually to confirm the most current need for an ESA.",
       },
       {
-        q: "What Happens If My ESA Causes Property Damage In Hawaii Housing?",
+        q: "What happens if my ESA causes property damage in Hawaii Housing?",
         a: "Tenants are responsible for any damage caused by their ESA, even if they are exempt from pet-related fees.",
       },
       {
-        q: "Can Telehealth Evaluations For ESA Letters Be Used In Hawaii?",
+        q: "Can telehealth evaluations for ESA letters be used in Hawaii?",
         a: "Yes, telehealth ESA evaluations are acceptable if conducted by a licensed professional following proper clinical standards.",
       },
     ],
@@ -5026,7 +5026,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams in Idaho",
-    scamsCommonSubtitle: "Be cautious of platforms or services that:",
+    scamsCommonSubtitle: "Be cautious of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Claim your ESA can be “officially registered” in an Idaho database, or suggest any form of state-backed certification exists.",
       "Promote ID cards, vests, tags, or certificates as mandatory legal proof of an ESA.",
@@ -5121,27 +5121,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Get clear and dependable answers to common questions about emotional support animals in Idaho by reviewing the frequently asked questions provided below.",
     faqs: [
       {
-        q: "Can an ESA Letter in Idaho Have An Expiration Date?",
+        q: "Can an ESA letter in Idaho have an expiration date?",
         a: "No, although there is no fixed expiration date for ESA letter Idaho, many landlords may request an updated letter annually for continued accommodation.",
       },
       {
-        q: "How Much Does an ESA Letter Cost in Idaho?",
+        q: "How much does an ESA letter cost in Idaho?",
         a: "In Idaho, ESA letter pricing varies by provider, but most reliable services generally fall between $150–$250 for a proper licensed evaluation. At My ESA Therapist, the fee is $99, covering the evaluation and issuance of the ESA letter if you qualify.",
       },
       {
-        q: "Are Online ESA Evaluations Legally Valid in Idaho?",
+        q: "Are online ESA evaluations legally valid in Idaho?",
         a: "Yes, as long as the evaluation is conducted by a licensed Idaho mental health professional and includes a legitimate clinical assessment via telehealth.",
       },
       {
-        q: "Is an ESA Letter Transferable Between Different Housing Properties?",
+        q: "Is an ESA letter transferable between different Housing properties?",
         a: "Yes, but each new housing provider may independently verify the letter and assess the accommodation request under federal housing guidelines.",
       },
       {
-        q: "Are Exotic Animals Allowed as ESAs in Idaho?",
+        q: "Are exotic animals allowed as ESAs in Idaho?",
         a: "Uncommon animals may be considered, but approval depends on whether the animal poses safety, health, or property risks.",
       },
       {
-        q: "Can an ESA Letter Be Used for Workplace Accommodations in Idaho?",
+        q: "Can an ESA letter be used for workplace accommodations in Idaho?",
         a: "Not automatically. Workplace accommodations fall under different laws, and employers are not required to accept ESA letters in most cases.",
       },
     ],
@@ -5416,7 +5416,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams in Illinois",
-    scamsCommonSubtitle: "Be cautious of websites that:",
+    scamsCommonSubtitle: "Be cautious of websites that do any of the following.",
     scamsCommonItems: [
       "Claim ESA registration, certification, or ID cards are legally required.",
       "Promise instant or guaranteed ESA approvals.",
@@ -5513,11 +5513,11 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "This section addresses common questions about emotional support animals, housing considerations, and the evaluation process in Illinois.",
     faqs: [
       {
-        q: "Does Illinois recognize Emotional Support Animals (ESAs)?",
+        q: "Does Illinois recognize emotional support animals (ESAs)?",
         a: "Yes. Illinois recognizes Emotional Support Animals under federal fair housing laws. ESAs are allowed as reasonable accommodations in housing for people with qualifying mental or emotional disabilities, even though they are not considered service animals.",
       },
       {
-        q: "What Does An ESA Letter Typically Cost In Illinois?",
+        q: "What does an ESA letter typically cost in Illinois?",
         a: "ESA letter pricing in Illinois can differ based on the provider, but most reliable services usually charge between $100–$250 for a licensed mental health evaluation. At My ESA Therapist, the fee is $99, which includes the assessment and ESA letter upon approval.",
       },
       {
@@ -5529,7 +5529,7 @@ export const STATES_DATA: Record<string, StateData> = {
         a: "No. Illinois does not require ESA registration, and online certificates or registries have no legal standing. An Illinois-licensed healthcare professional may provide appropriate ESA documentation based on an individualized evaluation and the individual’s disability-related need.",
       },
       {
-        q: "Can Anyone Get an Emotional Support Animal in Illinois?",
+        q: "Can anyone get an emotional support animal in Illinois?",
         a: "No. Only individuals with a diagnosed mental or emotional health condition that substantially affects daily life can qualify. A licensed healthcare provider must determine the need for an ESA as part of a legitimate therapeutic relationship.",
       },
       {
@@ -5793,7 +5793,7 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsAlertTitle: "Important: No Official ESA Registry Exists",
     scamsAlertText: "There is no state or federal registry, certification system, database, or official ESA ID in Indiana or anywhere else in the United States.",
     scamsCommonTitle: "Common ESA Scams",
-    scamsCommonSubtitle: "Be cautious of online services that:",
+    scamsCommonSubtitle: "Be cautious of online services that do any of the following.",
     scamsCommonItems: [
       "Advertise “ESA registrations” or suggest there is an official certification system.",
       "Sell unofficial ESA letters, ID cards, badges, or animal accessories.",
@@ -5901,27 +5901,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Get clear, straightforward answers to your questions about securing an emotional support animal letter in Indiana.",
     faqs: [
       {
-        q: "Can A Landlord Deny An ESA In Indiana?",
+        q: "Can a landlord deny an ESA in Indiana?",
         a: "Yes, but only in limited situations such as when the specific animal poses a documented health or safety risk or would cause significant property damage.",
       },
       {
-        q: "Is Misrepresenting A Pet As An ESA Illegal In Indiana?",
+        q: "Is misrepresenting a pet as an ESA illegal in Indiana?",
         a: "Yes. Falsely claiming an animal as an assistance or support animal to gain housing benefits can result in legal consequences under Indiana law, making accurate documentation essential.",
       },
       {
-        q: "What Is The Average Price Of An ESA Letter In Indiana?",
+        q: "What is the average price of an ESA letter in Indiana?",
         a: "In Indiana, the cost of an ESA letter depends on the evaluation process, with most trusted providers generally falling within the $100–$200 range. At My ESA Therapist, the fee is $99, covering both the professional evaluation and the ESA letter if you qualify.",
       },
       {
-        q: "Does My ESA Letter in Indiana Expire?",
+        q: "Does my ESA letter in Indiana expire?",
         a: "There is no general fixed expiration date for ESA documentation in Indiana. However, a housing provider may request updated reliable information when permitted under applicable fair housing requirements and based on the circumstances of the accommodation request.",
       },
       {
-        q: "Can My Out-Of-State ESA Letter Work In Indiana?",
+        q: "Can my out-of-state ESA letter work in Indiana?",
         a: "An out-of-state ESA letter is not automatically invalid in Indiana. Documentation should come from a qualified healthcare professional who is authorized to provide care to the individual under applicable licensure requirements and has sufficient knowledge of the disability-related need.",
       },
       {
-        q: "What Happens If I Have More Than 1 Emotional Support Animal in Indiana?",
+        q: "What happens if I have more than 1 emotional support animal in Indiana?",
         a: "There is no fixed limit on the number of ESAs allowed in housing. However, each animal must be supported by proper documentation and considered reasonable based on your therapeutic needs and housing guidelines.",
       },
     ],
@@ -6197,7 +6197,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Stay cautious of online platforms or services that:",
+    scamsCommonSubtitle: "Stay cautious of online platforms or services that do any of the following.",
     scamsCommonItems: [
       "Advertise “ESA registration” programs or claim there is a government-recognized certification system",
       "Offer ESA ID cards, vests, patches, or certificates as proof of legal status",
@@ -6291,27 +6291,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Find clear and reliable answers to your questions about obtaining an emotional support animal letter in Iowa by exploring the frequently asked questions provided below.",
     faqs: [
       {
-        q: "Can I Use My ESA Letter In An Iowa Workplace?",
+        q: "Can I use my ESA letter in an Iowa workplace?",
         a: "Emotional support animals do not fall under any laws that allow individuals to take them to workplaces. Unlike service animals, which are covered by ADA, the approval to bring along ESAs to work depends on the employer’s policies, on a case-by-case basis, and is not guaranteed.",
       },
       {
-        q: "How Much Should You Expect To Pay For An ESA Letter In Iowa?",
+        q: "How much should you expect to pay for an ESA letter in Iowa?",
         a: "ESA letter costs in Iowa vary by service, though most legitimate providers typically charge around $100–$200 for a proper licensed assessment. At My ESA Therapist, the fee is $99, including the evaluation and, if approved, issuance of the ESA letter.",
       },
       {
-        q: "Is My Out-Of-State ESA Letter Valid If I Move To Iowa?",
+        q: "Is my out-of-state ESA letter valid if I move to Iowa?",
         a: "If you are relocating to Iowa, your existing ESA documentation is not automatically invalid solely because it was issued in another state. However, Iowa's documentation requirements, including the applicable provider-patient relationship and other requirements under Iowa Code § 216.8C, should be satisfied when updated documentation is needed.",
       },
       {
-        q: "How Long Is An ESA Letter Valid In Iowa?",
+        q: "How long is an ESA letter valid in Iowa?",
         a: "Under Iowa law, the written finding must include an issuance and expiration date and is generally valid for 12 months or the term of the rental agreement, as specified by the applicable law.",
       },
       {
-        q: "Can A Landlord In Iowa Verify My ESA Letter Directly With The Provider?",
+        q: "Can a landlord in Iowa verify my ESA letter directly with the provider?",
         a: "Yes. A landlord has the right to independently verify the ESA letter directly with the provider. They may deny an accommodation request when the documentation is fraudulent or otherwise does not satisfy applicable requirements. Additionally, misrepresenting an animal as a service animal constitutes a simple misdemeanor under Iowa Code § 216C.11, which can lead to jail time or a penalty.",
       },
       {
-        q: "What Happens If My Iowa Landlord Claims Their Property Is Exempt From ESA Rules?",
+        q: "What happens if my Iowa landlord claims their property is exempt from ESA rules?",
         a: "Certain small, owner-occupied properties may qualify for exemptions under federal housing law. While a landlord cannot deny accommodation requests when a legitimate ESA letter is presented, ESA protections apply depending on the size and structure of the housing arrangement.",
       },
     ],
@@ -6586,7 +6586,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams",
-    scamsCommonSubtitle: "Red Flags to Watch for in ESA Services in Kansas. Be cautious of platforms that:",
+    scamsCommonSubtitle: "Be cautious of platforms that do any of the following.",
     scamsCommonItems: [
       "Claim there is an “official ESA registry” in Kansas.",
       "Sell instant ESA certificates, ID cards, vests, or badges as proof of legitimacy.",
@@ -6681,27 +6681,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Get an idea of everything related to emotional support animals in Kansas!",
     faqs: [
       {
-        q: "Are Online ESA Evaluations Valid For Kansas Residents?",
+        q: "Are online ESA evaluations valid for Kansas residents?",
         a: "Yes. Online ESA evaluations are valid if conducted by a licensed mental health professional authorized to practice in Kansas and include a proper clinical assessment.",
       },
       {
-        q: "Do ESA Letters In Kansas Need To Include A Specific Diagnosis?",
+        q: "Do ESA letters in Kansas need to include a specific diagnosis?",
         a: "No, the letter typically does not need to disclose a specific diagnosis. When documentation is appropriate, it should provide sufficient reliable information to establish the disability-related need for the assistance animal.",
       },
       {
-        q: "What Is The Usual Cost Of An ESA Letter In Kansas?",
+        q: "What is the usual cost of an ESA letter in Kansas?",
         a: "ESA letter pricing in Kansas can vary depending on the provider and the evaluation process. At My ESA Therapist, the fee is $99, which includes a complete assessment and the ESA letter if approved.",
       },
       {
-        q: "Is An ESA Letter Transferable Between States If I Move From Kansas?",
+        q: "Is an ESA letter transferable between states if I move from Kansas?",
         a: "An ESA letter is not automatically invalid because you move to another state. However, if updated documentation is needed, the healthcare professional should be appropriately authorized to provide care in the new state, and the documentation should meet the applicable requirements there.",
       },
       {
-        q: "What Happens If An ESA Letter Is Found To Be Fraudulent In Kansas?",
+        q: "What happens if an ESA letter is found to be fraudulent in Kansas?",
         a: "Using a fake ESA letter may lead to denial of accommodation requests and potential legal or housing-related consequences.",
       },
       {
-        q: "Can Family Members Use The Same ESA Letter In Kansas?",
+        q: "Can family members use the same ESA letter in Kansas?",
         a: "No, ESA letters are issued for a specific individual and cannot be shared or applied to others.",
       },
     ],
@@ -6977,7 +6977,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams",
-    scamsCommonSubtitle: "ESA Scam Warning Signs in Kentucky. Be mindful of services or platforms that:",
+    scamsCommonSubtitle: "Be mindful of services or platforms that do any of the following.",
     scamsCommonItems: [
       "Claim your ESA is “officially registered” in a Kentucky database or suggest there is any state-approved registry or certification system.",
       "Sell ID cards, badges, or certificates and present them as valid legal proof of ESA status.",
@@ -7071,27 +7071,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Clear all your queries by looking at the most-asked questions about an emotional support animal letter Kentucky.",
     faqs: [
       {
-        q: "Are Online ESA Evaluations Valid In Kentucky?",
+        q: "Are online ESA evaluations valid in Kentucky?",
         a: "Yes, but only if conducted by a licensed mental health professional who follows proper evaluation standards and establishes a genuine client relationship.",
       },
       {
-        q: "Can A Landlord Request Renewal Of An ESA Letter Annually?",
+        q: "Can a landlord request renewal of an ESA letter annually?",
         a: "It depends. A housing provider may request updated reliable information when permitted under applicable fair housing requirements and when reasonably necessary to evaluate the ongoing accommodation request. They generally should not require unnecessary or excessive renewals.",
       },
       {
-        q: "What Is The Typical Cost Of An ESA Letter In Kentucky?",
+        q: "What is the typical cost of an ESA letter in Kentucky?",
         a: "In Kentucky, the pricing of ESA letters varies by provider and the mental health evaluation process. At My ESA Therapist, the fee is $99, which includes the evaluation and ESA letter upon approval.",
       },
       {
-        q: "Is An ESA Letter Valid If I Move Within Kentucky?",
+        q: "Is an ESA letter valid if I move within Kentucky?",
         a: "An ESA letter does not automatically guarantee acceptance in every housing situation. A housing provider may evaluate the accommodation request and request reliable supporting documentation when permitted under applicable fair housing requirements.",
       },
       {
-        q: "What Happens If An ESA Causes Repeated Disturbances?",
+        q: "What happens if an ESA causes repeated disturbances?",
         a: "Landlords can take action if the animal disrupts others or violates lease terms, even if it is an approved ESA.",
       },
       {
-        q: "Can An ESA Letter Be Transferred To A New Owner Or Pet?",
+        q: "Can an ESA letter be transferred to a New owner or pet?",
         a: "No, ESA letters are specific to an individual’s condition and recommendation; a new evaluation is needed for a different animal.",
       },
     ],
@@ -7367,7 +7367,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be cautious of platforms or services that:",
+    scamsCommonSubtitle: "Be cautious of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Advertise “ESA registration” programs or claim there is an official government certification system.",
       "Offer ESA ID cards, vests, patches, or certificates as proof of legal status.",
@@ -7461,27 +7461,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Get answers to all your concerns and queries regarding an emotional support animal letter in Louisiana by having a look at the most frequently asked questions below!",
     faqs: [
       {
-        q: "Can I Bring My ESA To Work In Louisiana?",
+        q: "Can I bring my ESA to work in Louisiana?",
         a: "Unlike psychiatric service dogs, emotional support animals are not automatically allowed in public places and workspaces. Accepting accommodation requests depends on the employer and company policies and cannot be guaranteed.",
       },
       {
-        q: "Do ESA Letters Expire In Louisiana?",
+        q: "Do ESA letters expire in Louisiana?",
         a: "There is no general federal 12-month expiration rule for ESA documentation. However, a housing provider may request updated reliable information when permitted under applicable fair housing requirements and reasonably necessary to evaluate an accommodation request.",
       },
       {
-        q: "How Much Does An ESA Letter Usually Cost In Louisiana?",
+        q: "How much does an ESA letter usually cost in Louisiana?",
         a: "In Louisiana, the cost of an ESA letter depends on the provider and consultation process, with most legitimate services typically ranging between $100–$200. At My ESA Therapist, the ESA letter fee is $99, plus a $50 fee for the required follow-up session around day 30, for a total of $149. This covers both the assessment and the ESA letter if you qualify.",
       },
       {
-        q: "Can My Landlord Delay Responding To My ESA Request?",
+        q: "Can my landlord delay responding to my ESA request?",
         a: "There is no specified ‘set time’ to respond to an ESA request under the Fair Housing Act. But, housing providers must review accommodation requests within a reasonable timeframe. Unnecessary delays without valid reason may raise fair housing concerns.",
       },
       {
-        q: "What Happens If My ESA Letter Is From An Online “Registry” Website?",
+        q: "What happens if my ESA letter is from an online “registry” website?",
         a: "Louisiana does not recognize ESA registries, ID cards, or certifications as legal documentation. Housing providers may deny requests based on paperwork that does not come from a licensed clinician following proper evaluation standards.",
       },
       {
-        q: "What If My Louisiana Landlord Says Their Insurance Will Not Allow My ESA?",
+        q: "What if my Louisiana landlord says their insurance will not allow my ESA?",
         a: "Insurance-related concerns do not automatically justify denying an assistance-animal accommodation. Housing providers should evaluate the specific circumstances and applicable fair housing requirements rather than relying solely on generalized or unsupported insurance restrictions.",
       },
     ],
@@ -7757,7 +7757,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Claim your ESA is “officially registered” in a Maine database or suggest a government-approved registry exists.",
       "Sell ID cards, certificates, or badges as legal proof of ESA status.",
@@ -7851,27 +7851,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Get answers to all your queries regarding getting an emotional support animal letter in Maine by looking at the most asked questions below!",
     faqs: [
       {
-        q: "Are Online ESA Evaluations Valid In Maine?",
+        q: "Are online ESA evaluations valid in Maine?",
         a: "Yes, provided the evaluation is conducted by an appropriately licensed healthcare professional who is authorized to provide the applicable evaluation and follows applicable professional and legal requirements",
       },
       {
-        q: "What Is The Cost Of An ESA Letter In Maine?",
+        q: "What is the cost of an ESA letter in Maine?",
         a: "ESA letter costs in Maine vary by provider, but most reliable services generally charge around $100 to $200 for a proper licensed evaluation. At My ESA Therapist, the fee is $99, which includes the evaluation and issuance of the ESA letter upon approval.",
       },
       {
-        q: "Can Landlords Request Yearly Renewal Of An ESA Letter?",
+        q: "Can landlords request yearly renewal of an ESA letter?",
         a: "There is no general federal requirement for an ESA letter to be renewed every year. A housing provider may request updated reliable information when permitted by applicable fair housing requirements and reasonably necessary to evaluate an accommodation request.",
       },
       {
-        q: "Is An ESA Letter Valid After Moving Within Maine?",
+        q: "Is an ESA letter valid after moving within Maine?",
         a: "Yes, as long as the letter remains current and is issued by a licensed provider, it can be used across different housing situations in the state.",
       },
       {
-        q: "What If An ESA Causes Disturbances?",
+        q: "What if an ESA causes disturbances?",
         a: "A housing provider may take appropriate action when an assistance animal poses a direct threat, causes substantial physical damage, or substantially interferes with the reasonable enjoyment of the housing by others, subject to applicable fair housing requirements",
       },
       {
-        q: "Can An ESA Letter Be Transferred To Another Person Or Animal?",
+        q: "Can an ESA letter be transferred to another person or animal?",
         a: "No, ESA letters are issued based on an individual’s condition and cannot be reassigned; a new evaluation is required.",
       },
     ],
@@ -8130,7 +8130,7 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsAlertTitle: "Important: No Official ESA Registry Exists",
     scamsAlertText: "There is no official ESA registry, certification program, or government-issued ID for emotional support animals in Maryland or anywhere else in the United States.",
     scamsCommonTitle: "Common ESA Scams",
-    scamsCommonSubtitle: "Be careful of websites or services that:",
+    scamsCommonSubtitle: "Be careful of websites or services that do any of the following.",
     scamsCommonItems: [
       "Promote “ESA registrations” or claim there is an official certification program",
       "Offer ESA ID cards, patches, certificates, or other items as proof of status",
@@ -8237,27 +8237,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Explore the frequently asked questions below to gain clearer insight into the steps involved, eligibility criteria, and legal guidelines for obtaining an emotional support animal letter in Maryland.",
     faqs: [
       {
-        q: "What Type Of Professional Can Issue An ESA Letter In Maryland?",
+        q: "What type of professional can issue an ESA letter in Maryland?",
         a: "A licensed mental health professional or healthcare provider who is permitted to practice in Maryland, such as a certified clinical social worker, registered counselor, psychologist, or psychiatrist, needs to write an ESA letter.",
       },
       {
-        q: "What Is The Average Cost Of An ESA Letter In Maryland?",
+        q: "What is the average cost of an ESA letter in Maryland?",
         a: "In Maryland, ESA letter pricing can differ based on the provider, though most legitimate services typically range between $100 to $200 for a licensed assessment. At My ESA Therapist, the fee is $99, which includes a professional evaluation along with the ESA letter upon approval.",
       },
       {
-        q: "Does Maryland Require An In-Person Visit To Obtain An ESA Letter?",
+        q: "Does Maryland require an in-person visit to obtain an ESA letter?",
         a: "Maryland law does not specifically require in-person appointments. Telehealth evaluations are permitted when the assessment is conducted by a licensed Maryland clinician and meets professional standards.",
       },
       {
-        q: "Are Employers In Maryland Required To Allow ESAs In The Workplace?",
+        q: "Are employers in Maryland required to allow ESAs in the workplace?",
         a: "Unlike housing, emotional support animals are not automatically allowed in the workplace under the Fair Housing Act. Employees may consider requests under disability accommodation policies, but approval depends on case-to-case basis and is not guaranteed.",
       },
       {
-        q: "How Long Is An ESA Letter Considered Valid In Maryland?",
+        q: "How long is an ESA letter considered valid in Maryland?",
         a: "No. There is no fixed expiration date for ESA documentation in Maryland. A housing provider may request updated reliable information when permitted and reasonably necessary to evaluate an accommodation request.",
       },
       {
-        q: "Can A Housing Provider Deny An ESA In Maryland?",
+        q: "Can a Housing provider deny an ESA in Maryland?",
         a: "Yes, in limited circumstances. For example, if the particular animal poses a direct threat to health or safety or would cause substantial physical damage to property that cannot be reduced or eliminated through reasonable measures.",
       },
     ],
@@ -8517,7 +8517,7 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsAlertTitle: "Important: There Is No Government ESA Registry in Massachusetts",
     scamsAlertText: "There is no government-approved registry, certification, or identification system for emotional support animals in Massachusetts or anywhere else in the United States.",
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Make the claim that your ESA is “registered” in an official Massachusetts database or imply the presence of a state-recognized accreditation.",
       "Promote branded goods, laminated ID cards, or online certificates as legally enough evidence of ESA status.",
@@ -8626,27 +8626,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Get answers to the most frequently asked questions about an emotional support animal letter in Massachusetts!",
     faqs: [
       {
-        q: "Can A Therapy Animal Also Be An ESA In Massachusetts?",
+        q: "Can a therapy animal also be an ESA in Massachusetts?",
         a: "Yes. A therapy animal may also be eligible as an ESA for housing purposes if a licensed mental health provider in Massachusetts recommends it to meet your emotional or psychological needs. Having a legitimate ESA letter Massachusetts based on your assessment is important.",
       },
       {
-        q: "What Is The Typical Cost Of An ESA Letter In Massachusetts?",
+        q: "What is the typical cost of an ESA letter in Massachusetts?",
         a: "In Massachusetts, the cost of an ESA letter depends on the provider and evaluation process, with pricing varying based on the level of professional assessment involved. At My ESA Therapist, the fee is $99, which includes the evaluation and ESA letter upon approval.",
       },
       {
-        q: "How Long Is A Massachusetts ESA Letter Valid?",
+        q: "How long is a Massachusetts ESA letter valid?",
         a: "There is no set ‘expiry date’ for an ESA letter in Massachusetts. However, homeowners and landlords may ask for updated documentation issued within the last 12 months to confirm the most up-to-date need for an ESA.",
       },
       {
-        q: "Can I Have Multiple ESAs With One ESA Letter?",
+        q: "Can I have multiple ESAs with one ESA letter?",
         a: "If multiple assistance animals are requested, supporting documentation should explain the separate disability-related need for each animal when applicable. A separate ESA letter is required for every support animal to ensure legal recognition and compliance.",
       },
       {
-        q: "Are ESA Letters Recognized For Short-Term Rentals Or Airbnb Stays?",
+        q: "Are ESA letters recognized for short-term rentals or Airbnb stays?",
         a: "Generally, it is not necessary. Short-term rentals and vacation accommodations may be subject to different rules from ordinary housing. ESA protections are not automatically the same as those that apply to long-term housing, so travelers should check the property’s current policy and the laws applicable to the specific accommodation",
       },
       {
-        q: "When Can A Landlord Legally Reject An ESA In Massachusetts?",
+        q: "When can a landlord legally reject an ESA in Massachusetts?",
         a: "An ESA may be rejected by a landlord if the animal threatens people’s health or safety, seriously damages property, or fails to submit the required ESA paperwork from a qualified expert. It is illegal to discriminate based only on mental health or the existence of an ESA.",
       },
     ],
@@ -8906,13 +8906,13 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsAlertTitle: "Important Clarification: No Official ESA Registry",
     scamsAlertText: "There is no official state or federal registry, certification system, identification card, or database for emotional support animals in Michigan or the rest of the United States. A registered mental health provider is the source of valid ESA paperwork, not ID badges, quick certificates, or paid online registrations.",
     scamsCommonTitle: "Common ESA Scams",
-    scamsCommonSubtitle: "Frequent ESA Scams to Watch For. Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
-      "Claim your ESA can be “officially registered” in a Michigan database or imply that a state-recognized certification system exists.",
-      "Promote laminated ID cards, instant online certificates, or branded accessories as legally valid proof of ESA status.",
-      "Provide same-day approval letters without conducting a legitimate individualized clinical evaluation by a qualified healthcare provider.",
-      "Issue documentation without first establishing a valid provider-client relationship consistent with professional standards.",
-      "Guarantee automatic landlord approval without considering requirements under the Fair Housing Act or completing a compliant assessment.",
+      "Claim your ESA can be “officially registered” in a Michigan database or that state-recognized certification exists.",
+      "Promote laminated ID cards, instant online certificates, or branded accessories as legal proof of ESA status.",
+      "Provide same-day letters without an individualized clinical evaluation by a qualified provider.",
+      "Issue documentation without first establishing a valid provider-client relationship.",
+      "Guarantee automatic landlord approval without considering Fair Housing Act requirements.",
     ],
     scamsWhatYouNeedTitle: "What You Actually Need",
     scamsWhatYouNeedItems: [
@@ -9015,27 +9015,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "All your queries and concerns regarding an emotional support animal letter in Michigan will be resolved by quickly going through the most frequently asked questions below!",
     faqs: [
       {
-        q: "Can A Landlord In Michigan Contact The Clinician Who Issued My ESA Letter?",
+        q: "Can a landlord in Michigan contact the clinician who issued my ESA letter?",
         a: "When appropriate, housing providers may request reliable information supporting the disability-related need for an assistance animal. They generally may not require detailed medical information or disclosure of a specific diagnosis.",
       },
       {
-        q: "How Much Does An ESA Letter Cost In Michigan?",
+        q: "How much does an ESA letter cost in Michigan?",
         a: "In Michigan, ESA letter pricing can vary by provider, particularly depending on the method of consultation and the professional’s credentials. At My ESA Therapist, the fee is $99, covering both the evaluation and issuance of the letter if you qualify.",
       },
       {
-        q: "Does My ESA Letter Need To Be Renewed Every Year In Michigan?",
+        q: "Does my ESA letter need to be renewed every year in Michigan?",
         a: "While federal law does not set a strict expiration date, some housing providers may request updated documentation periodically to confirm ongoing need.",
       },
       {
-        q: "Are Exotic Animals Allowed As ESAs In Michigan?",
+        q: "Are exotic animals allowed as ESAs in Michigan?",
         a: "Requests involving unique or non-traditional animals may receive closer review, especially if the animal presents safety, health, or property concerns.",
       },
       {
-        q: "What Happens If My Landlord Denies My ESA Request?",
+        q: "What happens if my landlord denies my ESA request?",
         a: "You may request a written explanation for the denial and review whether the decision aligns with federal housing standards and reasonable accommodation guidelines.",
       },
       {
-        q: "Does Moving To A New Apartment In Michigan Require A New ESA Letter?",
+        q: "Does moving to a New apartment in Michigan require a New ESA letter?",
         a: "In many cases, existing documentation can be used, but some housing providers may request updated paperwork to ensure it reflects your current circumstances.",
       },
     ],
@@ -9294,7 +9294,7 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsAlertTitle: "Important: No Official ESA Registry Exists",
     scamsAlertText: "There is no government-approved ESA registry, certification system, database, or official ID for emotional support animals in Minnesota or anywhere in the United States.",
     scamsCommonTitle: "Common ESA Scams",
-    scamsCommonSubtitle: "Be cautious of platforms or providers that:",
+    scamsCommonSubtitle: "Be cautious of platforms or providers that do any of the following.",
     scamsCommonItems: [
       "Advertise “ESA registrations” or suggest that an official government-recognized certification exists",
       "Sell ESA ID cards, badges, certificates, vests, or similar items as legal proof",
@@ -9305,15 +9305,15 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsWhatYouNeedItems: [
       {
         title: "ESA Letter from a Minnesota-Licensed Provider",
-        description: "When supporting documentation is required, Minnesota law permits documentation from a qualified licensed professional who can confirm the tenant’s disability and the relationship between the disability and the need for a support animal.",
+        description: "When documentation is required, Minnesota law permits it from a qualified licensed professional who can confirm your disability and its link to your need for a support animal.",
       },
       {
         title: "Comprehensive Mental Health Evaluation",
-        description: "An individualized evaluation should assess the person’s disability-related needs and whether a support animal is appropriate to alleviate one or more identified symptoms or effects of the disability",
+        description: "An individualized evaluation should assess your disability-related needs and whether a support animal could relieve one or more symptoms or effects of the disability.",
       },
       {
         title: "Verified Therapeutic Relationship",
-        description: "Supporting documentation should come from a qualified licensed professional who can reliably confirm the person’s disability and the relationship between the disability and the need for a support animal",
+        description: "Documentation should come from a qualified licensed professional who can reliably confirm your disability and its link to the need for a support animal.",
       },
     ],
     psdVsEsaTitle: "Psychiatric Service Dogs vs. Emotional Support Animals in Minnesota",
@@ -9402,27 +9402,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Review the commonly asked questions below to better understand the process, requirements, and legal considerations for securing an emotional support animal letter in Minnesota.",
     faqs: [
       {
-        q: "Do I Need An Explicit Minnesota-Licensed Clinician For An ESA Letter?",
+        q: "Do I need an explicit Minnesota-licensed clinician for an ESA letter?",
         a: "Not necessarily. Minnesota law allows supporting documentation from certain out-of-state licensed professionals when the professional has an existing treatment relationship with the tenant. The documentation must reliably confirm the tenant’s disability and the relationship between the disability and the need for a support animal.",
       },
       {
-        q: "Can My Landlord Put Restrictions On The Number Of ESAs?",
+        q: "Can my landlord put restrictions on the number of ESAs?",
         a: "Minnesota law does not establish a fixed number of support animals that every tenant may have. A landlord may request supporting documentation for each animal when appropriate, and the tenant must establish a disability-related need for each requested support animal. A request may be denied if the number or type of animals creates an undue burden.",
       },
       {
-        q: "What Can You Expect To Pay For An ESA Letter In Minnesota?",
+        q: "What can you expect to pay for an ESA letter in Minnesota?",
         a: "ESA letter costs in Minnesota vary depending on the service and assessment process, with reputable providers ensuring a proper licensed evaluation. At My ESA Therapist, the fee is $99, including the evaluation and ESA letter upon approval.",
       },
       {
-        q: "Does An ESA Letter Allow My Emotional Support Animal In Public Places?",
+        q: "Does an ESA letter allow my emotional support animal in public places?",
         a: "No. ESA letters are mainly for housing accommodations. Emotional support animals do not receive the same public access rights as service animals under the ADA. Whether public places like parks and libraries allow ESAs depends on their specific rules regarding emotional support animals. Always check before going.",
       },
       {
-        q: "Does My ESA Have To Be Professionally Trained In Minnesota?",
+        q: "Does my ESA have to be professionally trained in Minnesota?",
         a: "No. Emotional support animals are not required to have any special training. Unlike Psychiatric Dogs, ESAs do not have to be specifically trained to carry out tasks. Their main purpose is to ease the mental or emotional disorders and provide therapeutic benefits to the patient.",
       },
       {
-        q: "What Should I Do If My Landlord Refuses My ESA In Minnesota?",
+        q: "What should I do if my landlord refuses my ESA in Minnesota?",
         a: "A landlord generally cannot deny a reasonable accommodation based solely on the animal’s breed or size. However, a request may be denied when it creates an undue burden, the particular animal poses a threat to the health or safety of others, or the animal is likely to cause substantial property damage. Decisions should be based on the specific circumstances and the individual animal.",
       },
     ],
@@ -9683,7 +9683,7 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsAlertTitle: "Important Notice: No Official ESA Registry Exists",
     scamsAlertText: "There isn’t an ESA registration database run by the state or the federal government in Mississippi. Websites that provide ID cards, certificates, “official registrations,” or fast approvals are not accepted as legitimate legal documents.",
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Suggest your ESA can be “officially registered” in a Mississippi database or imply that state-issued certification exists.",
       "Market ID cards, vests, badges, or decorative certificates as legally required proof of ESA status.",
@@ -9804,7 +9804,7 @@ export const STATES_DATA: Record<string, StateData> = {
         a: "No. Notarization is not a general legal requirement. What matters is that any supporting documentation is reliable and appropriately establishes the person’s disability and disability-related need for an assistance animal when documentation is permitted.",
       },
       {
-        q: "If I Work From Home, Can My Landlord Argue That I “Don’t Need” An ESA?",
+        q: "If I work from home, can my landlord argue that I “don’t need” an ESA?",
         a: "No. Working from home does not automatically eliminate the need for a reasonable accommodation. A housing provider may consider reliable information relevant to whether the person has a disability and whether the animal is needed because of that disability but generally may not require detailed medical records or a specific diagnosis.",
       },
       {
@@ -10072,12 +10072,11 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsAlertTitle: "Key Clarification: No Government ESA Registration Exists",
     scamsAlertText: "There is no state or federal certification program or government-run registry for emotional support animals. Supporting documentation, when appropriate, should come from a qualified healthcare professional who can reliably confirm the person’s disability and disability-related need for an assistance animal.",
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Suggest that your ESA can be “officially registered” with a Missouri state database or that state-backed certification programs exist.",
       "Offer instant ESA letters, laminated ID cards, or branded merchandise as legally recognized proof.",
       "Bypass proper clinical evaluation by neglecting the required therapeutic relationship with a licensed provider before issuing documentation.",
-      "In Missouri, all ESA assessments are performed by licensed mental health professionals who follow HIPAA privacy rules and state regulations. Staying informed ensures your ESA letter is valid, meets Missouri legal standards, and reflects a proper evaluation by a qualified professional.",
     ],
     scamsWhatYouNeedTitle: "What You Actually Need",
     scamsWhatYouNeedItems: [
@@ -10180,27 +10179,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Find answers to frequently asked questions and clear up any confusion about ESA letters in Missouri.",
     faqs: [
       {
-        q: "Can I Receive An ESA Letter In Missouri If My Anxiety Only Occurs During Certain Seasons?",
+        q: "Can I receive an ESA letter in Missouri if my anxiety only occurs during certain seasons?",
         a: "Yes. ESA letters are based on your overall mental health needs, not just constant symptoms. A licensed Missouri mental health provider will assess whether your animal provides meaningful support, even if your condition is not constant.",
       },
       {
-        q: "What Should An ESA Letter Cost In Missouri?",
+        q: "What should an ESA letter cost in Missouri?",
         a: "In Missouri, the cost of an ESA letter depends on the provider and how thoroughly the evaluation is conducted. At My ESA Therapist, the fee is $99, covering a licensed professional assessment and the ESA letter upon approval.",
       },
       {
-        q: "Can I Use An ESA Letter From Another State While Living In Missouri?",
+        q: "Can I use an ESA letter from another state while living in Missouri?",
         a: "Not necessarily. A housing provider may consider reliable supporting documentation from a qualified healthcare professional, including an appropriately licensed professional outside Missouri, when the documentation reliably establishes the person’s disability and disability-related need for an assistance animal.",
       },
       {
-        q: "Are Online “Instant ESA Letters” Legally Valid In Missouri?",
+        q: "Are online “instant ESA letters” legally valid in Missouri?",
         a: "No. Missouri requires a genuine therapeutic relationship with a licensed clinician. Instant online forms or purchased certificates do not meet the state’s legal or clinical standards.",
       },
       {
-        q: "Can My Landlord Ask Me What Tasks My ESA Performs?",
+        q: "Can my landlord ask me what tasks my ESA performs?",
         a: "No. Unlike psychiatric service dogs, ESAs are not task-trained. Missouri landlords cannot require proof of training but can request legitimate documentation from a licensed clinician.",
       },
       {
-        q: "Does My Missouri ESA Letter Expire Or Need Renewal?",
+        q: "Does my Missouri ESA letter expire or need renewal?",
         a: "Federal law does not impose a general 12-month expiration period for ESA documentation. A housing provider may request updated reliable information when reasonably necessary to evaluate an accommodation request or an ongoing need.",
       },
     ],
@@ -10461,12 +10460,11 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsAlertTitle: "Important: No Official ESA Registry Exists",
     scamsAlertText: "For emotional support animals, there is no official Montana or national register, certifying body, identification system, or database maintained by the government. Genuine ESA letters are not generated through quick online registrations, purchased certificates, or identity cards. They are issued by qualified mental health professionals who meet Montana’s applicable licensing and clinical requirements.",
     scamsCommonTitle: "Common ESA Scams",
-    scamsCommonSubtitle: "Be cautious of websites or services that:",
+    scamsCommonSubtitle: "Be cautious of websites or services that do any of the following.",
     scamsCommonItems: [
       "Claim your ESA can be “registered” in an official Montana database or imply that state-approved certification programs exist.",
       "Sell laminated ID cards, instant online certificates, or branded accessories as legally valid proof of ESA status.",
       "Skip proper clinical procedures by failing to establish a legitimate 30-day provider-client relationship as required under Montana House Bill 703.",
-      "All assessments are conducted by Montana-licensed mental health professionals in compliance with HIPAA privacy standards and applicable state regulations. Staying informed helps ensure your ESA documentation is legitimate, compliant with Montana law, and issued following a proper clinical assessment by a qualified licensed professional.",
     ],
     scamsWhatYouNeedTitle: "What You Actually Need",
     scamsWhatYouNeedItems: [
@@ -10569,31 +10567,31 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Quickly explore the most frequently asked questions to clear up your doubts and concerns regarding the emotional support animal letter in Montana.",
     faqs: [
       {
-        q: "Does My ESA Letter Expire in Montana?",
+        q: "Does my ESA letter expire in Montana?",
         a: "Although there is no set expiration date set by state law, many housing providers ask for updated documentation issued within 12 months to make sure it accurately reflects your current clinical status.",
       },
       {
-        q: "How Long Does The ESA Process Take In Montana?",
+        q: "How long does the ESA process take in Montana?",
         a: "Under the Montana ESA law, the process cannot be completed the same day. The Montana House Bill 703 outlines that a clinician must establish at least a 30-day professional relationship before issuing an ESA letter. The total timeline depends on scheduling and the provider’s evaluation process.",
       },
       {
-        q: "What Makes An ESA Letter Legally Valid In Montana?",
+        q: "What makes an ESA letter legally valid in Montana?",
         a: "Supporting information for an emotional support animal must meet applicable legal requirements. Under Montana law, when a landlord requests supporting information under the state's ESA documentation statute, the information must meet the applicable requirements for the professional's qualifications, clinical evaluation, and client-provider relationship. Other reasonable-accommodation protections under federal and state law also apply.",
       },
       {
-        q: "How Much Does A Professionally Issued ESA Letter Cost In Montana?",
+        q: "How much does a professionally issued ESA letter cost in Montana?",
         a: "In Montana, ESA letter pricing varies based on the provider and the depth of the consultation process. At My ESA Therapist, the fee is $99, which includes both the evaluation and issuance of the ESA letter if you qualify.",
       },
       {
-        q: "Can I Have More Than One ESA In Montana?",
+        q: "Can I have more than one ESA in Montana?",
         a: "Yes. But it is important for a licensed mental health expert licensed in Montana to determine that each animal provides distinct therapeutic support based on the documented mental health needs. It is also important to ensure that the emotional support animals do not pose a direct threat to property or safety.",
       },
       {
-        q: "Can A Landlord Delay Responding To My ESA Request?",
+        q: "Can a landlord delay responding to my ESA request?",
         a: "Housing providers should handle reasonable accommodation requests within a reasonable timeframe. Montana law also requires a landlord to issue a written determination after receiving the supplemental information required under the applicable ESA documentation law.",
       },
       {
-        q: "What Happens If My ESA Causes Damage?",
+        q: "What happens if my ESA causes damage?",
         a: "If, under any circumstances, your ESA poses a threat or causes damage to the property, you may still be financially responsible for actual harm caused by the animal, even though pet fees cannot be charged upfront.",
       },
     ],
@@ -10857,19 +10855,19 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsWhatYouNeedItems: [
       {
         title: "Evaluation by a Licensed Provider Practicing in Nebraska",
-        description: "A qualified mental health practitioner who is permitted to operate in Nebraska must provide an ESA letter. The practitioner must finish a thorough clinical evaluation and exercise professional judgment.",
+        description: "A qualified mental health practitioner permitted to practice in Nebraska must complete a thorough clinical evaluation and use professional judgment before issuing an ESA letter.",
       },
       {
         title: "Documented Mental or Emotional Health Condition",
-        description: "For housing accommodation purposes, the relevant question is whether the individual has a disability and whether the assistance animal is needed because of that disability. Supporting information, when appropriate, should establish the disability-related need without unnecessarily disclosing detailed medical information.",
+        description: "For housing, the question is whether you have a disability and need the animal because of it. Supporting information should establish that need without unnecessary medical detail.",
       },
       {
         title: "Established Professional Relationship",
-        description: "A well-established clinical connection must serve as the foundation for a legitimate ESA letter. The documentation should contain the provider’s contact details, license data, and a statement attesting to the recommendation’s compliance with the Fair Housing Act and other relevant housing rules.",
+        description: "A legitimate ESA letter rests on an established clinical connection and should include the provider’s contact details, license information, and a statement of compliance with the Fair Housing Act and other housing rules.",
       },
     ],
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Suggest that your ESA can be “officially registered” in a Nebraska database or claim that state certification is required.",
       "Sell ID cards, vests, tags, or certificates as mandatory legal proof of ESA status.",
@@ -10964,27 +10962,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Sit and relax while we answer all your queries related to the emotional support animal letter in Nebraska.",
     faqs: [
       {
-        q: "Can A Landlord In Nebraska Call My Therapist To Verify My ESA Letter?",
+        q: "Can a landlord in Nebraska call my therapist to verify my ESA letter?",
         a: "Yes. A housing provider may verify that the letter was issued by a licensed professional, but they cannot request details about your diagnosis or treatment history.",
       },
       {
-        q: "What Is The Average Cost Of An ESA Letter In Nebraska?",
+        q: "What is the average cost of an ESA letter in Nebraska?",
         a: "In Nebraska, the cost of an ESA letter can differ depending on the provider and evaluation method, typically ranging between $150 and $300. At My ESA Therapist, the fee is $99, covering the professional evaluation and ESA letter upon approval.",
       },
       {
-        q: "Does My ESA Letter Need To Be Renewed Every Year In Nebraska?",
+        q: "Does my ESA letter need to be renewed every year in Nebraska?",
         a: "Federal law does not establish a universal annual expiration date for ESA documentation. A housing provider may request reliable updated information when permitted and reasonably necessary to evaluate an ongoing accommodation request.",
       },
       {
-        q: "Can I Have More Than One Emotional Support Animal In Nebraska?",
+        q: "Can I have more than one emotional support animal in Nebraska?",
         a: "Yes. You must demonstrate a disability-related need for each animal, and approval depends on whether the request is considered reasonable under the Fair Housing Act.",
       },
       {
-        q: "Is There A Government Website In Nebraska Where Landlords Can Verify My ESA Registration?",
+        q: "Is there a government website in Nebraska where landlords can verify my ESA registration?",
         a: "No, Nebraska does not have a public or government-run website or registry for emotional support animals. Landlords cannot search a state database to confirm ESA status. Verification is typically done by reviewing a valid ESA letter issued by a Nebraska-licensed mental health professional, not through an online registration system.",
       },
       {
-        q: "Can A Landlord Charge For Damages Caused By My ESA In Nebraska?",
+        q: "Can a landlord charge for damages caused by my ESA in Nebraska?",
         a: "Yes. While pet fees and deposits typically do not apply, tenants remain responsible for any real damage caused by the animal.",
       },
     ],
@@ -11259,7 +11257,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams",
-    scamsCommonSubtitle: "Common ESA Scams to Watch For. Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Make a claim that your ESA is “registered” in a Nevada database or that there is a state-recognized certification.",
       "Offer branded products, laminated certificates, or ID cards as legally acceptable evidence of your ESA status.",
@@ -11646,7 +11644,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams Targeting New Yorkers",
-    scamsCommonSubtitle: "Watch out for companies or individuals who:",
+    scamsCommonSubtitle: "Watch out for companies or individuals who do any of the following.",
     scamsCommonItems: [
       "Offer ESA “registrations” or “certifications”",
       "Sell items like ID cards, certificates, badges, or vests in the name of legal requirement",
@@ -11735,11 +11733,11 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Find clear, reliable answers to the most common questions about Emotional Support Animals, ESA documentation, and your housing rights when living with an ESA in NY.",
     faqs: [
       {
-        q: "How Long Does an ESA Evaluation Letter Remain Valid in New York?",
+        q: "How long does an ESA evaluation letter remain valid in New York?",
         a: "An ESA evaluation letter doesn’t expire automatically, but most housing providers prefer documentation based on a recent evaluation, typically within the past 12 months. Regularly updating your ESA evaluation helps ensure that your documentation reflects your current mental and emotional health needs.",
       },
       {
-        q: "What Is The Average Price Of An ESA Letter In New York?",
+        q: "What is the average price of an ESA letter in New York?",
         a: "In New York, ESA letter costs typically align with national pricing trends, where licensed evaluations and documentation are commonly offered within a moderate price range, depending on the provider. At My ESA Therapist, the fee is $99, which includes a licensed professional evaluation and the ESA letter if approved.",
       },
       {
@@ -11763,47 +11761,47 @@ export const STATES_DATA: Record<string, StateData> = {
         a: "Yes. A licensed professional may determine during the evaluation that multiple animals provide distinct emotional support benefits. If so, each animal’s role should be clearly outlined in the evaluation-based documentation to ensure full recognition by housing providers.",
       },
       {
-        q: "Can A New York Co-Op Board Deny My ESA Accommodation Request?",
+        q: "Can a New York co-op board deny my ESA accommodation request?",
         a: "A co-op board generally must consider reasonable accommodation requests under fair housing laws. However, a request may be denied if the ESA poses a direct threat, causes substantial property damage, or if the housing is not covered by applicable housing laws.",
       },
       {
-        q: "Does My ESA Letter Protect Me In NYC Rent-Stabilized Or Rent-Controlled Apartments?",
+        q: "Does my ESA letter protect me in NYC rent-stabilized or rent-controlled apartments?",
         a: "Yes, if your housing is covered under Fair Housing Act or applicable state and local laws, a valid ESA letter may support your request for reasonable accommodation regardless of whether the apartment is rent-stabilized or rent-controlled.",
       },
       {
-        q: "What Happens If My New York Landlord Ignores Or Delays My ESA Accommodation Request?",
+        q: "What happens if my New York landlord ignores or delays my ESA accommodation request?",
         a: "Landlords are expected to respond to accommodation requests within a reasonable timeframe. Unnecessary delays or failure to engage in the accommodation process could potentially be considered a violation of fair housing requirements.",
       },
       {
-        q: "Can My HOA (Homeowners Association) In New York Deny My ESA?",
+        q: "Can my HOA (homeowners association) in New York deny my ESA?",
         a: "HOAs and condominium associations could be required to provide reasonable accommodations for emotional support animals. They generally cannot enforce pet restrictions against a qualifying ESA unless a valid legal exception applies. It is always advised to check beforehand.",
       },
       {
-        q: "Does My ESA Need To Be Vaccinated Or Licensed By The City In New York?",
+        q: "Does my ESA need to be vaccinated or licensed by the city in New York?",
         a: "Yes. While ESA status does not create special exemptions from animal health and safety laws, dogs must generally comply with applicable local licensing and vaccination requirements, including rabies vaccination rules.",
       },
       {
-        q: "Who Is Responsible If My ESA Causes Damage To The Rental Property?",
+        q: "Who is responsible if my ESA causes damage to the rental property?",
         a: "ESA owners remain responsible for any damage their animal causes. While landlords cannot typically charge pet fees for an approved ESA, they may seek reimbursement for actual property damage.",
       },
       {
-        q: "Can The Same ESA Letter Be Used For Both Housing And College Dorms In New York?",
+        q: "Can the same ESA letter be used for both Housing and college dorms in New York?",
         a: "In many cases, yes. Colleges often review ESA requests through their disability accommodation process, and a valid ESA letter may support both housing and dormitory accommodation requests, subject to the institution's requirements.",
       },
       {
-        q: "What Specific Information Should A Valid New York ESA Letter Include?",
+        q: "What specific information should a valid New York ESA letter include?",
         a: "ESA documentation should identify the licensed professional providing the documentation and explain the professional's recommendation regarding the individual's need for an assistance animal. The specific information included may vary depending on the applicable housing requirements and circumstances.",
       },
       {
-        q: "Does New York State Have Any Additional ESA Protections Beyond The Federal Fair Housing Act?",
+        q: "Does New York state have any additional ESA protections beyond the federal Fair Housing Act?",
         a: "Yes. New York's human rights laws may provide additional housing-related protections against disability discrimination, which can complement federal fair housing protections in certain situations.",
       },
       {
-        q: "What Are The Penalties For A New York Landlord Who Illegally Denies An ESA Accommodation?",
+        q: "What are the penalties for a New York landlord who illegally denies an ESA accommodation?",
         a: "A landlord who unlawfully denies a valid accommodation request may face fair housing complaints, investigations, monetary damages, civil penalties, and orders requiring compliance with housing laws.",
       },
       {
-        q: "Can I Get An ESA Letter The Same Day In New York?",
+        q: "Can I get an ESA letter the same day in New York?",
         a: "Possibly. Some licensed mental health professionals offer same-day evaluations when clinically appropriate. However, the legitimacy of the letter depends on the professional assessment, not how quickly it is issued.",
       },
     ],
@@ -12080,7 +12078,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams",
-    scamsCommonSubtitle: "Be cautious of websites or services that:",
+    scamsCommonSubtitle: "Be cautious of websites or services that do any of the following.",
     scamsCommonItems: [
       "Claim to offer ESA registration or certification",
       "Sell fake ESA certificates, ID cards, or vests",
@@ -12171,59 +12169,59 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "This section addresses common questions about emotional support animals, housing considerations, and the evaluation process in Texas.",
     faqs: [
       {
-        q: "How Much Does an ESA Letter Evaluation Cost in Texas?",
+        q: "How much does an ESA letter evaluation cost in Texas?",
         a: "At My ESA Therapist, the ESA evaluation costs $99. This includes a secure telehealth evaluation with a Texas-licensed professional and the platform fees. You are not paying for an ESA letter. An emotional support animal letter is provided only if the clinical evaluation supports the need for an emotional support animal.",
       },
       {
-        q: "Are Online ESA Letters Valid in Texas?",
+        q: "Are online ESA letters valid in Texas?",
         a: "Yes. Online ESA letters can be valid in Texas when they are issued by a state-licensed mental health professional who conducts a proper mental health evaluation before approval.",
       },
       {
-        q: "How Long Is ESA Documentation Typically Valid in Texas?",
+        q: "How long is ESA documentation typically valid in Texas?",
         a: "There is no universal annual renewal requirement for ESA documentation under federal housing law. A housing provider may request relevant updated information when reasonably necessary to evaluate a particular accommodation request, subject to applicable law.",
       },
       {
-        q: "When Can a Landlord Legally Reject an ESA in Texas?",
+        q: "When can a landlord legally reject an ESA in Texas?",
         a: "Texas housing providers must assess ESA requests individually under fair housing law. Requests may be denied if legal requirements are unmet, the accommodation creates an undue burden, or the animal poses an unmitigable direct threat or risk of significant property damage. Breed or size alone is insufficient, and HUD’s May 2026 memo narrows its federal enforcement approach.",
       },
       {
-        q: "Is There a Specific ESA Sample Letter for Texas?",
+        q: "Is there a specific ESA sample letter for Texas?",
         a: "No. There’s no official ESA letter template in Texas. What matters is that your ESA letter is written by a licensed Texas mental health professional and includes all legally required details for Fair Housing Act (FHA) compliance.",
       },
       {
-        q: "Can I Have More Than One Emotional Support Animal in Texas?",
+        q: "Can I have more than one emotional support animal in Texas?",
         a: "Yes, more than one ESA may be permitted in Texas when supported by a professional evaluation. A Texas-licensed clinician must determine that multiple animals are necessary to address the individual’s mental or emotional health needs. Housing providers may review whether accommodating more than one animal is reasonable for the specific housing situation.",
       },
       {
-        q: "What Types of Animals Can Qualify as an ESA in Texas?",
+        q: "What types of animals can qualify as an ESA in Texas?",
         a: "Dogs and cats are common ESAs. Other animal species may be considered in housing accommodation requests, depending on the circumstances and applicable law. HUD’s May 22, 2026, memorandum focuses its federal enforcement approach on animals trained to provide disability-related assistance, including trained animals other than dogs.",
       },
       {
-        q: "Does My ESA Need To Be Trained Or Certified In Texas?",
+        q: "Does my ESA need to be trained or certified in Texas?",
         a: "No, Texas does not require emotional support animals to be certified or registered. However, under HUD’s 2026 guidance, housing providers may consider whether an assistance animal is well-behaved, under control, and does not pose a significant health, safety, or property damage risk. While specialized ESA training is generally not required, responsible behavior remains important for housing accommodations.",
       },
       {
-        q: "Can I Get An ESA Letter For The Dog In Texas I Already Own?",
+        q: "Can I get an ESA letter for the dog in Texas I already own?",
         a: "Yes. You can get an ESA letter for a dog you already have if a licensed mental health professional confirms that the animal helps manage symptoms of a legitimate emotional or mental health condition.",
       },
       {
-        q: "What Information Is Included In A Texas ESA Letter?",
+        q: "What information is included in a Texas ESA letter?",
         a: "A Texas ESA letter includes the mental health professional’s license details, confirmation that you have a qualifying condition, and a statement stating that an emotional support animal is part of your treatment or support plan. It should be signed and dated by the provider.",
       },
       {
-        q: "Can A Minor Under 18 Get An ESA Letter In Texas?",
+        q: "Can a minor under 18 get an ESA letter in Texas?",
         a: "Yes. A minor may qualify for an ESA letter in Texas when a licensed mental health professional determines that an emotional support animal can benefit their mental or emotional well-being. A parent or legal guardian is usually involved in the process.",
       },
       {
-        q: "Will My ESA Letter Be Accepted Outside Of Texas If I Move?",
+        q: "Will my ESA letter be accepted outside of Texas if I move?",
         a: "It depends. As long as the ESA letter is issued by a licensed mental health professional authorized to practice within the United States, an ESA letter is considered legitimate. However, some states may have strict housing policies and laws, so it is advised to cross-check before moving to another state from Texas.",
       },
       {
-        q: "Can My HOA (Homeowners Association) Deny My ESA in Texas?",
+        q: "Can my HOA (homeowners association) deny my ESA in Texas?",
         a: "An HOA generally cannot deny a valid emotional support animal request when federal fair housing protections apply. However, residents may still need to provide appropriate documentation, and certain exceptions may apply in limited situations.",
       },
       {
-        q: "Does My ESA Have The Same Rights In University Or College Housing In Texas?",
+        q: "Does my ESA have the same rights in university or college Housing in Texas?",
         a: "Yes, the Fair Housing Act covers most university and college housing in Texas, so students can live with an ESA in campus dorms and apartments even under no-pet policies. Submit your valid ESA letter to your school’s disability services office for approval before move-in. However, ESA access is limited to your housing unit; it does not extend to classrooms, libraries, or other campus buildings.",
       },
     ],
@@ -12501,7 +12499,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams in Washington",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Claim there is an “official ESA registry” in Washington",
       "Sell instant ESA certificates, badges, or laminated ID cards",
@@ -12595,27 +12593,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Get answers to all your queries regarding getting an emotional support animal letter in Washington by looking at the most asked questions below!",
     faqs: [
       {
-        q: "Can A Washington ESA Letter Be Used For More Than One Animal?",
+        q: "Can a Washington ESA letter be used for more than one animal?",
         a: "No. While in some cases, a clinician may recommend more than one emotional support animal if there is a clear therapeutic reason supporting the need, you need to get different ESA letters for all the emotional support animals.",
       },
       {
-        q: "Can A Landlord Request Renewal Of An ESA Letter In Washington?",
+        q: "Can a landlord request renewal of an ESA letter in Washington?",
         a: "Housing providers may request updated documentation issued within the last 12 months if the previous letter is outdated or if there are legitimate reasons to confirm the continued need.",
       },
       {
-        q: "How Much Does An ESA Letter Cost In Washington?",
+        q: "How much does an ESA letter cost in Washington?",
         a: "In Washington, ESA letter pricing can differ by provider, with costs reflecting the credibility and depth of the licensed consultation. At My ESA Therapist, the fee is $99, covering the evaluation and ESA letter upon approval.",
       },
       {
-        q: "What Happens If A Landlord Denies An ESA Request In Washington?",
+        q: "What happens if a landlord denies an ESA request in Washington?",
         a: "If a request is denied, the tenant may ask for clarification, provide additional documentation, or review housing guidelines related to reasonable accommodations.",
       },
       {
-        q: "Can ESA Letters Be Issued After A Single Consultation?",
+        q: "Can ESA letters be issued after a single consultation?",
         a: "Yes. Federal housing guidance under the Fair Housing Act allows a licensed mental health professional to issue an ESA letter if, after a proper evaluation, they determine an emotional support animal is clinically appropriate. The assessment may occur during one consultation if the clinician has enough information to make a professional determination.",
       },
       {
-        q: "Is There A Specific Format Required For An ESA Letter In Washington?",
+        q: "Is there a specific format required for an ESA letter in Washington?",
         a: "There is no universal format, but legitimate letters typically include the clinician’s credentials, license details, and confirmation of a therapeutic recommendation.",
       },
     ],
@@ -12883,7 +12881,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Say your ESA must be listed in a state registry or carry official Wisconsin certification.",
       "Market badges, ID cards, or vests as required legal proof.",
@@ -12990,27 +12988,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Have questions about ESA letters in Wisconsin? Sit back and let us explain it all!",
     faqs: [
       {
-        q: "Can My ESA Be A Non-Traditional Animal In Wisconsin, Like A Miniature Pig Or Bird?",
+        q: "Can my ESA be a non-traditional animal in Wisconsin, like a miniature pig or bird?",
         a: "Yes. An animal may qualify as an ESA when the applicable legal requirements are met and the animal addresses a disability-related need. Housing providers may assess requests involving the specific animal and may deny an accommodation on legally recognized grounds, including an undue burden, a fundamental alteration, an unmitigable direct threat, or substantial property damage.",
       },
       {
-        q: "What Happens If A Wisconsin Landlord Violates My ESA Letter Rights?",
+        q: "What happens if a Wisconsin landlord violates my ESA letter rights?",
         a: "You can file a complaint with HUD or pursue legal action in Wisconsin courts. Violations include refusing reasonable accommodations or charging illegal fees.",
       },
       {
-        q: "What Is The Cost Of An ESA Letter In Wisconsin?",
+        q: "What is the cost of an ESA letter in Wisconsin?",
         a: "In Wisconsin, ESA letter pricing varies depending on the service and consultation process, ensuring compliance through a licensed mental health assessment. The $99 fee at My ESA Therapist covers both the evaluation and, if you are eligible, the issuance of the ESA letter.",
       },
       {
-        q: "Do I Need To Renew My ESA Letter In Wisconsin Each Year?",
+        q: "Do I need to renew my ESA letter in Wisconsin each year?",
         a: "No. While not legally required, many landlords request an updated ESA letter annually to confirm ongoing need. It helps avoid disputes and ensures your housing rights remain protected.",
       },
       {
-        q: "Can I Have More Than One ESA In Wisconsin?",
+        q: "Can I have more than one ESA in Wisconsin?",
         a: "More than one emotional support animal may be covered when each animal is supported by a disability-related need. Housing providers may assess the request for each animal under applicable law and consider legally recognized grounds for denial. There is no blanket rule requiring approval of every request for multiple animals.",
       },
       {
-        q: "Can I Use My Wisconsin ESA Letter In Other U.S. States?",
+        q: "Can I use my Wisconsin ESA letter in other U.S. states?",
         a: "An ESA letter may support a housing accommodation request after a move to another state. The new housing provider may assess the request under applicable law and request reliable supporting information when legally necessary. Federal law does not universally require a new ESA letter solely because someone relocates.",
       },
     ],
@@ -13277,7 +13275,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Claim there is an “official ESA registry” in Wyoming",
       "Sell instant ESA certificates, badges, or laminated ID cards",
@@ -13382,27 +13380,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Get answers to all your queries regarding getting an emotional support animal letter in Wyoming by looking at the most asked questions below!",
     faqs: [
       {
-        q: "Do ESA Letters In Wyoming Expire?",
+        q: "Do ESA letters in Wyoming expire?",
         a: "No universal annual renewal requirement applies to ESA letters under federal fair housing law. A housing provider may request reliable information when reasonably necessary to evaluate a disability-related accommodation request.",
       },
       {
-        q: "What Should You Expect When Paying For An ESA Letter In Wyoming?",
+        q: "What should you expect when paying for an ESA letter in Wyoming?",
         a: "In Wyoming, ESA letter costs depend on the provider and evaluation method, with legitimate services focusing on proper clinical review. At My ESA Therapist, the fee is $99, which includes a licensed evaluation and the ESA letter if approved.",
       },
       {
-        q: "Can A Landlord Request A New ESA Letter During Tenancy?",
+        q: "Can a landlord request a New ESA letter during tenancy?",
         a: "Yes, a landlord may request updated documentation if the original letter is outdated or if the tenant submits a new accommodation request.",
       },
       {
-        q: "Can An ESA Letter Cover Both Housing And Travel Needs?",
+        q: "Can an ESA letter cover both Housing and travel needs?",
         a: "ESA letters are primarily for housing accommodations; airlines and travel policies may have separate requirements and typically do not recognize ESAs as service animals.",
       },
       {
-        q: "Can A Landlord Charge For Damages Caused By An ESA?",
+        q: "Can a landlord charge for damages caused by an ESA?",
         a: "Tenants are responsible for any property damage caused by their emotional support animal, even when the ESA letter has been approved.",
       },
       {
-        q: "Can Roommates Object To An ESA In Shared Housing?",
+        q: "Can roommates object to an ESA in shared Housing?",
         a: "It is not mandatory. Roommates’ preferences may be considered, but landlords must still evaluate requests fairly under the Fair Housing Act and cannot deny an ESA just because of roommate objections.",
       },
     ],
@@ -13677,7 +13675,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Warning Signs of Questionable ESA Services in New Hampshire",
-    scamsCommonSubtitle: "Be cautious of platforms that:",
+    scamsCommonSubtitle: "Be cautious of platforms that do any of the following.",
     scamsCommonItems: [
       "Claim there is an “official ESA registry” in New Hampshire.",
       "Sell instant ESA certificates, ID cards, vests, or badges as proof of legitimacy.",
@@ -13771,27 +13769,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Have doubts? Worry no more! Clear every confusion with the frequently asked questions about ESA letters in New Hampshire.",
     faqs: [
       {
-        q: "Can A Landlord In New Hampshire Ask For A New ESA Letter Every Year?",
+        q: "Can a landlord in New Hampshire ask for a New ESA letter every year?",
         a: "Federal law does not establish a universal annual expiration date for ESA documentation. A housing provider may request reliable updated information when permitted and reasonably necessary to evaluate an ongoing accommodation request.",
       },
       {
-        q: "What Does An ESA Letter Typically Cost In New Hampshire?",
+        q: "What does an ESA letter typically cost in New Hampshire?",
         a: "In New Hampshire, ESA letter pricing depends on the provider and evaluation approach, with costs generally influenced by a number of influencing factors. At My ESA Therapist, the fee is $99, which includes the evaluation and ESA letter upon approval.",
       },
       {
-        q: "Can A Landlord Ask About My Medical Diagnosis When I Request An ESA?",
+        q: "Can a landlord ask about my medical diagnosis when I request an ESA?",
         a: "Housing providers generally cannot request specific diagnosis details but may ask for documentation confirming a disability-related need for the emotional support animal.",
       },
       {
-        q: "Is There A Specific Format Required For An ESA Letter In New Hampshire?",
+        q: "Is there a specific format required for an ESA letter in New Hampshire?",
         a: "There is no strict template required by law, but a legitimate letter typically includes clinician credentials, licensing details, and confirmation of a professional evaluation.",
       },
       {
-        q: "Do Emotional Support Animals Need To Be Registered With The State Of New Hampshire?",
+        q: "Do emotional support animals need to be registered with the state of New Hampshire?",
         a: "No. There is no official state registration system for emotional support animals in New Hampshire or anywhere else in the United States.",
       },
       {
-        q: "Can More Than One Emotional Support Animal Be Approved For The Same Person?",
+        q: "Can more than one emotional support animal be approved for the same person?",
         a: "In some cases, a clinician may recommend more than one animal if each plays a distinct role in supporting the individual’s mental health needs.",
       },
     ],
@@ -14066,13 +14064,13 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Warning Signs of Potential ESA Scams",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
-      "Claim your ESA can be “officially registered” in a New Jersey database or suggest that state-issued certification exists.",
-      "Sell ID cards, vests, tags, or framed certificates and present them as legally required proof of ESA status.",
-      "Promise instant or same-day approval without a proper clinical assessment conducted by a New Jersey-licensed mental health professional.",
+      "Claim your ESA can be “officially registered” in a New Jersey database or that state-issued certification exists.",
+      "Sell ID cards, vests, tags, or certificates as legally required proof of ESA status.",
+      "Promise instant or same-day approval without an assessment by a New Jersey-licensed mental health professional.",
       "Issue documentation before establishing a legitimate provider-client relationship.",
-      "Guarantee landlord approval without following federal fair housing requirements or completing an individualized evaluation.",
+      "Guarantee landlord approval without an individualized evaluation under federal fair housing rules.",
     ],
     psdVsEsaTitle: "Psychiatric Service Dogs vs. Emotional Support Animals in New Jersey",
     psdVsEsaSubtitle: "In New Jersey, it’s important to comprehend the differences between emotional support animals (ESAs) and psychiatric service dogs (PSDs). Despite the fact that both might help people with mental health issues, their legal safeguards and training requirements differ.",
@@ -14161,27 +14159,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Get answers to all your queries and concerns related to emotional support animals in New Jersey by quickly going through the below-mentioned most commonly asked questions.",
     faqs: [
       {
-        q: "Can My Landlord Contact The Mental Health Provider Who Issued My New Jersey ESA Letter?",
+        q: "Can my landlord contact the mental health provider who issued my New Jersey ESA letter?",
         a: "A housing provider may verify that the clinician is licensed and that the letter is authentic. However, they cannot request details about your diagnosis, treatment history, or confidential medical information.",
       },
       {
-        q: "What Happens If I Move To Another State With My New Jersey ESA Letter?",
+        q: "What happens if I move to another state with my New Jersey ESA letter?",
         a: "Moving to another state does not automatically invalidate existing ESA documentation. The new housing provider may assess the documentation under the applicable fair housing requirements and request reliable additional information when permitted and necessary. A new evaluation or documentation from a clinician licensed in the new state is not automatically required in every case.",
       },
       {
-        q: "How Much Does An ESA Letter Cost In New Jersey?",
+        q: "How much does an ESA letter cost in New Jersey?",
         a: "In New Jersey, the cost of an ESA letter can vary based on the provider, but many services typically price their evaluations and documentation in the range of $120–$200. At My ESA Therapist, the fee is $99, covering both the professional evaluation and issuance of the ESA letter if you qualify.",
       },
       {
-        q: "Can A Housing Provider Limit The Type Of Animal That Qualifies As An ESA In New Jersey?",
+        q: "Can a Housing provider limit the type of animal that qualifies as an ESA in New Jersey?",
         a: "The animal’s suitability is assessed individually. Under federal housing guidance, assistance animals are generally animals commonly kept in households, although other animals may be considered in appropriate circumstances. The decision depends on the disability-related need, the animal, and the circumstances of the request.",
       },
       {
-        q: "Can A Landlord Delay Responding To My New Jersey ESA Request?",
+        q: "Can a landlord delay responding to my New Jersey ESA request?",
         a: "Housing providers are expected to respond within a reasonable timeframe. Unnecessary or prolonged delays without valid justification could be viewed as a failure to properly consider a reasonable accommodation request.",
       },
       {
-        q: "Can I Submit A Digital Copy Of My New Jersey ESA Letter, Or Does It Need To Be Printed?",
+        q: "Can I submit a digital copy of my New Jersey ESA letter, or does it need to be printed?",
         a: "In most cases, a clear digital copy is acceptable, especially if it includes the clinician’s license details and signature. Housing providers may verify authenticity but cannot require unnecessary formatting beyond reasonable documentation standards.",
       },
     ],
@@ -14445,19 +14443,19 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsWhatYouNeedItems: [
       {
         title: "Assessment by a State-Licensed Mental Health Provider",
-        description: "An appropriately qualified professional may assess an individual’s circumstances and disability-related need for an assistance animal. Federal fair housing law does not establish one universal professional credential or require every housing request to follow the same assessment process.",
+        description: "A qualified professional may assess your circumstances and disability-related need for an assistance animal. Federal fair housing law sets no single required credential or assessment process.",
       },
       {
         title: "Established Professional Relationship",
-        description: "Documentation should be based on an individualized assessment rather than automatic approval. Applicable professional licensing rules and provider requirements may vary, so a specific relationship duration should not be presented as a universal federal housing requirement.",
+        description: "Documentation should rest on an individualized assessment, not automatic approval. Licensing rules vary, and no specific relationship length is a universal federal housing requirement.",
       },
       {
         title: "Aligned with Federal Housing Requirements",
-        description: "When supporting information is necessary, it should help establish the disability-related need for an assistance animal. A particular letter format or disclosure of a specific diagnosis should not be presented as a universal federal requirement.",
+        description: "When needed, supporting information should establish the disability-related need for the animal. No particular letter format or specific diagnosis is a universal federal requirement.",
       },
     ],
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Indicate that state certification is required by law or that your ESA needs to be “registered” in a New Mexico database.",
       "As necessary evidence of ESA status, present ID cards, vests, badges, or certificates.",
@@ -14552,27 +14550,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Sit back and relax when we have got you covered regarding getting all your doubts about an emotional support letter in New Mexico.",
     faqs: [
       {
-        q: "How Long Is An ESA Letter Valid In New Mexico?",
+        q: "How long is an ESA letter valid in New Mexico?",
         a: "There is no universal federal expiration date for ESA documentation. A housing provider may request updated reliable information when permitted and reasonably necessary to assess an accommodation request. An automatic annual renewal is not universally required by federal fair housing law.",
       },
       {
-        q: "Can More Than One Animal Be Considered For Emotional Support?",
+        q: "Can more than one animal be considered for emotional support?",
         a: "Yes. In some cases, a licensed clinician may determine that more than one animal provides meaningful emotional support. This decision is always based on individual therapeutic needs.",
       },
       {
-        q: "What Is Involved In The Cost Of An ESA Letter In New Mexico?",
+        q: "What is involved in the cost of an ESA letter in New Mexico?",
         a: "In New Mexico, ESA letter costs vary depending on the provider and consultation process, with pricing reflecting the legitimacy and depth of the evaluation. At My ESA Therapist, the fee is $99, including the assessment and ESA letter upon approval.",
       },
       {
-        q: "Is An In-Person Visit Required To Obtain An ESA Letter?",
+        q: "Is an in-person visit required to obtain an ESA letter?",
         a: "No, an in-person visit is not always required to receive an ESA letter. Licensed providers may conduct evaluations through secure telehealth consultations.",
       },
       {
-        q: "Are There Specific Animal Types Allowed As ESAs?",
+        q: "Are there specific animal types allowed as ESAs?",
         a: "Assistance-animal requests are assessed individually. Animals commonly kept in households may qualify in appropriate circumstances, while requests involving other animals may require additional consideration. The decision depends on the disability-related need, the animal, and the circumstances of the request.",
       },
       {
-        q: "Do I Need To Train My ESA Formally?",
+        q: "Do I need to train my ESA formally?",
         a: "No. Emotional support animals are not required to complete specialized training. Their role is to provide comfort through companionship rather than task-based assistance.",
       },
     ],
@@ -14835,19 +14833,19 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsWhatYouNeedItems: [
       {
         title: "Evaluation by a Licensed Professional",
-        description: "An appropriately qualified professional may assess an individual’s circumstances and, when clinically appropriate, provide supporting documentation. Applicable licensing requirements depend on the service and relevant rules.",
+        description: "A qualified professional may assess your circumstances and, when clinically appropriate, provide supporting documentation. Licensing requirements depend on the service and relevant rules.",
       },
       {
         title: "Established Provider Relationship",
-        description: "Documentation should be based on an individualized evaluation rather than automatic approval. Any applicable professional requirements should be followed, but a specific relationship duration should not be presented as a universal federal housing requirement.",
+        description: "Documentation should rest on an individualized evaluation, not automatic approval. Professional requirements apply, but no specific relationship length is a universal federal housing requirement.",
       },
       {
         title: "Compliance with Housing Laws",
-        description: "When supporting information is necessary, it should help establish the disability-related need for an assistance animal. Federal housing law does not prescribe one universal letter format or require disclosure of a specific diagnosis in every case.",
+        description: "When needed, supporting information should establish the disability-related need for the animal. Federal housing law sets no single letter format and does not require a specific diagnosis in every case.",
       },
     ],
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be cautious of websites that:",
+    scamsCommonSubtitle: "Be cautious of websites that do any of the following.",
     scamsCommonItems: [
       "Claim your ESA must be registered in a national or state database.",
       "Sell ID cards or certificates as proof of ESA status.",
@@ -14941,27 +14939,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Get answers to all your doubts and queries by looking at the most commonly asked questions about an ESA letter in North Carolina.",
     faqs: [
       {
-        q: "Can An ESA Letter Be Used For Multiple Housing Locations In North Carolina?",
+        q: "Can an ESA letter be used for multiple Housing locations in North Carolina?",
         a: "Yes. An ESA letter is issued for the individual, not for a specific property. This means the same valid letter can generally be used when requesting accommodation in different housing locations within North Carolina.",
       },
       {
-        q: "What Does It Cost To Get An ESA Letter In North Carolina?",
+        q: "What does it cost to get an ESA letter in North Carolina?",
         a: "In North Carolina, ESA letter pricing varies based on the provider and consultation process, with some services offering evaluations around the $100–$150 range, depending on coverage or insurance. At My ESA Therapist, the fee is $99, which includes the evaluation and ESA letter upon approval.",
       },
       {
-        q: "Can Landlords Ask About The Type Of Animal Listed In An ESA Letter?",
+        q: "Can landlords ask about the type of animal listed in an ESA letter?",
         a: "Yes. Housing providers may ask for information about the animal and, when necessary, reliable information supporting the accommodation request. Applicants generally do not need to disclose a specific diagnosis or provide detailed medical records. Requests should be assessed individually under applicable law and current HUD enforcement guidance.",
       },
       {
-        q: "What Happens If A Landlord Questions The Authenticity Of An ESA Letter?",
+        q: "What happens if a landlord questions the authenticity of an ESA letter?",
         a: "A landlord may verify whether the letter was issued by a licensed North Carolina mental health professional. They may contact the provider for confirmation but cannot ask for confidential medical information.",
       },
       {
-        q: "What Should I Do If My ESA Accommodation Request Is Ignored?",
+        q: "What should I do if my ESA accommodation request is ignored?",
         a: "You should first follow up with the housing provider and provide any required documentation again. If the request continues to be ignored without proper review, you may consider filing a fair housing complaint with the appropriate authority.",
       },
       {
-        q: "Can Landlords Set Behavioral Expectations For ESAs?",
+        q: "Can landlords set behavioral expectations for ESAs?",
         a: "Yes. ESAs must behave appropriately and not create disturbances or safety concerns. If an animal becomes aggressive, excessively disruptive, or causes repeated damage, the housing provider may address the issue under housing rules.",
       },
     ],
@@ -15224,19 +15222,19 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsWhatYouNeedItems: [
       {
         title: "ESA Letter Issued by a North Dakota-Licensed Clinician",
-        description: "A housing provider may request reliable supporting documentation when permitted by North Dakota law. The documentation may be provided by a physician or medical professional who does not operate in the state solely to provide animal certifications. A North Dakota license should not be presented as a universal legal requirement for every supporting professional.",
+        description: "When North Dakota law allows, a housing provider may request reliable documentation from a physician or medical professional who does not operate in the state solely to provide animal certifications. A North Dakota license is not a universal requirement.",
       },
       {
         title: "Comprehensive Mental Health Assessment",
-        description: "An individualized evaluation considers the person’s circumstances, disability-related needs, and whether an assistance animal may be appropriate. The required supporting information depends on the circumstances and applicable rules.",
+        description: "An individualized evaluation considers your circumstances, disability-related needs, and whether an assistance animal may be appropriate. The documentation needed depends on the circumstances.",
       },
       {
         title: "Established Provider-Client Relationship",
-        description: "A legitimate ESA recommendation should be based on an appropriate assessment rather than automatic approval. Applicable professional requirements should be followed, but a specific relationship duration should not be presented as a universal North Dakota requirement.",
+        description: "A legitimate recommendation rests on an appropriate assessment, not automatic approval. Professional requirements apply, but no specific relationship length is a universal North Dakota requirement.",
       },
     ],
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Claim your ESA can be “registered” in an official North Dakota database, or suggest that a state-recognized certification system exists",
       "Promote laminated ID cards, online certificates, or branded accessories as valid legal proof of ESA status",
@@ -15330,27 +15328,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Learn more about emotional support animal documentation in North Dakota by reading the commonly asked questions below.",
     faqs: [
       {
-        q: "Can An ESA Letter Issued In North Dakota Be Used After Moving To Another State?",
+        q: "Can an ESA letter issued in North Dakota be used after moving to another state?",
         a: "It depends. Usually moving to another state does not automatically invalidate existing ESA documentation. Whether the documentation supports a housing request depends on the new state’s applicable laws, the professional’s qualifications, and the circumstances. Check the requirements before assuming a new letter is necessary.",
       },
       {
-        q: "How Long Is An ESA Letter Typically Considered Valid In North Dakota?",
+        q: "How long is an ESA letter typically considered valid in North Dakota?",
         a: "There is no general North Dakota statutory rule requiring every ESA letter to be renewed annually. A housing provider may request updated reliable information when permitted and reasonably necessary. Whether an update is appropriate depends on the circumstances and applicable law.",
       },
       {
-        q: "How Much Does An ESA Letter Cost In North Dakota?",
+        q: "How much does an ESA letter cost in North Dakota?",
         a: "In North Dakota, the cost of an ESA letter is influenced by the provider and the requirement of a proper licensed evaluation, ensuring compliance with housing laws. At My ESA Therapist, the fee is $99, covering both the professional assessment and issuance of the ESA letter if you qualify.",
       },
       {
-        q: "Can Housing Providers Verify An ESA Letter In North Dakota?",
+        q: "Can Housing providers verify an ESA letter in North Dakota?",
         a: "Yes. Housing providers may request reliable supporting information when permitted by law and when the disability-related need is not apparent or already known. They generally should not require detailed medical records or unnecessary disclosure of a specific diagnosis.",
       },
       {
-        q: "Can Roommates Or Neighbors Challenge An ESA Request?",
+        q: "Can roommates or neighbors challenge an ESA request?",
         a: "Roommates or neighbors typically cannot deny or challenge an ESA accommodation. Approval decisions are handled between the tenant and the housing provider under applicable housing accommodation guidelines.",
       },
       {
-        q: "Can An ESA Accommodation Request Be Reviewed Again After Approval?",
+        q: "Can an ESA accommodation request be reviewed again after approval?",
         a: "In some cases, housing providers may request updated documentation if the ESA letter becomes outdated or if circumstances related to the accommodation significantly change.",
       },
     ],
@@ -15625,7 +15623,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Claim your ESA can be “registered” in an official Ohio database, or suggest that state-recognized certification exists.",
       "Market laminated ID badges, online certificates, or branded gear as legally sufficient proof of ESA status.",
@@ -15719,27 +15717,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Get answers to all your queries regarding getting an emotional support animal letter in Ohio by looking at the most asked questions below!",
     faqs: [
       {
-        q: "Does My ESA Letter Need To Be Renewed Every Year In Ohio?",
+        q: "Does my ESA letter need to be renewed every year in Ohio?",
         a: "Federal law does not impose a universal annual renewal requirement for ESA letters. A housing provider may request updated reliable information when permitted by law and reasonably necessary to assess an accommodation request. Whether an update is appropriate depends on the circumstances and the information already available.",
       },
       {
-        q: "How Much Does It Cost To Get An ESA Letter In Ohio?",
+        q: "How much does it cost to get an ESA letter in Ohio?",
         a: "In Ohio, ESA letter costs depend on the provider and how the evaluation is conducted, with legitimate services focusing on a verified mental health assessment. At My ESA Therapist, the fee is $99, including the evaluation and ESA letter upon approval.",
       },
       {
-        q: "Can A Landlord In Ohio Verify My Therapist’s License Number?",
+        q: "Can a landlord in Ohio verify my therapist’s license number?",
         a: "Housing providers may request reliable supporting information when permitted by law and when the disability-related need is not apparent or already known. They generally should not require detailed medical records or unnecessary disclosure of a specific diagnosis. Any verification request should be limited to information reasonably necessary to assess the accommodation.",
       },
       {
-        q: "What Happens If My ESA Letter Was Issued By An Out-Of-State Provider?",
+        q: "What happens if my ESA letter was issued by an out-of-state provider?",
         a: "Housing providers may assess whether supporting documentation is reliable and whether the professional was appropriately qualified and authorized to provide the service. An out-of-state license alone does not automatically invalidate documentation, but applicable professional licensing requirements and the circumstances of the assessment may matter.",
       },
       {
-        q: "If I Work From Home, Can My Landlord Argue That I “Don’t Need” An ESA?",
+        q: "If I work from home, can my landlord argue that I “don’t need” an ESA?",
         a: "Working from home does not automatically disqualify someone from requesting an assistance-animal accommodation. Housing providers may assess the request and any necessary supporting information under applicable law. They should not deny a request based solely on assumptions about the person’s condition or living arrangements.",
       },
       {
-        q: "Can A Landlord In Ohio Require Me To Use A Specific ESA Verification Form?",
+        q: "Can a landlord in Ohio require me to use a specific ESA verification form?",
         a: "A housing provider may offer an accommodation request form, but the request should be assessed under applicable fair housing requirements rather than rejected solely because a particular form was not used. The provider may request reliable supporting information when legally permitted and reasonably necessary.",
       },
     ],
@@ -16013,7 +16011,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams",
-    scamsCommonSubtitle: "Be cautious of platforms or services that:",
+    scamsCommonSubtitle: "Be cautious of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Claim your ESA can be “registered” in an official Oklahoma database, or suggest that state-recognized certification exists.",
       "Market laminated ID badges, online certificates, or branded gear as legally sufficient proof of ESA status.",
@@ -16107,27 +16105,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Get answers to all your concerns regarding an emotional support animal letter in Oklahoma!",
     faqs: [
       {
-        q: "Can My Oklahoma Landlord Request A New ESA Letter Every Time I Renew My Lease?",
+        q: "Can my Oklahoma landlord request a New ESA letter every time I renew my lease?",
         a: "A landlord may request updated reliable information when permitted by law and reasonably necessary to assess an accommodation request. There is no universal federal rule requiring ESA letters to be renewed every 12 months. Whether an update is appropriate depends on the circumstances and information already available.",
       },
       {
-        q: "Does My ESA Letter Need To Mention My Specific Diagnosis In Oklahoma?",
+        q: "Does my ESA letter need to mention my specific diagnosis in Oklahoma?",
         a: "A housing provider generally does not need your specific diagnosis or detailed medical records when sufficient reliable information establishes your disability-related need for an assistance animal. The information needed depends on the circumstances and applicable law.",
       },
       {
-        q: "How Much Does An ESA Letter Typically Cost In Oklahoma?",
+        q: "How much does an ESA letter typically cost in Oklahoma?",
         a: "In Oklahoma, ESA letter pricing can vary by provider, but legitimate services generally involve a paid consultation with a licensed professional before approval. At My ESA Therapist, the fee is $99, which includes a licensed evaluation and the ESA letter if approved.",
       },
       {
-        q: "If My ESA Causes Minor Damage, Can My Oklahoma Landlord Revoke The Accommodation?",
+        q: "If my ESA causes minor damage, can my Oklahoma landlord revoke the accommodation?",
         a: "Generally speaking, minor issues or normal wear and tear do not cancel a granted accommodation. But serious property damage or safety issues may call for a review of the agreement.",
       },
       {
-        q: "What If My Oklahoma Landlord Says My ESA Is “Too Large” For The Apartment?",
+        q: "What if my Oklahoma landlord says my ESA is “too large” for the apartment?",
         a: "Size alone is not an automatic ground for denial. The landlord would have to prove that the particular animal is a real safety hazard or would seriously damage the property, not just that it exceeds typical pet limits.",
       },
       {
-        q: "If I Got My ESA Letter Online, Will Oklahoma Landlords Reject It?",
+        q: "If I got my ESA letter online, will Oklahoma landlords reject it?",
         a: "Not necessarily. Online evaluations are valid if conducted by a properly licensed Oklahoma clinician who performs a genuine assessment and maintains a legitimate therapeutic relationship. However, letters from ‘registry-only’ websites without clinical evaluation are often rejected.",
       },
     ],
@@ -16401,7 +16399,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams to Be Aware Of",
-    scamsCommonSubtitle: "Be mindful of websites or providers that:",
+    scamsCommonSubtitle: "Be mindful of websites or providers that do any of the following.",
     scamsCommonItems: [
       "Promote “ESA registration” services or imply that there is a government-approved certification system",
       "Sell ESA ID cards, vests, badges, or certificates as official legal documentation",
@@ -16494,27 +16492,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Find clear answers to the most common queries and concerns about emotional support animals and housing policies across Oregon.",
     faqs: [
       {
-        q: "Can A Landlord in Oregon Charge For Damage Caused By An ESA?",
+        q: "Can a landlord in Oregon charge for damage caused by an ESA?",
         a: "Yes. Although approved assistance-animal accommodations generally are not subject to pet rent or pet deposits, tenants may remain responsible for damage caused by their animals, subject to applicable law and the terms of the tenancy.",
       },
       {
-        q: "What Does An ESA Letter Cost In Oregon?",
+        q: "What does an ESA letter cost in Oregon?",
         a: "In Oregon, ESA letter pricing varies based on the provider and how the evaluation is conducted, with a strong focus on a legitimate mental health assessment. At My ESA Therapist, the fee is $99, which includes the evaluation and ESA letter upon approval.",
       },
       {
-        q: "What If My ESA Is An Uncommon Animal in Oregon Housing?",
+        q: "What if my ESA is an uncommon animal in Oregon Housing?",
         a: "While dogs and cats are common, there are several animals which may qualify. Housing providers may ask for additional verification if the ESA poses a legitimate risk to health, surroundings and the property.",
       },
       {
-        q: "Can A Landlord in Oregon Require Me To Use A Specific ESA Verification Form?",
+        q: "Can a landlord in Oregon require me to use a specific ESA verification form?",
         a: "A housing provider may request reliable supporting information when permitted by applicable law and when the disability-related need is not readily apparent. A specific ESA letter or form does not automatically guarantee approval, and any documentation request should be assessed under the applicable fair housing requirements.",
       },
       {
-        q: "Does An ESA Letter in Oregon Expire?",
+        q: "Does an ESA letter in Oregon expire?",
         a: "No. There is no universal federal rule requiring ESA letters to be renewed every 12 months. A housing provider may request updated reliable information when permitted by law and reasonably necessary to assess an accommodation request. Whether updated documentation is appropriate depends on the circumstances and information already available.",
       },
       {
-        q: "Can An Oregon Landlord Limit The Number Of ESAs In One Household?",
+        q: "Can an Oregon landlord limit the number of ESAs in one household?",
         a: "A housing provider may assess a request for multiple assistance animals individually and may request reliable supporting information when permitted by law. There is no universal rule guaranteeing approval for a particular number of animals. Each animal’s disability-related need and any relevant safety or property concerns may be considered.",
       },
     ],
@@ -16790,7 +16788,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams in Pennsylvania",
-    scamsCommonSubtitle: "Be cautious of websites that claim the following:",
+    scamsCommonSubtitle: "Be cautious of websites that claim any of the following.",
     scamsCommonItems: [
       "Instant approvals or letters issued without a licensed clinical evaluation",
       "Websites offering ESA “registration,” “certification,” or ID cards",
@@ -16883,27 +16881,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Find answers to your queries for emotional support animals, evaluation, and documentation process.",
     faqs: [
       {
-        q: "Does an Emotional Support Animal Replace Therapy or Medication in Pennsylvania ?",
+        q: "Does an emotional support animal replace therapy or medication in Pennsylvania ?",
         a: "No. An emotional support animal does not replace therapy or medication. ESAs provide emotional comfort but are not a form of medical treatment. They are meant to support you, not as a therapy substitute. A licensed provider recommends professional mental health care.",
       },
       {
-        q: "Is an ESA Allowed in Shared Housing like Roommates or Dorms in PA?",
+        q: "Is an ESA allowed in shared Housing like roommates or dorms in PA?",
         a: "In Pennsylvania, emotional support animals may be permitted in shared housing under the Fair Housing Act when requested as a reasonable accommodation. Approval depends on the housing type and policies. While ESAs do not have public access rights, disability accommodation laws may still apply to many shared living arrangements.",
       },
       {
-        q: "How Much Does An ESA Letter Cost In Pennsylvania?",
+        q: "How much does an ESA letter cost in Pennsylvania?",
         a: "In Pennsylvania, the cost of an ESA letter can vary by provider, but many services typically price their evaluations and documentation in the range of $120–$200. At My ESA Therapist, the fee is $99, covering both the professional evaluation and issuance of the ESA letter if you qualify.",
       },
       {
-        q: "Do I Need to Renew my ESA Letter Every Year in Pennsylvania?",
+        q: "Do I need to renew my ESA letter every year in Pennsylvania?",
         a: "There is no federal law that requires annual renewal of an ESA letter. However, some housing providers may request updated documentation over time to confirm continued need. A licensed mental health professional can advise whether a new evaluation is appropriate based on your current situation.",
       },
       {
-        q: "What if My Housing Provider Says My ESA Is Too Large or the Wrong Breed?",
+        q: "What if my Housing provider says my ESA is too large or the wrong breed?",
         a: "Landlords must consider ESA requests under the Fair Housing Act and cannot deny them based on size or breed alone.",
       },
       {
-        q: "How to Get an Emotional Support Animal When a Landlord Says No in PA?",
+        q: "How to get an emotional support animal when a landlord says no in PA?",
         a: "If a landlord says no, you may submit valid ESA documentation and request a reasonable accommodation review consistent with federal housing guidelines.",
       },
     ],
@@ -17169,19 +17167,19 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsWhatYouNeedItems: [
       {
         title: "South Dakota LMHP Evaluation",
-        description: "For housing accommodation requests in South Dakota, reliable supporting documentation may be requested when the disability or disability-related need is not readily apparent or already known. When required, the documentation must confirm the disability and its relationship to the requested accommodation and must meet South Dakota’s requirements for the licensed health care provider who supplies it.",
+        description: "When a disability or disability-related need isn’t readily apparent or already known, a housing provider may request reliable documentation. It must confirm the disability and its link to the accommodation, and come from a licensed health care provider who meets South Dakota’s requirements.",
       },
       {
         title: "Detailed Psychological Review",
-        description: "To find out whether an emotional support animal could offer significant emotional support, the clinician examines emotional difficulties, mental health history, and everyday functioning during the consultation.",
+        description: "During the consultation, the clinician reviews emotional difficulties, mental health history, and everyday functioning to decide whether an emotional support animal could offer significant support.",
       },
       {
         title: "Verified Professional Relationship",
-        description: "South Dakota law requires qualifying supporting documentation to come from a licensed health care provider who does not operate in the state solely to provide service or assistance animal certifications. The documentation must confirm the disability and its relationship to the requested accommodation.",
+        description: "South Dakota requires the documentation to come from a licensed health care provider who does not operate in the state solely to issue service or assistance animal certifications.",
       },
     ],
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Claims an “official ESA registry” exists in South Dakota",
       "Sells instant ESA certificates or laminated ID cards",
@@ -17275,27 +17273,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Leave all your South Dakota ESA letter doubts on us! Quickly go through the most commonly asked questions below!",
     faqs: [
       {
-        q: "Do ESA Letters In South Dakota Require In-Person Appointments?",
+        q: "Do ESA letters in South Dakota require in-person appointments?",
         a: "No. Many licensed mental health professionals conduct ESA evaluations through secure telehealth consultations. As long as the assessment is performed by a qualified clinician following professional standards, an in-person visit is usually not required.",
       },
       {
-        q: "How Much Does An ESA Letter Cost In South Dakota?",
+        q: "How much does an ESA letter cost in South Dakota?",
         a: "In South Dakota, ESA letter pricing can vary depending on the service and evaluation method, with reputable providers ensuring a proper licensed assessment. At My ESA Therapist, the fee is $99, which includes a professional evaluation and the ESA letter if approved.",
       },
       {
-        q: "What Happens If A Housing Provider Delays Responding To An ESA Request?",
+        q: "What happens if a Housing provider delays responding to an ESA request?",
         a: "Housing providers are expected to review reasonable accommodation requests within a reasonable timeframe. Unnecessary delays may interfere with fair housing practices, so tenants may consider following up with the provider or requesting clarification.",
       },
       {
-        q: "Does An ESA Letter In South Dakota Need To Include The Animal’s Details?",
+        q: "Does an ESA letter in South Dakota need to include the animal’s details?",
         a: "An ESA letter typically focuses on confirming the individual’s need for emotional support. Some letters may mention the type of animal, but the primary requirement is the clinician’s recommendation and professional credentials.",
       },
       {
-        q: "Can A Landlord Request A Renewed ESA Letter In South Dakota?",
+        q: "Can a landlord request a renewed ESA letter in South Dakota?",
         a: "In some cases, housing providers may ask for updated documentation if the existing ESA letter is outdated or if a new housing request is submitted. The updated letter must still come from a licensed mental health professional.",
       },
       {
-        q: "Do ESA Letters In South Dakota Need To Include A Specific Diagnosis?",
+        q: "Do ESA letters in South Dakota need to include a specific diagnosis?",
         a: "No. ESA letters generally confirm that a person has a qualifying mental or emotional condition without revealing the exact diagnosis, as detailed medical information is considered private.",
       },
     ],
@@ -17574,7 +17572,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Claim your ESA must be “officially registered” in a Utah database or suggest that state certification is legally required.",
       "Sell ID cards, vests, tags, or certificates as mandatory proof of ESA legitimacy.",
@@ -17669,27 +17667,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Let us simplify the details of getting an ESA letter in Utah while you focus on what matters most.",
     faqs: [
       {
-        q: "Can A Utah Landlord Verify My ESA Letter Directly With The Provider?",
+        q: "Can a Utah landlord verify my ESA letter directly with the provider?",
         a: "A housing provider may seek reliable information necessary to assess an accommodation request when the disability or disability-related need is not readily apparent. Requests should be limited to relevant information. Comprehensive medical records or disclosure of a specific diagnosis generally should not be required merely to evaluate an assistance-animal request.",
       },
       {
-        q: "How Is The Cost Of An ESA Letter Determined In Utah?",
+        q: "How is the cost of an ESA letter determined in Utah?",
         a: "In Utah, the price of an ESA letter varies based on the consultation process and the credentials of the professional handling the evaluation. At My ESA Therapist, the fee is $99, covering both the assessment and issuance of the ESA letter if you qualify.",
       },
       {
-        q: "Does Utah Require In-Person Visits To Qualify For An ESA Letter?",
+        q: "Does Utah require in-person visits to qualify for an ESA letter?",
         a: "In-person visits are not universally required for an ESA evaluation. Telehealth may be used when the professional is authorized to provide services in Utah and the evaluation meets applicable professional standards. Housing documentation requirements depend on the circumstances of the accommodation request.",
       },
       {
-        q: "Can I Request More Than One ESA in Utah?",
+        q: "Can I request more than one ESA in Utah?",
         a: "Yes. Individuals with qualifying mental health disorders can have more than one ESA, provided each ESA offers therapeutic benefit and is deemed clinically appropriate by a licensed mental health professional in Utah.",
       },
       {
-        q: "Is There A Government Registry I Must Enroll My ESA In For Utah Housing?",
+        q: "Is there a government registry I must enroll my ESA in for Utah Housing?",
         a: "No. There is no official Utah or federal ESA registry. Legitimate ESA documentation comes only from a licensed mental health professional after a proper clinical evaluation.",
       },
       {
-        q: "Can My ESA Letter Expire In Utah?",
+        q: "Can my ESA letter expire in Utah?",
         a: "Federal housing law does not establish a universal expiration date or annual renewal requirement for ESA documentation. A housing provider may request relevant additional information when reasonably necessary to assess a particular accommodation request, subject to applicable law.",
       },
     ],
@@ -17966,7 +17964,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams in South Carolina",
-    scamsCommonSubtitle: "Be cautious of services that:",
+    scamsCommonSubtitle: "Be cautious of services that do any of the following.",
     scamsCommonItems: [
       "Claim there is an “official ESA registry” in South Carolina.",
       "Sell instant ESA certificates, badges, or laminated identification cards.",
@@ -18060,27 +18058,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Clear all your queries regarding an emotional support animal letter in South Carolina.",
     faqs: [
       {
-        q: "Can A Landlord Verify An ESA Letter In South Carolina?",
+        q: "Can a landlord verify an ESA letter in South Carolina?",
         a: "Yes. Under S.C. Code § 31-21-70(N), a landlord may ask whether the person has a disability and a disability-related need for the animal. The landlord may request documentation to verify those responses, and the documentation must establish the disability and the animal’s disability-related assistance or emotional support role.",
       },
       {
-        q: "Are ESA Letters In South Carolina Required To Be Renewed Annually?",
+        q: "Are ESA letters in South Carolina required to be renewed annually?",
         a: "There is no universal federal rule requiring ESA letters to be renewed every 12 months. A housing provider may request updated supporting information when permitted by law and reasonably necessary to assess an accommodation request.",
       },
       {
-        q: "Can More Than One ESA Be Approved In South Carolina Housing?",
+        q: "Can more than one ESA be approved in South Carolina Housing?",
         a: "In some situations, multiple animals may be considered if a licensed mental health professional determines each animal provides necessary emotional support.",
       },
       {
-        q: "What Is The Average Cost Of An ESA Letter In South Carolina?",
+        q: "What is the average cost of an ESA letter in South Carolina?",
         a: "In South Carolina, ESA letter costs are typically aligned with national standards, where licensed evaluations are often priced in the $149–$199 range. At My ESA Therapist, the fee is $99, including the evaluation and ESA letter upon approval.",
       },
       {
-        q: "Is An In-Person Evaluation Required To Obtain An ESA Letter In South Carolina?",
+        q: "Is an in-person evaluation required to obtain an ESA letter in South Carolina?",
         a: "Not always. Licensed professionals may conduct evaluations through secure telehealth platforms if they follow proper clinical and licensing standards.",
       },
       {
-        q: "Can A Landlord Ask About The Tasks Performed By An ESA In South Carolina?",
+        q: "Can a landlord ask about the tasks performed by an ESA in South Carolina?",
         a: "No. Unlike service animals, ESAs are not required to perform trained tasks, and landlords generally cannot require task-related explanations.",
       },
     ],
@@ -18350,15 +18348,15 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         title: "Valid ESA Letter",
-        description: "An ESA letter may be issued based on the evaluation if the Virginia clinician finds appropriate.",
+        description: "An ESA letter may be issued based on the evaluation if the Virginia clinician finds it appropriate.",
       },
       {
         title: "Individualized Professional Assessment",
-        description: "ESA recommendations should be based on an appropriate, individualized assessment rather than automatic approval. Virginia law recognizes documentation from a person with whom the individual has or has had a therapeutic relationship, but it does not establish a continuing therapy relationship as a universal prerequisite for every assistance-animal housing request.",
+        description: "ESA recommendations should rest on an individualized assessment, not automatic approval. Virginia law recognizes documentation from someone with whom you have or had a therapeutic relationship, but does not make ongoing therapy a universal prerequisite for every housing request.",
       },
     ],
     scamsCommonTitle: "Common ESA Scams in Virginia",
-    scamsCommonSubtitle: "Some of the ways to identify fake ESA services:",
+    scamsCommonSubtitle: "Here are some ways to identify fake ESA services.",
     scamsCommonItems: [
       "Promise to offer instant ESA letters without clinician evaluation.",
       "Claim to offer ESA certification or registration.",
@@ -18456,7 +18454,7 @@ export const STATES_DATA: Record<string, StateData> = {
         a: "It depends on the child’s needs. A licensed healthcare provider can evaluate the child and determine whether an ESA for home-based emotional support or a psychiatric service dog for task-based assistance and public access is appropriate.",
       },
       {
-        q: "What Should You Expect To Pay For An ESA Letter In Virginia?",
+        q: "What should you expect to pay for an ESA letter in Virginia?",
         a: "In Virginia, ESA letter pricing varies by provider, but most reputable services generally fall within the $149–$199 range for a proper licensed evaluation. At My ESA Therapist, the fee is $99, which includes a professional evaluation and the ESA letter if approved.",
       },
       {
@@ -18735,7 +18733,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams in West Virginia",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Claim there is an “official ESA registry” in West Virginia",
       "Sell instant ESA certificates, badges, or laminated ID cards",
@@ -18840,27 +18838,27 @@ export const STATES_DATA: Record<string, StateData> = {
     faqSubtitle: "Get answers to all your queries regarding an emotional support animal letter in West Virginia.",
     faqs: [
       {
-        q: "Can A Landlord In West Virginia Verify My ESA Letter?",
+        q: "Can a landlord in West Virginia verify my ESA letter?",
         a: "Yes. A landlord may verify that the letter was issued by a West Virginia-licensed mental health professional and confirm the professional’s credentials without requesting detailed medical records.",
       },
       {
-        q: "Can More Than One Emotional Support Animal Be Approved For A Person?",
+        q: "Can more than one emotional support animal be approved for a person?",
         a: "In some situations, a clinician may recommend more than one ESA if each animal provides a distinct form of therapeutic support.",
       },
       {
-        q: "How Is ESA Letter Pricing Structured In West Virginia?",
+        q: "How is ESA letter pricing structured in West Virginia?",
         a: "In West Virginia, the cost of an ESA letter depends on the provider and the type of consultation, with emphasis on a valid assessment by a licensed professional. At My ESA Therapist, the fee is $99, covering both the evaluation and issuance of the ESA letter if you qualify.",
       },
       {
-        q: "Do ESA Letters Expire In West Virginia?",
+        q: "Do ESA letters expire in West Virginia?",
         a: "Federal fair housing law does not establish a universal annual renewal requirement for ESA letters. Whether additional documentation is appropriate depends on the circumstances and applicable legal requirements.",
       },
       {
-        q: "Is An ESA Letter Valid If I Move To Another State?",
+        q: "Is an ESA letter valid if I move to another state?",
         a: "An ESA letter may support a housing accommodation request after a move, but the new housing provider may assess the request under applicable law and request reliable supporting information when legally necessary. Federal law does not universally require a new ESA letter solely because someone moves to another state.",
       },
       {
-        q: "Can A Landlord Ask About My Medical Diagnosis?",
+        q: "Can a landlord ask about my medical diagnosis?",
         a: "No. Landlords may request confirmation of disability-related need but cannot demand detailed medical records or specific diagnostic information.",
       },
     ],

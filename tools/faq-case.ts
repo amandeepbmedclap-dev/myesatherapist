@@ -2,13 +2,14 @@ import { STATES_DATA } from "../data/statesData";
 import { EXTRA_STATES } from "../data/extraStates";
 const all = { ...STATES_DATA, ...EXTRA_STATES } as Record<string, any>;
 const names = new Set(Object.values(all).flatMap((s: any) => s.name.split(" ")));
-const keep = new Set(["I","I'm","ESA","ESAs","PSD","HOA","HUD","ID","FHA","ADA","US","U.S.","DC","Fair","Housing","Act"]);
+const keep = new Set(["Airbnb","NYC","I","I'm","ESA","ESAs","PSD","HOA","HUD","ID","FHA","ADA","US","U.S.","DC","Fair","Housing","Act"]);
 const isTitle = (q: string) => { const w = q.split(" ").filter((x) => /^[a-z]/i.test(x)); return w.filter((x) => /^[A-Z]/.test(x)).length / w.length > 0.6; };
 export function toSentence(q: string) {
   return q.split(" ").map((w, i) => {
     if (i === 0) return w;
     const core = w.replace(/^[("]+|[),.?!:"]+$/g, "");
     if (keep.has(core) || names.has(core) || /^[A-Z0-9.\-\/]+$/.test(core) && core.length > 1) return w;
+    if (core.includes("-")) return w.split("-").map((p, j) => { const c = p.replace(/^[("]+|[),.?!:"]+$/g, ""); return names.has(c) || keep.has(c) ? p : p.replace(/[A-Za-z]/, (ch) => ch.toLowerCase()); }).join("-");
     if (core.includes("/")) return w.split("/").map((p) => (names.has(p) ? p : p.charAt(0).toLowerCase() + p.slice(1))).join("/");
     return w.replace(/[A-Za-z]/, (c) => c.toLowerCase());
   }).join(" ");

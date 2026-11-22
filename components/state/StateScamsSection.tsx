@@ -82,8 +82,8 @@ export function StateScamsSection({ data }: { data: StateData }) {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-6 xl:gap-8">
-          <div className="bg-[#EFF6F3] rounded-[20px] sm:rounded-[24px] lg:rounded-[26px] border border-[#E1EFE9] shadow-[0_4px_25px_rgba(0,0,0,0.025)] flex flex-col overflow-hidden">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:grid-rows-[auto_auto_1fr] lg:gap-x-6 lg:gap-y-0 xl:gap-x-8">
+          <div className="bg-[#EFF6F3] rounded-[20px] sm:rounded-[24px] lg:rounded-[26px] border border-[#E1EFE9] shadow-[0_4px_25px_rgba(0,0,0,0.025)] flex flex-col overflow-hidden lg:row-span-3 lg:grid lg:grid-rows-subgrid">
             <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] overflow-hidden shrink-0">
               <Image
             quality={90}
@@ -95,12 +95,13 @@ export function StateScamsSection({ data }: { data: StateData }) {
               />
             </div>
 
-            <div className="p-5 sm:p-6 lg:p-7 flex flex-col flex-1">
-              <h3 className="font-heading text-xl sm:text-2xl lg:text-[23px] xl:text-[28px] font-bold text-primary text-center mb-6 sm:mb-7 leading-snug">
+            <div className="flex items-center justify-center px-5 pt-5 sm:px-6 sm:pt-6 lg:px-7 lg:pt-7">
+              <h3 className="font-heading text-xl sm:text-2xl lg:text-[23px] xl:text-[28px] font-bold text-primary text-center leading-snug">
                 {whatYouNeedTitle}
               </h3>
-
-              <div className="space-y-5 flex-1">
+            </div>
+            <div className="flex flex-col flex-1 px-5 pb-5 pt-6 sm:px-6 sm:pb-6 sm:pt-7 lg:px-7 lg:pb-7">
+              <div className="flex flex-1 flex-col gap-5 lg:justify-between lg:gap-4">
                 {whatYouNeedItems.map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3.5">
                     <div className="flex h-7 shrink-0 items-end">
@@ -125,7 +126,7 @@ export function StateScamsSection({ data }: { data: StateData }) {
             </div>
           </div>
 
-          <div className="bg-[#FFF0F0] rounded-[20px] sm:rounded-[24px] lg:rounded-[26px] border border-[#FCDADA] shadow-[0_4px_25px_rgba(0,0,0,0.025)] flex flex-col overflow-hidden">
+          <div className="bg-[#FFF0F0] rounded-[20px] sm:rounded-[24px] lg:rounded-[26px] border border-[#FCDADA] shadow-[0_4px_25px_rgba(0,0,0,0.025)] flex flex-col overflow-hidden lg:row-span-3 lg:grid lg:grid-rows-subgrid">
             <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] overflow-hidden shrink-0">
               <Image
             quality={90}
@@ -137,10 +138,12 @@ export function StateScamsSection({ data }: { data: StateData }) {
               />
             </div>
 
-            <div className="p-5 sm:p-6 lg:p-7 flex flex-col flex-1">
-              <h3 className="font-heading text-xl sm:text-2xl lg:text-[23px] xl:text-[28px] font-bold text-[#D6292B] text-center mb-5 sm:mb-6 leading-snug">
+            <div className="flex items-center justify-center px-5 pt-5 sm:px-6 sm:pt-6 lg:px-7 lg:pt-7">
+              <h3 className="font-heading text-xl sm:text-2xl lg:text-[23px] xl:text-[28px] font-bold text-[#D6292B] text-center leading-snug">
                 {commonTitle}
               </h3>
+            </div>
+            <div className="flex flex-col flex-1 px-5 pb-5 pt-5 sm:px-6 sm:pb-6 sm:pt-6 lg:px-7 lg:pb-7">
 
               {commonSubtitle && (
                 <h4 className="font-sans text-sm sm:text-base lg:text-[16px] font-bold text-primary text-left mb-4">

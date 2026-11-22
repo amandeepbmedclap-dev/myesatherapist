@@ -317,7 +317,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Claims there is an “official ESA registry” in Vermont.",
       "Offers instant ESA certificates, badges, or laminated ID cards.",
@@ -397,27 +397,27 @@ export const EXTRA_STATES: Record<string, StateData> = {
       "Get answers to all your queries regarding getting an emotional support animal letter in Vermont by looking at the most asked questions below!",
     faqs: [
       {
-        q: "Do Vermont Housing Providers Have The Right To Verify An ESA Letter?",
+        q: "Do Vermont Housing providers have the right to verify an ESA letter?",
         a: "Yes. A landlord may verify that the letter was issued by a licensed mental health professional, but they generally cannot request detailed medical records.",
       },
       {
-        q: "Can Landlords Set Behavior Standards For Emotional Support Animals In Vermont?",
+        q: "Can landlords set behavior standards for emotional support animals in Vermont?",
         a: "Probably. ESAs are expected to behave appropriately. Landlords may address issues such as excessive noise, property damage, or safety concerns.",
       },
       {
-        q: "What Is The Price Of An ESA Letter In Vermont?",
+        q: "What is the price of an ESA letter in Vermont?",
         a: "In Vermont, ESA letter pricing varies based on the provider and how detailed the mental health evaluation process is. At My ESA Therapist, the fee is $99, including the assessment and ESA letter upon approval.",
       },
       {
-        q: "Are Exotic Animals Allowed As ESAs In Vermont Housing?",
+        q: "Are exotic animals allowed as ESAs in Vermont Housing?",
         a: "Possibly, but housing providers may evaluate whether the animal is reasonable for the property and whether it could pose safety, health, or property risks.",
       },
       {
-        q: "What Happens If An ESA Damages Property In A Vermont Rental?",
+        q: "What happens if an ESA damages property in a Vermont rental?",
         a: "Tenants are generally responsible for any damage caused by their emotional support animal, just like they would be responsible for other damages in the rental unit.",
       },
       {
-        q: "Can Housing Providers Request A New Vermont ESA Letter After Some Time?",
+        q: "Can Housing providers request a New Vermont ESA letter after some time?",
         a: "Housing providers may request updated information when reasonably necessary to evaluate a new or continuing reasonable accommodation request. However, there is no general federal or Vermont law requiring ESA letters to be renewed every 12 months or establishing a universal 12-month expiration period.",
       },
     ],
@@ -606,7 +606,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be aware of platforms or services that:",
+    scamsCommonSubtitle: "Be aware of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Claim your ESA must be “officially registered” in a Tennessee database or suggest state certification is legally required.",
       "Sell ID cards, vests, tags, or certificates as mandatory proof of ESA status.",
@@ -686,27 +686,27 @@ export const EXTRA_STATES: Record<string, StateData> = {
     faqSubtitle: "Relax while we walk you through everything you need to know about ESA letters in Tennessee.",
     faqs: [
       {
-        q: "Can A Landlord In Tennessee Ask For A New ESA Letter Every Year?",
+        q: "Can a landlord in Tennessee ask for a New ESA letter every year?",
         a: "Housing providers may request reliable documentation when the disability or disability-related need for an assistance animal is not readily apparent or known. However, Tennessee and federal housing laws do not establish a universal 12-month expiration period or annual renewal requirement for ESA letters.",
       },
       {
-        q: "Does An ESA Letter Automatically Transfer If I Move To A Different City In Tennessee?",
+        q: "Does an ESA letter automatically transfer if I move to a different city in Tennessee?",
         a: "Yes. Since ESA protections are federal, a valid letter from a Tennessee-licensed provider generally applies statewide, from small towns to major metro areas.",
       },
       {
-        q: "What Does It Typically Cost To Get An ESA Letter In Tennessee?",
+        q: "What does it typically cost to get an ESA letter in Tennessee?",
         a: "In Tennessee, ESA letter pricing depends on the provider and how the evaluation is conducted, with legitimate services focusing on a licensed mental health assessment. At My ESA Therapist, the fee is $99, which includes the evaluation and ESA letter upon approval.",
       },
       {
-        q: "Can Roommates Object To An ESA In Shared Housing?",
+        q: "Can roommates object to an ESA in shared Housing?",
         a: "Landlords must balance accommodation requests with other tenants' rights, including documented allergies or medical conditions, through an individualized review process.",
       },
       {
-        q: "Can A Tennessee Landlord Limit The Type Of Animal Approved As An ESA?",
+        q: "Can a Tennessee landlord limit the type of animal approved as an ESA?",
         a: "No. Although dogs and cats are common, other domesticated animals may qualify if the accommodation is reasonable and properly supported by documentation.",
       },
       {
-        q: "Can An Employer In Tennessee Require Proof Of My ESA Letter?",
+        q: "Can an employer in Tennessee require proof of my ESA letter?",
         a: "Workplace accommodations differ from housing rules. ESAs are not automatically permitted at work under the Americans with Disabilities Act, and approval depends on employer policies and disability accommodation procedures.",
       },
     ],
@@ -895,7 +895,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams",
-    scamsCommonSubtitle: "Residents should watch out for online services that:",
+    scamsCommonSubtitle: "Residents should watch out for online services that do any of the following.",
     scamsCommonItems: [
       "Suggest there is an official ESA database or registration system in Rhode Island.",
       "Offer quick ESA certificates, ID badges, or pre-made identification cards for purchase.",
@@ -974,27 +974,27 @@ export const EXTRA_STATES: Record<string, StateData> = {
     faqSubtitle: "Get answers to all your queries regarding emotional support animal letters in Rhode Island!",
     faqs: [
       {
-        q: "Can A Landlord In Rhode Island Ask For Additional Verification Of My ESA Letter?",
+        q: "Can a landlord in Rhode Island ask for additional verification of my ESA letter?",
         a: "Yes. A housing provider may review the letter to confirm it was issued by a licensed mental health professional and that it supports a legitimate accommodation request.",
       },
       {
-        q: "Does an ESA Letter in Rhode Island Expire After a Certain Period?",
+        q: "Does an ESA letter in Rhode Island expire after a certain period?",
         a: "Rhode Island ESA letters do not always have a fixed expiration date, but many housing providers prefer documentation that has been issued within the past year to confirm the most updated need for an emotional support animal.",
       },
       {
-        q: "What Is the Cost of an ESA Letter in Rhode Island?",
+        q: "What is the cost of an ESA letter in Rhode Island?",
         a: "In Rhode Island, ESA letter costs depend on the provider and consultation process, with pricing reflecting the credibility and depth of the licensed evaluation. At My ESA Therapist, the fee is $99, including the assessment and ESA letter upon approval.",
       },
       {
-        q: "Can More Than One Emotional Support Animal Be Approved For A Household?",
+        q: "Can more than one emotional support animal be approved for a household?",
         a: "In some cases, more than one ESA may be considered if a Rhode Island-licensed mental health professional determines that multiple animals are part of the individual's support needs.",
       },
       {
-        q: "Is A Digital ESA Letter Acceptable For Housing Requests?",
+        q: "Is a digital ESA letter acceptable for Housing requests?",
         a: "Many housing providers accept digital or electronically signed ESA letters, provided the document contains the clinician's credentials and contact information.",
       },
       {
-        q: "What Should I Do If My ESA Accommodation Request Is Denied?",
+        q: "What should I do if my ESA accommodation request is denied?",
         a: "If a request is denied, individuals may ask the housing provider for clarification, review their documentation, or explore guidance related to the Fair Housing Act.",
       },
     ],
@@ -1184,7 +1184,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       },
     ],
     scamsCommonTitle: "Common ESA Scams in District of Columbia",
-    scamsCommonSubtitle: "Be cautious of platforms or services that:",
+    scamsCommonSubtitle: "Be cautious of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Claim to offer an official ESA registry in the District of Columbia.",
       "Sell instant ESA certificates, badges, or ID cards as proof of eligibility.",
@@ -1381,7 +1381,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       { title: "Official Date and Professional Signature", description: "A genuine ESA letter generally includes the issue date and the professional's signature, and may appear on official letterhead." },
     ],
     scamsCommonTitle: "Common ESA Scams in Puerto Rico",
-    scamsCommonSubtitle: "Be cautious of platforms or services that:",
+    scamsCommonSubtitle: "Be cautious of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Claim to offer an official ESA registry in Puerto Rico.",
       "Sell instant ESA certificates, badges, or ID cards as proof of eligibility.",
@@ -1554,7 +1554,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       { title: "Official Date and Professional Signature", description: "A genuine ESA letter generally includes the issue date and the professional's signature, and may appear on official letterhead." },
     ],
     scamsCommonTitle: "Common ESA Scams in the Virgin Islands",
-    scamsCommonSubtitle: "Be cautious of platforms or services that:",
+    scamsCommonSubtitle: "Be cautious of platforms or services that do any of the following.",
     scamsCommonItems: [
       "Claim to offer an official ESA registry in the Virgin Islands.",
       "Sell instant ESA certificates, badges, or ID cards as proof of eligibility.",
