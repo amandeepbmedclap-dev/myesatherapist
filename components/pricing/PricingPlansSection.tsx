@@ -70,7 +70,7 @@ export function PricingPlansSection({
             </div>
             <a
               href={addPetHref}
-              className="inline-flex items-center justify-center h-[48px] px-8 rounded-full border border-primary bg-white text-primary font-sans font-semibold text-[16px] leading-[22px] shrink-0 hover:bg-background transition-colors"
+              className="cta3d cta3d--outline inline-flex h-[48px] shrink-0 items-center justify-center px-8 font-sans text-[16px] leading-[22px]"
             >
               Add A Pet
             </a>

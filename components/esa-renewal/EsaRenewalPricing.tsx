@@ -7,6 +7,7 @@ const RENEWAL_CARDS = [
     title: "ESA Letter\nRenewal",
     description: "For individuals with an existing ESA letter",
     price: "$79",
+    isPopular: true,
     features: [
       "Evaluation conducted by a state-licensed mental health professional",
       "Scheduled phone or secure video session",
@@ -15,7 +16,7 @@ const RENEWAL_CARDS = [
       "Intended for housing accommodation requests",
       "Professional review (no guaranteed outcome)",
     ],
-    buttonText: "Start Your ESA Evaluation",
+    buttonText: "Renew My ESA Letter",
   },
   {
     title: "New ESA\nLetter",

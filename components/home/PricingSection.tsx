@@ -1,8 +1,8 @@
 import React from "react";
-import Image from "next/image";
 import { PricingTabSwitcher } from "./PricingTabSwitcher";
 import { MaybeStateModalButton } from "@/components/common/MaybeStateModalButton";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check, Minus, ShieldCheck } from "lucide-react";
+import { PricingHelpStrip } from "./PricingHelpStrip";
 import { ctaLabel } from "@/components/common/ctaCopy";
 import { isEvaluationCtaLabel, type StateModalLetter } from "@/components/common/evaluationCta";
 
@@ -18,6 +18,8 @@ export interface PlanCard {
   features: string[];
   buttonText: string;
   mobileButtonText?: string;
+  /** One short line saying who the plan is for. Falls back to description. */
+  audience?: string;
 }
 
 export interface PlanSet {
@@ -38,6 +40,7 @@ export const PLANS: Record<PlanType, PlanSet> = {
           "Professional ESA letter from a state-licensed mental health professional for housing accommodations.",
         price: "$99",
         isPopular: true,
+        audience: "For renters who want to live with their emotional support animal.",
         features: [
           "Online ESA evaluation",
           "Licensed mental health professional",
@@ -53,9 +56,11 @@ export const PLANS: Record<PlanType, PlanSet> = {
         description:
           "Professional ESA and PSD letters from a state-licensed mental health professional for housing and service dog needs.",
         price: "$179",
+        audience: "For people who need both housing and service dog documentation.",
         features: [
           "Online ESA evaluation",
           "Licensed mental health professional",
+          "Disability-related need assessment",
           "ESA letter if clinically approved",
           "PSD letter if clinically approved",
           "Secure email delivery",
@@ -90,6 +95,7 @@ export const PLANS: Record<PlanType, PlanSet> = {
           "Professional PSD letter from a state-licensed mental health professional for service dog needs.",
         price: "$99",
         isPopular: true,
+        audience: "For handlers who need psychiatric service dog documentation.",
         features: [
           "Online PSD evaluation",
           "Licensed mental health professional",
@@ -105,9 +111,11 @@ export const PLANS: Record<PlanType, PlanSet> = {
         description:
           "Professional ESA and PSD letters from a state-licensed mental health professional for housing and service dog needs.",
         price: "$179",
+        audience: "For people who need both housing and service dog documentation.",
         features: [
           "Online PSD evaluation",
           "Licensed mental health professional",
+          "Disability-related need assessment",
           "ESA letter if clinically approved",
           "PSD letter if clinically approved",
           "Secure email delivery",
@@ -133,26 +141,6 @@ export const PLANS: Record<PlanType, PlanSet> = {
   },
 };
 
-function CheckmarkIcon() {
-  return (
-    <Image quality={90}
-      src="/esa-icons/icon-46.svg"
-      alt=""
-      width={20}
-          sizes="20px"
-      height={20}
-      unoptimized
-      className="shrink-0 w-5 h-5 object-contain"
-    />
-  );
-}
-
-function mobileButtonLabel(card: PlanCard) {
-  if (card.mobileButtonText) return card.mobileButtonText;
-  if (card.buttonText === "Start Your ESA Evaluation") return "Start ESA Evaluation";
-  return card.buttonText;
-}
-
 function cardLetter(buttonText: string, directSurvey: boolean): StateModalLetter | undefined {
   if (directSurvey && isEvaluationCtaLabel(buttonText)) return "psd";
   return undefined;
@@ -162,14 +150,12 @@ function PricingCardButton({
   href,
   label,
   letter,
-  mobileLabel,
-  desktopLabel,
+  featured,
 }: {
   href: string;
   label: string;
   letter?: StateModalLetter;
-  mobileLabel: string;
-  desktopLabel: string;
+  featured: boolean;
 }) {
   return (
     <MaybeStateModalButton
@@ -177,132 +163,129 @@ function PricingCardButton({
       label={label}
       letter={letter}
       evaluationCta
-      className="cta3d cta3d--gold inline-flex h-[48px] w-full min-w-0 items-center justify-center gap-2 px-3 font-sans text-[14px] leading-5 sm:h-[54px] sm:text-[16px]"
+      className={`cta3d ${featured ? "cta3d--gold" : "cta3d--teal"} inline-flex h-[54px] w-full min-w-0 items-center justify-center gap-2 px-3 font-sans text-[15px] leading-5 sm:text-[16px]`}
     >
-      <span className="min-w-0 whitespace-nowrap text-center">
-        <span className="sm:hidden">{ctaLabel(mobileLabel, letter)}</span>
-        <span className="hidden sm:inline">{ctaLabel(desktopLabel, letter)}</span>
-      </span>
-      <ArrowRight aria-hidden strokeWidth={2.5} className="cta-arrow size-4 shrink-0 sm:size-[18px]" />
+      <span className="min-w-0 whitespace-nowrap text-center">{ctaLabel(label, letter)}</span>
+      <ArrowRight aria-hidden strokeWidth={2.5} className="cta-arrow size-[18px] shrink-0" />
     </MaybeStateModalButton>
   );
 }
 
+/** Merge feature lists in reading order so every card shows the same rows. */
+function unionFeatures(cards: PlanCard[]): string[] {
+  const out: string[] = [];
+  for (const card of cards) {
+    card.features.forEach((f, i) => {
+      if (out.includes(f)) return;
+      const prev = i > 0 ? out.indexOf(card.features[i - 1]) : -1;
+      out.splice(prev + 1, 0, f);
+    });
+  }
+  return out;
+}
+
 interface RenderCardsProps {
   cards: PlanCard[];
-  maxCards?: number;
   popularCardIndex?: number;
-  headerHeight: number;
-  showDog: boolean;
   ctaHref: string;
   directSurvey?: boolean;
-  mobileFeatureLimit?: number;
+  showHelp?: boolean;
 }
 
 function RenderCardsContainer({
-  cards,
-  maxCards,
+  cards: allCards,
   popularCardIndex,
-  headerHeight,
-  showDog,
   ctaHref,
   directSurvey = false,
-  mobileFeatureLimit = 3,
+  showHelp = false,
 }: RenderCardsProps) {
+  const cards = allCards.filter((c) => c.price !== "?");
+  // Plans that share most of their features get an aligned comparison list
+  // (ticks and dashes); unrelated plans just list their own features.
+  const shared = cards.length > 1 ? cards[0].features.filter((f) => cards.every((c) => c.features.includes(f))) : [];
+  const compare = shared.length >= 3;
+  const rows = compare ? unionFeatures(cards) : [];
+
   return (
-    <div className={`relative pb-10 ${maxCards === 2 ? "w-fit max-w-full" : "w-full max-w-[972px]"}`}>
-      <div className={`relative z-10 flex flex-col lg:flex-row items-center lg:items-stretch justify-center gap-[68px] sm:gap-12 ${maxCards === 2 ? "lg:gap-[28px]" : "lg:gap-[16px] lg:justify-between"}`}>
+    <div className="w-full">
+      <div className={`mx-auto grid w-full gap-6 ${cards.length >= 3 ? "max-w-[1100px] md:grid-cols-3" : "max-w-[860px] md:grid-cols-2"}`}>
         {cards.map((card, idx) => {
-          const isPopular = popularCardIndex !== undefined ? idx === popularCardIndex : !!card.isPopular;
+          const featured = popularCardIndex !== undefined ? idx === popularCardIndex : !!card.isPopular;
           const letter = cardLetter(card.buttonText, directSurvey);
+          const list = compare ? rows : card.features;
+          const audience = card.audience ?? card.description;
 
           return (
             <div
               key={card.title}
-              className={
-                isPopular
-                  ? "hover-card relative mx-auto w-full max-w-[350px] rounded-[22px] bg-accent px-1 pb-1 shadow-[0px_4px_12px_rgba(0,0,0,0.1)] sm:flex sm:w-[310px] sm:max-w-none sm:shrink-0 sm:flex-col sm:self-stretch sm:rounded-[20px] sm:px-[5px] sm:pb-[6px] sm:pt-1"
-                  : "hover-card relative mx-auto w-full max-w-[350px] sm:flex sm:w-[300px] sm:max-w-none sm:shrink-0 sm:flex-col sm:self-stretch"
-              }
+              className={`relative flex flex-col rounded-[24px] p-6 sm:p-8 ${
+                featured
+                  ? "order-first color-gradient text-white shadow-[0_18px_40px_-18px_rgba(26,61,79,0.55)] ring-2 ring-accent md:order-none"
+                  : "bg-white text-primary shadow-[0_10px_30px_-20px_rgba(26,61,79,0.35)] ring-1 ring-line-200"
+              }`}
             >
-              {isPopular && (
-                <div className="flex h-8 items-center justify-center font-sans text-[12px] font-bold uppercase leading-4 tracking-[0.08em] text-body-text sm:h-8 sm:text-[14px] sm:leading-[26px] sm:tracking-wider sm:text-primary">
+              {featured && (
+                <span className="absolute -top-3.5 left-6 rounded-full bg-accent px-3.5 py-1 font-sans text-[12px] font-extrabold uppercase tracking-[0.08em] text-[#163545] shadow-sm sm:left-8">
                   Most Popular
-                </div>
+                </span>
               )}
-              <div
-                className={`hover-surface overflow-hidden bg-white sm:flex sm:min-h-0 sm:flex-1 sm:flex-col sm:rounded-[24px] ${
-                  isPopular
-                    ? "rounded-[18px] sm:border sm:border-[#E1E1E1] sm:shadow-[0px_4px_8px_-2px_rgba(0,0,0,0.1)]"
-                    : "rounded-[18px] border border-[#E1E1E1] shadow-[0px_4px_8px_-2px_rgba(0,0,0,0.1)] sm:rounded-[24px]"
-                }`}
-              >
-                <div className="flex min-h-0 flex-1 items-stretch sm:flex-col">
-                  <div
-                    className="relative flex w-[128px] shrink-0 flex-col items-center justify-between gap-3 rounded-l-[18px] color-gradient px-2 py-4 text-center sm:min-h-[var(--card-header)] sm:w-full sm:items-start sm:justify-start sm:gap-0 sm:rounded-l-none sm:rounded-t-[20px] sm:px-6 sm:py-0 sm:pb-0 sm:pt-[22px] sm:text-left"
-                    style={{ ["--card-header" as string]: `${headerHeight}px` }}
-                  >
-                    <div className="w-full">
-                      <h3 className="heading-h3 w-full whitespace-pre-line text-center text-background sm:text-left">
-                        {card.title}
-                      </h3>
-                      <p className="body-text text-background mt-2 hidden sm:block">{card.description}</p>
-                    </div>
-                    <div className="hover-badge relative z-20 flex h-[64px] w-[64px] shrink-0 items-center justify-center rounded-full bg-accent shadow-[0px_1px_4px_rgba(0,0,0,0.15)] sm:absolute sm:bottom-0 sm:left-1/2 sm:h-[78px] sm:w-[78px] sm:-translate-x-1/2 sm:translate-y-1/2">
-                      <span className="font-heading text-[18px] font-bold leading-none text-primary sm:text-[28px]">
-                        {card.price}
-                      </span>
-                    </div>
-                  </div>
 
-                  <div className="flex min-w-0 flex-1 flex-col px-4 pb-3 pt-5 sm:px-6 sm:pb-4 sm:pt-[54px]">
-                    <div className="flex flex-1 flex-col gap-2 sm:gap-2">
-                      {card.features.map((feature, featureIndex) => (
-                        <div
-                          key={feature}
-                          className={`items-start gap-2 ${featureIndex < mobileFeatureLimit ? "flex" : "hidden sm:flex"}`}
-                        >
-                          <span className="mt-[3px] flex h-[22px] shrink-0 items-center">
-                            <CheckmarkIcon />
-                          </span>
-                          <span className="body-small min-w-0 text-body-text">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                    <div className={`-mx-2.5 mt-auto flex w-[calc(100%+20px)] items-end justify-center px-0 pt-5 sm:-mx-4 sm:w-[calc(100%+32px)] sm:px-0 sm:pb-7 sm:pt-6 ${isPopular ? "" : "lg:mb-[6px]"}`}>
-                      <PricingCardButton
-                        href={ctaHref}
-                        label={card.buttonText}
-                        letter={letter}
-                        mobileLabel={mobileButtonLabel(card)}
-                        desktopLabel={card.buttonText}
-                      />
-                    </div>
-                  </div>
+              <h3 className={`font-heading text-[24px] font-bold leading-[1.2] sm:text-[26px] md:min-h-[2.4em] ${featured ? "text-white" : "text-primary"}`}>
+                {card.title.replace("\n", " ")}
+              </h3>
+              <div className={`mt-2 font-sans text-[15px] leading-[23px] ${featured ? "text-white/85" : "text-body-text"}`}>
+                {audience}
+              </div>
+
+              <div className="mt-6 flex items-end gap-2">
+                <span className={`font-heading text-[52px] font-bold leading-none tracking-tight ${featured ? "text-accent" : "text-primary"}`}>
+                  {card.price}
+                </span>
+                <span className={`pb-1.5 font-sans text-[14px] font-semibold leading-5 ${featured ? "text-white/80" : "text-body-text"}`}>
+                  one-time fee
+                </span>
+              </div>
+
+              <div className="mt-6">
+                <PricingCardButton href={ctaHref} label={card.buttonText} letter={letter} featured={featured} />
+              </div>
+              <div className={`mt-3 flex items-center justify-center gap-1.5 font-sans text-[13px] font-medium leading-5 ${featured ? "text-white/80" : "text-body-text"}`}>
+                <ShieldCheck aria-hidden className="size-4 shrink-0" /> No hidden fees. Pay once.
+              </div>
+
+              <div className={`mt-6 border-t pt-5 ${featured ? "border-white/15" : "border-line-200"}`}>
+                <div className={`mb-3 font-sans text-[12px] font-extrabold uppercase tracking-[0.1em] ${featured ? "text-accent" : "text-gold-600"}`}>
+                  What&apos;s included
                 </div>
+                <ul className="flex flex-col gap-2.5">
+                  {list.map((feature) => {
+                    const has = card.features.includes(feature);
+                    return (
+                      <li key={feature} className="flex items-start gap-2.5">
+                        <span
+                          className={`mt-[1px] flex size-5 shrink-0 items-center justify-center rounded-full ${
+                            has ? (featured ? "bg-accent text-[#163545]" : "bg-primary text-white") : featured ? "bg-white/10 text-white/50" : "bg-cream-100 text-body-text/50"
+                          }`}
+                        >
+                          {has ? <Check aria-hidden strokeWidth={3} className="size-3" /> : <Minus aria-hidden strokeWidth={3} className="size-3" />}
+                        </span>
+                        <span
+                          className={`font-sans text-[15px] leading-[22px] ${
+                            has ? (featured ? "text-white" : "text-primary") : featured ? "text-white/45 line-through" : "text-body-text/55 line-through"
+                          }`}
+                        >
+                          {has ? feature : <><span className="sr-only">Not included: </span>{feature}</>}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
             </div>
           );
         })}
       </div>
-
-      {showDog && (
-        <div
-          className="hidden lg:block absolute left-[calc(100%+1px)] w-[245px] h-[209px] pointer-events-none z-20"
-          style={{ top: headerHeight === 261 || headerHeight === 272 ? 279 : headerHeight + 20 }}
-        >
-          <Image
-            quality={90}
-            src="/home/pricing-section-dog.webp"
-            alt="Dog giving paw to woman hand"
-            width={245}
-          sizes="245px"
-            height={209}
-            className="w-[245px] h-[209px] object-contain object-left pointer-events-none"
-            loading="lazy"
-          />
-        </div>
-      )}
+      {showHelp && <PricingHelpStrip />}
     </div>
   );
 }
@@ -319,9 +302,12 @@ interface PricingSectionProps {
   showTabs?: boolean;
   maxCards?: number;
   popularCardIndex?: number;
-  showDog?: boolean;
   cards?: PlanCard[];
+  /** @deprecated kept so older call sites still type-check; no longer used. */
+  showDog?: boolean;
+  /** @deprecated */
   headerHeight?: number;
+  /** @deprecated */
   mobileFeatureLimit?: number;
 }
 
@@ -337,25 +323,20 @@ export function PricingSection({
   showTabs = true,
   maxCards,
   popularCardIndex,
-  showDog = true,
   cards: cardsOverride,
-  headerHeight = 272,
-  mobileFeatureLimit,
 }: PricingSectionProps) {
-  const plan = PLANS[defaultPlan];
-  const sourceCards = cardsOverride ?? plan.cards;
-  const cards = sourceCards.slice(0, maxCards ?? sourceCards.length);
+  const pick = (type: PlanType) => {
+    const src = cardsOverride ?? PLANS[type].cards;
+    return src.slice(0, maxCards ?? src.length);
+  };
+  const hasHelp = (list: PlanCard[]) => list.some((c) => c.price === "?");
 
   return (
     <section id={sectionId} className={`${sectionClassName} ${bgColor} relative overflow-hidden`}>
-      <div className="max-w-[1442px] mx-auto px-4 sm:px-6 lg:px-4 xl:px-0 flex flex-col items-center gap-10">
-        <div className="text-center max-w-[760px] mx-auto space-y-3">
-          <h2 className={headingClassName}>
-            {heading}
-          </h2>
-          <p className="body-large">
-            {descriptionOverride ?? plan.description}
-          </p>
+      <div className="mx-auto flex max-w-[1442px] flex-col items-center gap-10 px-4 sm:px-6 lg:px-4 xl:px-0">
+        <div className="mx-auto max-w-[760px] space-y-3 text-center">
+          <h2 className={headingClassName}>{heading}</h2>
+          <p className="body-large">{descriptionOverride ?? PLANS[defaultPlan].description}</p>
         </div>
 
         {showTabs ? (
@@ -363,89 +344,19 @@ export function PricingSection({
             esaLabel={PLANS.esa.tabLabel}
             psdLabel={PLANS.psd.tabLabel}
             defaultTab={defaultPlan}
-            esaContent={
-              <RenderCardsContainer
-                cards={cardsOverride ?? PLANS.esa.cards.slice(0, maxCards ?? PLANS.esa.cards.length)}
-                maxCards={maxCards}
-                popularCardIndex={popularCardIndex}
-                headerHeight={headerHeight}
-                showDog={showDog}
-                ctaHref={ctaHref}
-                mobileFeatureLimit={mobileFeatureLimit}
-              />
-            }
-            psdContent={
-              <RenderCardsContainer
-                cards={cardsOverride ?? PLANS.psd.cards.slice(0, maxCards ?? PLANS.psd.cards.length)}
-                maxCards={maxCards}
-                popularCardIndex={popularCardIndex}
-                headerHeight={headerHeight}
-                showDog={showDog}
-                ctaHref={ctaHref}
-                directSurvey
-                mobileFeatureLimit={mobileFeatureLimit}
-              />
-            }
+            esaContent={<RenderCardsContainer cards={pick("esa")} popularCardIndex={popularCardIndex} ctaHref={ctaHref} showHelp={hasHelp(pick("esa"))} />}
+            psdContent={<RenderCardsContainer cards={pick("psd")} popularCardIndex={popularCardIndex} ctaHref={ctaHref} directSurvey showHelp={hasHelp(pick("psd"))} />}
           />
         ) : (
           <RenderCardsContainer
-            cards={cards}
-            maxCards={maxCards}
+            cards={pick(defaultPlan)}
             popularCardIndex={popularCardIndex}
-            headerHeight={headerHeight}
-            showDog={showDog}
             ctaHref={ctaHref}
             directSurvey={defaultPlan === "psd"}
-            mobileFeatureLimit={mobileFeatureLimit}
+            showHelp={hasHelp(pick(defaultPlan))}
           />
         )}
       </div>
     </section>
-  );
-}
-
-export function HelpPlanCard({ ctaHref = "#how-it-works", className = "" }: { ctaHref?: string; className?: string }) {
-  return (
-    <div className={`hover-card hover-surface w-[300px] bg-white rounded-[24px] border border-[#E1E1E1] shadow-[0px_4px_12px_rgba(0,0,0,0.08)] relative flex flex-col shrink-0 overflow-hidden ${className}`}>
-      <div className="w-[300px] h-[285px] rounded-t-[24px] color-gradient pt-[22px] px-[24px] flex flex-col gap-2 relative text-left shrink-0">
-        <h3 className="heading-h3 text-background capitalize">
-          Not Sure Which One?
-        </h3>
-        <p className="body-text text-background font-semibold">
-          Your needs are unique. Let’s find the right option.
-        </p>
-      </div>
-
-      <div className="hover-badge w-[78px] h-[78px] rounded-full bg-accent shadow-[0px_2px_6px_rgba(0,0,0,0.15)] flex items-center justify-center absolute left-1/2 -translate-x-1/2 top-[246px] z-20">
-        <span className="heading-h4 font-heading font-bold text-primary">
-          ?
-        </span>
-      </div>
-
-      <div className="pt-[54px] px-[24px] pb-[16px] flex flex-col gap-[8px] min-h-[220px]">
-        {[
-          "Help identifying the right documentation",
-          "ESA and PSD needs assessed",
-          "Guidance from a licensed professional",
-          "Clear next steps after evaluation",
-        ].map((f) => (
-          <div key={f} className="flex items-center gap-[8px] min-h-[26px]">
-            <CheckmarkIcon />
-            <span className="body-small text-body-text">
-              {f}
-            </span>
-          </div>
-        ))}
-      </div>
-
-      <div className="flex items-center justify-center px-3 pb-7 pt-2">
-        <PricingCardButton
-          href={ctaHref}
-          label="Find the Right Option"
-          mobileLabel="Find Your Option"
-          desktopLabel="Find the Right Option"
-        />
-      </div>
-    </div>
   );
 }
