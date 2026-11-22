@@ -78,30 +78,30 @@ export function StateProcessSection({ data }: { data: StateData }) {
           <p className="body-large mx-auto max-w-[885px] text-body-text">{subtitle}</p>
         </div>
 
-        {/* Steps: vertical timeline on mobile, connected horizontal track from md up */}
-        <ol className="relative grid w-full gap-0 md:grid-cols-3 md:gap-8">
-          <span
-            aria-hidden
-            className="pointer-events-none absolute left-[calc(100%/6)] right-[calc(100%/6)] top-[38px] hidden h-0 border-t-2 border-dashed border-accent/70 md:block"
-          />
-          {steps.map((step, idx) => (
-            <li key={step.number} className="relative flex gap-5 pb-10 last:pb-0 md:flex-col md:items-center md:gap-0 md:pb-0 md:text-center">
-              {idx < steps.length - 1 && (
-                <span aria-hidden className="absolute bottom-0 left-[37px] top-[76px] w-0 border-l-2 border-dashed border-accent/70 md:hidden" />
-              )}
-              <div className="relative z-10 flex size-[76px] shrink-0 items-center justify-center rounded-full bg-white shadow-[0_10px_24px_-12px_rgba(26,61,79,0.45)] ring-[6px] ring-background">
-                <Image quality={90} src={processIcon(step.icon)} alt="" width={30} sizes="30px" height={30} unoptimized className="size-[30px] object-contain" />
+        {/* Steps: stacked rows so titles of any length stay aligned */}
+        <ol className="w-full overflow-hidden rounded-[28px] bg-white shadow-[0_18px_40px_-30px_rgba(26,61,79,0.5)] ring-1 ring-line-200">
+          {steps.map((step) => (
+            <li
+              key={step.number}
+              className="grid grid-cols-1 gap-x-4 gap-y-2 border-b border-line-200 px-5 py-6 last:border-b-0 sm:grid-cols-[72px_minmax(0,1fr)] sm:px-8 sm:py-7 lg:grid-cols-[88px_minmax(0,340px)_minmax(0,1fr)] lg:items-center lg:gap-x-10 lg:px-10 lg:py-8"
+            >
+              <div className="relative row-span-2 hidden size-14 items-center justify-center self-start rounded-full bg-cream-100 sm:flex sm:size-[72px] lg:row-span-1 lg:size-[88px] lg:self-center">
+                <Image quality={90} src={processIcon(step.icon)} alt="" width={30} sizes="30px" height={30} unoptimized className="size-6 object-contain sm:size-[30px]" />
                 <span className="absolute -right-1 -top-1 flex size-7 items-center justify-center rounded-full bg-primary font-sans text-[12px] font-extrabold text-white">
                   {step.number}
                 </span>
               </div>
-
-              <div className="relative min-w-0 pt-1 md:mt-6 md:max-w-[340px] md:pt-0">
-                <div className="relative font-sans text-[12px] font-extrabold uppercase tracking-[0.12em] text-[#8A6A12]">Step {step.number}</div>
-                <h3 className="relative mt-1 font-heading text-[22px] font-bold leading-[30px] text-primary sm:text-[24px] sm:leading-[32px]">
-                  {step.title}
-                </h3>
-                <div className="relative mt-2 font-sans text-[15px] leading-[25px] text-body-text sm:text-[16px] sm:leading-[26px]">{step.description}</div>
+              <div className="min-w-0 self-center">
+                <div className="flex items-center gap-2.5">
+                  <span className="flex size-10 items-center justify-center rounded-full bg-cream-100 sm:hidden">
+                    <Image quality={90} src={processIcon(step.icon)} alt="" width={22} sizes="22px" height={22} unoptimized className="size-[22px] object-contain" />
+                  </span>
+                  <span className="font-sans text-[12px] font-extrabold uppercase tracking-[0.12em] text-[#8A6A12]">Step {step.number}</span>
+                </div>
+                <h3 className="mt-2 sm:mt-1 font-heading text-[21px] font-bold leading-[28px] text-primary sm:text-[24px] sm:leading-[32px]">{step.title}</h3>
+              </div>
+              <div className="min-w-0 font-sans sm:col-start-2 text-[15px] leading-[25px] text-body-text sm:text-[16px] sm:leading-[26px] lg:col-start-3">
+                {step.description}
               </div>
             </li>
           ))}
