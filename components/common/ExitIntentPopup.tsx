@@ -200,7 +200,7 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
             <div className="relative h-[300px] w-[210px]">
               <Image src="/downloads/kit-2026-p5-v2.webp" alt="" width={210} height={272} className="absolute left-6 top-6 w-[190px] rotate-[8deg] rounded-md shadow-[0_14px_30px_-16px_rgba(26,61,79,0.6)] ring-1 ring-line-200" />
               <Image src="/downloads/kit-2026-p4-v2.webp" alt="" width={210} height={272} className="absolute left-2 top-3 w-[195px] rotate-[3deg] rounded-md shadow-[0_14px_30px_-16px_rgba(26,61,79,0.6)] ring-1 ring-line-200" />
-              <Image src="/downloads/kit-2026-cover-v2.webp" alt="" width={210} height={272} className="exit-cover absolute left-0 top-0 w-[200px] -rotate-[4deg] rounded-md shadow-[0_22px_40px_-18px_rgba(26,61,79,0.7)] ring-1 ring-line-200" />
+              <Image src="/downloads/kit-2026-cover-v3.webp" alt="" width={210} height={272} className="exit-cover absolute left-0 top-0 w-[200px] -rotate-[4deg] rounded-md shadow-[0_22px_40px_-18px_rgba(26,61,79,0.7)] ring-1 ring-line-200" />
               <span className="absolute -right-4 bottom-2 grid size-[74px] rotate-[10deg] place-items-center rounded-full bg-accent text-center text-[#1A3D4F] shadow-[0_0_0_5px_rgba(232,185,44,0.25)]">
                 <span className="leading-none">
                   <span className="block font-heading text-[19px] font-bold">Free</span>
@@ -216,7 +216,7 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
             <>
               <div className="flex items-start gap-4">
                 <Image
-                  src="/downloads/kit-2026-cover-v2.webp"
+                  src="/downloads/kit-2026-cover-v3.webp"
                   alt=""
                   width={72}
                   height={93}

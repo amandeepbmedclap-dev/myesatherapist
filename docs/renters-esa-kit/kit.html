@@ -36,11 +36,12 @@ p{color:var(--ink)}
 
 /* ===== COVER ===== */
 .cover{background:#000}
-.cover .ph{position:absolute;inset:0;background:url(cover.jpg) center 30%/cover}
+.cover .ph{position:absolute;inset:0;background:url(cover.jpg) 42% 100%/auto 128% no-repeat}
 .cover .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,53,69,.94) 0%,rgba(22,53,69,.82) 30%,rgba(22,53,69,.45) 42%,rgba(22,53,69,0) 55%,rgba(22,53,69,0) 62%,rgba(22,53,69,.88) 86%,rgba(22,53,69,.97) 100%)}
 .cover .mast{position:absolute;top:.55in;left:.6in;right:.6in;display:flex;justify-content:space-between;align-items:flex-start;color:#fff}
 .wm{display:flex;align-items:center;gap:7pt;font-weight:800;font-size:12pt;letter-spacing:-.1pt}
-.wm img{height:30pt;background:#fff;border-radius:50%;padding:3pt}
+.wm img{height:34pt;width:auto;background:#fff;border-radius:10pt;padding:5pt 9pt;box-sizing:content-box;display:block}
+.wm .ser{font-size:8pt;font-weight:700;letter-spacing:.16em;text-transform:uppercase;line-height:1.5;color:rgba(255,255,255,.88);border-left:1px solid rgba(255,255,255,.35);padding-left:9pt}
 .wm small{display:block;font-weight:500;font-size:8.5pt;opacity:.8;letter-spacing:0}
 .cover .issue{text-align:right;font-size:7.8pt;letter-spacing:.18em;text-transform:uppercase;font-weight:700;line-height:1.7;opacity:.9}
 .cover h1{position:absolute;left:.6in;top:1.35in;font-family:P;font-weight:900;font-size:76pt;line-height:.86;color:#fff;letter-spacing:-1.5pt}
@@ -196,7 +197,7 @@ ol.no b{color:var(--deep)}
 .back .cta div{font-size:9.6pt;line-height:1.6;color:rgba(255,255,255,.85)}
 .back .cta div b{color:#fff}
 .back .disc{position:absolute;left:.7in;right:.7in;bottom:.4in;font-size:6.8pt;line-height:1.5;color:rgba(255,255,255,.48);border-top:1px solid rgba(255,255,255,.14);padding-top:9pt}
-.back .wm{position:absolute;top:.5in;left:.7in;color:var(--deep);z-index:2;background:#fff;border-radius:40pt;padding:5pt 14pt 5pt 5pt}.back .wm small{opacity:.7}
+.back .wm{position:absolute;top:.5in;left:.7in;z-index:2}
 </style>
 </head>
 <body>
@@ -205,7 +206,7 @@ ol.no b{color:var(--deep)}
 <section class="pg cover">
   <div class="ph"></div><div class="shade"></div>
   <div class="mast">
-    <div class="wm"><img src="myesa-logo.svg" alt=""><div>My ESA Therapist<small>The renter's guide series</small></div></div>
+    <div class="wm"><img src="myesa-logo.svg" alt="My ESA Therapist"><div class="ser">The renter's<br>guide series</div></div>
     <div class="issue">2026 Renter's Edition<br>Free · 8 pages</div>
   </div>
   <h1>The Renter's<em>ESA Kit</em></h1>
@@ -361,7 +362,7 @@ ol.no b{color:var(--deep)}
 <!-- 8 BACK -->
 <section class="pg dark back">
   <div class="ph"></div>
-  <div class="wm"><img src="myesa-logo.svg" alt=""><div>My ESA Therapist<small>myesatherapist.com</small></div></div>
+  <div class="wm"><img src="myesa-logo.svg" alt="My ESA Therapist"></div>
   <div class="wrap">
     <h2>Need a letter that<br><em>checks every box?</em></h2>
     <p>We connect you with mental health professionals licensed in your state for a secure telehealth evaluation. If you qualify, your letter is written for your state's rules.</p>
