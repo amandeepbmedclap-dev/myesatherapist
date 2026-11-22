@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { serializeLd } from "@/lib/site";
+import { cleanPostSchema } from "@/lib/blogSchema";
 import { notFound } from "next/navigation";
 import { TopBanner } from "@/components/layout/TopBanner";
 import { Header } from "@/components/layout/Header";
@@ -129,7 +130,7 @@ export default async function QualifyingConditionsBlogPage({ params }: PageProps
     <div className="min-h-screen flex flex-col bg-background selection:bg-accent/30 selection:text-current">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: serializeLd(withFeatureImage(articleSchema, `blog-${article.slug}`)) }}
+        dangerouslySetInnerHTML={{ __html: serializeLd(cleanPostSchema(withFeatureImage(articleSchema, `blog-${article.slug}`), article)) }}
       />
 
       <TopBanner />

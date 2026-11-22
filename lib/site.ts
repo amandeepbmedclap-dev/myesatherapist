@@ -7,8 +7,10 @@ export function assetUrl(path: string) {
   return `${SITE_URL}${normalized}`;
 }
 
-export function serializeLd(schema: unknown) {
-  return JSON.stringify(schema)
+import { sanitizeSchema } from "@/lib/schema";
+
+export function serializeLd(schema: unknown, opts: { faq?: boolean } = {}) {
+  return JSON.stringify(sanitizeSchema(schema, opts))
     .replaceAll(
       "https://myesatherapist.com/images/logo/my-esa-therapist-logo.webp",
       `${SITE_URL}/common/myesa-logo.svg`,

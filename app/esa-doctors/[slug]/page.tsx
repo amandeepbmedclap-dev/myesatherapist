@@ -1,6 +1,7 @@
 import { applySheetSeo } from "@/lib/seo";
 import { Metadata } from "next";
 import { serializeLd } from "@/lib/site";
+import { pruneSchema } from "@/lib/schema";
 import { notFound, permanentRedirect } from "next/navigation";
 import { TopBanner } from "@/components/layout/TopBanner";
 import { Header } from "@/components/layout/Header";
@@ -165,13 +166,13 @@ export default async function DoctorInternalPage({ params }: PageProps) {
           <script
             key={index}
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: serializeLd(schemaObj) }}
+            dangerouslySetInnerHTML={{ __html: serializeLd(pruneSchema(schemaObj, { types: ["Service"] })) }}
           />
         ))
       ) : (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: serializeLd(doctorSchema) }}
+          dangerouslySetInnerHTML={{ __html: serializeLd(pruneSchema(doctorSchema, { types: ["Service"] })) }}
         />
       )}
 

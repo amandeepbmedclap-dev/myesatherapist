@@ -118,7 +118,7 @@ export const pricingSchema = {
       "@type": "Service",
       "@id": "https://myesatherapist.com/pricing/#esa-letter",
       "name": "ESA Letter",
-      "description": "Official ESA letter from a U.S.-licensed mental health professional, valid for housing accommodations under federal guidelines.",
+      "description": "Official ESA letter from a U.S.-licensed mental health professional, for housing accommodation requests under federal guidelines.",
       "serviceType": "Online ESA Letter Evaluation (Telehealth)",
       "provider": {
         "@id": "https://myesatherapist.com/#organization"

@@ -44,6 +44,26 @@ export const metadata: Metadata = applySheetSeo({
 export default function ContactUsPage() {
   return (
     <div className="min-h-screen bg-background flex flex-col justify-between selection:bg-accent/30 selection:text-current">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeLd({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://myesatherapist.com/#organization",
+            name: "My ESA Therapist",
+            url: "https://myesatherapist.com/",
+            contactPoint: {
+              "@type": "ContactPoint",
+              telephone: "+1-888-412-4041",
+              email: "info@myesatherapist.com",
+              contactType: "customer service",
+              areaServed: "US",
+              availableLanguage: ["English"],
+            },
+          }),
+        }}
+      />
       {contactUsSchemas.map((schemaObj, index) => (
         <script
           key={index}

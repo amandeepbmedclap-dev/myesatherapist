@@ -73,8 +73,8 @@ export const esaForPtsdSchema = {
       "breadcrumb": {
         "@id": "https://myesatherapist.com/blog/qualifying-conditions/esa-for-ptsd/#breadcrumb"
       },
-      "datePublished": "2026-10-13",
-      "dateModified": "2026-10-13",
+      "datePublished": "2026-09-30",
+      "dateModified": "2026-10-16",
       "inLanguage": "en-US"
     },
     {
@@ -120,8 +120,8 @@ export const esaForPtsdSchema = {
       "image": {
         "@id": "https://myesatherapist.com/blog/qualifying-conditions/esa-for-ptsd/#primaryimage"
       },
-      "datePublished": "2026-10-13",
-      "dateModified": "2026-10-13",
+      "datePublished": "2026-09-30",
+      "dateModified": "2026-10-16",
       "author": {
         "@id": "https://myesatherapist.com/contributors/allyson-valley/#person"
       },

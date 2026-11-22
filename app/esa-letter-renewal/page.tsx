@@ -1,6 +1,7 @@
 import { applySheetSeo } from "@/lib/seo";
 import React from "react";
 import { serializeLd } from "@/lib/site";
+import { pruneSchema } from "@/lib/schema";
 import type { Metadata } from "next";
 
 import { TopBanner } from "@/components/layout/TopBanner";
@@ -107,7 +108,7 @@ export default function EsaRenewalPage() {
         <script
           key={index}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: serializeLd(withFeatureImage(schemaObj, "esa-letter-renewal")) }}
+          dangerouslySetInnerHTML={{ __html: serializeLd(withFeatureImage(pruneSchema(schemaObj, { personNames: ["Max Phillips"] }), "esa-letter-renewal")) }}
         />
       ))}
 

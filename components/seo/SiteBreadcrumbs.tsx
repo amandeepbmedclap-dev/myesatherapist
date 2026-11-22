@@ -84,7 +84,7 @@ function labelFor(segment: string) {
 
 export function SiteBreadcrumbs({
   className,
-  includeSchema = true,
+  includeSchema = false,
   onDark = false,
 }: {
   className?: string;

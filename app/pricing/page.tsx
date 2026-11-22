@@ -1,5 +1,6 @@
 import React from "react";
 import { serializeLd } from "@/lib/site";
+import { pruneSchema } from "@/lib/schema";
 import type { Metadata } from "next";
 import { TopBanner } from "@/components/layout/TopBanner";
 import { Header } from "@/components/layout/Header";
@@ -74,7 +75,7 @@ export default function PricingPage() {
     <div className="min-h-screen flex flex-col bg-background">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: serializeLd(withFeatureImage(pricingSchema, "esa-letter-cost")) }}
+        dangerouslySetInnerHTML={{ __html: serializeLd(withFeatureImage(pruneSchema(pricingSchema, { ids: ["https://myesatherapist.com/pricing/#psd-letter-id", "https://myesatherapist.com/pricing/#offer-psd-letter-id"] }), "esa-letter-cost")) }}
       />
 
       <TopBanner />

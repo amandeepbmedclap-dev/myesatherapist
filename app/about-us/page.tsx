@@ -1,6 +1,7 @@
 import { applySheetSeo } from "@/lib/seo";
 import { Metadata } from "next";
 import { serializeLd } from "@/lib/site";
+import { pruneSchema } from "@/lib/schema";
 import { TopBanner } from "@/components/layout/TopBanner";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -101,7 +102,7 @@ export default function AboutUsPage() {
     <div className="min-h-screen bg-background flex flex-col justify-between selection:bg-accent/30 selection:text-current">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: serializeLd(withFeatureImage(aboutUsSchema, "about-us")) }}
+        dangerouslySetInnerHTML={{ __html: serializeLd(withFeatureImage(pruneSchema(aboutUsSchema, { types: ["Service"] }), "about-us")) }}
       />
 
       <TopBanner />

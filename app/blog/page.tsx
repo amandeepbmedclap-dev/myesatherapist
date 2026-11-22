@@ -1,6 +1,7 @@
 import { applySheetSeo } from "@/lib/seo";
 import { Metadata } from "next";
 import { serializeLd } from "@/lib/site";
+import { pruneSchema } from "@/lib/schema";
 import { TopBanner } from "@/components/layout/TopBanner";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -50,7 +51,7 @@ export default function BlogHubPage() {
     <div className="min-h-screen flex flex-col bg-background selection:bg-accent/30 selection:text-current">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: serializeLd(withFeatureImage(blogSchema, "blog-hub-page")) }}
+        dangerouslySetInnerHTML={{ __html: serializeLd(withFeatureImage(pruneSchema(blogSchema, { personNames: ["Awais Arshad", "Max Phillips"] }), "blog-hub-page")) }}
       />
 
       <TopBanner />

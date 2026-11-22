@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import { FAQ_DATA, FAQ_FILTERS, FAQ_FILTER_LABELS, type FaqFilter } from "./faqData";
+import { serializeLd } from "@/lib/site";
+import { faqPageSchema } from "@/lib/schema";
 
 const TEAL_GRADIENT = "var(--color-gradient)";
 
@@ -25,6 +27,10 @@ export function FaqAccordionSection() {
 
   return (
     <section id="faq-list" className="w-full bg-background py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 scroll-mt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeLd(faqPageSchema(FAQ_DATA.map((f) => ({ q: f.question, a: f.answer }))), { faq: true }) }}
+      />
       <div className="max-w-[1016px] mx-auto flex flex-col items-center gap-8 sm:gap-10">
         <div className="flex flex-col items-center gap-4 text-center max-w-[720px]">
           <h2 className="heading-h2 text-primary">Frequently Asked Questions</h2>

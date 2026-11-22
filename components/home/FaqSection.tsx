@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { serializeLd } from "@/lib/site";
+import { faqPageSchema } from "@/lib/schema";
 
 const TEAL_GRADIENT = "var(--color-gradient)";
 
@@ -81,6 +83,10 @@ export function FaqSection({
 
   return (
     <section id={id} className={cn("relative pt-12 sm:pt-16 lg:pt-16 xl:pt-24 pb-10 sm:pb-12 lg:pb-10 xl:pb-24", bg, className)}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeLd(faqPageSchema(items), { faq: true }) }}
+      />
       {id !== "faq" && <div id="faq" className="sr-only" />}
       <div className="max-w-[1442px] mx-auto px-4 sm:px-6 lg:px-12">
         <div className="text-center max-w-[1254px] mx-auto mb-14 space-y-2">

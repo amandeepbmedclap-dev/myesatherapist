@@ -3385,7 +3385,7 @@ export const BLOG_POSTS: BlogArticle[] = [
       linkedin: "https://www.linkedin.com/in/max-phillips-883485a5/"
     },
     publishDate: "October 05, 2026",
-    lastUpdated: "October 05, 2026",
+    lastUpdated: "October 16, 2026",
     cardImage: "/blog-images/how-to-prepare-your-esa-for-rental-housing/moving-in-with-a-furry-friend-image.webp",
     heroImageMobile: "/hero-image-for-mobile-all.png",
     heroImageTablet: "/blogs/blog-hero-section-tablet.webp",
@@ -3591,7 +3591,7 @@ export const BLOG_POSTS: BlogArticle[] = [
       linkedin: "https://www.linkedin.com/in/max-phillips-883485a5/"
     },
     publishDate: "October 12, 2026",
-    lastUpdated: "October 12, 2026",
+    lastUpdated: "October 16, 2026",
     cardImage: "/blog-images/esa-training-myths/esa-training-myth-vs-fact-image.webp",
     heroImageMobile: "/hero-image-for-mobile-all.png",
     heroImageTablet: "/blogs/blog-hero-section-tablet.webp",

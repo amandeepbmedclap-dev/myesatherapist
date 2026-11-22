@@ -1,5 +1,6 @@
 import React from "react";
 import { serializeLd } from "@/lib/site";
+import { pruneSchema } from "@/lib/schema";
 import type { Metadata } from "next";
 
 import { TopBanner } from "@/components/layout/TopBanner";
@@ -56,7 +57,7 @@ export default function EsaLetterOnlinePage() {
     <div className="min-h-screen flex flex-col bg-background">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: serializeLd(withFeatureImage(esaLetterOnlineSchema, "esa-letter-online")) }}
+        dangerouslySetInnerHTML={{ __html: serializeLd(withFeatureImage(pruneSchema(esaLetterOnlineSchema, { personNames: ["Max Phillips"] }), "esa-letter-online")) }}
       />
       <TopBanner />
       <Header />

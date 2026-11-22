@@ -85,6 +85,8 @@ export const allysonValleySchemas = [
           "@type": "Article",
           "headline": "8 Basic Obedience Commands Every ESA Should Know",
           "url": "https://myesatherapist.com/blog/esa-training/8-basic-obedience-commands-every-esa-should-know/",
+          "datePublished": "2026-09-11",
+          "dateModified": "2026-10-16",
           "image": "https://myesatherapist.com/images/blog/training-an-esa-image.jpg",
           "description": "Learn the 8 basic obedience commands every emotional support animal should know, from sit and stay to come, leave it, quiet, place, and heel. While ESA training isn't legally required, these commands can help improve safety, behavior, and everyday life with your ESA.",
           "author": { "@id": "https://myesatherapist.com/contributors/allyson-valley/#person" }
@@ -97,6 +99,8 @@ export const allysonValleySchemas = [
           "@type": "Article",
           "headline": "ESA for Anxiety: Eligibility, Benefits, and How to Qualify",
           "url": "https://myesatherapist.com/blog/qualifying-conditions/esa-for-anxiety/",
+          "datePublished": "2026-08-26",
+          "dateModified": "2026-10-16",
           "image": "https://myesatherapist.com/images/blog/how-can-esa-support-with-anxity-image.webp",
           "description": "Anxiety may qualify someone for an emotional support animal when it substantially affects daily functioning. Explore the benefits of ESAs and the factors considered during an eligibility evaluation.",
           "author": { "@id": "https://myesatherapist.com/contributors/allyson-valley/#person" }
@@ -109,6 +113,8 @@ export const allysonValleySchemas = [
           "@type": "Article",
           "headline": "ESA Letter Sample: What Does a Legitimate ESA Letter Look Like?",
           "url": "https://myesatherapist.com/blog/esa-guide/esa-letter-sample/",
+          "datePublished": "2026-07-29",
+          "dateModified": "2026-10-16",
           "image": "https://myesatherapist.com/images/blog/emotional-support-animal-letter-sample-image.webp",
           "description": "This guide provides an ESA letter sample and explains what a valid ESA letter should include, along with the red flags that may indicate fake or invalid documentation.",
           "author": { "@id": "https://myesatherapist.com/contributors/allyson-valley/#person" }
@@ -121,6 +127,8 @@ export const allysonValleySchemas = [
           "@type": "Article",
           "headline": "ESA for Children and Minors: How It Works and Who Signs the Letter?",
           "url": "https://myesatherapist.com/blog/esa-guide/esa-for-children/",
+          "datePublished": "2026-07-27",
+          "dateModified": "2026-10-16",
           "image": "https://myesatherapist.com/images/blog/minor-with-emotional-support-animal.webp",
           "description": "Learn how children qualify for an emotional support animal, who can sign an ESA letter for minors, and what parents need to know about the evaluation process, housing, and school accommodations.",
           "author": { "@id": "https://myesatherapist.com/contributors/allyson-valley/#person" }
@@ -133,6 +141,8 @@ export const allysonValleySchemas = [
           "@type": "Article",
           "headline": "Is ESA Registration Legit or Required? The Truth About ESA Registration.",
           "url": "https://myesatherapist.com/blog/esa-guide/is-esa-registration-legit/",
+          "datePublished": "2026-07-21",
+          "dateModified": "2026-10-16",
           "image": "https://myesatherapist.com/images/blog/woman-with-emotional-support-dog.webp",
           "description": "Many people believe registering an emotional support animal (ESA) makes it legally recognized, but that's a common misconception. This article explains why ESA registration, certificates, and ID cards generally have no legal standing.",
           "author": { "@id": "https://myesatherapist.com/contributors/allyson-valley/#person" }
@@ -145,6 +155,8 @@ export const allysonValleySchemas = [
           "@type": "Article",
           "headline": "Which DSM-5 Conditions Qualify for an ESA? A Condition-by-Condition Guide",
           "url": "https://myesatherapist.com/blog/qualifying-conditions/conditions-that-may-qualify-for-an-esa/",
+          "datePublished": "2026-07-10",
+          "dateModified": "2026-10-30",
           "image": "https://myesatherapist.com/images/blog/who-qualifing-for-emotional-support-animal.webp",
           "description": "Wondering which DSM-5 conditions may qualify someone for an Emotional Support Animal (ESA)? This condition-by-condition guide explains how mental health diagnoses relate to ESA eligibility.",
           "author": { "@id": "https://myesatherapist.com/contributors/allyson-valley/#person" }
@@ -157,6 +169,8 @@ export const allysonValleySchemas = [
           "@type": "Article",
           "headline": "How to Verify If an ESA Letter Is Legitimate: A Landlord & Tenant Checklist.",
           "url": "https://myesatherapist.com/blog/esa-guide/how-to-verify-an-esa-letter/",
+          "datePublished": "2026-06-19",
+          "dateModified": "2026-10-16",
           "image": "https://myesatherapist.com/images/blog/happily-living-with-emotional-support-animal.webp",
           "description": "Not all ESA letters are valid. Use this landlord and tenant checklist to verify ESA documentation, identify warning signs of fraudulent letters, and understand what makes an ESA letter legitimate.",
           "author": { "@id": "https://myesatherapist.com/contributors/allyson-valley/#person" }
@@ -169,6 +183,8 @@ export const allysonValleySchemas = [
           "@type": "Article",
           "headline": "HUD ESA Guidance 2026: What Changed for Emotional Support Animal Housing?",
           "url": "https://myesatherapist.com/blog/esa-guide/hud-guidance-for-emotional-support-animals/",
+          "datePublished": "2026-06-09",
+          "dateModified": "2026-10-16",
           "image": "https://myesatherapist.com/images/blog/living-with-an-esa-in-rental-housing-image.webp",
           "description": "HUD's ESA housing guidance continues to shape how emotional support animal accommodation requests are handled. Discover what has changed, what remains the same, and what tenants and housing providers should know.",
           "author": { "@id": "https://myesatherapist.com/contributors/allyson-valley/#person" }
@@ -181,6 +197,8 @@ export const allysonValleySchemas = [
           "@type": "Article",
           "headline": "Can Landlords Deny Emotional Support Animals? Here's the Truth",
           "url": "https://myesatherapist.com/blog/esa-guide/can-landlords-deny-emotional-support-animals/",
+          "datePublished": "2026-05-27",
+          "dateModified": "2026-10-16",
           "image": "https://myesatherapist.com/images/blog/can-landlords-reject-esas-image.webp",
           "description": "Learn whether a landlord can legally deny your emotional support animal, your rights under FHA housing laws, valid ESA letter requirements, and what to do if your ESA request is rejected.",
           "author": { "@id": "https://myesatherapist.com/contributors/allyson-valley/#person" }
@@ -193,6 +211,8 @@ export const allysonValleySchemas = [
           "@type": "Article",
           "headline": "What is an Emotional Support Animal? Everything You Need to Know.",
           "url": "https://myesatherapist.com/blog/esa-guide/emotional-support-animal/",
+          "datePublished": "2026-05-14",
+          "dateModified": "2026-10-16",
           "image": "https://myesatherapist.com/images/blog/emotional-support-animal.webp",
           "description": "This complete guide covers everything you need to know about emotional support animals, including how ESAs work, who qualifies, federal ESA laws, housing rights, and the difference between ESAs and service animals.",
           "author": { "@id": "https://myesatherapist.com/contributors/allyson-valley/#person" }
