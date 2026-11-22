@@ -56,7 +56,7 @@ function PostCard({ p, wide = false, priority = false }: { p: HubPost; wide?: bo
         wide ? "flex-col md:flex-row" : "flex-col"
       }`}
     >
-      <span className={`relative block shrink-0 overflow-hidden bg-background ${wide ? "aspect-[16/10] md:aspect-auto md:w-[52%]" : "aspect-[16/10]"}`}>
+      <span className={`relative block shrink-0 overflow-hidden bg-background ${wide ? "aspect-[16/10] md:aspect-auto md:min-h-[300px] md:w-[50%]" : "aspect-[16/10]"}`}>
         <Image
           src={p.image}
           alt=""
@@ -75,7 +75,7 @@ function PostCard({ p, wide = false, priority = false }: { p: HubPost; wide?: bo
         >
           {p.title}
         </span>
-        <span className={`mt-2 block text-[15px] leading-relaxed text-body-text ${wide ? "line-clamp-3" : "line-clamp-2"}`}>{p.excerpt}</span>
+        <span className={`mt-2 text-[15px] leading-relaxed text-body-text ${wide ? "line-clamp-3" : "line-clamp-2"}`}>{p.excerpt}</span>
         <span className="mt-auto block pt-5">
           <span className="flex items-end justify-between gap-3 border-t border-line-200 pt-4">
             <Meta p={p} />
@@ -89,7 +89,7 @@ function PostCard({ p, wide = false, priority = false }: { p: HubPost; wide?: bo
 
 function CtaTile() {
   return (
-    <div className="relative flex h-full min-h-[320px] flex-col justify-between overflow-hidden rounded-[22px] bg-[#1A3D4F] p-7 text-white">
+    <div className="relative flex h-full min-h-[300px] flex-col justify-between overflow-hidden rounded-[22px] bg-[#1A3D4F] p-7 text-white">
       <div aria-hidden className="absolute -right-14 -top-14 size-48 rounded-full bg-accent/20" />
       <div aria-hidden className="absolute -bottom-20 -left-12 size-52 rounded-full bg-white/5" />
       <div className="relative">
@@ -271,7 +271,7 @@ export function BlogHubExplorer({
             </span>
             <span className="relative block p-6 sm:p-8">
               <span className="relative block font-heading text-[24px] font-bold leading-tight text-white sm:text-[30px]">{featured.title}</span>
-              <span className="relative mt-3 line-clamp-2 block text-[15px] leading-relaxed text-white/80">{featured.excerpt}</span>
+              <span className="relative mt-3 line-clamp-2 text-[15px] leading-relaxed text-white/80">{featured.excerpt}</span>
               <span className="relative mt-5 flex items-center justify-between gap-4 border-t border-white/15 pt-4">
                 <Meta p={featured} light />
                 <span className="grid size-11 shrink-0 place-items-center rounded-full bg-accent text-[#1A3D4F] transition-transform group-hover:-rotate-45">
