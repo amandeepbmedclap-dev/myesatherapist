@@ -1,3 +1,4 @@
+import { ExitIntentPopup } from "@/components/common/ExitIntentPopup";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import Script from "next/script";
@@ -240,6 +241,7 @@ events.forEach(function(e){w.addEventListener(e,onInteract,{passive:true,once:tr
         {children}
         <StateSelectModal />
         <EsaEligibilityModal />
+        <ExitIntentPopup />
       </body>
     </html>
   );
