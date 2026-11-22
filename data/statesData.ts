@@ -3700,17 +3700,17 @@ export const STATES_DATA: Record<string, StateData> = {
     housingRequests: {
       mayRequestTitle: "What Can Florida Housing Providers Request for an ESA?",
       mayRequestIntro:
-        "If a disability is not readily apparent, a housing provider may request reliable information that reasonably supports the request, including documentation from a health care practitioner as defined under Florida law, including a telehealth provider licensed within the state of Florida. An out-of-state practitioner must be in good standing and must have provided in-person care or services to the tenant on at least one occasion. The practitioner must also have personal knowledge of the person’s disability and act within the scope of their practice.",
+        "If a disability is not readily apparent, a housing provider may request reliable supporting information, including documentation from a health care practitioner as defined under Florida law, such as a Florida-licensed telehealth provider. An out-of-state practitioner must be in good standing, have provided in-person care or services to the tenant at least once, have personal knowledge of the person’s disability, and act within their scope of practice.",
       mayRequestItems: [
-        "Information describing how the specific animal provides assistance or therapeutic emotional support related to the person’s disability.",
+        "How the specific animal provides assistance or therapeutic emotional support related to the person’s disability.",
         "Proof of compliance with state or local licensing and vaccination requirements (e.g., rabies vaccination for dogs).",
       ],
       cannotRequestTitle: "What Can't Housing Providers Request From ESA Owners?",
       cannotRequestItems: [
-        "Details about a specific diagnosis or severity of a disability.",
-        "Access to patient medical records.",
+        "The specific diagnosis or severity of a disability.",
+        "Access to medical records.",
         "A specific form, notarized statement, or mandatory process.",
-        "Denial solely because a tenant did not use a preferred form or method for providing the ESA letter.",
+        "Denial solely because the ESA letter was not provided on their preferred form or method.",
       ],
     },
     legalNotice: "Under ESA laws in Florida and federal regulations, emotional support animals are protected in housing but do not have the same public access rights as service animals. ESAs are generally not allowed in restaurants, stores, or other public areas where pets are restricted. An ESA letter provides protections for your ESA at home, not in public facilities.",
