@@ -13,7 +13,7 @@ import { StateTrustBar } from "@/components/state/StateTrustBar";
 import { StateProcessSection } from "@/components/state/StateProcessSection";
 import { StateWhoQualifiesV2 } from "@/components/state/StateWhoQualifiesSection";
 import { StateEligibilityPanels } from "@/components/state/StateEligibilityPanels";
-import { StateBenefitsSection, StateBenefitsV2 } from "@/components/state/StateBenefitsSection";
+import { StateBenefitsV2 } from "@/components/state/StateBenefitsSection";
 import { StateLawsSection } from "@/components/state/StateLawsSection";
 import { StateHousingRequestsSection } from "@/components/state/StateHousingRequestsSection";
 import { StateScamsSection } from "@/components/state/StateScamsSection";
@@ -148,8 +148,7 @@ export default async function DynamicStatePage({ params }: Props) {
             />
           </div>
         )}
-        {/* Pilot: redesigned benefits section on Alabama only, pending approval. */}
-        <div id="benefits">{data.slug === "alabama" ? <StateBenefitsV2 data={data} /> : <StateBenefitsSection data={data} />}</div>
+        <div id="benefits"><StateBenefitsV2 data={data} /></div>
         <div id="laws"><StateLawsSection data={data} /></div>
         <StateHousingRequestsSection data={data} />
         <div id="scams"><StateScamsSection data={data} /></div>

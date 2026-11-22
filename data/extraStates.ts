@@ -215,7 +215,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     ],
     requirementsNote:
       "Important: A formal assessment must be completed by an appropriately licensed or authorized mental health professional to determine whether an emotional support animal recommendation is clinically appropriate for the individual's circumstances. HUD's May 22, 2026, enforcement guidance changed how the Office of Fair Housing and Equal Opportunity (FHEO) handles certain assistance-animal complaints under the Fair Housing Act. The guidance directs FHEO's enforcement approach toward animals individually trained to perform disability-related tasks. It does not itself amend the Fair Housing Act or repeal Vermont's state-level fair housing protections for assistance animals.",
-    benefitsTitle: "Benefits of Having an ESA Letter in Vermont",
+    benefitsTitle: "What Are the Key Benefits of Having an ESA Letter in Vermont?",
     benefitsSubtitle:
       "Know how an emotional support letter Vermont may benefit individuals with mental health issues and lead to a happier and more self-assured life living with their companion pets.",
     financialBenefitsHeading: "Financial Benefits",
@@ -504,7 +504,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     ],
     requirementsNote:
       "Important: Tennessee requires a comprehensive, individual evaluation by a state-licensed mental health practitioner before issuing ESA documentation. HUD's May 22, 2026, enforcement guidance changed the federal Office of Fair Housing and Equal Opportunity's approach to animal-related reasonable accommodation complaints. Under this guidance, FHEO will find reasonable cause and recommend charges only in cases involving animals trained to provide disability-related assistance. The guidance does not amend the Fair Housing Act itself or address enforcement under Section 504 of the Rehabilitation Act or the Americans with Disabilities Act.",
-    benefitsTitle: "Benefits of Having an ESA Letter in Tennessee",
+    benefitsTitle: "What Are the Key Benefits of Having an ESA Letter in Tennessee?",
     benefitsSubtitle:
       "Look at how an ESA letter Tennessee could support your well-being and make your daily routine with your emotional support animal manageable.",
     financialBenefitsHeading: "Financial Benefits",
@@ -530,15 +530,15 @@ export const EXTRA_STATES: Record<string, StateData> = {
       [
         [
           "Reduced Feelings of Isolation & Loneliness",
-          "Daily companionship from an emotional support animal can help many people in Tennessee feel less alone. Particularly during times of emotional distress, the consistent presence of an ESA could encourage a greater sense of connection and assurance, making people feel less alone in facing challenges.",
+          "Daily companionship from an emotional support animal can help many people in Tennessee feel less alone. Particularly during times of emotional distress, the consistent presence of an ESA could encourage a greater sense of connection and assurance.",
         ],
         [
           "Support During Anxiety or High-Stress Situations",
-          "In times of stress or anxiety, an emotional support animal can offer reassuring comfort. Many people in Tennessee discover that regular connection, company, and physical presence help to soothe heightened emotions. This helps them focus better, regulate nervous thoughts, and confidently handle daily duties.",
+          "In times of stress or anxiety, an emotional support animal can offer reassuring comfort. Many people in Tennessee find that its company and physical presence help soothe heightened emotions, so they can focus better, regulate nervous thoughts, and confidently handle daily duties.",
         ],
         [
           "Encouragement of Healthy Emotional Routines",
-          "Taking care of an ESA encourages regular daily routines like feeding, walking, and spending time together. For people in Tennessee trying to maintain healthy mental well-being, these routines can promote structure and responsibility, which may have a favorable impact on motivation, emotional resilience, and mood stability.",
+          "Taking care of an ESA encourages regular daily routines like feeding, walking, and spending time together. For people in Tennessee, these routines can promote structure and responsibility, which may have a favorable impact on motivation, emotional resilience, and mood stability.",
         ],
       ],
       EMO_ICON,
@@ -794,7 +794,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     ],
     requirementsNote:
       "Important: An evaluation is conducted by a qualified healthcare professional who is authorized to provide services to individuals located in Rhode Island. The clinician independently determines whether an ESA recommendation is clinically appropriate. On May 22, 2026, HUD's Office of Fair Housing and Equal Opportunity issued new internal enforcement guidance concerning assistance-animal accommodation requests. The guidance rescinded HUD's 2020 assistance-animal notice and directed federal FHEO staff to prioritize cases involving animals trained to provide disability-related assistance. It does not amend the Fair Housing Act itself. Rhode Island also has separate state fair housing protections, including regulations recognizing that not every assistance animal requires specialized training.",
-    benefitsTitle: "Benefits of Having an ESA Letter in Rhode Island",
+    benefitsTitle: "What Are the Key Benefits of Having an ESA Letter in Rhode Island?",
     benefitsSubtitle:
       "Check out how an emotional support animal letter in Rhode Island can help people with mental health problems live happier and more confident lives with their ESA.",
     financialBenefitsHeading: "Financial Benefits",
@@ -1082,7 +1082,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     ],
     requirementsNote:
       "Important: On May 22, 2026, HUD's Office of Fair Housing and Equal Opportunity issued enforcement guidance changing its stated approach to certain assistance-animal complaints under the Fair Housing Act. The guidance prioritizes cases involving animals trained to provide disability-related assistance. It does not itself amend the Fair Housing Act or automatically determine whether an individual qualifies for an ESA housing accommodation.",
-    benefitsTitle: "Benefits of Having an ESA Letter in District of Columbia",
+    benefitsTitle: "What Are the Key Benefits of Having an ESA Letter in the District of Columbia?",
     benefitsSubtitle:
       "An ESA letter in Washington, DC may help eligible individuals request housing accommodations for their emotional support animals and access the emotional support they need in their daily lives.",
     financialBenefitsHeading: "Financial Benefits",
@@ -1339,7 +1339,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       "The clinician assesses whether an emotional support animal may provide support based on the individual's needs.",
       "The individual lives in Puerto Rico or plans to move there.",
     ],
-    benefitsTitle: "Benefits of Having an ESA Letter in Puerto Rico",
+    benefitsTitle: "What Are the Key Benefits of Having an ESA Letter in Puerto Rico?",
     benefitsSubtitle:
       "An ESA letter in Puerto Rico may help eligible individuals request housing accommodations for their emotional support animals and access the emotional support they need in their daily lives.",
     financialBenefitsHeading: "Financial Benefits",
@@ -1512,7 +1512,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       "The clinician assesses whether an emotional support animal may provide support based on the individual's needs.",
       "The individual resides in the U.S. Virgin Islands or intends to move there in the near future.",
     ],
-    benefitsTitle: "Benefits of Having an ESA Letter in the Virgin Islands",
+    benefitsTitle: "What Are the Key Benefits of Having an ESA Letter in the Virgin Islands?",
     benefitsSubtitle:
       "Learn how an emotional support animal (ESA) letter in the Virgin Islands can support your well-being and make everyday life with your companion more balanced.",
     financialBenefitsHeading: "Financial Benefits",

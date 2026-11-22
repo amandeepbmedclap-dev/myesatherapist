@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { StateData } from "@/data/statesData";
+import { BENEFITS_FOCUS_X, BENEFITS_FOCUS_Y } from "./benefitsFocus";
 import { CtaButton } from "@/components/common/CtaButton";
 
 const HOUSE = "/esa-icons/icon-20.svg";
@@ -376,9 +377,10 @@ export function StateBenefitsV2({ data }: { data: StateData }) {
         <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_300px_minmax(0,1fr)] lg:gap-6 xl:grid-cols-[minmax(0,1fr)_340px_minmax(0,1fr)]">
           <div className="relative order-first mx-auto w-full max-w-[520px] lg:order-none lg:col-start-2 lg:row-start-1 lg:max-w-none">
             <div className="relative aspect-[4/3] overflow-hidden rounded-[26px] bg-cream-100 shadow-[0_30px_60px_-34px_rgba(26,61,79,0.6)] sm:aspect-[16/10] lg:aspect-auto lg:h-full lg:min-h-[520px]">
-              <Image quality={85} src={photo} alt="A person spending time with their emotional support animal" fill sizes="(min-width: 1024px) 340px, 92vw" className="object-cover object-[50%_14%] lg:object-[50%_30%]" />
+              <Image quality={85} src={photo} alt="A person spending time with their emotional support animal" fill sizes="(min-width: 1024px) 340px, 92vw" className="object-cover"
+                style={{ objectPosition: `${BENEFITS_FOCUS_X[data.slug] ?? 50}% ${BENEFITS_FOCUS_Y[data.slug] ?? 40}%` }} />
               <span aria-hidden className="absolute inset-x-0 bottom-0 h-1/3 bg-[linear-gradient(180deg,rgba(26,61,79,0)_0%,rgba(26,61,79,0.55)_100%)]" />
-              <span className="absolute bottom-5 left-1/2 flex size-14 -translate-x-1/2 items-center justify-center rounded-full bg-white shadow-[0_10px_24px_-10px_rgba(0,0,0,0.45)]">
+              <span className="absolute bottom-4 right-4 flex size-12 items-center lg:bottom-5 lg:right-auto lg:left-1/2 lg:size-14 lg:-translate-x-1/2 justify-center rounded-full bg-white shadow-[0_10px_24px_-10px_rgba(0,0,0,0.45)]">
                 <Image quality={90} src="/states/whomayqualifies-california-icon.webp" alt="" width={40} height={40} sizes="40px" className="size-9 object-contain" />
               </span>
             </div>
