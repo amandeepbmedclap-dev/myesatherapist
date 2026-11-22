@@ -88,7 +88,7 @@ export default function QualifyingConditionsPage() {
         <CategoryHub
           slug="qualifying-conditions"
           featuredSlug="conditions-that-may-qualify-for-an-esa"
-          title="Qualifying Conditions For An ESA Letter"
+          title="Qualifying Conditions for an Emotional Support Animal (ESA) Letter"
           gridTitle="Condition-by-condition guides"
           intro={
             <>

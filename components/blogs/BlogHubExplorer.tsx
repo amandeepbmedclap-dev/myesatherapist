@@ -155,7 +155,6 @@ export function BlogHubExplorer({
   featured: HubPost;
 }) {
   const [q, setQ] = useState("");
-  const [cat, setCat] = useState("all");
 
   // Support links like /blog/?q=landlord
   useEffect(() => {
@@ -165,9 +164,9 @@ export function BlogHubExplorer({
     return () => window.clearTimeout(t);
   }, []);
 
-  const results = useMemo(() => searchPosts(posts, q, cat), [posts, q, cat]);
+  const results = useMemo(() => searchPosts(posts, q), [posts, q]);
 
-  const filtering = q.trim() !== "" || cat !== "all";
+  const filtering = q.trim() !== "";
   const latest = posts[0] ? new Date(posts[0].updatedTs).toLocaleDateString("en-US", { month: "short", year: "numeric" }) : "";
   const toResults = () => document.getElementById("articles")?.scrollIntoView({ behavior: "smooth", block: "start" });
 
@@ -288,35 +287,33 @@ export function BlogHubExplorer({
       {/* ───── Topic bar ───── */}
       <div id="articles" className="scroll-mt-28 border-y border-line-200 bg-white">
         <div className="mx-auto flex max-w-[1278px] flex-col gap-3 px-4 py-4 sm:px-6 md:flex-row md:items-center md:justify-between xl:px-0">
-          <div role="group" aria-label="Filter by topic" className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 md:mx-0 md:flex-wrap md:px-0">
-            {[{ slug: "all", name: "All articles", count: posts.length }, ...categories].map((c) => {
-              const on = c.slug === cat;
+          <nav aria-label="Blog topics" className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 md:mx-0 md:flex-wrap md:px-0">
+            {[{ slug: "all", name: "All articles", count: posts.length, href: "/blog/" }, ...categories].map((c) => {
+              const on = c.slug === "all";
               return (
-                <button
+                <Link
                   key={c.slug}
-                  type="button"
-                  aria-pressed={on}
-                  onClick={() => setCat(c.slug)}
+                  href={c.href}
+                  aria-current={on ? "page" : undefined}
                   className={`inline-flex h-11 shrink-0 items-center gap-2 rounded-full px-4 text-[14px] font-semibold transition-colors ${
                     on ? "bg-[#1A3D4F] text-white" : "bg-background text-[#1A3D4F] hover:bg-cream-100"
                   }`}
                 >
                   {c.name}
                   <span className={`rounded-full px-2 py-0.5 text-[12px] ${on ? "bg-white/15 text-white" : "bg-white text-[#1D6E72]"}`}>{c.count}</span>
-                </button>
+                </Link>
               );
             })}
-          </div>
+          </nav>
           {filtering && (
             <button
               type="button"
               onClick={() => {
                 setQ("");
-                setCat("all");
               }}
               className="inline-flex items-center gap-1.5 self-start text-[14px] font-semibold text-[#1D6E72] underline underline-offset-4 md:self-auto"
             >
-              <X aria-hidden className="size-4" /> Clear filters
+              <X aria-hidden className="size-4" /> Clear search
             </button>
           )}
         </div>
@@ -327,7 +324,7 @@ export function BlogHubExplorer({
         <section className="bg-background py-12 md:py-16">
           <div className="mx-auto max-w-[1278px] px-4 sm:px-6 xl:px-0">
             <h2 className="heading-h3 text-primary">
-              {q.trim() ? <>Results for &ldquo;{q.trim()}&rdquo;</> : categories.find((c) => c.slug === cat)?.name}
+              <>Results for &ldquo;{q.trim()}&rdquo;</>
             </h2>
             <p className="mt-1 text-[15px] text-body-text">
               {results.length} of {posts.length} articles
@@ -348,7 +345,6 @@ export function BlogHubExplorer({
                   type="button"
                   onClick={() => {
                     setQ("");
-                    setCat("all");
                   }}
                   className="mt-5 inline-flex h-11 items-center rounded-full bg-[#1A3D4F] px-5 text-[14px] font-semibold text-white hover:bg-primary"
                 >
