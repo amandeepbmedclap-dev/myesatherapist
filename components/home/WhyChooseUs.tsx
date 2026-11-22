@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { CtaButton } from "@/components/common/CtaButton";
 
 export interface WhyChooseFeature {
   icon?: string;
@@ -65,58 +66,41 @@ export function WhyChooseUs({
 
   return (
     <section className={`py-16 lg:py-20 xl:py-24 ${bgColor}`}>
-      <div className="max-w-[1279px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14 lg:mb-16 space-y-2.5 max-w-[813px] mx-auto">
-          <h2 className="heading-h2 capitalize">
+      <div className="mx-auto grid max-w-[1279px] gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.7fr)] lg:gap-12 lg:px-8">
+        <div className="relative self-start overflow-hidden rounded-[28px] p-7 color-gradient sm:p-10 lg:sticky lg:top-28">
+          <span aria-hidden className="pointer-events-none absolute -bottom-24 -right-24 size-64 rounded-full border border-accent/30" />
+          <span aria-hidden className="pointer-events-none absolute -bottom-12 -right-12 size-40 rounded-full bg-white/[0.05]" />
+          <h2 className="relative font-heading text-[28px] font-bold capitalize leading-[36px] text-white sm:text-[34px] sm:leading-[42px] lg:text-[30px] lg:leading-[38px]">
             {title}
           </h2>
-          <div className="mx-auto space-y-1">
-            {subtitle ? (
-              <p className="body-large max-w-[813px] mx-auto">{subtitle}</p>
-            ) : (
-              <p className="body-large max-w-[813px] mx-auto">
-                We simplify online emotional support animal evaluations while maintaining efficiency and legal compliance. Here&apos;s what makes us different from other providers.
-              </p>
-            )}
+          <div className="relative mt-4 font-sans text-[16px] leading-[26px] text-white/85 sm:text-[17px] sm:leading-[28px]">
+            {subtitle ||
+              "We simplify online emotional support animal evaluations while maintaining efficiency and legal compliance. Here's what makes us different from other providers."}
+          </div>
+          <div className="relative mt-8">
+            <CtaButton href="/pricing/">Start Your ESA Evaluation</CtaButton>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 xl:gap-x-[23px] gap-y-14 lg:gap-y-16 pt-4">
+        <ul className="grid gap-x-8 sm:grid-cols-2 xl:gap-x-10">
           {items.map(({ icon, title: itemTitle, description }, idx) => {
             const resolvedIcon =
               icon && !icon.includes("/home/whychoose")
                 ? icon
                 : defaultFeatures[idx % defaultFeatures.length]?.icon || "/esa-icons/icon-10.svg";
             return (
-              <div
-                key={itemTitle}
-                className="hover-card relative rounded-[20px] bg-accent shadow-[0px_2px_4px_rgba(0,0,0,0.15)] pt-1.5 px-0 pb-0 flex flex-col items-center"
-              >
-                <div className="hover-surface w-full bg-white rounded-[20px] shadow-[0px_2px_4px_rgba(0,0,0,0.15)] px-6 sm:px-8 pt-12 pb-8 flex flex-col items-center text-center h-full min-h-[228px]">
-                  <div className="hover-badge absolute -top-6 sm:-top-7 left-1/2 -translate-x-1/2 w-[52px] h-[52px] sm:w-[58px] sm:h-[58px] lg:w-[64px] lg:h-[64px] rounded-full bg-white shadow-[0px_2.5px_5px_rgba(0,0,0,0.25)] border border-[#E2E8F0] flex items-center justify-center">
-                    <Image quality={90}
-                      src={resolvedIcon}
-                      alt={itemTitle}
-                      width={32}
-          sizes="32px"
-                      height={32}
-                      unoptimized
-                      className="icon-lg object-contain"
-                    />
-                  </div>
-
-                  <h3 className="heading-h3 text-color-gradient mb-3">
-                    {itemTitle}
-                  </h3>
-
-                  <p className="body-text max-w-[320px]">
-                    {description}
-                  </p>
+              <li key={itemTitle} className="flex gap-4 border-t border-line-200 py-7 first:border-t-0 sm:[&:nth-child(2)]:border-t-0 sm:first:pt-0 sm:[&:nth-child(2)]:pt-0 first:pt-0">
+                <span className="flex size-12 shrink-0 items-center justify-center rounded-[14px] bg-cream-100">
+                  <Image quality={90} src={resolvedIcon} alt="" width={26} sizes="26px" height={26} unoptimized className="size-[26px] object-contain" />
+                </span>
+                <div className="min-w-0">
+                  <h3 className="font-heading text-[20px] font-bold leading-[27px] text-primary lg:text-[19px] xl:text-[21px] xl:leading-[28px]">{itemTitle}</h3>
+                  <div className="mt-2 font-sans text-[15px] leading-[25px] text-body-text">{description}</div>
                 </div>
-              </div>
+              </li>
             );
           })}
-        </div>
+        </ul>
       </div>
     </section>
   );
