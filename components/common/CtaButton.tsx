@@ -5,6 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { isEvaluationCtaLabel, openStateSelectModal, type StateModalLetter } from "@/components/common/evaluationCta";
 import { playCtaClick } from "@/components/common/ctaMotion";
+import { ArrowRight } from "lucide-react";
+import { ctaLabel } from "@/components/common/ctaCopy";
 
 export function SendIcon({ className = "w-[22px] h-[22px]" }: { className?: string }) {
   return (
@@ -19,6 +21,8 @@ export function SendIcon({ className = "w-[22px] h-[22px]" }: { className?: stri
     />
   );
 }
+
+const SUPPORTING = /^(view profile|view source|see more reviews|learn about esa|about esa therapist|read the guide|view all 50 states|check your state law|back to home)$/i;
 
 export interface CtaButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   href?: string;
@@ -46,7 +50,7 @@ export function CtaButton({
   showIcon,
   wrap = false,
   centerLabel = false,
-  variant = "accent",
+  variant,
   stateModal,
   forceStateModal = false,
   letter,
@@ -70,41 +74,31 @@ export function CtaButton({
     }
     onClick?.(event as React.MouseEvent<HTMLButtonElement>);
   };
-  const isSecondary = variant === "secondary";
-  const isAccent = variant === "accent";
-
+  // Only conversion actions get the gold button; supporting links (View Profile,
+  // See More Reviews, Read the Guide) use the quieter outline style.
+  const shownText = typeof children === "string" ? ctaLabel(children, letter) : "";
+  const supporting = !opensModal && SUPPORTING.test(shownText.trim());
+  const resolvedVariant = variant === "secondary" || variant === "primary" ? variant : supporting ? "secondary" : "accent";
+  const isSecondary = resolvedVariant === "secondary";
   const shouldShowIcon = showIcon !== undefined ? showIcon : !isSecondary;
+  const tone = isSecondary ? "cta3d--outline" : resolvedVariant === "primary" ? "cta3d--teal" : "cta3d--gold";
 
-  let bgClass = "color-gradient";
-  let textColor = "text-white";
-
-  if (isSecondary) {
-    bgClass = "bg-background";
-    textColor = "text-color-gradient";
-  } else if (isAccent) {
-    bgClass = "bg-accent";
-    textColor = "text-primary";
-  }
-
+  // Fixed pixel widths from older layouts are dropped so the button fits its label.
+  className = className.replace(/(^|\s)!?(?:[a-z0-9]+:)*w-\[\d+px\]/g, " ");
   const hasExplicitWidth = /\bw-\[\S+\]|\bw-full|\bw-auto|\bw-fit\b|\bmin-w-\[\S+\]/.test(className);
-  const defaultWidthClass = hasExplicitWidth ? "" : (isSecondary ? "w-auto" : "w-auto min-w-[192px]");
+  const defaultWidthClass = hasExplicitWidth ? "" : "w-auto";
+  const heightClass = wrap ? "h-auto min-h-[54px] py-2" : "h-[54px]";
+  const baseClasses = `cta3d ${tone} inline-flex items-center justify-center ${heightClass} px-6 xl:px-7 gap-2.5 text-[16px] leading-tight cursor-pointer select-none shrink-0 ${defaultWidthClass} ${className}`;
 
-  const paddingClass = isSecondary
-    ? "px-6 xl:px-8"
-    : centerLabel
-      ? "px-[52px]"
-      : (shouldShowIcon ? "pl-6 sm:pl-[28px] pr-[5px]" : "px-6 xl:px-8");
-
-  const heightClass = wrap ? "h-auto min-h-[54px] py-1.5" : "h-[54px]";
-  const justifyClass = centerLabel || !(shouldShowIcon && !isSecondary) ? "justify-center" : "justify-between";
-  const baseClasses = `cta-anim ${isSecondary ? "cta-anim--light" : ""} inline-flex items-center ${justifyClass} ${heightClass} rounded-[30px] ${paddingClass} gap-2.5 sm:gap-3 ${bgClass} ${textColor} button-text shadow-[0px_2px_4px_rgba(0,0,0,0.15)] cursor-pointer select-none shrink-0 ${defaultWidthClass} ${className}`;
+  const shown = typeof children === "string" ? ctaLabel(children, letter) : children;
+  const trackLabel = typeof shown === "string" ? shown : undefined;
 
   const content = (
     <>
-      <span className={`relative z-[1] ${wrap ? "min-w-0 flex-1 whitespace-normal text-center text-inherit" : centerLabel ? "w-full whitespace-nowrap text-center text-inherit" : "whitespace-nowrap text-inherit"}`}>{children}</span>
+      <span className={wrap ? "min-w-0 whitespace-normal text-center text-inherit" : "whitespace-nowrap text-inherit"}>{shown}</span>
       {shouldShowIcon && (
-        <span className={`cta-icon relative z-[1] ${centerLabel ? "absolute right-[5px]" : ""} w-[42.5px] h-[42.5px] rounded-full bg-background shadow-[0px_3.03px_6.07px_rgba(0,0,0,0.15)] flex items-center justify-center shrink-0`}>
-          <SendIcon className={`w-[22px] h-[22px] ${iconClassName}`} />
+        <span className="cta-icon flex shrink-0 items-center justify-center">
+          <ArrowRight aria-hidden strokeWidth={2.5} className={`cta-arrow size-[18px] ${iconClassName}`} />
         </span>
       )}
     </>
@@ -120,7 +114,7 @@ export function CtaButton({
           rel={rel}
           className={baseClasses}
           data-event="cta_click"
-          data-event-label={typeof children === "string" ? children : undefined}
+          data-event-label={trackLabel}
           onClick={handleClick as any}
         >
           {content}
@@ -134,7 +128,7 @@ export function CtaButton({
         rel={rel ?? (target === "_blank" ? "noopener noreferrer" : undefined)}
         className={baseClasses}
         data-event="cta_click"
-        data-event-label={typeof children === "string" ? children : undefined}
+        data-event-label={trackLabel}
         onClick={handleClick as any}
       >
         {content}
@@ -147,7 +141,7 @@ export function CtaButton({
       type={type}
       className={baseClasses}
       data-event="cta_click"
-      data-event-label={typeof children === "string" ? children : undefined}
+      data-event-label={trackLabel}
       onClick={handleClick}
       disabled={disabled}
       {...rest}

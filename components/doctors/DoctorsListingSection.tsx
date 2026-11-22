@@ -198,7 +198,7 @@ export function DoctorsListingSection() {
                 <div className="pt-2 flex justify-center">
                   <Link
                     href={`/esa-doctors/${doc.slug}/`}
-                    className="sm:hidden inline-flex h-11 min-w-[168px] items-center justify-center rounded-full bg-accent px-8 font-sans text-[16px] font-semibold leading-5 text-primary shadow-[0px_2px_4px_rgba(0,0,0,0.15)]"
+                    className="cta3d cta3d--outline sm:hidden inline-flex h-11 min-w-[168px] items-center justify-center px-8 font-sans text-[16px] leading-5"
                   >
                     View Profile
                   </Link>

@@ -150,9 +150,9 @@ function MobileSheet({ open, close, isPsd }: { open: boolean; close: () => void;
               close();
               openEsaEligibilityChecker();
             }}
-            className="flex h-[48px] w-full items-center justify-center gap-2 rounded-full border-2 border-primary text-[15px] font-bold text-primary"
+            className="cta3d cta3d--outline flex h-[50px] w-full items-center justify-center gap-2 text-[15px]"
           >
-            <ClipboardCheck aria-hidden className="size-[18px]" /> Free ESA Eligibility Checker
+            <ClipboardCheck aria-hidden className="size-[18px]" /> Check My Eligibility, Free
           </button>
         )}
         <CtaButton
@@ -160,7 +160,7 @@ function MobileSheet({ open, close, isPsd }: { open: boolean; close: () => void;
           centerLabel
           forceStateModal
           letter={isPsd ? "psd" : "esa"}
-          className="w-full !h-[54px] !text-[16px] [&_.cta-icon]:!absolute [&_.cta-icon]:!top-0 [&_.cta-icon]:!bottom-0 [&_.cta-icon]:!my-auto [&_.cta-icon]:!right-1 [&_.cta-icon]:!h-[42px] [&_.cta-icon]:!w-[42px] [&_.cta-icon_img]:!h-[22px] [&_.cta-icon_img]:!w-[22px]"
+          className="w-full !h-[54px] !text-[16px]"
           onClick={close}
         >
           {isPsd ? "Start Your Consultation" : "Start Your ESA Evaluation"}
@@ -357,7 +357,7 @@ export function Header() {
                 variant="accent"
                 letter={isPsd ? "psd" : "esa"}
                 forceStateModal
-                className="!h-11 !min-w-0 w-auto !gap-2 !pl-4 !pr-1 !text-[14px] [&>span:last-child]:!h-8 [&>span:last-child]:!w-8 [&_img]:!h-4 [&_img]:!w-4"
+                className="!h-11 w-auto !gap-1.5 !px-4 !text-[14px] [&_.cta-arrow]:!size-4"
               >
                 Start Evaluation
               </CtaButton>

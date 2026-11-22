@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { PricingTabSwitcher } from "./PricingTabSwitcher";
 import { MaybeStateModalButton } from "@/components/common/MaybeStateModalButton";
-import { SendIcon } from "@/components/common/CtaButton";
+import { ArrowRight } from "lucide-react";
+import { ctaLabel } from "@/components/common/ctaCopy";
 import { isEvaluationCtaLabel, type StateModalLetter } from "@/components/common/evaluationCta";
 
 const TEAL_GRADIENT = "var(--color-gradient)";
@@ -176,15 +177,13 @@ function PricingCardButton({
       label={label}
       letter={letter}
       evaluationCta
-      className="inline-flex h-[46px] w-full min-w-0 items-center justify-between gap-1.5 rounded-full bg-accent pl-2.5 pr-1 font-sans text-[14px] font-bold leading-5 text-primary shadow-[0px_2px_4px_rgba(0,0,0,0.15)] sm:h-[54px] sm:gap-2 sm:rounded-[30px] sm:pl-3 sm:pr-[5px] sm:text-[16px] sm:leading-5"
+      className="cta3d cta3d--gold inline-flex h-[48px] w-full min-w-0 items-center justify-center gap-2 px-3 font-sans text-[14px] leading-5 sm:h-[54px] sm:text-[16px]"
     >
-      <span className="relative z-[1] min-w-0 flex-1 whitespace-nowrap text-center">
-        <span className="sm:hidden">{mobileLabel}</span>
-        <span className="hidden sm:inline">{desktopLabel}</span>
+      <span className="min-w-0 whitespace-nowrap text-center">
+        <span className="sm:hidden">{ctaLabel(mobileLabel, letter)}</span>
+        <span className="hidden sm:inline">{ctaLabel(desktopLabel, letter)}</span>
       </span>
-      <span className="cta-icon relative z-[1] flex h-[36px] w-[36px] shrink-0 items-center justify-center rounded-full bg-background shadow-[0px_3px_6px_rgba(0,0,0,0.15)] sm:h-[42.5px] sm:w-[42.5px]">
-        <SendIcon className="h-[18px] w-[18px] sm:h-[22px] sm:w-[22px]" />
-      </span>
+      <ArrowRight aria-hidden strokeWidth={2.5} className="cta-arrow size-4 shrink-0 sm:size-[18px]" />
     </MaybeStateModalButton>
   );
 }

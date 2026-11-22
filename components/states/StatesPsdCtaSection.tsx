@@ -32,9 +32,9 @@ export function StatesPsdCtaSection() {
 
             <MaybeStateModalButton
               href="/psd-letter/"
-              className="body-large mt-2 inline-flex items-center justify-center rounded-[30px] bg-accent px-8 py-3.5 font-bold text-primary shadow-[0px_2px_4px_rgba(0,0,0,0.15)]"
+              className="cta3d cta3d--gold body-large mt-2 inline-flex items-center justify-center px-8 py-3.5"
             >
-              Start Your Evaluation
+              Start My PSD Evaluation
             </MaybeStateModalButton>
           </div>
 

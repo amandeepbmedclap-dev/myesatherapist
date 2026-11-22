@@ -129,7 +129,7 @@ export function CtaTile() {
         <button
           type="button"
           onClick={() => openEsaEligibilityChecker()}
-          className="inline-flex h-[50px] w-full items-center justify-center gap-2 rounded-full bg-accent px-5 text-[15px] font-bold text-[#1A3D4F] transition-colors hover:bg-gold-600"
+          className="cta3d cta3d--gold inline-flex h-[52px] w-full items-center justify-center gap-2 px-5 text-[15px]"
         >
           Free ESA Eligibility Checker <ArrowRight aria-hidden className="size-4" />
         </button>

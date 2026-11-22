@@ -75,7 +75,7 @@ export function ConsumerAffairsReviewsSection() {
               href="https://www.consumeraffairs.com/pets/my-esa-therapist.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-7 h-[44px] rounded-full bg-accent text-primary font-sans font-semibold text-[15px] leading-[22px] hover:opacity-95 transition-opacity whitespace-nowrap shrink-0"
+              className="cta3d cta3d--outline inline-flex items-center justify-center px-7 h-[46px] font-sans text-[15px] leading-[22px] whitespace-nowrap shrink-0"
             >
               View Source
             </a>

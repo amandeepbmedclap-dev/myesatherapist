@@ -37,6 +37,13 @@ const EVALUATION_CTA_LABELS = new Set([
   "book an esa evaluation",
   "book an online esa evaluation",
   "apply my esa letter",
+  // Current wording (components/common/ctaCopy.ts)
+  "start my esa evaluation",
+  "start my evaluation",
+  "start my psd evaluation",
+  "start my esa + psd evaluation",
+  "renew my esa letter",
+  "book my evaluation",
 ]);
 
 export const OPEN_STATE_MODAL_EVENT = "open-state-select-modal";
