@@ -84,6 +84,80 @@ export function FaqSection({
     num: f.num || `${String(i + 1).padStart(2, "0")}.`,
   }));
 
+  if (variant === "light") {
+    return (
+      <section id={id} data-section="faq" className={cn("relative px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20", bg, className)}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: serializeLd(faqPageSchema(items), { faq: true }) }}
+        />
+        {id !== "faq" && <div id="faq" className="sr-only" />}
+        <div className="mx-auto max-w-[1180px]">
+          <div className="mx-auto mb-10 max-w-[880px] text-center lg:mb-12">
+            <h2 className="heading-h2 text-primary">{title}</h2>
+            {subtitle && <p className="body-large mx-auto mt-3 max-w-[760px] text-body-text">{subtitle}</p>}
+          </div>
+
+          <div className="grid gap-8 lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-14">
+            <aside className="hidden lg:block">
+              <div className="sticky top-28 space-y-4">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-[24px] shadow-[0_24px_50px_-36px_rgba(26,61,79,0.6)]">
+                  <Image quality={85} src="/common/faq-section-image.webp" alt="Person with their emotional support dog outdoors" fill sizes="320px" className="object-cover" />
+                </div>
+                <div className="rounded-[20px] bg-cream-100 p-5">
+                  <div className="font-heading text-[20px] font-bold leading-[28px] text-primary">Still have a question?</div>
+                  <div className="mt-1 font-sans text-[14.5px] leading-[23px] text-body-text">Our team is happy to help.</div>
+                  <div className="mt-3 flex flex-col gap-1.5 font-sans text-[15px] font-semibold">
+                    <a href="tel:+18884124041" className="text-primary underline decoration-accent decoration-2 underline-offset-4 hover:text-[#1D6E72]">+1 (888) 412-4041</a>
+                    <a href="mailto:info@myesatherapist.com" className="text-primary underline decoration-accent decoration-2 underline-offset-4 hover:text-[#1D6E72]">info@myesatherapist.com</a>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+            <div className="divide-y divide-primary/10 border-y border-primary/10">
+              {items.map((faq, idx) => {
+                const isOpen = openIdx === idx;
+                return (
+                  <details key={idx} open={isOpen} className="group">
+                    <summary
+                      onClick={(event) => {
+                        event.preventDefault();
+                        setOpenIdx(isOpen ? null : idx);
+                      }}
+                      className="flex w-full cursor-pointer list-none items-start gap-4 py-5 text-left sm:gap-6 [&::-webkit-details-marker]:hidden"
+                    >
+                      <span className="mt-[3px] w-7 shrink-0 font-heading text-[16px] font-bold leading-[24px] text-gold-600 tabular-nums">{faq.num?.replace(/\.$/, "")}</span>
+                      <h3 className={`m-0 flex-1 font-heading !text-[18px] font-bold !leading-[27px] transition-colors sm:!text-[19px] ${isOpen ? "text-primary" : "text-primary/90 group-hover:text-primary"}`}>{faq.q}</h3>
+                      <span
+                        aria-hidden
+                        className={`mt-[2px] flex size-7 shrink-0 items-center justify-center rounded-full ring-1 transition-all duration-300 ${isOpen ? "rotate-45 bg-accent text-primary ring-accent" : "text-primary ring-primary/20 group-hover:ring-primary/40"}`}
+                      >
+                        <svg width="12" height="12" viewBox="0 0 18 18" fill="none"><path d="M9 3V15M3 9H15" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" /></svg>
+                      </span>
+                    </summary>
+                    <div className="whitespace-pre-line pb-6 pl-11 pr-11 font-sans text-[16px] leading-[27px] text-body-text sm:pl-[52px]">
+                      {faq.a}
+                    </div>
+                  </details>
+                );
+              })}
+            </div>
+
+            <div className="rounded-[20px] bg-cream-100 p-5 lg:hidden">
+              <div className="font-heading text-[20px] font-bold leading-[28px] text-primary">Still have a question?</div>
+              <div className="mt-1 font-sans text-[14.5px] leading-[23px] text-body-text">Our team is happy to help.</div>
+              <div className="mt-3 flex flex-col gap-1.5 font-sans text-[15px] font-semibold">
+                <a href="tel:+18884124041" className="text-primary underline decoration-accent decoration-2 underline-offset-4">+1 (888) 412-4041</a>
+                <a href="mailto:info@myesatherapist.com" className="text-primary underline decoration-accent decoration-2 underline-offset-4">info@myesatherapist.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id={id} className={cn("relative pt-12 sm:pt-16 lg:pt-16 xl:pt-24 pb-10 sm:pb-12 lg:pb-10 xl:pb-24", bg, className)}>
       <script
@@ -117,37 +191,10 @@ export function FaqSection({
             </div>
           </div>
 
-          <div className={`w-full max-w-[566px] lg:max-w-none lg:flex-1 ${variant === "light" ? "space-y-3" : "space-y-3.5 sm:space-y-5 xl:space-y-[25px]"} flex flex-col justify-center`}>
+          <div className={`w-full max-w-[566px] lg:max-w-none lg:flex-1 space-y-3.5 sm:space-y-5 xl:space-y-[25px] flex flex-col justify-center`}>
             {items.map((faq, idx) => {
               const isOpen = openIdx === idx;
               return (
-                variant === "light" ? (
-                <details
-                  key={idx}
-                  open={isOpen}
-                  className={`w-full rounded-[18px] bg-white transition-shadow duration-200 ${isOpen ? "ring-1 ring-accent/70 shadow-[0_18px_40px_-30px_rgba(26,61,79,0.55)]" : "ring-1 ring-line-200 hover:ring-primary/25"}`}
-                >
-                  <summary
-                    onClick={(event) => {
-                      event.preventDefault();
-                      setOpenIdx(isOpen ? null : idx);
-                    }}
-                    className="flex w-full cursor-pointer list-none items-start gap-4 px-5 py-4 text-left sm:gap-5 sm:px-6 sm:py-5 [&::-webkit-details-marker]:hidden"
-                  >
-                    <span className="mt-[2px] w-8 shrink-0 font-heading text-[18px] font-bold leading-[26px] text-gold-600">{faq.num?.replace(/\.$/, "")}</span>
-                    <h3 className="m-0 flex-1 font-heading !text-[18px] font-bold !leading-[26px] text-primary sm:!text-[19px]">{faq.q}</h3>
-                    <span
-                      aria-hidden
-                      className={`mt-[1px] flex size-7 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${isOpen ? "rotate-45 bg-primary text-white" : "bg-cream-100 text-primary"}`}
-                    >
-                      <svg width="12" height="12" viewBox="0 0 18 18" fill="none"><path d="M9 3V15M3 9H15" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" /></svg>
-                    </span>
-                  </summary>
-                  <div className="whitespace-pre-line px-5 pb-5 font-sans text-[15.5px] leading-[26px] text-body-text sm:px-6 sm:pl-[76px]">
-                    {faq.a}
-                  </div>
-                </details>
-                ) : (
                 <details
                   key={idx}
                   open={isOpen}
@@ -197,7 +244,6 @@ export function FaqSection({
                     {faq.a}
                   </div>
                 </details>
-                )
               );
             })}
           </div>

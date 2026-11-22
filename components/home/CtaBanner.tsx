@@ -35,92 +35,60 @@ export function CtaBanner({
   buttonHref = "#how-it-works",
   flushBottom = false,
 }: CtaBannerProps) {
+  void flushBottom;
   return (
-    <section className={cn(
-      "relative w-full overflow-visible pt-0 lg:pt-[8.7vw] xl:pt-[125px] pb-0",
-      flushBottom && "pb-0 sm:pb-0 lg:pb-0 xl:pb-0",
-      bgColor,
-      className,
-    )}>
-      <div
-        className="w-full relative min-h-[404px] lg:min-h-[28vw] xl:min-h-[404px] color-gradient"
-      >
-        <div className="absolute left-[35%] lg:left-[41%] bottom-0 w-[160px] lg:w-[16.7vw] xl:w-[240px] h-[110px] lg:h-[11.1vw] xl:h-[160px] pointer-events-none z-0 hidden md:block">
-          <Image
-            quality={90}
-            src="/common/cta-section-paw.webp"
-            alt="Paw print"
-            fill
-            sizes="240px"
-            className="object-contain object-bottom"
-          />
+    <section
+      data-section="closing-cta"
+      className={cn("relative w-full px-4 pb-14 pt-12 sm:px-6 sm:pb-16 lg:px-8 lg:pb-20 lg:pt-[150px]", bgColor, className)}
+    >
+      <div className="relative mx-auto max-w-[1280px] rounded-[28px] color-gradient shadow-[0_40px_80px_-50px_rgba(26,61,79,0.8)] lg:rounded-[32px]">
+        <div className="pointer-events-none absolute bottom-0 left-[40%] z-0 hidden h-[150px] w-[220px] md:block">
+          <Image quality={90} src="/common/cta-section-paw.webp" alt="" fill sizes="220px" className="object-contain object-bottom opacity-80" />
         </div>
 
-        <div className="hidden lg:block absolute right-0 bottom-0 w-[480px] lg:w-[45.3vw] xl:w-[653px] h-[390px] lg:h-[36.5vw] xl:h-[525px] pointer-events-none z-20">
+        <div
+          className="pointer-events-none absolute bottom-0 right-0 z-20 hidden h-[500px] w-[46%] max-w-[620px] lg:block xl:h-[530px]"
+          style={{ clipPath: "inset(-400px 0 0 0 round 0 0 32px 0)" }}
+        >
           <Image
             quality={90}
             src="/common/cta-banner-background.webp"
             alt="Woman embracing emotional support dog"
             fill
             className="object-contain object-right-bottom"
-            sizes="(max-width: 1280px) 490px, 653px"
+            sizes="620px"
           />
         </div>
 
-        <div className="max-w-[1442px] mx-auto px-6 sm:px-12 lg:px-[7.2vw] xl:px-[104px] py-12 lg:py-[3.4vw] xl:py-[49px] relative min-h-[404px] lg:min-h-[28vw] xl:min-h-[404px] flex items-center">
-          <div className="relative z-10 max-w-[575px] lg:max-w-[50vw] xl:max-w-[737px] space-y-6 lg:space-y-[1.7vw] xl:space-y-6 text-left">
-            <div className="space-y-4">
-              {eyebrow && (
-                <div className="text-accent body-small font-bold tracking-wider uppercase">
-                  {eyebrow}
-                </div>
-              )}
-              <h2 className={cn("heading-h2 text-background max-w-[540px] lg:max-w-[47vw] xl:max-w-[680px] whitespace-pre-line", titleClassName)}>
-                {title}
-              </h2>
-              <p className="text-background body-large max-w-[380px] sm:max-w-[430px] lg:max-w-full">
-                {typeof description === "string" && description.includes("\n") ? (
-                  description.split("\n").map((line, i, arr) => (
+        <div className="relative z-10 px-6 py-10 sm:px-10 sm:py-12 lg:min-h-[400px] lg:max-w-[60%] lg:px-14 lg:py-14 xl:px-16">
+          <div className="space-y-4">
+            {eyebrow && <div className="body-small font-bold uppercase tracking-wider text-accent">{eyebrow}</div>}
+            <h2 className={cn("heading-h2 whitespace-pre-line text-background", titleClassName)}>{title}</h2>
+            <p className="body-large max-w-[560px] text-background/90">
+              {typeof description === "string" && description.includes("\n")
+                ? description.split("\n").map((line, i, arr) => (
                     <React.Fragment key={i}>
                       {line}
-                      {i < arr.length - 1 && <br />}
+                      {i < arr.length - 1 && <br className="hidden lg:block" />}
                     </React.Fragment>
                   ))
-                ) : (
-                  description
-                )}
-              </p>
-              {note && (
-                <p className="text-accent body-small pt-1">
-                  {note}
-                </p>
-              )}
-            </div>
-
-            <div className="pt-2">
-              <CtaButton
-                href={buttonHref}
-                stateModal
-                variant="accent"
-                className="w-auto min-w-[240px]"
-              >
-                {buttonText}
-              </CtaButton>
-            </div>
-
-            {disclaimer && (
-              <p className="text-background body-small pt-1 max-w-[560px]">
-                {disclaimer}
-              </p>
-            )}
+                : description}
+            </p>
+            {note && <p className="body-small pt-1 text-accent">{note}</p>}
           </div>
+          <div className="pt-7">
+            <CtaButton href={buttonHref} stateModal variant="accent" className="w-auto min-w-[240px]">
+              {buttonText}
+            </CtaButton>
+          </div>
+          {disclaimer && <p className="body-small max-w-[560px] pt-4 text-background/80">{disclaimer}</p>}
         </div>
 
-        <div className="lg:hidden relative w-full h-[260px] sm:h-[320px] pointer-events-none">
+        <div className="pointer-events-none relative -mt-4 h-[240px] w-full overflow-hidden rounded-b-[28px] sm:h-[300px] lg:hidden">
           <Image
             quality={90}
             src="/common/cta-banner-background.webp"
-            alt="Woman embracing emotional support dog"
+            alt=""
             fill
             className="object-contain object-bottom"
             sizes="(max-width: 1023px) 100vw, 1px"

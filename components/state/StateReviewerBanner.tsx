@@ -12,7 +12,7 @@ interface StateReviewerBannerProps {
   reviewerHref?: string;
   reviewerLinkedin?: string;
   className?: string;
-  variant?: "default" | "profile";
+  variant?: "default" | "profile" | "footer";
 }
 
 const REVIEWER_PROFILES: Record<string, { href: string; linkedin: string }> = {
@@ -41,6 +41,39 @@ export function StateReviewerBanner({
   const linkedinHref = reviewerLinkedin || reviewerProfile?.linkedin;
 
   const profile = variant === "profile";
+
+  if (variant === "footer") {
+    const avatar = (
+      <span className="relative block size-12 shrink-0 overflow-hidden rounded-full ring-2 ring-accent/80">
+        <Image quality={85} loading="lazy" src={reviewerImage} alt={`${reviewLabel} ${reviewerName}`} fill className="object-cover object-center" sizes="48px" />
+      </span>
+    );
+    return (
+      <div className={`flex items-center gap-4 ${className}`}>
+        {profileHref ? <Link href={profileHref} aria-label={`${reviewerName} profile`} className="shrink-0">{avatar}</Link> : avatar}
+        <div className="min-w-0 font-sans">
+          <p className="flex flex-wrap items-center gap-x-1.5 text-[15px] leading-[22px] text-white/75">
+            <span>{reviewLabel}</span>
+            {profileHref ? (
+              <Link href={profileHref} className="font-semibold text-white underline decoration-accent/70 decoration-2 underline-offset-4 hover:text-accent">{reviewerName}</Link>
+            ) : (
+              <span className="font-semibold text-white">{reviewerName}</span>
+            )}
+            {linkedinHref ? (
+              <a href={linkedinHref} target="_blank" rel="noopener noreferrer" aria-label={`${reviewerName} LinkedIn profile`} className="ml-0.5 inline-flex size-[18px] items-center justify-center rounded-full bg-accent text-primary hover:scale-110 transition-transform">
+                <svg className="size-2.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <circle cx="4.98" cy="4.98" r="2.4" />
+                  <rect x="2.8" y="9.5" width="4.4" height="12.5" rx="0.5" />
+                  <path d="M10.5 9.5h4.2v1.8c.6-1.1 2-2.1 4.1-2.1 4.4 0 5.2 2.9 5.2 6.6v6.2h-4.4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.6h-4.4V9.5z" />
+                </svg>
+              </a>
+            ) : null}
+          </p>
+          <p className="text-[13.5px] leading-[20px] text-white/55">Last updated: {updatedDate}</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <section
