@@ -1,8 +1,21 @@
 import type { NextConfig } from "next";
 import path from "path";
 
+// Temporary pre-launch noindex. Set ALLOW_INDEXING=true in the Vercel
+// production environment on launch day to lift it (no code change needed).
+const allowIndexing = process.env.ALLOW_INDEXING === "true";
+
 const nextConfig: NextConfig = {
   trailingSlash: true,
+  async headers() {
+    if (allowIndexing) return [];
+    return [
+      {
+        source: "/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
+    ];
+  },
   onDemandEntries: {
     maxInactiveAge: 10 * 60 * 1000,
     pagesBufferLength: 60,

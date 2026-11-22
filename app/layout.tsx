@@ -49,8 +49,8 @@ const defaultSocial = socialImage("homepage", "Telehealth with a happy companion
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   robots: {
-    index: true,
-    follow: true,
+    index: process.env.ALLOW_INDEXING === "true",
+    follow: process.env.ALLOW_INDEXING === "true",
   },
   title: "ESA Evaluations by Licensed Therapists- My ESA Therapist",
   description:
