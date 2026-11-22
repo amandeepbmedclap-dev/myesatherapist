@@ -58,7 +58,7 @@ const DOCTORS: Doctor[] = [
     name: "Dr. Gaurav Patel, MD",
     title: "Family Medicine Physician",
     bio: "Dr. Gaurav Patel, MD is a board-certified physician with extensive background across urgent care, outpatient clinical practice, and telehealth consultations. He is committed to empathetic, patient-centered care and evaluating emotional wellness through thorough clinical assessments.",
-    licensedIn: "17 States",
+    licensedIn: "47 States",
     method: "Video or Phone",
     focus: "Chronic Illness, Sleep",
     avatar: "/doctors/gaurav-patel-dr.webp",

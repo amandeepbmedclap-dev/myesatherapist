@@ -306,10 +306,10 @@ export const DOCTORS_DATA: DoctorProfile[] = [
     bio: "Board-certified family medicine physician with experience providing evidence-based, patient-focused care across inpatient, urgent care, outpatient, and telemedicine settings.",
     stats: {
       years: "15+",
-      states: "17",
+      states: "47",
       focusAreas: "10+",
     },
-    licensedIn: "17 States",
+    licensedIn: "47 States",
     method: "Audio/Video",
     focus: "Depression, Anxiety, Chronic Health",
     avatar: "/doctors/gaurav-patel-dr.webp",
@@ -322,7 +322,7 @@ export const DOCTORS_DATA: DoctorProfile[] = [
         label: "Years of Experience",
       },
       {
-        value: "17",
+        value: "47",
         label: "States Licensed",
       },
       {
@@ -402,7 +402,7 @@ export const DOCTORS_DATA: DoctorProfile[] = [
     ],
     licenses: [
       "Board Certified Physician in Family Medicine",
-      "Active Medical Licensure in 17 US States",
+      "Active Medical Licensure in 47 US States",
     ],
     aboutParagraphs: [
       "Dr. Gaurav Patel is a board-certified family medicine physician with experience providing evidence-based care across inpatient, urgent care, outpatient, and telemedicine settings. He has cared for patients in both rural and suburban communities across the United States. His approach combines clinical assessment, diagnostic expertise, and patient education to support individual health needs.",

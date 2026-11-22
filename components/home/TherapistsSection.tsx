@@ -94,7 +94,7 @@ const defaultTherapists: Therapist[] = [
     name: "Gaurav Patel, MD",
     title: "Family Medicine Physician",
     bio: "Board-certified family medicine physician with experience providing evidence-based, patient-focused care across inpatient, urgent care, outpatient, and telemedicine settings.",
-    licensedIn: "17 States",
+    licensedIn: "47 States",
     method: "Video or Phone",
     focus: "Chronic Conditions & Sleep Concerns",
     avatar: "/doctors/gaurav-patel-dr.webp",

@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { StateData } from "@/data/statesData";
 import { CtaButton } from "@/components/common/CtaButton";
+import { Check } from "lucide-react";
 
 function processIcon(src: string) {
   if (src.includes("schedule")) return "/esa-icons/icon-16.svg";
@@ -67,93 +68,73 @@ export function StateProcessSection({ data }: { data: StateData }) {
   return (
     <section
       id="process"
-      className="w-full bg-background py-14 sm:py-18 lg:py-24 px-4 sm:px-6 lg:px-8 scroll-mt-36 relative z-10"
+      className="relative z-10 w-full scroll-mt-36 bg-background px-4 py-14 sm:px-6 sm:py-18 lg:px-8 lg:py-24"
     >
-      <div className="max-w-[1283px] mx-auto flex flex-col items-center gap-14 sm:gap-16 lg:gap-20">
-        <div className="text-center max-w-[1030px] mx-auto space-y-3 sm:space-y-4">
-          <h2 className="font-heading text-3xl sm:text-4xl lg:text-[44px] font-bold text-primary leading-tight lg:leading-[54px] tracking-[-0.00015em]">
+      <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-12 lg:gap-16">
+        <div className="mx-auto max-w-[1030px] space-y-3 text-center sm:space-y-4">
+          <h2 className="font-heading text-3xl font-bold leading-tight tracking-[-0.00015em] text-primary sm:text-4xl lg:text-[44px] lg:leading-[54px]">
             {title}
           </h2>
-          <p className="body-large text-body-text max-w-[885px] mx-auto">
-            {subtitle}
-          </p>
+          <p className="body-large mx-auto max-w-[885px] text-body-text">{subtitle}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-6 xl:gap-[26px] w-full max-w-[1283px] mx-auto items-start pb-6 md:pb-16 lg:pb-24">
-          {steps.map((step) => (
-            <div
-              key={step.number}
-              className={`hover-card hover-surface w-full max-w-[410px] mx-auto bg-white rounded-[30px] p-[24px_22px] border border-[#EAE5DC]/60 shadow-[0px_1px_7px_rgba(0,0,0,0.08)] flex flex-col justify-between min-h-[303px] ${step.offsetClass}`}
-            >
-              <div className="flex items-center w-full mb-4">
-                <div className="flex h-[46px] w-[46px] items-center justify-center rounded-full bg-white shadow-[0px_1px_3px_rgba(0,0,0,0.15)]">
-                  <Image
-                    quality={90}
-                    src={processIcon(step.icon)}
-                    alt={step.title}
-                    width={24}
-          sizes="24px"
-                    height={24}
-                    unoptimized
-                    className="h-6 w-6 object-contain"
-                  />
-                </div>
+        {/* Steps: vertical timeline on mobile, connected horizontal track from md up */}
+        <ol className="relative grid w-full gap-0 md:grid-cols-3 md:gap-8">
+          <span
+            aria-hidden
+            className="pointer-events-none absolute left-[calc(100%/6)] right-[calc(100%/6)] top-[38px] hidden h-0 border-t-2 border-dashed border-accent/70 md:block"
+          />
+          {steps.map((step, idx) => (
+            <li key={step.number} className="relative flex gap-5 pb-10 last:pb-0 md:flex-col md:items-center md:gap-0 md:pb-0 md:text-center">
+              {idx < steps.length - 1 && (
+                <span aria-hidden className="absolute bottom-0 left-[37px] top-[76px] w-0 border-l-2 border-dashed border-accent/70 md:hidden" />
+              )}
+              <div className="relative z-10 flex size-[76px] shrink-0 items-center justify-center rounded-full bg-white shadow-[0_10px_24px_-12px_rgba(26,61,79,0.45)] ring-[6px] ring-background">
+                <Image quality={90} src={processIcon(step.icon)} alt="" width={30} sizes="30px" height={30} unoptimized className="size-[30px] object-contain" />
+                <span className="absolute -right-1 -top-1 flex size-7 items-center justify-center rounded-full bg-primary font-sans text-[12px] font-extrabold text-white">
+                  {step.number}
+                </span>
               </div>
 
-              <div className="space-y-2 flex-1">
-                <h3 className="font-heading font-bold text-[20px] sm:text-[24px] leading-[28px] sm:leading-[32px] text-primary">
+              <div className="relative min-w-0 pt-1 md:mt-6 md:max-w-[340px] md:pt-0">
+                <div className="relative font-sans text-[12px] font-extrabold uppercase tracking-[0.12em] text-[#8A6A12]">Step {step.number}</div>
+                <h3 className="relative mt-1 font-heading text-[22px] font-bold leading-[30px] text-primary sm:text-[24px] sm:leading-[32px]">
                   {step.title}
                 </h3>
-                <p className="body text-body-text">
-                  {step.description}
-                </p>
+                <div className="relative mt-2 font-sans text-[15px] leading-[25px] text-body-text sm:text-[16px] sm:leading-[26px]">{step.description}</div>
               </div>
-            </div>
+            </li>
           ))}
-        </div>
+        </ol>
 
-        <div className="w-full max-w-[760px] mx-auto rounded-[30px] bg-[rgba(232,185,44,0.1)] p-6 sm:p-[25px_45px] flex flex-col items-center gap-6 shadow-xs">
-          <h4 className="heading-h4 text-primary text-center">
+        {/* Differentiators */}
+        <div className="grid w-full gap-7 overflow-hidden rounded-[28px] p-7 color-gradient sm:p-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.3fr)] lg:grid-rows-[auto_1fr] lg:gap-x-12 lg:gap-y-6 lg:p-12">
+          <div role="heading" aria-level={3} className="font-heading text-[26px] font-bold leading-[34px] text-white sm:text-[32px] sm:leading-[40px] lg:col-start-1 lg:row-start-1">
             {data.processDifferentiatorsTitle || "Why Our Process Is Different"}
-          </h4>
-
-          <div className="flex flex-col items-start gap-2.5 w-full max-w-[620px]">
-            {differentiators.map((item, idx) => (
-              <div key={idx} className="flex items-start gap-3.5 w-full">
-                <span className="flex h-[26px] shrink-0 items-center">
-                  <Image quality={90}
-                    src="/esa-icons/icon-46.svg"
-                    alt=""
-                    width={20}
-          sizes="20px"
-                    height={20}
-                    unoptimized
-                    className="h-5 w-5 object-contain"
-                  />
-                </span>
-                <span className="body-text text-body-text leading-[26px]">
-                  {item}
-                </span>
-              </div>
-            ))}
           </div>
 
-          {data.processNote && (
-            <div className="w-full bg-white/80 rounded-[16px] p-4 border border-accent/40 mt-2">
-              <p className="body-small text-body-text">
+          <div className="flex flex-col gap-3 lg:col-start-2 lg:row-span-2 lg:row-start-1">
+            {differentiators.map((item, idx) => (
+              <div key={idx} className="flex items-start gap-3 rounded-[16px] bg-white/[0.07] px-4 py-3.5 ring-1 ring-white/10">
+                <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-accent text-[#163545]">
+                  <Check aria-hidden strokeWidth={3} className="size-3.5" />
+                </span>
+                <span className="font-sans text-[15px] leading-[24px] text-white sm:text-[16px]">{item}</span>
+              </div>
+            ))}
+            {data.processNote && (
+              <div className="mt-1 rounded-[16px] border border-accent/50 bg-white/[0.04] p-4 font-sans text-[14px] leading-[22px] text-white/85">
                 {data.processNote}
-              </p>
-            </div>
-          )}
-        </div>
+              </div>
+            )}
+          </div>
 
-        <div className="flex flex-col items-center gap-2">
-          <CtaButton href="/pricing/">Start Your ESA Evaluation</CtaButton>
-          {data.benefitsRefundNote !== "" && (
-            <p className="body-small text-body-text text-center">
-              100% Refund If No ESA Letter Is Issued
-            </p>
-          )}
+          <div className="flex flex-col items-start gap-2 lg:col-start-1 lg:row-start-2">
+            <CtaButton href="/pricing/">Start Your ESA Evaluation</CtaButton>
+            {data.benefitsRefundNote !== "" && (
+              <span className="font-sans text-[14px] leading-5 text-white/80">100% Refund If No ESA Letter Is Issued</span>
+            )}
+          </div>
         </div>
       </div>
     </section>

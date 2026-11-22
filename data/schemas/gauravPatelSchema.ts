@@ -36,7 +36,7 @@ export const gauravPatelSchemas = [
           "@type": "Organization",
           "name": "Board Certified"
         },
-        "about": "Licensed in 17 US states"
+        "about": "Licensed in 47 US states"
       },
       "identifier": {
         "@type": "PropertyValue",
