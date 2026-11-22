@@ -118,75 +118,43 @@ interface AsSeenOnSectionProps {
 }
 
 export function AsSeenOnSection({ bgColor = "bg-white/40" }: AsSeenOnSectionProps) {
+  const logoClass = (logo: (typeof mediaLogos)[number]) =>
+    logo.imgClassName || "h-[26px] w-auto max-w-[150px] object-contain sm:h-[30px] lg:h-[32px] lg:max-w-[170px]";
+
   return (
-    <section className={`py-8 sm:py-10 lg:py-8 xl:py-[39px] ${bgColor} overflow-hidden relative z-10 backdrop-blur-xs`}>
-      <div className="flex items-center justify-center gap-4 sm:gap-5 lg:gap-6 mb-6 sm:mb-8 xl:mb-[32px] px-4">
-        <div className="w-[50px] sm:w-[80px] h-[1px] bg-accent rounded-[10px] shrink-0" />
-        <h2 className="heading-h2 text-center shrink-0">
-          In the News
-        </h2>
-        <div className="w-[50px] sm:w-[80px] h-[1px] bg-accent rounded-[10px] shrink-0" />
+    <section className={`relative z-10 overflow-hidden py-10 sm:py-12 ${bgColor}`}>
+      <div className="mb-7 flex items-center justify-center gap-4 px-4 sm:mb-8">
+        <span aria-hidden className="h-px w-10 bg-accent sm:w-16" />
+        <div role="heading" aria-level={2} className="font-sans text-[13px] font-extrabold uppercase tracking-[0.2em] text-primary">Press &amp; Mentions</div>
+        <span aria-hidden className="h-px w-10 bg-accent sm:w-16" />
       </div>
 
-      <div className="relative w-full overflow-hidden py-3 sm:py-4 xl:py-[14px]">
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-8 sm:w-16 lg:w-24 z-10 bg-gradient-to-r from-background to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-8 sm:w-16 lg:w-24 z-10 bg-gradient-to-l from-background to-transparent" />
-
-        <div
-          className="flex w-max animate-marquee items-center py-1"
-          style={{ animationDuration: "50s" }}
-        >
-          <div className="flex items-center gap-4 sm:gap-5 lg:gap-6 xl:gap-[25px] pr-4 sm:pr-5 lg:pr-6 xl:pr-[25px] shrink-0 py-1">
-            {mediaLogos.map((logo, idx) => (
-              <a
-                key={`t1-${idx}`}
-                href={logo.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                title={`Read coverage on ${logo.name}`}
-                className="bg-white rounded-[14px] lg:rounded-[16px] xl:rounded-[20px] shadow-[0_4px_18px_rgba(0,0,0,0.06)] xl:shadow-[0px_1px_4.2px_rgba(0,0,0,0.25)] border border-[#E2E8F0] h-[52px] sm:h-[60px] lg:h-[62px] xl:h-[65px] px-4 sm:px-5 lg:px-6 xl:px-7 min-w-[150px] sm:min-w-[180px] lg:min-w-[195px] xl:min-w-[204px] flex items-center justify-center shrink-0 transition-all duration-200 hover:scale-[1.03] hover:shadow-[0_6px_22px_rgba(0,0,0,0.09)] cursor-pointer"
-              >
-                <Image quality={90}
-                  unoptimized
-                  loading="lazy"
-                  src={logo.src}
-                  alt={logo.name}
-                  width={260}
-          sizes="260px"
-                  height={65}
-                  className={`shrink-0 grayscale contrast-125 opacity-100 hover:grayscale-0 hover:contrast-100 transition-all duration-300 ${
-                    logo.imgClassName || "max-h-[30px] sm:max-h-[36px] lg:max-h-[40px] xl:max-h-[44px] max-w-[140px] sm:max-w-[165px] lg:max-w-[180px] xl:max-w-[195px] w-auto object-contain"
-                  }`}
-                />
-              </a>
-            ))}
-          </div>
-
-          <div className="flex items-center gap-4 sm:gap-5 lg:gap-6 xl:gap-[25px] pr-4 sm:pr-5 lg:pr-6 xl:pr-[25px] shrink-0 py-1" aria-hidden="true">
-            {mediaLogos.map((logo, idx) => (
-              <div
-                key={`t2-${idx}`}
-                className="bg-white rounded-[14px] lg:rounded-[16px] xl:rounded-[20px] shadow-[0_4px_18px_rgba(0,0,0,0.06)] xl:shadow-[0px_1px_4.2px_rgba(0,0,0,0.25)] border border-[#E2E8F0] h-[52px] sm:h-[60px] lg:h-[62px] xl:h-[65px] px-4 sm:px-5 lg:px-6 xl:px-7 min-w-[150px] sm:min-w-[180px] lg:min-w-[195px] xl:min-w-[204px] flex items-center justify-center shrink-0"
-              >
-                <Image quality={90}
-                  unoptimized
-                  loading="lazy"
-                  src={logo.src}
-                  alt=""
-                  width={260}
-          sizes="260px"
-                  height={65}
-                  className={`shrink-0 grayscale contrast-125 opacity-100 ${
-                    logo.imgClassName || "max-h-[30px] sm:max-h-[36px] lg:max-h-[40px] xl:max-h-[44px] max-w-[140px] sm:max-w-[165px] lg:max-w-[180px] xl:max-w-[195px] w-auto object-contain"
-                  }`}
-                />
-              </div>
-            ))}
-          </div>
+      <div className="group relative w-full overflow-hidden [mask-image:linear-gradient(90deg,transparent,#000_10%,#000_90%,transparent)]">
+        <div className="flex w-max animate-marquee items-center group-hover:[animation-play-state:paused]" style={{ animationDuration: "60s" }}>
+          {[0, 1].map((copy) => (
+            <div key={copy} aria-hidden={copy === 1 || undefined} className="flex shrink-0 items-center gap-12 pr-12 sm:gap-16 sm:pr-16">
+              {mediaLogos.map((logo) =>
+                copy === 0 ? (
+                  <a
+                    key={logo.name}
+                    href={logo.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={`Read on ${logo.name}`}
+                    className="flex h-12 shrink-0 items-center opacity-55 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
+                  >
+                    <Image quality={90} unoptimized loading="lazy" src={logo.src} alt={logo.name} width={260} height={65} sizes="260px" className={`shrink-0 ${logoClass(logo)}`} />
+                  </a>
+                ) : (
+                  <span key={logo.name} className="flex h-12 shrink-0 items-center opacity-55 grayscale">
+                    <Image quality={90} unoptimized loading="lazy" src={logo.src} alt="" width={260} height={65} sizes="260px" className={`shrink-0 ${logoClass(logo)}`} />
+                  </span>
+                )
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
 }
-
-
