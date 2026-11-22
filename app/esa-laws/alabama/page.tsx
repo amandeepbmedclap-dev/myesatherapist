@@ -108,11 +108,11 @@ export default function AlabamaEsaLawsPage() {
           linkedin="https://www.linkedin.com/in/physiozia/"
         />
 
-        <BlogMoreResources />
+        <BlogMoreResources bg="bg-background" />
 
         <FaqSection
           id="faq"
-          bg="bg-background"
+          bg="bg-white"
           title="Frequently Asked Questions About Alabama ESA Laws"
           subtitle="Answers to common questions about emotional support animal rules in Alabama."
           faqs={ALABAMA_FAQS}

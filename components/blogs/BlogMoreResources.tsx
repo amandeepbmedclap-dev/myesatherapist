@@ -3,11 +3,12 @@ import { BLOG_POSTS } from "@/data/blogsData";
 import { BlogCard } from "@/components/blogs/BlogCard";
 
 interface BlogMoreResourcesProps {
+  bg?: string;
   currentSlug?: string;
   categorySlug?: string;
 }
 
-export function BlogMoreResources({ currentSlug, categorySlug }: BlogMoreResourcesProps = {}) {
+export function BlogMoreResources({ currentSlug, categorySlug, bg = "bg-white" }: BlogMoreResourcesProps = {}) {
   // Same-category posts first keeps each topic silo tightly linked.
   const otherPosts = BLOG_POSTS.filter((p) => p.slug !== currentSlug).sort(
     (a, b) => Number(b.categorySlug === categorySlug) - Number(a.categorySlug === categorySlug),
@@ -15,7 +16,7 @@ export function BlogMoreResources({ currentSlug, categorySlug }: BlogMoreResourc
   const displayPosts = otherPosts.length > 0 ? otherPosts : BLOG_POSTS;
 
   return (
-    <section className="w-full bg-background py-14 sm:py-20 lg:py-24">
+    <section className={`w-full ${bg} py-14 sm:py-20 lg:py-24`}>
       <div className="max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center gap-10 sm:gap-14 lg:gap-16">
         
         <div className="flex flex-col items-center gap-4 text-center max-w-[978px] mx-auto">

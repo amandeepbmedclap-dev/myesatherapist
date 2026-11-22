@@ -10,7 +10,7 @@ const CARDS = [
 
 export function EsaOnlineTrustCards() {
   return (
-    <section className="w-full bg-background pt-16 pb-8 sm:pt-20 sm:pb-12 lg:pb-16">
+    <section className="w-full bg-white pt-16 pb-12 sm:pt-20 sm:pb-12 lg:pb-16">
       <div className="max-w-[1312px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-16 max-w-[760px] text-center lg:mb-20">
           <h2 className="heading-h2 text-primary">Why ESA Owners Trust My ESA Therapist for Their Evaluations</h2>
@@ -22,7 +22,7 @@ export function EsaOnlineTrustCards() {
           {CARDS.map((card) => (
             <div key={card.title} className="hover-card relative flex w-full flex-col">
               <div className="absolute inset-x-0 top-0 bottom-2 rounded-[20px] bg-accent shadow-[0px_2px_4px_rgba(0,0,0,0.15)]" />
-              <div className="hover-surface relative mt-2 flex min-h-[160px] flex-1 flex-col items-center justify-center gap-2 rounded-[20px] bg-white px-4 pt-[60px] pb-[37px] text-center shadow-[0px_2px_4px_rgba(0,0,0,0.15)]">
+              <div className="hover-surface relative mt-2 flex min-h-[160px] flex-1 flex-col items-center justify-center gap-2 rounded-[20px] bg-background px-4 pt-[60px] pb-[37px] text-center shadow-[0px_2px_4px_rgba(0,0,0,0.15)]">
                 <h3 className="heading-h3 text-color-gradient">{card.title}</h3>
                 <p className="body">{card.subtitle}</p>
               </div>

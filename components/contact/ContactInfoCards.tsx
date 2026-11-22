@@ -36,7 +36,7 @@ export function ContactInfoCards() {
   ];
 
   return (
-    <section className="w-full bg-background py-8 sm:py-10 lg:py-12">
+    <section className="w-full bg-white py-8 sm:py-10 lg:py-12">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
           {cards.map((card, idx) => {
@@ -75,14 +75,14 @@ export function ContactInfoCards() {
               <a
                 key={idx}
                 href={card.href}
-                className="hover-card hover-surface group bg-white rounded-[20px] px-5 py-4 min-h-[88px] shadow-[0px_1px_4px_rgba(0,0,0,0.25)] flex items-center gap-3.5"
+                className="hover-card hover-surface group bg-background rounded-[20px] px-5 py-4 min-h-[88px] shadow-[0px_1px_4px_rgba(0,0,0,0.25)] flex items-center gap-3.5"
               >
                 {Content}
               </a>
             ) : (
               <div
                 key={idx}
-                className="hover-card hover-surface group bg-white rounded-[20px] px-5 py-4 min-h-[88px] shadow-[0px_1px_4px_rgba(0,0,0,0.25)] flex items-center gap-3.5"
+                className="hover-card hover-surface group bg-background rounded-[20px] px-5 py-4 min-h-[88px] shadow-[0px_1px_4px_rgba(0,0,0,0.25)] flex items-center gap-3.5"
               >
                 {Content}
               </div>

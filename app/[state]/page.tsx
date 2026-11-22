@@ -19,7 +19,6 @@ import { StateLawsSection } from "@/components/state/StateLawsSection";
 import { StateHousingRequestsSection } from "@/components/state/StateHousingRequestsSection";
 import { StateScamsSection } from "@/components/state/StateScamsSection";
 import { StatePsdVsEsaSection } from "@/components/state/StatePsdVsEsaSection";
-import { TrustedByPetOwnersSection } from "@/components/home/TrustedByPetOwnersSection";
 import { PricingSection } from "@/components/home/PricingSection";
 import { StateAvailableCitiesSection } from "@/components/state/StateAvailableCitiesSection";
 import { StateNextSteps } from "@/components/state/StateNextSteps";
@@ -92,6 +91,7 @@ export async function generateStaticParams() {
 export default async function DynamicStatePage({ params }: Props) {
   const { state } = await params;
   const data = getStateData(state);
+  const hasPricing = !["vermont", "tennessee", "rhode-island"].includes(data?.slug ?? "");
 
   if (!data) {
     notFound();
@@ -154,29 +154,21 @@ export default async function DynamicStatePage({ params }: Props) {
         <StateHousingRequestsSection data={data} />
         <div id="scams"><StateScamsSection data={data} /></div>
         <div id="psd-vs-esa"><StatePsdVsEsaSection data={data} /></div>
-        {data.trustedReviews && data.trustedReviews.length > 0 && (
-          <div id="trusted-reviews">
-            <TrustedByPetOwnersSection
-              stateName={data.name}
-              title={data.trustedReviewsTitle}
-              subtitle={data.trustedReviewsSubtitle}
-              testimonials={data.trustedReviews}
-            />
-          </div>
-        )}
-        {data.slug !== "vermont" && data.slug !== "tennessee" && data.slug !== "rhode-island" && <PricingSection
+        {hasPricing && <PricingSection
           sectionId="pricing"
+          bgColor="bg-white"
           heading={data.pricingTitle || `How Much Does an ESA Letter Evaluation Cost in ${data.name}?`}
           headingClassName="heading-h2"
           descriptionOverride={`Choose the option that best matches your needs in ${data.name}: an ESA letter evaluation, a combined ESA and PSD evaluation, or a professional assessment if you're unsure which type of support may be appropriate. Recommendations and documentation depend on a licensed clinician's assessment.`}
         />}
-        <div id="available-cities"><StateAvailableCitiesSection data={data} /></div>
-        <StateNextSteps data={data} />
+        <div id="available-cities"><StateAvailableCitiesSection data={data} tone={hasPricing ? "cream" : "white"} /></div>
+        <StateNextSteps data={data} tone={hasPricing ? "white" : "cream"} />
         <div id="faq">
           <FaqSection
             title={data.faqTitle}
             subtitle={data.faqSubtitle}
             faqs={data.faqs}
+            bg={hasPricing ? "bg-background" : "bg-white"}
             variant={isSectionPilot(data.slug) ? "light" : "classic"}
           />
         </div>

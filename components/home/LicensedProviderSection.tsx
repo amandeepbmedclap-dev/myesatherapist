@@ -11,7 +11,7 @@ export function LicensedProviderSection() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section className="pt-4 sm:pt-6 lg:pt-12 xl:pt-16 pb-12 sm:pb-14 lg:pb-16 xl:pb-20 bg-background">
+    <section className="pt-12 sm:pt-14 lg:pt-16 xl:pt-20 pb-12 sm:pb-14 lg:pb-16 xl:pb-20 bg-white">
       <div className="max-w-[999px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6 sm:mb-8 lg:mb-10 xl:mb-12 space-y-2.5 max-w-[999px] mx-auto">
           <h2 className="heading-h2">

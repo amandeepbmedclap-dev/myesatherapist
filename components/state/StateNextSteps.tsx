@@ -64,7 +64,8 @@ const NEIGHBORS: Record<string, string[]> = {
 // State-specific ESA law guides that exist today; others use the laws hub.
 const STATE_LAW_GUIDES = new Set(["alabama"]);
 
-export function StateNextSteps({ data }: { data: StateData }) {
+export function StateNextSteps({ data, tone = "white" }: { data: StateData; tone?: "cream" | "white" }) {
+  const cardBg = tone === "white" ? "bg-background" : "bg-white";
   const name = data.name;
   const neighbors = (NEIGHBORS[data.slug] || [])
     .map((slug) => STATE_INDEX_BY_SLUG[slug])
@@ -87,19 +88,20 @@ export function StateNextSteps({ data }: { data: StateData }) {
   ];
 
   return (
-    <section aria-labelledby="next-steps-heading" className="w-full bg-background py-12 sm:py-16">
+    <section aria-labelledby="next-steps-heading" className={`w-full ${tone === "white" ? "bg-white" : "bg-background"} py-12 sm:py-16`}>
       <div className="max-w-[1278px] mx-auto px-4 sm:px-6 lg:px-6 xl:px-0">
         <h2 id="next-steps-heading" className="heading-h2 text-primary text-center">
           More ESA Guides, Resources, and Help for {name} Residents
         </h2>
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
-          <LinkGroup title="Our services" links={services} />
-          <LinkGroup title={`Guides for ${name} renters`} links={guides} />
+          <LinkGroup title="Our services" links={services} cardBg={cardBg} />
+          <LinkGroup title={`Guides for ${name} renters`} links={guides} cardBg={cardBg} />
           {neighbors.length > 0 && (
             <LinkGroup
               title="Nearby states"
               links={neighbors.map((s) => ({ href: `/esa-letter-${s.slug}/`, label: `ESA letter in ${s.name}` }))}
               footer={{ href: "/state/", label: "See all states" }}
+              cardBg={cardBg}
             />
           )}
         </div>
@@ -112,13 +114,15 @@ function LinkGroup({
   title,
   links,
   footer,
+  cardBg = "bg-background",
 }: {
   title: string;
   links: Array<{ href: string; label: string }>;
   footer?: { href: string; label: string };
+  cardBg?: string;
 }) {
   return (
-    <div className="rounded-[20px] border border-[#EAE5DC] bg-white p-6">
+    <div className={`rounded-[20px] border border-[#EAE5DC] ${cardBg} p-6`}>
       <h3 className="font-heading font-bold text-[20px] leading-[28px] text-primary">{title}</h3>
       <ul className="mt-4 flex flex-col gap-3">
         {links.map((l) => (

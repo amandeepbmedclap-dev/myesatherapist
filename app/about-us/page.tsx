@@ -125,6 +125,7 @@ export default function AboutUsPage() {
         <AboutTestimonialSection />
 
         <FaqSection
+          bg="bg-white"
           title="Frequently Asked Questions About My ESA Therapist and Our Process"
           subtitle="Get answers to common questions about our mission, evaluations, and process."
           faqs={ABOUT_FAQS}

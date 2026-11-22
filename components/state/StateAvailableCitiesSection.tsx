@@ -4,7 +4,8 @@ import Image from "next/image";
 import { StateData } from "@/data/statesData";
 import { isSectionPilot } from "@/lib/sectionPilot";
 
-export function StateAvailableCitiesSection({ data }: { data: StateData }) {
+export function StateAvailableCitiesSection({ data, tone = "cream" }: { data: StateData; tone?: "cream" | "white" }) {
+  const cardBg = tone === "cream" ? "bg-white" : "bg-background";
   const stateName = data.name;
   const cities = data.cities || [];
   const title = data.citiesTitle || `Available Everywhere in ${stateName}`;
@@ -16,7 +17,7 @@ export function StateAvailableCitiesSection({ data }: { data: StateData }) {
   const pilot = isSectionPilot(data.slug);
 
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+    <section className={`w-full ${tone === "cream" ? "bg-background" : "bg-white"} py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8`}>
       <div className="max-w-[1280px] mx-auto">
         <div className="text-center max-w-[840px] mx-auto mb-10 sm:mb-12 lg:mb-14">
           <h2 className="font-heading text-2xl sm:text-3xl lg:text-[40px] xl:text-[44px] font-bold text-primary leading-[1.2] tracking-tight">
@@ -30,7 +31,7 @@ export function StateAvailableCitiesSection({ data }: { data: StateData }) {
         {hasDescriptions && pilot ? (
           <div className="mx-auto grid max-w-[1280px] grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
             {cities.map((city, idx) => (
-              <div key={idx} className="hover-card hover-surface flex h-full flex-col rounded-[22px] bg-background p-6 ring-1 ring-line-200">
+              <div key={idx} className={`hover-card hover-surface flex h-full flex-col rounded-[22px] ${cardBg} p-6 ring-1 ring-line-200`}>
                 <span className="hover-badge flex size-14 items-center justify-center rounded-[16px] bg-white shadow-[0_6px_16px_-10px_rgba(26,61,79,0.5)]">
                   <span className="relative size-10">
                     <Image quality={90} src={city.icon} alt={`${city.name} map`} fill unoptimized className="object-contain" sizes="40px" />
@@ -48,7 +49,7 @@ export function StateAvailableCitiesSection({ data }: { data: StateData }) {
             {cities.map((city, idx) => (
               <div
                 key={idx}
-                className="hover-card hover-surface bg-background rounded-[22px] sm:rounded-[24px] p-5 sm:p-6 border border-[#EAE5DC]/70 flex flex-col items-start gap-3.5 shadow-xs h-full"
+                className={`hover-card hover-surface ${cardBg} rounded-[22px] sm:rounded-[24px] p-5 sm:p-6 border border-[#EAE5DC]/70 flex flex-col items-start gap-3.5 shadow-xs h-full`}
               >
                 <div className="flex items-center gap-3.5 w-full">
                   <div className="hover-badge relative w-11 h-11 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0">
