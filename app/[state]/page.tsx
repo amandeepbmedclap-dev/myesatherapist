@@ -12,6 +12,7 @@ import { StateHeroSection } from "@/components/state/StateHeroSection";
 import { StateTrustBar } from "@/components/state/StateTrustBar";
 import { StateProcessSection } from "@/components/state/StateProcessSection";
 import { StateWhoQualifiesSection } from "@/components/state/StateWhoQualifiesSection";
+import { StateEligibilityPanels } from "@/components/state/StateEligibilityPanels";
 import { StateRequirementsSection } from "@/components/state/StateRequirementsSection";
 import { StateBenefitsSection } from "@/components/state/StateBenefitsSection";
 import { StateLawsSection } from "@/components/state/StateLawsSection";
@@ -129,7 +130,8 @@ export default async function DynamicStatePage({ params }: Props) {
         </div>
         <div id="process"><StateProcessSection data={data} /></div>
         <div id="who-qualifies"><StateWhoQualifiesSection data={data} /></div>
-        <StateRequirementsSection data={data} />
+        {/* Pilot: new eligibility layout on Arkansas only, pending approval for all states. */}
+        {data.slug === "arkansas" ? <StateEligibilityPanels data={data} /> : <StateRequirementsSection data={data} />}
         {data.whyChooseItems && data.whyChooseItems.length > 0 && (
           <div id="why-choose">
             <WhyChooseUs
