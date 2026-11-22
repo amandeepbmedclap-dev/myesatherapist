@@ -30,7 +30,7 @@ interface Doctor {
 const DOCTORS: Doctor[] = [
   {
     id: "robert-staaf",
-    slug: "robert-staaf",
+    slug: "dr-robert-staaf",
     name: "Robert Staaf",
     title: "Licensed Clinical Social Worker",
     bio: "Robert Staaf is an independent clinical social worker and therapist, currently licensed to practice at the clinical level in over 30 states. With extensive experience in psychotherapy and child and family welfare, Dr. Staaf is dedicated to providing compassionate, evidence-based mental health care to individuals and families.",

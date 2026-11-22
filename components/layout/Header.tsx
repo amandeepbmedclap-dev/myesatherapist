@@ -115,10 +115,11 @@ function ResourcesMenu() {
         />
       </button>
 
-      {open && (
-        <div
+      {/* Always in the HTML (hidden until opened) so crawlers can follow these links. */}
+      <div
           role="menu"
-          className="absolute left-1/2 top-full z-50 mt-4 w-[260px] -translate-x-1/2 rounded-[18px] border border-[#EAE5DC] bg-white py-2 shadow-[0_12px_32px_rgba(26,61,79,0.16)]"
+          aria-hidden={!open}
+          className={`absolute left-1/2 top-full z-50 mt-4 w-[260px] -translate-x-1/2 rounded-[18px] border border-[#EAE5DC] bg-white py-2 shadow-[0_12px_32px_rgba(26,61,79,0.16)] ${open ? "" : "hidden"}`}
         >
           {RESOURCE_LINKS.map((item) => (
             <Link
@@ -132,7 +133,6 @@ function ResourcesMenu() {
             </Link>
           ))}
         </div>
-      )}
     </div>
   );
 }
@@ -377,10 +377,11 @@ export function Header() {
 
 
 
-      {mobileOpen && (
-        <div
+      {/* Always in the HTML (hidden until opened) so mobile-first crawling sees the nav links. */}
+      <div
           id="mobile-navigation"
-          className="lg:hidden max-h-[calc(100dvh-5rem)] overflow-y-auto overscroll-contain bg-white px-6 py-5 space-y-4 shadow-lg"
+          aria-hidden={!mobileOpen}
+          className={`lg:hidden max-h-[calc(100dvh-5rem)] overflow-y-auto overscroll-contain bg-white px-6 py-5 space-y-4 shadow-lg ${mobileOpen ? "" : "hidden"}`}
         >
           <Link
             href="/esa-doctors/"
@@ -405,8 +406,7 @@ export function Header() {
             <span>Resources</span>
             <ChevronDown className={`w-4 h-4 text-body-text transition-transform duration-200 ${mobileResourcesOpen ? "rotate-180" : ""}`} />
           </button>
-          {mobileResourcesOpen && (
-            <div className="ml-3 flex flex-col border-l-2 border-[#F6EBCB] pl-4">
+          <div className={`ml-3 flex-col border-l-2 border-[#F6EBCB] pl-4 ${mobileResourcesOpen ? "flex" : "hidden"}`}>
               {RESOURCE_LINKS.map((item) => (
                 <Link
                   key={item.href}
@@ -421,7 +421,6 @@ export function Header() {
                 </Link>
               ))}
             </div>
-          )}
           <Link
             href="/contact-us/"
             className="block py-2 text-body-text font-medium text-base min-h-[44px] flex items-center"
@@ -463,7 +462,6 @@ export function Header() {
             </CtaButton>
           </div>
         </div>
-      )}
     </header>
     </>
   );

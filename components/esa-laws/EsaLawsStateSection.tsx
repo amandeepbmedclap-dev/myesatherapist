@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { STATE_INDEX_BY_SLUG } from "@/data/stateIndex";
 import { EXTRA_STATE_LAWS } from "@/data/esaLawsByState";
 
 interface StateLawEntry {
@@ -301,6 +302,15 @@ function StateCard({ entry }: { entry: StateLawEntry }) {
               className="mt-1 font-sans font-semibold text-[16px] leading-[24px] text-primary underline underline-offset-4 transition-colors hover:text-[#8A6A0B]"
             >
               {entry.guideLabel}
+            </Link>
+          ) : null}
+          {STATE_INDEX_BY_SLUG[entry.slug] ? (
+            <Link
+              prefetch={false}
+              href={`/esa-letter-${entry.slug}/`}
+              className="mt-1 font-sans font-semibold text-[16px] leading-[24px] text-primary underline underline-offset-4 transition-colors hover:text-[#8A6A0B]"
+            >
+              Get an ESA letter in {entry.name}
             </Link>
           ) : null}
         </div>

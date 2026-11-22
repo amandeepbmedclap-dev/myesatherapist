@@ -21,6 +21,7 @@ import { StatePsdVsEsaSection } from "@/components/state/StatePsdVsEsaSection";
 import { TrustedByPetOwnersSection } from "@/components/home/TrustedByPetOwnersSection";
 import { PricingSection } from "@/components/home/PricingSection";
 import { StateAvailableCitiesSection } from "@/components/state/StateAvailableCitiesSection";
+import { StateNextSteps } from "@/components/state/StateNextSteps";
 import { StateTableOfContents } from "@/components/state/StateTableOfContents";
 import { AsSeenOnSection } from "@/components/home/AsSeenOnSection";
 import { TherapistsSection } from "@/components/home/TherapistsSection";
@@ -169,6 +170,7 @@ export default async function DynamicStatePage({ params }: Props) {
           descriptionOverride={`Choose the option that best matches your needs in ${data.name}: an ESA letter evaluation, a combined ESA and PSD evaluation, or a professional assessment if you're unsure which type of support may be appropriate. Recommendations and documentation depend on a licensed clinician's assessment.`}
         />}
         <div id="available-cities"><StateAvailableCitiesSection data={data} /></div>
+        <StateNextSteps data={data} />
         <div id="faq">
           <FaqSection
             title={data.faqTitle}

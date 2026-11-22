@@ -20,6 +20,7 @@ const quickLinks = [
   { label: "ESA Letter Online", href: "/esa-letter-online/" },
   { label: "ESA Letter for Housing", href: "/esa-letter-for-housing/" },
   { label: "ESA Letter Renewal", href: "/esa-letter-renewal/" },
+  { label: "PSD Letter", href: "/psd-letter/" },
   { label: "ESA Letter by State", href: "/state/" },
   { label: "ESA Letter Cost", href: "/pricing/" },
   { label: "ESA FAQs", href: "/frequently-asked-questions/" },

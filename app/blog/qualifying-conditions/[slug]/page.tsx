@@ -11,6 +11,7 @@ import { BlogArticleContent } from "@/components/blogs/BlogArticleContent";
 import { BlogGoogleSourceBanner } from "@/components/blogs/BlogGoogleSourceBanner";
 import { BlogAuthorBio } from "@/components/blogs/BlogAuthorBio";
 import { BlogMoreResources } from "@/components/blogs/BlogMoreResources";
+import { BlogNextStep } from "@/components/blogs/BlogNextStep";
 import { CtaBanner } from "@/components/home/CtaBanner";
 import { getBlogBySlug, getAllBlogs } from "@/data/blogsData";
 import { socialImage, hasSocialImage, withFeatureImage } from "@/data/socialImages";
@@ -177,7 +178,8 @@ export default async function QualifyingConditionsBlogPage({ params }: PageProps
           linkedin={article.aboutAuthor?.linkedin}
         />
 
-        <BlogMoreResources currentSlug={article.slug} />
+        <BlogNextStep slug={article.slug} categorySlug={article.categorySlug} />
+        <BlogMoreResources currentSlug={article.slug} categorySlug={article.categorySlug} />
 
         <CtaBanner
           title={article.bottomCta?.title || "Need help with an ESA letter?"}

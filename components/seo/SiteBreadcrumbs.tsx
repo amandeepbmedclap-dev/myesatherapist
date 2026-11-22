@@ -96,7 +96,10 @@ export function SiteBreadcrumbs({
   if (OWN_BREADCRUMB.some((pattern) => pattern.test(pathname))) return null;
 
   const segments = pathname.split("/").filter(Boolean);
-  if (segments[0] === "blog" && segments.length > 2) {
+  // On a blog post the article itself is dropped from the trail, so every
+  // remaining crumb (Blog, category) stays a real link.
+  const isBlogPost = segments[0] === "blog" && segments.length > 2;
+  if (isBlogPost) {
     segments.pop();
   }
   const crumbs = [{ name: "Home", path: "/" }];
@@ -130,7 +133,7 @@ export function SiteBreadcrumbs({
       )}
       <ol className="pointer-events-auto no-scrollbar flex w-max min-w-0 max-w-full flex-nowrap items-center justify-center gap-x-1.5 overflow-x-auto font-sans sm:gap-x-2 lg:w-auto lg:justify-start lg:overflow-visible">
         {crumbs.map((crumb, index) => {
-          const current = index === crumbs.length - 1;
+          const current = !isBlogPost && index === crumbs.length - 1;
           return (
             <li
               key={crumb.path}

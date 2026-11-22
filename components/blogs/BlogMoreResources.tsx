@@ -6,10 +6,14 @@ import { BlogCard } from "@/components/blogs/BlogCard";
 
 interface BlogMoreResourcesProps {
   currentSlug?: string;
+  categorySlug?: string;
 }
 
-export function BlogMoreResources({ currentSlug }: BlogMoreResourcesProps = {}) {
-  const otherPosts = BLOG_POSTS.filter((p) => p.slug !== currentSlug);
+export function BlogMoreResources({ currentSlug, categorySlug }: BlogMoreResourcesProps = {}) {
+  // Same-category posts first keeps each topic silo tightly linked.
+  const otherPosts = BLOG_POSTS.filter((p) => p.slug !== currentSlug).sort(
+    (a, b) => Number(b.categorySlug === categorySlug) - Number(a.categorySlug === categorySlug),
+  );
   const displayPosts = otherPosts.length > 0 ? otherPosts : BLOG_POSTS;
 
   return (
