@@ -20,6 +20,8 @@ export interface PlanCard {
   mobileButtonText?: string;
   /** One short line saying who the plan is for. Falls back to description. */
   audience?: string;
+  /** Small highlight shown beside the price, e.g. a bundle saving. */
+  note?: string;
 }
 
 export interface PlanSet {
@@ -32,10 +34,10 @@ export const PLANS: Record<PlanType, PlanSet> = {
   esa: {
     tabLabel: "ESA Letter",
     description:
-      "Choose the ESA package that fits your needs. Get a professional ESA evaluation and letter, with an ID card option for added convenience.",
+      "One flat fee covers your evaluation with a licensed mental health professional in your state. Your letter is issued only if you qualify.",
     cards: [
       {
-        title: "ESA Letter - Housing",
+        title: "ESA Housing Letter",
         description:
           "Professional ESA letter from a state-licensed mental health professional for housing accommodations.",
         price: "$99",
@@ -52,11 +54,12 @@ export const PLANS: Record<PlanType, PlanSet> = {
         mobileButtonText: "Start ESA Evaluation",
       },
       {
-        title: "ESA Letter + PSD Letter Combo",
+        title: "ESA + PSD Letters",
         description:
           "Professional ESA and PSD letters from a state-licensed mental health professional for housing and service dog needs.",
         price: "$179",
-        audience: "For people who need both housing and service dog documentation.",
+        audience: "For people who need both an ESA letter and a PSD letter.",
+        note: "Save $19 vs. buying both separately",
         features: [
           "Online ESA evaluation",
           "Licensed mental health professional",
@@ -87,15 +90,15 @@ export const PLANS: Record<PlanType, PlanSet> = {
   psd: {
     tabLabel: "PSD Letter",
     description:
-      "Choose the PSD package that fits your needs. Get a professional PSD evaluation and letter, with an ESA + PSD combo available for added support.",
+      "One flat fee covers your evaluation with a licensed mental health professional in your state. Your letter is issued only if you qualify.",
     cards: [
       {
-        title: "PSD Letter - Service Dog",
+        title: "PSD Letter",
         description:
           "Professional PSD letter from a state-licensed mental health professional for service dog needs.",
         price: "$99",
         isPopular: true,
-        audience: "For handlers who need psychiatric service dog documentation.",
+        audience: "For handlers who need documentation for their psychiatric service dog.",
         features: [
           "Online PSD evaluation",
           "Licensed mental health professional",
@@ -107,11 +110,12 @@ export const PLANS: Record<PlanType, PlanSet> = {
         mobileButtonText: "Start ESA Evaluation",
       },
       {
-        title: "ESA Letter + PSD Letter Combo",
+        title: "ESA + PSD Letters",
         description:
           "Professional ESA and PSD letters from a state-licensed mental health professional for housing and service dog needs.",
         price: "$179",
-        audience: "For people who need both housing and service dog documentation.",
+        audience: "For people who need both an ESA letter and a PSD letter.",
+        note: "Save $19 vs. buying both separately",
         features: [
           "Online PSD evaluation",
           "Licensed mental health professional",
@@ -163,9 +167,9 @@ function PricingCardButton({
       label={label}
       letter={letter}
       evaluationCta
-      className={`cta3d ${featured ? "cta3d--gold" : "cta3d--teal"} inline-flex h-[54px] w-full min-w-0 items-center justify-center gap-2 px-3 font-sans text-[15px] leading-5 sm:text-[16px]`}
+      className={`cta3d ${featured ? "cta3d--gold" : "cta3d--teal"} inline-flex h-auto min-h-[54px] w-full min-w-0 items-center justify-center gap-2 px-3 py-2 font-sans text-[15px] leading-5 lg:text-[16px]`}
     >
-      <span className="min-w-0 whitespace-nowrap text-center">{ctaLabel(label, letter)}</span>
+      <span className="min-w-0 text-balance text-center">{ctaLabel(label, letter)}</span>
       <ArrowRight aria-hidden strokeWidth={2.5} className="cta-arrow size-[18px] shrink-0" />
     </MaybeStateModalButton>
   );
@@ -218,7 +222,7 @@ function RenderCardsContainer({
           return (
             <div
               key={card.title}
-              className={`relative flex flex-col rounded-[24px] p-6 sm:p-8 ${
+              className={`relative flex flex-col rounded-[24px] p-6 sm:p-8 md:p-6 lg:p-8 ${
                 featured
                   ? "order-first color-gradient text-white shadow-[0_18px_40px_-18px_rgba(26,61,79,0.55)] ring-2 ring-accent md:order-none"
                   : "bg-white text-primary shadow-[0_10px_30px_-20px_rgba(26,61,79,0.35)] ring-1 ring-line-200"
@@ -230,7 +234,7 @@ function RenderCardsContainer({
                 </span>
               )}
 
-              <h3 className={`font-heading text-[24px] font-bold leading-[1.2] sm:text-[26px] md:min-h-[2.4em] ${featured ? "text-white" : "text-primary"}`}>
+              <h3 className={`font-heading text-[24px] font-bold leading-[1.2] sm:text-[26px] ${featured ? "text-white" : "text-primary"}`}>
                 {card.title.replace("\n", " ")}
               </h3>
               <div className={`mt-2 font-sans text-[15px] leading-[23px] ${featured ? "text-white/85" : "text-body-text"}`}>
@@ -245,6 +249,11 @@ function RenderCardsContainer({
                   one-time fee
                 </span>
               </div>
+              {card.note && (
+                <div className={`mt-3 inline-flex w-fit rounded-full px-3 py-1 font-sans text-[13px] font-bold leading-5 ${featured ? "bg-accent/15 text-accent" : "bg-[#E7F2EF] text-[#1D6E72]"}`}>
+                  {card.note}
+                </div>
+              )}
 
               <div className="mt-6">
                 <PricingCardButton href={ctaHref} label={card.buttonText} letter={letter} featured={featured} />

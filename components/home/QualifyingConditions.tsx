@@ -150,7 +150,7 @@ export function QualifyingConditions({
   const [hoveredCondition, setHoveredCondition] = useState<string | null>(null);
 
   return (
-    <section id={id} className={`pt-12 sm:pt-16 xl:pt-20 pb-14 sm:pb-16 md:pb-0 color-background overflow-visible ${className}`}>
+    <section id={id} className={`pt-12 sm:pt-16 xl:pt-20 pb-14 sm:pb-16 md:pb-0 color-background overflow-x-clip ${className}`}>
       <div className="max-w-[1278px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-8 sm:mb-10 xl:mb-14 space-y-2.5 mx-auto ${introMaxClass}`}>
           <h2 className="heading-h2 capitalize">

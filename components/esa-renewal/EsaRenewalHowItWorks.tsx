@@ -27,11 +27,11 @@ const STEPS = [
 function StepArrow() {
   return (
     <>
-      <svg viewBox="0 0 24 36" className="md:hidden h-9 w-6 shrink-0 text-primary" aria-hidden="true">
+      <svg viewBox="0 0 24 36" className="lg:hidden h-9 w-6 shrink-0 text-primary" aria-hidden="true">
         <path d="M12 2v26" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
         <path d="M4 22l8 10 8-10" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
-      <svg viewBox="0 0 36 16" className="hidden md:block mt-[105px] h-4 w-9 shrink-0 text-primary" aria-hidden="true">
+      <svg viewBox="0 0 36 16" className="hidden lg:block mt-[105px] h-4 w-9 shrink-0 text-primary" aria-hidden="true">
         <path d="M0 8h28" stroke="currentColor" strokeWidth="2" />
         <path d="M24 2l8 6-8 6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
       </svg>
@@ -50,7 +50,7 @@ export function EsaRenewalHowItWorks() {
           </p>
         </div>
 
-        <div className="flex w-full flex-col items-center gap-4 md:flex-row md:items-start md:justify-center md:gap-4">
+        <div className="flex w-full flex-col items-center gap-4 lg:flex-row lg:items-start lg:justify-center lg:gap-4">
           {STEPS.map((step, index) => (
             <React.Fragment key={step.title}>
               {index > 0 && <StepArrow />}
