@@ -10,13 +10,25 @@ interface DoctorInternalHeroSectionProps {
   doctor: DoctorProfile;
 }
 
-function DoctorName({ name, linkedin }: { name: string; linkedin?: string }) {
+function DoctorName({
+  name,
+  linkedin,
+  primary = true,
+}: {
+  name: string;
+  linkedin?: string;
+  primary?: boolean;
+}) {
   const comma = name.indexOf(",");
   const first = comma === -1 ? name : name.slice(0, comma + 1);
   const rest = comma === -1 ? "" : name.slice(comma + 1).trim();
+  // Only one real <h1> per page; the other breakpoint copy keeps heading
+  // semantics for assistive tech without adding a duplicate H1 tag.
+  const Tag = primary ? "h1" : "div";
+  const headingProps = primary ? {} : { role: "heading", "aria-level": 1 };
 
   return (
-    <h1 className="heading-h1 text-primary">
+    <Tag className="heading-h1 text-primary" {...headingProps}>
       {first}
       {rest ? (
         <>
@@ -29,7 +41,7 @@ function DoctorName({ name, linkedin }: { name: string; linkedin?: string }) {
       ) : linkedin ? (
         <LinkedInMark href={linkedin} name={name} />
       ) : null}
-    </h1>
+    </Tag>
   );
 }
 
@@ -42,7 +54,8 @@ function LinkedInMark({ href, name }: { href: string; name: string }) {
       aria-label={`${name} on LinkedIn`}
       className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white text-[13px] font-sans font-bold hover:opacity-90 transition-opacity align-middle ml-1"
     >
-      in
+      {/* Label drawn via CSS so it does not become part of the H1 text. */}
+      <span aria-hidden="true" className="before:content-['in']" />
     </a>
   );
 }
@@ -112,7 +125,7 @@ export function DoctorInternalHeroSection({ doctor }: DoctorInternalHeroSectionP
 
         <div className="lg:hidden flex flex-col items-center text-center pt-10 pb-0">
           <SiteBreadcrumbs includeSchema={false} />
-          <DoctorName name={doctor.name} linkedin={doctor.linkedin} />
+          <DoctorName name={doctor.name} linkedin={doctor.linkedin} primary={false} />
           <p className="body-large text-body-text max-w-[560px] mt-4">
             {doctor.heroBio || doctor.bio}
           </p>
