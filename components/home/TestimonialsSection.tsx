@@ -103,7 +103,11 @@ export function TestimonialsSection({
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     key={current.id}
-                    src={thumb(current.id)}
+                    src={`https://img.youtube.com/vi/${current.id}/sddefault.jpg`}
+                    onError={(e) => {
+                      const img = e.currentTarget;
+                      if (!img.src.endsWith("hqdefault.jpg")) img.src = thumb(current.id);
+                    }}
                     alt={current.name}
                     loading="lazy"
                     decoding="async"
