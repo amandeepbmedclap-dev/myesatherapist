@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { BLOG_POSTS } from "@/data/blogsData";
 import { BlogCard } from "@/components/blogs/BlogCard";
