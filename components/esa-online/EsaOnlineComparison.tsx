@@ -30,7 +30,7 @@ export function EsaOnlineComparison() {
       <div className="max-w-[1100px] mx-auto px-3 sm:px-6 lg:px-8 flex flex-col items-center gap-10">
         <div className="text-center flex flex-col gap-3 max-w-[944px]">
           <h2 className="heading-h2">
-            How My ESA Therapist Compare To Other ESA Letter Services
+            How Does My ESA Therapist Compare to Other ESA Letter Services?
           </h2>
           <p className="body-large">
             We set the standard for professional care, compliance, and trust.

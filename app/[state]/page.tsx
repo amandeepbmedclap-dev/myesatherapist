@@ -165,7 +165,7 @@ export default async function DynamicStatePage({ params }: Props) {
         )}
         {data.slug !== "vermont" && data.slug !== "tennessee" && data.slug !== "rhode-island" && <PricingSection
           sectionId="pricing"
-          heading={`The Cost of an ESA Letter in ${data.name}`}
+          heading={data.pricingTitle || `How Much Does an ESA Letter Evaluation Cost in ${data.name}?`}
           headingClassName="heading-h2"
           descriptionOverride={`Choose the option that best matches your needs in ${data.name}: an ESA letter evaluation, a combined ESA and PSD evaluation, or a professional assessment if you're unsure which type of support may be appropriate. Recommendations and documentation depend on a licensed clinician's assessment.`}
         />}

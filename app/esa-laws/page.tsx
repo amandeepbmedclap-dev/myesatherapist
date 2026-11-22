@@ -74,14 +74,14 @@ export default function EsaLawsPage() {
         <EsaLawsSituationSection />
 
         <FaqSection
-          title="Common Questions About ESA Laws"
+          title="Common Questions About ESA Laws and Housing Accommodations"
           subtitle="Get clear answers to the most frequently asked questions about emotional support animal laws and regulations."
           faqs={ESA_LAWS_FAQS}
           bg="bg-background"
         />
 
         <CtaBanner
-          title="Ready to Start Your ESA Evaluation?"
+          title="Ready to Start Your ESA Evaluation With a Licensed Professional?"
           description="Understanding ESA laws is an important first step. If you believe an emotional support animal may be appropriate for your situation, you can start your professional evaluation today."
           buttonText="Start Your ESA Evaluation"
           flushBottom

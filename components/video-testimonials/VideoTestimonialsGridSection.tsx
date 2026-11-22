@@ -280,7 +280,7 @@ export function VideoTestimonialsGridSection() {
         
         <div className="text-center max-w-[820px] mx-auto mb-10 sm:mb-14">
           <h2 className="heading-h2 text-primary mb-3 sm:mb-4">
-            Client Video Testimonials
+            Client Video Testimonials About Their ESA Evaluation Experience
           </h2>
           <p className="body-large text-body-text">
             Watch our clients share their personal experiences and success stories

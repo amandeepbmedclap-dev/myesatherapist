@@ -137,7 +137,7 @@ export default function EsaRenewalPage() {
 
         <FaqSection
           id="faq"
-          title="Frequently Asked Questions"
+          title="Frequently Asked Questions About Renewing Your ESA Letter"
           subtitle="Answers to the most common ESA renewal questions"
           faqs={esaRenewalFaqs}
           bg="bg-background"

@@ -38,7 +38,7 @@ export function EmotionalSupportSection() {
 
       <div className="lg:hidden w-full px-4 sm:px-6 py-6 sm:py-8 space-y-6">
         <div className="space-y-3">
-          <h2 className="heading-h2 capitalize">
+          <h2 className="heading-h2">
             What Is An Emotional Support Animal?
           </h2>
           <div className="space-y-3">

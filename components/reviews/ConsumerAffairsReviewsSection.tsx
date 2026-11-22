@@ -33,7 +33,7 @@ export function ConsumerAffairsReviewsSection() {
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 lg:mb-12">
           <h2 className="heading-h2 text-primary">
-            Consumer Affairs Reviews
+            What Clients Say About My ESA Therapist on ConsumerAffairs
           </h2>
         </div>
 

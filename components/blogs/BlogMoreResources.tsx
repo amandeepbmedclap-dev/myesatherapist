@@ -19,8 +19,8 @@ export function BlogMoreResources({ currentSlug, categorySlug }: BlogMoreResourc
       <div className="max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center gap-10 sm:gap-14 lg:gap-16">
         
         <div className="flex flex-col items-center gap-4 text-center max-w-[978px] mx-auto">
-          <h2 className="heading-h2 text-primary capitalize text-center">
-            More ESA Resources
+          <h2 className="heading-h2 text-primary text-center">
+            More ESA Resources to Help You Understand Your Rights
           </h2>
           <p className="body-large text-body-text text-center max-w-[978px]">
             Guides on ESA letters, housing rights, qualifying conditions, and training.

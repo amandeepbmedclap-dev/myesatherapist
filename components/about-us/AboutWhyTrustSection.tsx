@@ -31,7 +31,7 @@ export function AboutWhyTrustSection() {
       <div className="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-[860px] mx-auto mb-14 sm:mb-16 lg:mb-20 space-y-3 sm:space-y-4">
           <h2 className="heading-h2 text-primary">
-            Why Do Individuals Trust My ESA Therapist?
+            Why Do Individuals Trust My ESA Therapist for Their Evaluation?
           </h2>
           <p className="body-large text-body-text max-w-[700px] mx-auto">
             We stand apart by providing legitimate, professional ESA evaluations conducted by licensed clinicians.

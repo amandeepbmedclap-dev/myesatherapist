@@ -41,7 +41,7 @@ export function AboutWhoWeHelpSection() {
       <div className="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-[800px] mx-auto mb-12 sm:mb-14 lg:mb-16 space-y-3 sm:space-y-4">
           <h2 className="heading-h2 text-primary">
-            Who We Help?
+            Who Does My ESA Therapist Help With ESA Evaluations?
           </h2>
           <p className="body-large text-body-text max-w-[700px] mx-auto">
             We serve individuals across the U.S. seeking emotional support animals for mental wellness. Our platform supports a clear, secure, and professional ESA evaluation process.

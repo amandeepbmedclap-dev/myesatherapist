@@ -89,13 +89,13 @@ export default function PricingPage() {
         <PricingWhyTrustSection />
 
         <FaqSection
-          title="Frequently Asked Questions"
+          title="Frequently Asked Questions About ESA Letter Pricing and Payment"
           subtitle="Get answers to common questions about ESA letters and our service."
           faqs={PRICING_FAQS}
         />
 
         <CtaBanner
-          title="Ready to Start Your ESA Evaluation?"
+          title="Ready to Start Your ESA Evaluation With a Licensed Professional?"
           description={
             <>
               Choose your package and book your appointment today. You are only{" "}

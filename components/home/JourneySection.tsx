@@ -30,8 +30,8 @@ export function JourneySection() {
     <section className="py-12 sm:py-16 xl:py-[72px] bg-background">
       <div className="max-w-[1033px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 sm:mb-10 xl:mb-[72px] space-y-2 max-w-[999px] mx-auto text-center">
-          <h2 className="heading-h2 capitalize">
-            Your ESA Journey Starts Here
+          <h2 className="heading-h2">
+            Your ESA Journey Starts Here, With a Licensed Professional
           </h2>
           <p className="body-large">
             See how emotional support animals transform lives!

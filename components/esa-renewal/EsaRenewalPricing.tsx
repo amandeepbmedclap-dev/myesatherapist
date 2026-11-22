@@ -38,7 +38,7 @@ export function EsaRenewalPricing() {
   return (
     <PricingSection
       sectionId="pricing"
-      heading="ESA Renewal Pricing"
+      heading="ESA Letter Renewal Pricing: One Flat Fee, No Hidden Costs"
       headingClassName="heading-h2"
       descriptionOverride="Understand your evaluation options and pricing before getting started"
       showTabs={false}

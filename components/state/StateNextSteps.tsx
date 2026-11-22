@@ -90,7 +90,7 @@ export function StateNextSteps({ data }: { data: StateData }) {
     <section aria-labelledby="next-steps-heading" className="w-full bg-background py-12 sm:py-16">
       <div className="max-w-[1278px] mx-auto px-4 sm:px-6 lg:px-6 xl:px-0">
         <h2 id="next-steps-heading" className="heading-h2 text-primary text-center">
-          More Help for {name} Residents
+          More ESA Guides, Resources, and Help for {name} Residents
         </h2>
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
           <LinkGroup title="Our services" links={services} />

@@ -80,7 +80,7 @@ export function PsdCapabilitiesSection() {
       <div className="lg:hidden max-w-[680px] mx-auto px-4 sm:px-6 relative z-10 py-6 sm:py-8">
         <div className="w-full">
           <div className="mb-6 text-left">
-            <h2 className="heading-h2 text-primary capitalize mb-3">
+            <h2 className="heading-h2 text-primary mb-3">
               What A Psychiatric Service <br className="hidden sm:inline" />
               Dog Can Do?
             </h2>

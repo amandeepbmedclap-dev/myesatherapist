@@ -132,12 +132,12 @@ function cities(rows: Array<[string, string, string?]>) {
 }
 
 const SHARED = {
-  therapistsTitle: "Our Licensed Clinicians",
+  therapistsTitle: "Meet the Licensed Clinicians Who Conduct Your ESA Evaluation",
   therapistsSubtitle: THERAPISTS_SUBTITLE,
   therapistsLicensureNote: LICENSURE_NOTE,
   therapistsList: THERAPISTS,
   benefitsRefundNote: "",
-  reviewsTitle: "See What Our Clients Say",
+  reviewsTitle: "See What Our Clients Say About Their ESA Evaluation Experience",
   reviewsSubtitle: "Here's what our clients say about their experience.",
 };
 
@@ -161,14 +161,14 @@ export const EXTRA_STATES: Record<string, StateData> = {
     whoQualifiesImageMobile: "/states/statewhoqualifies-vermont-mobile.webp",
     whoQualifiesImageTablet: "/states/statewhoqualifies-vermont-tablet.webp",
     ...SHARED,
-    therapistsTitle: "Our Licensed Mental Health Professionals",
+    therapistsTitle: "Meet the Licensed Clinicians Who Conduct ESA Evaluations in Vermont",
     therapistsSubtitle:
       "We connect individuals with appropriately licensed or authorized mental health professionals who are qualified to conduct evaluations and provide recommendations when clinically appropriate.",
-    whyChooseTitle: "Why Choose My ESA Therapist for ESA Letter Evaluation in Vermont?",
+    whyChooseTitle: "Why Choose My ESA Therapist in Vermont?",
     whyChooseSubtitle:
       "We simplify online emotional support animal evaluations in Vermont while maintaining efficiency and legal compliance. Here's what makes us different from other providers.",
     whyChooseItems: whyChoose("Clear steps, clear expectations, and no misleading claims."),
-    processTitle: "How ESA Letter Process Works in Vermont?",
+    processTitle: "How Does the ESA Letter Process Work in Vermont?",
     processSubtitle:
       "We help individuals living in Vermont connect with licensed mental health professionals for individualized emotional wellness assessments.",
     processSteps: steps([
@@ -204,7 +204,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     ]),
     whoQualifiesNote:
       "Note: A diagnosis alone does not automatically establish eligibility. The clinician must evaluate the individual's circumstances and disability-related need.",
-    requirementsTitle: "Basic Requirements for Vermont ESA Letter",
+    requirementsTitle: "What Are the Basic Requirements for an ESA Letter in Vermont?",
     requirementsIntro: "In Vermont, ESA evaluations may consider several factors.",
     requirementsItems: [
       "The individual must be 18 years or older, or a minor with consent from a parent or legal guardian.",
@@ -347,7 +347,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     psdCalloutTitle: "Getting a Psychiatric Service Dog in Vermont",
     psdCalloutText:
       "In Vermont, psychiatric service dogs must be individually trained to perform specific tasks directly related to a person's disability. Under the Americans with Disabilities Act (ADA), individuals are not required to obtain certification or documentation from a mental health professional to establish that a dog is a service animal. Individuals may train their own service dogs or use professional training programs. Training time and costs vary depending on the dog's abilities, the tasks required, and the training approach.",
-    citiesTitle: "Available Everywhere in Vermont",
+    citiesTitle: "ESA Letter Evaluations Available in Every City Across Vermont",
     citiesSubtitle:
       "From vibrant towns near Lake Champlain to peaceful rural communities, Vermont offers a unique housing landscape across the state. Our secure telehealth platform helps eligible residents to access licensed ESA evaluations conveniently.",
     cities: cities([
@@ -454,12 +454,12 @@ export const EXTRA_STATES: Record<string, StateData> = {
     whoQualifiesImageMobile: "/states/statewhoqualifies-tennessee-mobile.webp",
     whoQualifiesImageTablet: "/states/statewhoqualifies-tennessee-tablet.webp",
     ...SHARED,
-    therapistsTitle: "Our Licensed Mental Health Professionals",
-    whyChooseTitle: "Why Choose My ESA Therapist for ESA Letter Evaluation in Tennessee?",
+    therapistsTitle: "Meet the Licensed Clinicians Who Conduct ESA Evaluations in Tennessee",
+    whyChooseTitle: "Why Choose My ESA Therapist in Tennessee?",
     whyChooseSubtitle:
       "We simplify online emotional support animal evaluations in Tennessee while maintaining efficiency and legal compliance. Here's what makes us different from other providers.",
     whyChooseItems: whyChoose("Clear steps, clear expectations, and no misleading claims."),
-    processTitle: "How ESA Letter Process Works in Tennessee?",
+    processTitle: "How Does the ESA Letter Process Work in Tennessee?",
     processSubtitle:
       "Tennessee residents can undergo an emotional support animal assessment via a mental health professional who holds a state license. From the first consultation to the final documents, the entire process is set up to be simple, private, and professionally directed.",
     processSteps: steps([
@@ -494,7 +494,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       ["Post-Traumatic Stress Disorder (PTSD)", "Recurrent intrusive memories or emotional detachment impacting everyday life."],
       ["Panic Disorder", "Repeated panic attacks and anxiety that restrict mobility or social engagement."],
     ]),
-    requirementsTitle: "Basic Requirements for an ESA Letter in Tennessee",
+    requirementsTitle: "What Are the Basic Requirements for an ESA Letter in Tennessee?",
     requirementsIntro: "To be considered for an ESA letter in Tennessee, several essential requirements must be satisfied.",
     requirementsItems: [
       "The applicant must be at least 18 years old. Individuals under 18 require verified consent from a parent or legal guardian.",
@@ -543,7 +543,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       ],
       EMO_ICON,
     ),
-    lawsTitle: "Tennessee ESA Housing Protections",
+    lawsTitle: "Tennessee ESA Housing Protections: What Tenants Should Know",
     lawsSubtitle:
       "In Tennessee, qualifying individuals may request reasonable housing accommodations for emotional support animals under the federal Fair Housing Act and applicable Tennessee laws.",
     card1Title: "Federal & State Housing Laws",
@@ -637,7 +637,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     psdCalloutTitle: "Getting a Psychiatric Service Dog in Tennessee",
     psdCalloutText:
       "Under the Americans with Disabilities Act, a psychiatric service dog must be individually trained to perform specific tasks directly related to a person's disability. A formal diagnosis or certification from a mental health professional is not required to establish service-animal status under the ADA. Individuals may train their own service dogs or use professional training programs. Qualifying service dogs receive public access protections under applicable ADA requirements.",
-    citiesTitle: "Available Everywhere in Tennessee",
+    citiesTitle: "ESA Letter Evaluations Available in Every City Across Tennessee",
     citiesSubtitle:
       "From vibrant music cities to scenic mountain communities, Tennessee offers diverse housing options across the state. Our secure telehealth platform makes licensed ESA evaluations accessible to eligible residents statewide.",
     cities: cities([
@@ -743,12 +743,12 @@ export const EXTRA_STATES: Record<string, StateData> = {
     whoQualifiesImageMobile: "/states/statewhoqualifies-rhode-island-mobile.webp",
     whoQualifiesImageTablet: "/states/statewhoqualifies-rhode-island-tablet.webp",
     ...SHARED,
-    therapistsTitle: "Our Licensed Mental Health Professionals",
-    whyChooseTitle: "Why Choose My ESA Therapist for ESA Letter Evaluation in Rhode Island?",
+    therapistsTitle: "Meet the Licensed Clinicians Who Conduct ESA Evaluations in Rhode Island",
+    whyChooseTitle: "Why Choose My ESA Therapist in Rhode Island?",
     whyChooseSubtitle:
       "We simplify online emotional support animal evaluations in Rhode Island while maintaining efficiency and legal compliance. Here's what makes us different from other providers.",
     whyChooseItems: whyChoose("Clear steps, clear expectations, no misleading claims."),
-    processTitle: "How ESA Letter Process Works in Rhode Island?",
+    processTitle: "How Does the ESA Letter Process Work in Rhode Island?",
     processSubtitle:
       "We help Rhode Island residents connect with licensed mental health professionals for personalized emotional wellness assessments.",
     processSteps: steps([
@@ -782,7 +782,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       ["Adjustment Disorder with Anxiety", "Stress-related anxiety after major life changes."],
     ]),
     whoQualifiesNote: "Note: Having any of the conditions listed above does not automatically make someone eligible for an ESA.",
-    requirementsTitle: "Basic Requirements for an ESA Letter in Rhode Island",
+    requirementsTitle: "What Are the Basic Requirements for an ESA Letter in Rhode Island?",
     requirementsIntro:
       "The ESA evaluation process in Rhode Island requires certain criteria to be met before an official letter can be issued.",
     requirementsItems: [
@@ -833,7 +833,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       ],
       EMO_ICON,
     ),
-    lawsTitle: "ESA Housing Laws in Rhode Island",
+    lawsTitle: "ESA Housing Laws in Rhode Island: What Tenants Should Know",
     lawsSubtitle:
       "In Rhode Island, housing rights for emotional support animals are protected under the federal Fair Housing Act and the state's fair housing laws. These protections allow individuals with qualifying disabilities to request reasonable accommodations for their emotional support animals, subject to applicable documentation requirements and legal exceptions.",
     card1Title: "Federal & State Housing Laws",
@@ -874,7 +874,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     ],
     legalNotice:
       "Emotional support animals mainly receive housing considerations under the Fair Housing Act and do not share the same public access privileges as service animals. Access to restaurants, stores, and airlines depends on separate policies and regulations.",
-    scamsTitle: "ESA Letter Rhode Island : Fake vs Reality",
+    scamsTitle: "Rhode Island ESA Letters: How to Tell Fake From Real",
     scamsSubtitle: "Understanding what is and is not required can help individuals avoid misleading services and unnecessary expenses.",
     scamsWhatYouNeedTitle: "What You Actually Need",
     scamsWhatYouNeedItems: [
@@ -925,7 +925,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     psdCalloutTitle: "Getting a Psychiatric Service Dog in Rhode Island",
     psdCalloutText:
       "To get a psychiatric service dog (PSD) in Rhode Island, people usually need proof of a diagnosed mental illness and their dog must go through special training. The training process can take anywhere from a few months to more than a year, depending on how hard the tasks are. The cost of professional service dog training programs can range from $5,000 to $30,000, depending on how much training and task specialization are needed. The Americans with Disabilities Act recognizes PSD public access rights, and documentation may be needed when asking for housing or workplace accommodations.",
-    citiesTitle: "Available Everywhere in Rhode Island",
+    citiesTitle: "ESA Letter Evaluations Available in Every City Across Rhode Island",
     citiesSubtitle:
       "Though it's the smallest state in the U.S., Rhode Island offers a mix of vibrant cities, coastal communities, and historic towns. Our secure telehealth platform makes licensed ESA evaluations accessible statewide.",
     cities: cities([
@@ -1212,7 +1212,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     psdCalloutTitle: "Getting a Psychiatric Service Dog in District of Columbia",
     psdCalloutText:
       "In the District of Columbia, a psychiatric service dog must be individually trained to perform specific tasks that assist a person with a qualifying psychiatric disability. Under the Americans with Disabilities Act (ADA), a mental health provider's letter, service dog certification, or professional training is not required for public access. Training time varies depending on the dog's abilities and the tasks involved and may take a year or longer. Professional training costs can range from approximately $5,000 to $30,000 or more, depending on the training method, program, and level of assistance provided.",
-    citiesTitle: "Available Everywhere in Washington, DC",
+    citiesTitle: "ESA Letter Evaluations Available in Every City Across Washington, DC",
     citiesSubtitle:
       "From historic rowhouse neighborhoods to newer waterfront communities, housing across Washington, DC often includes pet rules. Our secure telehealth platform makes licensed ESA evaluations available throughout the District.",
     cities: cities([
@@ -1306,7 +1306,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     therapistsLicensureNote: SHARED.therapistsLicensureNote,
     therapistsList: SHARED.therapistsList,
     benefitsRefundNote: "",
-    processTitle: "How to Get an ESA Letter Online in Puerto Rico",
+    processTitle: "How to Get an ESA Letter Online in Puerto Rico, Step by Step",
     processSubtitle:
       "We connect Puerto Rico residents with licensed mental health professionals for personalized emotional wellness assessments.",
     processSteps: steps([
@@ -1330,7 +1330,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       ["Post-Traumatic Stress Disorder (PTSD)", "Trauma-related symptoms may interfere with feeling safe at home."],
       ["Attention-Deficit/Hyperactivity Disorder (ADHD)", "Difficulty with focus and regulation may affect daily functioning."],
     ]),
-    requirementsTitle: "Basic Requirements for a Puerto Rico ESA Letter",
+    requirementsTitle: "What Are the Basic Requirements for an ESA Letter in Puerto Rico?",
     requirementsIntro: "During an ESA evaluation, several factors may be considered.",
     requirementsItems: [
       "The individual is generally 18 or older or is a minor with consent from a parent or legal guardian.",
@@ -1357,7 +1357,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     lawsTitle: "What Protects You and Your Emotional Support Animal in Puerto Rico?",
     lawsSubtitle:
       "Puerto Rico follows the federal Fair Housing Act (FHA), which protects eligible individuals with disabilities from housing discrimination, including in condominiums and most rental housing.",
-    card1Title: "ESA Housing Laws in Puerto Rico",
+    card1Title: "ESA Housing Laws in Puerto Rico: What Tenants Should Know",
     card1Items: [
       { title: "Federal Fair Housing Act (FHA)", description: "The Fair Housing Act applies in Puerto Rico as it does on the mainland. It generally requires housing providers to make reasonable accommodations for qualifying emotional support animals, including exceptions to no-pet policies." },
       { title: "HUD Enforcement in Puerto Rico", description: "HUD has enforced these protections in Puerto Rico. In 2014, HUD found that a San Juan condominium association violated the Fair Housing Act by refusing to let a resident with disabilities keep his emotional support animal." },
@@ -1371,7 +1371,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     ],
     legalNotice:
       "Under the Fair Housing Act, eligible individuals in Puerto Rico may request reasonable housing accommodations for emotional support animals. However, the Americans with Disabilities Act generally does not grant ESAs the same public access rights as service animals. Airlines are also not required to recognize ESAs as service animals under the Air Carrier Access Act.",
-    scamsTitle: "Puerto Rico ESA Letter: Facts and Myths",
+    scamsTitle: "Puerto Rico ESA Letters: Separating Facts From Common Myths",
     scamsSubtitle:
       "Knowing the facts about ESA letters in Puerto Rico can help you understand eligibility requirements, housing protections, and the legal limitations of emotional support animals.",
     scamsWhatYouNeedTitle: "What a Valid ESA Letter Should Include",
@@ -1409,7 +1409,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     psdCalloutTitle: "Getting a Psychiatric Service Dog Letter in Puerto Rico",
     psdCalloutText:
       "In Puerto Rico, a psychiatric service dog must be individually trained to perform specific tasks that assist a person with a qualifying psychiatric disability. Under the Americans with Disabilities Act (ADA), certification is not required for public access, but many handlers request a PSD letter from a licensed mental health professional to support housing requests. My ESA Therapist offers online PSD evaluations for Puerto Rico residents. Training time and costs vary depending on the dog and the tasks involved, and professional training can range from approximately $5,000 to $30,000 or more.",
-    citiesTitle: "Available Everywhere in Puerto Rico",
+    citiesTitle: "ESA Letter Evaluations Available in Every City Across Puerto Rico",
     citiesSubtitle:
       "From the San Juan metro area to the west coast, many condominiums and rentals across Puerto Rico have pet rules. Our secure telehealth platform makes licensed ESA evaluations available across the island.",
     cities: cities([
@@ -1503,7 +1503,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       ["Chronic Environmental Stress", "Ongoing stress from surroundings that affects daily functioning."],
       ["Social Isolation Anxiety", "Anxiety caused by limited social interaction or distance from family."],
     ]),
-    requirementsTitle: "Basic Requirements for an ESA Letter in the Virgin Islands",
+    requirementsTitle: "What Are the Basic Requirements for an ESA Letter in the Virgin Islands?",
     requirementsIntro: "During an ESA evaluation, several factors may be considered.",
     requirementsItems: [
       "The individual is generally 18 or older or is a minor with consent from a parent or legal guardian.",
@@ -1582,7 +1582,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     psdCalloutTitle: "Obtaining a Psychiatric Service Dog in the Virgin Islands",
     psdCalloutText:
       "Individuals with a qualifying mental health disability can obtain a psychiatric service dog trained to assist with their specific needs. Training must target tasks that alleviate symptoms of the disability. Under the ADA, certification is not required for public access. Training costs can range from approximately $5,000 to $30,000 and may take several months or longer.",
-    citiesTitle: "Available Everywhere in the U.S. Virgin Islands",
+    citiesTitle: "ESA Letter Evaluations Available Across the U.S. Virgin Islands",
     citiesSubtitle:
       "From Charlotte Amalie to Christiansted, rentals across the islands often include pet rules. Our secure telehealth platform makes licensed ESA evaluations available on every island.",
     cities: cities([

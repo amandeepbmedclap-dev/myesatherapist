@@ -41,7 +41,7 @@ export function EsaLawsFaqSection() {
       <div className="max-w-[1178px] mx-auto">
         <div className="text-center max-w-[900px] mx-auto mb-10 sm:mb-14 space-y-2">
           <h2 className="font-heading text-[28px] sm:text-4xl lg:text-[44px] font-bold text-primary leading-tight sm:leading-[46px] lg:leading-[54px] tracking-[-0.0066em]">
-            Common Questions About ESA Laws
+            Common Questions About ESA Laws and Housing Accommodations
           </h2>
           <p className="text-body-text text-[15px] sm:text-[18px] font-semibold leading-[26px] sm:leading-[30px] font-sans">
             Get clear answers to the most frequently asked questions about emotional support animal laws and regulations.

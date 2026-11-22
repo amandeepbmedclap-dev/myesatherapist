@@ -56,8 +56,8 @@ export function PsdBenefitsSection() {
       <div className="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-[820px] mx-auto mb-16 lg:mb-20 space-y-3">
-          <h2 className="heading-h2 capitalize">
-            Understanding Your PSD Letter Benefits
+          <h2 className="heading-h2">
+            Understanding the Benefits of a Psychiatric Service Dog Letter
           </h2>
           <p className="body-large">
             Learn about the potential advantages of having professional documentation for your psychiatric service dog and how it supports your needs across housing, travel, and daily life.

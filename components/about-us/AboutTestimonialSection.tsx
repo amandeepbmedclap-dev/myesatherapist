@@ -104,7 +104,7 @@ export function AboutTestimonialSection() {
         
         <div className="text-center max-w-[709px] mx-auto mb-10 sm:mb-12 space-y-3 sm:space-y-4">
           <h2 className="heading-h2 text-primary">
-            Trusted by Thousands of ESA Owners
+            Trusted by Thousands of ESA Owners Across the United States
           </h2>
           <p className="body-large text-body-text">
             See how our legitimate ESA evaluations have helped individuals across the nation.

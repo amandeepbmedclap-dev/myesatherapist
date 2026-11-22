@@ -33,8 +33,8 @@ export function AboutProcessSection() {
       <div className="max-w-[1276px] w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-[20px] shadow-[0px_2px_4px_rgba(0,0,0,0.15)] px-5 py-8 sm:px-8 sm:py-12 md:px-6 lg:px-10 xl:px-[100px] lg:py-12 xl:py-[60px]">
           <div className="text-center mb-8 sm:mb-10 xl:mb-[72px] space-y-2">
-            <h2 className="heading-h2 text-primary capitalize">
-              How Does Our Online ESA Evaluation Work?
+            <h2 className="heading-h2 text-primary">
+              How Does Our Online ESA Evaluation Work, Step by Step?
             </h2>
             <p className="body-large text-body-text max-w-3xl mx-auto">
               A simple 3-step process to complete your emotional support animal letter evaluation!

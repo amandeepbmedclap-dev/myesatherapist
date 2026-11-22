@@ -81,7 +81,7 @@ export function DoctorsAllStatesSection() {
             
             <div className="flex flex-col items-start gap-3.5 sm:gap-5 lg:gap-6 xl:gap-[28px] max-w-[560px] xl:max-w-[626px] w-full">
               <h2 className="heading-h2 text-primary">
-                We&apos;re in All 50 U.S. States
+                We&apos;re Available in All 50 U.S. States
               </h2>
               <p className="body-large text-body-text">
                 Our licensed mental health professionals are available across the United States, providing professional ESA evaluations subject to applicable state licensing requirements.

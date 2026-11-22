@@ -15,7 +15,7 @@ export function LicensedProviderSection() {
       <div className="max-w-[999px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6 sm:mb-8 lg:mb-10 xl:mb-12 space-y-2.5 max-w-[999px] mx-auto">
           <h2 className="heading-h2">
-            Hear From a Licensed Therapist
+            Hear From a Licensed Therapist About the ESA Evaluation Process
           </h2>
           <p className="body-large max-w-[850px] mx-auto">
             Nervous about your first evaluation? A licensed therapist explains how ESA evaluations work, what questions you may be asked, and how the process helps you feel comfortable and supported.

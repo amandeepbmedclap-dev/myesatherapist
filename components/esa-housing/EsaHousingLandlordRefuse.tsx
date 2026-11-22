@@ -39,7 +39,7 @@ export function EsaHousingLandlordRefuse() {
   return (
     <section className="w-full bg-background py-14 sm:py-20 lg:py-24">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-12">
-        <SectionHeader title="When Can a Landlord Refuse Your ESA?" titleMax="max-w-[644px]" leadMax="max-w-[1062px]">
+        <SectionHeader title="When Can a Landlord Legally Refuse Your Emotional Support Animal?" titleMax="max-w-[644px]" leadMax="max-w-[1062px]">
           Although the Fair Housing Act offers important protections for tenants with Emotional Support Animals, there are limited circumstances where a housing provider may lawfully deny an ESA request. Knowing these situations can help set realistic expectations and prevent misunderstandings.
         </SectionHeader>
 

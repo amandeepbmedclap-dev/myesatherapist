@@ -8,7 +8,7 @@ export function FederalHousingRulesSection() {
       <div className="max-w-[1254px] mx-auto flex flex-col items-center text-center gap-2">
         
         <h2 className="heading-h2 text-primary max-w-[955px] mb-2">
-          Federal Housing Protections & State ESA Rules
+          Federal Housing Protections and How State ESA Rules Apply
         </h2>
 
         <div className="max-w-[1044px] flex flex-col gap-3 body-large text-body-text text-center mb-8">

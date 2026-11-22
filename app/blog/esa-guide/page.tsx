@@ -121,7 +121,7 @@ export default function EsaGuidePage() {
 
         <FaqSection
           id="faq"
-          title="Frequently Asked Questions"
+          title="Frequently Asked Questions About ESA Letters and Housing Rights"
           subtitle="Answers to the most common ESA questions"
           faqs={esaGuideFaqs}
           bg="bg-background"

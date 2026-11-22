@@ -67,7 +67,7 @@ interface FaqSectionProps {
 
 export function FaqSection({
   id = "faq",
-  title = "Frequently Asked Questions",
+  title = "Frequently Asked Questions About ESA Letters and Evaluations",
   subtitle = "Get answers to common questions about ESA letters and our service.",
   faqs: customFaqs,
   bg = "bg-background",
@@ -90,7 +90,7 @@ export function FaqSection({
       {id !== "faq" && <div id="faq" className="sr-only" />}
       <div className="max-w-[1442px] mx-auto px-4 sm:px-6 lg:px-12">
         <div className="text-center max-w-[1254px] mx-auto mb-14 space-y-2">
-          <h2 className="heading-h2 capitalize">
+          <h2 className="heading-h2">
             {title}
           </h2>
           {subtitle && (

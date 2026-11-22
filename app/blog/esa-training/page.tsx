@@ -124,7 +124,7 @@ export default function EsaTrainingPage() {
 
         <FaqSection
           id="faq"
-          title="Frequently Asked Questions"
+          title="Frequently Asked Questions About Training Your Emotional Support Animal"
           subtitle="Get answers to common questions about ESA letters and our service."
           faqs={esaTrainingFaqs}
           bg="bg-background"

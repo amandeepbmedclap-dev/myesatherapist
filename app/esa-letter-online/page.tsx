@@ -112,7 +112,7 @@ export default function EsaLetterOnlinePage() {
           id="faq"
           bg="bg-background"
           className="pt-12 sm:pt-12 lg:pt-12 xl:pt-12"
-          title="Frequently Asked Questions"
+          title="Frequently Asked Questions About Getting an ESA Letter Online"
           subtitle="Everything you need to know about getting your ESA letter"
           faqs={[
             {

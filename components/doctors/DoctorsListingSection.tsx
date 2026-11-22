@@ -119,8 +119,8 @@ export function DoctorsListingSection() {
       <div className="w-full max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-12 lg:mb-14 max-w-[860px] mx-auto space-y-3 sm:space-y-4">
-          <h2 className="heading-h2 capitalize">
-            State-Licensed Mental Health Professionals
+          <h2 className="heading-h2">
+            State-Licensed Mental Health Professionals for Your ESA Evaluation
           </h2>
           <p className="body-large max-w-[813px] mx-auto">
             We connect individuals with licensed mental health professionals who are qualified to conduct evaluations and provide recommendations when clinically appropriate.

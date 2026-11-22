@@ -92,12 +92,12 @@ export default function StatesDirectoryPage() {
 
         <FederalHousingRulesSection />
         <ChooseStateGridSection
-          title="ESA Letter by State"
+          title="Find ESA Letter Evaluations and Rules for Your State"
           description="Open a state page for the local rule, a short summary, and a link to start an evaluation with a clinician licensed in that state."
         />
 
         <FaqSection
-          title="Frequently Asked Questions"
+          title="Frequently Asked Questions About ESA Letters in Your State"
           subtitle="Explore ESA letter information by state, including local requirements, housing rights, applicable laws, and the process for getting an ESA letter."
           faqs={STATES_FAQS}
         />

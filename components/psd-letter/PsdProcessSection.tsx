@@ -35,7 +35,7 @@ export function PsdProcessSection() {
       <div className="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 lg:gap-12 mb-12 lg:mb-16">
-          <h2 className="heading-h2 capitalize max-w-xl">
+          <h2 className="heading-h2 max-w-xl">
             A Simple & Secure <br className="hidden sm:block" />
             Three-Step Process
           </h2>

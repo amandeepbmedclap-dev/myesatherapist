@@ -172,7 +172,7 @@ interface TherapistsSectionProps {
 }
 
 export function TherapistsSection({
-  title = "Our Licensed Clinicians",
+  title = "Meet the Licensed Clinicians Who Conduct Your ESA Evaluation",
   subtitle = "We connect individuals with licensed mental health professionals who are qualified to conduct evaluations and provide recommendations when clinically appropriate.",
   licensureNote = "A Note on Licensure Levels: Depending on their state of origin, a social worker or counselor may have a variety of titles, such as Licensed Clinical Social Worker (LCSW), Licensed Independent Clinical Social Worker (LICSW), etc. These are comparable licensure levels.",
   refundText = "100% Refund If No ESA Letter Is Issued",
@@ -210,7 +210,7 @@ export function TherapistsSection({
     <section className={`py-16 lg:py-20 xl:py-24 ${bgColor} overflow-hidden ${className}`}>
       <div className="mx-auto max-w-[1279px] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-10 max-w-[852px] space-y-3 text-center lg:mb-12">
-          <h2 className="heading-h2 capitalize">{title}</h2>
+          <h2 className="heading-h2">{title}</h2>
           <p className="body-large mx-auto max-w-[813px]">{subtitle}</p>
         </div>
 

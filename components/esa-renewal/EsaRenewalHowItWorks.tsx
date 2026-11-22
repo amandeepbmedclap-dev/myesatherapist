@@ -44,7 +44,7 @@ export function EsaRenewalHowItWorks() {
     <section id="how-it-works" className="w-full bg-background pt-16 pb-12 sm:pt-20 sm:pb-14 lg:pt-24 lg:pb-16">
       <div className="max-w-[1276px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-14">
         <div className="flex flex-col items-center gap-2 text-center max-w-[820px]">
-          <h2 className="heading-h2 text-primary">How The ESA Letter Renewal Process Works?</h2>
+          <h2 className="heading-h2 text-primary">How Does the ESA Letter Renewal Process Work, Step by Step?</h2>
           <p className="body-large text-body-text">
             Complete a simple three-step online process to request an emotional support animal letter renewal conducted by a licensed mental health professional.
           </p>

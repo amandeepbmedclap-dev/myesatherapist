@@ -58,7 +58,7 @@ export function WhatIsPsdSection() {
 
       <div className="lg:hidden max-w-[680px] mx-auto px-4 sm:px-6 relative z-10 py-6 sm:py-8">
         <div className="w-full">
-          <h2 className="heading-h2 capitalize mb-3 sm:mb-6">
+          <h2 className="heading-h2 mb-3 sm:mb-6">
             What Is a Psychiatric
             <br className="hidden sm:inline" />
             {" "}Service Dog Letter?

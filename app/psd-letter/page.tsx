@@ -145,7 +145,7 @@ export default function PsdLetterPage() {
         <PsdWhyChooseSection />
 
         <FaqSection
-          title="Frequently Asked Questions"
+          title="Frequently Asked Questions About PSD Letters and Evaluations"
           subtitle="Everything you need to know about psychiatric service dog letters, the consultation process, and what to expect."
           faqs={PSD_FAQS}
         />

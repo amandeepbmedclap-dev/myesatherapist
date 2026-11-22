@@ -66,7 +66,7 @@ export default function DoctorsPage() {
         <DoctorsDisclosureSection />
 
         <CtaBanner
-          title="Learn More About ESA Evaluations"
+          title="Learn More About ESA Evaluations and Your Housing Rights"
           description="See how licensed professionals evaluate your need for an emotional support animal."
           buttonText="Start Your Evaluation"
           buttonHref="/pricing/"

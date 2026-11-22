@@ -698,7 +698,7 @@ export function BlogArticleContent({ article }: BlogArticleContentProps) {
           <div id="faq" className="scroll-mt-28" />
           <div id="frequently-asked-questions" className="scroll-mt-28" />
           <BlogFaqSection
-            title="Frequently Asked Questions"
+            title="Frequently Asked Questions About This ESA Topic"
             subtitle={
               article.faqSectionSubtitle ||
               "Answers from this article about eligibility, housing, and the evaluation."

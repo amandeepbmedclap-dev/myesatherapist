@@ -26,7 +26,7 @@ export function AboutTrustBySection() {
       <div className="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-[854px] mx-auto mb-16 sm:mb-20 lg:mb-24 space-y-3 sm:space-y-4">
           <h2 className="heading-h2 text-primary">
-            Why ESA Owners Trust Us
+            Why ESA Owners Trust My ESA Therapist for Their Evaluations
           </h2>
           <p className="body-large text-body-text max-w-[620px] mx-auto">
             We stand apart by providing legitimate, professional ESA evaluations conducted by licensed clinicians.

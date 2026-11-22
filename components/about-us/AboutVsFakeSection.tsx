@@ -27,7 +27,7 @@ export function AboutVsFakeSection() {
       <div className="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-[920px] mx-auto mb-12 sm:mb-14 lg:mb-16 space-y-3 sm:space-y-4">
           <h2 className="heading-h2 text-primary">
-            My ESA Therapist vs. Automated ESA Sites
+            My ESA Therapist vs. Automated ESA Sites: What Is the Difference?
           </h2>
           <p className="body-large text-body-text max-w-[760px] mx-auto">
             See how a professional, provider-led evaluation differs from automated or unlicensed ESA services.

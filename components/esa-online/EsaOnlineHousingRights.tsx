@@ -41,7 +41,7 @@ export function EsaOnlineHousingRights() {
 
           <div className="flex flex-col items-center gap-6 px-5 sm:px-10 pt-8 pb-10">
             <h2 className="font-heading text-2xl sm:text-4xl font-bold text-primary leading-[1.2] sm:leading-[44px] text-center">
-              Your Housing Rights With an ESA Letter
+              Your Housing Rights With a Valid ESA Letter, Explained
             </h2>
 
             <ul className="w-full max-w-[712px] flex flex-col gap-5">

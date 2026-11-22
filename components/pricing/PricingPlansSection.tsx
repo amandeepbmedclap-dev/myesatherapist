@@ -20,7 +20,7 @@ export function PricingPlansSection({
     <div id="plans">
       <PricingSection
         ctaHref={ctaHref}
-        heading="Emotional Support Animal Letter Pricing"
+        heading="Emotional Support Animal Letter Pricing, With No Hidden Fees"
         descriptionOverride={ESA_INTRO}
         showTabs={false}
         maxCards={2}
@@ -32,7 +32,7 @@ export function PricingPlansSection({
         sectionId="pricing-psd"
         defaultPlan="psd"
         ctaHref={ctaHref}
-        heading="Psychiatric Service Dog Letter Pricing"
+        heading="Psychiatric Service Dog Letter Pricing, With No Hidden Fees"
         descriptionOverride={PSD_INTRO}
         showTabs={false}
         maxCards={2}

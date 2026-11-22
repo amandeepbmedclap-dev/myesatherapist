@@ -68,7 +68,7 @@ export function PsdCtaSection() {
           <div className="relative z-10 max-w-[580px] lg:max-w-[650px] xl:max-w-[720px] space-y-6 text-left">
             <div className="space-y-3">
               <h2 className="heading-h2 text-background">
-                Need Help with a PSD Letter?
+                Need Help Getting a Psychiatric Service Dog Letter?
               </h2>
               <p className="body-large text-background">
                 Connect with a state-licensed mental health professional to discuss your needs and see if a psychiatric service dog letter may be right for you.

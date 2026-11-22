@@ -332,7 +332,7 @@ export function EsaLawsStateSection() {
       <div className="max-w-[1178px] mx-auto flex flex-col items-center gap-14 sm:gap-[72px]">
         <div className="no-measure flex flex-col items-center gap-4 sm:gap-5 max-w-[1178px] text-center">
           <h2 className="font-heading font-bold text-[28px] sm:text-[36px] lg:text-[44px] leading-[1.2] lg:leading-[54px] tracking-[-0.00015em] text-primary">
-            ESA Laws by State
+            ESA Laws by State: Find the Housing Rules Where You Live
           </h2>
           <div className="flex max-w-[1156px] flex-col gap-5 sm:gap-6">
             {STATE_LAWS_INTRO.map((paragraph) => (

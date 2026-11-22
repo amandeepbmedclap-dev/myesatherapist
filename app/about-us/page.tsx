@@ -125,13 +125,13 @@ export default function AboutUsPage() {
         <AboutTestimonialSection />
 
         <FaqSection
-          title="Frequently Asked Questions"
+          title="Frequently Asked Questions About My ESA Therapist and Our Process"
           subtitle="Get answers to common questions about our mission, evaluations, and process."
           faqs={ABOUT_FAQS}
         />
 
         <CtaBanner
-          title="Ready to Start Your ESA Evaluation?"
+          title="Ready to Start Your ESA Evaluation With a Licensed Professional?"
           description="Begin the evaluation process today and connect with your state-licensed mental health professional for a clinical assessment."
           buttonText="Start Evaluation"
           buttonHref="/pricing/"

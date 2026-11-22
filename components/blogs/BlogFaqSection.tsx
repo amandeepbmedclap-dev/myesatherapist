@@ -62,7 +62,7 @@ interface BlogFaqSectionProps {
 
 export function BlogFaqSection({
   id = "faqs",
-  title = "Frequently Asked Questions",
+  title = "Frequently Asked Questions About ESA Letters and Evaluations",
   subtitle = "Get answers to common questions about ESA letters and our service.",
   faqs: customFaqs,
 }: BlogFaqSectionProps) {

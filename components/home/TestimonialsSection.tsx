@@ -47,7 +47,7 @@ interface TestimonialsSectionProps {
 const thumb = (id: string) => `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
 
 export function TestimonialsSection({
-  title = "See What Our Clients Say",
+  title = "See What Our Clients Say About Their ESA Evaluation Experience",
   subtitle = "Here’s what our clients say about their experience.",
   buttonText = "See More Reviews",
   buttonHref = "/reviews",
@@ -68,7 +68,7 @@ export function TestimonialsSection({
     <section className="overflow-hidden bg-background py-16 lg:py-20 xl:py-24">
       <div className="mx-auto max-w-[1180px] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-10 max-w-[640px] text-center lg:mb-14">
-          <h2 className="heading-h2 capitalize">{title}</h2>
+          <h2 className="heading-h2">{title}</h2>
           <div className="body-large mt-3">{subtitle}</div>
         </div>
 

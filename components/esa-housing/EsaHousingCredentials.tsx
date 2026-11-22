@@ -25,7 +25,7 @@ export function EsaHousingCredentials() {
         />
         <div className="w-full max-w-[626px] lg:max-w-[min(43.5vw,626px)] text-center lg:text-left flex flex-col gap-8 lg:gap-[min(2.2vw,32px)]">
           <div className="flex flex-col gap-4 lg:gap-[min(1.9vw,28px)]">
-            <h2 className={`${SCALED_H2} lg:max-w-[min(37.6vw,541px)]`}>Why Professional Credentials Matter?</h2>
+            <h2 className={`${SCALED_H2} lg:max-w-[min(37.6vw,541px)]`}>Why Do Professional Credentials Matter for an ESA Letter?</h2>
             <p className={SCALED_P}>
               Under the Fair Housing Act, ESA protections apply only when documentation is issued by a licensed professional. Housing providers may verify licensing information, which is why letters from online registries or instant-approval sites are often rejected.
             </p>

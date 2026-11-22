@@ -65,7 +65,7 @@ export function EsaDogBenefitsSection() {
     <section className="relative w-full bg-white py-14 sm:py-16 lg:py-24 overflow-hidden">
       <div className="max-w-[1281px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-14 lg:mb-16 space-y-3 max-w-[680px] mx-auto">
-          <h2 className="heading-h2 capitalize">
+          <h2 className="heading-h2">
             Benefits Of Having An Emotional Support Animal
           </h2>
           <p className="body-large">

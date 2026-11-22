@@ -35,7 +35,7 @@ export function EsaRenewalWhatToKnow() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-0 flex flex-col gap-10 lg:gap-12 xl:gap-[60px]">
         <div className="flex flex-col items-center gap-2 text-center">
           <h2 className="font-heading text-2xl sm:text-4xl lg:text-[34px] xl:text-[44px] font-bold text-primary leading-tight sm:leading-[54px] lg:leading-[42px] xl:leading-[54px] tracking-[-0.00015em]">
-            What to Know Before You Start?
+            What Should You Know Before You Start Your ESA Renewal?
           </h2>
           <p className="body-large text-body-text">
             Before beginning, it’s important to understand a few key details about the renewal process.

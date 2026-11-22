@@ -33,7 +33,7 @@ export function TrustpilotReviewsSection() {
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="heading-h2 text-primary">
-            Trustpilot Reviews
+            What Clients Say About My ESA Therapist on Trustpilot
           </h2>
         </div>
 

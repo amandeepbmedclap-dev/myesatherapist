@@ -41,7 +41,7 @@ export function WhoBenefitsSection() {
       <div className="mx-auto max-w-[1120px] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-10 space-y-3 text-center sm:mb-12 lg:mb-14">
           <h2 className="heading-h2 text-primary">
-            People Who Benefit Most From a PSD Letter
+            Who May Benefit Most From a Psychiatric Service Dog Letter?
           </h2>
           <p className="body-large mx-auto max-w-[760px]">
             See how a PSD letter can support different needs, from managing daily challenges to documenting the role of a psychiatric service dog.

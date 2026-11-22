@@ -73,7 +73,7 @@ function FooterContent() {
           </div>
         </Link>
 
-        <h2 className="heading-h2 text-background capitalize text-center">
+        <h2 className="heading-h2 text-background text-center">
           My ESA <span className="text-accent">Therapist</span>
         </h2>
 

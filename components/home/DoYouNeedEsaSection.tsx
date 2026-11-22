@@ -126,7 +126,7 @@ export function DoYouNeedEsaSection() {
 
         <div className="px-4 sm:px-6 max-w-3xl mx-auto pt-6 sm:pt-8 pb-3 sm:pb-4 space-y-6 sm:space-y-8">
           <div className="space-y-4">
-            <h2 className="heading-h2 capitalize">
+            <h2 className="heading-h2">
               Do You Need An Emotional Support Animal?
             </h2>
 

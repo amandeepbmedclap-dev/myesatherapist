@@ -27,7 +27,7 @@ export function CtaBanner({
   className = "",
   titleClassName = "",
   eyebrow,
-  title = "Ready to Start Your ESA Evaluation?",
+  title = "Ready to Start Your ESA Evaluation With a Licensed Professional?",
   description = "If you believe an emotional support animal may be appropriate for your situation, you can begin a professional evaluation today.",
   note,
   disclaimer,
@@ -75,7 +75,7 @@ export function CtaBanner({
                   {eyebrow}
                 </div>
               )}
-              <h2 className={cn("heading-h2 text-background capitalize max-w-[540px] lg:max-w-[47vw] xl:max-w-[680px] whitespace-pre-line", titleClassName)}>
+              <h2 className={cn("heading-h2 text-background max-w-[540px] lg:max-w-[47vw] xl:max-w-[680px] whitespace-pre-line", titleClassName)}>
                 {title}
               </h2>
               <p className="text-background body-large max-w-[380px] sm:max-w-[430px] lg:max-w-full">

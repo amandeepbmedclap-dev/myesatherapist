@@ -28,7 +28,7 @@ export function DoctorsDisclosureSection() {
         
         <div className="flex flex-col items-center text-center gap-3 sm:gap-[16px] max-w-[854px] mx-auto mb-14 lg:mb-[67px]">
           <h2 className="heading-h2 text-primary max-w-[624px]">
-            Important Provider Disclosure
+            Important Disclosure About Our Independent Providers
           </h2>
           <p className="body-large text-body-text max-w-[854px]">
             Get clear information about our independent providers, their role in the evaluation process, and how clinical decisions are made.

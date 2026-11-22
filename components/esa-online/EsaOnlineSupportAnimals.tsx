@@ -25,7 +25,7 @@ export function EsaOnlineSupportAnimals() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-12">
         <div className="flex flex-col items-center gap-4 text-center">
           <h2 className="font-heading text-3xl sm:text-4xl xl:text-[44px] font-bold text-primary leading-[1.2] xl:leading-[54px] tracking-[-0.00015em] max-w-[1000px]">
-            ESA Letters For Different Support Animals
+            ESA Letters for Different Types of Emotional Support Animals
           </h2>
           <p className="body-large text-body-text max-w-[795px]">
             Your ESA recommendation letter may be issued for various animals when a licensed professional finds it appropriate based on your needs and safety considerations.

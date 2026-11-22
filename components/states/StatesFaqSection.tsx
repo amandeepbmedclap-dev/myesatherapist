@@ -62,7 +62,7 @@ export function StatesFaqSection() {
         
         <div className="flex flex-col items-center text-center max-w-[780px] mx-auto mb-12 lg:mb-16">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-[44px] lg:leading-[54px] tracking-tight text-primary mb-3">
-            Frequently Asked Questions
+            Frequently Asked Questions About ESA Letters in Your State
           </h2>
           <p className="font-sans font-semibold text-base sm:text-lg leading-relaxed text-body-text">
             Explore ESA letter information by state, including local requirements, housing rights, applicable laws, and the process for getting an ESA letter.

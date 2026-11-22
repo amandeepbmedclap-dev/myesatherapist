@@ -104,8 +104,8 @@ export function PsdComparisonTable() {
     <section id="compare" className="py-12 sm:py-16 lg:py-24 bg-white relative overflow-hidden">
       <div className="max-w-[1441px] mx-auto px-3 sm:px-6 lg:px-12 flex flex-col items-center">
         <div className="text-center max-w-[758px] mx-auto mb-10 sm:mb-12 lg:mb-14 space-y-3">
-          <h2 className="heading-h2 capitalize">
-            PSD Letter vs ESA Letter
+          <h2 className="heading-h2">
+            PSD Letter vs. ESA Letter: Which One Fits Your Needs?
           </h2>
           <p className="body-large">
             We set the standard for professional care, compliance, and trust.

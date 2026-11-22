@@ -33,7 +33,7 @@ export function FaqAccordionSection() {
       />
       <div className="max-w-[1016px] mx-auto flex flex-col items-center gap-8 sm:gap-10">
         <div className="flex flex-col items-center gap-4 text-center max-w-[720px]">
-          <h2 className="heading-h2 text-primary">Frequently Asked Questions</h2>
+          <h2 className="heading-h2 text-primary">Frequently Asked Questions About ESA Letters and Evaluations</h2>
           <p className="body-large text-body-text">
             Explore helpful information about ESA letters, mental health support, housing rights, and the evaluation process.
           </p>

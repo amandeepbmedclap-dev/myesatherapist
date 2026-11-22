@@ -33,7 +33,7 @@ export function PricingWhyTrustSection() {
       <div className="max-w-[1446px] mx-auto px-4 sm:px-8 xl:px-[80px]">
         <div className="text-center max-w-[854px] mx-auto mb-16 sm:mb-20 space-y-3 sm:space-y-4">
           <h2 className="heading-h2">
-            You Only Pay After Your Evaluation
+            You Only Pay After Your Evaluation: How Billing Works
           </h2>
           <p className="body-large max-w-[854px] mx-auto">
             Your card is charged when you book. A refund applies only if the evaluation cannot be completed. A completed evaluation is non-refundable.

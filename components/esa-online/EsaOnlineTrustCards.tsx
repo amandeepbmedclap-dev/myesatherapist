@@ -13,7 +13,7 @@ export function EsaOnlineTrustCards() {
     <section className="w-full bg-background pt-16 pb-8 sm:pt-20 sm:pb-12 lg:pb-16">
       <div className="max-w-[1312px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-16 max-w-[760px] text-center lg:mb-20">
-          <h2 className="heading-h2 text-primary">Why ESA Owners Trust Us</h2>
+          <h2 className="heading-h2 text-primary">Why ESA Owners Trust My ESA Therapist for Their Evaluations</h2>
           <p className="body-large mx-auto mt-3 max-w-[640px] text-body-text">
             We stand apart by providing legitimate, professional ESA evaluations conducted by licensed clinicians.
           </p>

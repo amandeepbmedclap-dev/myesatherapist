@@ -81,7 +81,7 @@ export function AboutSection({
       <div className="flex flex-col gap-6">
         {showBadge && <SectionBadge title="About" heading={false} />}
         <div className="flex flex-col gap-2 max-w-[809px]">
-          <h2 className={`heading-h2 text-balance ${keepCase ? "" : "capitalize"}`}>{heading}</h2>
+          <h2 className={`heading-h2 text-balance ${keepCase ? "" : ""}`}>{heading}</h2>
           {paragraphs.map((p, i) => (
             <p key={i} className="body-large">
               {p}

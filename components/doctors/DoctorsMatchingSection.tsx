@@ -27,7 +27,7 @@ export function DoctorsMatchingSection() {
         
         <div className="text-center mb-12 lg:mb-[80px] max-w-[987px] mx-auto flex flex-col items-center gap-[8px]">
           <h2 className="heading-h2 text-primary max-w-[742px]">
-            How You&apos;re Matched With a Provider
+            How You&apos;re Matched With a Licensed Provider in Your State
           </h2>
           <p className="body-large text-body-text max-w-[987px]">
             When you begin an evaluation, we match you with a licensed mental health professional authorized to practice in your state.
