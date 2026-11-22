@@ -7,9 +7,8 @@ import { TopBanner } from "@/components/layout/TopBanner";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
-import { EsaGuideHero } from "@/components/esa-guide/EsaGuideHero";
+import { CategoryHub } from "@/components/blogs/CategoryHub";
 import { EsaGuideIntro } from "@/components/esa-guide/EsaGuideIntro";
-import { EsaGuideFilterableGrid } from "@/components/esa-guide/EsaGuideFilterableGrid";
 import { EsaGuideWhyResearch } from "@/components/esa-guide/EsaGuideWhyResearch";
 import { EsaGuideTrustHub } from "@/components/esa-guide/EsaGuideTrustHub";
 
@@ -91,11 +90,31 @@ export default function EsaGuidePage() {
 
 
       <main className="flex-1">
-        <EsaGuideHero />
+        <CategoryHub
+          slug="esa-guide"
+          featuredSlug="emotional-support-animal"
+          title="Emotional Support Animal Resource Center"
+          gridTitle="More from the ESA Guide"
+          intro={
+            <>
+              <p>
+                Understanding emotional support animals can feel overwhelming, especially with changing housing
+                guidelines, online information, and common misconceptions surrounding ESA documentation. This resource
+                center was created to help individuals explore trusted educational content related to emotional support
+                animals, mental wellness support, housing accommodations, and therapist evaluations.
+              </p>
+              <p>
+                Instead of searching through scattered articles, this page brings together important ESA topics in one
+                organized location. Whether you are learning about emotional support animals for the first time or
+                looking for guidance about housing accommodations and mental health support, the resources below can
+                help you better understand the process and responsibilities involved.
+              </p>
+            </>
+          }
+        />
 
         <div className="flex flex-col gap-12 pb-12 pt-12 sm:gap-16 sm:pt-16 lg:gap-[6vw] lg:pb-[6vw] lg:pt-[5.9vw] xl:gap-[94px] xl:pb-[94px] xl:pt-[91px]">
           <EsaGuideIntro />
-          <EsaGuideFilterableGrid />
           <EsaGuideWhyResearch />
           <EsaGuideTrustHub />
         </div>

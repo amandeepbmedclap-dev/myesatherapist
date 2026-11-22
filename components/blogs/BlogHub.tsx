@@ -39,7 +39,7 @@ function words(value: unknown): number {
   return 0;
 }
 
-function toPost(a: BlogArticle): HubPost {
+export function toPost(a: BlogArticle): HubPost {
   const body = { intro: a.introParagraphs, sections: a.sections, faqs: a.faqs, finalThoughts: a.finalThoughts };
   const author = a.author?.name ? a.author.name.replace(/,\s*(Ph\.?D\.?|LPC|MSW|LCSW|LMFT|MD).*/i, "") : "";
   return {

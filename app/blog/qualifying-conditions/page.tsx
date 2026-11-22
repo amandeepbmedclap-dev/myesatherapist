@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { TopBanner } from "@/components/layout/TopBanner";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { QualifyingConditionsHero } from "@/components/qualifying-conditions/QualifyingConditionsHero";
+import { CategoryHub } from "@/components/blogs/CategoryHub";
 import { QualifyingConditionsLearnMore } from "@/components/qualifying-conditions/QualifyingConditionsLearnMore";
 import { QualifyingConditionsReasons } from "@/components/qualifying-conditions/QualifyingConditionsReasons";
 import { QualifyingConditionsEligibility } from "@/components/qualifying-conditions/QualifyingConditionsEligibility";
@@ -85,7 +85,29 @@ export default function QualifyingConditionsPage() {
       <Header />
 
       <main className="flex-1">
-        <QualifyingConditionsHero />
+        <CategoryHub
+          slug="qualifying-conditions"
+          featuredSlug="conditions-that-may-qualify-for-an-esa"
+          title="Qualifying Conditions For An ESA Letter"
+          gridTitle="Condition-by-condition guides"
+          intro={
+            <>
+              <p>
+                If you’ve ever felt calmer just having your ESA curl up beside you after a hard day, you already know
+                how an emotional support animal can provide reliable support and comfort whenever you need it. But
+                qualifying for an ESA isn’t just about loving your dog or cat; it’s a connection to a real mental or
+                emotional health condition, like anxiety, depression, PTSD, or panic disorder, that affects your daily
+                life.
+              </p>
+              <p>
+                Here’s the part people often miss: having one of these conditions doesn’t automatically get you an ESA
+                letter. A diagnosis is only the beginning. What actually matters is an evaluation by a licensed mental
+                health professional, someone who can confirm, in writing, that an ESA would genuinely support your
+                well-being. That’s what makes a letter legitimate and accepted by landlords or housing providers.
+              </p>
+            </>
+          }
+        />
         <div className="flex flex-col gap-12 pb-12 pt-12 sm:gap-16 sm:pt-16 lg:gap-[6vw] lg:pb-[6vw] lg:pt-[5.9vw] xl:gap-[94px] xl:pb-[94px] xl:pt-[85px]">
           <QualifyingConditionsLearnMore />
           <QualifyingConditionsReasons />

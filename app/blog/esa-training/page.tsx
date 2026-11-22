@@ -6,7 +6,8 @@ import { TopBanner } from "@/components/layout/TopBanner";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
-import { EsaTrainingHero } from "@/components/esa-training/EsaTrainingHero";
+import { CategoryHub } from "@/components/blogs/CategoryHub";
+import { EsaTrainingAnswerCard } from "@/components/esa-training/EsaTrainingAnswerCard";
 import { EsaTrainingLegalSection } from "@/components/esa-training/EsaTrainingLegalSection";
 import { EsaTrainingVsServiceDog } from "@/components/esa-training/EsaTrainingVsServiceDog";
 import { EsaTrainingBasicsSection } from "@/components/esa-training/EsaTrainingBasicsSection";
@@ -90,7 +91,18 @@ export default function EsaTrainingPage() {
       <Header />
 
       <main className="flex-1">
-        <EsaTrainingHero />
+        <CategoryHub
+          slug="esa-training"
+          title="Does Your ESA Actually Need Training?"
+          gridTitle="ESA training articles"
+          intro={
+            <p>
+              Wondering whether your emotional support animal needs training? Here&apos;s the honest, complete answer,
+              including what changed in 2026 and what it means for your housing rights.
+            </p>
+          }
+          aside={<EsaTrainingAnswerCard />}
+        />
 
         <div className="flex flex-col gap-12 pb-12 pt-12 sm:gap-16 sm:pt-16 lg:gap-[6vw] lg:pb-[6vw] lg:pt-[7vw] xl:gap-[94px] xl:pb-[94px] xl:pt-[100px]">
           <EsaTrainingLegalSection />

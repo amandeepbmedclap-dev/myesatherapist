@@ -34,9 +34,35 @@ const shortDate = (d: string) => {
   return t ? new Date(t).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) : d;
 };
 
+export function searchPosts(posts: HubPost[], q: string, cat = "all"): HubPost[] {
+    const raw = q.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+    const terms = raw.filter((t) => !STOP.has(t));
+    const use = terms.length ? terms : raw;
+    const inCat = posts.filter((p) => cat === "all" || p.categorySlug === cat);
+    if (!use.length) return inCat;
+    const words = (s: string) => s.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+    const hits = (list: string[], t: string) => list.some((w) => w.startsWith(t) || (t.length > 3 && w.startsWith(t.replace(/s$/, ""))));
+    return inCat
+      .map((p) => {
+        const title = words(p.title);
+        const rest = words(`${p.excerpt} ${p.category} ${p.author}`);
+        const phrase = q.trim().toLowerCase();
+        let score = phrase.length > 2 && p.title.toLowerCase().includes(phrase) ? 10 : 0;
+        for (const t of use) {
+          if (hits(title, t)) score += 3;
+          else if (hits(rest, t)) score += 1;
+          else return null;
+        }
+        return { p, score };
+      })
+      .filter((x): x is { p: HubPost; score: number } => !!x)
+      .sort((a, b) => b.score - a.score || b.p.updatedTs - a.p.updatedTs)
+      .map((x) => x.p);
+}
+
 /* ───────────── cards ───────────── */
 
-function Meta({ p, light }: { p: HubPost; light?: boolean }) {
+export function Meta({ p, light }: { p: HubPost; light?: boolean }) {
   return (
     <span className={`flex flex-wrap items-center gap-x-3 gap-y-1 text-[13px] ${light ? "text-white/75" : "text-body-text"}`}>
       {p.author && <span className={`font-semibold ${light ? "text-white" : "text-[#1A3D4F]"}`}>{p.author}</span>}
@@ -48,7 +74,7 @@ function Meta({ p, light }: { p: HubPost; light?: boolean }) {
   );
 }
 
-function PostCard({ p, wide = false, priority = false }: { p: HubPost; wide?: boolean; priority?: boolean }) {
+export function PostCard({ p, wide = false, priority = false }: { p: HubPost; wide?: boolean; priority?: boolean }) {
   return (
     <Link
       href={p.url}
@@ -87,7 +113,7 @@ function PostCard({ p, wide = false, priority = false }: { p: HubPost; wide?: bo
   );
 }
 
-function CtaTile() {
+export function CtaTile() {
   return (
     <div className="relative flex h-full min-h-[300px] flex-col justify-between overflow-hidden rounded-[22px] bg-[#1A3D4F] p-7 text-white">
       <div aria-hidden className="absolute -right-14 -top-14 size-48 rounded-full bg-accent/20" />
@@ -139,31 +165,7 @@ export function BlogHubExplorer({
     return () => window.clearTimeout(t);
   }, []);
 
-  const results = useMemo(() => {
-    const raw = q.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
-    const terms = raw.filter((t) => !STOP.has(t));
-    const use = terms.length ? terms : raw;
-    const inCat = posts.filter((p) => cat === "all" || p.categorySlug === cat);
-    if (!use.length) return inCat;
-    const words = (s: string) => s.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
-    const hits = (list: string[], t: string) => list.some((w) => w.startsWith(t) || (t.length > 3 && w.startsWith(t.replace(/s$/, ""))));
-    return inCat
-      .map((p) => {
-        const title = words(p.title);
-        const rest = words(`${p.excerpt} ${p.category} ${p.author}`);
-        const phrase = q.trim().toLowerCase();
-        let score = phrase.length > 2 && p.title.toLowerCase().includes(phrase) ? 10 : 0;
-        for (const t of use) {
-          if (hits(title, t)) score += 3;
-          else if (hits(rest, t)) score += 1;
-          else return null;
-        }
-        return { p, score };
-      })
-      .filter((x): x is { p: HubPost; score: number } => !!x)
-      .sort((a, b) => b.score - a.score || b.p.updatedTs - a.p.updatedTs)
-      .map((x) => x.p);
-  }, [posts, q, cat]);
+  const results = useMemo(() => searchPosts(posts, q, cat), [posts, q, cat]);
 
   const filtering = q.trim() !== "" || cat !== "all";
   const latest = posts[0] ? new Date(posts[0].updatedTs).toLocaleDateString("en-US", { month: "short", year: "numeric" }) : "";
