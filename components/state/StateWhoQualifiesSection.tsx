@@ -123,8 +123,9 @@ export function StateWhoQualifiesV2({ data }: { data: StateData }) {
   const title = data.whoQualifiesTitle || `Who May Qualify for an ESA Letter in ${stateName}?`;
   const subtitle =
     data.whoQualifiesSubtitle ||
-    `${stateName} residents finding troubles in completing everyday tasks and activities can get themselves evaluated by licensed mental health professionals (LMHP) in ${stateName} to check the need for emotional support animals. During this process, clinicians may consider a range of medical conditions, which include but are not limited to:`;
-  const sectionHeading = data.whoQualifiesSectionHeading || "Qualifying Conditions";
+    `${stateName} residents having trouble completing everyday tasks and activities can get evaluated by licensed mental health professionals (LMHP) in ${stateName} to check the need for an emotional support animal.`;
+  // One label for every state (approved Nov 2026); avoids implying a condition alone qualifies.
+  const sectionHeading = "Conditions a Clinician May Consider";
   const icons = conditionIcons(conditions);
   const photo = `/states/who-qualifies/${data.slug}.webp`;
 
@@ -147,7 +148,10 @@ export function StateWhoQualifiesV2({ data }: { data: StateData }) {
         </div>
 
         <div className="lg:col-start-1 lg:row-start-2">
-          <h3 className="font-heading text-[22px] font-bold leading-[30px] text-primary sm:text-[24px]">{sectionHeading}</h3>
+          <h3 className="flex items-center gap-3 !font-sans !text-[12px] font-extrabold uppercase !leading-4 tracking-[0.14em] text-[#8A6A12]">
+            <span aria-hidden className="h-px w-8 bg-accent" />
+            {sectionHeading}
+          </h3>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             {conditions.map((item, idx) => (
               <div key={item.title} className="flex flex-col rounded-[20px] bg-background p-5 ring-1 ring-line-200 sm:p-6">

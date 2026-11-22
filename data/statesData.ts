@@ -2347,7 +2347,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following a formal mental health evaluation. These audio-visual assessments must be conducted on a HIPAA-compliant platform. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. While your ESA letter writer does not need to disclose your specific diagnosis in the letter, they do need to affirm that you have an applicable diagnosis.",
     whoQualifiesTitle: "Who Qualifies for an ESA Letter in Colorado?",
-    whoQualifiesSubtitle: "Individuals experiencing emotional or mental health challenges that impact daily life may be eligible for an ESA letter, following an evaluation by a licensed mental health professional in Colorado. Clinicians can assess a range of conditions, including:",
+    whoQualifiesSubtitle: "Individuals experiencing emotional or mental health challenges that impact daily life may be eligible for an ESA letter, following an evaluation by a licensed mental health professional in Colorado. Clinicians can assess a range of conditions.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -3555,7 +3555,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: A valid ESA letter must be issued by a qualified mental health professional following an individualized clinical evaluation. This is not an instant-approval process; any recommendation should be based on the individual’s circumstances and applicable federal and Florida requirements.",
     whoQualifiesTitle: "Who Could Qualify for an ESA Letter in Florida?",
-    whoQualifiesSubtitle: "Individuals experiencing emotional or mental health challenges that significantly impact daily life may be considered for an emotional support animal (ESA) following an evaluation by a licensed mental health professional. Examples of conditions that may be evaluated include, but are not limited to:",
+    whoQualifiesSubtitle: "Individuals experiencing emotional or mental health challenges that significantly impact daily life may be considered for an emotional support animal (ESA) following an evaluation by a licensed mental health professional.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -4456,7 +4456,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following an individualized clinical evaluation. This is not an instant-approval process, and any recommendation should be based on the individual’s circumstances and applicable federal and state requirements.",
     whoQualifiesTitle: "Who Could Be Eligible for an ESA Letter in Hawaii?",
-    whoQualifiesSubtitle: "All consultations are conducted through secure telehealth platforms that ensure your information remains safe and private. During the assessment, a Hawaii-licensed mental health professional looks at a number of things that could affect a person’s daily life and mental health. Some of the health conditions include (but are not limited to):",
+    whoQualifiesSubtitle: "All consultations are conducted through secure telehealth platforms that ensure your information remains safe and private. During the assessment, a Hawaii-licensed mental health professional looks at a number of things that could affect a person’s daily life and mental health.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -4847,7 +4847,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following an individualized clinical evaluation. This is not an instant-approval process, and any recommendation should be based on the individual’s circumstances and applicable federal and state requirements.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in Idaho?",
-    whoQualifiesSubtitle: "When emotional or mental health challenges begin affecting daily life or overall functioning, individuals exploring how to obtain an ESA letter in Idaho typically start with a clinical assessment. While the list of conditions is endless, commonly reviewed conditions may include the following:",
+    whoQualifiesSubtitle: "When emotional or mental health challenges begin affecting daily life or overall functioning, individuals exploring how to obtain an ESA letter in Idaho typically start with a clinical assessment.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -5629,7 +5629,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: A valid ESA letter should be based on an individualized clinical evaluation conducted by a qualified mental health professional. This is not an instant-approval process; the recommendation should be based on your individual circumstances and disability-related needs. The provider does not generally need to disclose a specific diagnosis in the letter when sufficient reliable information supports the disability-related need.",
     whoQualifiesTitle: "Who May Be Eligible for an ESA Letter in Indiana?",
-    whoQualifiesSubtitle: "Indiana residents having trouble completing everyday tasks and activities can get themselves evaluated by licensed mental health professionals (LMHP) in Indiana to check the need for emotional support animals. During this process, clinicians may consider a range of medical conditions, which include but are not limited to:",
+    whoQualifiesSubtitle: "Indiana residents having trouble completing everyday tasks and activities can get evaluated by licensed mental health professionals (LMHP) in Indiana to check the need for an emotional support animal. During this process, clinicians may consider a range of medical conditions.",
     whoQualifiesSectionHeading: "",
     whoQualifiesConditions: [
       {
@@ -6017,7 +6017,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following a formal mental health evaluation. These audio-visual assessments must be conducted on a HIPAA-compliant platform. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. While your ESA letter writer does not need to disclose your specific diagnosis in the letter, they do need to affirm that you have an applicable diagnosis. Under Iowa SF-2268, the individual seeking an ESA must have an established 30-day relationship with the mental health provider conducting the evaluation and providing the approval letter.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in Iowa?",
-    whoQualifiesSubtitle: "Residents of Iowa experiencing mental or emotional health issues interfering with daily life functioning can get themselves evaluated to check whether an emotional support animal would offer therapeutic benefit. During this evaluation, licensed Iowa clinicians could consider several conditions, which include but are not limited to:",
+    whoQualifiesSubtitle: "Residents of Iowa experiencing mental or emotional health issues that interfere with daily functioning can get evaluated to check whether an emotional support animal would offer therapeutic benefit. During this evaluation, licensed Iowa clinicians may consider several conditions.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -6407,7 +6407,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: An ESA recommendation should be based on an individualized clinical evaluation by a qualified healthcare professional. This is not an instant-approval process, and any documentation should be tailored to the individual's circumstances and disability-related need for the animal.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in Kansas?",
-    whoQualifiesSubtitle: "All consultations are conducted through secure telehealth platforms that keep your information private and safe. A Kansas-licensed mental health professional considers several factors that may impact a person’s daily life and emotional well-being during the assessment. They might look at some of the following areas:",
+    whoQualifiesSubtitle: "All consultations are conducted through secure telehealth platforms that keep your information private and safe. A Kansas-licensed mental health professional considers several factors that may impact a person’s daily life and emotional well-being during the assessment.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -6798,7 +6798,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: An ESA recommendation should be based on an individualized clinical evaluation by a qualified healthcare professional. This is not an instant-approval process, and any documentation should be tailored to the individual's circumstances and disability-related need for the animal.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in Kentucky?",
-    whoQualifiesSubtitle: "A licensed mental health evaluation is often the first step for individuals in Kentucky considering an emotional support animal, especially when emotional or mental health challenges begin to affect daily life, concentration, or overall well-being. Common conditions that may be assessed include, but are not limited to:",
+    whoQualifiesSubtitle: "A licensed mental health evaluation is often the first step for individuals in Kentucky considering an emotional support animal, especially when emotional or mental health challenges begin to affect daily life, concentration, or overall well-being.",
     whoQualifiesSectionHeading: "",
     whoQualifiesConditions: [
       {
@@ -7187,7 +7187,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: A support-animal recommendation should be based on an individualized clinical evaluation by a qualified healthcare professional. Louisiana law requires applicable providers to conduct a disability assessment and satisfy the statutory therapeutic-relationship and clinical-evaluation requirements before producing documentation regarding the need for a support animal.",
     whoQualifiesTitle: "Who May Be Eligible for an ESA Letter in Louisiana?",
-    whoQualifiesSubtitle: "People living in Louisiana suffering from mental health issues interfering with daily life can get themselves assessed. This helps determine the need for an emotional support animal and whether an ESA could offer therapeutic benefits. During this evaluation, licensed clinicians in Louisiana could consider several mental health conditions. Some of them include:",
+    whoQualifiesSubtitle: "People living in Louisiana with mental health issues interfering with daily life can get assessed. This helps determine whether an emotional support animal could offer therapeutic benefits. During this evaluation, licensed clinicians in Louisiana may consider several mental health conditions.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -7578,7 +7578,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: An assistance-animal recommendation should be based on an individualized evaluation by an appropriately licensed healthcare professional. The recommendation should be based on the individual’s disability-related needs and whether the animal is clinically appropriate.",
     whoQualifiesTitle: "Who Can Qualify for an ESA Letter in Maine?",
-    whoQualifiesSubtitle: "A professional mental health evaluation is typically the starting point for individuals in Maine considering an emotional support animal, especially when emotional or psychological challenges begin affecting daily functioning, focus, or overall quality of life. Conditions commonly evaluated may include, but are not limited to:",
+    whoQualifiesSubtitle: "A professional mental health evaluation is typically the starting point for individuals in Maine considering an emotional support animal, especially when emotional or psychological challenges begin affecting daily functioning, focus, or overall quality of life.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -7967,7 +7967,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: This is not an instant-approval process; any recommendation should be based on an individualized evaluation and the person’s disability-related needs. Specific medical diagnoses generally do not need to be disclosed in housing documentation.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in Maryland?",
-    whoQualifiesSubtitle: "Individuals facing emotional or mental health concerns that affect daily functioning and hinder day-to-day tasks could get assessed to check the need for an emotional support animal. During this assessment, licensed professionals in Maryland may look for various emotional or psychological conditions. Some of them may include:",
+    whoQualifiesSubtitle: "Individuals facing emotional or mental health concerns that affect daily functioning could get assessed to check the need for an emotional support animal. During this assessment, licensed professionals in Maryland may look for various emotional or psychological conditions.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -8353,7 +8353,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: The evaluation should be individualized and based on the person’s disability-related needs. The provider should document the disability-related need for the assistance animal without requiring disclosure of a specific diagnosis.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in Massachusetts?",
-    whoQualifiesSubtitle: "If Massachusetts residents encounter emotional or psychological difficulties that interfere with their day-to-day activities, they could get a thorough mental health assessment. Among the circumstances that might be taken into account are:",
+    whoQualifiesSubtitle: "If Massachusetts residents encounter emotional or psychological difficulties that interfere with their day-to-day activities, they could get a thorough mental health assessment.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -8742,7 +8742,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: The evaluation should be individualized and based on the person’s disability-related needs. The provider should document the disability-related need for the assistance animal without requiring disclosure of a specific diagnosis.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in Michigan?",
-    whoQualifiesSubtitle: "When emotional or psychological issues substantially affect daily living, people in Michigan frequently seek ESA examinations. Conditions that might be taken into account during a clinical evaluation include (but aren’t limited to):",
+    whoQualifiesSubtitle: "When emotional or psychological issues substantially affect daily living, people in Michigan frequently seek ESA examinations.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -9519,7 +9519,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following a formal mental health evaluation. The evaluation should be conducted through an appropriate professional assessment process that allows the clinician to make an individualized determination. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. Supporting documentation should confirm the person’s disability and the relationship between the disability and the need for an emotional support animal when documentation is appropriate. A housing provider generally does not need the person’s specific diagnosis or detailed medical records.",
     whoQualifiesTitle: "Who Could Be Eligible for an ESA Letter in Mississippi?",
-    whoQualifiesSubtitle: "If emotional or psychological issues start to interfere with day-to-day tasks or general functioning, residents wondering how to get an ESA letter in Mississippi must first complete a clinical evaluation. Conditions that are frequently examined could include, but are not limited to:",
+    whoQualifiesSubtitle: "If emotional or psychological issues start to interfere with day-to-day tasks or general functioning, residents wondering how to get an ESA letter in Mississippi must first complete a clinical evaluation.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -9908,7 +9908,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: Supporting documentation, when appropriate, should be based on an individualized evaluation and reliably confirm the person’s disability and the relationship between the disability and the need for an emotional support animal. A housing provider generally does not need the person’s specific diagnosis or detailed medical records. The evaluation should be conducted through an appropriate professional assessment process.",
     whoQualifiesTitle: "Who Might Be Eligible for an ESA Letter in Missouri?",
-    whoQualifiesSubtitle: "Residents of Missouri who are experiencing emotional or psychological issues that affect their ability to carry out daily tasks might want to get a thorough clinical evaluation. This evaluation’s objective is to determine whether an emotional support animal could contribute to the improvement of mental wellness in general.",
+    whoQualifiesSubtitle: "Residents of Missouri who are experiencing emotional or psychological issues that affect their ability to carry out daily tasks might want to get a thorough clinical evaluation. This evaluation’s objective is to determine whether an emotional support animal could improve their overall mental wellness.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -10690,7 +10690,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following a formal mental health evaluation. We conduct evaluations through a secure telehealth platform designed to protect the confidentiality of your health information. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. Your documentation should establish the disability-related need for an assistance animal when supporting information is appropriate. A specific diagnosis or detailed medical records generally do not need to be disclosed to the housing provider.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in Nebraska?",
-    whoQualifiesSubtitle: "People in Nebraska who want an ESA letter typically have to first go through a professional psychiatric evaluation if emotional or mental health issues start to interfere with daily tasks, focus, or general functioning. Among the conditions that are frequently taken into consideration are, but are not exclusive to:",
+    whoQualifiesSubtitle: "People in Nebraska who want an ESA letter typically have to first go through a professional mental health evaluation if emotional or mental health issues start to interfere with daily tasks, focus, or general functioning.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -11469,7 +11469,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: An ESA letter should be based on an individualized mental health evaluation conducted by a licensed professional. The recommendation should reflect your individual circumstances and disability-related need. This is not an instant-approval process.",
     whoQualifiesTitle: "Who Qualifies for an Emotional Support Animal in New York?",
-    whoQualifiesSubtitle: "People experiencing emotional or mental health concerns that substantially affect their day-to-day life may qualify for an ESA after being evaluated by a licensed mental health professional. The assessment may include conditions such as:",
+    whoQualifiesSubtitle: "People experiencing emotional or mental health concerns that substantially affect their day-to-day life may qualify for an ESA after being evaluated by a licensed mental health professional.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -12322,7 +12322,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: An ESA letter should be based on an appropriate individual evaluation by a qualified healthcare professional. Telehealth consultations must comply with applicable privacy and security requirements. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. When supporting documentation is necessary, it should provide reliable information establishing the individual’s disability-related need for an assistance animal. A specific diagnosis does not universally need to be disclosed in the letter.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in Washington?",
-    whoQualifiesSubtitle: "To protect privacy and confidentiality, all consultations are conducted through secure, HIPAA-compliant telehealth platforms. During the evaluation, a licensed clinician discusses mental health concerns that may impact daily life and overall functioning. These conditions may include, but are not limited to:",
+    whoQualifiesSubtitle: "To protect privacy and confidentiality, all consultations are conducted through secure, HIPAA-compliant telehealth platforms. During the evaluation, a licensed clinician discusses mental health concerns that may impact daily life and overall functioning.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -12715,7 +12715,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: An ESA letter should be based on an appropriate individual evaluation. Telehealth consultations must comply with applicable privacy and security requirements. When supporting documentation is necessary for a housing accommodation, it should provide reliable information about the individual’s disability-related need for an assistance animal. Disclosure of a specific diagnosis is not universally required.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in Wisconsin?",
-    whoQualifiesSubtitle: "In Wisconsin, those who are applying for an ESA letter usually need to get a professional mental health evaluation if emotional or psychological issues start to get in the way of everyday activities, concentration, or general functioning. Typical conditions that are taken into consideration include, but are not restricted to:",
+    whoQualifiesSubtitle: "In Wisconsin, those applying for an ESA letter usually need to get a professional mental health evaluation if emotional or psychological issues start to get in the way of everyday activities, concentration, or general functioning.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -13109,7 +13109,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: An ESA recommendation should be based on an individualized assessment by a qualified professional. For housing accommodation requests, documentation should reliably establish the individual’s disability-related need for an emotional support animal. A specific diagnosis generally does not need to be disclosed to the housing provider.",
     whoQualifiesTitle: "Who May Be Considered for ESA Documentation in Wyoming?",
-    whoQualifiesSubtitle: "To ensure privacy and confidentiality, all consultations are conducted via secure, HIPAA-compliant telehealth systems. During the assessment, a licensed clinician discusses mental health issues that may affect daily life and functioning. Such conditions include, but are not limited to:",
+    whoQualifiesSubtitle: "To ensure privacy and confidentiality, all consultations are conducted via secure, HIPAA-compliant telehealth systems. During the assessment, a licensed clinician discusses mental health issues that may affect daily life and functioning.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -13498,7 +13498,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following a formal mental health evaluation. Our audio-video ESA assessments are conducted on a HIPAA-compliant platform. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. Your documentation should establish the disability-related need for an assistance animal when supporting information is appropriate. A specific diagnosis or detailed medical records generally do not need to be disclosed to the housing provider.",
     whoQualifiesTitle: "Who May Be Eligible for an ESA Letter in New Hampshire?",
-    whoQualifiesSubtitle: "Every consultation is completed through secure telehealth platforms built to protect privacy and confidentiality. During the evaluation, a state-licensed mental health professional reviews different factors that may influence a person’s daily functioning and emotional wellness. Some of the areas they may consider include:",
+    whoQualifiesSubtitle: "Every consultation is completed through secure telehealth platforms built to protect privacy and confidentiality. During the evaluation, a state-licensed mental health professional reviews different factors that may influence a person’s daily functioning and emotional wellness.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -14278,7 +14278,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following a formal mental health evaluation. All our audio-video ESA assessments are conducted on a HIPAA-compliant platform. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. Your documentation should explain your disability-related need for an assistance animal when supporting information is necessary. It generally does not need to disclose a specific diagnosis or include detailed medical records.",
     whoQualifiesTitle: "Who Could Be Eligible for an ESA Letter in New Mexico?",
-    whoQualifiesSubtitle: "A professional mental health assessment should be the first step for anyone in New Mexico thinking about getting an emotional support animal when emotional or psychological issues start to interfere with daily functioning, focus, or general wellness. Commonly reviewed conditions may include, but are not limited to:",
+    whoQualifiesSubtitle: "A professional mental health assessment should be the first step for anyone in New Mexico thinking about getting an emotional support animal when emotional or psychological issues start to interfere with daily functioning, focus, or general wellness.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -14668,7 +14668,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: ESA documentation should be based on an individualized evaluation by an appropriately qualified professional. All our audio-video ESA assessments are conducted on a HIPAA-compliant platform. This is not an instant-approval process; documentation must reflect your individual circumstances and disability-related need for an assistance animal when supporting information is necessary. A specific diagnosis or detailed medical records generally do not need to be disclosed to a housing provider.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in North Carolina?",
-    whoQualifiesSubtitle: "All consultations are conducted through secure telehealth systems that follow HIPAA privacy standards. During an evaluation, a licensed clinician may consider various mental health conditions that impact daily functioning. Examples may include:",
+    whoQualifiesSubtitle: "All consultations are conducted through secure telehealth systems that follow HIPAA privacy standards. During an evaluation, a licensed clinician may consider various mental health conditions that impact daily functioning.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -15057,7 +15057,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: ESA documentation should be based on an individualized evaluation by an appropriately qualified professional. These audio-visual assessments are conducted on a HIPAA-compliant platform. This is not an instant-approval process; documentation should reflect your circumstances and disability-related need for an assistance animal. A specific diagnosis or detailed medical records generally do not need to be disclosed to a housing provider.",
     whoQualifiesTitle: "Who Could Be Eligible for an ESA Letter in North Dakota?",
-    whoQualifiesSubtitle: "All consultations are conducted using HIPAA-compliant, secure telemedicine systems. A certified clinician can go over various mental health issues that may interfere with day-to-day functioning during the assessment. Here are a few instances:",
+    whoQualifiesSubtitle: "All consultations are conducted using HIPAA-compliant, secure telemedicine systems. A certified clinician can go over various mental health issues that may interfere with day-to-day functioning during the assessment.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -15835,7 +15835,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following a formal mental health evaluation. Our audio-video assessments are conducted on a HIPAA-compliant platform. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. A housing provider generally does not need your specific diagnosis or detailed medical records when sufficient reliable information establishes your disability-related need for an assistance animal.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in Oklahoma?",
-    whoQualifiesSubtitle: "Oklahoma residents facing mental health challenges affecting daily life can request an evaluation. The assessment helps determine if an emotional support animal may provide support. Licensed clinicians in Oklahoma review relevant mental health conditions during the consultation. Some of them include:",
+    whoQualifiesSubtitle: "Oklahoma residents facing mental health challenges affecting daily life can request an evaluation. The assessment helps determine if an emotional support animal may provide support. Licensed clinicians in Oklahoma review relevant mental health conditions during the consultation.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -16223,7 +16223,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following a formal mental health evaluation. All our audio-video assessments are conducted on a HIPAA-compliant platform. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. A housing provider generally does not need your specific diagnosis or detailed medical records when sufficient reliable information establishes your disability-related need for an assistance animal. The information needed depends on the circumstances and applicable law.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in Oregon?",
-    whoQualifiesSubtitle: "Oregon residents who experience mental or emotional health challenges that interfere with everyday life functioning may get themselves evaluated to determine whether an emotional support animal would provide therapeutic benefit. During this assessment, certified Oregon clinicians could consider several conditions, including:",
+    whoQualifiesSubtitle: "Oregon residents who experience mental or emotional health challenges that interfere with everyday life functioning may get evaluated to determine whether an emotional support animal would provide therapeutic benefit. During this assessment, certified Oregon clinicians may consider several conditions.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -16610,7 +16610,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: A housing provider generally does not need your specific diagnosis or detailed medical records. When the disability-related need for an assistance animal is not readily apparent or already known, the provider may request reliable supporting information that establishes the disability-related need. Documentation should contain relevant information without unnecessary disclosure of private medical details.",
     whoQualifiesTitle: "Who Qualifies for an ESA Letter in Pennsylvania?",
-    whoQualifiesSubtitle: "A qualified mental health professional evaluates the individual’s circumstances and determines whether recommending an emotional support animal is clinically appropriate. Any recommendation should be based on an individualized assessment and the professional’s clinical judgment. Some commonly assessed conditions include:",
+    whoQualifiesSubtitle: "A qualified mental health professional evaluates the individual’s circumstances and determines whether recommending an emotional support animal is clinically appropriate. Any recommendation should be based on an individualized assessment and the professional’s clinical judgment.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -17002,7 +17002,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: ESA documentation should be based on an appropriate, individualized assessment. Housing providers may request reliable supporting documentation when the disability or disability-related need is not readily apparent or already known. The documentation must confirm the disability and the relationship between the disability and the requested accommodation, consistent with applicable law. A specific diagnosis does not universally need to be disclosed in the letter.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in South Dakota?",
-    whoQualifiesSubtitle: "To ensure privacy and confidentiality, all consultations are conducted over secure, HIPAA-compliant telehealth systems. A qualified clinician examines mental health issues that may affect a person’s day-to-day activities and general functioning during the assessment. Here are a few instances:",
+    whoQualifiesSubtitle: "To ensure privacy and confidentiality, all consultations are conducted over secure, HIPAA-compliant telehealth systems. A qualified clinician examines mental health issues that may affect a person’s day-to-day activities and general functioning during the assessment.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -17395,7 +17395,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: ESA recommendations should be based on an individualized assessment. For housing accommodation requests, a housing provider may request reliable documentation of the disability and the relationship between the disability and the animal’s support when these are not readily apparent. The documentation should come from an appropriate qualified professional. A specific diagnosis does not necessarily need to be disclosed.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in Utah?",
-    whoQualifiesSubtitle: "Individuals residing and applying for an ESA letter in Utah usually have to go through a mental health evaluation if emotional or psychological issues start to affect daily functioning, activities, and general functioning. Typical conditions that are taken into consideration include, but are not limited to:",
+    whoQualifiesSubtitle: "Individuals in Utah applying for an ESA letter usually have to go through a mental health evaluation if emotional or psychological issues start to affect daily activities and general functioning.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -17788,7 +17788,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: All ESA evaluations should follow applicable professional licensing, telehealth, privacy, and security requirements. The appropriate assessment method depends on the clinician’s judgment and applicable law. A housing provider generally does not need your specific diagnosis or detailed medical records. When the disability or disability-related need for an assistance animal is not readily apparent or already known, the provider may request reliable information supporting the need for the accommodation. Documentation should contain relevant information without unnecessary disclosure of private medical details.",
     whoQualifiesTitle: "Who Can Obtain an ESA Letter in South Carolina?",
-    whoQualifiesSubtitle: "In the assessment, a qualified clinician examines mental or emotional difficulties that may interfere with regular tasks and day-to-day functioning, including:",
+    whoQualifiesSubtitle: "In the assessment, a qualified clinician examines mental or emotional difficulties that may interfere with regular tasks and day-to-day functioning.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
@@ -18567,7 +18567,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     processNote: "Note: An ESA letter should be based on an appropriate individual evaluation. Telehealth consultations must comply with applicable privacy and security requirements. When supporting documentation is necessary, it should provide reliable information about the individual’s disability-related need for an assistance animal; disclosure of a specific diagnosis is not universally required.",
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in West Virginia?",
-    whoQualifiesSubtitle: "All consultations are conducted via secure, HIPAA-compliant telehealth platforms to ensure privacy. During the evaluation, a licensed clinician reviews mental health concerns that could affect daily life and overall functioning. These may include, but are not limited to:",
+    whoQualifiesSubtitle: "All consultations are conducted via secure, HIPAA-compliant telehealth platforms to ensure privacy. During the evaluation, a licensed clinician reviews mental health concerns that could affect daily life and overall functioning.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {

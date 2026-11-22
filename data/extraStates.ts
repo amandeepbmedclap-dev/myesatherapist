@@ -194,7 +194,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     ],
     whoQualifiesTitle: "Who May Qualify for an ESA Letter in Vermont?",
     whoQualifiesSubtitle:
-      "All consultations take place through secure, HIPAA-compliant telehealth platforms to maintain privacy and confidentiality. During the evaluation, a licensed clinician reviews mental health concerns that may affect daily activities and overall functioning. Some examples include:",
+      "All consultations take place through secure, HIPAA-compliant telehealth platforms to maintain privacy and confidentiality. During the evaluation, a licensed clinician reviews mental health concerns that may affect daily activities and overall functioning.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: conditions([
       ["Seasonal Affective Disorder (SAD)", "Depression related to long, dark winter seasons."],
@@ -486,7 +486,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     ],
     whoQualifiesTitle: "Who May Be Eligible for an ESA Letter in Tennessee?",
     whoQualifiesSubtitle:
-      "If psychological or emotional issues are seriously impairing daily responsibilities, focus, or general stability, Tennessee residents who are thinking about getting an emotional support animal need to first complete a professional mental health evaluation. Conditions commonly evaluated may include, but are not limited to:",
+      "If psychological or emotional issues are seriously impairing daily responsibilities, focus, or general stability, Tennessee residents who are thinking about getting an emotional support animal need to first complete a professional mental health evaluation.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: conditions([
       ["Generalized Anxiety Disorder (GAD)", "Ongoing and excessive worry that disrupts sleep and daily decision-making."],
@@ -774,7 +774,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     ],
     whoQualifiesTitle: "Who Can Qualify for an ESA Letter in Rhode Island?",
     whoQualifiesSubtitle:
-      "All consultations are conducted through secure telehealth systems that follow HIPAA rules to keep everything private. During the assessment, a licensed mental health professional examines things that could affect daily life and overall health. Some examples of these are:",
+      "All consultations are conducted through secure telehealth systems that follow HIPAA rules to keep everything private. During the assessment, a licensed mental health professional examines things that could affect daily life and overall health.",
     whoQualifiesConditions: conditions([
       ["Cyclothymic Disorder", "Mild mood swings between highs and lows."],
       ["Selective Mutism", "Inability to speak in certain social settings."],
@@ -1064,7 +1064,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     ],
     whoQualifiesTitle: "Who Can Qualify for an ESA Letter in the District of Columbia?",
     whoQualifiesSubtitle:
-      "A Washington, DC-licensed mental health professional conducts an individualized evaluation through our secure, HIPAA-compliant telehealth platform. The assessment considers your mental health symptoms, their impact on daily activities, and whether an emotional support animal may provide disability-related support. Relevant conditions may include, but are not limited to:",
+      "A Washington, DC-licensed mental health professional conducts an individualized evaluation through our secure, HIPAA-compliant telehealth platform. The assessment considers your mental health symptoms, their impact on daily activities, and whether an emotional support animal may provide disability-related support.",
     whoQualifiesConditions: conditions([
       ["Adjustment Disorder", "Stress-related symptoms may interfere with daily life and functioning."],
       ["Seasonal Affective Disorder (SAD)", "Seasonal mood changes may affect energy, sleep, and motivation."],
@@ -1323,7 +1323,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     ],
     whoQualifiesTitle: "Who Can Qualify for an ESA Letter in Puerto Rico?",
     whoQualifiesSubtitle:
-      "A licensed mental health professional conducts an individualized evaluation through our secure, HIPAA-compliant telehealth platform. The assessment considers your mental health symptoms, their impact on daily activities, and whether an emotional support animal may provide disability-related support. Relevant conditions may include, but are not limited to:",
+      "A licensed mental health professional conducts an individualized evaluation through our secure, HIPAA-compliant telehealth platform. The assessment considers your mental health symptoms, their impact on daily activities, and whether an emotional support animal may provide disability-related support.",
     whoQualifiesConditions: conditions([
       ["Anxiety Disorders", "Persistent worry or panic may disrupt sleep, work, and daily routines."],
       ["Depressive Disorders", "Ongoing low mood may affect energy, motivation, and relationships."],
@@ -1496,7 +1496,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     ],
     whoQualifiesTitle: "Who May Be Eligible for an ESA Letter in the Virgin Islands?",
     whoQualifiesSubtitle:
-      "For many individuals in the Virgin Islands, the process begins with a clinical mental health assessment, especially when emotional or psychological concerns start to impact day-to-day activities, concentration, or overall well-being. Commonly assessed conditions can include, but are not limited to:",
+      "For many individuals in the Virgin Islands, the process begins with a clinical mental health assessment, especially when emotional or psychological concerns start to impact day-to-day activities, concentration, or overall well-being.",
     whoQualifiesConditions: conditions([
       ["Relocation Stress", "Difficulty adjusting to a new environment or island life."],
       ["Seasonal and Climate-Related Mood Changes", "Mood changes linked to climate patterns and storm seasons."],
