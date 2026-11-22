@@ -161,14 +161,20 @@ export default async function DynamicStatePage({ params }: Props) {
           headingClassName="heading-h2"
           descriptionOverride={`Choose the option that best matches your needs in ${data.name}: an ESA letter evaluation, a combined ESA and PSD evaluation, or a professional assessment if you're unsure which type of support may be appropriate. Recommendations and documentation depend on a licensed clinician's assessment.`}
         />}
-        <div id="available-cities"><StateAvailableCitiesSection data={data} tone={hasPricing ? "cream" : "white"} /></div>
-        <StateNextSteps data={data} tone={hasPricing ? "white" : "cream"} />
+        {isSectionPilot(data.slug) ? (
+          <div id="available-cities"><StateNextSteps data={data} tone={hasPricing ? "cream" : "white"} withCities /></div>
+        ) : (
+          <>
+            <div id="available-cities"><StateAvailableCitiesSection data={data} tone={hasPricing ? "cream" : "white"} /></div>
+            <StateNextSteps data={data} tone={hasPricing ? "white" : "cream"} />
+          </>
+        )}
         <div id="faq">
           <FaqSection
             title={data.faqTitle}
             subtitle={data.faqSubtitle}
             faqs={data.faqs}
-            bg={hasPricing ? "bg-background" : "bg-white"}
+            bg={isSectionPilot(data.slug) ? (hasPricing ? "bg-white" : "bg-background") : hasPricing ? "bg-background" : "bg-white"}
             variant={isSectionPilot(data.slug) ? "light" : "classic"}
           />
         </div>

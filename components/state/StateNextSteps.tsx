@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { MapPin } from "lucide-react";
 import type { StateData } from "@/data/statesData";
 import { STATE_INDEX_BY_SLUG } from "@/data/stateIndex";
 
@@ -64,8 +65,9 @@ const NEIGHBORS: Record<string, string[]> = {
 // State-specific ESA law guides that exist today; others use the laws hub.
 const STATE_LAW_GUIDES = new Set(["alabama"]);
 
-export function StateNextSteps({ data, tone = "white" }: { data: StateData; tone?: "cream" | "white" }) {
+export function StateNextSteps({ data, tone = "white", withCities = false }: { data: StateData; tone?: "cream" | "white"; withCities?: boolean }) {
   const cardBg = tone === "white" ? "bg-background" : "bg-white";
+  const showCities = withCities && (data.cities?.length ?? 0) > 0;
   const name = data.name;
   const neighbors = (NEIGHBORS[data.slug] || [])
     .map((slug) => STATE_INDEX_BY_SLUG[slug])
@@ -88,12 +90,29 @@ export function StateNextSteps({ data, tone = "white" }: { data: StateData; tone
   ];
 
   return (
-    <section aria-labelledby="next-steps-heading" className={`w-full ${tone === "white" ? "bg-white" : "bg-background"} py-12 sm:py-16`}>
+    <section aria-labelledby="next-steps-heading" className={`w-full ${tone === "white" ? "bg-white" : "bg-background"} ${showCities ? "py-14 sm:py-16 lg:py-20" : "py-12 sm:py-16"}`}>
       <div className="max-w-[1278px] mx-auto px-4 sm:px-6 lg:px-6 xl:px-0">
+        {showCities ? (
+          <div className="mx-auto max-w-[880px] text-center">
+            <h2 id="next-steps-heading" className="heading-h2 text-primary">
+              {data.citiesTitle || `Available Everywhere in ${name}`}
+            </h2>
+            {data.citiesSubtitle ? <p className="body-large mx-auto mt-3 max-w-[760px] text-body-text">{data.citiesSubtitle}</p> : null}
+            <ul className="mt-7 flex flex-wrap justify-center gap-2.5">
+              {(data.cities || []).map((city) => (
+                <li key={city.name} className="flex items-center gap-1.5 rounded-full bg-white px-4 py-2 font-sans text-[14.5px] font-semibold text-primary ring-1 ring-line-200">
+                  <MapPin aria-hidden className="size-4 text-gold-600" />
+                  {city.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
         <h2 id="next-steps-heading" className="heading-h2 text-primary text-center">
           More ESA Guides, Resources, and Help for {name} Residents
         </h2>
-        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+        )}
+        <div className={`${showCities ? "mt-10 lg:mt-12" : "mt-8"} grid grid-cols-1 gap-6 md:grid-cols-3`}>
           <LinkGroup title="Our services" links={services} cardBg={cardBg} />
           <LinkGroup title={`Guides for ${name} renters`} links={guides} cardBg={cardBg} />
           {neighbors.length > 0 && (
