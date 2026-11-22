@@ -11,7 +11,7 @@ import { Footer } from "@/components/layout/Footer";
 import { StateHeroSection } from "@/components/state/StateHeroSection";
 import { StateTrustBar } from "@/components/state/StateTrustBar";
 import { StateProcessSection } from "@/components/state/StateProcessSection";
-import { StateWhoQualifiesSection, StateWhoQualifiesV2 } from "@/components/state/StateWhoQualifiesSection";
+import { StateWhoQualifiesSection, StateWhoQualifiesV2, StateWhoQualifiesV3 } from "@/components/state/StateWhoQualifiesSection";
 import { StateEligibilityPanels } from "@/components/state/StateEligibilityPanels";
 import { StateBenefitsSection } from "@/components/state/StateBenefitsSection";
 import { StateLawsSection } from "@/components/state/StateLawsSection";
@@ -129,7 +129,7 @@ export default async function DynamicStatePage({ params }: Props) {
         </div>
         <div id="process"><StateProcessSection data={data} /></div>
         <div id="who-qualifies">{/* Pilot: redesigned who-qualifies section on Minnesota only, pending approval. */}
-          {data.slug === "minnesota" ? <StateWhoQualifiesV2 data={data} /> : <StateWhoQualifiesSection data={data} />}</div>
+          {data.slug === "minnesota" ? <StateWhoQualifiesV2 data={data} /> : data.slug === "texas" ? <StateWhoQualifiesV3 data={data} /> : <StateWhoQualifiesSection data={data} />}</div>
         <StateEligibilityPanels data={data} />
         {data.whyChooseItems && data.whyChooseItems.length > 0 && (
           <div id="why-choose">

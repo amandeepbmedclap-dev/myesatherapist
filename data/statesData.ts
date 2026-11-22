@@ -11907,17 +11907,17 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Bipolar Disorder",
-        description: "Often associated with significant mood fluctuations that can affect daily stability and functioning. An ESA may provide companionship and emotional support, helping individuals feel more grounded during significant changes in mood.",
+        description: "Significant mood fluctuations that can affect daily stability and functioning. An ESA may provide companionship and help individuals feel more grounded during mood changes.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Obsessive-Compulsive Disorder (OCD)",
-        description: "May involve persistent intrusive thoughts or repetitive behaviors that interfere with everyday activities. An ESA can offer a calming presence and reassurance while individuals manage intrusive thoughts and repetitive behaviors.",
+        description: "Persistent intrusive thoughts or repetitive behaviors that interfere with everyday activities. An ESA can offer a calming presence and reassurance.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Phobias & Fear Disorders",
-        description: "Sometimes marked by intense anxiety responses, avoidance patterns, or physiological stress reactions. An ESA may provide comfort and a sense of security, helping individuals feel supported when facing intense fears or anxiety triggers.",
+        description: "Intense anxiety responses, avoidance patterns, or physical stress reactions. An ESA may provide comfort and a sense of security when facing fears or triggers.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {

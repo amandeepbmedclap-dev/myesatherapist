@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { StateData } from "@/data/statesData";
 import { CollapsibleNote } from "@/components/common/CollapsibleNote";
+import { BadgeCheck } from "lucide-react";
 
 const CONDITION_RULES: { test: RegExp; icons: string[] }[] = [
   { test: /panic|agoraphob/i, icons: ["/esa-icons/icon-1.svg", "/esa-icons/icon-10.svg"] },
@@ -311,6 +312,73 @@ export function StateWhoQualifiesV2({ data }: { data: StateData }) {
           </div>
           {data.whoQualifiesNote && (
             <CollapsibleNote text={data.whoQualifiesNote} className="mt-4 rounded-[18px] bg-background/70 p-4 ring-1 ring-line-200 sm:p-5" />
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/**
+ * Design B (piloting on Texas): dark teal band, arch-framed photo with a floating
+ * credential tag, and glass condition tiles with gold numerals.
+ */
+export function StateWhoQualifiesV3({ data }: { data: StateData }) {
+  const stateName = data.name;
+  const conditions = data.whoQualifiesConditions && data.whoQualifiesConditions.length > 0 ? data.whoQualifiesConditions : defaultConditions;
+  const title = data.whoQualifiesTitle || `Who May Qualify for an ESA Letter in ${stateName}?`;
+  const subtitle =
+    data.whoQualifiesSubtitle ||
+    `${stateName} residents finding troubles in completing everyday tasks and activities can get themselves evaluated by licensed mental health professionals (LMHP) in ${stateName} to check the need for emotional support animals.`;
+  const sectionHeading = data.whoQualifiesSectionHeading || "Qualifying Conditions";
+  const icons = conditionIcons(conditions);
+  const photo = `/states/who-qualifies/${data.slug}.webp`;
+
+  return (
+    <section data-section="who-qualifies" className="relative z-10 w-full overflow-hidden px-4 py-16 color-gradient sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+      <span aria-hidden className="pointer-events-none absolute -left-40 top-1/3 size-[520px] rounded-full border border-white/[0.07]" />
+      <span aria-hidden className="pointer-events-none absolute -right-32 -top-32 size-[420px] rounded-full bg-white/[0.03]" />
+
+      <div className="relative mx-auto grid max-w-[1180px] items-center gap-12 lg:grid-cols-[400px_minmax(0,1fr)] lg:gap-16 xl:grid-cols-[440px_minmax(0,1fr)]">
+        <div className="relative mx-auto w-full max-w-[360px] sm:max-w-[400px] lg:max-w-none">
+          <div className="absolute inset-x-6 bottom-6 -top-4 rounded-t-full border border-b-0 border-accent/50" aria-hidden />
+          <div className="relative aspect-[4/5] overflow-hidden rounded-b-[28px] rounded-t-full ring-4 ring-white/10">
+            <Image quality={85} src={photo} alt={`Emotional support animal evaluation in ${stateName}`} fill sizes="(min-width: 1024px) 440px, 90vw" className="object-cover object-[50%_25%]" />
+          </div>
+          <div className="absolute -bottom-5 left-1/2 flex -translate-x-1/2 items-center gap-2.5 whitespace-nowrap rounded-full bg-white px-5 py-3 shadow-[0_14px_30px_-12px_rgba(0,0,0,0.45)]">
+            <span className="flex size-8 items-center justify-center rounded-full bg-accent text-[#163545]">
+              <BadgeCheck aria-hidden className="size-[18px]" strokeWidth={2.2} />
+            </span>
+            <span className="font-sans text-[14px] font-bold text-primary">Licensed clinicians in {stateName}</span>
+          </div>
+        </div>
+
+        <div>
+          <div className="text-center lg:text-left">
+            <div className="font-sans text-[12px] font-extrabold uppercase tracking-[0.16em] text-accent">{sectionHeading}</div>
+            <h2 className="mt-3 font-heading text-[30px] font-bold leading-[38px] text-white sm:text-[38px] sm:leading-[46px] xl:text-[42px] xl:leading-[50px]">{title}</h2>
+            <div className="mx-auto mt-4 max-w-[620px] font-sans text-[16px] leading-[27px] text-white/80 sm:text-[17px] lg:mx-0 [&_a]:text-accent">{renderTextWithLinks(subtitle)}</div>
+          </div>
+
+          <div className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4">
+            {conditions.map((item, idx) => (
+              <div key={item.title} className="group relative overflow-hidden rounded-[20px] bg-white/[0.07] p-5 ring-1 ring-white/[0.12] backdrop-blur-sm transition-colors duration-300 hover:bg-white/[0.11] sm:p-6">
+                <span aria-hidden className="pointer-events-none absolute right-4 top-2 select-none font-heading text-[52px] font-bold leading-none text-accent/[0.18]">
+                  {String(idx + 1).padStart(2, "0")}
+                </span>
+                <span className="relative flex size-11 items-center justify-center rounded-[14px] bg-white">
+                  <Image quality={90} src={icons[idx]} alt="" width={24} height={24} sizes="24px" unoptimized className="size-6 object-contain" />
+                </span>
+                <h3 className="relative mt-4 font-heading !text-[19px] font-bold !leading-[26px] text-white">{item.title}</h3>
+                <div className="relative mt-2 font-sans text-[15px] leading-[24px] text-white/75">{item.description}</div>
+              </div>
+            ))}
+          </div>
+
+          {data.whoQualifiesNote && (
+            <div className="mt-4 rounded-[18px] bg-white p-4 sm:p-5">
+              <CollapsibleNote text={data.whoQualifiesNote} />
+            </div>
           )}
         </div>
       </div>
