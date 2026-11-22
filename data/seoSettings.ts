@@ -11,14 +11,32 @@ export type SheetSeo = {
 };
 
 export const SEO_SETTINGS: Record<string, SheetSeo> = {
+  "/esa-letter-washington-dc/": {
+    "title": "Washington, DC ESA Letter by Licensed Therapists | My ESA Therapist",
+    "description": "",
+    "robots": "full",
+    "ogType": "website"
+  },
+  "/blog/qualifying-conditions/esa-for-adhd/": {
+    "title": "ESA for ADHD: Eligibility & How to Qualify | My ESA Therapist",
+    "description": "",
+    "robots": "full",
+    "ogType": "article"
+  },
+  "/esa-doctors/dr-robert-staaf/": {
+    "title": "Robert Staaf, LCSW | ESA Evaluations | My ESA Therapist",
+    "description": "",
+    "robots": "full",
+    "ogType": "website"
+  },
   "/": {
-    "title": "ESA Evaluations by Licensed Therapists - My ESA Therapist",
+    "title": "ESA Letter Evaluations by Licensed Therapists | My ESA Therapist",
     "description": "Connect with state licensed mental health professionals for legitimate ESA Letter evaluations conducted through secure telehealth.",
     "robots": "image",
     "ogType": "website"
   },
   "/esa-letter-texas/": {
-    "title": "Texas ESA Letter Evaluations by Licensed Therapists - My ESA Therapist",
+    "title": "Texas ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Get evaluated for texas ESA letter by licensed therapists. Secure online assessments with compliant housing documentation.",
     "robots": "full",
     "ogType": "website"
@@ -36,43 +54,43 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
     "ogType": "website"
   },
   "/blog/": {
-    "title": "ESA Blog: Emotional Support Animal Articles & Resources | My ESA Therapist",
+    "title": "ESA Blog: Emotional Support Animal Guides | My ESA Therapist",
     "description": "Explore expert-written articles covering emotional support animals, ESA housing information, therapist evaluations, mental health support, and more.",
     "robots": "image",
     "ogType": "article"
   },
   "/esa-letter-for-housing/": {
-    "title": "ESA Letter for Housing Online | Licensed & FHA-Compliant - My ESA Therapist",
+    "title": "ESA Letter for Housing & Apartments | My ESA Therapist",
     "description": "Facing 'no-pet' housing rules? Get an FHA-compliant ESA letter for housing online from a licensed therapist. Secure, confidential and pay only if approved.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-new-york/": {
-    "title": "ESA Letter Evaluations in New York by Licensed Therapists - My ESA Therapist",
+    "title": "New York ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "My ESA Therapist offers ESA letter evaluations in New York by licensed therapists. Secure online assessments and HUD-compliant ESA letters for housing accommodations.",
     "robots": "image",
     "ogType": "website"
   },
   "/blog/esa-guide/": {
-    "title": "ESA Guide: Emotional Support Animal Information & Resources | My ESA Therapist",
+    "title": "ESA Guides & Resources | My ESA Therapist",
     "description": "Explore emotional support animal laws, housing rights, ESA benefits, therapist evaluations, and expert guidance in one complete ESA resource center.",
     "robots": "image",
     "ogType": "article"
   },
   "/esa-letter-california/": {
-    "title": "California ESA Letter Evaluations by Licensed Therapists | My ESA Therapist",
+    "title": "California ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "My ESA Therapist connects you with California-licensed therapists for ESA letter evaluations. AB 468 compliant, transparent pricing, secure platform.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-online/": {
-    "title": "ESA Letter Online From Licensed Therapist | My ESA Therapist",
+    "title": "Emotional Support Animal (ESA) Letter Online | My ESA Therapist",
     "description": "Get an ESA letter online through a confidential evaluation with a licensed mental health professional. Start your ESA evaluation securely from home with My ESA Therapist.",
     "robots": "full",
     "ogType": "website"
   },
   "/contact-us/": {
-    "title": "Connect With Our Customer Support Team | My ESA Therapist",
+    "title": "Contact My ESA Therapist | Customer Support",
     "description": "Have a question? Our Customer Support team is ready to help you! Feel free to call us at (888) 412-4041 email us at info@myesatherapist.com",
     "robots": "image",
     "ogType": "website"
@@ -84,13 +102,13 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
     "ogType": "website"
   },
   "/video-testimonials/": {
-    "title": "ESA Letter Reviews - Video Reviews | My ESA Therapist",
+    "title": "ESA Letter Video Reviews From Real Clients | My ESA Therapist",
     "description": "Watch real customer video testimonials about their ESA letter experience with My ESA Therapist. See how our process helps you get started quickly and easily.",
     "robots": "full",
     "ogType": "website"
   },
   "/privacy-policy/": {
-    "title": "Privacy Policy | My ESA Therapist Data Protection & Security",
+    "title": "Privacy Policy | My ESA Therapist",
     "description": "Read the Privacy Policy of My ESA Therapist to learn how we collect, use, and protect your personal and health information with secure data practices.",
     "robots": "image",
     "ogType": "article"
@@ -102,25 +120,25 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
     "ogType": "website"
   },
   "/esa-letter-illinois/": {
-    "title": "Illinois ESA Letter Evaluation by Licensed Professionals | My ESA Therapist",
+    "title": "Illinois ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Connect with Illinois licensed therapist for ESA evaluations. HIPAA-compliant telehealth. ESA letters in Illinois issued only when clinically appropriate.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-renewal/": {
-    "title": "ESA Letter Renewal Online by Licensed Therapists | My ESA Therapist",
+    "title": "ESA Letter Renewal Online | My ESA Therapist",
     "description": "Need to renew your ESA letter? My ESA Therapist offers simple online renewals with licensed therapists and quick turnaround.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-colorado/": {
-    "title": "Colorado ESA Letter Evaluation by Licensed Therapists - My ESA Therapist",
+    "title": "Colorado ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Get connected with licensed therapists in Colorado for a online ESA letter evaluation. Start your emotional support animal assessment today.",
     "robots": "image",
     "ogType": "website"
   },
   "/terms-of-use/": {
-    "title": "Terms of Use | My ESA Therapist Legal & Service Policies",
+    "title": "Terms of Use | My ESA Therapist",
     "description": "Read the Terms of Use for My ESA Therapist, including service policies, user responsibilities, payments, and ESA evaluation guidelines.",
     "robots": "image",
     "ogType": "article"
@@ -132,13 +150,13 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
     "ogType": "website"
   },
   "/state/": {
-    "title": "ESA Evaluations by State | My ESA Therapist",
+    "title": "ESA Letter by State: Rules & Evaluations | My ESA Therapist",
     "description": "Explore ESA evaluation options by state. Connect with licensed mental health professionals for compliant emotional support animal assessments.",
     "robots": "full",
     "ogType": "website"
   },
   "/blog/esa-guide/emotional-support-animal/": {
-    "title": "What is an Emotional Support Animal? Benefits & Rights Guide | My ESA Therapist",
+    "title": "What Is an Emotional Support Animal (ESA)? | My ESA Therapist",
     "description": "Learn everything about Emotional Support Animals, including ESA letters, landlord rules, and legal protections.",
     "robots": "full",
     "ogType": "article"
@@ -156,7 +174,7 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
     "ogType": "website"
   },
   "/esa-letter-florida/": {
-    "title": "Florida ESA Letter Evaluations by Licensed Therapists | My ESA Therapist",
+    "title": "Florida ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Get evaluated for a Florida ESA Letter online by licensed therapists. Confidential assessments for qualified individuals. Get evaluated today.",
     "robots": "full",
     "ogType": "website"
@@ -168,7 +186,7 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
     "ogType": "website"
   },
   "/esa-letter-washington/": {
-    "title": "Washington ESA Letter from Licensed Therapists | My ESA Therapist",
+    "title": "Washington ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in Washington? My ESA Therapist connects you with licensed mental health professionals in Washington for online ESA letter evaluation.",
     "robots": "image",
     "ogType": "website"
@@ -180,25 +198,25 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
     "ogType": "website"
   },
   "/blog/esa-guide/hud-guidance-for-emotional-support-animals/": {
-    "title": "HUD ESA Guidelines 2026: What Changed for ESA Housing | My ESA Therapist",
+    "title": "HUD ESA Guidance 2026: What Changed for Housing | My ESA Therapist",
     "description": "Learn what HUD's 2026 guidance changes mean for ESA housing requests, supporting documents, and Fair Housing Act protections.",
     "robots": "full",
     "ogType": "article"
   },
   "/blog/qualifying-conditions/conditions-that-may-qualify-for-an-esa/": {
-    "title": "Which DSM-5 Conditions May Qualifies for an ESA Letter? My ESA Therapist",
+    "title": "Which DSM-5 Conditions Qualify for an ESA Letter? | My ESA Therapist",
     "description": "Explore which DSM-5 conditions may qualify for an ESA letter, including anxiety, depression, PTSD, ADHD, OCD, and other mental health conditions. Learn how eligibility works.",
     "robots": "full",
     "ogType": "article"
   },
   "/blog/qualifying-conditions/": {
-    "title": "ESA Qualifying Conditions: What Conditions May Qualify? | My ESA Therapist",
+    "title": "ESA Qualifying Conditions | My ESA Therapist",
     "description": "Explore mental health conditions that may qualify for an ESA letter, including anxiety, depression, PTSD, ADHD, and panic disorder. Learn about ESA eligibility.",
     "robots": "full",
     "ogType": "article"
   },
   "/blog/qualifying-conditions/esa-for-anxiety/": {
-    "title": "ESA for Anxiety: Eligibility, Benefits & How to Qualify | My ESA Therapist",
+    "title": "ESA for Anxiety: Eligibility & How to Qualify | My ESA Therapist",
     "description": "Wondering if anxiety qualifies for an ESA? Explore eligibility requirements, potential benefits, housing protections, and what you need to qualify.",
     "robots": "image",
     "ogType": "article"
@@ -210,25 +228,25 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
     "ogType": "article"
   },
   "/blog/esa-guide/is-esa-registration-legit/": {
-    "title": "ESA Registration: Is It Legit & Required? | My ESA Therapist",
+    "title": "ESA Registration: Is It Legit or Required? | My ESA Therapist",
     "description": "Is ESA registration required or legitimate? Learn the truth about ESA registries, ID cards, certificates, and what documentation actually matters for housing.",
     "robots": "full",
     "ogType": "article"
   },
   "/blog/esa-guide/esa-letter-sample/": {
-    "title": "ESA Letter Sample: What a Legitimate ESA Letter Looks Like? | My ESA Therapist",
+    "title": "ESA Letter Sample: What a Legit ESA Letter Looks Like | My ESA Therapist",
     "description": "Looking for an ESA letter sample? See what a legitimate ESA letter looks like, what it should include, and what landlords can verify.",
     "robots": "full",
     "ogType": "article"
   },
   "/blog/esa-guide/how-to-verify-an-esa-letter/": {
-    "title": "ESA Letter Verification Checklist for Landlords and Tenants | My ESA Therapist",
+    "title": "Verify an ESA Letter: Landlord & Tenant Checklist | My ESA Therapist",
     "description": "Not sure if an ESA letter is valid? Use this step-by-step checklist to verify ESA documentation, identify warning signs, and understand housing compliance requirements.",
     "robots": "image",
     "ogType": "article"
   },
   "/blog/esa-guide/esa-for-children/": {
-    "title": "ESA for Children: Who Qualifies & Who Signs the Letter",
+    "title": "ESA for Children: Who Qualifies & Who Signs | My ESA Therapist",
     "description": "Learn who qualifies for an ESA for children, who signs the ESA letter, parents' role, qualifying conditions, housing rights, and the evaluation process.",
     "robots": "full",
     "ogType": "article"
@@ -240,217 +258,217 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
     "ogType": "website"
   },
   "/esa-letter-virginia/": {
-    "title": "Virginia ESA Letter Evaluations by Licensed Therapists - My ESA Therapist",
+    "title": "Virginia ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Connect with Virginia licensed therapists for ESA Letter evaluations. HIPAA-compliant telehealth. Virginia ESA letters issued only when clinically appropriate.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-minnesota/": {
-    "title": "Minnesota ESA Letter Evaluation Online | My ESA Therapist",
+    "title": "Minnesota ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Looking for an ESA letter in Minnesota? My ESA Therapist offers online emotional support animal evaluations by licensed professionals.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-delaware/": {
-    "title": "Delaware ESA Letter From Licensed Professionals | My ESA Therapist",
+    "title": "Delaware ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Looking for an ESA letter in Delaware? My ESA Therapist helps you connect with licensed mental health professionals for a convenient online ESA evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-montana/": {
-    "title": "Montana ESA Letter From Licensed Therapist | My ESA Therapist",
+    "title": "Montana ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Looking for a Montana ESA letter? My ESA Therapist connects you with licensed professionals for quick ESA evaluations online. Start Your ESA Evaluation Today.",
     "robots": "image",
     "ogType": "website"
   },
   "/esa-letter-oklahoma/": {
-    "title": "ESA Letter Oklahoma – Secure Online Evaluation | My ESA Therapist",
+    "title": "Oklahoma ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Start your Oklahoma ESA letter evaluation with My ESA Therapist by connecting with licensed mental health professionals through a secure online process.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-south-carolina/": {
-    "title": "South Carolina ESA Letter Evaluation | My ESA Therapist",
+    "title": "South Carolina ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in South Carolina? My ESA Therapist connects you with licensed mental health professionals for a secure and simple online ESA evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-tennessee/": {
-    "title": "Tennessee ESA Letter From Licensed Professional | My ESA Therapist",
+    "title": "Tennessee ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in Tennessee? My ESA Therapist connects you with licensed professionals for a secure and easy online ESA evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-idaho/": {
-    "title": "Idaho ESA Letter Evaluation Online | My ESA Therapist",
+    "title": "Idaho ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in Idaho? My ESA Therapist connects you with licensed mental health professionals for a secure online ESA Letter evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-west-virginia/": {
-    "title": "West Virginia ESA Letter from Licensed Therapists | My ESA Therapist",
+    "title": "West Virginia ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in West Virginia? My ESA Therapist connects you with licensed mental health professionals in West Virginia for online ESA letter evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-maine/": {
-    "title": "Maine ESA Letter from Licensed Therapists | My ESA Therapist",
+    "title": "Maine ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in Maine? My ESA Therapist connects you with licensed mental health professionals in Maine for a secure conline ESA Letter evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-kentucky/": {
-    "title": "Kentucky ESA Letter from Licensed Therapists | My ESA Therapist",
+    "title": "Kentucky ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Looking for an ESA letter in Kentucky? My ESA Therapist connects you with licensed professionals in Kentucky for a secure online esa letter evaluation process.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-wyoming/": {
-    "title": "Wyoming ESA Letter from Licensed Therapists | My ESA Therapist",
+    "title": "Wyoming ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in Wyoming? My ESA Therapist connects you with licensed mental health professionals for a secure and simple online ESA Letter evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-new-mexico/": {
-    "title": "New Mexico ESA Letter From Licensed Therapist | My ESA Therapist",
+    "title": "New Mexico ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in New Mexico? My ESA Therapist connects you with licensed mental health professionals for a secure and simple online ESA evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-rhode-island/": {
-    "title": "Rhode Island ESA Letter Evaluation | My ESA Therapist",
+    "title": "Rhode Island ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Looking for an ESA letter in Rhode Island? My ESA Therapist helps you connect with licensed mental health professionals for esa letter evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-georgia/": {
-    "title": "Georgia ESA Letter Evaluations by Licensed Therapists | My ESA Therapist",
+    "title": "Georgia ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Georgia ESA Letter evaluations conducted by licensed therapists. Transparent pricing, secure telehealth, and compliant ESA documentation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-kansas/": {
-    "title": "Kansas ESA Letter from Licensed Therapists | My ESA Therapist",
+    "title": "Kansas ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in Kansas? My ESA Therapist connects you with licensed mental health professionals for a secure and simple online ESA Letter evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-nevada/": {
-    "title": "Nevada ESA Letter Evaluation Online | My ESA Therapist",
+    "title": "Nevada ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Looking for an ESA letter in Nevada? Start your ESA evaluation by connecting with licensed professionals through My ESA Therapist.",
     "robots": "image",
     "ogType": "website"
   },
   "/esa-letter-michigan/": {
-    "title": "Michigan ESA Letter Online From Licensed Professionals | My ESA Therapist",
+    "title": "Michigan ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in Michigan? My ESA Therapist connects you with licensed mental health professionals for a secure online ESA evaluation. Apply today.",
     "robots": "image",
     "ogType": "website"
   },
   "/esa-letter-arizona/": {
-    "title": "Arizona ESA Letter Evaluations by Licensed Therapists - My ESA Therapist",
+    "title": "Arizona ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Begin a legitimate ESA Letter evaluation in Arizona with licensed therapist. Secure, HIPAA-compliant, and aligned with FHA guidelines.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-arkansas/": {
-    "title": "Arkansas ESA Letter Evaluation by Licensed Therapists - My ESA Therapist",
+    "title": "Arkansas ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Connect with Arkansas licensed therapists for ESA letter evaluations. HIPAA-compliant telehealth. Arkansas ESA letters issued only when clinically appropriate.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-nebraska/": {
-    "title": "Nebraska ESA Letter From Licensed Therapist | My ESA Therapist",
+    "title": "Nebraska ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in Nebraska? My ESA Therapist connects you with licensed mental health professionals for a secure and simple online ESA evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-oregon/": {
-    "title": "ESA Letter Oregon From Licensed Therapists | My ESA Therapist",
+    "title": "Oregon ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Looking for an ESA letter in Oregon? Get evaluated by a state-licensed therapist online. Transparent pricing, no hidden fees.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-south-dakota/": {
-    "title": "South Dakota ESA Letter from Licensed Therapists | My ESA Therapist",
+    "title": "South Dakota ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in South Dakota? My ESA Therapist connects you with licensed mental health professionals for a secure and simple online ESA Letter evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-massachusetts/": {
-    "title": "Massachusetts ESA Letter from Licensed Therapists | My ESA Therapist",
+    "title": "Massachusetts ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in Massachusetts? My ESA Therapist connects you with licensed mental health professionals for a secure and simple online ESA evaluation.",
     "robots": "image",
     "ogType": "website"
   },
   "/esa-letter-utah/": {
-    "title": "Utah ESA Letter From Licensed Therapist | My ESA Therapist",
+    "title": "Utah ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Looking for an ESA letter in Utah? My ESA Therapist helps you connect with licensed mental health professionals for online esa letter evaluation in Utah.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-vermont/": {
-    "title": "Vermont ESA Letter From Licensed Therapists | My ESA Therapist",
+    "title": "Vermont ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in Vermont? My ESA Therapist connects you with licensed mental health professionals for a secure and simple online ESA letter evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-missouri/": {
-    "title": "Missouri ESA Letter Online From Licensed Therapist | My ESA Therapist",
+    "title": "Missouri ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Looking for a Missouri ESA letter? My ESA Therapist connects you with licensed professionals for quick ESA evaluations online. Start your application today.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-connecticut/": {
-    "title": "Connecticut ESA Letter Evaluation by Licensed Therapist - My ESA Therapist",
+    "title": "Connecticut ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Connect with licensed therapist for ESA letter evaluations. HIPAA-compliant telehealth. ESA letter Connecticut issued only when clinically appropriate.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-north-carolina/": {
-    "title": "North Carolina ESA Letter From Licensed Therapist | My ESA Therapist",
+    "title": "North Carolina ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in North Carolina? My ESA Therapist connects you with licensed mental health professionals for a secure online ESA letter evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-alaska/": {
-    "title": "Alaska ESA Letter by Licensed Professionals | My ESA Therapist",
+    "title": "Alaska ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Connect with Alaska licensed therapists for ESA letter evaluations through a secure telehealth platform. Private, professional, and supportive care.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-new-jersey/": {
-    "title": "New Jersey ESA Letter From Licensed Therapist | My ESA Therapist",
+    "title": "New Jersey ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in New Jersey? My ESA Therapist connects you with licensed mental health professionals for a secure and convenient ESA Letter evaluation online.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-wisconsin/": {
-    "title": "Wisconsin ESA Letter from Licensed Professionals | My ESA Therapist",
+    "title": "Wisconsin ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in Wisconsin? My ESA Therapist connects you with licensed mental health professionals for a secure and simple online ESA evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-hawaii/": {
-    "title": "Hawaii ESA Letter from Licensed Therapists | My ESA Therapist",
+    "title": "Hawaii ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in Hawaii? My ESA Therapist connects you with licensed mental health professionals for a secure online ESA Letter evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-north-dakota/": {
-    "title": "North Dakota ESA Letter from Licensed Therapists | My ESA Therapist",
+    "title": "North Dakota ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Looking for an ESA letter in North Dakota? My ESA Therapist helps you connect with licensed mental health professionals for online esa letter evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-doctors/dr-leslie-k-gamble/": {
-    "title": "ESA Evaluations by Leslie K. Gamble, LICSW | My ESA Therapist",
+    "title": "Leslie K. Gamble, LICSW | ESA Evaluations | My ESA Therapist",
     "description": "Get evaluated by Leslie K. Gamble, LICSW, an experienced therapist offering ESA assessments and compassionate mental wellness care.",
     "robots": "image",
     "ogType": "website"
   },
   "/esa-doctors/dr-gaurav-patel/": {
-    "title": "Dr. Gaurav Patel, MD | Family Medicine Physician | My ESA Therapist",
+    "title": "Gaurav Patel, MD: Family Medicine Physician | My ESA Therapist",
     "description": "Consult Dr. Gaurav Patel, MD, a Family Medicine Physician offering professional medical guidance and compassionate support through secure online consultations.",
     "robots": "image",
     "ogType": "website"
@@ -468,67 +486,67 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
     "ogType": "website"
   },
   "/esa-letter-alabama/": {
-    "title": "ESA Letter in Alabama From Licensed Therapists | My ESA Therapist",
+    "title": "Alabama ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Start your ESA letter evaluation with licensed therapist. Secure telehealth process and reliable ESA documentation in Alabama for housing needs.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-virgin-islands/": {
-    "title": "Legitimate Virgin Islands ESA Letter Online: Quick & Seamless Process | My ESA Therapist",
+    "title": "Virgin Islands ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Follow our three-step process to get your ESA letter in Virgin Islands at $99 only. Fill in the form and get evaluated by licensed practitioners on the same day.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-puerto-rico/": {
-    "title": "Get Your Legitimate ESA Letter Online in Puerto Rico: Fast & Easy - My ESA Therapist",
+    "title": "Puerto Rico ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Follow our three-step process to get your ESA letter in Puerto Rico at $99 only. Fill in the form and get evaluated by licensed practitioners on the same day.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-iowa/": {
-    "title": "Iowa ESA Letter From Licensed Professionals | My ESA Therapist",
+    "title": "Iowa ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in Iowa? My ESA Therapist connects you with licensed mental health professionals for emotional support animal evaluation online.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-mississippi/": {
-    "title": "Mississippi ESA Letter From Licensed Therapist | My ESA Therapist",
+    "title": "Mississippi ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Searching for an ESA letter in Mississippi? My ESA Therapist connects you with licensed mental health professionals for online esa letter evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-louisiana/": {
-    "title": "Louisiana ESA Letter From Licensed Professionals | My ESA Therapist",
+    "title": "Louisiana ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in Louisiana? My ESA Therapist connects you with licensed therapists for a secure online ESA evaluation. Start your evaluation today.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-maryland/": {
-    "title": "Maryland ESA Letter Evaluations by Licensed Professionals | My ESA Therapist",
+    "title": "Maryland ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "My ESA Therapist connects Maryland residents with licensed mental health professionals for a simple and secure online ESA letter evaluation. Apply your maryland esa letter today!",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-pennsylvania/": {
-    "title": "Pennsylvania ESA Letter Evaluation by Licensed Therapists | My ESA Therapist",
+    "title": "Pennsylvania ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Start your Pennsylvania ESA Letter evaluation with licensed therapists. Easy online process, secure platform, and valid ESA letters for housing accommodation.",
     "robots": "image",
     "ogType": "website"
   },
   "/esa-letter-ohio/": {
-    "title": "Ohio ESA Letter From Licensed Professionals | My ESA Therapist",
+    "title": "Ohio ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Looking for an ESA letter in Ohio? My ESA Therapist helps you begin your evaluation by connecting you with licensed professionals online.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-new-hampshire/": {
-    "title": "New Hampshire ESA Letter from Licensed Therapists | My ESA Therapist",
+    "title": "New Hampshire ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "Need an ESA letter in New Hampshire? My ESA Therapist connects you with licensed mental health professionals for a secure online ESA Letter evaluation.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-indiana/": {
-    "title": "Indiana ESA Letter Evaluations by Licensed Therapists | My ESA Therapist",
+    "title": "Indiana ESA Letter by Licensed Therapists | My ESA Therapist",
     "description": "My ESA Therapist offers a convenient way for Indiana residents to complete ESA Letter evaluations with licensed mental health professionals online.",
     "robots": "full",
     "ogType": "website"
@@ -564,7 +582,7 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
     "ogType": "website"
   },
   "/disclaimer/": {
-    "title": "Disclaimer | My ESA Therapist",
+    "title": "Medical Disclaimer | My ESA Therapist",
     "description": "Review the My ESA Therapist disclaimer covering website information, educational content, professional services, and important limitations of information provided online.",
     "robots": "image",
     "ogType": "website"
@@ -606,7 +624,7 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
     "ogType": "website"
   },
   "/blog/qualifying-conditions/esa-for-ptsd/": {
-    "title": "ESA for PTSD: Eligibility, Benefits & Housing Protections | My ESA Therapist",
+    "title": "ESA for PTSD: Eligibility & Housing Protections | My ESA Therapist",
     "description": "Wondering if PTSD qualifies for an ESA? Explore how eligibility is determined, how an emotional support animal may help, and what housing protections may be available.",
     "robots": "image",
     "ogType": "article"
@@ -618,7 +636,7 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
     "ogType": "article"
   },
   "/blog/esa-training/prepare-esa-for-rental-housing/": {
-    "title": "How to Prepare Your ESA for Rental Housing? - My ESA Therapist",
+    "title": "How to Prepare Your ESA for Rental Housing | My ESA Therapist",
     "description": "Learn how to prepare your ESA for rental housing with basic obedience, house training, barking control, calm behavior, vaccinations, and proper ESA documentation.",
     "robots": "image",
     "ogType": "article"
