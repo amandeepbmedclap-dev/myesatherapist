@@ -4,7 +4,7 @@ import Image from "next/image";
 const CARDS = [
   { title: "Secure & Compliant", subtitle: "HIPAA-Aligned Platform", icon: "/esa-icons/glyph.svg" },
   { title: "Flexible Evaluations", subtitle: "Phone or Video Sessions", icon: "/esa-icons/icon-18.svg" },
-  { title: "Fast Scheduling", subtitle: "Same-Day Appointments", icon: "/esa-icons/icon-16.svg" },
+  { title: "Fast Scheduling", subtitle: "Quick Appointment Availability", icon: "/esa-icons/icon-16.svg" },
   { title: "Fully Online", subtitle: "No In-Person Visits Required", icon: "/esa-icons/icon-15.svg" },
 ];
 

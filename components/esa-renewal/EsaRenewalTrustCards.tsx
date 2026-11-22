@@ -24,7 +24,7 @@ const CARDS: TrustCard[] = [
   {
     icon: "/esa-icons/icon-16.svg",
     title: "Fast Scheduling",
-    subtitle: "Same-Day Appointments",
+    subtitle: "Quick Appointment Availability",
   },
   {
     icon: "/esa-icons/icon-15.svg",

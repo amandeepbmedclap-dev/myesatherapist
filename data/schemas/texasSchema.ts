@@ -325,7 +325,7 @@ export const texasSchema = {
           "name": "Are Online ESA Letters Valid in Texas?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Online ESA letters are legally valid in Texas as long as they are issued by a state-licensed mental health professional who conducts a proper mental health evaluation before approval.",
+            "text": "Yes. Online ESA letters can be valid in Texas when they are issued by a state-licensed mental health professional who conducts a proper mental health evaluation before approval.",
           },
         },
         {

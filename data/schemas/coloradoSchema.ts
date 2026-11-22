@@ -337,7 +337,7 @@ export const coloradoSchema = {
           "name": "Do landlords in Colorado have the right to refuse an emotional support animal?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Generally no, landlords must accept an ESA with proper documentation.\n\nThey can only refuse if:\n* The animal is unsafe or destructive.\n* The animal is overly disruptive.\n* The ESA paperwork is fake or incomplete.\n\nA legitimate letter protects you from unfair denials and pet fees.",
+            "text": "Generally no. Landlords must consider an ESA request supported by proper documentation.\n\nThey can only refuse if:\n* The animal is unsafe or destructive.\n* The animal is overly disruptive.\n* The ESA paperwork is fake or incomplete.\n\nA legitimate letter protects you from unfair denials and pet fees.",
           },
         },
         {

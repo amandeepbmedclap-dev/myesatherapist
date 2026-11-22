@@ -78,7 +78,7 @@ function FooterContent() {
         </h2>
 
         <p className="text-background body-large text-center max-w-[734px]">
-          A 100% legal platform providing emotional support animal evaluations to those who suffer from any mental or emotional disability — trusted, professional &amp; confidential.
+          A telehealth platform providing emotional support animal evaluations to those who live with a mental or emotional disability. Trusted, professional &amp; confidential.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">

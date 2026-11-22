@@ -115,7 +115,7 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
   },
   "/esa-doctors/": {
     "title": "Licensed Therapists for ESA Letters | My ESA Therapist",
-    "description": "Browse our network of licensed ESA doctors and therapists. Get evaluated online and receive a legally valid emotional support animal letter securely.",
+    "description": "Browse our network of licensed ESA doctors and therapists. Get evaluated online, with an ESA letter issued when clinically appropriate.",
     "robots": "full",
     "ogType": "website"
   },
@@ -493,13 +493,13 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
   },
   "/esa-letter-virgin-islands/": {
     "title": "Virgin Islands ESA Letter by Licensed Therapists | My ESA Therapist",
-    "description": "Follow our three-step process to get your ESA letter in Virgin Islands at $99 only. Fill in the form and get evaluated by licensed practitioners on the same day.",
+    "description": "Follow our three-step process for an ESA letter evaluation in the Virgin Islands for $99. Fill in the form and connect with a licensed professional.",
     "robots": "full",
     "ogType": "website"
   },
   "/esa-letter-puerto-rico/": {
     "title": "Puerto Rico ESA Letter by Licensed Therapists | My ESA Therapist",
-    "description": "Follow our three-step process to get your ESA letter in Puerto Rico at $99 only. Fill in the form and get evaluated by licensed practitioners on the same day.",
+    "description": "Follow our three-step process for an ESA letter evaluation in Puerto Rico for $99. Fill in the form and connect with a licensed professional.",
     "robots": "full",
     "ogType": "website"
   },

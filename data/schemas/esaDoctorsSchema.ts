@@ -71,7 +71,7 @@ export const esaDoctorsSchema = {
       "@id": "https://myesatherapist.com/esa-doctors/#webpage",
       "url": "https://myesatherapist.com/esa-doctors/",
       "name": "Licensed Therapists for ESA Letters | My ESA Therapist",
-      "description": "Browse our network of licensed ESA doctors and therapists. Get evaluated online and receive a legally valid emotional support animal letter securely.",
+      "description": "Browse our network of licensed ESA doctors and therapists. Get evaluated online, with an ESA letter issued when clinically appropriate.",
       "isPartOf": {
         "@id": "https://myesatherapist.com/#website"
       },

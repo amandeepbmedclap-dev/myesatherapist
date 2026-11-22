@@ -2647,7 +2647,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         q: "Do landlords in Colorado have the right to refuse an emotional support animal?",
-        a: "Generally no, landlords must accept an ESA with proper documentation.\n\nThey can only refuse if:\n* The animal is unsafe or destructive.\n* The animal is overly disruptive.\n* The ESA paperwork is fake or incomplete.\n\nA legitimate letter protects you from unfair denials and pet fees.",
+        a: "Generally no. Landlords must consider an ESA request supported by proper documentation.\n\nThey can only refuse if:\n* The animal is unsafe or destructive.\n* The animal is overly disruptive.\n* The ESA paperwork is fake or incomplete.\n\nA legitimate letter protects you from unfair denials and pet fees.",
       },
       {
         q: "Are airlines still allowing ESAs for travelers from Colorado?",
@@ -5207,7 +5207,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     processTitle: "How Does the Illinois ESA Evaluation Process Work?",
-    processSubtitle: "Our ESA evaluation process is designed to be simple, secure, and fully compliant with federal housing guidelines.",
+    processSubtitle: "Our ESA evaluation process is designed to be simple, secure, and aligned with federal housing guidelines.",
     processSteps: [
       {
         number: "01",
@@ -7271,7 +7271,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     benefitsRefundNote: "",
     benefitsTitle: "Benefits of Having an ESA Letter in Louisiana",
-    benefitsSubtitle: "Understand how a legally valid ESA letter Louisiana not only confirms your therapeutic need for support but can also help create a smoother housing experience, giving you greater stability, peace of mind, and the freedom to share your home with your animal.",
+    benefitsSubtitle: "Understand how a properly issued ESA letter Louisiana not only confirms your therapeutic need for support but can also help create a smoother housing experience, giving you greater stability, peace of mind, and the freedom to share your home with your animal.",
     financialBenefitsHeading: "Financial Benefits",
     financialBenefits: [
       {
@@ -8474,7 +8474,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     lawsTitle: "Massachusetts Emotional Support Animal Housing Laws",
-    lawsSubtitle: "The Fair Housing Act protects eligible individuals with disabilities who need an assistance animal as a reasonable accommodation. To guarantee compliance and fair consideration, both tenants and housing providers must be aware of their rights and responsibilities.",
+    lawsSubtitle: "The Fair Housing Act protects eligible individuals with disabilities who need an assistance animal as a reasonable accommodation. To support compliance and fair consideration, both tenants and housing providers must be aware of their rights and responsibilities.",
     card1Title: "Federal Housing Guidelines",
     card1Items: [
       {
@@ -8487,7 +8487,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         title: "Documentation Requirements",
-        description: "When the disability or disability-related need for the assistance animal is not apparent, a housing provider may request reliable supporting documentation from an appropriate medical provider. This paperwork verifies the necessity of an emotional support animal, enabling landlords to confirm the request while guaranteeing adherence to federal housing laws.",
+        description: "When the disability or disability-related need for the assistance animal is not apparent, a housing provider may request reliable supporting documentation from an appropriate medical provider. This paperwork verifies the necessity of an emotional support animal, enabling landlords to confirm the request in line with federal housing laws.",
       },
     ],
     card2Title: "Housing Provider Roles & Responsibilities",
@@ -8527,11 +8527,11 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         title: "Legitimate Provider-Client Relationship",
-        description: "In order to guarantee that the recommendation is founded on a careful examination of the client’s mental health history and present symptoms, the expert must develop an excellent connection with the client.",
+        description: "To help ensure that the recommendation is founded on a careful examination of the client’s mental health history and present symptoms, the expert must develop an excellent connection with the client.",
       },
       {
         title: "Compliance with Legal Standards",
-        description: "To guarantee that the letter is legally recognized and safeguards the resident’s housing rights, ESA documentation must adhere to federal and state regulations, including the Fair Housing Act.",
+        description: "To help ensure that the letter is legally recognized and supports the resident’s housing rights, ESA documentation must adhere to federal and state regulations, including the Fair Housing Act.",
       },
     ],
     psdVsEsaTitle: "Psychiatric Service Dogs vs. Emotional Support Animals in Massachusetts",
@@ -12170,7 +12170,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         q: "Are Online ESA Letters Valid in Texas?",
-        a: "Yes. Online ESA letters are legally valid in Texas as long as they are issued by a state-licensed mental health professional who conducts a proper mental health evaluation before approval.",
+        a: "Yes. Online ESA letters can be valid in Texas when they are issued by a state-licensed mental health professional who conducts a proper mental health evaluation before approval.",
       },
       {
         q: "How Long Is ESA Documentation Typically Valid in Texas?",
@@ -12802,7 +12802,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         title: "Protection from Housing Penalties",
-        description: "Tenants in Wisconsin are protected from penalties or eviction due to housing pet restrictions by having an ESA letter. When negotiating rental agreements and lease duties, this legal protection guarantees that people with verified emotional support requirements won’t face unforeseen fines or legal fees, giving them both financial security and peace of mind.",
+        description: "Tenants in Wisconsin are protected from penalties or eviction due to housing pet restrictions by having an ESA letter. When negotiating rental agreements and lease duties, this legal protection helps protect people with verified emotional support requirements from unforeseen fines or legal fees, giving them both financial security and peace of mind.",
         icon: "/states/california-benefits-workplaceconsideration.svg",
       },
     ],
@@ -12845,7 +12845,7 @@ export const STATES_DATA: Record<string, StateData> = {
     card2Items: [
       {
         title: "Review ESA Requests Fairly",
-        description: "ESA requests must be thoroughly and honestly reviewed by housing providers. They should refrain from drawing conclusions and take into account reliable proof from a certified mental health practitioner. To guarantee that renters with valid demands are treated fairly and equally, each request should be considered separately.",
+        description: "ESA requests must be thoroughly and honestly reviewed by housing providers. They should refrain from drawing conclusions and take into account reliable proof from a certified mental health practitioner. To help ensure that renters with valid demands are treated fairly and equally, each request should be considered separately.",
       },
       {
         title: "Avoid Unnecessary Barriers",
@@ -12869,7 +12869,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         title: "Established Professional Relationship",
-        description: "Only after a genuine provider-client connection has been established could an ESA letter be issued. This guarantees that the advice is not based on a quick survey or an automatic web procedure, but rather on a careful, customized evaluation.",
+        description: "Only after a genuine provider-client connection has been established could an ESA letter be issued. This helps ensure that the advice is not based on a quick survey or an automatic web procedure, but rather on a careful, customized evaluation.",
       },
       {
         title: "Documentation That Meets Federal Housing Law",
@@ -14432,7 +14432,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     legalNotice: "Under the Fair Housing Act, emotional support animals are permitted in New Mexico homes as a reasonable accommodation for those with qualifying disabilities. Since the Americans with Disabilities Act does not recognize ESAs as service animals, they are generally not permitted in restaurants, shops, and other public areas where dogs are forbidden.",
     scamsTitle: "ESA Letters in New Mexico: Truths and Misunderstandings",
-    scamsSubtitle: "Residents of New Mexico can steer clear of fraudulent ads and suspicious online services by being aware of how emotional support animal (ESA) regulations operate under federal law. Understanding the appropriate legal requirements guarantees that documentation complies with the Fair Housing Act’s housing protections.",
+    scamsSubtitle: "Residents of New Mexico can steer clear of fraudulent ads and suspicious online services by being aware of how emotional support animal (ESA) regulations operate under federal law. Understanding the appropriate legal requirements helps ensure that documentation complies with the Fair Housing Act’s housing protections.",
     scamsAlertTitle: "Important Notice: No Official ESA Registry Exists",
     scamsAlertText: "There isn’t a state-approved ESA database in New Mexico, nor a government-approved registry for emotional support animals. Websites that claim immediate approval or sell ID cards, certificates, or “registrations” do not offer legally acceptable proof.",
     scamsWhatYouNeedTitle: "What Is Really Required for a New Mexico ESA Letter",
@@ -15202,7 +15202,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         title: "Maintain Equal Housing Opportunities",
-        description: "Landlords are required to guarantee that people seeking ESA accommodations have equitable access to housing, free from prejudice or needless obstacles because of their emotional support animal.",
+        description: "Landlords are required to ensure that people seeking ESA accommodations have equitable access to housing, free from prejudice or needless obstacles because of their emotional support animal.",
       },
       {
         title: "Assess Safety and Property Concerns",

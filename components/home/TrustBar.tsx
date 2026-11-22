@@ -7,7 +7,7 @@ export function TrustBar() {
     {
       icon: ShieldCheck,
       title: "Fair Housing Act",
-      subtitle: "100% HUD Compliant Letters",
+      subtitle: "Aligned With Federal Guidance",
     },
     {
       icon: Award,
@@ -17,7 +17,7 @@ export function TrustBar() {
     {
       icon: HeartHandshake,
       title: "100% Money-Back",
-      subtitle: "Risk-Free If Not Approved",
+      subtitle: "Full Refund If Not Approved",
     },
     {
       icon: Lock,

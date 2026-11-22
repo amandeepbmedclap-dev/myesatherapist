@@ -586,7 +586,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       "Emotional support animals may qualify for reasonable housing accommodations under applicable federal and Tennessee fair housing laws. However, ESAs do not receive the same public access rights as trained service animals under the Americans with Disabilities Act (ADA). Under the Air Carrier Access Act regulations, airlines are not required to recognize emotional support animals as service animals and may treat them as pets under their applicable policies. Travelers should review airline requirements before flying.",
     scamsTitle: "ESA Letters in Tennessee: Facts vs. Common Misconceptions",
     scamsSubtitle:
-      "Understanding how emotional support animal (ESA) rules operate under federal regulations can help citizens of Tennessee safeguard themselves against misleading promises and untrustworthy online businesses. Understanding the appropriate legal framework makes it easier to guarantee that documentation complies with the Fair Housing Act's housing standards.",
+      "Understanding how emotional support animal (ESA) rules operate under federal regulations can help citizens of Tennessee safeguard themselves against misleading promises and untrustworthy online businesses. Understanding the appropriate legal framework makes it easier to make sure documentation complies with the Fair Housing Act's housing standards.",
     scamsWhatYouNeedTitle: "What You Actually Need",
     scamsWhatYouNeedItems: [
       {
@@ -597,7 +597,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       {
         title: "Legitimate Therapeutic Relationship",
         description:
-          "After a legitimate provider-client relationship has been established, the ESA letter must be issued, guaranteeing that the recommendation has been established on a personalized assessment rather than a quick or automated screening procedure.",
+          "After a legitimate provider-client relationship has been established, an ESA letter may be issued when clinically appropriate, so the recommendation is based on a personalized assessment rather than a quick or automated screening procedure.",
       },
       {
         title: "Documentation Consistent with Federal Housing Standards",

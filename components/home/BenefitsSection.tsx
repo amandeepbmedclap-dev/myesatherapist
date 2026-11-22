@@ -101,7 +101,7 @@ export function BenefitsSection() {
 
                 <div className="pt-6 mt-6 border-t border-slate-200/60 flex items-center gap-2 text-xs font-bold text-[#0F5B4C]">
                   <CheckCircle2 className="w-4 h-4" />
-                  <span>Guaranteed with official letter</span>
+                  <span>May apply with an ESA letter</span>
                 </div>
               </div>
             );

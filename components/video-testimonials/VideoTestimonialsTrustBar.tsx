@@ -20,9 +20,9 @@ const ITEMS = [
   },
   {
     src: "/video-testimonial/video-testimonial-trustsection-acceptancerate.webp",
-    alt: "Acceptance Rate",
+    alt: "Money-Back Guarantee",
     value: "100%",
-    label: "Acceptance Rate",
+    label: "Money-Back Guarantee",
     iconClass: "w-[68px] h-[68px] sm:w-[84px] sm:h-[84px]",
   },
 ] as const;
