@@ -28,8 +28,8 @@ const manrope = localFont({
     { path: "../fonts/manrope-800.woff2", weight: "800", style: "normal" },
   ],
   variable: "--font-sans",
-  display: "block",
-  adjustFontFallback: false,
+  display: "swap",
+  adjustFontFallback: "Arial",
   preload: true,
 });
 
@@ -39,8 +39,8 @@ const playfair = localFont({
     { path: "../fonts/playfair-display-700.woff2", weight: "700", style: "normal" },
   ],
   variable: "--font-heading",
-  display: "block",
-  adjustFontFallback: false,
+  display: "swap",
+  adjustFontFallback: "Times New Roman",
   preload: true,
 });
 
