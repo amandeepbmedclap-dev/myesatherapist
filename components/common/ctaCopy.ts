@@ -13,7 +13,7 @@ export const CTA = {
   esa: "Start My ESA Evaluation",
   esaShort: "Start My Evaluation",
   psd: "Start My PSD Evaluation",
-  combo: "Start My ESA + PSD Evaluation",
+  combo: "Start My ESA & PSD Evaluation",
   renew: "Renew My ESA Letter",
   book: "Book My Evaluation",
   checker: "Check My Eligibility, Free",

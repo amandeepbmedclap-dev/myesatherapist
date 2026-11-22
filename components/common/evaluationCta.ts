@@ -42,6 +42,7 @@ const EVALUATION_CTA_LABELS = new Set([
   "start my evaluation",
   "start my psd evaluation",
   "start my esa + psd evaluation",
+  "start my esa & psd evaluation",
   "renew my esa letter",
   "book my evaluation",
 ]);

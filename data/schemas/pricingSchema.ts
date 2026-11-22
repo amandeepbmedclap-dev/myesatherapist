@@ -186,7 +186,7 @@ export const pricingSchema = {
     {
       "@type": "Service",
       "@id": "https://myesatherapist.com/pricing/#esa-letter-id",
-      "name": "ESA Letter + PSD Letter Combo",
+      "name": "ESA & PSD Letters",
       "description": "Everything in the ESA Letter package, plus a PSD letter when a licensed clinician determines it is appropriate. ID cards are not included.",
       "serviceType": "Online ESA and PSD Letter Evaluation (Telehealth)",
       "provider": {
@@ -203,7 +203,7 @@ export const pricingSchema = {
     {
       "@type": "Offer",
       "@id": "https://myesatherapist.com/pricing/#offer-esa-letter-id",
-      "name": "ESA Letter + PSD Letter Combo",
+      "name": "ESA & PSD Letters",
       "price": "179",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
@@ -223,7 +223,7 @@ export const pricingSchema = {
     {
       "@type": "ItemList",
       "@id": "https://myesatherapist.com/pricing/#esa-letter-id-features",
-      "name": "What's Included: ESA Letter + PSD Letter Combo",
+      "name": "What's Included: ESA & PSD Letters",
       "itemListElement": [
         {
           "@type": "ListItem",

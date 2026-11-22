@@ -54,7 +54,7 @@ export const PLANS: Record<PlanType, PlanSet> = {
         mobileButtonText: "Start ESA Evaluation",
       },
       {
-        title: "ESA + PSD Letters",
+        title: "ESA & PSD Letters",
         description:
           "Professional ESA and PSD letters from a state-licensed mental health professional for housing and service dog needs.",
         price: "$179",
@@ -68,7 +68,7 @@ export const PLANS: Record<PlanType, PlanSet> = {
           "PSD letter if clinically approved",
           "Secure email delivery",
         ],
-        buttonText: "Apply for ESA + PSD Letter",
+        buttonText: "Start My ESA & PSD Evaluation",
         mobileButtonText: "Apply Now",
       },
       {
@@ -110,7 +110,7 @@ export const PLANS: Record<PlanType, PlanSet> = {
         mobileButtonText: "Start ESA Evaluation",
       },
       {
-        title: "ESA + PSD Letters",
+        title: "ESA & PSD Letters",
         description:
           "Professional ESA and PSD letters from a state-licensed mental health professional for housing and service dog needs.",
         price: "$179",
@@ -124,7 +124,7 @@ export const PLANS: Record<PlanType, PlanSet> = {
           "PSD letter if clinically approved",
           "Secure email delivery",
         ],
-        buttonText: "Apply for ESA + PSD Letter",
+        buttonText: "Start My ESA & PSD Evaluation",
         mobileButtonText: "Apply Now",
       },
       {
