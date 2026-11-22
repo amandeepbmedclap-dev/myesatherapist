@@ -21,7 +21,7 @@ export function EsaOnlineHero({
   imageMobile,
   imageTablet,
   showStats = false,
-  refundText = "Not approved after your ESA evaluation? You get a full refund!.",
+  refundText = "Not approved after your ESA evaluation? You get a full refund!",
   desktopHeight = 723,
 }: {
   title?: string;

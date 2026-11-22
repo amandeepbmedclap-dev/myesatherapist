@@ -167,7 +167,7 @@ export function HeroSection() {
           </div>
 
           <p className="body-small mt-4 max-w-[280px] text-center sm:max-w-none lg:text-left">
-            Not approved after your ESA evaluation? You get a full refund!.
+            Not approved after your ESA evaluation? You get a full refund!
           </p>
 
           <div className="mt-6 flex w-full max-w-[360px] flex-col items-center gap-3 sm:max-w-none lg:items-start">

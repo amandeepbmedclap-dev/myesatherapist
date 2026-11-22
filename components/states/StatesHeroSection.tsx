@@ -154,7 +154,7 @@ export function StatesHeroSection() {
         </CtaButton>
       </div>
       <p className="body-small text-body-text mt-3">
-        Not approved after your ESA evaluation? You get a full refund!.
+        Not approved after your ESA evaluation? You get a full refund!
       </p>
       <div className="mt-5 flex flex-col items-center gap-3 lg:items-start">
         <HeroStatPills stats={STATS} className="sm:hidden" />
