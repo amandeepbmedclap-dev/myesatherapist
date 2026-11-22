@@ -136,11 +136,13 @@ export function StateWhoQualifiesV2({ data }: { data: StateData }) {
           <div className="body-large mx-auto mt-4 max-w-[640px] text-body-text lg:mx-0">{renderTextWithLinks(subtitle)}</div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[420px] lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:max-w-none lg:self-stretch">
+        <div className="relative mx-auto w-full max-w-[420px] lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:flex lg:max-w-none lg:items-center lg:self-stretch">
+          <div className="relative w-full lg:h-full lg:max-h-[820px]">
           <span aria-hidden className="absolute -left-3 -top-3 hidden size-24 rounded-[24px] bg-accent/30 sm:block lg:-left-4 lg:-top-4 lg:size-28" />
           <span aria-hidden className="absolute -bottom-3 -right-3 hidden size-32 rounded-[28px] color-gradient opacity-90 sm:block lg:-bottom-4 lg:-right-4 lg:size-40" />
           <div className="relative aspect-[4/3] overflow-hidden rounded-[26px] bg-cream-100 shadow-[0_30px_60px_-34px_rgba(26,61,79,0.6)] sm:aspect-[4/5] lg:aspect-auto lg:h-full lg:min-h-[520px]">
             <Image quality={85} src={photo} alt="A person relaxing at home with their pet" fill sizes="(min-width: 1024px) 420px, 92vw" className="object-cover" style={{ objectPosition: `${WHO_QUALIFIES_FOCUS[data.slug] ?? 50}% 25%` }} />
+          </div>
           </div>
         </div>
 
