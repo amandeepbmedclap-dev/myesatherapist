@@ -3,7 +3,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, MapPin, Video, Brain } from "lucide-react";
 import { CtaButton } from "@/components/common/CtaButton";
 
 function LinkedinIcon({ className }: { className?: string }) {
@@ -102,47 +102,62 @@ const defaultTherapists: Therapist[] = [
   },
 ];
 
-function StatBadge({
-  label,
-  value,
-  icon,
-}: {
-  label: string;
-  value: string;
-  icon?: string;
-}) {
-  const iconSrc =
-    icon ||
-    (label.toLowerCase().includes("licensed")
-      ? "/esa-icons/icon-37.svg"
-      : label.toLowerCase().includes("evaluation") || label.toLowerCase().includes("method")
-      ? "/esa-icons/icon-15.svg"
-      : label.toLowerCase().includes("focus") || label.toLowerCase().includes("area")
-      ? "/esa-icons/icon.svg"
-      : "/common/therapist-section-badge.svg");
-
+function SpecRow({ icon, label, value }: { icon: React.ReactNode; label: string; value: string }) {
   return (
-    <div className="hover-card hover-card-flat relative flex-1 min-w-0 rounded-[7.6px] bg-accent pt-[3px] shadow-[0px_0.76px_1.52px_rgba(0,0,0,0.15)] flex flex-col">
-      <div className="bg-white rounded-[7.6px] pt-[20px] sm:pt-[22px] pb-2 px-1 sm:px-2 text-center flex-1 flex flex-col justify-start items-center relative shadow-[0px_0.76px_1.52px_rgba(0,0,0,0.15)] min-h-[62px] sm:min-h-[66px]">
-        <div className="hover-badge absolute -top-[15px] sm:-top-[16px] left-1/2 -translate-x-1/2 w-[30px] h-[30px] sm:w-[32px] sm:h-[32px] rounded-full bg-white shadow-[0px_0.95px_1.89px_rgba(0,0,0,0.25)] flex items-center justify-center z-10 border border-background">
-          <Image quality={90}
-            src={iconSrc}
-            alt={label}
-            width={20}
-          sizes="20px"
-            height={20}
-            unoptimized
-            className="icon-sm object-contain"
-          />
-        </div>
-        <div className="body-small text-color-gradient truncate w-full">
-          {label}
-        </div>
-        <div className="body-small truncate w-full">
-          {value}
-        </div>
+    <div className="flex items-start gap-3 py-2.5">
+      <span className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-full bg-cream-100 text-primary">{icon}</span>
+      <div className="min-w-0">
+        <div className="font-sans text-[12px] font-bold uppercase leading-4 tracking-[0.08em] text-[#8A6A12]">{label}</div>
+        <div className="font-sans text-[15px] font-semibold leading-[22px] text-primary">{value}</div>
       </div>
     </div>
+  );
+}
+
+function ClinicianCard({ t }: { t: Therapist }) {
+  return (
+    <article className="group flex h-full flex-col overflow-hidden rounded-[26px] bg-white shadow-[0_18px_40px_-28px_rgba(26,61,79,0.55)] ring-1 ring-line-200 transition-shadow duration-300 hover:shadow-[0_24px_50px_-26px_rgba(26,61,79,0.6)]">
+      <div className="relative aspect-[5/4] overflow-hidden color-gradient">
+        <span aria-hidden className="absolute left-1/2 top-[14%] size-[78%] -translate-x-1/2 rounded-full border border-accent/40" />
+        <span aria-hidden className="absolute left-1/2 top-[22%] size-[62%] -translate-x-1/2 rounded-full bg-white/[0.06]" />
+        <Image
+          quality={90}
+          src={getTherapistAvatar(t)}
+          alt={t.name}
+          fill
+          sizes="(min-width: 1024px) 360px, 80vw"
+          className="object-contain object-bottom pt-5 transition-transform duration-500 group-hover:scale-[1.03]"
+        />
+        <a
+          href={getTherapistLinkedin(t)}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${t.name} LinkedIn Profile`}
+          className="absolute right-4 top-4 flex size-9 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-primary"
+        >
+          <LinkedinIcon className="size-4" />
+        </a>
+      </div>
+
+      <div className="flex flex-1 flex-col px-6 pb-6 pt-5">
+        <h3 className="font-heading text-[24px] font-bold leading-[1.2] text-primary">{t.name}</h3>
+        <div className="mt-1 font-sans text-[15px] font-semibold leading-[22px] text-[#1D6E72]">{t.title}</div>
+        <div className="mt-3 font-sans text-[15px] leading-[24px] text-body-text">{t.bio}</div>
+
+        <div className="mt-4 divide-y divide-line-200 border-y border-line-200">
+          <SpecRow icon={<MapPin aria-hidden className="size-4" />} label="Licensed In" value={t.licensedIn} />
+          <SpecRow icon={<Video aria-hidden className="size-4" />} label="Evaluation Method" value={t.method || "Video or Phone"} />
+          <SpecRow icon={<Brain aria-hidden className="size-4" />} label="Focus Areas" value={t.focus} />
+        </div>
+
+        <Link
+          href={getTherapistProfileHref(t)}
+          className="mt-auto inline-flex items-center gap-2 pt-5 font-sans text-[15px] font-bold text-primary underline-offset-4 hover:underline"
+        >
+          View Profile <ArrowRight aria-hidden className="size-4 transition-transform group-hover:translate-x-0.5" />
+        </Link>
+      </div>
+    </article>
   );
 }
 
@@ -166,296 +181,84 @@ export function TherapistsSection({
   className = "",
 }: TherapistsSectionProps) {
   const therapists = therapistsList && therapistsList.length > 0 ? therapistsList : defaultTherapists;
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [cardsPerView, setCardsPerView] = useState(2);
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(0);
+  const railRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const updateCardsPerView = () => {
-      setCardsPerView(window.innerWidth < 640 ? 1 : 2);
-    };
-    updateCardsPerView();
-    window.addEventListener("resize", updateCardsPerView);
-    return () => window.removeEventListener("resize", updateCardsPerView);
-  }, []);
-
-  const maxIndex = Math.max(0, therapists.length - cardsPerView);
-
-  const handleScroll = () => {
-    if (!scrollRef.current) return;
-    const el = scrollRef.current;
-    const card = el.querySelector("div[data-card]") as HTMLElement;
-    if (!card) return;
-    const cardWidth = card.clientWidth;
-    const style = window.getComputedStyle(el);
-    const gap = parseFloat(style.columnGap || style.gap) || 24;
-    const scrollLeft = el.scrollLeft;
-    const newIdx = Math.round(scrollLeft / (cardWidth + gap));
-    setActiveIndex(Math.min(Math.max(0, newIdx), maxIndex));
-  };
-
-  const scrollToSlide = (idx: number) => {
-    if (!scrollRef.current) return;
-    const el = scrollRef.current;
-    const card = el.querySelector("div[data-card]") as HTMLElement;
-    if (!card) return;
-    const cardWidth = card.clientWidth;
-    const style = window.getComputedStyle(el);
-    const gap = parseFloat(style.columnGap || style.gap) || 24;
-    const clampedIdx = Math.min(Math.max(0, idx), maxIndex);
-    el.scrollTo({
-      left: clampedIdx * (cardWidth + gap),
-      behavior: "smooth",
-    });
-    setActiveIndex(clampedIdx);
-  };
-
-  const handlePrev = () => {
-    scrollToSlide(activeIndex - 1);
-  };
-
-  const handleNext = () => {
-    scrollToSlide(activeIndex + 1);
-  };
-
-  useEffect(() => {
-    const el = scrollRef.current;
+    const el = railRef.current;
     if (!el) return;
-    el.addEventListener("scroll", handleScroll, { passive: true });
-    return () => el.removeEventListener("scroll", handleScroll);
-  }, [maxIndex]);
+    const onScroll = () => {
+      const card = el.querySelector<HTMLElement>("[data-card]");
+      if (!card) return;
+      const gap = parseFloat(getComputedStyle(el).columnGap) || 16;
+      setActive(Math.min(therapists.length - 1, Math.round(el.scrollLeft / (card.offsetWidth + gap))));
+    };
+    el.addEventListener("scroll", onScroll, { passive: true });
+    return () => el.removeEventListener("scroll", onScroll);
+  }, [therapists.length]);
+
+  const goTo = (i: number) => {
+    const el = railRef.current;
+    const card = el?.querySelectorAll<HTMLElement>("[data-card]")[i];
+    if (el && card) el.scrollTo({ left: card.offsetLeft - el.offsetLeft, behavior: "smooth" });
+  };
+
+  const noteMatch = licensureNote?.match(/^A Note on Licensure Levels:?/i)?.[0];
+  const gridCols = therapists.length >= 3 ? "lg:grid-cols-3 lg:max-w-[1180px]" : "lg:grid-cols-2 lg:max-w-[800px]";
 
   return (
     <section className={`py-16 lg:py-20 xl:py-24 ${bgColor} overflow-hidden ${className}`}>
-      <div className="max-w-[1279px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8 lg:mb-10 space-y-3 max-w-[852px] mx-auto">
-          <h2 className="heading-h2 capitalize">
-            {title}
-          </h2>
-          <p className="body-large max-w-[813px] mx-auto">
-            {subtitle}
-          </p>
+      <div className="mx-auto max-w-[1279px] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto mb-10 max-w-[852px] space-y-3 text-center lg:mb-12">
+          <h2 className="heading-h2 capitalize">{title}</h2>
+          <p className="body-large mx-auto max-w-[813px]">{subtitle}</p>
         </div>
 
-        {licensureNote && (
-          <div className="max-w-[950px] mx-auto mb-10 p-4 sm:p-4.5 rounded-[16px] bg-background border border-accent/30 text-center">
-            <p className="body-small leading-relaxed">
-              {/^A Note on Licensure Levels:?/i.test(licensureNote) ? (
-                <>
-                  <strong className="font-bold text-primary">
-                    {licensureNote.match(/^A Note on Licensure Levels:?/i)?.[0]}
-                  </strong>{" "}
-                  {licensureNote.replace(/^A Note on Licensure Levels:?\s*/i, "")}
-                </>
-              ) : (
-                licensureNote
-              )}
-            </p>
-          </div>
-        )}
-
-        <div className="relative flex items-center justify-center gap-3 sm:gap-4 lg:gap-5 w-full">
-          <button
-            type="button"
-            onClick={handlePrev}
-            disabled={activeIndex === 0}
-            aria-label="Previous therapist"
-            className={`hidden sm:flex w-11 h-11 xl:w-12 xl:h-12 rounded-full bg-background items-center justify-center shrink-0 shadow-[0_2px_8px_rgba(0,0,0,0.08)] transition-all ${
-              activeIndex === 0
-                ? "opacity-35 cursor-not-allowed"
-                : "hover:bg-accent hover:text-primary hover:shadow-[0_4px_12px_rgba(232,185,44,0.3)] hover:scale-105 cursor-pointer"
-            }`}
-          >
-            <ChevronLeft className="w-5 h-5 text-primary" />
-          </button>
-
-          <div className="w-full max-w-[1070px] overflow-hidden">
-            <div
-              ref={scrollRef}
-              className="flex items-stretch gap-4 sm:gap-6 lg:gap-8 xl:gap-[32px] overflow-x-auto snap-x snap-mandatory scrollbar-none pb-6 pt-3 px-0 sm:px-1"
-              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-            >
-              {therapists.map((t, idx) => {
-                return (
-                  <div
-                    key={t.id ?? `${t.name}-${idx}`}
-                    data-card
-                    onClick={() => scrollToSlide(idx)}
-                    className="hover-card hover-card-flat snap-start shrink-0 w-full min-w-full sm:min-w-0 sm:w-[calc(50%-12px)] lg:w-[519px] lg:min-h-[355px] rounded-[30px] overflow-hidden flex flex-col justify-between cursor-pointer border-2 border-accent bg-white shadow-[0px_1px_4px_rgba(0,0,0,0.15)]"
-                  >
-                    <div
-                      className="px-4 sm:px-6 py-3.5 sm:py-4 xl:h-[92px] flex items-center justify-between gap-3 sm:gap-4 color-gradient"
-                    >
-                      <div className="flex items-center gap-3 sm:gap-3.5 min-w-0">
-                        <div className="hover-photo w-[56px] h-[56px] sm:w-[67px] sm:h-[67px] rounded-full border-[2.82px] border-accent overflow-hidden shrink-0 relative bg-white/10 shadow-sm">
-                          <Image
-                            quality={90}
-                            src={getTherapistAvatar(t)}
-                            alt={t.name}
-                            fill
-                            sizes="67px"
-                            className="object-cover object-center"
-                          />
-                        </div>
-                        <div className="min-w-0">
-                          <h3 className="heading-h3 text-background sm:truncate">
-                            {t.name}
-                          </h3>
-                          <div className="text-accent body-large mt-0.5 whitespace-normal sm:truncate">
-                            {t.title}
-                          </div>
-                        </div>
-                      </div>
-
-                      <a
-                        href={getTherapistLinkedin(t)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        aria-label={`${t.name} LinkedIn Profile`}
-                        className="w-8 h-8 rounded-full bg-accent hover:bg-[#dba81f] flex items-center justify-center shrink-0 shadow-sm transition-transform hover:scale-105 cursor-pointer"
-                      >
-                        <LinkedinIcon className="w-4 h-4 text-primary" />
-                      </a>
-                    </div>
-
-                    <div className="p-5 sm:p-6 bg-white space-y-5 flex-1 flex flex-col justify-between">
-                      <p className="body-text">
-                        {t.bio}
-                      </p>
-
-                      <div className="hidden sm:flex items-stretch gap-2 sm:gap-3.5 pt-3 sm:pt-3.5">
-                        <StatBadge
-                          label="Licensed In"
-                          value={t.licensedIn}
-                          icon="/esa-icons/icon-37.svg"
-                        />
-                        <StatBadge
-                          label="Evaluation Method"
-                          value={t.method || "Video or Phone"}
-                          icon="/esa-icons/icon-15.svg"
-                        />
-                        <StatBadge
-                          label="Focus Areas"
-                          value={t.focus}
-                          icon="/esa-icons/icon.svg"
-                        />
-                      </div>
-
-                      <div className="pt-2 flex justify-center">
-                        <Link
-                          href={getTherapistProfileHref(t)}
-                          onClick={(e) => e.stopPropagation()}
-                          className="cta3d cta3d--outline sm:hidden inline-flex h-11 min-w-[168px] items-center justify-center px-8 font-sans text-[16px] leading-5"
-                        >
-                          View Profile
-                        </Link>
-                        <div className="hidden sm:block">
-                          <CtaButton
-                            href={getTherapistProfileHref(t)}
-                            variant="accent"
-                            className="w-[192px]"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            View Profile
-                          </CtaButton>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+        <div
+          ref={railRef}
+          className={`-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-4 px-4 pb-4 pt-1 sm:-mx-6 sm:scroll-px-6 sm:px-6 lg:mx-auto lg:grid lg:snap-none lg:gap-7 lg:overflow-visible lg:px-0 ${gridCols}`}
+          style={{ scrollbarWidth: "none" }}
+        >
+          {therapists.map((t, idx) => (
+            <div key={t.id ?? `${t.name}-${idx}`} data-card className="w-[84%] shrink-0 snap-start sm:w-[46%] lg:w-auto">
+              <ClinicianCard t={t} />
             </div>
-          </div>
-
-          <button
-            type="button"
-            onClick={handleNext}
-            disabled={activeIndex >= maxIndex}
-            aria-label="Next therapist"
-            className={`hidden sm:flex w-11 h-11 xl:w-12 xl:h-12 rounded-full bg-background items-center justify-center shrink-0 shadow-[0_2px_8px_rgba(0,0,0,0.08)] transition-all ${
-              activeIndex >= maxIndex
-                ? "opacity-35 cursor-not-allowed"
-                : "hover:bg-accent hover:text-primary hover:shadow-[0_4px_12px_rgba(232,185,44,0.3)] hover:scale-105 cursor-pointer"
-            }`}
-          >
-            <ChevronRight className="w-5 h-5 text-primary" />
-          </button>
-        </div>
-
-        <div className="flex sm:hidden items-center justify-center gap-4 pt-4">
-          <button
-            type="button"
-            onClick={handlePrev}
-            disabled={activeIndex === 0}
-            aria-label="Previous therapist"
-            className={`w-9 h-9 rounded-full bg-background flex items-center justify-center shadow-xs transition-opacity ${
-              activeIndex === 0 ? "opacity-30 cursor-not-allowed" : "hover:bg-accent cursor-pointer"
-            }`}
-          >
-            <ChevronLeft className="w-4 h-4 text-primary" />
-          </button>
-
-          <div className="flex items-center gap-2">
-            {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => scrollToSlide(idx)}
-                aria-label={`Go to slide ${idx + 1}`}
-                className="w-7 h-7 flex items-center justify-center cursor-pointer"
-              >
-                <span
-                  className={`block transition-all duration-300 rounded-full ${
-                    idx === activeIndex
-                      ? "w-5 h-2 bg-[#184652]"
-                      : "w-2 h-2 bg-[#CBD5E1]"
-                  }`}
-                />
-              </button>
-            ))}
-          </div>
-
-          <button
-            type="button"
-            onClick={handleNext}
-            disabled={activeIndex >= maxIndex}
-            aria-label="Next therapist"
-            className={`w-9 h-9 rounded-full bg-background flex items-center justify-center shadow-xs transition-opacity ${
-              activeIndex >= maxIndex ? "opacity-30 cursor-not-allowed" : "hover:bg-accent cursor-pointer"
-            }`}
-          >
-            <ChevronRight className="w-4 h-4 text-primary" />
-          </button>
-        </div>
-
-        <div className="hidden sm:flex items-center justify-center gap-2.5 pt-6 sm:pt-8">
-          {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => scrollToSlide(idx)}
-              aria-label={`Go to slide ${idx + 1}`}
-              className="relative flex items-center justify-center w-7 h-7 cursor-pointer"
-            >
-              <span
-                className={`block transition-all duration-300 rounded-full ${
-                  idx === activeIndex
-                    ? "w-6 h-2.5 bg-[#184652]"
-                    : "w-2.5 h-2.5 bg-[#CBD5E1] hover:bg-[#94A3B8]"
-                }`}
-              />
-            </button>
           ))}
         </div>
 
+        {therapists.length > 1 && (
+          <div className="mt-4 flex items-center justify-center gap-1 lg:hidden">
+            {therapists.map((t, idx) => (
+              <button
+                key={t.name}
+                type="button"
+                onClick={() => goTo(idx)}
+                aria-label={`Show ${t.name}`}
+                className="flex size-7 cursor-pointer items-center justify-center"
+              >
+                <span className={`block h-2 rounded-full transition-all duration-300 ${idx === active ? "w-5 bg-primary" : "w-2 bg-[#CBD5E1]"}`} />
+              </button>
+            ))}
+          </div>
+        )}
+
+        {licensureNote && (
+          <div className="mx-auto mt-8 max-w-[900px] text-center font-sans text-[13px] leading-[21px] text-body-text lg:mt-10">
+            {noteMatch ? (
+              <>
+                <strong className="font-bold text-primary">{noteMatch}</strong> {licensureNote.replace(/^A Note on Licensure Levels:?\s*/i, "")}
+              </>
+            ) : (
+              licensureNote
+            )}
+          </div>
+        )}
+
         <div className="flex flex-col items-center gap-2 pt-8 sm:pt-10">
-          <CtaButton href="#how-it-works" variant="accent" className="w-[232px]">
+          <CtaButton href="#how-it-works" variant="accent">
             Book Appointment
           </CtaButton>
-          {refundText && (
-            <p className="body-small text-center">
-              {refundText}
-            </p>
-          )}
+          {refundText && <p className="body-small text-center">{refundText}</p>}
         </div>
       </div>
     </section>
