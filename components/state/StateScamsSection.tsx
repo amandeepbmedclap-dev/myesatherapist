@@ -148,7 +148,7 @@ export function StateScamsSection({ data }: { data: StateData }) {
                 </h4>
               )}
 
-              <div className="space-y-4 sm:space-y-4.5 flex-1">
+              <div className={pilot ? "flex flex-1 flex-col gap-4 lg:justify-between lg:gap-3" : "space-y-4 sm:space-y-4.5 flex-1"}>
                 {commonItems.map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3.5">
                     <div className="flex h-[26px] shrink-0 items-center">
