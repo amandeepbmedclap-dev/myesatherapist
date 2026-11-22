@@ -5,8 +5,7 @@ import { pruneSchema } from "@/lib/schema";
 import { TopBanner } from "@/components/layout/TopBanner";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { BlogsHero } from "@/components/blogs/BlogsHero";
-import { BlogsGrid } from "@/components/blogs/BlogsGrid";
+import { BlogHub } from "@/components/blogs/BlogHub";
 import { CtaBanner } from "@/components/home/CtaBanner";
 
 import { blogSchema } from "@/data/schemas/blogSchema";
@@ -58,9 +57,7 @@ export default function BlogHubPage() {
       <Header />
 
       <main className="flex-1 bg-background">
-        <BlogsHero />
-
-        <BlogsGrid />
+        <BlogHub />
 
         <CtaBanner
           title="Could an ESA Be Right for You?"
