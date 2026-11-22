@@ -200,3 +200,24 @@ export const ALABAMA_META = {
   reviewerImage: "/legal-reviewer/legal-reviwer.webp",
   reviewerLinkedin: "https://www.linkedin.com/in/awais-arshad-a51b31113/",
 };
+
+// Alabama-specific FAQs shown on /esa-laws/alabama/ (the FAQ section also
+// generates the page's FAQPage schema from these).
+export const ALABAMA_FAQS = [
+  {
+    q: "Are emotional support animals protected under Alabama law?",
+    a: "Yes. Qualified emotional support animals can receive housing protections under the federal Fair Housing Act (FHA) and Alabama's Assistance and Service Animal Integrity in Housing Act.",
+  },
+  {
+    q: "Does Alabama require an ESA registration or certification?",
+    a: "No. Alabama does not require an ESA to be registered or certified. An ESA registration number, certificate, or identification card does not establish a legal right to housing accommodation.",
+  },
+  {
+    q: "Can landlords charge a pet deposit for an ESA in Alabama?",
+    a: "Generally, no. When an ESA is approved as a reasonable accommodation under the FHA, housing providers generally cannot charge pet fees, pet rent, or pet deposits simply because of the animal.",
+  },
+  {
+    q: "Do I need an ESA letter to live with an emotional support animal in Alabama?",
+    a: "If your disability or disability-related need for the animal is not obvious, a housing provider may request reliable documentation supporting the need for the assistance animal. An appropriate letter from a qualified licensed mental health professional may serve as supporting documentation.",
+  },
+];

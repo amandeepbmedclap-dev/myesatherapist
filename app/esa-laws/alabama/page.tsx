@@ -17,6 +17,7 @@ import { CtaBanner } from "@/components/home/CtaBanner";
 import type { BlogArticle } from "@/data/blogsData";
 import {
   ALABAMA_CTA,
+  ALABAMA_FAQS,
   ALABAMA_FINAL_THOUGHTS,
   ALABAMA_HERO,
   ALABAMA_META,
@@ -109,7 +110,13 @@ export default function AlabamaEsaLawsPage() {
 
         <BlogMoreResources />
 
-        <FaqSection id="faq" bg="bg-background" />
+        <FaqSection
+          id="faq"
+          bg="bg-background"
+          title="Frequently Asked Questions About Alabama ESA Laws"
+          subtitle="Answers to common questions about emotional support animal rules in Alabama."
+          faqs={ALABAMA_FAQS}
+        />
 
         <CtaBanner buttonHref="/pricing/" bgColor="bg-background" />
       </main>
