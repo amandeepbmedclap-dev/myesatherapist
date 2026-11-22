@@ -6,15 +6,10 @@ import { TopBanner } from "@/components/layout/TopBanner";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { AboutHeroSection } from "@/components/about-us/AboutHeroSection";
-import { AboutLegitimateSection } from "@/components/about-us/AboutLegitimateSection";
-import { AboutWhyTrustSection } from "@/components/about-us/AboutWhyTrustSection";
-import { AboutWhoWeHelpSection } from "@/components/about-us/AboutWhoWeHelpSection";
 import { AboutVsFakeSection } from "@/components/about-us/AboutVsFakeSection";
-import { AboutProcessSection } from "@/components/about-us/AboutProcessSection";
-import { AboutTransparentPricingSection } from "@/components/about-us/AboutTransparentPricingSection";
-import { AboutTestimonialSection } from "@/components/about-us/AboutTestimonialSection";
 import { FaqSection, FaqItem } from "@/components/home/FaqSection";
 import { CtaBanner } from "@/components/home/CtaBanner";
+import { AboutMission, AboutPolicies, AboutTrustStrip, AboutWhoWeHelp } from "@/components/about-us/AboutV2";
 import { aboutUsSchema } from "@/data/schemas/aboutUsSchema";
 import { socialImage, withFeatureImage } from "@/data/socialImages";
 
@@ -110,22 +105,14 @@ export default function AboutUsPage() {
       <main className="flex-1 bg-background">
         <AboutHeroSection />
 
-        <AboutWhyTrustSection />
-
-        <AboutLegitimateSection />
-
-        <AboutWhoWeHelpSection />
-
+        <AboutTrustStrip />
+        <AboutMission />
+        <AboutWhoWeHelp />
         <AboutVsFakeSection />
-
-        <AboutProcessSection />
-
-        <AboutTransparentPricingSection />
-
-        <AboutTestimonialSection />
+        <AboutPolicies />
 
         <FaqSection
-          bg="bg-white"
+          bg="bg-background"
           title="Frequently Asked Questions About My ESA Therapist and Our Process"
           subtitle="Get answers to common questions about our mission, evaluations, and process."
           faqs={ABOUT_FAQS}
@@ -136,7 +123,7 @@ export default function AboutUsPage() {
           description="Begin the evaluation process today and connect with your state-licensed mental health professional for a clinical assessment."
           buttonText="Start Evaluation"
           buttonHref="/pricing/"
-          bgColor="bg-background"
+          bgColor="bg-white"
         />
       </main>
       <Footer bgColor="bg-background" />
