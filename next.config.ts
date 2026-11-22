@@ -22,6 +22,17 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Old WordPress booking page now lives on the intake survey.
+      {
+        source: "/booking",
+        destination: "https://survey.myesatherapist.com/",
+        statusCode: 301,
+      },
+      {
+        source: "/booking/",
+        destination: "https://survey.myesatherapist.com/",
+        statusCode: 301,
+      },
       {
         source: "/esa-doctors/dr-robert-staff",
         destination: "/esa-doctors/dr-robert-staaf/",
