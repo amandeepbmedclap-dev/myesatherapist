@@ -9130,28 +9130,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "Letters are issued strictly when supported by clinical judgment",
     ],
     processNote: "Note: Supporting documentation should be based on an individualized evaluation and should confirm the person’s disability and the relationship between the disability and the need for a support animal when documentation is appropriate. Minnesota law does not require disclosure of medical records or a specific diagnosis to the housing provider.",
-    whoQualifiesTitle: "Who May Qualify For an ESA Letter Minnesota?",
+    whoQualifiesTitle: "Who May Qualify for an ESA Letter in Minnesota?",
     whoQualifiesSubtitle: "Individuals in Minnesota who experience mental or emotional health challenges that interfere with everyday functioning may be evaluated to determine whether an emotional support animal could provide therapeutic benefit.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Seasonal Affective Disorder (SAD)",
-        description: "Depression linked to reduced winter sunlight. An ESA may provide companionship and emotional comfort, offering support during seasonal changes that affect mood.",
+        description: "Depression linked to reduced winter sunlight. An ESA may offer comfort and companionship during seasonal mood changes.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Persistent Depressive Disorder (Dysthymia)",
-        description: "Long-term, low-grade depression affecting daily life. An ESA can offer steady companionship, helping individuals feel supported while managing prolonged low mood.",
+        description: "Long-term, low-grade depression affecting daily life. An ESA can offer steady companionship through prolonged low mood.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Social Anxiety Disorder",
-        description: "Intense fear of social situations creating troubles in functioning. An ESA may provide reassurance and a familiar presence, helping individuals feel more comfortable during challenging social situations.",
+        description: "Intense fear of social situations that affects daily functioning. An ESA may provide reassurance and a familiar presence in challenging social settings.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Obsessive-Compulsive Disorder (OCD)",
-        description: "Repetitive thoughts and behaviors causing distress. An ESA can offer calming companionship, providing emotional support while individuals manage intrusive thoughts and compulsive behaviors.",
+        description: "Repetitive thoughts and behaviors causing distress. An ESA can offer calming companionship while managing intrusive thoughts and compulsions.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],

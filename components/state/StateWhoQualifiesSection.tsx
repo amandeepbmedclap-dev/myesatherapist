@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { StateData } from "@/data/statesData";
+import { CollapsibleNote } from "@/components/common/CollapsibleNote";
 
 const CONDITION_RULES: { test: RegExp; icons: string[] }[] = [
   { test: /panic|agoraphob/i, icons: ["/esa-icons/icon-1.svg", "/esa-icons/icon-10.svg"] },
@@ -253,6 +254,64 @@ export function StateWhoQualifiesSection({ data }: { data: StateData }) {
               )}
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/**
+ * Redesigned "Who may qualify" section (piloting on Minnesota).
+ * - Fixed 2x2 grid of condition cards with one structure: icon + title row, description below.
+ * - Photo shown in one consistent frame (4:5, object-cover) from a pre-cropped, fully opaque
+ *   version of the state image, so nothing is stretched and the baked-in wave never shows.
+ * - Important note uses the shared collapsible callout.
+ */
+export function StateWhoQualifiesV2({ data }: { data: StateData }) {
+  const stateName = data.name;
+  const conditions = data.whoQualifiesConditions && data.whoQualifiesConditions.length > 0 ? data.whoQualifiesConditions : defaultConditions;
+  const title = data.whoQualifiesTitle || `Who May Qualify for an ESA Letter in ${stateName}?`;
+  const subtitle =
+    data.whoQualifiesSubtitle ||
+    `${stateName} residents finding troubles in completing everyday tasks and activities can get themselves evaluated by licensed mental health professionals (LMHP) in ${stateName} to check the need for emotional support animals. During this process, clinicians may consider a range of medical conditions, which include but are not limited to:`;
+  const sectionHeading = data.whoQualifiesSectionHeading || "Qualifying Conditions";
+  const icons = conditionIcons(conditions);
+  const photo = `/states/who-qualifies/${data.slug}.webp`;
+
+  return (
+    <section data-section="who-qualifies" className="relative z-10 w-full bg-white px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+      <div className="mx-auto grid max-w-[1180px] gap-8 lg:grid-cols-[minmax(0,1fr)_380px] lg:grid-rows-[auto_1fr] lg:gap-x-14 lg:gap-y-8 xl:grid-cols-[minmax(0,1fr)_420px] xl:gap-x-16">
+        <div className="text-center lg:col-start-1 lg:row-start-1 lg:text-left">
+          <h2 className="heading-h2 text-primary">{title}</h2>
+          <div className="body-large mx-auto mt-4 max-w-[640px] text-body-text lg:mx-0">{renderTextWithLinks(subtitle)}</div>
+        </div>
+
+        <div className="relative mx-auto w-full max-w-[420px] lg:sticky lg:top-28 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:max-w-none lg:self-start">
+          <span aria-hidden className="absolute -left-3 -top-3 hidden size-24 rounded-[24px] bg-accent/30 sm:block lg:-left-4 lg:-top-4 lg:size-28" />
+          <span aria-hidden className="absolute -bottom-3 -right-3 hidden size-32 rounded-[28px] color-gradient opacity-90 sm:block lg:-bottom-4 lg:-right-4 lg:size-40" />
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[26px] bg-cream-100 shadow-[0_30px_60px_-34px_rgba(26,61,79,0.6)] sm:aspect-[4/5]">
+            <Image quality={85} src={photo} alt={`Emotional support animal evaluation in ${stateName}`} fill sizes="(min-width: 1024px) 420px, 92vw" className="object-cover object-[50%_25%]" />
+          </div>
+        </div>
+
+        <div className="lg:col-start-1 lg:row-start-2">
+          <h3 className="font-heading text-[22px] font-bold leading-[30px] text-primary sm:text-[24px]">{sectionHeading}</h3>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            {conditions.map((item, idx) => (
+              <div key={item.title} className="flex flex-col rounded-[20px] bg-background p-5 ring-1 ring-line-200 sm:p-6">
+                <div className="flex items-center gap-3 sm:min-h-[52px]">
+                  <span className="flex size-11 shrink-0 items-center justify-center rounded-[14px] bg-white shadow-[0_6px_16px_-10px_rgba(26,61,79,0.5)]">
+                    <Image quality={90} src={icons[idx]} alt="" width={24} height={24} sizes="24px" unoptimized className="size-6 object-contain" />
+                  </span>
+                  <h4 className="font-heading text-[18px] font-bold leading-[24px] text-primary sm:text-[19px]">{item.title}</h4>
+                </div>
+                <div className="mt-3 font-sans text-[15px] leading-[24px] text-body-text">{item.description}</div>
+              </div>
+            ))}
+          </div>
+          {data.whoQualifiesNote && (
+            <CollapsibleNote text={data.whoQualifiesNote} className="mt-4 rounded-[18px] bg-background/70 p-4 ring-1 ring-line-200 sm:p-5" />
+          )}
         </div>
       </div>
     </section>
