@@ -306,3 +306,98 @@ export function StateBenefitsSection({ data }: { data: StateData }) {
     </section>
   );
 }
+
+function BenefitList({
+  heading,
+  items,
+  icons,
+  tone,
+}: {
+  heading: string;
+  items: { title: string; description: string }[];
+  icons: string[];
+  tone: "cream" | "mint";
+}) {
+  return (
+    <div className={`flex h-full flex-col rounded-[26px] p-6 sm:p-7 ${tone === "cream" ? "bg-cream-100" : "bg-[#E7F2EF]"}`}>
+      <h3 className="flex items-center gap-3 !font-sans !text-[12px] font-extrabold uppercase !leading-4 tracking-[0.14em] text-[#8A6A12]">
+        <span aria-hidden className="h-px w-8 bg-accent" />
+        {heading.replace(/\s*\n\s*/g, " ").replace(/\s*:\s*$/, "")}
+      </h3>
+      <ul className="mt-4 flex flex-1 flex-col">
+        {items.map((item, idx) => (
+          <li key={item.title} className={`flex gap-4 py-5 ${idx > 0 ? "border-t border-primary/10" : "pt-3"} last:pb-0`}>
+            <span className="flex size-11 shrink-0 items-center justify-center rounded-[14px] bg-white shadow-[0_6px_16px_-10px_rgba(26,61,79,0.5)]">
+              <Image quality={90} src={icons[idx]} alt="" width={24} height={24} sizes="24px" unoptimized className="size-6 object-contain" />
+            </span>
+            <div className="min-w-0">
+              <h4 className="font-heading text-[18px] font-bold leading-[24px] text-primary sm:text-[19px]">{item.title}</h4>
+              <div className="mt-1.5 font-sans text-[15px] leading-[24px] text-body-text">{item.description}</div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+/**
+ * Redesigned benefits section (piloting on Alabama): centred heading, then financial
+ * benefits | framed photo | emotional benefits. Photo is a pre-cropped opaque copy shown
+ * with object-cover in a capped frame, so it is never stretched.
+ */
+export function StateBenefitsV2({ data }: { data: StateData }) {
+  const stateName = data.name;
+  const financialBenefits = data.financialBenefits?.length ? data.financialBenefits : [];
+  const emotionalBenefits = data.emotionalBenefits?.length ? data.emotionalBenefits : [];
+  if (!financialBenefits.length && !emotionalBenefits.length) return <StateBenefitsSection data={data} />;
+
+  const title = data.benefitsTitle || `Benefits of Having an ESA Letter in ${stateName}`;
+  const subtitle =
+    data.benefitsSubtitle ||
+    `A properly issued emotional support animal letter in ${stateName} can help residents obtain housing accommodations while also promoting emotional well-being and everyday stability.`;
+  const financialHeading = data.financialBenefitsHeading || "Financial Benefits of ESA Letter";
+  const emotionalHeading = data.emotionalBenefitsHeading || "Emotional Benefits";
+  const refundNote = data.benefitsRefundNote === "" ? "" : data.benefitsRefundNote || "100% Refund If No ESA Letter Is Issued";
+
+  const used = new Set<string>();
+  const financialIcons = assignBenefitIcons(financialBenefits, FINANCIAL_RULES, FINANCIAL_FALLBACKS, used);
+  const emotionalIcons = assignBenefitIcons(emotionalBenefits, EMOTIONAL_RULES, EMOTIONAL_FALLBACKS, used);
+  const photo = `/states/benefits/${data.slug}.webp`;
+
+  return (
+    <section data-section="benefits" className="relative z-10 w-full bg-white px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+      <div className="mx-auto max-w-[1280px]">
+        <div className="mx-auto mb-10 max-w-[880px] text-center lg:mb-12">
+          <h2 className="heading-h2 text-primary">{title}</h2>
+          <p className="body-large mx-auto mt-4 max-w-[760px] text-body-text">{subtitle}</p>
+        </div>
+
+        <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_300px_minmax(0,1fr)] lg:gap-6 xl:grid-cols-[minmax(0,1fr)_340px_minmax(0,1fr)]">
+          <div className="relative order-first mx-auto w-full max-w-[520px] lg:order-none lg:col-start-2 lg:row-start-1 lg:max-w-none">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[26px] bg-cream-100 shadow-[0_30px_60px_-34px_rgba(26,61,79,0.6)] sm:aspect-[16/10] lg:aspect-auto lg:h-full lg:min-h-[520px]">
+              <Image quality={85} src={photo} alt="A person spending time with their emotional support animal" fill sizes="(min-width: 1024px) 340px, 92vw" className="object-cover object-[50%_14%] lg:object-[50%_30%]" />
+              <span aria-hidden className="absolute inset-x-0 bottom-0 h-1/3 bg-[linear-gradient(180deg,rgba(26,61,79,0)_0%,rgba(26,61,79,0.55)_100%)]" />
+              <span className="absolute bottom-5 left-1/2 flex size-14 -translate-x-1/2 items-center justify-center rounded-full bg-white shadow-[0_10px_24px_-10px_rgba(0,0,0,0.45)]">
+                <Image quality={90} src="/states/whomayqualifies-california-icon.webp" alt="" width={40} height={40} sizes="40px" className="size-9 object-contain" />
+              </span>
+            </div>
+          </div>
+          <div className="lg:col-start-1 lg:row-start-1">
+            <BenefitList heading={financialHeading} items={financialBenefits} icons={financialIcons} tone="cream" />
+          </div>
+          <div className="lg:col-start-3 lg:row-start-1">
+            <BenefitList heading={emotionalHeading} items={emotionalBenefits} icons={emotionalIcons} tone="mint" />
+          </div>
+        </div>
+
+        {data.benefitsFootnote ? <p className="body-text mx-auto mt-8 max-w-[880px] text-center text-body-text">{data.benefitsFootnote}</p> : null}
+
+        <div className="mt-10 flex flex-col items-center gap-2">
+          <CtaButton href="#faq">Apply Your ESA Letter Now</CtaButton>
+          {refundNote ? <p className="body-small text-center text-body-text">{refundNote}</p> : null}
+        </div>
+      </div>
+    </section>
+  );
+}

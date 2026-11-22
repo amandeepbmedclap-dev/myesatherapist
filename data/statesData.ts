@@ -343,7 +343,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     reviewsTitle: "See What Our Clients in Alabama Say About Their ESA Evaluation",
     reviewsSubtitle: "Here’s what our clients say about their experience.",
-    benefitsTitle: "Benefits of an ESA Letter in Alabama",
+    benefitsTitle: "What Are the Key Benefits of Having an ESA Letter in Alabama?",
     benefitsSubtitle: "An ESA may provide emotional support and may support a housing accommodation request when applicable requirements are met.",
     benefitsRefundNote: "",
     financialBenefitsHeading: "Financial and Housing Benefits",
@@ -360,7 +360,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         title: "Protection During Lease Renewal",
-        description: "Existing accommodations may continue when circumstances remain materially unchanged, but housing providers and tenants should address accommodation requirements during lease or housing changes as appropriate.",
+        description: "Existing accommodations may continue when circumstances remain materially unchanged; tenants and housing providers should revisit accommodation requirements during lease or housing changes.",
         icon: "/states/california-benefits-workplaceconsideration.svg",
       },
     ],
