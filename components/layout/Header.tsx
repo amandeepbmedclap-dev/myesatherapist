@@ -4,294 +4,398 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown, ClipboardCheck, Mail, Phone, Plus } from "lucide-react";
 import { CtaButton } from "@/components/common/CtaButton";
 import { openEsaEligibilityChecker } from "@/components/common/evaluationCta";
-import { MENU_TABS, MenuPanel, type MenuKey } from "./MegaMenu";
+import {
+  DesktopPanel,
+  EMAIL,
+  MOST_READ,
+  NAV,
+  PHONE,
+  StateDirectory,
+  StateSearch,
+  useStateFilter,
+  type MenuKey,
+} from "./MegaMenu";
 
-const STRIP_STATES = [
-  { name: "California", slug: "california" },
-  { name: "Texas", slug: "texas" },
-  { name: "New York", slug: "new-york" },
-  { name: "Florida", slug: "florida" },
-  { name: "Colorado", slug: "colorado" },
-  { name: "Illinois", slug: "illinois" },
-  { name: "Washington", slug: "washington" },
-];
+/* ───────────── mobile sheet ───────────── */
 
-function Burger({ open }: { open: boolean }) {
-  const bar = "absolute left-0 h-[2px] w-5 rounded-full bg-current transition-transform duration-300";
+function MobileSection({
+  id,
+  title,
+  open,
+  onToggle,
+  children,
+}: {
+  id: string;
+  title: string;
+  open: boolean;
+  onToggle: () => void;
+  children: React.ReactNode;
+}) {
   return (
-    <span aria-hidden className="relative block h-5 w-5">
-      <span className={`${bar} top-[5px] ${open ? "translate-y-[4px] rotate-45" : ""}`} />
-      <span className={`${bar} top-[13px] ${open ? "-translate-y-[4px] -rotate-45" : "w-3.5"}`} />
-    </span>
+    <div className="border-b border-line-200">
+      <button
+        type="button"
+        aria-expanded={open}
+        aria-controls={`m-${id}`}
+        onClick={onToggle}
+        className="flex min-h-[64px] w-full items-center justify-between gap-4 text-left"
+      >
+        <span className={`font-heading text-[26px] font-bold leading-tight transition-colors ${open ? "text-[#1D6E72]" : "text-[#1A3D4F]"}`}>
+          {title}
+        </span>
+        <span
+          aria-hidden
+          className={`grid size-9 shrink-0 place-items-center rounded-full border transition-[transform,background-color,color] duration-300 ${
+            open ? "rotate-45 border-[#1D6E72] bg-[#1D6E72] text-white" : "border-line-200 text-[#1D6E72]"
+          }`}
+        >
+          <Plus className="size-4" />
+        </span>
+      </button>
+      <div id={`m-${id}`} className={open ? "pb-5" : "hidden"}>
+        {children}
+      </div>
+    </div>
   );
 }
 
+function MobileLinks({ items }: { items: { label: string; href: string; note?: string }[] }) {
+  return (
+    <ul className="space-y-1.5">
+      {items.map((item) => (
+        <li key={item.label}>
+          <Link href={item.href} className="flex min-h-[52px] items-center justify-between gap-3 rounded-xl bg-white px-4 py-2.5 ring-1 ring-line-200">
+            <span>
+              <span className="block text-[16px] font-semibold leading-snug text-[#1A3D4F]">{item.label}</span>
+              {item.note && <span className="block text-[13px] leading-snug text-body-text">{item.note}</span>}
+            </span>
+            <ArrowRight aria-hidden className="size-4 shrink-0 text-gold-600" />
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function MobileSheet({ open, close, isPsd }: { open: boolean; close: () => void; isPsd: boolean }) {
+  const [section, setSection] = useState<MenuKey | null>("letters");
+  const { q, setQ, groups } = useStateFilter();
+  const toggle = (k: MenuKey) => setSection((s) => (s === k ? null : k));
+  const [letters, , learn, about] = NAV;
+
+  return (
+    <div
+      id="mobile-navigation"
+      aria-hidden={!open}
+      onClick={(e) => (e.target as HTMLElement).closest("a") && close()}
+      className={`menu-drop flex h-[calc(100dvh-72px)] flex-col bg-background lg:hidden ${open ? "" : "hidden"}`}
+    >
+      <div className="flex-1 overflow-y-auto overscroll-contain px-5 pb-6">
+        <MobileSection id="letters" title={letters.label} open={section === "letters"} onToggle={() => toggle("letters")}>
+          <MobileLinks items={letters.items} />
+        </MobileSection>
+
+        <MobileSection id="states" title="States" open={section === "states"} onToggle={() => toggle("states")}>
+          <StateSearch q={q} setQ={setQ} id="state-search-mobile" />
+          <div className="mt-4 rounded-2xl bg-white p-4 ring-1 ring-line-200">
+            <StateDirectory groups={groups} columns="columns-2" />
+          </div>
+        </MobileSection>
+
+        <MobileSection id="learn" title={learn.label} open={section === "learn"} onToggle={() => toggle("learn")}>
+          <MobileLinks items={learn.items} />
+          <div className="mb-1 mt-5 text-[12px] font-bold uppercase tracking-[0.14em] text-gold-600">Most read</div>
+          <ul>
+            {MOST_READ.map((item) => (
+              <li key={item.href} className="border-b border-line-200 last:border-0">
+                <Link href={item.href} className="flex min-h-[48px] items-center text-[15px] font-semibold text-[#1A3D4F]">
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </MobileSection>
+
+        <MobileSection id="about" title={about.label} open={section === "about"} onToggle={() => toggle("about")}>
+          <MobileLinks items={about.items} />
+        </MobileSection>
+
+        <Link
+          href="/pricing/"
+          className="flex min-h-[64px] items-center justify-between border-b border-line-200 font-heading text-[26px] font-bold text-[#1A3D4F]"
+        >
+          Pricing
+          <ArrowRight aria-hidden className="size-5 text-gold-600" />
+        </Link>
+
+        <div className="mt-6 space-y-1 text-[15px]">
+          <a href={PHONE.href} className="flex min-h-[44px] items-center gap-3 font-semibold text-[#1A3D4F]">
+            <Phone aria-hidden className="size-[18px] text-[#1D6E72]" /> {PHONE.display}
+          </a>
+          <a href={`mailto:${EMAIL}`} className="flex min-h-[44px] items-center gap-3 font-semibold text-[#1A3D4F]">
+            <Mail aria-hidden className="size-[18px] text-[#1D6E72]" /> {EMAIL}
+          </a>
+        </div>
+      </div>
+
+      {/* Actions stay in reach at the bottom of the sheet */}
+      <div className="space-y-2.5 border-t border-line-200 bg-white px-5 pb-[max(16px,env(safe-area-inset-bottom))] pt-4">
+        {!isPsd && (
+          <button
+            type="button"
+            onClick={() => {
+              close();
+              openEsaEligibilityChecker();
+            }}
+            className="flex h-[48px] w-full items-center justify-center gap-2 rounded-full border-2 border-primary text-[15px] font-bold text-primary"
+          >
+            <ClipboardCheck aria-hidden className="size-[18px]" /> Free ESA Eligibility Checker
+          </button>
+        )}
+        <CtaButton
+          href="#pricing"
+          centerLabel
+          forceStateModal
+          letter={isPsd ? "psd" : "esa"}
+          className="w-full !h-[54px] !text-[16px] [&_.cta-icon]:!absolute [&_.cta-icon]:!top-0 [&_.cta-icon]:!bottom-0 [&_.cta-icon]:!my-auto [&_.cta-icon]:!right-1 [&_.cta-icon]:!h-[42px] [&_.cta-icon]:!w-[42px] [&_.cta-icon_img]:!h-[22px] [&_.cta-icon_img]:!w-[22px]"
+          onClick={close}
+        >
+          {isPsd ? "Start Your Consultation" : "Start Your ESA Evaluation"}
+        </CtaButton>
+      </div>
+    </div>
+  );
+}
+
+/* ───────────── header ───────────── */
+
 /**
- * Site header: logo, four mega-menu tabs and the evaluation CTAs. Each tab
- * opens a bento-style panel under the bar; on phones the burger opens the
- * same panels with a tab switcher. Every panel stays in the HTML (hidden
- * until opened) so crawlers can follow the links.
+ * Site header. Desktop: text navigation with a gold underline marker; each
+ * item opens an editorial mega panel (cream intro rail, numbered index rows,
+ * a photo feature) on hover or click. Phones: a full-height cream sheet with
+ * serif accordion sections and the evaluation actions pinned to the bottom.
+ * All links are rendered in the HTML even while closed, for crawlers.
  */
 export function Header() {
   const [menu, setMenu] = useState<MenuKey | null>(null);
+  const [sheet, setSheet] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
-  const burgerRef = useRef<HTMLButtonElement>(null);
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const pathname = usePathname();
-  const open = menu !== null;
 
   const isPsd = pathname === "/psd-letter/";
   const isDoctors = pathname === "/esa-doctors/";
   const isLegalReviewer =
     pathname?.includes("legal-reviewer") || pathname?.includes("reviewer") || pathname?.includes("contributors");
 
-  const close = useCallback(() => setMenu(null), []);
+  const close = useCallback(() => {
+    setMenu(null);
+    setSheet(false);
+  }, []);
 
-  // Close the menu after navigation (render-time reset, no effect needed).
+  // Close menus after navigation (render-time reset).
   const [lastPath, setLastPath] = useState(pathname);
   if (pathname !== lastPath) {
     setLastPath(pathname);
     setMenu(null);
+    setSheet(false);
   }
 
+  const cancel = useCallback(() => {
+    if (timer.current) clearTimeout(timer.current);
+  }, []);
+  const schedule = (fn: () => void, ms: number) => {
+    cancel();
+    timer.current = setTimeout(fn, ms);
+  };
+  useEffect(() => cancel, [cancel]);
+
   useEffect(() => {
-    if (!open) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        setMenu(null);
-        burgerRef.current?.focus();
-      }
-    };
+    if (!menu && !sheet) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && close();
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
-  }, [open]);
+  }, [menu, sheet, close]);
 
-  // Lock the page behind the open menu (iOS-safe: pin the body in place).
+  // Phones: pin the page behind the open sheet (iOS-safe).
   useEffect(() => {
-    if (!open) return;
-    const html = document.documentElement;
+    if (!sheet) return;
     const body = document.body;
     const header = headerRef.current;
     const scrollY = window.scrollY;
-    const previous = {
-      htmlOverflow: html.style.overflow,
-      bodyOverflow: body.style.overflow,
-      bodyPosition: body.style.position,
-      bodyTop: body.style.top,
-      bodyWidth: body.style.width,
-      bodyPaddingTop: body.style.paddingTop,
-    };
+    const prev = { o: body.style.overflow, p: body.style.position, t: body.style.top, w: body.style.width, pt: body.style.paddingTop };
     if (header) {
       header.style.position = "fixed";
-      header.style.top = "0";
-      header.style.left = "0";
-      header.style.right = "0";
+      header.style.inset = "0 0 auto 0";
       body.style.paddingTop = `${header.offsetHeight}px`;
     }
-    html.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
     body.style.overflow = "hidden";
     body.style.position = "fixed";
     body.style.top = `-${scrollY}px`;
     body.style.width = "100%";
-
     return () => {
-      html.style.overflow = previous.htmlOverflow;
-      body.style.overflow = previous.bodyOverflow;
-      body.style.position = previous.bodyPosition;
-      body.style.top = previous.bodyTop;
-      body.style.width = previous.bodyWidth;
-      body.style.paddingTop = previous.bodyPaddingTop;
+      document.documentElement.style.overflow = "";
+      body.style.overflow = prev.o;
+      body.style.position = prev.p;
+      body.style.top = prev.t;
+      body.style.width = prev.w;
+      body.style.paddingTop = prev.pt;
       if (header) {
         header.style.position = "";
-        header.style.top = "";
-        header.style.left = "";
-        header.style.right = "";
+        header.style.inset = "";
       }
       window.scrollTo(0, scrollY);
     };
-  }, [open]);
-
-  const toggle = (key: MenuKey) => setMenu((m) => (m === key ? null : key));
+  }, [sheet]);
 
   return (
     <>
-      {open && (
-        <div aria-hidden onClick={close} className="menu-fade fixed inset-0 z-[85] bg-[#1A3D4F]/40" />
-      )}
-      <header ref={headerRef} className={`sticky top-0 bg-white shadow-[0px_2px_4px_rgba(0,0,0,0.25)] ${open ? "z-[90]" : "z-50"}`}>
-        <div className="w-full bg-white">
-          <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-4 sm:px-6 lg:h-[98px] lg:px-8 xl:px-[80px]">
-            <Link href="/" className="flex min-w-0 shrink items-center">
-              <Image
-                quality={90}
-                src="/common/myesa-logo.svg"
-                alt="My ESA Therapist"
-                width={171}
-                sizes="171px"
-                height={71}
-                priority
-                loading="eager"
-                unoptimized
-                className="h-12 w-auto max-w-full object-contain sm:h-16 lg:h-[64px] xl:h-[71px]"
+      {menu && <div aria-hidden onClick={close} className="menu-fade fixed inset-0 z-[85] hidden bg-[#1A3D4F]/35 lg:block" />}
+      <header
+        ref={headerRef}
+        onMouseLeave={() => menu && schedule(() => setMenu(null), 220)}
+        onMouseEnter={cancel}
+        className={`sticky top-0 border-b border-line-200 bg-white ${menu || sheet ? "z-[90]" : "z-50"}`}
+      >
+        <div className="mx-auto flex h-[72px] max-w-[1440px] items-center justify-between gap-4 px-4 sm:px-6 lg:h-[88px] lg:px-8 xl:px-[80px]">
+          <Link href="/" className="flex min-w-0 shrink items-center" aria-label="My ESA Therapist home">
+            <Image
+              quality={90}
+              src="/common/myesa-logo.svg"
+              alt="My ESA Therapist"
+              width={171}
+              sizes="171px"
+              height={71}
+              priority
+              loading="eager"
+              unoptimized
+              className="h-11 w-auto max-w-full object-contain sm:h-14 lg:h-[60px]"
+            />
+          </Link>
+
+          <nav aria-label="Main" className="hidden h-full items-stretch lg:flex">
+            {NAV.map((item) => {
+              const active = menu === item.key;
+              return (
+                <button
+                  key={item.key}
+                  type="button"
+                  aria-expanded={active}
+                  aria-controls="site-menu"
+                  onClick={() => {
+                    cancel();
+                    setMenu((m) => (m === item.key ? null : item.key));
+                  }}
+                  onMouseEnter={() => schedule(() => setMenu(item.key), menu ? 60 : 140)}
+                  className="group/nav relative flex items-center gap-1 px-3.5 text-[15.5px] font-semibold text-[#1A3D4F] xl:px-5"
+                >
+                  <span className={`transition-colors ${active ? "text-[#1D6E72]" : "group-hover/nav:text-[#1D6E72]"}`}>{item.label}</span>
+                  <ChevronDown aria-hidden className={`size-4 text-gold-600 transition-transform duration-200 ${active ? "rotate-180" : ""}`} />
+                  <span
+                    aria-hidden
+                    className={`absolute inset-x-3.5 bottom-[-1px] h-[3px] origin-center rounded-full bg-accent transition-transform duration-300 xl:inset-x-5 ${
+                      active ? "scale-x-100" : "scale-x-0 group-hover/nav:scale-x-50"
+                    }`}
+                  />
+                </button>
+              );
+            })}
+            <Link
+              href="/pricing/"
+              onMouseEnter={() => menu && schedule(() => setMenu(null), 120)}
+              className={`group/nav relative flex items-center px-3.5 text-[15.5px] font-semibold xl:px-5 ${
+                pathname === "/pricing/" ? "text-[#1D6E72]" : "text-[#1A3D4F] hover:text-[#1D6E72]"
+              }`}
+            >
+              Pricing
+              <span
+                aria-hidden
+                className={`absolute inset-x-3.5 bottom-[-1px] h-[3px] rounded-full bg-accent transition-transform duration-300 xl:inset-x-5 ${
+                  pathname === "/pricing/" ? "scale-x-100" : "scale-x-0 group-hover/nav:scale-x-50"
+                }`}
               />
             </Link>
+          </nav>
 
-            <nav aria-label="Main" className="mx-4 hidden shrink-0 items-center gap-1 lg:flex xl:gap-2">
-              {MENU_TABS.map((tab) => {
-                const active = menu === tab.key;
-                return (
-                  <button
-                    key={tab.key}
-                    type="button"
-                    aria-expanded={active}
-                    aria-controls="site-menu"
-                    onClick={() => toggle(tab.key)}
-                    onMouseEnter={() => open && setMenu(tab.key)}
-                    className={`inline-flex h-11 items-center gap-1.5 whitespace-nowrap rounded-full px-3.5 text-[15px] font-semibold transition-colors xl:text-[16px] ${
-                      active ? "bg-primary text-white" : "text-body-text hover:bg-background hover:text-[#1D6E72]"
-                    }`}
-                  >
-                    {tab.label}
-                    <ChevronDown aria-hidden className={`size-4 transition-transform duration-200 ${active ? "rotate-180" : ""}`} />
-                  </button>
-                );
-              })}
-            </nav>
-
-            <div className="hidden shrink-0 items-center justify-end gap-[8px] lg:flex">
-              {isPsd ? (
-                <CtaButton href="#pricing" className="h-[54px] w-auto px-6 text-[16px]">
-                  Start Your Consultation
-                </CtaButton>
-              ) : isDoctors || isLegalReviewer ? (
-                <CtaButton href={isLegalReviewer ? "/#pricing" : "#therapists"} className="h-[54px] w-auto px-6 text-[16px]">
+          <div className="hidden shrink-0 items-center gap-5 lg:flex">
+            {isPsd ? (
+              <CtaButton href="#pricing" className="h-[52px] w-auto px-6 text-[16px]">
+                Start Your Consultation
+              </CtaButton>
+            ) : isDoctors || isLegalReviewer ? (
+              <CtaButton href={isLegalReviewer ? "/#pricing" : "#therapists"} className="h-[52px] w-auto px-6 text-[16px]">
+                Start Your ESA Evaluation
+              </CtaButton>
+            ) : (
+              <>
+                <button
+                  type="button"
+                  onClick={() => openEsaEligibilityChecker()}
+                  className="group/chk hidden items-center gap-2 text-[15px] font-semibold text-[#1D6E72] xl:inline-flex"
+                >
+                  <span className="grid size-9 place-items-center rounded-full bg-background transition-colors group-hover/chk:bg-accent group-hover/chk:text-[#1A3D4F]">
+                    <ClipboardCheck aria-hidden className="size-[18px]" />
+                  </span>
+                  <span className="underline decoration-transparent decoration-2 underline-offset-4 transition-colors group-hover/chk:decoration-gold-600">
+                    Am I eligible?
+                  </span>
+                </button>
+                <CtaButton href="#pricing" forceStateModal className="h-[52px] w-auto text-[16px]">
                   Start Your ESA Evaluation
                 </CtaButton>
-              ) : (
-                <>
-                  <CtaButton
-                    variant="secondary"
-                    className="h-[54px] w-auto px-6 text-[16px]"
-                    onClick={() => openEsaEligibilityChecker()}
-                  >
-                    Free ESA Eligibility Checker
-                  </CtaButton>
-                  <CtaButton href="#pricing" forceStateModal className="h-[54px] w-auto text-[16px]">
-                    Start Your ESA Evaluation
-                  </CtaButton>
-                </>
-              )}
-            </div>
+              </>
+            )}
+          </div>
 
-            <div className="flex shrink-0 items-center gap-2 lg:hidden">
+          <div className="flex shrink-0 items-center gap-1.5 lg:hidden">
+            {!sheet && (
               <CtaButton
                 variant="accent"
                 letter={isPsd ? "psd" : "esa"}
                 forceStateModal
                 className="!h-11 !min-w-0 w-auto !gap-2 !pl-4 !pr-1 !text-[14px] [&>span:last-child]:!h-8 [&>span:last-child]:!w-8 [&_img]:!h-4 [&_img]:!w-4"
-                onClick={close}
               >
                 Start Evaluation
               </CtaButton>
-              <button
-                ref={burgerRef}
-                type="button"
-                onClick={() => setMenu((m) => (m ? null : "services"))}
-                aria-label={open ? "Close menu" : "Open menu"}
-                aria-expanded={open}
-                aria-controls="site-menu"
-                className={`grid size-11 shrink-0 place-items-center rounded-full transition-colors ${
-                  open ? "bg-primary text-white" : "bg-background text-primary"
-                }`}
-              >
-                <Burger open={open} />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="hidden h-[37px] w-full bg-background lg:block">
-          <div className="mx-auto flex h-full max-w-[1278px] items-center justify-between px-4 sm:px-6 lg:px-6 xl:px-0">
-            <div className="no-scrollbar flex h-[26px] items-center gap-4 overflow-x-auto lg:gap-[26px]">
-              {STRIP_STATES.map((st) => {
-                const href = `/esa-letter-${st.slug}/`;
-                const isActive = pathname === href || pathname === `/esa-letter-${st.slug}`;
-                return (
-                  <Link
-                    key={st.slug}
-                    href={href}
-                    className={`whitespace-nowrap font-sans text-[13px] font-medium leading-[26px] text-body-text transition-colors xl:text-[14px] ${
-                      isActive ? "font-bold" : ""
-                    }`}
-                  >
-                    {st.name}
-                  </Link>
-                );
-              })}
-            </div>
-            <Link
-              href="/state/"
-              className="flex shrink-0 items-center gap-2 whitespace-nowrap font-sans text-[13px] font-medium leading-[26px] text-body-text transition-opacity hover:opacity-85 xl:text-[14px]"
+            )}
+            <button
+              type="button"
+              onClick={() => setSheet((v) => !v)}
+              aria-label={sheet ? "Close menu" : "Open menu"}
+              aria-expanded={sheet}
+              aria-controls="mobile-navigation"
+              className="flex h-11 items-center gap-2 rounded-full pl-2 pr-0.5 text-[15px] font-semibold text-[#1A3D4F]"
             >
-              <span>See All 50 States</span>
-              <ArrowRight className="h-4 w-4 text-body-text" strokeWidth={1.5} />
-            </Link>
+              <span className={sheet ? "" : "sr-only sm:not-sr-only"}>{sheet ? "Close" : "Menu"}</span>
+              <span aria-hidden className="relative grid size-10 place-items-center rounded-full bg-primary text-white">
+                <span className={`absolute h-[2px] w-4 rounded-full bg-current transition-transform duration-300 ${sheet ? "rotate-45" : "-translate-y-[3px]"}`} />
+                <span className={`absolute h-[2px] w-4 rounded-full bg-current transition-transform duration-300 ${sheet ? "-rotate-45" : "translate-y-[3px]"}`} />
+              </span>
+            </button>
           </div>
         </div>
 
-        {/* Mega menu: every panel is in the HTML, only the active one is shown. */}
+        {/* Desktop mega panel: every panel is in the HTML, only the active one shows. */}
         <div
           id="site-menu"
-          aria-hidden={!open}
+          aria-hidden={!menu}
           onClick={(e) => (e.target as HTMLElement).closest("a") && close()}
-          className={`menu-drop absolute inset-x-0 top-full max-h-[calc(100dvh-5rem)] overflow-y-auto overscroll-contain border-t border-line-200 bg-white shadow-[0_24px_48px_-24px_rgba(26,61,79,0.45)] lg:max-h-[calc(100dvh-135px)] ${
-            open ? "" : "hidden"
-          }`}
+          className={`absolute inset-x-0 top-full hidden border-t border-line-200 bg-white shadow-[0_30px_60px_-30px_rgba(26,61,79,0.5)] ${menu ? "menu-drop lg:block" : ""}`}
         >
-          <div className="mx-auto max-w-[1278px] px-3 py-3 sm:px-6 sm:py-5 xl:px-0">
-            {/* Tab switcher for phones and tablets */}
-            <div role="tablist" aria-label="Menu sections" className="mb-3 grid grid-cols-4 gap-1.5 lg:hidden">
-              {MENU_TABS.map((tab) => (
-                <button
-                  key={tab.key}
-                  type="button"
-                  role="tab"
-                  aria-selected={menu === tab.key}
-                  onClick={() => setMenu(tab.key)}
-                  className={`h-11 rounded-full px-2 text-[13px] font-semibold transition-colors sm:text-[14px] ${
-                    menu === tab.key ? "bg-primary text-white" : "bg-background text-[#1A3D4F]"
-                  }`}
-                >
-                  {tab.short}
-                </button>
-              ))}
-            </div>
-
-            {MENU_TABS.map((tab) => (
-              <div key={tab.key} className={menu === tab.key ? "menu-panel" : "hidden"}>
-                <MenuPanel menu={tab.key} onNavigate={close} />
+          <div className="mx-auto max-w-[1278px] px-8 py-8 xl:px-0">
+            {NAV.map((item) => (
+              <div key={item.key} className={menu === item.key ? "menu-panel" : "hidden"}>
+                <DesktopPanel menu={item.key} onNavigate={close} />
               </div>
             ))}
-
-            {/* Phone-only CTAs */}
-            {!isPsd && (
-              <div className="mt-3 lg:hidden">
-                <CtaButton
-                  variant="secondary"
-                  className="h-[48px] w-full justify-center"
-                  onClick={() => {
-                    close();
-                    openEsaEligibilityChecker();
-                  }}
-                >
-                  Free ESA Eligibility Checker
-                </CtaButton>
-              </div>
-            )}
           </div>
         </div>
+
+        <MobileSheet open={sheet} close={close} isPsd={isPsd} />
       </header>
     </>
   );
