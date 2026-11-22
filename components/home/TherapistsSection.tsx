@@ -133,9 +133,9 @@ function ClinicianCard({ t }: { t: Therapist }) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`${t.name} LinkedIn Profile`}
-          className="absolute right-4 top-4 flex size-9 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-primary"
+          className="group/li absolute right-4 top-4 flex size-9 items-center justify-center rounded-full bg-white/15 backdrop-blur-sm transition-colors hover:bg-accent"
         >
-          <LinkedinIcon className="size-4" />
+          <LinkedinIcon className="size-4 text-[#FFFFFF] transition-colors group-hover/li:text-[#163545]" />
         </a>
       </div>
 
