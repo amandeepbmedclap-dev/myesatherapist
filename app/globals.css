@@ -667,3 +667,15 @@ img[src$="/send-icon.svg"] {
 ) {
   color: inherit;
 }
+/* Header mega menu */
+@keyframes menu-fade { from { opacity: 0 } to { opacity: 1 } }
+@keyframes menu-drop { from { opacity: 0; transform: translateY(-6px) } to { opacity: 1; transform: none } }
+.menu-fade { animation: menu-fade 0.2s ease-out both; }
+.menu-drop { animation: menu-drop 0.28s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.menu-panel > div > * { animation: menu-drop 0.4s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.menu-panel > div > :nth-child(2) { animation-delay: 40ms; }
+.menu-panel > div > :nth-child(3) { animation-delay: 80ms; }
+.menu-panel > div > :nth-child(4) { animation-delay: 120ms; }
+@media (prefers-reduced-motion: reduce) {
+  .menu-fade, .menu-drop, .menu-panel > div > * { animation: none; }
+}
