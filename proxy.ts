@@ -35,10 +35,10 @@ const LEGACY: Record<string, string> = {
   "/esa-renewal": "/esa-letter-renewal/",
   "/housing-page": "/esa-letter-for-housing/",
   "/live-with-your-esa-2": "/esa-letter-for-housing/",
-  "/medical-form": "https://survey.myesatherapist.com/",
-  "/register": "https://apply.myesatherapist.com/register",
-  "/v1": "https://survey.myesatherapist.com/",
-  "/esa-onboard": "https://survey.myesatherapist.com/",
+  "/medical-form": "https://survey.myesatherapist.com/v1",
+  "/register": "https://survey.myesatherapist.com/v1",
+  "/v1": "https://survey.myesatherapist.com/v1",
+  "/esa-onboard": "https://survey.myesatherapist.com/v1",
   "/video-testimonial": "/video-testimonials/",
   "/video-testimonial-b": "/video-testimonials/",
   "/author/myesatherapist": "/esa-doctors/dr-robert-staaf/",
@@ -179,6 +179,10 @@ export function proxy(request: NextRequest) {
   // /emotional-support-animal-letter-<state> → /esa-letter-<state>
   const esaState = /^\/emotional-support-animal-letter-([a-z-]+)$/.exec(key);
   if (esaState) return redirectTo(request, `/esa-letter-${esaState[1]}/`);
+
+  // Bare state URLs (/oregon, /florida): the old WordPress state page URLs,
+  // still linked from off-page profiles. One hop to the state page.
+  if (STATES.has(key.slice(1))) return redirectTo(request, `/esa-letter-${key.slice(1)}/`);
 
   // Mistyped state URLs: /mississippi-esa-letter, /esa-nit-south-dakota,
   // /esa-letter-arizona/opens

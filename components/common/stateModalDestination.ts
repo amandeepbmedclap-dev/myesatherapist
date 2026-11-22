@@ -34,7 +34,7 @@ import { STATE_INDEX_BY_SLUG } from "@/data/stateIndex";
 //   "pennsylvania",
 // ]);
 
-export const PSD_SURVEY_URL = "https://survey.myesatherapist.com/";
+export const PSD_SURVEY_URL = "https://survey.myesatherapist.com/v1";
 // Previous PSD fallback for states outside the survey list (disabled).
 // export const PSD_SCHEDULE_URL =
 //   "https://myesatherapist.videovisitmd.com/f/vshop-signIN?straitTo=schedule";

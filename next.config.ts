@@ -25,12 +25,12 @@ const nextConfig: NextConfig = {
       // Old WordPress booking page now lives on the intake survey.
       {
         source: "/booking",
-        destination: "https://survey.myesatherapist.com/",
+        destination: "https://survey.myesatherapist.com/v1",
         statusCode: 301,
       },
       {
         source: "/booking/",
-        destination: "https://survey.myesatherapist.com/",
+        destination: "https://survey.myesatherapist.com/v1",
         statusCode: 301,
       },
       {
