@@ -762,3 +762,34 @@ img[src$="/send-icon.svg"] {
   .cta3d, .cta3d:hover, .cta3d:active { transform: none !important; }
   .cta3d::after, .cta3d .cta-arrow { transition: none; }
 }
+
+/* Section heading measure (Nov 2026): every centred section H2 and its intro use the same
+   width on desktop, and headings balance their lines so they stay within two lines.
+   The wrapper rule only applies to small heading blocks (heading + intro, up to 4 children)
+   so card grids that sit inside a centred container are never resized. */
+h2 {
+  text-wrap: balance;
+}
+@media (min-width: 1024px) {
+  body .text-center:not(.no-measure):has(> h2):not(:has(> :nth-child(5))) {
+    width: 100%;
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body .text-center h2,
+  body h2.text-center {
+    width: 100%;
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .text-center h2 + :is(p, div[class*="body-"]),
+  body h2.text-center + :is(p, div[class*="body-"]) {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

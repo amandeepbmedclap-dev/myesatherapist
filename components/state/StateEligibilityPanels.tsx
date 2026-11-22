@@ -52,7 +52,7 @@ export function StateEligibilityPanels({ data }: { data: StateData }) {
   const twoPanel = steps.length >= 3;
   const criteria = twoPanel ? items.filter((i) => !PROCESS.test(i)) : items;
 
-  const title = data.requirementsTitle || `Basic Requirements For ${stateName} ESA Letter`;
+  const title = data.requirementsTitle || `Basic Requirements for an ESA Letter in ${stateName}`;
   const note =
     data.requirementsNote ||
     `ESA evaluation in ${stateName} must be determined through an individualized assessment conducted by an ${stateName}-licensed mental health professional (LMHP). An ESA letter may only be issued when clinically appropriate based on that evaluation.`;

@@ -90,9 +90,9 @@ export function TrustedByPetOwnersSection({
 
   return (
     <section className={`w-full ${bgColor} py-14 sm:py-18 xl:py-[63px] overflow-hidden`}>
-      <div className="max-w-[1436px] mx-auto px-4 sm:px-8 xl:px-[319px]">
-        <div className="max-w-[798px] mx-auto flex flex-col items-center gap-10">
-          <div className="text-center max-w-[709px] mx-auto space-y-4">
+      <div className="max-w-[1436px] mx-auto px-4 sm:px-8">
+        <div className="max-w-[880px] mx-auto flex flex-col items-center gap-10">
+          <div className="text-center mx-auto space-y-4">
             <h2 className="heading-h2">
               {displayTitle}
             </h2>

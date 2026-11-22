@@ -298,7 +298,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     requirementsTitle: "ESA Letter Requirements in Alabama",
-    requirementsIntro: "To be considered for an ESA recommendation in Alabama, clinicians typically review the following factors as part of the evaluation process:",
+    requirementsIntro: "To be considered for an ESA recommendation in Alabama, clinicians typically review several factors as part of the evaluation process.",
     requirementsItems: [
       "Adults 18 and older can provide consent for their own evaluation. For minors, a parent or legal guardian must participate as required by applicable consent and clinical policies.",
       "The evaluation must be conducted by a qualified mental health professional who is legally authorized to provide the relevant services to an Alabama patient under applicable Alabama licensure and telehealth requirements.",
@@ -502,7 +502,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Alabama/all-other-alabama-cities-city-icon-image.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in Alabama",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Alabama",
     faqSubtitle: "This section addresses common questions about emotional support animals, housing considerations, and the evaluation process in Alabama.",
     faqs: [
       {
@@ -703,8 +703,8 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
-    requirementsTitle: "Basic Requirements for ESA Letter Alaska",
-    requirementsIntro: "To be considered for an emotional support animal (ESA) evaluation in Alaska, the following criteria are typically reviewed by the evaluating clinician:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Alaska",
+    requirementsIntro: "To be considered for an emotional support animal (ESA) evaluation in Alaska, several criteria are typically reviewed by the evaluating clinician.",
     requirementsItems: [
       "Your age and ability to provide informed consent, with parent or guardian participation when required for minors.",
       "Your mental health symptoms and their impact on daily functioning.",
@@ -895,7 +895,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Alaska/All%20Other%20Alaska%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter Alaska",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Alaska",
     faqSubtitle: "This section addresses common questions about emotional support animals, housing considerations, and the evaluation process in Alaska.",
     faqs: [
       {
@@ -1171,7 +1171,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     benefitsTitle: "Benefits of a Medically Approved ESA Letter in Arizona",
     benefitsRefundNote: "",
-    benefitsSubtitle: "A clinically appropriate ESA recommendation may support reasonable housing accommodations and emotional well-being. Some key benefits include:",
+    benefitsSubtitle: "A clinically appropriate ESA recommendation may support reasonable housing accommodations and emotional well-being.",
     financialBenefitsHeading: "Housing and Financial Support",
     financialBenefits: [
       {
@@ -1501,7 +1501,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     whoQualifiesNote: "Important: A mental health condition alone does not guarantee eligibility. A licensed clinician issues an Arkansas ESA letter only after an individualized evaluation.",
     requirementsTitle: "Arkansas ESA Letter Eligibility Considerations",
-    requirementsIntro: "Individuals seeking an emotional support animal evaluation in Arkansas are generally expected to meet the following considerations:",
+    requirementsIntro: "Individuals seeking an emotional support animal evaluation in Arkansas are generally expected to meet several considerations.",
     requirementsItems: [
       "Be 18 years or older; minors require parent or legal guardian involvement",
       "Experience an emotional or mental health concern that affects daily functioning, as assessed by a qualified clinician",
@@ -1909,7 +1909,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     whoQualifiesNote: "Important: A mental health condition alone does not guarantee eligibility. A licensed clinician issues a California ESA letter only after an individualized evaluation if they determine an ESA would benefit you in managing your disability.",
     requirementsTitle: "Basic Requirements for California ESA Letter",
-    requirementsIntro: "To be considered for an ESA recommendation in California, the following requirements generally apply:",
+    requirementsIntro: "To be considered for an ESA recommendation in California, several requirements generally apply.",
     requirementsItems: [
       "You are 18 years of age or older (minors require parental or guardian consent).",
       "You have a mental or emotional health condition that substantially impacts daily life.",
@@ -2373,7 +2373,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     whoQualifiesNote: "Important: A mental health condition alone does not guarantee eligibility. A licensed clinician issues a Colorado ESA letter only after an individualized evaluation.",
     requirementsTitle: "Colorado ESA Requirements",
-    requirementsIntro: "To be eligible for an ESA recommendation in Colorado, the following criteria typically apply:",
+    requirementsIntro: "To be eligible for an ESA recommendation in Colorado, several criteria typically apply.",
     requirementsItems: [
       "You must be at least 18 years old. Minors may need a parent or guardian involved in the process.",
       "You should have a mental or emotional health concern that a licensed professional can assess.",
@@ -2419,7 +2419,7 @@ export const STATES_DATA: Record<string, StateData> = {
     reviewsTitle: "See What Our Clients Say",
     reviewsSubtitle: "Here’s what our clients say about their experience.",
     benefitsRefundNote: "",
-    benefitsTitle: "Benefits of a Clinically Issued Emotional Support Animal Letter in Colorado",
+    benefitsTitle: "Benefits of a Clinically Issued ESA Letter in Colorado",
     benefitsSubtitle: "When clinically appropriate and properly issued, ESA documentation can help clarify certain housing-related considerations under applicable fair housing guidance. Outcomes vary by housing provider and circumstance.",
     financialBenefitsHeading: "Financial & Housing Benefits",
     financialBenefits: [
@@ -2777,7 +2777,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Important: A mental health condition alone does not guarantee eligibility. A licensed clinician issues a Connecticut ESA letter only after an individualized evaluation.",
-    requirementsTitle: "Basic Requirements for an ESA Letter Connecticut",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Connecticut",
     requirementsIntro: "When seeking an emotional support animal evaluation in Connecticut, several factors are typically reviewed as part of the assessment. These elements help clinicians better understand an individual’s circumstances and determine whether an ESA may provide appropriate support.",
     requirementsItems: [
       "The individual is 18 years of age or older, or has appropriate parental or guardian consent",
@@ -3030,7 +3030,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Connecticut/all%20other%20Connecticut.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter Connecticut",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Connecticut",
     faqSubtitle: "This section addresses common questions about emotional support animals, housing considerations, and the evaluation process in Connecticut.",
     faqs: [
       {
@@ -3181,8 +3181,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Important: A mental health condition alone does not guarantee eligibility. A licensed clinician issues a Delaware ESA letter only after an individualized evaluation.",
-    requirementsTitle: "Basic Requirements for an ESA Letter Delaware",
-    requirementsIntro: "When applying for an emotional support animal letter in Delaware, professionals consider several factors, including:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Delaware",
+    requirementsIntro: "When applying for an emotional support animal letter in Delaware, professionals consider several factors.",
     requirementsItems: [
       "The person is at least 18 years old or has a parent's or guardian’s consent for minors.",
       "A diagnosed mental or emotional health condition is present.",
@@ -3580,8 +3580,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Important: The above conditions do not guarantee ESA documentation. All determinations are based on the clinical judgment of a licensed mental health provider following a formal evaluation.",
-    requirementsTitle: "Basic Requirements for an ESA Letter Florida",
-    requirementsIntro: "During an emotional support animal evaluation in Florida, a licensed therapist/counselor may review qualifying factors such as:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Florida",
+    requirementsIntro: "During an emotional support animal evaluation in Florida, a licensed therapist/counselor may review qualifying factors.",
     requirementsItems: [
       "You are at least 18 years old, or have consent from a parent or legal guardian.",
       "You are experiencing a mental or emotional health condition.",
@@ -4077,8 +4077,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Important: The presence of a mental health condition does not automatically qualify an individual for an ESA letter in Georgia. An ESA recommendation is provided only if a licensed mental health professional determines it is clinically appropriate.",
-    requirementsTitle: "Eligibility Criteria for an ESA Letter Georgia",
-    requirementsIntro: "The following factors are considered during the evaluation process when applying for an emotional support animal letter in Georgia:",
+    requirementsTitle: "Eligibility Criteria for an ESA Letter in Georgia",
+    requirementsIntro: "Several factors are considered during the evaluation process when applying for an emotional support animal letter in Georgia.",
     requirementsItems: [
       "The individual is or above 18 years of age or has parental or guardian consent if minor.",
       "Evaluation identifies a mental or emotional health condition.",
@@ -4330,7 +4330,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Georgia/all%20other%20Georgia%20.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter Georgia",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Georgia",
     faqSubtitle: "This section addresses common questions about emotional support animals, housing considerations, and the ESA evaluation process in Georgia.",
     faqs: [
       {
@@ -4481,8 +4481,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: If you have any of the conditions listed above, you do not automatically qualify for an ESA. In Hawaii, a licensed mental health professional must conduct an assessment that includes a full clinical evaluation and expert judgment, not just a short questionnaire or instant approval.",
-    requirementsTitle: "Basic Requirements For ESA Letter Hawaii",
-    requirementsIntro: "The ESA evaluation process in Hawaii involves several key factors before a letter can be approved:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Hawaii",
+    requirementsIntro: "The ESA evaluation process in Hawaii involves several key factors before a letter can be approved.",
     requirementsItems: [
       "The person is generally 18 years or older, or a minor with permission from a parent or legal guardian.",
       "A qualifying emotional or mental health condition is identified during the assessment.",
@@ -4872,8 +4872,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: ESA documentation requires a professional assessment. Having the above-mentioned conditions will not guarantee an ESA letter. A licensed mental health provider in Idaho must evaluate the condition and confirm that an emotional support animal is part of the recommended care plan.",
-    requirementsTitle: "Basic Requirements for ESA Letter Idaho",
-    requirementsIntro: "When seeking an emotional support animal letter in Idaho, certain general criteria must be fulfilled. These include:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Idaho",
+    requirementsIntro: "When seeking an emotional support animal letter in Idaho, certain general criteria must be fulfilled.",
     requirementsItems: [
       "The individual must be 18 years or older or have verified consent from a parent or legal guardian if underage.",
       "A comprehensive assessment must be completed by a licensed Idaho mental health professional.",
@@ -5111,7 +5111,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Idaho/all%20other%20idaho.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in Idaho",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Idaho",
     faqSubtitle: "Get clear and dependable answers to common questions about emotional support animals in Idaho by reviewing the frequently asked questions provided below.",
     faqs: [
       {
@@ -5263,8 +5263,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: ESA documentation requires a professional assessment. Having the above-mentioned conditions will not guarantee an ESA letter. A licensed mental health provider in Illinois must evaluate the condition and confirm that an emotional support animal is part of the recommended care plan.",
-    requirementsTitle: "Basic Requirements For ESA Letter Illinois",
-    requirementsIntro: "During an ESA evaluation, a licensed Illinois mental health professional may consider:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Illinois",
+    requirementsIntro: "During an ESA evaluation, a licensed Illinois mental health professional may consider several factors.",
     requirementsItems: [
       "Whether you are 18 years or older (or have parental consent if a minor).",
       "Your Illinois residency.",
@@ -5503,7 +5503,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Illinois/All%20Other%20Illinois%20CitiesO.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter Illinois",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Illinois",
     faqSubtitle: "This section addresses common questions about emotional support animals, housing considerations, and the evaluation process in Illinois.",
     faqs: [
       {
@@ -5654,8 +5654,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: ESA documentation requires a professional assessment. Having the above-mentioned conditions will not guarantee an ESA letter. A qualified mental health professional should evaluate the individual and determine whether an emotional support animal is clinically appropriate based on the individual's circumstances and disability-related needs.",
-    requirementsTitle: "Basic Requirements For ESA Letter Indiana",
-    requirementsIntro: "When applying for an emotional support letter in Indiana, professionals pay attention to several considerations, such as:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Indiana",
+    requirementsIntro: "When applying for an emotional support letter in Indiana, professionals pay attention to several considerations.",
     requirementsItems: [
       "The person is at least 18 years old or has documented consent from a parent or guardian if a minor",
       "A qualifying disability and disability-related need are evaluated through a professional clinical assessment.",
@@ -5891,7 +5891,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Indiana/all%20oher%20Indiana.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter Indiana",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Indiana",
     faqSubtitle: "Get clear, straightforward answers to your questions about securing an emotional support animal letter in Indiana.",
     faqs: [
       {
@@ -6043,7 +6043,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     whoQualifiesNote: "Note: Having the above mental health conditions does not automatically qualify someone for an Iowa ESA letter. A licensed mental health professional in Iowa must conduct an evaluation, confirm a qualifying diagnosis, and determine whether an ESA is clinically necessary.",
     requirementsTitle: "Basic Requirements for Iowa ESA Letter",
-    requirementsIntro: "Iowa-licensed mental health professionals carefully evaluate multiple factors before making an ESA recommendation. Some of these typically include:",
+    requirementsIntro: "Iowa-licensed mental health professionals carefully evaluate multiple factors before making an ESA recommendation.",
     requirementsItems: [
       "The individual is at least 18 years old or has documented consent from a parent or legal guardian if under 18.",
       "A licensed clinician identifies a qualifying mental or emotional health condition through a formal assessment.",
@@ -6281,7 +6281,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Iowa/all%20other%20Iowa.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter Iowa",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Iowa",
     faqSubtitle: "Find clear and reliable answers to your questions about obtaining an emotional support animal letter in Iowa by exploring the frequently asked questions provided below.",
     faqs: [
       {
@@ -6432,8 +6432,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: Simply having one of the conditions listed above does not guarantee eligibility for an ESA. In Kansas, an evaluation must be completed by a licensed mental health professional and should include a proper clinical assessment and professional judgment, not just a short questionnaire or instant approval.",
-    requirementsTitle: "Basic Requirements for ESA Letter Kansas",
-    requirementsIntro: "The ESA evaluation process in Kansas includes several important considerations before a letter may be issued:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Kansas",
+    requirementsIntro: "The ESA evaluation process in Kansas includes several important considerations before a letter may be issued.",
     requirementsItems: [
       "The individual is typically 18 years or older, or a minor with consent from a parent or legal guardian.",
       "A qualifying mental or emotional health condition is identified during the evaluation.",
@@ -6823,8 +6823,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: Having any of these conditions does not automatically qualify you for an ESA letter in Kentucky. Approval is only granted after a proper evaluation and diagnosis by a licensed mental health professional in the state.",
-    requirementsTitle: "Basic Requirements For Kentucky ESA Letter",
-    requirementsIntro: "To be considered for an ESA letter in Kentucky, a few essential conditions must be satisfied:",
+    requirementsTitle: "Basic Requirements for Kentucky ESA Letter",
+    requirementsIntro: "To be considered for an ESA letter in Kentucky, a few essential conditions must be satisfied.",
     requirementsItems: [
       "Applicants should be at least 18 years old. Minors require consent from a parent or legal guardian.",
       "A comprehensive mental health evaluation must be completed by a licensed professional authorized in Kentucky.",
@@ -7061,7 +7061,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Kentucky/All%20Other%20Kentucky%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in Kentucky",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Kentucky",
     faqSubtitle: "Clear all your queries by looking at the most-asked questions about an emotional support animal letter Kentucky.",
     faqs: [
       {
@@ -7212,8 +7212,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: Simply having the mental health conditions listed does not automatically make someone eligible for a Louisiana ESA letter. A licensed mental health professional in Louisiana must perform an evaluation, verify a qualifying diagnosis, and determine if an emotional support animal is clinically appropriate.",
-    requirementsTitle: "Basic Requirements for an ESA Letter Louisiana",
-    requirementsIntro: "When requesting an emotional support animal letter in Louisiana, it is important to adhere to the following requirements:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Louisiana",
+    requirementsIntro: "When requesting an emotional support animal letter in Louisiana, it is important to adhere to several requirements.",
     requirementsItems: [
       "The individual is 18 years of age or older, or has verified parental/legal guardian consent if under 18.",
       "A licensed Louisiana clinician confirms the presence of a qualifying mental or emotional health condition through a comprehensive assessment.",
@@ -7451,7 +7451,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Louisiana/all%20other%20Louisiana.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter Louisiana",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Louisiana",
     faqSubtitle: "Get answers to all your concerns and queries regarding an emotional support animal letter in Louisiana by having a look at the most frequently asked questions below!",
     faqs: [
       {
@@ -7603,8 +7603,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: Experiencing any of these conditions does not automatically result in ESA approval in Maine. A licensed mental health professional must complete a full evaluation and diagnosis before issuing an ESA letter.",
-    requirementsTitle: "Basic Requirements for ESA Letter Maine",
-    requirementsIntro: "To be eligible for an ESA letter in Maine, certain key requirements must be met:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Maine",
+    requirementsIntro: "To be eligible for an ESA letter in Maine, certain key requirements must be met.",
     requirementsItems: [
       "Applicants must be 18 years or older. Minors require consent from a parent or legal guardian.",
       "A full mental health assessment must be conducted by a licensed professional authorized in Maine.",
@@ -7841,7 +7841,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Maine/All%20Other%20Maine%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in Maine",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Maine",
     faqSubtitle: "Get answers to all your queries regarding getting an emotional support animal letter in Maine by looking at the most asked questions below!",
     faqs: [
       {
@@ -7991,8 +7991,8 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
-    requirementsTitle: "Basic Requirements for ESA Letter Maryland",
-    requirementsIntro: "While applying for an emotional support letter in Maryland, mental health experts look at several factors, such as:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Maryland",
+    requirementsIntro: "While applying for an emotional support letter in Maryland, mental health experts look at several factors.",
     requirementsItems: [
       "The individual is 18 years or older, or has verified parental or guardian consent if under 18.",
       "A mental or emotional health condition has been identified through a licensed clinical evaluation.",
@@ -8227,7 +8227,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Maryland/All%20Other%20Maryland%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter Maryland",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Maryland",
     faqSubtitle: "Explore the frequently asked questions below to gain clearer insight into the steps involved, eligibility criteria, and legal guidelines for obtaining an emotional support animal letter in Maryland.",
     faqs: [
       {
@@ -8378,8 +8378,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: Having the above-mentioned conditions will not automatically qualify an individual for an ESA letter. A qualified healthcare professional must determine, based on an individualized evaluation, whether the person has a disability-related need for an emotional support animal.",
-    requirementsTitle: "Basic Requirements for an ESA Letter Massachusetts",
-    requirementsIntro: "Some factors have to be kept in mind before requesting an emotional support letter in Massachusetts. These include:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Massachusetts",
+    requirementsIntro: "Some factors have to be kept in mind before requesting an emotional support letter in Massachusetts.",
     requirementsItems: [
       "The person must be at least eighteen years old. Consent from a parent or legal guardian is necessary if the individual is a minor.",
       "To determine if an individual has a qualifying emotional or psychological disorder, a licensed mental health practitioner in Massachusetts performs a thorough mental health assessment.",
@@ -8616,7 +8616,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Massachusetts/all%20other%20massachusetts.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in Massachusetts",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Massachusetts",
     faqSubtitle: "Get answers to the most frequently asked questions about an emotional support animal letter in Massachusetts!",
     faqs: [
       {
@@ -8767,8 +8767,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: Having one of the conditions listed above does not automatically qualify an individual for an ESA. A qualified healthcare professional must determine, based on an individualized evaluation, whether the individual has a disability-related need for an emotional support animal.",
-    requirementsTitle: "Basic Requirements For an ESA Letter in Michigan",
-    requirementsIntro: "To receive an emotional support animal letter in Michigan that can be used to request housing accommodations, these conditions generally apply:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Michigan",
+    requirementsIntro: "To receive an emotional support animal letter in Michigan that can be used to request housing accommodations, these conditions generally apply.",
     requirementsItems: [
       "The individual must be at least 18 years old. Minors may qualify with documented consent from a parent or legal guardian.",
       "A comprehensive clinical assessment must be conducted by a Michigan-licensed mental health professional to determine the presence of a qualifying emotional or psychological condition.",
@@ -9005,7 +9005,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Michigan/All%20Other%20Michigan%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in Michigan",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Michigan",
     faqSubtitle: "All your queries and concerns regarding an emotional support animal letter in Michigan will be resolved by quickly going through the most frequently asked questions below!",
     faqs: [
       {
@@ -9155,8 +9155,8 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
-    requirementsTitle: "Basic Requirements For an ESA Letter in Minnesota",
-    requirementsIntro: "Professionals consider several factors when applying for an ESA letter Minnesota. These include but are not limited to:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Minnesota",
+    requirementsIntro: "Professionals consider several factors when someone applies for an ESA letter in Minnesota.",
     requirementsItems: [
       "The individual is 18 or older, or has verified parental or guardian consent if under 18.",
       "A licensed clinical evaluation identifies a mental or emotional health condition.",
@@ -9392,7 +9392,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Minnesota/All%20Other%20Minnesota%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter Minnesota",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Minnesota",
     faqSubtitle: "Review the commonly asked questions below to better understand the process, requirements, and legal considerations for securing an emotional support animal letter in Minnesota.",
     faqs: [
       {
@@ -9545,7 +9545,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     whoQualifiesNote: "Note: ESA documentation requires professional evaluation. A licensed mental health provider in Mississippi must diagnose the condition and verify that an emotional support animal is part of the recommended support plan.",
     requirementsTitle: "Basic Requirements for an ESA Letter in Mississippi",
-    requirementsIntro: "When applying for an emotional support animal letter in Mississippi, some basic guidelines have to be met. These include:",
+    requirementsIntro: "When applying for an emotional support animal letter in Mississippi, some basic guidelines have to be met.",
     requirementsItems: [
       "The applicant must be at least eighteen years old, or, if younger, need to get a parent’s or legal guardian’s certified consent.",
       "A mental health practitioner with a Mississippi license must do a thorough evaluation.",
@@ -9782,7 +9782,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Mississippi/All%20Other%20Mississippi%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in Mississippi",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Mississippi",
     faqSubtitle: "Find clear and reliable answers to your questions about emotional support animals in Mississippi by exploring the frequently asked questions outlined below.",
     faqs: [
       {
@@ -9934,7 +9934,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     whoQualifiesNote: "Note: Having the medical conditions stated above does not automatically qualify you for ESA documentation. A mental health professional licensed in Missouri has to diagnose the condition and confirm the need for an ESA.",
     requirementsTitle: "Basic Requirements for an ESA Letter in Missouri",
-    requirementsIntro: "When applying for an emotional support animal letter in Missouri, the following key considerations generally apply:",
+    requirementsIntro: "When applying for an emotional support animal letter in Missouri, several key considerations generally apply.",
     requirementsItems: [
       "The minimum age requirement for the application is eighteen. In most situations, a parent or legal guardian must provide written approval for minors.",
       "A thorough psychological evaluation must be performed by a qualified mental health practitioner who is permitted to practice in Missouri.",
@@ -10170,7 +10170,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Missouri/All%20Other%20Missouri%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter Missouri",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Missouri",
     faqSubtitle: "Find answers to frequently asked questions and clear up any confusion about ESA letters in Missouri.",
     faqs: [
       {
@@ -10321,8 +10321,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Important: Having the above mental health conditions does not automatically qualify someone for a Montana ESA letter. A licensed mental health professional in Montana must evaluate, confirm a qualifying diagnosis, and determine if an ESA is clinically needed.",
-    requirementsTitle: "General Requirements For ESA Letter Montana",
-    requirementsIntro: "When requesting an emotional support animal letter in Montana, the following factors should always be kept in mind:",
+    requirementsTitle: "General Requirements for an ESA Letter in Montana",
+    requirementsIntro: "When requesting an emotional support animal letter in Montana, several factors should always be kept in mind.",
     requirementsItems: [
       "The individual is at least eighteen years old, or, if under 18, has written consent from a parent or legal guardian.",
       "A comprehensive clinical evaluation is conducted by a mental health professional licensed in Montana to determine the presence of a qualifying emotional or psychological condition.",
@@ -10559,7 +10559,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Montana/All%20Other%20Montana%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter Montana",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Montana",
     faqSubtitle: "Quickly explore the most frequently asked questions to clear up your doubts and concerns regarding the emotional support animal letter in Montana.",
     faqs: [
       {
@@ -10715,8 +10715,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: The conditions mentioned above do not automatically qualify an individual for ESA documentation. A licensed mental health professional in Nebraska must evaluate the situation and determine whether an emotional support animal is appropriate.",
-    requirementsTitle: "Basic Requirements For an ESA Letter Nebraska",
-    requirementsIntro: "To qualify for an emotional support animal (ESA) letter in Nebraska, applicants must meet certain foundational criteria:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Nebraska",
+    requirementsIntro: "To qualify for an emotional support animal (ESA) letter in Nebraska, applicants must meet certain foundational criteria.",
     requirementsItems: [
       "The individual should be at least 18 years old. Applicants under 18 must have documented consent from a parent or legal guardian.",
       "A thorough evaluation must be conducted by a licensed mental health professional practicing in Nebraska.",
@@ -10954,7 +10954,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Nebraska/All%20Other%20Nebraska%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in Nebraska",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Nebraska",
     faqSubtitle: "Sit and relax while we answer all your queries related to the emotional support animal letter in Nebraska.",
     faqs: [
       {
@@ -11106,7 +11106,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     whoQualifiesNote: "Note: The presence of these disorders alone does not guarantee eligibility for an ESA letter. A licensed mental health provider in Nevada must evaluate your situation and confirm the need for an emotional support animal.",
     requirementsTitle: "Basic Requirements for an ESA Letter in Nevada",
-    requirementsIntro: "When requesting an emotional support animal letter in Nevada, the following criteria are considered:",
+    requirementsIntro: "When requesting an emotional support animal letter in Nevada, several criteria are considered.",
     requirementsItems: [
       "Individuals must be 18 or older or have parental/legal guardian consent if younger.",
       "A Nevada-licensed mental health professional must conduct a thorough clinical evaluation.",
@@ -11343,7 +11343,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Nevada/1x/All%20Other%20Nevada%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in Nevada",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Nevada",
     faqSubtitle: "Find answers to common questions about emotional support animals, housing regulations, and the evaluation process in Nevada.",
     faqs: [
       {
@@ -11725,7 +11725,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/New%20York/all-other-ny-cities-city-icon-image.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter New York",
+    faqTitle: "Frequently Asked Questions About ESA Letters in New York",
     faqSubtitle: "Find clear, reliable answers to the most common questions about Emotional Support Animals, ESA documentation, and your housing rights when living with an ESA in NY.",
     faqs: [
       {
@@ -11926,8 +11926,8 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
-    requirementsTitle: "Basic Requirements for ESA Letter Texas",
-    requirementsIntro: "When seeking an emotional support animal recommendation in Texas, the following factors are typically reviewed as part of the assessment process:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Texas",
+    requirementsIntro: "When seeking an emotional support animal recommendation in Texas, several factors are typically reviewed as part of the assessment process.",
     requirementsItems: [
       "The individual is 18 years of age or older, or has parental consent if a minor",
       "A mental or emotional health condition has been identified through evaluation",
@@ -12161,7 +12161,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Texas/all-other-texas-cities-map-image.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter Texas",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Texas",
     faqSubtitle: "This section addresses common questions about emotional support animals, housing considerations, and the evaluation process in Texas.",
     faqs: [
       {
@@ -12348,7 +12348,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     whoQualifiesNote: "Note: Having the conditions listed above does not automatically qualify someone for ESA documentation. A licensed mental health professional in Washington must evaluate the individual, diagnose the condition if applicable, and determine whether an emotional support animal may provide meaningful therapeutic support.",
     requirementsTitle: "Basic Requirements for a Washington ESA Letter",
-    requirementsIntro: "In Washington, ESA evaluations may consider the following factors:",
+    requirementsIntro: "In Washington, ESA evaluations may consider several factors.",
     requirementsItems: [
       "The individual is typically 18 years or older, or a minor with consent from a parent or legal guardian.",
       "A mental or emotional health condition is identified during the professional evaluation.",
@@ -12585,7 +12585,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Washington/1x/All%20Other%20Washington%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in Washington",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Washington",
     faqSubtitle: "Get answers to all your queries regarding getting an emotional support animal letter in Washington by looking at the most asked questions below!",
     faqs: [
       {
@@ -12740,8 +12740,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: The presence of a mental health condition alone does not qualify someone for ESA documentation. A Wisconsin-licensed therapist or clinician must verify the diagnosis and the therapeutic need for an emotional support animal.",
-    requirementsTitle: "Basic Requirements for an ESA Letter Wisconsin",
-    requirementsIntro: "To qualify for an ESA letter in Wisconsin, individuals must meet certain requirements. Some of these include:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Wisconsin",
+    requirementsIntro: "To qualify for an ESA letter in Wisconsin, individuals must meet certain requirements.",
     requirementsItems: [
       "The individual should be at least 18 years old. Those under 18 must have written consent from a parent or legal guardian.",
       "A comprehensive assessment must be conducted by a licensed mental health professional authorized to practice in Wisconsin.",
@@ -12980,7 +12980,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Wisconsin/1x/All%20Other%20Wisconsin%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in Wisconsin",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Wisconsin",
     faqSubtitle: "Have questions about ESA letters in Wisconsin? Sit back and let us explain it all!",
     faqs: [
       {
@@ -13134,8 +13134,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: Simply having the above conditions does not automatically qualify an individual for ESA documentation. A Wyoming-licensed mental health professional (LMHP) has to assess the patient, diagnose the condition, and then determine whether an emotional support animal would offer therapeutic benefits to the patient or not.",
-    requirementsTitle: "Basic Requirements for ESA Letter Wyoming",
-    requirementsIntro: "In Wyoming, ESA evaluations may take the following considerations into account:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Wyoming",
+    requirementsIntro: "In Wyoming, ESA evaluations may take several considerations into account.",
     requirementsItems: [
       "The individual should be at least 18 years old, or a minor with permission from a parent or legal guardian.",
       "A mental or emotional health condition is recognized during the professional evaluation.",
@@ -13372,7 +13372,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Wyoming/1x/All%20Other%20Wyoming%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in Wyoming",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Wyoming",
     faqSubtitle: "Get answers to all your queries regarding getting an emotional support animal letter in Wyoming by looking at the most asked questions below!",
     faqs: [
       {
@@ -13523,7 +13523,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: Having any of the conditions mentioned above does not automatically qualify someone for an ESA. In New Hampshire, the evaluation should be conducted by a licensed mental health professional and must involve a legitimate clinical assessment and professional judgment, not a brief questionnaire or automated approval.",
-    requirementsTitle: "Basic Requirements for an ESA Letter New Hampshire",
+    requirementsTitle: "Basic Requirements for an ESA Letter in New Hampshire",
     requirementsIntro: "The ESA evaluation process in New Hampshire involves several criteria that must be considered before a letter can be issued.",
     requirementsItems: [
       "The individual is generally 18 years or older, or a minor with permission from a parent or legal guardian.",
@@ -13913,7 +13913,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     whoQualifiesNote: "Note: An ESA letter cannot be issued based only on symptoms or conditions. A qualified New Jersey mental health provider must conduct an evaluation and confirm that an emotional support animal supports your well-being.",
     requirementsTitle: "Basic Requirements for an ESA Letter in New Jersey",
-    requirementsIntro: "When applying for an emotional support animal letter in New Jersey, some basic criteria have to be met. These include:",
+    requirementsIntro: "When applying for an emotional support animal letter in New Jersey, some basic criteria have to be met.",
     requirementsItems: [
       "The individual must be at least 18 years old or have a parental or legal guardian’s consent if under 18.",
       "The emotional or mental illness should significantly impair daily functioning, responsibilities, or focus.",
@@ -14151,7 +14151,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/New%20Jersey/1x/All%20Other%20NJ%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in New Jersey",
+    faqTitle: "Frequently Asked Questions About ESA Letters in New Jersey",
     faqSubtitle: "Get answers to all your queries and concerns related to emotional support animals in New Jersey by quickly going through the below-mentioned most commonly asked questions.",
     faqs: [
       {
@@ -14304,7 +14304,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     whoQualifiesNote: "Note: Having these mental conditions does not simply qualify you for ESA documentation in New Mexico. Only after a legitimate clinical diagnosis by a licensed mental health professional in New Mexico will the letter be issued.",
     requirementsTitle: "Basic Requirements for an ESA Letter in New Mexico",
-    requirementsIntro: "To qualify for an ESA letter in New Mexico, certain key criteria must be met:",
+    requirementsIntro: "To qualify for an ESA letter in New Mexico, certain key criteria must be met.",
     requirementsItems: [
       "Applicants must be 18 years or older. Those under 18 must have confirmed approval from a parent or legal guardian.",
       "A full mental health assessment must be conducted by a professional licensed to practice in New Mexico.",
@@ -14542,7 +14542,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/New%20Mexico/1x/All%20Other%20NM%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in New Mexico",
+    faqTitle: "Frequently Asked Questions About ESA Letters in New Mexico",
     faqSubtitle: "Sit back and relax when we have got you covered regarding getting all your doubts about an emotional support letter in New Mexico.",
     faqs: [
       {
@@ -14693,8 +14693,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: Having one of the above-mentioned disorders does not automatically qualify someone for ESA documentation. A qualified professional should assess the individual’s circumstances and determine whether an assistance animal may be appropriate to support a disability-related need.",
-    requirementsTitle: "Basic Requirements for an ESA Letter North Carolina",
-    requirementsIntro: "Before requesting emotional support animal documentation in North Carolina, several factors are typically considered during the evaluation process. Some of these include:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in North Carolina",
+    requirementsIntro: "Before requesting emotional support animal documentation in North Carolina, several factors are typically considered during the evaluation process.",
     requirementsItems: [
       "Age and consent requirements may depend on the provider’s policies and applicable rules.",
       "The assessment should be conducted by a professional appropriately qualified and authorized to provide the service.",
@@ -14931,7 +14931,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/North%20Carolina/1x/All%20Other%20NC%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in North Carolina",
+    faqTitle: "Frequently Asked Questions About ESA Letters in North Carolina",
     faqSubtitle: "Get answers to all your doubts and queries by looking at the most commonly asked questions about an ESA letter in North Carolina.",
     faqs: [
       {
@@ -15082,8 +15082,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: Experiencing any of the conditions listed above does not automatically qualify someone for ESA documentation. A North Dakota licensed mental health professional must diagnose the condition and determine whether an emotional support animal is clinically appropriate.",
-    requirementsTitle: "Basic Requirements for an ESA Letter North Dakota",
-    requirementsIntro: "When applying for an emotional support animal letter in North Dakota, several considerations are generally reviewed during the evaluation process:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in North Dakota",
+    requirementsIntro: "When applying for an emotional support animal letter in North Dakota, several considerations are generally reviewed during the evaluation process.",
     requirementsItems: [
       "Age and consent requirements may depend on the provider’s policies and applicable rules.",
       "The assessment should be conducted by a professional appropriately qualified and authorized to provide the service.",
@@ -15320,7 +15320,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/North%20Dakota/1x/All%20Other.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in North Dakota",
+    faqTitle: "Frequently Asked Questions About ESA Letters in North Dakota",
     faqSubtitle: "Learn more about emotional support animal documentation in North Dakota by reading the commonly asked questions below.",
     faqs: [
       {
@@ -15472,7 +15472,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     whoQualifiesNote: "Note: Having one of the above conditions does not automatically qualify someone for ESA documentation. An appropriately qualified professional must assess the individual’s circumstances and determine whether an assistance animal may be appropriate to address a disability-related need.",
     requirementsTitle: "Basic Requirements for an ESA Letter in Ohio",
-    requirementsIntro: "When requesting an emotional support animal letter in Ohio, the following factors should always be kept in mind:",
+    requirementsIntro: "When requesting an emotional support animal letter in Ohio, several factors should always be kept in mind.",
     requirementsItems: [
       "Age and consent requirements may depend on the provider’s policies and applicable rules.",
       "The assessment should be conducted by a professional appropriately qualified and authorized to provide the service.",
@@ -15709,7 +15709,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Ohio/All%20Other%20Ohio%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter Ohio",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Ohio",
     faqSubtitle: "Get answers to all your queries regarding getting an emotional support animal letter in Ohio by looking at the most asked questions below!",
     faqs: [
       {
@@ -15859,8 +15859,8 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
-    requirementsTitle: "Basic Requirements for ESA Letter Oklahoma",
-    requirementsIntro: "In Oklahoma, qualified clinicians perform a thorough evaluation prior to approving an ESA letter. The assessment may consider the following elements:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Oklahoma",
+    requirementsIntro: "In Oklahoma, qualified clinicians perform a thorough evaluation prior to approving an ESA letter. The assessment may consider several elements.",
     requirementsItems: [
       "Age and consent requirements may depend on the provider’s policies and applicable rules.",
       "The assessment should be conducted by a professional appropriately qualified and authorized to provide the service.",
@@ -16097,7 +16097,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Oklahoma/1x/All%20Other%20Oklahoma%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter Oklahoma",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Oklahoma",
     faqSubtitle: "Get answers to all your concerns regarding an emotional support animal letter in Oklahoma!",
     faqs: [
       {
@@ -16247,8 +16247,8 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
-    requirementsTitle: "Basic Requirements for ESA Letter Oregon",
-    requirementsIntro: "Oregon-licensed mental health professionals review several factors before issuing an ESA letter. Some of these include:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Oregon",
+    requirementsIntro: "Oregon-licensed mental health professionals review several factors before issuing an ESA letter.",
     requirementsItems: [
       "The individual’s age and consent requirements depend on applicable rules and provider policies.",
       "An appropriately qualified professional assesses the individual’s circumstances.",
@@ -16484,7 +16484,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Oregon/1x/All%20Other%20Oregon%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in Oregon",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Oregon",
     faqSubtitle: "Find clear answers to the most common queries and concerns about emotional support animals and housing policies across Oregon.",
     faqs: [
       {
@@ -16693,7 +16693,7 @@ export const STATES_DATA: Record<string, StateData> = {
     ],
     benefitsRefundNote: "",
     benefitsTitle: "Benefits of a Clinically Approved ESA Letter in Pennsylvania",
-    benefitsSubtitle: "When issued based on clinical evaluation, an emotional support animal letter supports housing accommodation needs and emotional well-being. Some potential benefits include:",
+    benefitsSubtitle: "When issued based on clinical evaluation, an emotional support animal letter supports housing accommodation needs and emotional well-being.",
     financialBenefitsHeading: "Housing and Financial Support",
     financialBenefits: [
       {
@@ -17027,8 +17027,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: Having any of the conditions mentioned above does not automatically make a person eligible for ESA documentation. A licensed mental health professional in South Dakota must evaluate the individual, diagnose the condition, and decide whether an emotional support animal is an appropriate part of the individual’s mental health support plan.",
-    requirementsTitle: "Basic Requirements for an ESA Letter South Dakota",
-    requirementsIntro: "In South Dakota, ESA evaluations typically consider the following factors:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in South Dakota",
+    requirementsIntro: "In South Dakota, ESA evaluations typically consider several factors.",
     requirementsItems: [
       "The individual must be 18 years or older, or a minor with approval from a parent or legal guardian.",
       "A mental or emotional health condition is identified during the professional evaluation.",
@@ -17084,7 +17084,7 @@ export const STATES_DATA: Record<string, StateData> = {
       { name: "Todd, San Francisco, CA", quote: "What stood out to me was how comfortable the conversation felt. I didn’t feel like I had to explain everything perfectly, which made the whole experience much easier for me." },
     ],
     benefitsRefundNote: "",
-    benefitsTitle: "Benefits of Having an ESA Letter South Dakota",
+    benefitsTitle: "Benefits of Having an ESA Letter in South Dakota",
     benefitsSubtitle: "Find out how an emotional support animal letter in South Dakota can improve your mental health and help you to live more easily and self-assuredly with your ESA.",
     financialBenefitsHeading: "Financial Benefits",
     financialBenefits: [
@@ -17265,7 +17265,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/South%20Dakota/1x/All%20Other%20South%20Dakota%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in South Dakota",
+    faqTitle: "Frequently Asked Questions About ESA Letters in South Dakota",
     faqSubtitle: "Leave all your South Dakota ESA letter doubts on us! Quickly go through the most commonly asked questions below!",
     faqs: [
       {
@@ -17420,8 +17420,8 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: Not all individuals with the above conditions will qualify. ESA letters are issued only when diagnosed by a mental health professional and considered clinically appropriate.",
-    requirementsTitle: "Basic Requirements for an ESA Letter Utah",
-    requirementsIntro: "To be considered eligible for an emotional support animal (ESA) letter in Utah, individuals must meet several essential requirements:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Utah",
+    requirementsIntro: "To be considered eligible for an emotional support animal (ESA) letter in Utah, individuals must meet several essential requirements.",
     requirementsItems: [
       "The applicant must be 18 years of age or older. Those younger than 18 are required to provide written consent from a parent or lawful guardian.",
       "A comprehensive mental health assessment must be completed by a licensed mental health provider authorized to practice in Utah.",
@@ -17659,7 +17659,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Utah/1x/All%20Other%20Utah%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in Utah",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Utah",
     faqSubtitle: "Let us simplify the details of getting an ESA letter in Utah while you focus on what matters most.",
     faqs: [
       {
@@ -17812,7 +17812,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
-    requirementsTitle: "Basic Requirements For ESA Letter South Carolina",
+    requirementsTitle: "Basic Requirements for an ESA Letter in South Carolina",
     requirementsIntro: "The South Carolina ESA evaluation process requires certain conditions to be met before documentation can be issued.",
     requirementsItems: [
       "The applicant is typically 18 years or older or a minor with parent or guardian approval.",
@@ -18203,8 +18203,8 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
-    requirementsTitle: "Basic Requirements For ESA Letter Virginia",
-    requirementsIntro: "When seeking an ESA recommendation in Virginia, the essential factors that are typically reviewed as part of the process:",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Virginia",
+    requirementsIntro: "When seeking an ESA recommendation in Virginia, several essential factors are typically reviewed as part of the process.",
     requirementsItems: [
       "Individuals must be 18 years or older to consent to an evaluation.",
       "For minors, a parent or legal guardian must participate in the evaluation and provide consent.",
@@ -18438,7 +18438,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/Virginia/1x/All%20Other%20Virginia%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter Virginia",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Virginia",
     faqSubtitle: "This section addresses common questions about emotional support animals, housing considerations, and the evaluation process in Virginia.",
     faqs: [
       {
@@ -18592,7 +18592,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
     ],
     whoQualifiesNote: "Note: Having the conditions listed above does not ensure ESA eligibility. A licensed mental health professional in West Virginia must assess the individual, confirm any applicable diagnoses, and determine whether an emotional support animal can provide meaningful therapeutic support.",
-    requirementsTitle: "Basic Requirements for ESA Letter West Virginia",
+    requirementsTitle: "Basic Requirements for an ESA Letter in West Virginia",
     requirementsIntro: "The West Virginia ESA evaluation process makes some criteria mandatory before a document can be issued.",
     requirementsItems: [
       "The individual is generally 18 years or older, or a minor with parent or guardian consent.",
@@ -18830,7 +18830,7 @@ export const STATES_DATA: Record<string, StateData> = {
         icon: "/myesa-state/West%20Virginia/1x/All%20Other%20WV%20Cities.webp",
       },
     ],
-    faqTitle: "Frequently Asked Questions About ESA Letter in West Virginia",
+    faqTitle: "Frequently Asked Questions About ESA Letters in West Virginia",
     faqSubtitle: "Get answers to all your queries regarding an emotional support animal letter in West Virginia.",
     faqs: [
       {

@@ -7,7 +7,7 @@ export function CommunitySection() {
   return (
     <section className="py-16 lg:py-24 bg-background relative overflow-hidden">
       <div className="max-w-[1251px] mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
-        <h2 className="heading-h2 capitalize max-w-[797px] mx-auto mb-6">
+        <h2 className="heading-h2 capitalize mx-auto mb-6 max-w-[880px]">
           My ESA Therapist Has Been Serving the Community Since 2019
         </h2>
 

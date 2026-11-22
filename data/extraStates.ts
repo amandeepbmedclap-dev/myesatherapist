@@ -204,8 +204,8 @@ export const EXTRA_STATES: Record<string, StateData> = {
     ]),
     whoQualifiesNote:
       "Note: A diagnosis alone does not automatically establish eligibility. The clinician must evaluate the individual's circumstances and disability-related need.",
-    requirementsTitle: "Basic Requirements For Vermont ESA Letter",
-    requirementsIntro: "In Vermont, ESA evaluations may consider the following factors:",
+    requirementsTitle: "Basic Requirements for Vermont ESA Letter",
+    requirementsIntro: "In Vermont, ESA evaluations may consider several factors.",
     requirementsItems: [
       "The individual must be 18 years or older, or a minor with consent from a parent or legal guardian.",
       "A mental or emotional health condition is identified during the professional assessment.",
@@ -392,7 +392,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
         "/myesa-state/Vermont/1x/All%20Other%20Vermont%20Cities.webp",
       ],
     ]),
-    faqTitle: "Frequently Asked Questions About ESA Letter in Vermont",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Vermont",
     faqSubtitle:
       "Get answers to all your queries regarding getting an emotional support animal letter in Vermont by looking at the most asked questions below!",
     faqs: [
@@ -495,7 +495,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       ["Panic Disorder", "Repeated panic attacks and anxiety that restrict mobility or social engagement."],
     ]),
     requirementsTitle: "Basic Requirements for an ESA Letter in Tennessee",
-    requirementsIntro: "To be considered for an ESA letter Tennessee, several essential requirements must be satisfied:",
+    requirementsIntro: "To be considered for an ESA letter in Tennessee, several essential requirements must be satisfied.",
     requirementsItems: [
       "The applicant must be at least 18 years old. Individuals under 18 require verified consent from a parent or legal guardian.",
       "A comprehensive clinical evaluation must be completed by a mental health professional licensed to practice in Tennessee.",
@@ -682,7 +682,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
         "/myesa-state/Tennessee/1x/All%20Other%20Tennessee%20Cities.webp",
       ],
     ]),
-    faqTitle: "Frequently Asked Questions About ESA Letter in Tennessee",
+    faqTitle: "Frequently Asked Questions About ESA Letters in Tennessee",
     faqSubtitle: "Relax while we walk you through everything you need to know about ESA letters in Tennessee.",
     faqs: [
       {
@@ -782,7 +782,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       ["Adjustment Disorder with Anxiety", "Stress-related anxiety after major life changes."],
     ]),
     whoQualifiesNote: "Note: Having any of the conditions listed above does not automatically make someone eligible for an ESA.",
-    requirementsTitle: "Basic Requirements for ESA Letter Rhode Island",
+    requirementsTitle: "Basic Requirements for an ESA Letter in Rhode Island",
     requirementsIntro:
       "The ESA evaluation process in Rhode Island requires certain criteria to be met before an official letter can be issued.",
     requirementsItems: [
@@ -794,7 +794,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
     ],
     requirementsNote:
       "Important: An evaluation is conducted by a qualified healthcare professional who is authorized to provide services to individuals located in Rhode Island. The clinician independently determines whether an ESA recommendation is clinically appropriate. On May 22, 2026, HUD's Office of Fair Housing and Equal Opportunity issued new internal enforcement guidance concerning assistance-animal accommodation requests. The guidance rescinded HUD's 2020 assistance-animal notice and directed federal FHEO staff to prioritize cases involving animals trained to provide disability-related assistance. It does not amend the Fair Housing Act itself. Rhode Island also has separate state fair housing protections, including regulations recognizing that not every assistance animal requires specialized training.",
-    benefitsTitle: "Benefits of Having an ESA Letter Rhode Island",
+    benefitsTitle: "Benefits of Having an ESA Letter in Rhode Island",
     benefitsSubtitle:
       "Check out how an emotional support animal letter in Rhode Island can help people with mental health problems live happier and more confident lives with their ESA.",
     financialBenefitsHeading: "Financial Benefits",
@@ -1072,7 +1072,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       ["Persistent Depressive Disorder (Dysthymia)", "Long-term low mood may affect everyday activities and relationships."],
     ]),
     requirementsTitle: "Basic Requirements for a District of Columbia ESA Letter",
-    requirementsIntro: "During an ESA evaluation, the following factors may be considered:",
+    requirementsIntro: "During an ESA evaluation, several factors may be considered.",
     requirementsItems: [
       "The individual is generally 18 or older or is a minor with consent from a parent or legal guardian.",
       "A mental or emotional health condition is identified during the professional evaluation.",
@@ -1331,7 +1331,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       ["Attention-Deficit/Hyperactivity Disorder (ADHD)", "Difficulty with focus and regulation may affect daily functioning."],
     ]),
     requirementsTitle: "Basic Requirements for a Puerto Rico ESA Letter",
-    requirementsIntro: "During an ESA evaluation, the following factors may be considered:",
+    requirementsIntro: "During an ESA evaluation, several factors may be considered.",
     requirementsItems: [
       "The individual is generally 18 or older or is a minor with consent from a parent or legal guardian.",
       "A mental or emotional health condition is identified during the professional evaluation.",
@@ -1504,7 +1504,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       ["Social Isolation Anxiety", "Anxiety caused by limited social interaction or distance from family."],
     ]),
     requirementsTitle: "Basic Requirements for an ESA Letter in the Virgin Islands",
-    requirementsIntro: "During an ESA evaluation, the following factors may be considered:",
+    requirementsIntro: "During an ESA evaluation, several factors may be considered.",
     requirementsItems: [
       "The individual is generally 18 or older or is a minor with consent from a parent or legal guardian.",
       "A mental or emotional health condition is identified during the professional evaluation.",
