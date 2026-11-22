@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState, useRef } from "react";
-import { CtaButton } from "@/components/common/CtaButton";
-import { Play } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Play } from "lucide-react";
 
 const reviews = [
   {
@@ -66,25 +66,13 @@ export function TestimonialsSection({
 
   return (
     <section className="overflow-hidden bg-background py-16 lg:py-20 xl:py-24">
-      <div className="mx-auto grid max-w-[1180px] items-center gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:gap-16 lg:px-8">
-        <div className="lg:order-2">
-          <h2 className="heading-h2 capitalize text-center lg:text-left">{title}</h2>
-          <div className="body-large mt-3 text-center lg:text-left">{subtitle}</div>
-
-          <div className="mt-8 hidden flex-col gap-3 lg:flex">
-            {reviews.map((r, idx) => (
-              <QuoteCard key={r.id} review={r} active={idx === active} onSelect={() => choose(idx)} />
-            ))}
-          </div>
-
-          <div className="mt-8 hidden lg:block">
-            <CtaButton href={buttonHref} variant="secondary" className="w-auto">
-              {buttonText}
-            </CtaButton>
-          </div>
+      <div className="mx-auto max-w-[1180px] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto mb-10 max-w-[640px] text-center lg:mb-14">
+          <h2 className="heading-h2 capitalize">{title}</h2>
+          <div className="body-large mt-3">{subtitle}</div>
         </div>
 
-        <div className="lg:order-1">
+        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:gap-16">
           <div ref={stageRef} className="relative mx-auto w-full max-w-[420px]">
             <span aria-hidden className="absolute -left-4 -top-4 hidden size-28 rounded-[28px] bg-accent/30 sm:block" />
             <span aria-hidden className="absolute -bottom-4 -right-4 hidden size-40 rounded-[32px] color-gradient opacity-90 sm:block" />
@@ -128,16 +116,18 @@ export function TestimonialsSection({
               )}
             </div>
           </div>
-        </div>
 
-        <div className="flex flex-col gap-3 lg:hidden">
-          {reviews.map((r, idx) => (
-            <QuoteCard key={r.id} review={r} active={idx === active} onSelect={() => choose(idx)} />
-          ))}
-          <div className="mt-5 flex justify-center">
-            <CtaButton href={buttonHref} variant="secondary" className="w-auto">
+          <div className="flex flex-col gap-3">
+            {reviews.map((r, idx) => (
+              <QuoteCard key={r.id} review={r} active={idx === active} onSelect={() => choose(idx)} />
+            ))}
+            <Link
+              href={buttonHref}
+              className="group mt-3 inline-flex items-center gap-2 self-center font-sans text-[16px] font-bold text-primary underline decoration-accent decoration-2 underline-offset-[6px] transition-colors hover:text-[#1D6E72] lg:self-start"
+            >
               {buttonText}
-            </CtaButton>
+              <ArrowRight aria-hidden className="size-4 transition-transform group-hover:translate-x-1" />
+            </Link>
           </div>
         </div>
       </div>
