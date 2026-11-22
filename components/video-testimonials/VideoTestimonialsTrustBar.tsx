@@ -7,8 +7,8 @@ const ITEMS = [
   {
     src: "/video-testimonial/video-testimonial-trustsection-happyclient.webp",
     alt: "Happy Clients",
-    value: "624+",
-    label: "Happy Clients",
+    value: "6,500+",
+    label: "Clients Supported",
     iconClass: "w-[72px] h-[64px] sm:w-[88px] sm:h-[76px]",
   },
   {

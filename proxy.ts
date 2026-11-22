@@ -20,8 +20,18 @@ const ALIASES: Record<string, string> = {
   "/consent-for-telehealth/": "/telehealth-consent/",
 };
 
+// Pages permanently removed from the site: answer 410 Gone so search
+// engines drop them quickly instead of retrying a 404.
+const GONE = new Set(["/esa-letter-guam", "/esa-letter-guam/"]);
+
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  if (GONE.has(pathname.toLowerCase())) {
+    return new NextResponse("This page has been permanently removed.", {
+      status: 410,
+      headers: { "Content-Type": "text/plain; charset=utf-8", "X-Robots-Tag": "noindex" },
+    });
+  }
   const lower = pathname.toLowerCase();
   const target = ALIASES[lower] ?? (lower !== pathname ? lower : null);
   if (!target || target === pathname) {

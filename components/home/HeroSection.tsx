@@ -12,7 +12,7 @@ import { CtaButton } from "@/components/common/CtaButton";
 import { promptSelectState } from "@/components/common/promptSelectState";
 
 const statsData = [
-  { value: "64,739+", label: "ESA Evaluations" },
+  { value: "6,500+", label: "Clients Supported" },
   { value: "7+", label: "Years Serving" },
   { value: "4.8", label: "Verified Reviews" },
 ];

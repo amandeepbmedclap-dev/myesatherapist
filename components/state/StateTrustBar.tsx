@@ -4,7 +4,8 @@ import { StateData } from "@/data/statesData";
 
 export function StateTrustBar({ data }: { data: StateData }) {
   const stateName = data.name;
-  const residentsCount = data.residentsServed || "6,500+";
+  // One verified nationwide figure; per-state counts were removed (Nov 2026).
+  const residentsCount = "6,500+";
 
   const stat5 = data.trustStat5 || {
     value: "Secure",
@@ -14,7 +15,7 @@ export function StateTrustBar({ data }: { data: StateData }) {
   const stats = [
     {
       value: residentsCount,
-      label: `${stateName} Residents served`,
+      label: "Clients Supported Nationwide",
     },
     {
       value: "4.9/5.0",

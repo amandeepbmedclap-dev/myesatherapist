@@ -197,7 +197,6 @@ export const STATES_DATA: Record<string, StateData> = {
   alabama: {
     slug: "alabama",
     name: "Alabama",
-    residentsServed: "6,400+",
     abbreviation: "AL",
     schema: alabamaSchema,
     metaTitle: "ESA Letter in Alabama From Licensed Therapists | My ESA Therapist",
@@ -604,7 +603,6 @@ export const STATES_DATA: Record<string, StateData> = {
   alaska: {
     slug: "alaska",
     name: "Alaska",
-    residentsServed: "3,400+",
     abbreviation: "AK",
     schema: alaskaSchema,
     metaTitle: "Alaska ESA Letter by Licensed Professionals | My ESA Therapist",
@@ -997,7 +995,6 @@ export const STATES_DATA: Record<string, StateData> = {
   arizona: {
     slug: "arizona",
     name: "Arizona",
-    residentsServed: "8,200+",
     abbreviation: "AZ",
     schema: arizonaSchema,
     metaTitle: "Arizona ESA Letter Evaluations by Licensed Therapists - My ESA Therapist",
@@ -1402,7 +1399,6 @@ export const STATES_DATA: Record<string, StateData> = {
   arkansas: {
     slug: "arkansas",
     name: "Arkansas",
-    residentsServed: "5,200+",
     abbreviation: "AR",
     schema: arkansasSchema,
     metaTitle: "Arkansas ESA Letter Evaluation by Licensed Therapists - My ESA Therapist",
@@ -1814,7 +1810,6 @@ export const STATES_DATA: Record<string, StateData> = {
   california: {
     slug: "california",
     name: "California",
-    residentsServed: "6,000+",
     abbreviation: "CA",
     schema: californiaSchema,
     metaTitle: "California ESA Letter Evaluations by Licensed Therapists | My ESA Therapist",
@@ -2276,7 +2271,6 @@ export const STATES_DATA: Record<string, StateData> = {
   colorado: {
     slug: "colorado",
     name: "Colorado",
-    residentsServed: "7,000+",
     abbreviation: "CO",
     schema: coloradoSchema,
     metaTitle: "Colorado ESA Letter Evaluation by Licensed Therapists - My ESA Therapist",
@@ -2682,7 +2676,6 @@ export const STATES_DATA: Record<string, StateData> = {
   connecticut: {
     slug: "connecticut",
     name: "Connecticut",
-    residentsServed: "4,600+",
     abbreviation: "CT",
     schema: connecticutSchema,
     metaTitle: "Connecticut ESA Letter Evaluation by Licensed Therapist- My ESA Therapist",
@@ -3087,7 +3080,6 @@ export const STATES_DATA: Record<string, StateData> = {
   delaware: {
     slug: "delaware",
     name: "Delaware",
-    residentsServed: "4,600+",
     abbreviation: "DE",
     schema: delawareSchema,
     metaTitle: "Delaware ESA Letter From Licensed Professionals | My ESA Therapist",
@@ -3494,7 +3486,6 @@ export const STATES_DATA: Record<string, StateData> = {
   florida: {
     slug: "florida",
     name: "Florida",
-    residentsServed: "9,450+",
     abbreviation: "FL",
     schema: floridaSchema,
     metaTitle: "Florida ESA Letter Evaluations by Licensed Therapists | My ESA Therapist",
@@ -3985,7 +3976,6 @@ export const STATES_DATA: Record<string, StateData> = {
   georgia: {
     slug: "georgia",
     name: "Georgia",
-    residentsServed: "6,000+",
     abbreviation: "GA",
     schema: georgiaSchema,
     metaTitle: "Georgia ESA Letter Evaluations by Licensed Therapists | My ESA Therapist",
@@ -4390,7 +4380,6 @@ export const STATES_DATA: Record<string, StateData> = {
   hawaii: {
     slug: "hawaii",
     name: "Hawaii",
-    residentsServed: "6,500+",
     abbreviation: "HI",
     schema: hawaiiSchema,
     metaTitle: "Hawaii ESA Letter from Licensed Therapists | My ESA Therapist",
@@ -4781,7 +4770,6 @@ export const STATES_DATA: Record<string, StateData> = {
   idaho: {
     slug: "idaho",
     name: "Idaho",
-    residentsServed: "6,000+",
     abbreviation: "ID",
     schema: idahoSchema,
     metaTitle: "Idaho ESA Letter Evaluation Online | My ESA Therapist",
@@ -5173,7 +5161,6 @@ export const STATES_DATA: Record<string, StateData> = {
   illinois: {
     slug: "illinois",
     name: "Illinois",
-    residentsServed: "5,700+",
     abbreviation: "IL",
     schema: illinoisSchema,
     metaTitle: "Illinois ESA Letter Evaluation by Licensed Professionals | My ESA Therapist",
@@ -5566,7 +5553,6 @@ export const STATES_DATA: Record<string, StateData> = {
   indiana: {
     slug: "indiana",
     name: "Indiana",
-    residentsServed: "6,500+",
     abbreviation: "IN",
     schema: indianaSchema,
     metaTitle: "Indiana ESA Letter Evaluations by Licensed Therapists | My ESA Therapist",
@@ -5955,7 +5941,6 @@ export const STATES_DATA: Record<string, StateData> = {
   iowa: {
     slug: "iowa",
     name: "Iowa",
-    residentsServed: "4,000+",
     abbreviation: "IA",
     schema: iowaSchema,
     metaTitle: "Iowa ESA Letter From Licensed Professionals | My ESA Therapist",
@@ -6346,7 +6331,6 @@ export const STATES_DATA: Record<string, StateData> = {
   kansas: {
     slug: "kansas",
     name: "Kansas",
-    residentsServed: "5,000+",
     abbreviation: "KS",
     schema: kansasSchema,
     metaTitle: "Kansas ESA Letter from Licensed Therapists | My ESA Therapist",
@@ -6737,7 +6721,6 @@ export const STATES_DATA: Record<string, StateData> = {
   kentucky: {
     slug: "kentucky",
     name: "Kentucky",
-    residentsServed: "6,000+",
     abbreviation: "KY",
     schema: kentuckySchema,
     metaTitle: "Kentucky ESA Letter from Licensed Therapists | My ESA Therapist",
@@ -7128,7 +7111,6 @@ export const STATES_DATA: Record<string, StateData> = {
   louisiana: {
     slug: "louisiana",
     name: "Louisiana",
-    residentsServed: "7,300+",
     abbreviation: "LA",
     schema: louisianaSchema,
     metaTitle: "Louisiana ESA Letter From Licensed Professionals | My ESA Therapist",
@@ -7519,7 +7501,6 @@ export const STATES_DATA: Record<string, StateData> = {
   maine: {
     slug: "maine",
     name: "Maine",
-    residentsServed: "6,000+",
     abbreviation: "ME",
     schema: maineSchema,
     metaTitle: "Maine ESA Letter from Licensed Therapists | My ESA Therapist",
@@ -7910,7 +7891,6 @@ export const STATES_DATA: Record<string, StateData> = {
   maryland: {
     slug: "maryland",
     name: "Maryland",
-    residentsServed: "6,000+",
     abbreviation: "MD",
     schema: marylandSchema,
     metaTitle: "Maryland ESA Letter Evaluations by Licensed Professionals | My ESA Therapist",
@@ -8297,7 +8277,6 @@ export const STATES_DATA: Record<string, StateData> = {
   massachusetts: {
     slug: "massachusetts",
     name: "Massachusetts",
-    residentsServed: "7,356+",
     abbreviation: "MA",
     schema: massachusettsSchema,
     metaTitle: "Massachusetts ESA Letter from Licensed Therapists | My ESA Therapist",
@@ -8687,7 +8666,6 @@ export const STATES_DATA: Record<string, StateData> = {
   michigan: {
     slug: "michigan",
     name: "Michigan",
-    residentsServed: "7,412+",
     abbreviation: "MI",
     schema: michiganSchema,
     metaTitle: "Michigan ESA Letter Online From Licensed Professionals | My ESA Therapist",
@@ -9077,7 +9055,6 @@ export const STATES_DATA: Record<string, StateData> = {
   minnesota: {
     slug: "minnesota",
     name: "Minnesota",
-    residentsServed: "7,421+",
     abbreviation: "MN",
     schema: minnesotaSchema,
     metaTitle: "Minnesota ESA Letter Evaluation Online | My ESA Therapist",
@@ -9465,7 +9442,6 @@ export const STATES_DATA: Record<string, StateData> = {
   mississippi: {
     slug: "mississippi",
     name: "Mississippi",
-    residentsServed: "6,261+",
     abbreviation: "MS",
     schema: mississippiSchema,
     metaTitle: "Mississippi ESA Letter From Licensed Therapist | My ESA Therapist",
@@ -9856,7 +9832,6 @@ export const STATES_DATA: Record<string, StateData> = {
   missouri: {
     slug: "missouri",
     name: "Missouri",
-    residentsServed: "6,736+",
     abbreviation: "MO",
     schema: missouriSchema,
     metaTitle: "Missouri ESA Letter Online From Licensed Therapist | My ESA Therapist",
@@ -10245,7 +10220,6 @@ export const STATES_DATA: Record<string, StateData> = {
   montana: {
     slug: "montana",
     name: "Montana",
-    residentsServed: "7,395+",
     abbreviation: "MT",
     schema: montanaSchema,
     metaTitle: "Montana ESA Letter From Licensed Therapist | My ESA Therapist",
@@ -10639,7 +10613,6 @@ export const STATES_DATA: Record<string, StateData> = {
   nebraska: {
     slug: "nebraska",
     name: "Nebraska",
-    residentsServed: "7,410+",
     abbreviation: "NE",
     schema: nebraskaSchema,
     metaTitle: "Nebraska ESA Letter From Licensed Therapist | My ESA Therapist",
@@ -11031,7 +11004,6 @@ export const STATES_DATA: Record<string, StateData> = {
   nevada: {
     slug: "nevada",
     name: "Nevada",
-    residentsServed: "7,450+",
     abbreviation: "NV",
     schema: nevadaSchema,
     metaTitle: "Nevada ESA Letter Evaluation Online | My ESA Therapist",
@@ -11421,7 +11393,6 @@ export const STATES_DATA: Record<string, StateData> = {
   "new-york": {
     slug: "new-york",
     name: "New York",
-    residentsServed: "7,890+",
     abbreviation: "NY",
     schema: newYorkSchema,
     metaTitle: "ESA Letter Evaluations in New York by Licensed Therapists - My ESA Therapist",
@@ -11852,7 +11823,6 @@ export const STATES_DATA: Record<string, StateData> = {
   texas: {
     slug: "texas",
     name: "Texas",
-    residentsServed: "8,940+",
     abbreviation: "TX",
     schema: texasSchema,
     metaTitle: "Texas ESA Letter Evaluations by Licensed Therapists - My ESA Therapist",
@@ -12273,7 +12243,6 @@ export const STATES_DATA: Record<string, StateData> = {
   washington: {
     slug: "washington",
     name: "Washington",
-    residentsServed: "7,395+",
     abbreviation: "WA",
     schema: washingtonSchema,
     metaTitle: "Washington ESA Letter from Licensed Therapists | My ESA Therapist",
@@ -12666,7 +12635,6 @@ export const STATES_DATA: Record<string, StateData> = {
   wisconsin: {
     slug: "wisconsin",
     name: "Wisconsin",
-    residentsServed: "7,395+",
     abbreviation: "WI",
     schema: wisconsinSchema,
     metaTitle: "Wisconsin ESA Letter from Licensed Professionals | My ESA Therapist",
@@ -13062,7 +13030,6 @@ export const STATES_DATA: Record<string, StateData> = {
   wyoming: {
     slug: "wyoming",
     name: "Wyoming",
-    residentsServed: "6,537+",
     abbreviation: "WY",
     schema: wyomingSchema,
     metaTitle: "Wyoming ESA Letter from Licensed Therapists | My ESA Therapist",
@@ -13455,7 +13422,6 @@ export const STATES_DATA: Record<string, StateData> = {
   "new-hampshire": {
     slug: "new-hampshire",
     name: "New Hampshire",
-    residentsServed: "6,200+",
     abbreviation: "NH",
     schema: newHampshireSchema,
     metaTitle: "New Hampshire ESA Letter from Licensed Therapists | My ESA Therapist",
@@ -13845,7 +13811,6 @@ export const STATES_DATA: Record<string, StateData> = {
   "new-jersey": {
     slug: "new-jersey",
     name: "New Jersey",
-    residentsServed: "8,150+",
     abbreviation: "NJ",
     schema: newJerseySchema,
     metaTitle: "New Jersey ESA Letter From Licensed Therapist | My ESA Therapist",
@@ -14236,7 +14201,6 @@ export const STATES_DATA: Record<string, StateData> = {
   "new-mexico": {
     slug: "new-mexico",
     name: "New Mexico",
-    residentsServed: "5,800+",
     abbreviation: "NM",
     schema: newMexicoSchema,
     metaTitle: "New Mexico ESA Letter From Licensed Therapist | My ESA Therapist",
@@ -14628,7 +14592,6 @@ export const STATES_DATA: Record<string, StateData> = {
   "north-carolina": {
     slug: "north-carolina",
     name: "North Carolina",
-    residentsServed: "8,640+",
     abbreviation: "NC",
     schema: northCarolinaSchema,
     metaTitle: "North Carolina ESA Letter From Licensed Therapist | My ESA Therapist",
@@ -15018,7 +14981,6 @@ export const STATES_DATA: Record<string, StateData> = {
   "north-dakota": {
     slug: "north-dakota",
     name: "North Dakota",
-    residentsServed: "4,800+",
     abbreviation: "ND",
     schema: northDakotaSchema,
     metaTitle: "North Dakota ESA Letter from Licensed Therapists | My ESA Therapist",
@@ -15408,7 +15370,6 @@ export const STATES_DATA: Record<string, StateData> = {
   ohio: {
     slug: "ohio",
     name: "Ohio",
-    residentsServed: "8,920+",
     abbreviation: "OH",
     schema: ohioSchema,
     metaTitle: "Ohio ESA Letter From Licensed Professionals | My ESA Therapist",
@@ -15798,7 +15759,6 @@ export const STATES_DATA: Record<string, StateData> = {
   oklahoma: {
     slug: "oklahoma",
     name: "Oklahoma",
-    residentsServed: "5,950+",
     abbreviation: "OK",
     schema: oklahomaSchema,
     metaTitle: "ESA Letter Oklahoma – Secure Online Evaluation | My ESA Therapist",
@@ -16187,7 +16147,6 @@ export const STATES_DATA: Record<string, StateData> = {
   oregon: {
     slug: "oregon",
     name: "Oregon",
-    residentsServed: "7,120+",
     abbreviation: "OR",
     schema: oregonSchema,
     metaTitle: "ESA Letter Oregon From Licensed Therapists | My ESA Therapist",
@@ -16575,7 +16534,6 @@ export const STATES_DATA: Record<string, StateData> = {
   pennsylvania: {
     slug: "pennsylvania",
     name: "Pennsylvania",
-    residentsServed: "8,430+",
     abbreviation: "PA",
     schema: pennsylvaniaSchema,
     metaTitle: "Pennsylvania ESA Letter Evaluation by Licensed Therapists | My ESA Therapist",
@@ -16965,7 +16923,6 @@ export const STATES_DATA: Record<string, StateData> = {
   "south-dakota": {
     slug: "south-dakota",
     name: "South Dakota",
-    residentsServed: "4,250+",
     abbreviation: "SD",
     schema: southDakotaSchema,
     metaTitle: "South Dakota ESA Letter from Licensed Therapists | My ESA Therapist",
@@ -17358,7 +17315,6 @@ export const STATES_DATA: Record<string, StateData> = {
   utah: {
     slug: "utah",
     name: "Utah",
-    residentsServed: "5,400+",
     abbreviation: "UT",
     schema: utahSchema,
     metaTitle: "Utah ESA Letter From Licensed Therapist | My ESA Therapist",
@@ -17753,7 +17709,6 @@ export const STATES_DATA: Record<string, StateData> = {
   "south-carolina": {
     slug: "south-carolina",
     name: "South Carolina",
-    residentsServed: "6,800+",
     abbreviation: "SC",
     schema: southCarolinaSchema,
     metaTitle: "South Carolina ESA Letter Evaluation | My ESA Therapist",
@@ -18145,7 +18100,6 @@ export const STATES_DATA: Record<string, StateData> = {
   virginia: {
     slug: "virginia",
     name: "Virginia",
-    residentsServed: "8,100+",
     abbreviation: "VA",
     schema: virginiaSchema,
     metaTitle: "Virginia ESA Letter Evaluations by Licensed Therapists - My ESA Therapist",
@@ -18534,7 +18488,6 @@ export const STATES_DATA: Record<string, StateData> = {
   "west-virginia": {
     slug: "west-virginia",
     name: "West Virginia",
-    residentsServed: "3,900+",
     abbreviation: "WV",
     schema: westVirginiaSchema,
     metaTitle: "West Virginia ESA Letter from Licensed Therapists | My ESA Therapist",

@@ -1023,7 +1023,6 @@ export const EXTRA_STATES: Record<string, StateData> = {
     metaTitle: "ESA Letter Evaluations in the District of Columbia by Licensed Mental Health Experts | My ESA Therapist",
     metaDescription:
       "Connect with licensed mental health professionals in the District of Columbia for ESA letter evaluations. ESA documentation is provided when clinically appropriate and in line with federal housing guidelines.",
-    residentsServed: "8,392+",
     heroTitle: "ESA Letter Evaluations\nin the District of Columbia\nby Licensed Mental Health Experts",
     heroSubtitle:
       "Connect with licensed mental health professionals in the District of Columbia for ESA letter evaluations. ESA documentation is provided when clinically appropriate and in line with federal housing guidelines.",

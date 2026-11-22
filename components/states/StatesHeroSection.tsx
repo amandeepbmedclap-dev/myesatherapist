@@ -14,7 +14,7 @@ import { SiteBreadcrumbs } from "@/components/seo/SiteBreadcrumbs";
 import { ResponsiveHero, standardHeroBackgrounds } from "@/components/common/ResponsiveHero";
 
 const STATS = [
-  { value: "64,739+", label: "ESA Evaluations" },
+  { value: "6,500+", label: "Clients Supported" },
   { value: "7+", label: "Years Serving" },
   { value: "100%", label: "Moneyback Guarantee" },
 ];

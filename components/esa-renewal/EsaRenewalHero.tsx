@@ -10,7 +10,7 @@ const DESCRIPTION =
   "Connect with a state-licensed mental health professional to request an ESA letter renewal that reflects your current emotional and mental health–related needs.";
 
 const PILLS = [
-  { value: "64,739+", label: "ESA Evaluations" },
+  { value: "6,500+", label: "Clients Supported" },
   { value: "7+", label: "Years Serving" },
   { value: "100%", label: "Moneyback Guarantee" },
 ];

@@ -509,12 +509,6 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
     "robots": "full",
     "ogType": "website"
   },
-  "/esa-letter-guam/": {
-    "title": "Guam ESA Letter: Legitimate and Online Process | My ESA Therapist",
-    "description": "Get a legitimate Guam ESA letter online with My ESA Therapist. Quick, secure process to protect your housing rights and emotional well-being.",
-    "robots": "full",
-    "ogType": "website"
-  },
   "/esa-letter-pennsylvania/": {
     "title": "Pennsylvania ESA Letter Evaluation by Licensed Therapists | My ESA Therapist",
     "description": "Start your Pennsylvania ESA Letter evaluation with licensed therapists. Easy online process, secure platform, and valid ESA letters for housing accommodation.",
