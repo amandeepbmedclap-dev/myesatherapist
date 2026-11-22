@@ -79,7 +79,6 @@ interface EvaluationFormCardProps {
   errors: EvaluationErrors;
   compact?: boolean;
   tight?: boolean;
-  titleAs?: "h2" | "p";
 }
 
 const INPUT_CLASS =
@@ -101,7 +100,6 @@ function EvaluationFormCard({
   errors,
   compact = false,
   tight = false,
-  titleAs = "p",
 }: EvaluationFormCardProps) {
   const [settledFields, setSettledFields] = useState<Record<string, boolean>>({});
   const labelClass = "block whitespace-nowrap body-text text-body-text mb-1";
@@ -124,16 +122,11 @@ function EvaluationFormCard({
       }`}
     >
       <div className={`text-center ${compact || tight ? "mb-4" : "mb-[30px]"}`}>
-        {titleAs === "h2" ? (
-          <h2 className={`font-heading font-bold text-primary ${compact ? "" : "text-[36px] leading-[44px]"}`}>
-            Start Your Evaluation
-          </h2>
-        ) : (
-          <p className={`font-heading font-bold text-primary ${compact ? "" : "text-[36px] leading-[44px]"}`}>
-            Start Your Evaluation
-          </p>
-        )}
-        <p className={`text-body-text mt-1 ${compact ? "body-text" : "body-large"}`}>
+        {/* Form title is a label, not a document heading: the hero's only heading is the H1. */}
+        <div className={`font-heading font-bold text-primary ${compact ? "text-[22px] leading-[28px]" : "text-[26px] leading-[32px] xl:text-[28px] xl:leading-[34px]"}`}>
+          Start Your Evaluation
+        </div>
+        <p className={`text-body-text mt-1.5 ${compact ? "body-small" : "body-text"}`}>
           Take the first step toward your ESA letter evaluation.
         </p>
       </div>
@@ -366,7 +359,6 @@ export function StateHeroSection({ data }: { data: StateData }) {
             setFormData={setFormData}
             handleSubmit={handleSubmit}
             errors={errors}
-            titleAs="h2"
             tight
           />
         </div>
