@@ -13,7 +13,7 @@ import { contactUsSchemas } from "@/data/schemas/contactUsSchema";
 export const metadata: Metadata = applySheetSeo({
   title: "Connect With Our Customer Support Team | My ESA Therapist",
   description:
-    "Have a question? Our Customer Support team is ready to help you! Feel free to call us at (888) 412-4041 email us at contact@myesatherapist.com",
+    "Have a question? Our Customer Support team is ready to help you! Feel free to call us at (888) 412-4041 email us at info@myesatherapist.com",
   robots: {
     index: true,
     follow: true,
@@ -25,7 +25,7 @@ export const metadata: Metadata = applySheetSeo({
   openGraph: {
     title: "Connect With Our Customer Support Team | My ESA Therapist",
     description:
-      "Have a question? Our Customer Support team is ready to help you! Feel free to call us at (888) 412-4041 email us at contact@myesatherapist.com",
+      "Have a question? Our Customer Support team is ready to help you! Feel free to call us at (888) 412-4041 email us at info@myesatherapist.com",
     url: "https://myesatherapist.com/contact-us/",
     type: "website",
     locale: "en_US",
@@ -37,7 +37,7 @@ export const metadata: Metadata = applySheetSeo({
     creator: "@MyESATherapist",
     title: "Connect With Our Customer Support Team | My ESA Therapist",
     description:
-      "Have a question? Our Customer Support team is ready to help you! Feel free to call us at (888) 412-4041 email us at contact@myesatherapist.com",
+      "Have a question? Our Customer Support team is ready to help you! Feel free to call us at (888) 412-4041 email us at info@myesatherapist.com",
   },
 });
 

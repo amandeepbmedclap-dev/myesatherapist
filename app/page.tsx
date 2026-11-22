@@ -31,7 +31,7 @@ export const viewport: Viewport = {
   maximumScale: 5,
 };
 
-const HOME_TITLE = "ESA Evaluations by Licensed Therapists- My ESA Therapist";
+const HOME_TITLE = "ESA Evaluations by Licensed Therapists - My ESA Therapist";
 const HOME_DESCRIPTION =
   "Connect with state licensed mental health professionals for legitimate ESA Letter evaluations conducted through secure telehealth.";
 

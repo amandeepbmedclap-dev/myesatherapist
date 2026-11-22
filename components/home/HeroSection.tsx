@@ -15,6 +15,7 @@ const statsData = [
   { value: "6,500+", label: "Clients Supported" },
   { value: "7+", label: "Years Serving" },
   { value: "4.8", label: "Verified Reviews" },
+  { value: "100%", label: "Money-Back Guarantee" },
 ];
 
 const HERO_BACKGROUNDS = [
@@ -91,7 +92,7 @@ export function HeroSection() {
             {statsData.map((stat) => (
               <div
                 key={stat.label}
-                className="badge-hover flex min-w-[140px] flex-col items-center justify-center rounded-[30px] bg-background px-4 py-2.5 text-center shadow-[0px_2px_4px_rgba(0,0,0,0.1)] lg:h-[77px] lg:min-w-[163px]"
+                className="badge-hover flex min-w-[140px] flex-col items-center justify-center rounded-[30px] bg-background px-4 py-2.5 text-center shadow-[0px_2px_4px_rgba(0,0,0,0.1)] lg:h-[77px] lg:min-w-[150px]"
               >
                 <span className="body-large text-color-gradient">{stat.value}</span>
                 <span className="body-small mt-1 whitespace-nowrap text-body-text">{stat.label}</span>

@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     index: process.env.ALLOW_INDEXING === "true",
     follow: process.env.ALLOW_INDEXING === "true",
   },
-  title: "ESA Evaluations by Licensed Therapists- My ESA Therapist",
+  title: "ESA Evaluations by Licensed Therapists - My ESA Therapist",
   description:
     "Connect with state licensed mental health professionals for legitimate ESA Letter evaluations conducted through secure telehealth.",
   authors: [{ name: "My ESA Therapist" }],
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   openGraph: {
-    title: "ESA Evaluations by Licensed Therapists- My ESA Therapist",
+    title: "ESA Evaluations by Licensed Therapists - My ESA Therapist",
     description:
       "Connect with state licensed mental health professionals for legitimate ESA Letter evaluations conducted through secure telehealth.",
     url: "https://myesatherapist.com/",

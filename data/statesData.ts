@@ -2678,7 +2678,7 @@ export const STATES_DATA: Record<string, StateData> = {
     name: "Connecticut",
     abbreviation: "CT",
     schema: connecticutSchema,
-    metaTitle: "Connecticut ESA Letter Evaluation by Licensed Therapist- My ESA Therapist",
+    metaTitle: "Connecticut ESA Letter Evaluation by Licensed Therapist - My ESA Therapist",
     metaDescription: "Connect with licensed therapist for ESA letter evaluations. HIPAA-compliant telehealth. ESA letter Connecticut issued only when clinically appropriate.",
     heroTitle: "Connecticut ESA Letter Evaluations by Licensed Therapists",
     heroSubtitle: "Connecticut residents can complete an emotional support animal evaluation through secure telehealth sessions with licensed mental health professionals practicing in the state. Each evaluation follows federal housing rules.",

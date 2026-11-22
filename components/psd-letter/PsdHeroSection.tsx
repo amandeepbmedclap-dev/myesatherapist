@@ -8,7 +8,7 @@ import { ResponsiveHero, standardHeroBackgrounds } from "@/components/common/Res
 const STATS = [
   { value: "6,500+", label: "Clients Supported" },
   { value: "7+", label: "Years Serving" },
-  { value: "100%", label: "Moneyback Guarantee" },
+  { value: "100%", label: "Money-Back Guarantee" },
 ];
 
 const REFUND_NOTE = "Not approved after your PSD evaluation? You get a full refund!";

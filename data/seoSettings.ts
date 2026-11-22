@@ -12,7 +12,7 @@ export type SheetSeo = {
 
 export const SEO_SETTINGS: Record<string, SheetSeo> = {
   "/": {
-    "title": "ESA Evaluations by Licensed Therapists- My ESA Therapist",
+    "title": "ESA Evaluations by Licensed Therapists - My ESA Therapist",
     "description": "Connect with state licensed mental health professionals for legitimate ESA Letter evaluations conducted through secure telehealth.",
     "robots": "image",
     "ogType": "website"
@@ -73,7 +73,7 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
   },
   "/contact-us/": {
     "title": "Connect With Our Customer Support Team | My ESA Therapist",
-    "description": "Have a question? Our Customer Support team is ready to help you! Feel free to call us at (888) 412-4041 email us at contact@myesatherapist.com",
+    "description": "Have a question? Our Customer Support team is ready to help you! Feel free to call us at (888) 412-4041 email us at info@myesatherapist.com",
     "robots": "image",
     "ogType": "website"
   },
@@ -402,7 +402,7 @@ export const SEO_SETTINGS: Record<string, SheetSeo> = {
     "ogType": "website"
   },
   "/esa-letter-connecticut/": {
-    "title": "Connecticut ESA Letter Evaluation by Licensed Therapist- My ESA Therapist",
+    "title": "Connecticut ESA Letter Evaluation by Licensed Therapist - My ESA Therapist",
     "description": "Connect with licensed therapist for ESA letter evaluations. HIPAA-compliant telehealth. ESA letter Connecticut issued only when clinically appropriate.",
     "robots": "full",
     "ogType": "website"
