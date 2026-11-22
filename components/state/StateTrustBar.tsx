@@ -1,18 +1,18 @@
 import React from "react";
-import { BadgeDollarSign, CalendarCheck, ShieldCheck, Users } from "lucide-react";
+import { BadgeCheck, BadgeDollarSign, ShieldCheck, Video } from "lucide-react";
 import { StateData } from "@/data/statesData";
 
 export function StateTrustBar({ data }: { data: StateData }) {
   const stateName = data.name;
-  // One verified nationwide figure; per-state counts were removed (Nov 2026).
-  // The rating is shown with its source in the hero badges (Trustpilot, ConsumerAffairs),
-  // so it is not repeated here as an unsourced average.
-  const stat5 = data.trustStat5 || { value: "Secure", label: "Online Evaluation" };
+  // The hero pills already show clients supported, years serving and the money-back
+  // guarantee, and the hero badges show sourced ratings, so this bar carries facts the
+  // hero does not repeat. All of them are stated elsewhere on the site.
+  const stat5 = data.trustStat5 || { value: "HIPAA", label: "Secure, private platform" };
 
   const stats = [
-    { icon: Users, value: "6,500+", label: "Clients Supported Nationwide" },
-    { icon: CalendarCheck, value: "7+ Years", label: `Serving ${stateName}` },
     { icon: BadgeDollarSign, value: "$99", label: "All inclusive, no surprises" },
+    { icon: BadgeCheck, value: "Licensed", label: `Clinicians in ${stateName}` },
+    { icon: Video, value: "Telehealth", label: "Video or phone evaluation" },
     { icon: ShieldCheck, value: stat5.value, label: stat5.label },
   ];
 
