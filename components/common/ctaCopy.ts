@@ -55,7 +55,7 @@ const MAP: Record<string, string> = {
   "start evaluation": CTA.esaShort,
   // PSD
   "start your consultation": CTA.psd,
-  "schedule consultation": CTA.psd,
+  "schedule consultation": CTA.esa,
   "schedule consultation now": CTA.psd,
   "schedule a consultation": CTA.esa,
   "schedule a consultation now": CTA.esa,
@@ -77,6 +77,6 @@ export function ctaLabel(label: string, letter?: "esa" | "psd"): string {
   const key = label.replace(/\s+/g, " ").trim().toLowerCase();
   const mapped = MAP[key];
   if (!mapped) return label;
-  if (letter === "psd" && (mapped === CTA.esa || mapped === CTA.esaShort)) return CTA.psd;
+  if (letter === "psd" && mapped === CTA.esa) return CTA.psd;
   return mapped;
 }

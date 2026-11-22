@@ -1,6 +1,5 @@
 import React from "react";
 import { ResponsiveHero, standardHeroBackgrounds } from "@/components/common/ResponsiveHero";
-import { SiteBreadcrumbs } from "@/components/seo/SiteBreadcrumbs";
 
 const DESCRIPTION =
   "Providing legitimate, HIPAA-compliant ESA evaluations through state-licensed mental health professionals across all 50 states.";
@@ -20,7 +19,6 @@ export function AboutHeroSection() {
       )}
     >
       <div className="flex w-full max-w-[320px] flex-col items-center text-center sm:max-w-[513px] sm:items-start sm:text-left">
-        <SiteBreadcrumbs className="mb-3 self-start sm:self-auto" />
         <h1 className="heading-h1 text-primary max-w-[320px] sm:max-w-[513px] lg:max-w-[430px]">
           About My ESA Therapist
         </h1>

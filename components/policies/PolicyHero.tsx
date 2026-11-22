@@ -17,21 +17,6 @@ export function PolicyHero({ policy }: PolicyHeroProps) {
 
   return (
     <section className="w-full pt-8 pb-4 px-4 sm:px-6 lg:px-8 max-w-[1360px] mx-auto">
-      <nav aria-label="Breadcrumb" className="body-small mb-6 flex items-center gap-2.5">
-        <Link href="/" className="hover:text-primary transition-colors">
-          Home
-        </Link>
-        <span className="text-[#DECDBB]">/</span>
-        {!["privacy-policy", "terms-of-use", "disclaimer", "disclaimer-and-policies", "hipaa-compliance", "refund-policy", "consent-for-telehealth", "editorial-policy", "accessibility-statement"].includes(policy.slug) && (
-          <>
-            <Link href="/privacy-policy/" className="hover:text-primary transition-colors text-body-text">
-              Policies
-            </Link>
-            <span className="text-[#DECDBB]">/</span>
-          </>
-        )}
-        <span className="text-primary font-bold">{policy.pageTitle}</span>
-      </nav>
 
       <div className="relative overflow-hidden rounded-[24px] sm:rounded-[28px] bg-white border border-[#EAE5DC] p-6 sm:p-10 lg:p-12 shadow-[0px_4px_25px_rgba(26,61,79,0.06)]">
         <div

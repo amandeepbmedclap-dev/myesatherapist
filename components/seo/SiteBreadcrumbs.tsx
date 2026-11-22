@@ -26,6 +26,9 @@ const LABELS: Record<string, string> = {
   "qualifying-conditions": "Qualifying Conditions",
   "esa-laws": "ESA Laws",
   state: "ESA Letter by State",
+  "dr-robert-staaf": "Robert Staaf, LCSW",
+  "dr-leslie-k-gamble": "Leslie K. Gamble, LICSW",
+  "dr-gaurav-patel": "Gaurav Patel, MD",
   author: "Authors",
   "privacy-policy": "Privacy Policy",
   "terms-of-use": "Terms of Use",
@@ -41,18 +44,9 @@ const LABELS: Record<string, string> = {
   "awais-arshad": "Awais Arshad",
 };
 
-const OWN_BREADCRUMB = [
-  /^\/policies\//,
-  /^\/privacy-policy\/?$/,
-  /^\/terms-of-use\/?$/,
-  /^\/refund-policy\/?$/,
-  /^\/hipaa-compliance\/?$/,
-  /^\/disclaimer\/?$/,
-  /^\/editorial-policy\/?$/,
-  /^\/accessibility-statement\/?$/,
-  /^\/consent-for-telehealth\/?$/,
-  /^\/telehealth-consent\/?$/,
-];
+
+// Shorter names for narrow screens, so the current page stays visible.
+const SHORT: Record<string, string> = { "esa-doctors": "Therapists", state: "States" };
 
 const ACRONYMS = new Set(["esa", "psd", "hud", "faq", "hipaa", "adhd", "ptsd"]);
 
@@ -85,15 +79,12 @@ function labelFor(segment: string) {
 export function SiteBreadcrumbs({
   className,
   includeSchema = false,
-  onDark = false,
 }: {
   className?: string;
   includeSchema?: boolean;
-  onDark?: boolean;
 }) {
   const pathname = usePathname() || "/";
   if (pathname === "/") return null;
-  if (OWN_BREADCRUMB.some((pattern) => pattern.test(pathname))) return null;
 
   const segments = pathname.split("/").filter(Boolean);
   // On a blog post the article itself is dropped from the trail, so every
@@ -102,16 +93,16 @@ export function SiteBreadcrumbs({
   if (isBlogPost) {
     segments.pop();
   }
-  const crumbs = [{ name: "Home", path: "/" }];
+  const crumbs: { name: string; path: string; short?: string }[] = [{ name: "Home", path: "/" }];
 
   const isState = segments.length === 1 && isStateLetter(segments[0]);
   if (isState) {
-    crumbs.push({ name: "ESA by State", path: "/state/" });
+    crumbs.push({ name: LABELS.state, short: "States", path: "/state/" });
     crumbs.push({ name: `ESA Letter ${labelFor(segments[0])}`, path: `/${segments[0]}/` });
   } else {
     segments.forEach((segment, index) => {
       const path = `/${segments.slice(0, index + 1).join("/")}/`;
-      crumbs.push({ name: labelFor(segment), path });
+      crumbs.push({ name: labelFor(segment), path, short: SHORT[segment] });
     });
   }
 
@@ -127,48 +118,34 @@ export function SiteBreadcrumbs({
   };
 
   return (
-    <nav aria-label="Breadcrumb" className={cn("pointer-events-none flex w-full min-w-0 max-w-full overflow-hidden max-lg:justify-center max-lg:!self-center", className)}>
+    <nav aria-label="Breadcrumb" className={cn("min-w-0", className)}>
       {includeSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeLd(schema) }} />
       )}
-      <ol className="pointer-events-auto no-scrollbar flex w-max min-w-0 max-w-full flex-nowrap items-center justify-center gap-x-1.5 overflow-x-auto font-sans sm:gap-x-2 lg:w-auto lg:justify-start lg:overflow-visible">
+      <ol className="no-scrollbar flex min-w-0 items-center gap-x-2 overflow-x-auto whitespace-nowrap font-sans text-[13px] leading-5 sm:text-[14px]">
         {crumbs.map((crumb, index) => {
           const current = !isBlogPost && index === crumbs.length - 1;
           return (
-            <li
-              key={crumb.path}
-              className="flex shrink-0 items-center gap-1.5 whitespace-nowrap text-[14px]! leading-[22px]! sm:gap-3 sm:text-[16px]! sm:leading-[26px]!"
-            >
+            <li key={crumb.path} className="flex shrink-0 items-center gap-2">
               {index > 0 && (
-                <svg
-                  width="8"
-                  height="8"
-                  viewBox="0 0 8 8"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  className={cn(
-                    "shrink-0",
-                    onDark ? "text-primary/45 lg:text-background" : "text-body-text",
-                  )}
-                >
-                  <path d="M2 1.5L6 4L2 6.5V1.5Z" />
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="shrink-0 text-[#B9AE9C]">
+                  <path d="m9 18 6-6-6-6" />
                 </svg>
               )}
               {current ? (
-                <span aria-current="page" className="font-bold text-accent">
+                <span aria-current="page" className="font-semibold text-primary">
                   {crumb.name}
                 </span>
               ) : (
-                <Link
-                  href={crumb.path}
-                  className={cn(
-                    "font-medium transition-colors",
-                    onDark
-                      ? "text-primary hover:text-[#1D6E72] lg:text-[#FAF7F2]! lg:hover:text-white!"
-                      : "text-primary hover:text-[#1D6E72]",
+                <Link href={crumb.path} className="font-medium text-body-text underline-offset-4 transition-colors hover:text-primary hover:underline">
+                  {crumb.short ? (
+                    <>
+                      <span className="sm:hidden">{crumb.short}</span>
+                      <span className="hidden sm:inline">{crumb.name}</span>
+                    </>
+                  ) : (
+                    crumb.name
                   )}
-                >
-                  {crumb.name}
                 </Link>
               )}
             </li>
@@ -176,5 +153,18 @@ export function SiteBreadcrumbs({
         })}
       </ol>
     </nav>
+  );
+}
+
+/** Site-wide breadcrumb bar, rendered once under the header on every page except home. */
+export function BreadcrumbBar() {
+  const pathname = usePathname() || "/";
+  if (pathname === "/") return null;
+  return (
+    <div className="border-b border-line-200 bg-background">
+      <div className="mx-auto flex max-w-[1440px] items-center px-4 py-3 sm:px-6 lg:px-8 xl:px-[80px]">
+        <SiteBreadcrumbs />
+      </div>
+    </div>
   );
 }

@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState, type ReactNode } from "react";
 import { ArrowRight, Search, X } from "lucide-react";
-import { SiteBreadcrumbs } from "@/components/seo/SiteBreadcrumbs";
 import { CtaTile, Meta, PostCard, searchPosts, type HubPost } from "./BlogHubExplorer";
 
 export type CategoryLink = { slug: string; name: string; href: string; count?: number };
@@ -52,7 +51,6 @@ export function CategoryHubExplorer({
         <div aria-hidden className="absolute -bottom-48 -left-24 size-[420px] rounded-full bg-[#1D6E72]/[0.06]" />
         <div className="relative mx-auto grid max-w-[1278px] gap-10 px-4 pb-14 pt-6 sm:px-6 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)] lg:items-center lg:gap-14 lg:pb-20 lg:pt-10 xl:px-0">
           <div>
-            <SiteBreadcrumbs className="mb-5" />
             <div className="text-[12px] font-bold uppercase tracking-[0.16em] text-gold-600">The My ESA Therapist Journal · {name}</div>
             <h1 className="heading-h1 mt-3 max-w-[620px] text-primary">{title}</h1>
             <div className="mt-4 max-w-[600px] space-y-4 text-[17px] leading-[1.7] text-body-text [&_p]:text-[17px] [&_p]:leading-[1.7]">{intro}</div>

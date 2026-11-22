@@ -2,7 +2,6 @@
 
 import React from "react";
 import { BreakpointImage } from "@/components/common/BreakpointImage";
-import { SiteBreadcrumbs } from "@/components/seo/SiteBreadcrumbs";
 
 interface BlogHeroSectionProps {
   title?: string;
@@ -46,7 +45,6 @@ export function BlogHeroSection({
 
       <div className="relative z-10 w-full max-w-[1018px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 lg:pt-[56px] xl:pt-[64px] pb-[234px] sm:pb-[238px] md:pb-[96px] lg:pb-[70px] xl:pb-[76px] flex flex-col items-center text-center">
         
-        <SiteBreadcrumbs includeSchema={false} className="mb-6 self-start sm:mb-7 lg:mb-[30px] lg:flex lg:justify-center lg:[&>ol]:w-fit" />
 
         <div className="w-full flex flex-col items-center text-center gap-4 sm:gap-5 lg:gap-[24px]">
           <h1 className="heading-h1 text-primary text-center max-w-[839px] mx-auto capitalize">

@@ -1,5 +1,12 @@
+import { cn } from "@/lib/utils";
+
 type HeroStat = { value: string; label: string };
 
+/**
+ * Hero trust strip: one connected card with the stats side by side, value over label,
+ * divided by hairlines. Used on every hero (desktop and mobile) so the stats look the
+ * same across the site.
+ */
 export function HeroStatPills({
   stats,
   className = "",
@@ -8,14 +15,17 @@ export function HeroStatPills({
   className?: string;
 }) {
   return (
-    <div className={`flex flex-col items-center gap-3 ${className}`}>
+    <div
+      className={cn(
+        "grid w-full max-w-[560px] divide-x divide-line-200 overflow-hidden rounded-[18px] bg-white/80 shadow-[0_10px_30px_-18px_rgba(26,61,79,0.45)] ring-1 ring-line-200 backdrop-blur-sm sm:w-auto sm:max-w-none",
+        className,
+      )}
+      style={{ gridTemplateColumns: `repeat(${stats.length}, minmax(0, auto))` }}
+    >
       {stats.map((stat) => (
-        <div
-          key={stat.label}
-          className="badge-hover inline-flex items-center justify-center gap-2 rounded-full bg-background px-5 py-2 shadow-[0px_2px_4px_rgba(0,0,0,0.1)]"
-        >
-          <span className="body-strong text-primary">{stat.value}</span>
-          <span className="body-text text-body-text">{stat.label}</span>
+        <div key={stat.label} className="flex min-w-0 flex-col items-center justify-center px-3 py-3 text-center sm:px-5 lg:items-start lg:text-left">
+          <span className="font-heading text-[20px] font-bold leading-none text-primary sm:text-[22px]">{stat.value}</span>
+          <span className="mt-1.5 font-sans text-[12px] font-medium leading-[16px] text-body-text sm:whitespace-nowrap sm:text-[13px]">{stat.label}</span>
         </div>
       ))}
     </div>

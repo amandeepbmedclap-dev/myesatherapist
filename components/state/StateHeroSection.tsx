@@ -7,7 +7,6 @@ import { StateData } from "@/data/statesData";
 import { ReviewBadges } from "@/components/common/ReviewBadges";
 import { HeroStatPills } from "@/components/common/HeroStatPills";
 import { CtaButton } from "@/components/common/CtaButton";
-import { SiteBreadcrumbs } from "@/components/seo/SiteBreadcrumbs";
 import { STATE_INDEX } from "@/data/stateIndex";
 import {
   evaluationDestination,
@@ -325,21 +324,10 @@ export function StateHeroSection({ data }: { data: StateData }) {
       </div>
 
       <div
-        className="responsive-hero-copy relative z-10 flex flex-col items-center px-4 pb-10 pt-4 text-center sm:px-10 lg:mx-auto lg:w-full lg:max-w-[1440px] lg:items-start lg:px-0 lg:pl-[82px] lg:pr-[560px] lg:pt-[82px] lg:text-left"
+        className="responsive-hero-copy relative z-10 flex flex-col items-center px-4 pb-10 pt-4 text-center sm:px-10 lg:mx-auto lg:w-full lg:max-w-[1440px] lg:items-start lg:px-0 lg:pl-[82px] lg:pr-[560px] lg:pt-[40px] lg:text-left"
         style={{ "--hero-tablet": "auto", "--hero-desktop": "808px" } as React.CSSProperties}
       >
-        <SiteBreadcrumbs className="mb-4 self-start lg:absolute lg:left-[82px] lg:top-[18px] lg:w-auto lg:max-w-[calc(100%-82px)]" />
-        <div className="hidden items-center gap-3 sm:flex sm:flex-wrap sm:justify-center lg:justify-start">
-          {statsData.map((stat) => (
-            <div
-              key={stat.label}
-              className="badge-hover flex h-[77px] min-w-[177px] flex-col items-center justify-center rounded-[30px] bg-background px-4 py-2.5 text-center shadow-[0px_2px_4px_rgba(0,0,0,0.1)]"
-            >
-              <span className="body-large text-color-gradient">{stat.value}</span>
-              <span className="body-small mt-0.5 whitespace-nowrap text-body-text">{stat.label}</span>
-            </div>
-          ))}
-        </div>
+        <HeroStatPills stats={statsData} className="hidden sm:grid" />
         <h1 className="heading-h1 text-primary mt-2 max-w-[360px] capitalize sm:mt-6 sm:max-w-[620px] lg:max-w-[560px]">
           {renderHeroTitle(data.heroTitle, stateName)}
         </h1>

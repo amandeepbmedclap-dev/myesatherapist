@@ -1,6 +1,5 @@
 import React from "react";
 import { ResponsiveHero, standardHeroBackgrounds } from "@/components/common/ResponsiveHero";
-import { SiteBreadcrumbs } from "@/components/seo/SiteBreadcrumbs";
 import { VideoTestimonialsTrustBar } from "@/components/video-testimonials/VideoTestimonialsTrustBar";
 
 export function VideoTestimonialsHeroSection() {
@@ -21,7 +20,6 @@ export function VideoTestimonialsHeroSection() {
         </div>
       }
     >
-      <SiteBreadcrumbs className="mb-3 self-start sm:self-auto" />
       <h1 className="heading-h1 text-primary max-w-[320px] sm:max-w-[620px]">
         Real Stories,
         <br />

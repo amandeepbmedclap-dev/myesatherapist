@@ -4,7 +4,6 @@ import Image from "next/image";
 import { DoctorProfile } from "@/data/doctorsData";
 import { BreakpointImage } from "@/components/common/BreakpointImage";
 import { CtaButton } from "@/components/common/CtaButton";
-import { SiteBreadcrumbs } from "@/components/seo/SiteBreadcrumbs";
 
 interface DoctorInternalHeroSectionProps {
   doctor: DoctorProfile;
@@ -93,7 +92,6 @@ export function DoctorInternalHeroSection({ doctor }: DoctorInternalHeroSectionP
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[82px]">
         <div className="hidden lg:flex items-center justify-between gap-8 min-h-[640px] pt-16 pb-0">
           <div className="max-w-[620px] flex flex-col items-start gap-5">
-            <SiteBreadcrumbs />
             <DoctorName name={doctor.name} linkedin={doctor.linkedin} />
             <p className="body-large text-body-text max-w-[560px]">
               {doctor.heroBio || doctor.bio}
@@ -124,7 +122,6 @@ export function DoctorInternalHeroSection({ doctor }: DoctorInternalHeroSectionP
         </div>
 
         <div className="lg:hidden flex flex-col items-center text-center pt-10 pb-0">
-          <SiteBreadcrumbs includeSchema={false} />
           <DoctorName name={doctor.name} linkedin={doctor.linkedin} primary={false} />
           <p className="body-large text-body-text max-w-[560px] mt-4">
             {doctor.heroBio || doctor.bio}

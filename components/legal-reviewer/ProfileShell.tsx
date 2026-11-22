@@ -5,7 +5,6 @@ import Image from "next/image";
 import { createPortal } from "react-dom";
 import { X, ChevronRight } from "lucide-react";
 import { SidebarDivider } from "./ReviewerUI";
-import { SiteBreadcrumbs } from "@/components/seo/SiteBreadcrumbs";
 
 export interface ProfileShellProps {
   name: string;
@@ -215,7 +214,6 @@ export function ProfileShell(props: ProfileShellProps) {
           )}
 
         <div className="flex w-full min-w-0 max-w-full flex-col px-4 pb-2 pt-6 sm:px-8 lg:max-w-[1055px] lg:flex-1 lg:px-[74px] lg:pt-8">
-          <SiteBreadcrumbs className="mb-6 lg:mb-8" />
           <div className="flex min-w-0 max-w-full flex-col gap-10 break-words lg:gap-[53px]">{children}</div>
         </div>
       </div>

@@ -10,7 +10,6 @@ import { HeroStatPills } from "@/components/common/HeroStatPills";
 import { STATE_DROPDOWN_PANEL, STATE_DROPDOWN_ITEM, STATE_DROPDOWN_ABBR } from "@/components/common/stateDropdownClasses";
 import { CtaButton } from "@/components/common/CtaButton";
 import { promptSelectState } from "@/components/common/promptSelectState";
-import { SiteBreadcrumbs } from "@/components/seo/SiteBreadcrumbs";
 import { ResponsiveHero, standardHeroBackgrounds } from "@/components/common/ResponsiveHero";
 
 const STATS = [
@@ -81,18 +80,7 @@ export function StatesHeroSection() {
           All 50 states
         </span>
       </div>
-      <SiteBreadcrumbs className="mb-4 self-start" />
-      <div className="hidden items-center gap-3 sm:flex sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start">
-        {STATS.map((stat) => (
-          <div
-            key={stat.label}
-            className="badge-hover flex min-w-[140px] flex-col items-center justify-center rounded-full border border-[#EAE5DC]/80 bg-background px-4 py-2.5 text-center shadow-[0px_2px_4px_rgba(0,0,0,0.12)] lg:h-[77px] lg:w-[176px]"
-          >
-            <span className="body-large leading-none text-color-gradient">{stat.value}</span>
-            <span className="body-small mt-1 whitespace-nowrap text-body-text">{stat.label}</span>
-          </div>
-        ))}
-      </div>
+      <HeroStatPills stats={STATS} className="hidden sm:grid" />
 
       <h1 className="heading-h1 text-primary mt-6 max-w-[320px] sm:max-w-xl">
         ESA Evaluation For

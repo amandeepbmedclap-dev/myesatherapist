@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { CtaButton } from "@/components/common/CtaButton";
-import { SiteBreadcrumbs } from "@/components/seo/SiteBreadcrumbs";
 import { ResponsiveHero, standardHeroBackgrounds } from "@/components/common/ResponsiveHero";
 
 const cardStyle = {
@@ -60,7 +59,6 @@ export function ContactHero() {
     >
       <div className="w-full max-w-[340px] space-y-4 rounded-[30px] p-5 shadow-sm sm:max-w-[520px] sm:p-8" style={cardStyle}>
         <div className="space-y-2 text-center">
-          <SiteBreadcrumbs />
           <h1 className="heading-h1 text-primary">Request Info</h1>
           <p className="body-text text-body-text">
             Feel Free To Connect With Us!

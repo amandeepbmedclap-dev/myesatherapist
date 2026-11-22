@@ -2,6 +2,7 @@
 
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { BreadcrumbBar } from "@/components/seo/SiteBreadcrumbs";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ArrowRight, ChevronDown, ClipboardCheck, Mail, Phone, Plus } from "lucide-react";
@@ -397,6 +398,7 @@ export function Header() {
 
         <MobileSheet open={sheet} close={close} isPsd={isPsd} />
       </header>
+      <BreadcrumbBar />
     </>
   );
 }

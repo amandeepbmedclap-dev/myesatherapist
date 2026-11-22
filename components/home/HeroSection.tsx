@@ -88,17 +88,7 @@ export function HeroSection() {
 
       <div className="relative z-10 sm:min-h-[900px] lg:mx-auto lg:h-[744px] lg:min-h-0 lg:w-full lg:max-w-[1440px]">
         <div className="flex flex-col items-center px-4 pb-8 pt-8 text-center sm:px-6 sm:pt-12 lg:absolute lg:left-[82px] lg:top-[92px] lg:w-[678px] lg:items-start lg:p-0 lg:text-left">
-          <div className="hidden items-center gap-3 sm:flex sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start">
-            {statsData.map((stat) => (
-              <div
-                key={stat.label}
-                className="badge-hover flex min-w-[140px] flex-col items-center justify-center rounded-[30px] bg-background px-4 py-2.5 text-center shadow-[0px_2px_4px_rgba(0,0,0,0.1)] lg:h-[77px] lg:min-w-[150px]"
-              >
-                <span className="body-large text-color-gradient">{stat.value}</span>
-                <span className="body-small mt-1 whitespace-nowrap text-body-text">{stat.label}</span>
-              </div>
-            ))}
-          </div>
+          <HeroStatPills stats={statsData} className="hidden sm:grid" />
 
           <h1 className="heading-h1 mt-6 max-w-[320px] capitalize sm:max-w-xl lg:max-w-none">
             Emotional Support

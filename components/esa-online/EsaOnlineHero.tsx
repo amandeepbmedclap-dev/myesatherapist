@@ -3,7 +3,6 @@ import { BreakpointImage } from "@/components/common/BreakpointImage";
 import { CtaButton } from "./EsaOnlineShared";
 import { ReviewBadges } from "@/components/common/ReviewBadges";
 import { HeroStatPills } from "@/components/common/HeroStatPills";
-import { SiteBreadcrumbs } from "@/components/seo/SiteBreadcrumbs";
 
 const STATS = [
   { value: "6,500+", label: "Clients Supported" },
@@ -102,19 +101,8 @@ export function EsaOnlineHero({
         }
       >
         <div className={`flex w-full max-w-[640px] flex-col gap-5 ${showStats ? "items-center sm:items-start" : "mx-auto items-center lg:mx-0 lg:items-start"}`}>
-          <SiteBreadcrumbs className="self-start" />
           {showStats && (
-            <div className="hidden items-center gap-3 sm:flex sm:flex-row sm:flex-wrap">
-              {STATS.map((pill) => (
-                <div
-                  key={pill.label}
-                  className="badge-hover flex h-[77px] min-w-[176px] flex-col items-center justify-center rounded-[30px] border border-[#EAE5DC]/80 bg-background px-4 text-center shadow-[0px_2px_4px_rgba(0,0,0,0.1)]"
-                >
-                  <span className="body-large leading-none text-color-gradient">{pill.value}</span>
-                  <span className="body-small mt-1 whitespace-nowrap text-body-text">{pill.label}</span>
-                </div>
-              ))}
-            </div>
+            <HeroStatPills stats={STATS} className="hidden sm:grid" />
           )}
           <h1 className="heading-h1 text-primary max-w-[320px] sm:max-w-[620px]">{title}</h1>
           <p className="body-large text-body-text max-w-[320px] sm:max-w-[626px]">{description}</p>
