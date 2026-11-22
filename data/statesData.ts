@@ -3719,7 +3719,7 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsAlertTitle: "Important: No Official ESA Registry Exists",
     scamsAlertText: "There is no government-approved ESA registry, certification, or database in Florida or anywhere in the U.S. Any website claiming to “register” or “certify” your ESA is a scam. Their registries may look official but hold no legal weight or protections.",
     scamsCommonTitle: "Common ESA Scams to Watch For",
-    scamsCommonSubtitle: "Be wary of websites or services that:",
+    scamsCommonSubtitle: "Be wary of websites or services that do any of the following.",
     scamsCommonItems: [
       "Claim to offer instant ESA registration or certification",
       "Sell fake ESA certificates, ID cards, or vests as proof",
