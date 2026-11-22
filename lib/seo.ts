@@ -6,7 +6,7 @@ export const TWITTER_HANDLE = "@MyESATherapist";
 
 const SHEET_PATH_ALIASES: Record<string, string> = {
   "/telehealth-consent/": "/consent-for-telehealth/",
-  "/esa-doctors/dr-robert-staaf/": "/esa-doctors/dr-robert-staff/",
+  "/esa-doctors/dr-robert-staaf/": "/esa-doctors/dr-robert-staaf/",
   "/contributors/allyson-valley/": "/author/allyson-valley/",
   "/contributors/mohammed-ziauddin/": "/author/mohammed-ziauddin/",
   "/contributors/kiera-conrad/": "/author/kiera-conrad/",

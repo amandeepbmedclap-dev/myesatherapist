@@ -240,7 +240,7 @@ export const tennesseeSchema = {
     },
     {
       "@type": "Person",
-      "@id": "https://myesatherapist.com/esa-doctors/dr-robert-staff/#person",
+      "@id": "https://myesatherapist.com/esa-doctors/dr-robert-staaf/#person",
       "name": "Robert Staaf",
       "jobTitle": "Licensed Clinical Social Worker",
       "description": "Licensed Clinical Social Worker licensed in 30+ states specializing in psychotherapy and ESA evaluations.",
@@ -248,7 +248,7 @@ export const tennesseeSchema = {
         "@type": "ImageObject",
         "url": "https://myesatherapist.com/images/doctors/robert-staaf-profile-image.webp"
       },
-      "url": "https://myesatherapist.com/esa-doctors/dr-robert-staff/",
+      "url": "https://myesatherapist.com/esa-doctors/dr-robert-staaf/",
       "sameAs": [
         "https://www.linkedin.com/in/robert-staaf-b57b53333/"
       ],
