@@ -27,6 +27,15 @@ const REPLY_TO = "info@myesatherapist.com";
 function doPost(e) {
   const data = JSON.parse(e.postData.contents || "{}");
   if (data.secret !== SECRET) return out({ ok: false, error: "forbidden" });
+
+  // Blog "Was this article helpful?" votes (from /api/feedback). Create a tab named
+  // "Article feedback" with headers: Time | Article | Vote | Reason | Page
+  if (data.source === "article-feedback") {
+    const fb = SpreadsheetApp.getActive().getSheetByName("Article feedback");
+    fb.appendRow([data.at, data.article, data.vote, data.reason || "", data.page]);
+    return out({ ok: true });
+  }
+
   const email = String(data.email || "").trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return out({ ok: false, error: "email" });
 

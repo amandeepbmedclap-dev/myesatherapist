@@ -14,12 +14,12 @@ export interface BlogFaqItem {
 const DEFAULT_BLOG_FAQS: BlogFaqItem[] = [
   {
     num: "01.",
-    q: "Is My ESA Therapist Legitimate?",
+    q: "Is My ESA Therapist legitimate?",
     a: "Yes. My ESA Therapist connects you directly with independent, state-licensed mental health professionals (LMHPs) who conduct clinical assessments in full compliance with federal Fair Housing Act (FHA) and HUD regulations. Every letter issued includes the clinician's official state license number, contact details, and clinical verification.",
   },
   {
     num: "02.",
-    q: "How Does My ESA Therapist Work?",
+    q: "How does My ESA Therapist work?",
     a: (
       <div>
         <p className="mb-2">Our process is simple and transparent:</p>
@@ -33,22 +33,22 @@ const DEFAULT_BLOG_FAQS: BlogFaqItem[] = [
   },
   {
     num: "03.",
-    q: "Is My Information Safe With My ESA?",
+    q: "Is my information safe with my ESA?",
     a: "Yes. We take privacy extremely seriously. All personal and clinical information is encrypted, transmitted securely, and protected under strict HIPAA-compliant protocols. We will never share or sell your private information.",
   },
   {
     num: "04.",
-    q: "What Are the Housing Protections for ESAs?",
+    q: "What are the housing protections for ESAs?",
     a: "Under the federal Fair Housing Act (FHA), housing providers are legally required to provide reasonable accommodation for individuals with an ESA letter from a licensed healthcare provider. This includes waiving pet deposits, monthly pet fees, and pet bans or breed restrictions.",
   },
   {
     num: "05.",
-    q: "How Quickly Can I Receive My ESA Letter?",
+    q: "How quickly can I receive my ESA letter?",
     a: "After completing your telehealth evaluation with our licensed provider, approved ESA letters are delivered via secure digital PDF within 24 to 48 hours. Priority expedited delivery options are also available.",
   },
   {
     num: "06.",
-    q: "What If I Don't Qualify for an ESA?",
+    q: "What if I don't qualify for an ESA?",
     a: "Your card is charged when you book. If the evaluation cannot be completed, you receive a full refund. A completed evaluation is non-refundable, whether or not a letter is issued.",
   },
 ];

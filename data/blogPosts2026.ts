@@ -56,6 +56,13 @@ export const NEW_BLOG_POSTS: BlogArticle[] = [
     lastUpdated: "October 28, 2026",
     cardImage: "/blog-images/who-can-write-an-esa-letter/therapist-writing-with-emotional-support-dog-image.webp",
     ...heroes,
+    keyHighlights: [
+      "A state-licensed mental health professional can write an ESA letter after evaluating your needs. Other providers may qualify, depending on credentials, scope of practice, and state rules.",
+      "Online therapists can write ESA letters through telehealth, as long as your state's rules and their license allow it.",
+      "The professional must be licensed or authorized to practice in the state where you live.",
+      "Veterinarians can't write ESA letters, because they can't assess your mental health.",
+      "Registries, certificates, and vests can't replace a proper individual assessment.",
+    ],
     questionCallout: {
       question: "Can an online provider I just met write my ESA letter?",
       answer:

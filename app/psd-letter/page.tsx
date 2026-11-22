@@ -62,42 +62,42 @@ export const metadata: Metadata = applySheetSeo({
 const PSD_FAQS: FaqItem[] = [
   {
     num: "01.",
-    q: "What Is a Psychiatric Service Dog (PSD) Letter?",
+    q: "What is a psychiatric service dog (PSD) letter?",
     a: "A PSD letter is an official document from a licensed mental health professional confirming you have a qualifying mental health condition under the ADA. It serves as backup documentation for your psychiatric service dog and includes the provider's license details, signature, and date of issue.",
   },
   {
     num: "02.",
-    q: "Is a PSD Letter Required by Law?",
+    q: "Is a PSD letter required by law?",
     a: "Under the ADA, a PSD letter is not legally required for public access. However, it is highly recommended as backup documentation and is often requested by airlines, landlords, and housing providers to verify your legitimate need for a service dog.",
   },
   {
     num: "03.",
-    q: "What Conditions Qualify for a PSD Letter?",
+    q: "What conditions qualify for a PSD letter?",
     a: "Common qualifying conditions include anxiety disorders, depression, PTSD, panic disorder, and other mental health conditions recognized under the ADA. A licensed mental health professional will make the determination during your consultation based on your individual circumstances.",
   },
   {
     num: "04.",
-    q: "How Long Does It Take to Get a PSD Letter?",
+    q: "How long does it take to get a PSD letter?",
     a: "If you qualify, you may receive your PSD letter within 24-72 hours after your consultation, delivered via secure email. Timelines may vary based on therapist availability and the complexity of your case.",
   },
   {
     num: "05.",
-    q: "What’s Included in a PSD Letter?",
+    q: "What’s included in a PSD letter?",
     a: "Your letter will include a statement confirming you have an ADA-eligible mental health condition, the date of issue, the provider's signature, their license number, contact information, and clinic letterhead for easy verification.",
   },
   {
     num: "06.",
-    q: "Can a PSD Letter Help With Housing and Air Travel?",
+    q: "Can a PSD letter help with housing and air travel?",
     a: "Your letter may support your needs for housing under the Fair Housing Act (subject to landlord approval) and may assist with air travel documentation requirements (subject to current airline policies). Always verify specific requirements with your housing provider or airline.",
   },
   {
     num: "07.",
-    q: "Do I Need to Have a Service Dog Already?",
+    q: "Do I need to have a service dog already?",
     a: "No, you do not need to have a service dog already. The PSD letter establishes that you have a qualifying disability, which is the first step toward obtaining and using a psychiatric service dog. Training and certification of the dog itself is a separate process.",
   },
   {
     num: "08.",
-    q: "Is My PSD Letter Consultation Confidential?",
+    q: "Is my PSD letter consultation confidential?",
     a: "Yes, all PSD letter consultations are 100% HIPAA-compliant and confidential. Your information is protected under federal privacy laws and is only shared with your assigned licensed mental health professional.",
   },
 ];

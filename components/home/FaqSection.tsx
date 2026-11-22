@@ -11,12 +11,12 @@ const TEAL_GRADIENT = "var(--color-gradient)";
 const defaultFaqs = [
   {
     num: "01.",
-    q: "Is My ESA Therapist Legitimate?",
+    q: "Is My ESA Therapist legitimate?",
     a: "Yes. My ESA Therapist connects individuals directly with independent, state-licensed mental health professionals (LMHPs) who conduct clinical assessments designed to support applicable Fair Housing Act requirements and relevant HUD guidance.",
   },
   {
     num: "02.",
-    q: "How Does My ESA Therapist Work?",
+    q: "How does My ESA Therapist work?",
     a: (
       <div>
         <p className="mb-2">Our process is simple and transparent:</p>
@@ -30,22 +30,22 @@ const defaultFaqs = [
   },
   {
     num: "03.",
-    q: "Is My Information Safe With My ESA Therapist?",
+    q: "Is my information safe with My ESA Therapist?",
     a: "Yes. We take privacy extremely seriously. All personal and clinical information is encrypted, transmitted securely, and protected under strict HIPAA-compliant protocols. We will never share or sell your private information.",
   },
   {
     num: "04.",
-    q: "What Are the Housing Protections for ESAs?",
+    q: "What are the housing protections for ESAs?",
     a: "Under the Fair Housing Act, individuals with disabilities may request a reasonable accommodation to keep an assistance animal when the animal is needed because of their disability. When the disability or disability-related need is not readily apparent, reliable documentation from a healthcare professional may help support the request.",
   },
   {
     num: "05.",
-    q: "How Quickly Can I Receive My ESA Letter?",
+    q: "How quickly can I receive my ESA letter?",
     a: "After completing your telehealth evaluation with our licensed provider, approved ESA letters are delivered via secure digital PDF within 24 to 48 hours. Priority expedited delivery options are also available.",
   },
   {
     num: "06.",
-    q: "What If I Don't Qualify for an ESA?",
+    q: "What if I don't qualify for an ESA?",
     a: "Your card is charged when you book. If the evaluation cannot be completed, you receive a full refund. A completed evaluation is non-refundable, whether or not a letter is issued.",
   },
 ];
@@ -74,7 +74,7 @@ export function FaqSection({
   faqs: customFaqs,
   bg = "bg-background",
   className,
-  variant = "classic",
+  variant = "light",
 }: FaqSectionProps = {}) {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
 
@@ -119,27 +119,7 @@ export function FaqSection({
               {items.map((faq, idx) => {
                 const isOpen = openIdx === idx;
                 return (
-                  <details key={idx} open={isOpen} className="group">
-                    <summary
-                      onClick={(event) => {
-                        event.preventDefault();
-                        setOpenIdx(isOpen ? null : idx);
-                      }}
-                      className="flex w-full cursor-pointer list-none items-start gap-4 py-5 text-left sm:gap-6 [&::-webkit-details-marker]:hidden"
-                    >
-                      <span className="mt-[3px] w-7 shrink-0 font-heading text-[16px] font-bold leading-[24px] text-gold-600 tabular-nums">{faq.num?.replace(/\.$/, "")}</span>
-                      <h3 className={`m-0 flex-1 font-heading !text-[18px] font-bold !leading-[27px] transition-colors sm:!text-[19px] ${isOpen ? "text-primary" : "text-primary/90 group-hover:text-primary"}`}>{faq.q}</h3>
-                      <span
-                        aria-hidden
-                        className={`mt-[2px] flex size-7 shrink-0 items-center justify-center rounded-full ring-1 transition-all duration-300 ${isOpen ? "rotate-45 bg-accent text-primary ring-accent" : "text-primary ring-primary/20 group-hover:ring-primary/40"}`}
-                      >
-                        <svg width="12" height="12" viewBox="0 0 18 18" fill="none"><path d="M9 3V15M3 9H15" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" /></svg>
-                      </span>
-                    </summary>
-                    <div className="whitespace-pre-line pb-6 pl-11 pr-11 font-sans text-[16px] leading-[27px] text-body-text sm:pl-[52px]">
-                      {faq.a}
-                    </div>
-                  </details>
+                  <FaqRow key={idx} num={faq.num} q={faq.q} a={faq.a} open={isOpen} onToggle={() => setOpenIdx(isOpen ? null : idx)} />
                 );
               })}
             </div>
@@ -250,5 +230,30 @@ export function FaqSection({
         </div>
       </div>
     </section>
+  );
+}
+
+/** Shared FAQ row (number, question, round +/x toggle) used by every FAQ list on the site. */
+export function FaqRow({ num, q, a, open, onToggle }: { num?: string; q: string; a: React.ReactNode; open: boolean; onToggle: () => void }) {
+  return (
+    <details open={open} className="group">
+      <summary
+        onClick={(event) => {
+          event.preventDefault();
+          onToggle();
+        }}
+        className="flex w-full cursor-pointer list-none items-start gap-4 py-5 text-left sm:gap-6 [&::-webkit-details-marker]:hidden"
+      >
+        <span className="mt-[3px] w-7 shrink-0 font-heading text-[16px] font-bold leading-[24px] text-gold-600 tabular-nums">{num?.replace(/\.$/, "")}</span>
+        <h3 className={`m-0 flex-1 font-heading !text-[18px] font-bold !leading-[27px] transition-colors sm:!text-[19px] ${open ? "text-primary" : "text-primary/90 group-hover:text-primary"}`}>{q}</h3>
+        <span
+          aria-hidden
+          className={`mt-[2px] flex size-7 shrink-0 items-center justify-center rounded-full ring-1 transition-all duration-300 ${open ? "rotate-45 bg-accent text-primary ring-accent" : "text-primary ring-primary/20 group-hover:ring-primary/40"}`}
+        >
+          <svg width="12" height="12" viewBox="0 0 18 18" fill="none"><path d="M9 3V15M3 9H15" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" /></svg>
+        </span>
+      </summary>
+      <div className="whitespace-pre-line pb-6 pl-11 pr-11 font-sans text-[16px] leading-[27px] text-body-text sm:pl-[52px]">{a}</div>
+    </details>
   );
 }

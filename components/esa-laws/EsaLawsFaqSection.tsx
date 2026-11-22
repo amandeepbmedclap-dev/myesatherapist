@@ -8,17 +8,17 @@ const TEAL_GRADIENT = "var(--color-gradient)";
 export const ESA_LAWS_FAQS = [
   {
     num: "01.",
-    q: "Are ESA Letters Legally Required?",
+    q: "Are ESA letters legally required?",
     a: "Under federal ESA law, housing providers can ask for reliable documentation when someone requests an ESA. In most cases, this is an ESA letter from a licensed medical professional. The letter is issued after a clinical evaluation of the individual, their disability, and their need for an ESA.",
   },
   {
     num: "02.",
-    q: "Do ESA Laws Apply Nationwide?",
+    q: "Do ESA laws apply nationwide?",
     a: "Federal ESA laws apply across all 50 states. Under the FHA, qualifying ESAs may be allowed as a reasonable housing accommodation without pet fees or pet restrictions. State laws may add requirements, such as a required provider relationship before an ESA letter can be issued.",
   },
   {
     num: "03.",
-    q: "Are Online ESA Evaluations Legal?",
+    q: "Are online ESA evaluations legal?",
     a: "Yes. Online ESA evaluations are legal when conducted by a state-licensed healthcare professional through compliant telehealth. Instant approvals, guaranteed letters, or certificates and registrations issued without a clinical evaluation are not legitimate.",
   },
   {

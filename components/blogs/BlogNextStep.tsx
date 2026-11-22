@@ -31,8 +31,12 @@ const BY_CATEGORY: Record<string, NextLink[]> = {
   "esa-training": [HOUSING, PSD, ONLINE],
 };
 
+export function nextStepLinks(slug: string, categorySlug: string): NextLink[] {
+  return BY_SLUG[slug] || BY_CATEGORY[categorySlug] || [ONLINE, HOUSING, STATES];
+}
+
 export function BlogNextStep({ slug, categorySlug }: { slug: string; categorySlug: string }) {
-  const links = BY_SLUG[slug] || BY_CATEGORY[categorySlug] || [ONLINE, HOUSING, STATES];
+  const links = nextStepLinks(slug, categorySlug);
   return (
     <section aria-labelledby="blog-next-step" className="w-full bg-background pt-12 sm:pt-16">
       <div className="max-w-[900px] mx-auto px-4 sm:px-6">

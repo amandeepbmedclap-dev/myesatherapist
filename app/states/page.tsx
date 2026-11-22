@@ -51,27 +51,27 @@ export const metadata: Metadata = applySheetSeo({
 const STATES_FAQS: FaqItem[] = [
   {
     num: "01.",
-    q: "Which States Have Strict ESA Laws?",
+    q: "Which states have strict ESA laws?",
     a: "Some states have additional rules addressing ESA documentation, misrepresentation, or housing accommodations. However, federal Fair Housing Act protections generally apply nationwide, subject to eligibility requirements and applicable exceptions.",
   },
   {
     num: "02.",
-    q: "Can a Landlord Deny an ESA in Any State?",
+    q: "Can a landlord deny an ESA in any state?",
     a: "A landlord generally cannot deny a valid ESA accommodation request solely because of a no-pet policy. However, denial may be permitted in certain circumstances, such as undue hardship, direct threats, or significant property damage.",
   },
   {
     num: "03.",
-    q: "Can an Online ESA Letter Be Valid in My State?",
+    q: "Can an online ESA letter be valid in my state?",
     a: "Yes. An online ESA letter may be valid if it follows applicable requirements and is provided by a qualified mental health professional licensed or otherwise authorized to practice in your state after an appropriate evaluation.",
   },
   {
     num: "04.",
-    q: "Do ESA Owners Need Additional Documentation in Certain States?",
+    q: "Do ESA owners need additional documentation in certain states?",
     a: "Some states have additional documentation rules, including requirements related to the professional relationship or evaluation process. However, there is no universal federal ESA certificate or registration requirement for housing.",
   },
   {
     num: "05.",
-    q: "Can I Use an ESA Letter From Another State?",
+    q: "Can I use an ESA letter from another state?",
     a: "An ESA letter from another state may not automatically meet your state's requirements. The professional issuing it must be appropriately licensed or authorized to practice where you live, and the documentation must meet applicable standards.",
   },
 ];

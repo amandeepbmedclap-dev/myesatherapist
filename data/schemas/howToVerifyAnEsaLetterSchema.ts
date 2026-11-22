@@ -226,7 +226,7 @@ export const howToVerifyAnEsaLetterSchema = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What Makes an ESA Letter Legitimate?",
+          "name": "What makes an ESA letter legitimate?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "A licensed mental health professional issues a legitimate ESA letter after a proper clinical evaluation. It should include the provider's license information, signature, date, and confirmation that the individual has a disability-related need for an emotional support animal."
@@ -234,7 +234,7 @@ export const howToVerifyAnEsaLetterSchema = {
         },
         {
           "@type": "Question",
-          "name": "Can a Landlord Verify an ESA Letter?",
+          "name": "Can a landlord verify an ESA letter?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. A landlord can verify that the letter was issued by a licensed mental health professional and that the documentation appears genuine. However, landlords cannot demand detailed medical records or personal information about a tenant's diagnosis."
@@ -242,7 +242,7 @@ export const howToVerifyAnEsaLetterSchema = {
         },
         {
           "@type": "Question",
-          "name": "Are ESA Registration Certificates and ID Cards Legally Valid?",
+          "name": "Are ESA registration certificates and ID cards legally valid?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "No. ESA registrations, certificates, or ID cards do not hold a person's legal need for an emotional support animal. Housing providers typically rely on legitimate ESA letters rather than online certifications or purchased documentation."
@@ -250,7 +250,7 @@ export const howToVerifyAnEsaLetterSchema = {
         },
         {
           "@type": "Question",
-          "name": "Do ESA Letters Need to Be Renewed?",
+          "name": "Do ESA letters need to be renewed?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "While there is no fixed 'expiration date' for an emotional support animal letter, landlords usually ask for current documentation issued within the last 12 months to confirm the updated needs for an ESA. Keeping your ESA letter updated helps prevent any accommodation delays."

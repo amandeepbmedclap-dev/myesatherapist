@@ -219,6 +219,8 @@ export interface BlogArticle {
     paragraphs: string[];
   };
   faqs: BlogFaq[];
+  /** Short summary bullets shown in the article hero ("Key highlights"). */
+  keyHighlights?: string[];
   disclaimer?: BlogDisclaimer;
   aboutAuthor?: BlogAboutAuthor;
   faqSectionTitle?: string;
@@ -479,19 +481,19 @@ export const BLOG_POSTS: BlogArticle[] = [
     },
     faqs: [
       {
-        q: "What Makes an ESA Letter Legitimate?",
+        q: "What makes an ESA letter legitimate?",
         a: "A licensed mental health professional issues a legitimate ESA letter after a proper clinical evaluation. It should include the provider’s license information, signature, date, and confirmation that the individual has a disability-related need for an emotional support animal.",
       },
       {
-        q: "Can a Landlord Verify an ESA Letter?",
+        q: "Can a landlord verify an ESA letter?",
         a: "Yes. A landlord can verify that the letter was issued by a licensed mental health professional and that the documentation appears genuine. However, landlords cannot demand detailed medical records or personal information about a tenant’s diagnosis.",
       },
       {
-        q: "Are ESA Registration Certificates and ID Cards Legally Valid?",
+        q: "Are ESA registration certificates and ID cards legally valid?",
         a: "No. ESA registrations, certificates, or ID cards do not hold a person’s legal need for an emotional support animal. Housing providers typically rely on legitimate ESA letters rather than online certifications or purchased documentation.",
       },
       {
-        q: "Do ESA Letters Need to Be Renewed?",
+        q: "Do ESA letters need to be renewed?",
         a: "While there is no fixed ‘expiration date’ for an emotional support animal letter, landlords usually ask for current documentation issued within the last 12 months to confirm the updated needs for an ESA. Keeping your ESA letter updated helps prevent any accommodation delays.",
       },
     ],
@@ -827,27 +829,27 @@ export const BLOG_POSTS: BlogArticle[] = [
     },
     faqs: [
       {
-        q: "Do I Need to Register My Emotional Support Animal?",
+        q: "Do I need to register my emotional support animal?",
         a: "No, no federal or state law requires you to register an emotional support animal. What typically matters for housing accommodations is having proper documentation from a licensed mental health professional, not a registration certificate or database listing. Individual landlords may contract with or have their own registry that tracks their residents with ESAs; this is not the same as a federal or state registry.",
       },
       {
-        q: "Is an ESA Certificate Enough?",
+        q: "Is an ESA certificate enough?",
         a: "Not usually. While an ESA certificate may look official, it generally does not prove that you have a disability-related need for the animal. Instead of using online-purchased certificates, housing providers frequently rely on valid supporting documentation. Documentation must be uniquely tailored to the owner of the ESA and their disability needs.",
       },
       {
-        q: "Are Online ESA Registries Legitimate?",
+        q: "Are online ESA registries legitimate?",
         a: "Most online ESA registries are private businesses that maintain their own databases. While they may provide certificates, ID cards, or registration numbers, they are not recognized as official government registries and do not automatically grant legal protections.",
       },
       {
-        q: "Is There a Government ESA Database?",
+        q: "Is there a government ESA database?",
         a: "No. There is no official database, government-issued ESA certification system, or federal ESA registry for emotional support animals in the United States. Any website claiming to offer government registration should be evaluated carefully.",
       },
       {
-        q: "Why Do ESA Registration Websites Exist?",
+        q: "Why do ESA registration websites exist?",
         a: "ESA registration websites primarily sell products such as certificates, ID cards, registry listings, and vests. Many people purchase these items believing they create legal ESA status, even though registration itself generally does not determine whether an animal qualifies as an emotional support animal.",
       },
       {
-        q: "Can I Buy an ESA ID Card Instead of Getting an ESA Letter?",
+        q: "Can I buy an ESA ID card instead of getting an ESA letter?",
         a: "An ESA ID card can help identify your animal, but it does not replace proper documentation supporting your need for an emotional support animal. In most situations, an ID card alone is unlikely to satisfy housing accommodation requirements.",
       },
     ],
@@ -2708,23 +2710,23 @@ export const BLOG_POSTS: BlogArticle[] = [
   },
   "faqs": [
     {
-      "q": "Can I Have More Than One ESA For Anxiety?",
+      "q": "Can I have more than one ESA for anxiety?",
       "a": "Yes. You may have more than one ESA for anxiety if each animal provides support for your mental health needs. A licensed mental health professional must determine whether multiple ESAs are required for you."
     },
     {
-      "q": "Can Children With Anxiety Qualify For An ESA?",
+      "q": "Can children with anxiety qualify for an ESA?",
       "a": "Yes. Children or minors below 18 years of age are eligible for an ESA with their parent or guardian’s consent. A licensed mental health professional should evaluate the child and determine whether an ESA could provide meaningful emotional support."
     },
     {
-      "q": "What Happens During An ESA Evaluation For Anxiety?",
+      "q": "What happens during an ESA evaluation for anxiety?",
       "a": "During an ESA evaluation for anxiety, a mental health professional reviews your anxiety symptoms, their impact on daily life, and your current mental health needs. They then determine whether an ESA is clinically appropriate and whether an ESA letter is necessary or not."
     },
     {
-      "q": "Is An ESA Letter Recommended For Everyone With Anxiety?",
+      "q": "Is an ESA letter recommended for everyone with anxiety?",
       "a": "No. Having anxiety does not automatically mean an ESA is appropriate. A licensed mental health professional considers the severity of symptoms, daily functioning, and whether an ESA could provide meaningful emotional support."
     },
     {
-      "q": "How Long Does An ESA Letter For Anxiety Stay Valid?",
+      "q": "How long does an ESA letter for anxiety stay valid?",
       "a": "There is no fixed expiry date for an ESA letter for anxiety. However, most landlords ask for updated documentation issued within the last 12 months to ensure the most current need for an ESA."
     }
   ]
@@ -2896,23 +2898,23 @@ export const BLOG_POSTS: BlogArticle[] = [
   },
   "faqs": [
     {
-      "q": "Does An ESA Need To Be Trained Like A Service Animal?",
+      "q": "Does an ESA need to be trained like a service animal?",
       "a": "No. ESAs do not have the same task-training requirements as service animals. However, basic obedience training can make everyday life safer and easier."
     },
     {
-      "q": "How Long Should I Train My ESA Each Day?",
+      "q": "How long should I train my ESA each day?",
       "a": "Short sessions of about five to ten minutes can be effective. Consistent practice, positive reinforcement, and gradual exposure to distractions can help build reliable behavior."
     },
     {
-      "q": "What Are The Most Important Commands For An ESA?",
+      "q": "What are the most important commands for an ESA?",
       "a": "Sit, stay, come, down, leave it, quiet, place, and heel are useful foundational commands. They can help your ESA remain calm and manageable in different situations."
     },
     {
-      "q": "Should I Hire A Professional To Train My ESA?",
+      "q": "Should I hire a professional to train my ESA?",
       "a": "Not necessarily. Many basic commands can be taught at home with patience and positive reinforcement. A certified trainer or behaviorist may help when training becomes difficult or your animal has specific behavioral concerns."
     },
     {
-      "q": "Can Training Make An ESA More Helpful During Stressful Situations?",
+      "q": "Can training make an ESA more helpful during stressful situations?",
       "a": "Yes. A well-trained animal may respond more reliably to commands when you are stressed. Calm, predictable behavior can also make the human-animal bond easier to maintain."
     }
   ]

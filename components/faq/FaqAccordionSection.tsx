@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import { FAQ_DATA, FAQ_FILTERS, FAQ_FILTER_LABELS, type FaqFilter } from "./faqData";
 import { serializeLd } from "@/lib/site";
 import { faqPageSchema } from "@/lib/schema";
+import { FaqRow } from "@/components/home/FaqSection";
 
-const TEAL_GRADIENT = "var(--color-gradient)";
 
 export function FaqAccordionSection() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
@@ -31,7 +31,7 @@ export function FaqAccordionSection() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: serializeLd(faqPageSchema(FAQ_DATA.map((f) => ({ q: f.question, a: f.answer }))), { faq: true }) }}
       />
-      <div className="max-w-[1016px] mx-auto flex flex-col items-center gap-8 sm:gap-10">
+      <div className="max-w-[880px] mx-auto flex flex-col items-center gap-8 sm:gap-10">
         <div className="flex flex-col items-center gap-4 text-center max-w-[720px]">
           <h2 className="heading-h2 text-primary">Frequently Asked Questions About ESA Letters and Evaluations</h2>
           <p className="body-large text-body-text">
@@ -67,63 +67,10 @@ export function FaqAccordionSection() {
           })}
         </div>
 
-        <div className="w-full flex flex-col gap-4">
-        {visibleFaqs.map((faq, idx) => {
-          const isOpen = openIdx === idx;
-          return (
-            <div
-              key={faq.question}
-              className="w-full rounded-[20px] overflow-hidden shadow-sm transition-all duration-200"
-            >
-              <button
-                type="button"
-                onClick={() => toggleAccordion(idx)}
-                className="w-full min-h-[64px] sm:min-h-[74px] flex items-stretch text-left rounded-[20px] overflow-hidden transition-all duration-200 relative cursor-pointer group"
-                style={{ backgroundImage: TEAL_GRADIENT }}
-                aria-expanded={isOpen}
-              >
-                <div className="w-[60px] sm:w-[74px] xl:w-[78px] shrink-0 bg-accent flex items-center justify-center font-sans font-extrabold text-xl sm:text-2xl xl:text-[28px] text-primary leading-none rounded-l-[20px] self-stretch">
-                  {String(idx + 1).padStart(2, "0")}.
-                </div>
-
-                <div className="flex-1 py-3 sm:py-4 px-4 sm:px-6 xl:px-7 flex items-center justify-between gap-3 sm:gap-4">
-                  <h3 className="heading-h3 text-white text-base sm:text-xl xl:text-[28px] leading-snug sm:leading-[32px] xl:leading-[36px] pr-2 m-0 capitalize">
-                    {faq.question}
-                  </h3>
-
-                  <span
-                    className={`w-[20px] h-[20px] sm:w-[24px] sm:h-[24px] flex items-center justify-center shrink-0 transition-transform duration-300 ${
-                      isOpen ? "rotate-45" : ""
-                    }`}
-                  >
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9 3V15M3 9H15"
-                        stroke="var(--color-background)"
-                        strokeWidth="2.2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </div>
-              </button>
-
-              <div
-                hidden={!isOpen}
-                className="bg-background px-6 sm:px-8 py-5 sm:py-6 font-sans font-medium text-[16px] leading-[26px] border border-primary/15 border-t-0 rounded-b-[20px] animate-fadeIn whitespace-pre-line"
-              >
-                {faq.answer}
-              </div>
-            </div>
-          );
-        })}
+        <div className="w-full divide-y divide-primary/10 border-y border-primary/10">
+          {visibleFaqs.map((faq, idx) => (
+            <FaqRow key={faq.question} num={String(idx + 1).padStart(2, "0")} q={faq.question} a={faq.answer} open={openIdx === idx} onToggle={() => toggleAccordion(idx)} />
+          ))}
         </div>
       </div>
     </section>

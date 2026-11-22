@@ -459,7 +459,7 @@ export const statesSchema = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Which States Have Strict ESA Laws?",
+          "name": "Which states have strict ESA laws?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Some states have additional rules addressing ESA documentation, misrepresentation, or housing accommodations. However, federal Fair Housing Act protections generally apply nationwide, subject to eligibility requirements and applicable exceptions."
@@ -467,7 +467,7 @@ export const statesSchema = {
         },
         {
           "@type": "Question",
-          "name": "Can a Landlord Deny an ESA in Any State?",
+          "name": "Can a landlord deny an ESA in any state?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "A landlord generally cannot deny a valid ESA accommodation request solely because of a no-pet policy. However, denial may be permitted in certain circumstances, such as undue hardship, direct threats, or significant property damage."
@@ -475,7 +475,7 @@ export const statesSchema = {
         },
         {
           "@type": "Question",
-          "name": "Can an Online ESA Letter Be Valid in My State?",
+          "name": "Can an online ESA letter be valid in my state?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. An online ESA letter may be valid if it follows applicable requirements and is provided by a qualified mental health professional licensed or otherwise authorized to practice in your state after an appropriate evaluation."
@@ -483,7 +483,7 @@ export const statesSchema = {
         },
         {
           "@type": "Question",
-          "name": "Do ESA Owners Need Additional Documentation in Certain States?",
+          "name": "Do ESA owners need additional documentation in certain states?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Some states have additional documentation rules, including requirements related to the professional relationship or evaluation process. However, there is no universal federal ESA certificate or registration requirement for housing."
@@ -491,7 +491,7 @@ export const statesSchema = {
         },
         {
           "@type": "Question",
-          "name": "Can I Use an ESA Letter From Another State?",
+          "name": "Can I use an ESA letter from another state?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "An ESA letter from another state may not automatically meet your state's requirements. The professional issuing it must be appropriately licensed or authorized to practice where you live, and the documentation must meet applicable standards."

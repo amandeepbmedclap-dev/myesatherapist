@@ -14,6 +14,7 @@ import { BlogAuthorBio } from "@/components/blogs/BlogAuthorBio";
 import { BlogMoreResources } from "@/components/blogs/BlogMoreResources";
 import { BlogNextStep } from "@/components/blogs/BlogNextStep";
 import { CtaBanner } from "@/components/home/CtaBanner";
+import { ArticleLayoutV2, ARTICLE_V2 } from "@/components/blogs/v2/ArticleLayoutV2";
 import { getBlogBySlug, getAllBlogs } from "@/data/blogsData";
 import { socialImage, hasSocialImage, withFeatureImage } from "@/data/socialImages";
 import { applySheetSeo } from "@/lib/seo";
@@ -137,6 +138,10 @@ export default async function BlogDetailPage({ params }: PageProps) {
       <Header />
 
       <main className="flex-1 bg-background">
+        {ARTICLE_V2.has(article.slug) ? (
+          <ArticleLayoutV2 article={article} />
+        ) : (
+        <>
         <BlogHeroSection
           title={article.title}
           subtitle={article.shortDescription}
@@ -171,7 +176,11 @@ export default async function BlogDetailPage({ params }: PageProps) {
         <section className="w-full bg-background flex justify-center px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 lg:pt-20 pb-14 sm:pb-20 relative z-30">
           <BlogGoogleSourceBanner />
         </section>
+        </>
+        )}
 
+{!ARTICLE_V2.has(article.slug) && (
+          <>
         <BlogAuthorBio
           name={article.aboutAuthor?.name}
           title={article.aboutAuthor?.title}
@@ -182,7 +191,9 @@ export default async function BlogDetailPage({ params }: PageProps) {
         />
 
         <BlogNextStep slug={article.slug} categorySlug={article.categorySlug} />
-        <BlogMoreResources currentSlug={article.slug} categorySlug={article.categorySlug} />
+        </>
+        )}
+        <BlogMoreResources currentSlug={article.slug} categorySlug={article.categorySlug} bg={ARTICLE_V2.has(article.slug) ? "bg-background" : "bg-white"} />
 
         <CtaBanner
           title={article.bottomCta?.title || "Need help with an ESA letter?"}
@@ -193,7 +204,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
           buttonText={article.bottomCta?.buttonText || "Start Your Evaluation"}
           buttonHref={article.bottomCta?.buttonHref || "#faq"}
           note={article.bottomCta?.note}
-          bgColor="bg-background"
+          bgColor={ARTICLE_V2.has(article.slug) ? "bg-white" : "bg-background"}
         />
       </main>
 

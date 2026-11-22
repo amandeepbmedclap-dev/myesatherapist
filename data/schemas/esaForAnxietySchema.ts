@@ -261,7 +261,7 @@ export const esaForAnxietySchema = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Can I Have More Than One ESA For Anxiety?",
+          "name": "Can I have more than one ESA for anxiety?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. You may have more than one ESA for anxiety if each animal provides support for your mental health needs. A licensed mental health professional must determine whether multiple ESAs are required for you."
@@ -269,7 +269,7 @@ export const esaForAnxietySchema = {
         },
         {
           "@type": "Question",
-          "name": "Can Children With Anxiety Qualify For An ESA?",
+          "name": "Can children with anxiety qualify for an ESA?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. Children or minors below 18 years of age are eligible for an ESA with their parent or guardian's consent. A licensed mental health professional should evaluate the child and determine whether an ESA could provide meaningful emotional support."
@@ -277,7 +277,7 @@ export const esaForAnxietySchema = {
         },
         {
           "@type": "Question",
-          "name": "What Happens During An ESA Evaluation For Anxiety?",
+          "name": "What happens during an ESA evaluation for anxiety?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "During an ESA evaluation for anxiety, a mental health professional reviews your anxiety symptoms, their impact on daily life, and your current mental health needs. They then determine whether an ESA is clinically appropriate and whether an ESA letter is necessary or not."
@@ -285,7 +285,7 @@ export const esaForAnxietySchema = {
         },
         {
           "@type": "Question",
-          "name": "Is An ESA Letter Recommended For Everyone With Anxiety?",
+          "name": "Is an ESA letter recommended for everyone with anxiety?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "No. Having anxiety does not automatically mean an ESA is appropriate. A licensed mental health professional considers the severity of symptoms, daily functioning, and whether an ESA could provide meaningful emotional support."
@@ -293,7 +293,7 @@ export const esaForAnxietySchema = {
         },
         {
           "@type": "Question",
-          "name": "How Long Does An ESA Letter For Anxiety Stay Valid?",
+          "name": "How long does an ESA letter for anxiety stay valid?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "There is no fixed expiry date for an ESA letter for anxiety. However, most landlords ask for updated documentation issued within the last 12 months to ensure the most current need for an ESA."

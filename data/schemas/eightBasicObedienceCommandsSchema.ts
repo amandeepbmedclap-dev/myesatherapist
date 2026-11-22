@@ -284,7 +284,7 @@ export const eightBasicObedienceCommandsSchema = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Does An ESA Need To Be Trained Like A Service Animal?",
+          "name": "Does an ESA need to be trained like a service animal?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "No. ESAs do not have the same task-training requirements as service animals. However, basic obedience training can make everyday life safer and easier."
@@ -292,7 +292,7 @@ export const eightBasicObedienceCommandsSchema = {
         },
         {
           "@type": "Question",
-          "name": "How Long Should I Train My ESA Each Day?",
+          "name": "How long should I train my ESA each day?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Short sessions of about five to ten minutes can be effective. Consistent practice, positive reinforcement, and gradual exposure to distractions can help build reliable behavior."
@@ -300,7 +300,7 @@ export const eightBasicObedienceCommandsSchema = {
         },
         {
           "@type": "Question",
-          "name": "What Are The Most Important Commands For An ESA?",
+          "name": "What are the most important commands for an ESA?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Sit, stay, come, down, leave it, quiet, place, and heel are useful foundational commands. They can help your ESA remain calm and manageable in different situations."
@@ -308,7 +308,7 @@ export const eightBasicObedienceCommandsSchema = {
         },
         {
           "@type": "Question",
-          "name": "Should I Hire A Professional To Train My ESA?",
+          "name": "Should I hire a professional to train my ESA?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Not necessarily. Many basic commands can be taught at home with patience and positive reinforcement. A certified trainer or behaviorist may help when training becomes difficult or your animal has specific behavioral concerns."
@@ -316,7 +316,7 @@ export const eightBasicObedienceCommandsSchema = {
         },
         {
           "@type": "Question",
-          "name": "Can Training Make An ESA More Helpful During Stressful Situations?",
+          "name": "Can training make an ESA more helpful during stressful situations?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. A well-trained animal may respond more reliably to commands when you are stressed. Calm, predictable behavior can also make the human-animal bond easier to maintain."

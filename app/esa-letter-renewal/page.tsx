@@ -62,12 +62,12 @@ export const metadata: Metadata = applySheetSeo({
 const esaRenewalFaqs = [
   {
     num: "01.",
-    q: "Is My ESA Therapist Legitimate?",
+    q: "Is My ESA Therapist legitimate?",
     a: "Yes. My ESA Therapist connects you directly with independent, state-licensed mental health professionals (LMHPs) who conduct clinical assessments in full compliance with federal Fair Housing Act (FHA) and HUD regulations. Every letter issued includes the clinician's official state license number, contact details, and clinical verification.",
   },
   {
     num: "02.",
-    q: "How Does My ESA Therapist Work?",
+    q: "How does My ESA Therapist work?",
     a: (
       <div>
         <p className="mb-2 body-large text-[18px] leading-[28px]">Our process is simple and transparent:</p>
@@ -81,22 +81,22 @@ const esaRenewalFaqs = [
   },
   {
     num: "03.",
-    q: "Is My Information Safe With My ESA?",
+    q: "Is my information safe with my ESA?",
     a: "Yes. We take privacy extremely seriously. All personal and clinical information is encrypted, transmitted securely, and protected under strict HIPAA-compliant protocols. We will never share or sell your private information.",
   },
   {
     num: "04.",
-    q: "Do I Need to Renew My ESA Letter Every Year?",
+    q: "Do I need to renew my ESA letter every year?",
     a: "Most housing providers and property managers request that an ESA recommendation letter be dated within the last 12 months. An annual renewal evaluation helps ensure that your documentation accurately reflects your current emotional support animal needs.",
   },
   {
     num: "05.",
-    q: "Can a Landlord Reject an ESA Letter?",
+    q: "Can a landlord reject an ESA letter?",
     a: "Under the Fair Housing Act, landlords cannot deny reasonable accommodation for emotional support animals with valid documentation from a licensed provider, except under specific narrow exemptions (such as owner-occupied buildings with four or fewer units).",
   },
   {
     num: "06.",
-    q: "How Quickly Can I Receive My Renewal Letter?",
+    q: "How quickly can I receive my renewal letter?",
     a: "After your telehealth evaluation is completed and your renewal is approved by the licensed professional, your official renewed ESA letter is delivered electronically in PDF format within 24 to 48 hours.",
   },
 ];

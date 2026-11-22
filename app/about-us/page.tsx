@@ -62,37 +62,37 @@ const ABOUT_FAQS: FaqItem[] = [
   },
   {
     num: "02.",
-    q: "Who Conducts the ESA Evaluations?",
+    q: "Who conducts the ESA evaluations?",
     a: "All evaluations are conducted exclusively by state-licensed mental health professionals. Eligibility is determined solely through professional clinical review, with clinical conclusions made independently by the provider without platform influence.",
   },
   {
     num: "03.",
-    q: "Does My ESA Therapist Provide Nationwide Coverage?",
+    q: "Does My ESA Therapist provide nationwide coverage?",
     a: "Yes. My ESA Therapist offers ESA evaluations in all 50 states, providing accessible telehealth services while ensuring evaluations meet local licensing requirements.",
   },
   {
     num: "04.",
-    q: "Who Does My ESA Therapist Help?",
+    q: "Who does My ESA Therapist help?",
     a: "My ESA Therapist serves renters facing housing restrictions on pets, individuals experiencing mental health concerns, remote or telehealth users, first-time and returning ESA applicants, and people seeking a professional assessment of whether an emotional support animal may be clinically appropriate.",
   },
   {
     num: "05.",
-    q: "How Is My ESA Therapist Different From Automated ESA Services?",
+    q: "How is My ESA Therapist different from automated ESA services?",
     a: "The difference is a professional, evaluation-based process. My ESA Therapist works with state-licensed professionals, secure consultations, confidential systems, and guidelines relevant to ESA housing accommodations.",
   },
   {
     num: "06.",
-    q: "What Does the ESA Evaluation Process Involve?",
+    q: "What does the ESA evaluation process involve?",
     a: "The clinical process includes a review of relevant mental health concerns, symptoms, and history, followed by an individualized assessment by a licensed mental health professional. If documentation is clinically appropriate, it is prepared in line with applicable legal requirements.",
   },
   {
     num: "07.",
-    q: "What Happens If a Refund Is Needed?",
+    q: "What happens if a refund is needed?",
     a: "Your card is charged when you book. If the evaluation cannot be completed, you receive a full refund. A completed evaluation is non-refundable, whether or not a letter is issued.",
   },
   {
     num: "08.",
-    q: "Are There Hidden Fees?",
+    q: "Are there hidden fees?",
     a: "No. Pricing is upfront and transparent, with no surprise charges or recurring fees. One payment covers the complete evaluation, and all payments are processed securely through encrypted systems.",
   },
 ];

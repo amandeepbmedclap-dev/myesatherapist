@@ -226,7 +226,7 @@ export const isEsaRegistrationLegitSchema = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Do I Need to Register My Emotional Support Animal?",
+          "name": "Do I need to register my emotional support animal?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "No, no federal or state law requires you to register an emotional support animal. What typically matters for housing accommodations is having proper documentation from a licensed mental health professional, not a registration certificate or database listing. Individual landlords may contract with or have their own registry that tracks their residents with ESAs; this is not the same as a federal or state registry."
@@ -242,7 +242,7 @@ export const isEsaRegistrationLegitSchema = {
         },
         {
           "@type": "Question",
-          "name": "Are Online ESA Registries Legitimate?",
+          "name": "Are online ESA registries legitimate?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Most online ESA registries are private businesses that maintain their own databases. While they may provide certificates, ID cards, or registration numbers, they are not recognized as official government registries and do not automatically grant legal protections."
@@ -250,7 +250,7 @@ export const isEsaRegistrationLegitSchema = {
         },
         {
           "@type": "Question",
-          "name": "Is There a Government ESA Database?",
+          "name": "Is there a government ESA database?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "No. There is no official database, government-issued ESA certification system, or federal ESA registry for emotional support animals in the United States. Any website claiming to offer government registration should be evaluated carefully."
@@ -258,7 +258,7 @@ export const isEsaRegistrationLegitSchema = {
         },
         {
           "@type": "Question",
-          "name": "Why Do ESA Registration Websites Exist?",
+          "name": "Why do ESA registration websites exist?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "ESA registration websites primarily sell products such as certificates, ID cards, registry listings, and vests. Many people purchase these items believing they create legal ESA status, even though registration itself generally does not determine whether an animal qualifies as an emotional support animal."
@@ -266,7 +266,7 @@ export const isEsaRegistrationLegitSchema = {
         },
         {
           "@type": "Question",
-          "name": "Can I Buy an ESA ID Card Instead of Getting an ESA Letter?",
+          "name": "Can I buy an ESA ID card instead of getting an ESA letter?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "An ESA ID card can help identify your animal, but it does not replace proper documentation supporting your need for an emotional support animal. In most situations, an ID card alone is unlikely to satisfy housing accommodation requirements."

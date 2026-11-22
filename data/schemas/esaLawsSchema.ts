@@ -330,7 +330,7 @@ export const esaLawsSchema = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Are ESA Letters Legally Required?",
+          "name": "Are ESA letters legally required?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Under federal ESA law, housing providers can ask for reliable documentation when someone requests an ESA. In most cases, this is an ESA letter from a licensed medical professional issued after a clinical evaluation of the individual, their disability, and their need for an ESA."
@@ -346,7 +346,7 @@ export const esaLawsSchema = {
         },
         {
           "@type": "Question",
-          "name": "Do ESA Laws Apply Nationwide?",
+          "name": "Do ESA laws apply nationwide?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Federal ESA laws apply across all fifty states, including the Fair Housing Act. Some states have additional rules, such as requiring an ongoing relationship of 30 days or more between the individual and a licensed mental health professional before issuing an ESA letter."
@@ -354,7 +354,7 @@ export const esaLawsSchema = {
         },
         {
           "@type": "Question",
-          "name": "Are Online ESA Evaluations Legal?",
+          "name": "Are online ESA evaluations legal?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Online ESA evaluations are legal if conducted by a licensed healthcare professional through a HIPAA-compliant telehealth platform following state guidelines. Instant or guaranteed approvals after a short online questionnaire are not valid, nor are registrations, certificates, or IDs purchased without a proper clinical evaluation."

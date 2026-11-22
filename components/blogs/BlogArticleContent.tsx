@@ -6,12 +6,17 @@ import Link from "next/link";
 import { BlogArticle, BlogCalloutBox, BlogQuoteBox } from "@/data/blogsData";
 import { BlogFaqSection } from "@/components/blogs/BlogFaqSection";
 import { CtaButton } from "@/components/common/CtaButton";
+import { FaqRow } from "@/components/home/FaqSection";
 
 interface BlogArticleContentProps {
   article: BlogArticle;
+  /** "v2": redesigned article template (pilot). */
+  variant?: "classic" | "v2";
 }
 
-export function BlogArticleContent({ article }: BlogArticleContentProps) {
+export function BlogArticleContent({ article, variant = "classic" }: BlogArticleContentProps) {
+  const v2 = variant === "v2";
+  const [openFaq, setOpenFaq] = React.useState<number | null>(0);
 
   const renderFormattedText = (content: string): React.ReactNode => {
     if (!content) return content;
@@ -99,7 +104,7 @@ export function BlogArticleContent({ article }: BlogArticleContentProps) {
   );
 
   return (
-    <div className="w-full flex-1 max-w-[870px] space-y-10 lg:space-y-12 text-body-text font-sans">
+    <div className={`w-full flex-1 ${v2 ? "article-v2 max-w-none space-y-10" : "max-w-[870px] space-y-10 lg:space-y-12"} text-body-text font-sans`}>
       
       {article.questionCallout && (
         <div
@@ -108,13 +113,21 @@ export function BlogArticleContent({ article }: BlogArticleContentProps) {
         >
           <div className="w-[14px] sm:w-[17px] self-stretch bg-accent rounded-l-[15px] shrink-0" />
           <div className="py-5 sm:py-6 space-y-3 sm:space-y-3.5 flex-1 min-w-0">
+            {v2 ? (
+              <div className="font-sans text-[12px] font-extrabold uppercase tracking-[0.16em] text-[#8A6A12]">Quick answer</div>
+            ) : (
             <h2 className="heading-h2 text-primary">
               Quick Answer:
             </h2>
+            )}
             <div className="space-y-2">
+              {v2 ? (
+                <div className="font-heading text-[21px] font-bold leading-[29px] text-primary">{article.questionCallout.question}</div>
+              ) : (
               <h3 className="body-large font-bold text-primary">
                 {article.questionCallout.question}
               </h3>
+              )}
               <p className="body-text text-body-text">
                 {article.questionCallout.answer}
               </p>
@@ -697,6 +710,17 @@ export function BlogArticleContent({ article }: BlogArticleContentProps) {
         <div id={article.faqSectionId || "faqs"} className="scroll-mt-28 space-y-6 sm:space-y-8">
           <div id="faq" className="scroll-mt-28" />
           <div id="frequently-asked-questions" className="scroll-mt-28" />
+          {v2 ? (
+            <div>
+              <h2 className="heading-h2 text-primary">Frequently Asked Questions About This ESA Topic</h2>
+              <p className="body-text mt-3 text-body-text">{article.faqSectionSubtitle || "Answers from this article about eligibility, housing, and the evaluation."}</p>
+              <div className="mt-6 divide-y divide-primary/10 border-y border-primary/10">
+                {article.faqs.map((f, i) => (
+                  <FaqRow key={i} num={String(i + 1).padStart(2, "0")} q={f.q} a={f.a} open={openFaq === i} onToggle={() => setOpenFaq(openFaq === i ? null : i)} />
+                ))}
+              </div>
+            </div>
+          ) : (
           <BlogFaqSection
             title="Frequently Asked Questions About This ESA Topic"
             subtitle={
@@ -705,6 +729,7 @@ export function BlogArticleContent({ article }: BlogArticleContentProps) {
             }
             faqs={article.faqs}
           />
+          )}
         </div>
       )}
 
