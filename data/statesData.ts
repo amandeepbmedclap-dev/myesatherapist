@@ -3715,10 +3715,10 @@ export const STATES_DATA: Record<string, StateData> = {
     },
     legalNotice: "Under ESA laws in Florida and federal regulations, emotional support animals are protected in housing but do not have the same public access rights as service animals. ESAs are generally not allowed in restaurants, stores, or other public areas where pets are restricted. An ESA letter provides protections for your ESA at home, not in public facilities.",
     scamsTitle: "How to Spot ESA Scams in Florida: What’s Real vs. Fake",
-    scamsSubtitle: "Protect yourself from ESA scams in Florida by learning what’s legally required and what’s simply a marketing gimmick. Knowing the difference can save you money and ensure your emotional support animal letter is legitimate, saving you hassle come move-in day.",
+    scamsSubtitle: "Protect yourself from ESA scams in Florida by learning what’s legally required and what’s simply a marketing gimmick. Knowing the difference keeps your ESA letter legitimate and saves you money and hassle on move-in day.",
     scamsAlertTitle: "Important: No Official ESA Registry Exists",
-    scamsAlertText: "There is no government-approved ESA registry, certification, or database in Florida or anywhere in the U.S. Any website claiming to “register” or “certify” your ESA is a scam. These services have no legal validity and exist solely to take your money. Oftentimes, these services only operate their own website or registry, which may look official but hold no legal weight or protections.",
-    scamsCommonTitle: "Common ESA Scams to Watch Out For",
+    scamsAlertText: "There is no government-approved ESA registry, certification, or database in Florida or anywhere in the U.S. Any website claiming to “register” or “certify” your ESA is a scam. Their registries may look official but hold no legal weight or protections.",
+    scamsCommonTitle: "Common ESA Scams to Watch For",
     scamsCommonSubtitle: "Be wary of websites or services that:",
     scamsCommonItems: [
       "Claim to offer instant ESA registration or certification",
@@ -3730,16 +3730,16 @@ export const STATES_DATA: Record<string, StateData> = {
     scamsWhatYouNeedTitle: "What You Actually Need",
     scamsWhatYouNeedItems: [
       {
-        title: "Evaluation by a Licensed Mental Health Professional",
-        description: "A mental health professional licensed in Florida must conduct an evaluation to determine whether ESA documentation may be clinically appropriate. If an ESA would be beneficial to you, this professional will then write an ESA letter tailored to you, your symptoms, and your ESA.",
+        title: "Evaluation by a Licensed Professional",
+        description: "A Florida-licensed professional evaluates whether ESA documentation is clinically appropriate and, if so, writes a letter tailored to you and your ESA.",
       },
       {
         title: "Alignment With Federal Housing Guidelines",
-        description: "ESA documentation, when issued, should contain key details commonly reviewed by housing providers under federal housing guidance.",
+        description: "When issued, ESA documentation should include the details housing providers commonly review under federal guidance.",
       },
       {
         title: "Ongoing Therapeutic Relationship",
-        description: "An ongoing therapeutic relationship may support continuity of care, but ESA documentation must be based on an appropriate evaluation and the professional’s personal knowledge of the individual’s disability-related needs.",
+        description: "Ongoing care can support continuity, but the letter must rest on a proper evaluation and the professional’s personal knowledge of your disability-related needs.",
       },
     ],
     psdVsEsaTitle: "Psychiatric Service Dogs vs. Emotional Support Animals in Florida",
