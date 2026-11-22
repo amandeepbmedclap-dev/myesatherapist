@@ -484,7 +484,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       "Evaluations completed by Tennessee-licensed mental health professionals.",
       "ESA documentation is provided only after an individualized, independent clinical assessment.",
     ],
-    whoQualifiesTitle: "Who May Be Eligible for an ESA Letter Tennessee?",
+    whoQualifiesTitle: "Who May Be Eligible for an ESA Letter in Tennessee?",
     whoQualifiesSubtitle:
       "If psychological or emotional issues are seriously impairing daily responsibilities, focus, or general stability, Tennessee residents who are thinking about getting an emotional support animal need to first complete a professional mental health evaluation. Conditions commonly evaluated may include, but are not limited to:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
@@ -772,7 +772,7 @@ export const EXTRA_STATES: Record<string, StateData> = {
       "Secure telehealth platform ensuring full HIPAA-compliant privacy.",
       "ESA letters issued only when a clinician confirms a legitimate clinical need.",
     ],
-    whoQualifiesTitle: "Who Can Qualify for an ESA Letter Rhode Island?",
+    whoQualifiesTitle: "Who Can Qualify for an ESA Letter in Rhode Island?",
     whoQualifiesSubtitle:
       "All consultations are conducted through secure telehealth systems that follow HIPAA rules to keep everything private. During the assessment, a licensed mental health professional examines things that could affect daily life and overall health. Some examples of these are:",
     whoQualifiesConditions: conditions([

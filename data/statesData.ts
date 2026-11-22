@@ -272,28 +272,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA documentation can support a housing accommodation request when the applicable Fair Housing Act requirements are met.",
     ],
     processNote: "Note: When a housing provider requests reliable disability-related information, documentation from an appropriate healthcare professional may help establish the individual's disability-related need for an assistance animal. Evaluations are conducted through our secure, HIPAA-compliant telehealth platform using audio or video appointments. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. Depending on the housing provider's request and applicable law, documentation may need to establish the presence of a disability and explain the disability-related need for an assistance animal.",
-    whoQualifiesTitle: "Who May Qualify For an ESA Letter in Alabama?",
+    whoQualifiesTitle: "Who May Qualify for an ESA Letter in Alabama?",
     whoQualifiesSubtitle: "Mental health conditions that substantially impact daily functioning may be considered during an ESA evaluation. As part of the assessment, clinicians may reference DSM-5-TR diagnostic criteria.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Mood Disorders",
-        description: "Conditions that primarily affect emotional state, such as persistent feelings of sadness, low mood, or mood instability that impact daily functioning. An ESA may offer comfort, emotional support, and help with managing stress linked to mood disorders.",
+        description: "Persistent sadness, low mood, or mood instability that impacts daily functioning. An ESA may offer comfort, emotional support, and help with managing stress.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Generalized Anxiety Disorder",
-        description: "A condition marked by ongoing, excessive worry and tension that can interfere with everyday activities and focus. An ESA can offer a sense of comfort and stability while helping individuals cope with ongoing anxiety and everyday stress.",
+        description: "Ongoing, excessive worry and tension that can interfere with everyday activities and focus. An ESA can offer a sense of comfort and stability.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Obsessive-Compulsive Personality Disorder (OCPD)",
-        description: "A personality pattern characterized by rigid perfectionism, a strong need for control, and difficulty with flexibility in daily life. An ESA may provide a calming presence and emotional reassurance, helping individuals manage stress and navigate daily routines.",
+        description: "Rigid perfectionism, a strong need for control, and difficulty with flexibility in daily life. An ESA may provide a calming presence and emotional reassurance.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Binge Eating Disorder",
-        description: "An eating disorder involving recurring episodes of excessive food intake accompanied by a sense of loss of control and emotional distress. An ESA can offer companionship and emotional comfort, which may help individuals cope with stress and difficult emotions.",
+        description: "Recurring episodes of excessive eating with a sense of loss of control and emotional distress. An ESA can offer companionship and emotional comfort.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
@@ -684,17 +684,17 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Anxiety Disorders",
-        description: "A group of conditions characterized by excessive and persistent fear or worry that may interfere with daily functioning. An ESA may offer reassurance and companionship, helping individuals feel more grounded when managing anxiety and emotional stress.",
+        description: "Excessive and persistent fear or worry that may interfere with daily functioning. An ESA may offer reassurance and companionship.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Major Depressive Disorder",
-        description: "A mood disorder marked by persistent feelings of sadness, loss of interest, or low motivation that can impact daily activities and overall well-being. An ESA can provide companionship and emotional reassurance, offering comfort during periods of low mood and emotional distress.",
+        description: "Persistent sadness, loss of interest, or low motivation that can affect daily activities and well-being. An ESA can provide companionship and emotional reassurance.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Schizophrenia",
-        description: "A serious mental health condition that may affect thought processes, perception, emotional responsiveness, and behavior, potentially interfering with daily functioning. An ESA may provide a steady source of companionship and comfort, supporting emotional well-being during daily challenges.",
+        description: "A serious condition that may affect thinking, perception, emotional responsiveness, and behavior. An ESA may provide a steady source of companionship and comfort.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
@@ -1070,29 +1070,29 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA recommendations are properly written and signed by licensed mental health specialists.",
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following a formal mental health evaluation. These audio-visual assessments must be conducted on a HIPAA-compliant platform. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. While your ESA letter writer does not need to disclose your specific diagnosis in the letter; they do need to affirm that you have an applicable diagnosis.",
-    whoQualifiesTitle: "Who Qualifies For an ESA Letter in Arizona?",
+    whoQualifiesTitle: "Who Qualifies for an ESA Letter in Arizona?",
     whoQualifiesSubtitle: "Your evaluation is conducted by a licensed mental health professional using established clinical standards. The DSM-5-TR may be used as a clinical reference tool, alongside professional judgment, to understand mental or emotional health challenges and functional impact.",
     whoQualifiesNote: "Note: The above conditions do not guarantee ESA documentation. All determinations are based on clinical judgment.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Persistent Anxiety",
-        description: "Constant overthinking that turns even simple situations into overwhelming mental challenges. An ESA can offer a comforting presence and emotional support, helping individuals cope with ongoing worry and daily stress.",
+        description: "Constant overthinking that turns even simple situations into overwhelming mental challenges. An ESA can offer a comforting presence and emotional support.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Acute Stress Episodes",
-        description: "Extreme worry and pressure that make everyday tasks feel difficult and exhausting. An ESA may offer grounding companionship and comfort, helping individuals feel more supported during periods of intense stress.",
+        description: "Extreme worry and pressure that make everyday tasks feel difficult and exhausting. An ESA may offer grounding companionship and comfort.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Mood Disorders",
-        description: "Sudden emotional shifts that trigger fear, anger, and ongoing mental distress. An ESA may bring comfort and companionship, helping individuals navigate emotional changes and everyday challenges.",
+        description: "Sudden emotional shifts that trigger fear, anger, and ongoing mental distress. An ESA may bring comfort and companionship.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Trauma-related Challenges",
-        description: "Past experiences that keep the mind in defense mode, even during minor situations. An ESA may provide a sense of safety and companionship, helping individuals feel supported while coping with stress related to past trauma.",
+        description: "Past experiences that keep the mind in defense mode, even during minor situations. An ESA may provide a sense of safety and companionship.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
@@ -1480,17 +1480,17 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Sensory Processing",
-        description: "Heightened reactions to noise, light, or crowded environments that contribute to emotional discomfort or overwhelm. An ESA can provide a familiar, calming presence that may help individuals manage sensory overload and everyday discomfort.",
+        description: "Heightened reactions to noise, light, or crowds that cause emotional discomfort or overwhelm. An ESA can provide a familiar, calming presence.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Emotional Burnout",
-        description: "Prolonged mental and emotional exhaustion related to ongoing stress, often affecting motivation and resilience. An ESA may offer companionship and a calming presence, providing emotional comfort during periods of exhaustion and overwhelm.",
+        description: "Prolonged mental and emotional exhaustion related to ongoing stress, often affecting motivation and resilience. An ESA may offer companionship and a calming presence.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Grief-Related Emotional Impact",
-        description: "Prolonged emotional distress following loss or significant life disruption that interferes with routine activities or well-being. An ESA may provide companionship and emotional comfort, offering a sense of support while coping with loss and grief.",
+        description: "Prolonged emotional distress following loss or significant life disruption that interferes with routine activities or well-being. An ESA may provide companionship and emotional comfort.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
@@ -1888,22 +1888,22 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Phobias and Anxiety-Related Disorders",
-        description: "A constant sense of unease or overthinking that makes even simple things feel harder to manage. An ESA can help someone with anxiety regulate through the distress, providing emotional comfort and physical grounding.",
+        description: "A constant sense of unease or overthinking that makes simple things harder to manage. An ESA can help with distress by providing emotional comfort and physical grounding.",
         icon: "/esa-icons/icon.svg",
       },
       {
         title: "Panic Attacks",
-        description: "Intense fear that hits out of nowhere, often bringing chest tightness, dizziness, or shaky breathing. An ESA could help individuals struggling with panic attacks by providing a strong companionship and offering a sense of belonging.",
+        description: "Intense fear that hits out of nowhere, often with chest tightness, dizziness, or shaky breathing. An ESA may offer companionship and a sense of belonging.",
         icon: "/esa-icons/icon-1.svg",
       },
       {
         title: "Post-Traumatic Stress Disorder",
-        description: "Strong emotional reactions, memories, or tension triggered by past traumatic events. PTSD can accompany heightened anxiety, avoidance, and dissociative reactions, including flashbacks. An ESA can help deal with severe traumas and harsh flashbacks by offering emotional comfort and company.",
+        description: "Strong emotional reactions, memories, or tension triggered by past trauma, which may include anxiety, avoidance, dissociation, and flashbacks. An ESA can offer emotional comfort and company.",
         icon: "/esa-icons/icon-2.svg",
       },
       {
         title: "Neurodivergent Disorders & Mood Conditions",
-        description: "Covers ADHD, bipolar disorders, depression, and other patterns that affect focus, concentration, motivation, or mood. An ESA may provide emotional support, reduce stress, and help with daily challenges related to neurodivergent and mood conditions.",
+        description: "Covers ADHD, bipolar disorders, depression, and other patterns that affect focus, motivation, or mood. An ESA may provide emotional support and help with daily challenges.",
         icon: "/esa-icons/icon-4.svg",
       },
     ],
@@ -2346,23 +2346,23 @@ export const STATES_DATA: Record<string, StateData> = {
       "Platform aligned with privacy and HIPAA standards",
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following a formal mental health evaluation. These audio-visual assessments must be conducted on a HIPAA-compliant platform. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. While your ESA letter writer does not need to disclose your specific diagnosis in the letter, they do need to affirm that you have an applicable diagnosis.",
-    whoQualifiesTitle: "Who Qualifies For an ESA Letter in Colorado?",
+    whoQualifiesTitle: "Who Qualifies for an ESA Letter in Colorado?",
     whoQualifiesSubtitle: "Individuals experiencing emotional or mental health challenges that impact daily life may be eligible for an ESA letter, following an evaluation by a licensed mental health professional in Colorado. Clinicians can assess a range of conditions, including:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Generalized Anxiety Disorder (GAD)",
-        description: "Ongoing symptoms of anxiety, such as excessive worry or tension, that may affect concentration or daily functioning, as evaluated by a licensed clinician. An ESA may offer a consistent source of comfort and companionship, helping individuals cope with persistent worry and anxiety.",
+        description: "Ongoing anxiety, such as excessive worry or tension, that may affect concentration or daily functioning, as evaluated by a licensed clinician. An ESA may offer consistent comfort and companionship.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Depressive-Related Conditions",
-        description: "Persistent sadness, reduced motivation, or emotional heaviness that may affect daily routines. An ESA may provide companionship and emotional reassurance, offering support during periods of low mood, stress, or emotional difficulty.",
+        description: "Persistent sadness, reduced motivation, or emotional heaviness that may affect daily routines. An ESA may provide companionship and emotional reassurance.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Panic-Related Symptoms",
-        description: "Episodes of intense fear or panic-like symptoms that may impact emotional balance or daily functioning, as evaluated by the psychiatrist. An ESA may provide a reassuring presence and emotional comfort, helping individuals feel more supported during moments of panic or distress.",
+        description: "Episodes of intense fear or panic-like symptoms that may affect emotional balance or daily functioning, as evaluated by a licensed clinician. An ESA may provide a reassuring presence.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
@@ -2757,17 +2757,17 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Persistent Depressive Disorder (Dysthymia)",
-        description: "Long-term low mood affecting everyday functioning. An ESA may offer steady companionship and emotional comfort, helping individuals manage ongoing low mood and everyday emotional challenges.",
+        description: "Long-term low mood affecting everyday functioning. An ESA may offer steady companionship and emotional comfort.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Borderline Personality Disorder (BPD)",
-        description: "Emotional regulation difficulties that may interfere with relationships and routines. An ESA may offer emotional reassurance and companionship, helping individuals feel supported through periods of emotional instability and distress.",
+        description: "Emotional regulation difficulties that may interfere with relationships and routines. An ESA may offer emotional reassurance and companionship.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Adjustment-Related Anxiety",
-        description: "Stress or worry following major life changes impacting day-to-day functioning. An ESA may provide comfort and companionship, helping individuals feel more supported while adjusting to stressful life changes.",
+        description: "Stress or worry following major life changes impacting day-to-day functioning. An ESA may provide comfort and companionship.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
@@ -3161,22 +3161,22 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Major Depressive Disorder",
-        description: "Persistent depression affecting about 1 in 5 individuals in Delaware. An ESA may bring companionship and emotional comfort, offering support during periods of persistent sadness and low mood.",
+        description: "Persistent depression affecting about 1 in 5 individuals in Delaware. An ESA may bring companionship and emotional comfort.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Generalized Anxiety Disorder (GAD)",
-        description: "Chronic anxiety impacting daily functioning and emotional well-being. An ESA can provide a familiar source of comfort and companionship, helping individuals cope with persistent worry and everyday anxiety.",
+        description: "Chronic anxiety impacting daily functioning and emotional well-being. An ESA can provide a familiar source of comfort and companionship.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Post-Traumatic Stress Disorder (PTSD)",
-        description: "Trauma-related disorder causing severe distress and disrupting daily life. An ESA may provide a calming sense of companionship and support, helping individuals cope with trauma-related stress and emotional distress.",
+        description: "Trauma-related disorder causing severe distress and disrupting daily life. An ESA may provide a calming sense of companionship and support.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Bipolar Disorder",
-        description: "Extreme mood swings and shifts in energy affecting daily functioning. An ESA may offer stability and companionship, providing emotional support while individuals deal with changes in mood and daily stress.",
+        description: "Extreme mood swings and shifts in energy affecting daily functioning. An ESA may offer stability and companionship.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
@@ -3560,17 +3560,17 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Bipolar Disorder",
-        description: "May involve significant mood fluctuations that affect daily functioning. Bipolar disorders are frequently treated with a combination of medication management and therapy. An ESA may help someone with bipolar disorder regulate through these mood fluctuations.",
+        description: "Significant mood fluctuations that affect daily functioning. An ESA may help someone with bipolar disorder regulate through these mood fluctuations.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Obsessive-Compulsive Disorder",
-        description: "May include intrusive thoughts or compulsive behaviors that interfere with daily life. An ESA may help someone with OCD regulate through these anxious thoughts and compulsions.",
+        description: "Intrusive thoughts or compulsive behaviors that interfere with daily life. An ESA may help someone with OCD regulate through these thoughts and compulsions.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Phobias & Anxiety-Related Disorders",
-        description: "May involve persistent fear responses, avoidance behaviors, or heightened anxiety. Some may be specific to social situations, while others appear in all contexts of life. An ESA animal may help someone with anxiety regulate and ground themself.",
+        description: "Persistent fear responses, avoidance behaviors, or heightened anxiety, in social situations or across daily life. An ESA may help someone with anxiety regulate and feel grounded.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
@@ -4057,22 +4057,22 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Post-Traumatic Stress Disorder (PTSD)",
-        description: "Reliving past traumatic events and difficulty in trusting people. An ESA may create a sense of comfort and security, helping individuals feel supported when dealing with trauma-related distress.",
+        description: "Reliving past traumatic events and difficulty in trusting people. An ESA may create a sense of comfort and security.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Obsessive-Compulsive Disorder (OCD)",
-        description: "Persistent intrusive thoughts make focusing on work difficult. An ESA can provide companionship and reassurance, which may help individuals manage stress associated with intrusive thoughts and compulsive behaviors.",
+        description: "Persistent intrusive thoughts make focusing on work difficult. An ESA can provide companionship and reassurance.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Social Anxiety Disorder",
-        description: "Trouble forming and maintaining relationships with constant fear of neglect. An ESA may offer a familiar source of comfort, helping individuals feel more at ease when navigating social situations and everyday interactions.",
+        description: "Trouble forming and maintaining relationships with constant fear of neglect. An ESA may offer a familiar source of comfort.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Other Mental Health Conditions",
-        description: "These include generalized depression, anxiety or panic attacks. An ESA may offer emotional comfort and companionship, helping individuals cope with depression, anxiety, panic, and related emotional challenges.",
+        description: "These include generalized depression, anxiety or panic attacks. An ESA may offer emotional comfort and companionship.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
     ],
@@ -4471,12 +4471,12 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         title: "Social (Pragmatic) Communication Disorder",
-        description: "Difficulty with social communication and interaction. An ESA may provide familiar companionship and comfort, helping individuals feel more at ease during everyday interactions.",
+        description: "Difficulty with social communication and interaction. An ESA may provide familiar companionship and comfort.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Adjustment Disorder with Anxiety",
-        description: "Stress-related anxiety after major life changes. An ESA can offer reassurance and companionship, providing emotional support while adapting to stressful changes or situations.",
+        description: "Stress-related anxiety after major life changes. An ESA can offer reassurance and companionship.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
@@ -5628,28 +5628,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA recommendations are issued only after a clinical determination",
     ],
     processNote: "Note: A valid ESA letter should be based on an individualized clinical evaluation conducted by a qualified mental health professional. This is not an instant-approval process; the recommendation should be based on your individual circumstances and disability-related needs. The provider does not generally need to disclose a specific diagnosis in the letter when sufficient reliable information supports the disability-related need.",
-    whoQualifiesTitle: "Who May Be Eligible For an ESA Letter in Indiana?",
+    whoQualifiesTitle: "Who May Be Eligible for an ESA Letter in Indiana?",
     whoQualifiesSubtitle: "Indiana residents having trouble completing everyday tasks and activities can get themselves evaluated by licensed mental health professionals (LMHP) in Indiana to check the need for emotional support animals. During this process, clinicians may consider a range of medical conditions, which include but are not limited to:",
     whoQualifiesSectionHeading: "",
     whoQualifiesConditions: [
       {
         title: "Panic Disorder with Agoraphobia",
-        description: "Frequent panic attacks restrict leaving homes and entering public spaces. An ESA may provide a reassuring presence, helping individuals feel more supported when facing panic symptoms or fear of certain environments.",
+        description: "Frequent panic attacks restrict leaving homes and entering public spaces. An ESA may provide a reassuring presence.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Chronic Post-Traumatic Stress Disorder (PTSD)",
-        description: "Trauma-related flashbacks affecting daily life or emotional regulation. An ESA can offer comfort and a sense of security, which may help individuals cope with ongoing trauma-related stress.",
+        description: "Trauma-related flashbacks affecting daily life or emotional regulation. An ESA can offer comfort and a sense of security.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Persistent Depressive Disorder (Dysthymia)",
-        description: "Long-term depressive symptoms affecting motivation, energy, and self-care. An ESA may provide consistent companionship, offering emotional comfort during prolonged periods of low mood.",
+        description: "Long-term depressive symptoms affecting motivation, energy, and self-care. An ESA may provide consistent companionship.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Obsessive-Compulsive Disorder (OCD)",
-        description: "Intrusive thoughts or compulsive behaviors disrupting routine activities. An ESA can provide a calming source of companionship, helping individuals manage stress linked to intrusive thoughts or compulsive behaviors.",
+        description: "Intrusive thoughts or compulsive behaviors disrupting routine activities. An ESA can provide a calming source of companionship.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
     ],
@@ -6022,22 +6022,22 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Seasonal Affective Disorder (SAD)",
-        description: "Mood changes are linked to seasonal shifts affecting sleep and increasing irritability. An ESA may provide companionship and comfort, offering emotional support during seasonal changes in mood and energy.",
+        description: "Mood changes linked to seasonal shifts, affecting sleep and increasing irritability. An ESA may provide companionship and comfort.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Agoraphobia",
-        description: "Fear of open or public spaces that can make travel or engagement difficult. An ESA can offer a familiar and reassuring presence, helping individuals feel more supported when facing anxiety about certain places or situations.",
+        description: "Fear of open or public spaces that can make travel or engagement difficult. An ESA can offer a familiar and reassuring presence.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Adjustment Disorder",
-        description: "Emotional or behavioral symptoms triggered by significant life changes like relocation. An ESA may provide emotional comfort and companionship while individuals adapt to stressful changes or challenging life events.",
+        description: "Emotional or behavioral symptoms triggered by significant life changes like relocation. An ESA may provide emotional comfort and companionship.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Obsessive-Compulsive Disorder (OCD)",
-        description: "Intrusive thoughts and repetitive behaviors interfering with daily tasks and responsibilities. An ESA can offer a calming source of companionship, helping individuals feel supported while managing stress from intrusive thoughts or repetitive behaviors.",
+        description: "Intrusive thoughts and repetitive behaviors interfering with daily tasks and responsibilities. An ESA can offer a calming source of companionship.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
     ],
@@ -6422,12 +6422,12 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         title: "Avoidant Personality Disorder",
-        description: "Social fear, extreme sensitivity to rejection. An ESA may provide familiar companionship and reassurance, helping individuals feel more comfortable while managing social and emotional challenges.",
+        description: "Social fear, extreme sensitivity to rejection. An ESA may provide familiar companionship and reassurance.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Somatic Symptom Disorder",
-        description: "Physical symptoms causing emotional distress. An ESA can offer comfort and emotional support, which may help individuals cope with stress and distress related to physical symptoms.",
+        description: "Physical symptoms causing emotional distress. An ESA can offer comfort and emotional support.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
     ],
@@ -6797,28 +6797,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA letters provided only after an individualized clinical assessment.",
     ],
     processNote: "Note: An ESA recommendation should be based on an individualized clinical evaluation by a qualified healthcare professional. This is not an instant-approval process, and any documentation should be tailored to the individual's circumstances and disability-related need for the animal.",
-    whoQualifiesTitle: "Who May Qualify For an ESA Letter in Kentucky?",
+    whoQualifiesTitle: "Who May Qualify for an ESA Letter in Kentucky?",
     whoQualifiesSubtitle: "A licensed mental health evaluation is often the first step for individuals in Kentucky considering an emotional support animal, especially when emotional or mental health challenges begin to affect daily life, concentration, or overall well-being. Common conditions that may be assessed include, but are not limited to:",
     whoQualifiesSectionHeading: "",
     whoQualifiesConditions: [
       {
         title: "Cyclothymic Disorder",
-        description: "Mild mood swings with chronic emotional instability. An ESA may provide a steady source of companionship and comfort, offering support during recurring changes in mood.",
+        description: "Mild mood swings with chronic emotional instability. An ESA may provide a steady source of companionship and comfort.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Dermatillomania (Skin Picking Disorder)",
-        description: "Repetitive skin picking linked to anxiety relief. An ESA can provide calming companionship, which may help individuals manage anxiety and emotional stress that can contribute to skin-picking urges.",
+        description: "Repetitive skin picking linked to anxiety relief. An ESA can provide calming companionship.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Depersonalization-Derealization Disorder",
-        description: "Feeling detached from self or surroundings. An ESA may offer a familiar, grounding presence, helping individuals feel more supported when experiencing detachment from themselves or their surroundings.",
+        description: "Feeling detached from self or surroundings. An ESA may offer a familiar, grounding presence.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Selective Mutism",
-        description: "Inability to speak in specific social situations. An ESA can provide comfort and a sense of security, helping individuals feel more at ease in situations where speaking feels difficult.",
+        description: "Inability to speak in specific social situations. An ESA can provide comfort and a sense of security.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
@@ -7186,28 +7186,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA documentation is issued only after an independent clinical determination",
     ],
     processNote: "Note: A support-animal recommendation should be based on an individualized clinical evaluation by a qualified healthcare professional. Louisiana law requires applicable providers to conduct a disability assessment and satisfy the statutory therapeutic-relationship and clinical-evaluation requirements before producing documentation regarding the need for a support animal.",
-    whoQualifiesTitle: "Who May Be Eligible for an ESA Letter Louisiana?",
+    whoQualifiesTitle: "Who May Be Eligible for an ESA Letter in Louisiana?",
     whoQualifiesSubtitle: "People living in Louisiana suffering from mental health issues interfering with daily life can get themselves assessed. This helps determine the need for an emotional support animal and whether an ESA could offer therapeutic benefits. During this evaluation, licensed clinicians in Louisiana could consider several mental health conditions. Some of them include:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Anxiety Disorders",
-        description: "Persistent fear and worry interfering with daily functioning. An ESA may provide reassurance and companionship, helping individuals feel more supported while managing persistent worry and fear.",
+        description: "Persistent fear and worry interfering with daily functioning. An ESA may provide reassurance and companionship.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Major Depressive Disorder",
-        description: "Ongoing sadness and low motivation affecting productivity. An ESA can offer companionship and emotional comfort, which may help individuals cope with ongoing sadness and low motivation.",
+        description: "Ongoing sadness and low motivation affecting productivity. An ESA can offer companionship and emotional comfort.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Post-Traumatic Stress Disorder (PTSD)",
-        description: "Trauma-related flashbacks causing excessive sadness and distress. An ESA may provide a calming and supportive presence, helping individuals cope with trauma-related distress and emotional difficulties.",
+        description: "Trauma-related flashbacks causing excessive sadness and distress. An ESA may provide a calming and supportive presence.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Bipolar Disorder",
-        description: "Extreme mood shifts, emotional instability, creating problems in daily life. An ESA can offer consistent companionship and comfort, providing emotional support during periods of mood changes.",
+        description: "Extreme mood shifts, emotional instability, creating problems in daily life. An ESA can offer consistent companionship and comfort.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
@@ -7577,28 +7577,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA letters issued only after a personalized clinical review.",
     ],
     processNote: "Note: An assistance-animal recommendation should be based on an individualized evaluation by an appropriately licensed healthcare professional. The recommendation should be based on the individual’s disability-related needs and whether the animal is clinically appropriate.",
-    whoQualifiesTitle: "Who Can Qualify For an ESA Letter in Maine?",
+    whoQualifiesTitle: "Who Can Qualify for an ESA Letter in Maine?",
     whoQualifiesSubtitle: "A professional mental health evaluation is typically the starting point for individuals in Maine considering an emotional support animal, especially when emotional or psychological challenges begin affecting daily functioning, focus, or overall quality of life. Conditions commonly evaluated may include, but are not limited to:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Cyclothymic Disorder",
-        description: "Ongoing mild mood fluctuations with emotional inconsistency. An ESA may provide consistent companionship and comfort, offering support during recurring changes in mood.",
+        description: "Ongoing mild mood fluctuations with emotional inconsistency. An ESA may provide consistent companionship and comfort.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Dermatillomania (Skin Picking Disorder)",
-        description: "Repetitive skin picking behaviors often linked to anxiety relief. An ESA can provide a calming presence, helping individuals manage emotional stress and anxiety linked to skin-picking urges.",
+        description: "Repetitive skin picking behaviors often linked to anxiety relief. An ESA can provide a calming presence.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Depersonalization-Derealization Disorder",
-        description: "Experiencing detachment from oneself or surroundings. An ESA may offer grounding companionship and familiarity, helping individuals feel supported during episodes of detachment.",
+        description: "Experiencing detachment from oneself or surroundings. An ESA may offer grounding companionship and familiarity.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Selective Mutism",
-        description: "Difficulty speaking in certain social environments. An ESA can provide reassurance and comfort, helping individuals feel safer and more at ease in situations where speaking is difficult.",
+        description: "Difficulty speaking in certain social environments. An ESA can provide reassurance and comfort.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
@@ -7972,22 +7972,22 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Persistent Depressive Disorder (Dysthymia)",
-        description: "Long-term, low-grade depression affecting motivation and sleep. An ESA may provide steady companionship and emotional comfort, offering support during prolonged periods of low mood.",
+        description: "Long-term, low-grade depression affecting motivation and sleep. An ESA may provide steady companionship and emotional comfort.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Obsessive-Compulsive Disorder (OCD)",
-        description: "Intrusive thoughts and compulsive behaviors interfering with routine activities. An ESA can offer a calming and familiar presence, helping individuals feel supported while managing intrusive thoughts and compulsive behaviors.",
+        description: "Intrusive thoughts and compulsive behaviors interfering with routine activities. An ESA can offer a calming and familiar presence.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Adjustment Disorder with Anxiety or Depressed Mood",
-        description: "Emotional or behavioral symptoms that get triggered by significant life changes. An ESA may provide reassurance and companionship, offering emotional support while coping with difficult life changes.",
+        description: "Emotional or behavioral symptoms that get triggered by significant life changes. An ESA may provide reassurance and companionship.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Panic Disorder with or without Agoraphobia",
-        description: "Recurrent panic attacks that may limit independence and social mobility. An ESA can provide a reassuring presence, helping individuals feel more secure when experiencing panic symptoms or anxiety in certain situations.",
+        description: "Recurrent panic attacks that may limit independence and social mobility. An ESA can provide a reassuring presence.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
@@ -8352,28 +8352,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA documentation issued only after a clinical determination by the provider.",
     ],
     processNote: "Note: The evaluation should be individualized and based on the person’s disability-related needs. The provider should document the disability-related need for the assistance animal without requiring disclosure of a specific diagnosis.",
-    whoQualifiesTitle: "Who May Qualify for an ESA Letter Massachusetts?",
+    whoQualifiesTitle: "Who May Qualify for an ESA Letter in Massachusetts?",
     whoQualifiesSubtitle: "If Massachusetts residents encounter emotional or psychological difficulties that interfere with their day-to-day activities, they could get a thorough mental health assessment. Among the circumstances that might be taken into account are:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Seasonal Affective Disorder (SAD)",
-        description: "Depression is linked to seasonal changes, especially during long Massachusetts winters. An ESA may offer companionship and emotional comfort, providing support during seasonal changes that affect mood and energy.",
+        description: "Depression linked to seasonal changes, especially during long Massachusetts winters. An ESA may offer companionship and emotional comfort.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Social Anxiety Disorder",
-        description: "Intense fear of social situations often causing avoidance of public or group interactions. An ESA can provide a familiar and reassuring presence, helping individuals feel more comfortable during stressful social situations.",
+        description: "Intense fear of social situations often causing avoidance of public or group interactions. An ESA can provide a familiar and reassuring presence.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Obsessive-Compulsive Disorder (OCD)",
-        description: "Unwanted repetitive thoughts and compulsive behaviors that disrupt normal routines. An ESA may offer calming companionship, helping individuals feel supported while coping with intrusive thoughts and repetitive behaviors.",
+        description: "Unwanted repetitive thoughts and compulsive behaviors that disrupt normal routines. An ESA may offer calming companionship.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Panic Disorder with Agoraphobia",
-        description: "Frequent panic attacks combined with the fear of leaving home or crowded places. An ESA can provide a sense of reassurance and security, helping individuals feel supported during panic episodes or anxiety about certain environments.",
+        description: "Frequent panic attacks combined with the fear of leaving home or crowded places. An ESA can provide a sense of reassurance and security.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
@@ -8747,22 +8747,22 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Obsessive-Compulsive Disorder (OCD)",
-        description: "Intrusive thoughts and compulsive behaviors affecting daily functioning. An ESA may offer a calming presence and companionship, helping individuals feel supported while managing intrusive thoughts and compulsive behaviors.",
+        description: "Intrusive thoughts and compulsive behaviors affecting daily functioning. An ESA may offer a calming presence and companionship.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Agoraphobia",
-        description: "Fear of leaving safe environments creates difficulties in the real world. An ESA can provide comfort and reassurance, helping individuals feel more secure when facing anxiety about leaving familiar or safe environments.",
+        description: "Fear of leaving safe environments creates difficulties in the real world. An ESA can provide comfort and reassurance.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Borderline Personality Disorder (BPD)",
-        description: "Intense emotions and relationship instability disturbing routine. An ESA may provide consistent companionship and emotional comfort, offering support during periods of intense emotions or interpersonal stress.",
+        description: "Intense emotions and relationship instability disturbing routine. An ESA may provide consistent companionship and emotional comfort.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Severe Social Withdrawal",
-        description: "Avoiding going out, meeting friends and family, isolating from the world. An ESA can offer gentle companionship and a sense of connection, which may help individuals feel less isolated during periods of social withdrawal.",
+        description: "Avoiding going out, meeting friends and family, isolating from the world. An ESA can offer gentle companionship and a sense of connection.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
@@ -9524,22 +9524,22 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Post-Traumatic Stress Disorder",
-        description: "Trauma-related symptoms like hypervigilance and flashbacks affecting routine. An ESA may provide a sense of comfort and security, helping individuals feel supported while coping with trauma-related stress.",
+        description: "Trauma-related symptoms like hypervigilance and flashbacks affecting routine. An ESA may provide a sense of comfort and security.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Major Depressive Disorder",
-        description: "Persistent low mood and loss of motivation, disrupting daily functioning. An ESA can offer companionship and emotional reassurance, providing comfort during periods of persistent low mood.",
+        description: "Persistent low mood and loss of motivation, disrupting daily functioning. An ESA can offer companionship and emotional reassurance.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Generalized Anxiety Disorder",
-        description: "Excessive worries and tension minimizing the ability to function daily. An ESA may bring a calming presence and support, helping individuals manage ongoing worry and tension.",
+        description: "Excessive worries and tension minimizing the ability to function daily. An ESA may bring a calming presence and support.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Panic Disorder",
-        description: "Recurrent panic attacks and constant worries of future attacks. An ESA can provide reassurance and companionship, helping individuals feel more secure during episodes of intense fear or panic.",
+        description: "Recurrent panic attacks and constant worries of future attacks. An ESA can provide reassurance and companionship.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
@@ -9907,28 +9907,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA letter Missouri is issued only after an independent professional judgment.",
     ],
     processNote: "Note: Supporting documentation, when appropriate, should be based on an individualized evaluation and reliably confirm the person’s disability and the relationship between the disability and the need for an emotional support animal. A housing provider generally does not need the person’s specific diagnosis or detailed medical records. The evaluation should be conducted through an appropriate professional assessment process.",
-    whoQualifiesTitle: "Who Might Be Eligible For an ESA Letter in Missouri?",
+    whoQualifiesTitle: "Who Might Be Eligible for an ESA Letter in Missouri?",
     whoQualifiesSubtitle: "Residents of Missouri who are experiencing emotional or psychological issues that affect their ability to carry out daily tasks might want to get a thorough clinical evaluation. This evaluation’s objective is to determine whether an emotional support animal could contribute to the improvement of mental wellness in general.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Social Anxiety Disorder (Social Phobia)",
-        description: "Intense fear of social or performance situations causing distress in school or work. An ESA may provide reassurance and companionship, helping individuals feel more at ease during stressful social or performance situations.",
+        description: "Intense fear of social or performance situations causing distress in school or work. An ESA may provide reassurance and companionship.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Persistent Depressive Disorder (Dysthymia)",
-        description: "Depressive long-term symptoms of over 2 years affecting motivation and energy levels. An ESA can offer steady emotional support and companionship, providing comfort during prolonged periods of low energy and motivation.",
+        description: "Long-term depressive symptoms lasting over 2 years, affecting motivation and energy. An ESA can offer steady emotional support and companionship.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Obsessive-Compulsive Disorder (OCD)",
-        description: "Recurring intrusive thoughts and compulsive behaviors interfering with productivity. An ESA may provide a calming presence, helping individuals feel supported while managing intrusive thoughts and compulsive behaviors.",
+        description: "Recurring intrusive thoughts and compulsive behaviors interfering with productivity. An ESA may provide a calming presence.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Agoraphobia",
-        description: "Marked fear of leaving home, limiting independence and community engagement. An ESA can offer a familiar sense of comfort and security, helping individuals feel supported when facing anxiety about certain places or situations.",
+        description: "Marked fear of leaving home, limiting independence and community engagement. An ESA can offer a familiar sense of comfort and security.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
@@ -10295,28 +10295,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA letters provided only after the clinician makes an independent, professional determination.",
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following a formal mental health evaluation. These telehealth assessments are conducted using secure systems designed to protect patient information and privacy. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. Your ESA documentation does not need to disclose your specific diagnosis. Montana law prohibits landlords from requiring information that reveals a tenant’s diagnosis, the severity of the disability, or medical records relating to the disability.",
-    whoQualifiesTitle: "Who May Qualify For an ESA Letter in Montana?",
+    whoQualifiesTitle: "Who May Qualify for an ESA Letter in Montana?",
     whoQualifiesSubtitle: "Residents of Montana who are having mental or emotional health issues that are interfering with their day-to-day functioning might need to think about undergoing a thorough clinical examination. This evaluation’s objective is to determine whether an emotional support animal could offer significant therapeutic advantages. A range of psychological or emotional disorders may be assessed by Montana-licensed mental health practitioners. Some conditions that may be considered include:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Generalized Anxiety Disorder (GAD)",
-        description: "Ongoing, excessive worry about everyday situations impacting daily life. An ESA may provide a calming presence and companionship, helping individuals feel supported while managing persistent worry.",
+        description: "Ongoing, excessive worry about everyday situations impacting daily life. An ESA may provide a calming presence and companionship.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Major Depressive Disorder (MDD)",
-        description: "Persistent low mood and difficulty concentrating for longer durations. An ESA can offer emotional comfort and companionship, providing support during periods of low mood and reduced concentration.",
+        description: "Persistent low mood and difficulty concentrating for longer durations. An ESA can offer emotional comfort and companionship.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Post-Traumatic Stress Disorder (PTSD)",
-        description: "Symptoms such as flashbacks & nightmares post exposure to trauma. An ESA may create a sense of safety and reassurance, helping individuals cope with trauma-related distress and emotional challenges.",
+        description: "Flashbacks and nightmares after exposure to trauma. An ESA may create a sense of safety and reassurance.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Social Anxiety Disorder (Social Phobia)",
-        description: "Intense fear of social interactions leading to major distress. An ESA can provide familiar companionship, helping individuals feel more comfortable and supported in stressful social settings.",
+        description: "Intense fear of social interactions leading to major distress. An ESA can provide familiar companionship.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
@@ -10689,28 +10689,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA letters Nebraska are issued only after a thorough, independent clinical evaluation.",
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following a formal mental health evaluation. We conduct evaluations through a secure telehealth platform designed to protect the confidentiality of your health information. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. Your documentation should establish the disability-related need for an assistance animal when supporting information is appropriate. A specific diagnosis or detailed medical records generally do not need to be disclosed to the housing provider.",
-    whoQualifiesTitle: "Who May Qualify for an ESA Letter Nebraska?",
+    whoQualifiesTitle: "Who May Qualify for an ESA Letter in Nebraska?",
     whoQualifiesSubtitle: "People in Nebraska who want an ESA letter typically have to first go through a professional psychiatric evaluation if emotional or mental health issues start to interfere with daily tasks, focus, or general functioning. Among the conditions that are frequently taken into consideration are, but are not exclusive to:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Generalized Anxiety Disorder (GAD)",
-        description: "Persistent & excessive worries causing difficulties in sleep and concentration. An ESA may provide a calming presence and companionship, helping individuals feel supported while managing persistent worry.",
+        description: "Persistent, excessive worry causing difficulties with sleep and concentration. An ESA may provide a calming presence and companionship.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Major Depressive Disorder (MDD)",
-        description: "Extreme sadness, mood swings, and mental exhaustion affecting daily functioning. An ESA can offer emotional comfort and companionship, providing support during periods of low mood and reduced concentration.",
+        description: "Extreme sadness, mood swings, and mental exhaustion affecting daily functioning. An ESA can offer emotional comfort and companionship.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Post-Traumatic Stress Disorder",
-        description: "Routine flashbacks, hypervigilance, or emotional numbness disrupting day-to-day life. An ESA may create a sense of safety and reassurance, helping individuals cope with trauma-related distress and emotional challenges.",
+        description: "Routine flashbacks, hypervigilance, or emotional numbness disrupting day-to-day life. An ESA may create a sense of safety and reassurance.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Panic Disorder",
-        description: "Panic attacks and fear of future episodes limiting travel or personal activities. An ESA can provide familiar companionship, helping individuals feel more comfortable and supported in stressful social settings.",
+        description: "Panic attacks and fear of future episodes limiting travel or personal activities. An ESA can provide familiar companionship.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
@@ -11079,28 +11079,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA letters issued only after an independent clinical assessment.",
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following a formal mental health evaluation. Our audio-video assessments are conducted on a HIPAA-compliant platform. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. Your documentation should establish the disability-related need for an assistance animal when supporting information is appropriate. A specific diagnosis or detailed medical records generally do not need to be disclosed to the housing provider.",
-    whoQualifiesTitle: "Who May Qualify For an ESA Letter in Nevada?",
+    whoQualifiesTitle: "Who May Qualify for an ESA Letter in Nevada?",
     whoQualifiesSubtitle: "Residents of Nevada could consider undergoing a formal evaluation if they have emotional or psychological issues that make it difficult for them to go about their daily lives. The potential therapeutic advantages of an emotional support animal are evaluated by certified mental health practitioners.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Anxiety Disorders",
-        description: "Excessive worry causing distress in everyday functioning. An ESA may provide a reassuring presence, helping individuals feel supported while managing persistent worry and everyday stress.",
+        description: "Excessive worry causing distress in everyday functioning. An ESA may provide a reassuring presence.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Major Depressive Disorder",
-        description: "Persistent low mood affecting daily life and routine tasks. An ESA can offer companionship and emotional comfort during periods of persistent low mood and difficulty with daily routines.",
+        description: "Persistent low mood affecting daily life and routine tasks. An ESA can offer companionship and emotional comfort.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Post-Traumatic Stress Disorder",
-        description: "Trauma-related symptoms impacting day-to-day tasks. An ESA may provide a sense of comfort and security, supporting individuals as they cope with trauma-related symptoms.",
+        description: "Trauma-related symptoms impacting day-to-day tasks. An ESA may provide a sense of comfort and security.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Social Anxiety Disorder",
-        description: "Discomfort or stress in public or social situations. An ESA can offer familiar companionship and reassurance, helping individuals feel more at ease in challenging social situations.",
+        description: "Discomfort or stress in public or social situations. An ESA can offer familiar companionship and reassurance.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
@@ -11468,23 +11468,23 @@ export const STATES_DATA: Record<string, StateData> = {
       "HIPAA-compliant, secure telehealth platform",
     ],
     processNote: "Note: An ESA letter should be based on an individualized mental health evaluation conducted by a licensed professional. The recommendation should reflect your individual circumstances and disability-related need. This is not an instant-approval process.",
-    whoQualifiesTitle: "Who Qualifies For an Emotional Support Animal in New York?",
+    whoQualifiesTitle: "Who Qualifies for an Emotional Support Animal in New York?",
     whoQualifiesSubtitle: "People experiencing emotional or mental health concerns that substantially affect their day-to-day life may qualify for an ESA after being evaluated by a licensed mental health professional. The assessment may include conditions such as:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Chronic Stress or Burnout",
-        description: "Prolonged emotional pressure or exhaustion that drains energy, reduces motivation, and affects overall wellbeing. An ESA may provide companionship and a calming presence, offering emotional support during periods of prolonged stress or exhaustion.",
+        description: "Prolonged emotional pressure or exhaustion that drains energy, reduces motivation, and affects overall wellbeing. An ESA may provide companionship and a calming presence.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Adjustment Disorder",
-        description: "Emotional or behavioral symptoms that arise after a significant life change or stressful event, making day-to-day functioning more difficult. An ESA can offer comfort and reassurance, helping individuals cope with emotional difficulties following significant life changes.",
+        description: "Emotional or behavioral symptoms after a significant life change or stressful event that make daily functioning harder. An ESA can offer comfort and reassurance.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Insomnia or Sleep-Related Anxiety",
-        description: "Persistent trouble falling asleep, staying asleep, or relaxing at night due to racing thoughts, worry, or anxiety. An ESA may provide a familiar and comforting presence, helping individuals feel more relaxed when dealing with sleep-related stress.",
+        description: "Persistent trouble falling asleep, staying asleep, or relaxing at night due to racing thoughts, worry, or anxiety. An ESA may provide a familiar and comforting presence.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
@@ -12321,7 +12321,7 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA documentation issued only after an independent clinical determination.",
     ],
     processNote: "Note: An ESA letter should be based on an appropriate individual evaluation by a qualified healthcare professional. Telehealth consultations must comply with applicable privacy and security requirements. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. When supporting documentation is necessary, it should provide reliable information establishing the individual’s disability-related need for an assistance animal. A specific diagnosis does not universally need to be disclosed in the letter.",
-    whoQualifiesTitle: "Who May Qualify For an ESA Letter in Washington?",
+    whoQualifiesTitle: "Who May Qualify for an ESA Letter in Washington?",
     whoQualifiesSubtitle: "To protect privacy and confidentiality, all consultations are conducted through secure, HIPAA-compliant telehealth platforms. During the evaluation, a licensed clinician discusses mental health concerns that may impact daily life and overall functioning. These conditions may include, but are not limited to:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
@@ -12332,12 +12332,12 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         title: "Avoidant Personality Disorder",
-        description: "Extreme fear of criticism and rejection. An ESA can offer familiar companionship and reassurance, helping individuals feel supported when social situations feel overwhelming.",
+        description: "Extreme fear of criticism and rejection. An ESA can offer familiar companionship and reassurance.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Agoraphobia",
-        description: "Fear of public or hard-to-escape places. An ESA may provide comfort and a sense of security when individuals experience anxiety about public or difficult-to-escape places.",
+        description: "Fear of public or hard-to-escape places. An ESA may provide comfort and a sense of security.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
@@ -12714,28 +12714,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA letters in Wisconsin are issued only after clinical assessment.",
     ],
     processNote: "Note: An ESA letter should be based on an appropriate individual evaluation. Telehealth consultations must comply with applicable privacy and security requirements. When supporting documentation is necessary for a housing accommodation, it should provide reliable information about the individual’s disability-related need for an assistance animal. Disclosure of a specific diagnosis is not universally required.",
-    whoQualifiesTitle: "Who May Qualify for an ESA Letter Wisconsin?",
+    whoQualifiesTitle: "Who May Qualify for an ESA Letter in Wisconsin?",
     whoQualifiesSubtitle: "In Wisconsin, those who are applying for an ESA letter usually need to get a professional mental health evaluation if emotional or psychological issues start to get in the way of everyday activities, concentration, or general functioning. Typical conditions that are taken into consideration include, but are not restricted to:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Seasonal Affective Disorder (SAD)",
-        description: "Depression or low mood affecting energy and motivation to function. An ESA may provide companionship and emotional comfort during seasonal changes that affect energy and motivation.",
+        description: "Depression or low mood affecting energy and motivation to function. An ESA may provide companionship and emotional comfort.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Generalized Anxiety Disorder (GAD)",
-        description: "Persistent worry or nervousness disrupting sleep and concentration. An ESA can offer a calming presence, helping individuals feel supported while managing persistent worry and nervousness.",
+        description: "Persistent worry or nervousness disrupting sleep and concentration. An ESA can offer a calming presence.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Major Depressive Disorder (MDD)",
-        description: "Chronic feelings of sadness and fatigue making routine tasks difficult. An ESA may bring companionship and reassurance, offering comfort when sadness and fatigue make daily tasks more challenging.",
+        description: "Chronic feelings of sadness and fatigue making routine tasks difficult. An ESA may bring companionship and reassurance.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Post-Traumatic Stress Disorder (PTSD)",
-        description: "Ongoing anxiety, flashbacks, or emotional numbness impacting everyday life. An ESA can provide a familiar sense of comfort and security, helping individuals feel supported while coping with trauma-related distress.",
+        description: "Ongoing anxiety, flashbacks, or emotional numbness impacting everyday life. An ESA can provide a familiar sense of comfort and security.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
@@ -13108,28 +13108,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA documentation issued only when the clinician determines there is need for an emotional support animal",
     ],
     processNote: "Note: An ESA recommendation should be based on an individualized assessment by a qualified professional. For housing accommodation requests, documentation should reliably establish the individual’s disability-related need for an emotional support animal. A specific diagnosis generally does not need to be disclosed to the housing provider.",
-    whoQualifiesTitle: "Who May Be Considered For ESA Documentation in Wyoming?",
+    whoQualifiesTitle: "Who May Be Considered for ESA Documentation in Wyoming?",
     whoQualifiesSubtitle: "To ensure privacy and confidentiality, all consultations are conducted via secure, HIPAA-compliant telehealth systems. During the assessment, a licensed clinician discusses mental health issues that may affect daily life and functioning. Such conditions include, but are not limited to:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Adjustment Disorder with Anxiety",
-        description: "Emotional distress triggered by significant life changes. An ESA may provide comfort and reassurance, helping individuals feel supported while adjusting to stressful life changes.",
+        description: "Emotional distress triggered by significant life changes. An ESA may provide comfort and reassurance.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Borderline Personality Disorder (BPD)",
-        description: "Intense emotional instability affecting relationships and self-image. An ESA can offer steady companionship and emotional comfort during periods of intense emotions or interpersonal stress.",
+        description: "Intense emotional instability affecting relationships and self-image. An ESA can offer steady companionship and emotional comfort.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Obsessive-Compulsive Disorder (OCD)",
-        description: "Repetitive intrusive thoughts and compulsive behavioral rituals. An ESA may provide a calming presence, offering support while individuals cope with intrusive thoughts and repetitive behaviors.",
+        description: "Repetitive intrusive thoughts and compulsive behavioral rituals. An ESA may provide a calming presence.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Schizoaffective Disorder",
-        description: "Mood disorder combined with schizophrenia-like psychotic symptoms. An ESA can offer familiar companionship and emotional support, helping individuals feel more secure while managing daily challenges.",
+        description: "Mood disorder combined with schizophrenia-like psychotic symptoms. An ESA can offer familiar companionship and emotional support.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
@@ -13892,22 +13892,22 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Persistent Depressive Disorder (Dysthymia)",
-        description: "Chronic and long-term depression that affects overall quality of life for years. An ESA may provide steady companionship and emotional comfort, offering support during prolonged periods of low mood.",
+        description: "Chronic and long-term depression that affects overall quality of life for years. An ESA may provide steady companionship and emotional comfort.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Social Anxiety Disorder (Severe Social Phobia)",
-        description: "Fear of social interaction, leading to isolation and avoidance behaviors. An ESA can offer a familiar and reassuring presence, helping individuals feel more supported when facing social situations.",
+        description: "Fear of social interaction, leading to isolation and avoidance behaviors. An ESA can offer a familiar and reassuring presence.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Panic Disorder",
-        description: "Recurring, unexpected panic attacks interfering with work or travel. An ESA may provide comfort and reassurance, helping individuals feel more grounded during unexpected panic episodes.",
+        description: "Recurring, unexpected panic attacks interfering with work or travel. An ESA may provide comfort and reassurance.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Obsessive-Compulsive Disorder (OCD)",
-        description: "Intrusive thoughts and repetitive behaviors disrupting daily routine. An ESA can provide calming companionship, offering emotional support while managing intrusive thoughts and repetitive behaviors.",
+        description: "Intrusive thoughts and repetitive behaviors disrupting daily routine. An ESA can provide calming companionship.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
     ],
@@ -14277,28 +14277,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA documentation issued only after a personalized clinical review.",
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following a formal mental health evaluation. All our audio-video ESA assessments are conducted on a HIPAA-compliant platform. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. Your documentation should explain your disability-related need for an assistance animal when supporting information is necessary. It generally does not need to disclose a specific diagnosis or include detailed medical records.",
-    whoQualifiesTitle: "Who Could Be Eligible for an ESA Letter New Mexico?",
+    whoQualifiesTitle: "Who Could Be Eligible for an ESA Letter in New Mexico?",
     whoQualifiesSubtitle: "A professional mental health assessment should be the first step for anyone in New Mexico thinking about getting an emotional support animal when emotional or psychological issues start to interfere with daily functioning, focus, or general wellness. Commonly reviewed conditions may include, but are not limited to:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Post-Traumatic Stress Disorder (PTSD)",
-        description: "Trauma-related distress affecting daily functioning. An ESA may offer a sense of comfort and security, helping individuals feel supported while coping with trauma-related distress.",
+        description: "Trauma-related distress affecting daily functioning. An ESA may offer a sense of comfort and security.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Major Depressive Disorder",
-        description: "Persistent low mood impacting motivation and stability. An ESA can provide companionship and emotional reassurance, offering support during periods of low mood and reduced motivation.",
+        description: "Persistent low mood impacting motivation and stability. An ESA can provide companionship and emotional reassurance.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Generalized Anxiety Disorder",
-        description: "Ongoing worry interfering with normal routines. An ESA may bring a calming presence, helping individuals manage persistent worry and stress throughout daily routines.",
+        description: "Ongoing worry interfering with normal routines. An ESA may bring a calming presence.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Panic Disorder",
-        description: "Sudden intense fear disrupting emotional control. An ESA can provide reassurance and familiarity, helping individuals feel more secure when experiencing sudden episodes of panic.",
+        description: "Sudden intense fear disrupting emotional control. An ESA can provide reassurance and familiarity.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
@@ -14673,12 +14673,12 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Persistent Depressive Disorder (Dysthymia)",
-        description: "Long-term low mood affecting motivation and daily functioning. An ESA may offer consistent companionship and emotional comfort, helping individuals feel supported through prolonged low mood.",
+        description: "Long-term low mood affecting motivation and daily functioning. An ESA may offer consistent companionship and emotional comfort.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Agoraphobia",
-        description: "Intense fear of crowded places or leaving home. An ESA can provide a familiar sense of reassurance, helping individuals feel more secure when facing anxiety about certain environments.",
+        description: "Intense fear of crowded places or leaving home. An ESA can provide a familiar sense of reassurance.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
@@ -14688,7 +14688,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         title: "Selective Mutism",
-        description: "Anxiety disorder causing difficulty speaking in social situations. An ESA can provide a comforting presence, helping individuals feel safer and more at ease when speaking becomes difficult.",
+        description: "Anxiety disorder causing difficulty speaking in social situations. An ESA can provide a comforting presence.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
@@ -15056,28 +15056,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA letter issued only when a clinician determines it is clinically appropriate.",
     ],
     processNote: "Note: ESA documentation should be based on an individualized evaluation by an appropriately qualified professional. These audio-visual assessments are conducted on a HIPAA-compliant platform. This is not an instant-approval process; documentation should reflect your circumstances and disability-related need for an assistance animal. A specific diagnosis or detailed medical records generally do not need to be disclosed to a housing provider.",
-    whoQualifiesTitle: "Who Could Be Eligible for an ESA Letter North Dakota?",
+    whoQualifiesTitle: "Who Could Be Eligible for an ESA Letter in North Dakota?",
     whoQualifiesSubtitle: "All consultations are conducted using HIPAA-compliant, secure telemedicine systems. A certified clinician can go over various mental health issues that may interfere with day-to-day functioning during the assessment. Here are a few instances:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Adjustment Disorder with Anxiety",
-        description: "Emotional distress triggered by significant life changes or stress. An ESA may provide reassurance and companionship, helping individuals feel supported while coping with stress from major life changes.",
+        description: "Emotional distress triggered by significant life changes or stress. An ESA may provide reassurance and companionship.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Avoidant Personality Disorder",
-        description: "Extreme sensitivity to rejection leading to social withdrawal. An ESA can offer familiar companionship and comfort, providing support when social situations or fear of rejection feel overwhelming.",
+        description: "Extreme sensitivity to rejection leading to social withdrawal. An ESA can offer familiar companionship and comfort.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Depersonalization-Derealization Disorder",
-        description: "Feeling detached from oneself or surroundings for extended periods. An ESA may provide a familiar, grounding presence, helping individuals feel more supported during periods of detachment.",
+        description: "Feeling detached from oneself or surroundings for extended periods. An ESA may provide a familiar, grounding presence.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Somatic Symptom Disorder",
-        description: "Persistent physical symptoms linked with psychological distress. An ESA can offer emotional comfort and companionship, helping individuals cope with stress and distress related to physical symptoms.",
+        description: "Persistent physical symptoms linked with psychological distress. An ESA can offer emotional comfort and companionship.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
@@ -15451,22 +15451,22 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Anxiety Disorders",
-        description: "Persistent excessive worry causing stressful situations. An ESA may provide a reassuring presence, offering comfort while individuals manage persistent worry and stress.",
+        description: "Persistent excessive worry causing stressful situations. An ESA may provide a reassuring presence.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Major Depressive Disorder",
-        description: "Ongoing low mood throughout the day causing discomfort. An ESA can bring companionship and emotional support, helping individuals feel less alone during periods of ongoing low mood.",
+        description: "Ongoing low mood throughout the day causing discomfort. An ESA can bring companionship and emotional support.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Post-Traumatic Stress Disorder",
-        description: "Trauma-related stress symptoms make life uncomfortable. An ESA may offer a sense of safety and familiarity, providing comfort when trauma-related symptoms become difficult to manage.",
+        description: "Trauma-related stress symptoms make life uncomfortable. An ESA may offer a sense of safety and familiarity.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Social Anxiety Disorder",
-        description: "Fear of social situations and restlessness in public places. An ESA can provide calming companionship, helping individuals feel more secure when navigating stressful social interactions.",
+        description: "Fear of social situations and restlessness in public places. An ESA can provide calming companionship.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
@@ -15834,28 +15834,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA letters issued only after an independent clinical decision by the provider",
     ],
     processNote: "Note: A valid ESA letter must be written by a licensed mental health professional following a formal mental health evaluation. Our audio-video assessments are conducted on a HIPAA-compliant platform. This is not an instant-approval process; the ESA letter must be uniquely tailored to you and your disability. A housing provider generally does not need your specific diagnosis or detailed medical records when sufficient reliable information establishes your disability-related need for an assistance animal.",
-    whoQualifiesTitle: "Who May Qualify For ESA Letter in Oklahoma?",
+    whoQualifiesTitle: "Who May Qualify for an ESA Letter in Oklahoma?",
     whoQualifiesSubtitle: "Oklahoma residents facing mental health challenges affecting daily life can request an evaluation. The assessment helps determine if an emotional support animal may provide support. Licensed clinicians in Oklahoma review relevant mental health conditions during the consultation. Some of them include:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Generalized Anxiety Disorder",
-        description: "Restlessness and constant tension causing trouble sleeping. An ESA may offer a calming presence and companionship, helping individuals feel more at ease while managing persistent tension and worry.",
+        description: "Restlessness and constant tension causing trouble sleeping. An ESA may offer a calming presence and companionship.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Major Depressive Disorder",
-        description: "Loss of interest in activities with feelings of hopelessness. An ESA can provide comfort and companionship, offering emotional support when low mood and loss of interest affect daily life.",
+        description: "Loss of interest in activities with feelings of hopelessness. An ESA can provide comfort and companionship.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Post-Traumatic Stress Disorder (PTSD)",
-        description: "Flashbacks or distressing memories creating fear and alertness. An ESA may create a sense of familiarity and security, helping individuals feel supported during trauma-related fear or distress.",
+        description: "Flashbacks or distressing memories creating fear and alertness. An ESA may create a sense of familiarity and security.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Panic Disorder",
-        description: "Sudden and intense panic attack resulting in racing heart and short breath. An ESA can provide reassurance and a comforting presence, helping individuals feel more grounded during sudden panic episodes.",
+        description: "Sudden and intense panic attack resulting in racing heart and short breath. An ESA can provide reassurance and a comforting presence.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
@@ -16228,22 +16228,22 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Generalized Anxiety Disorder (GAD)",
-        description: "Persistent, excessive worry interfering with daily activities. An ESA may provide a comforting presence, helping individuals feel supported while managing persistent worry and daily stress.",
+        description: "Persistent, excessive worry interfering with daily activities. An ESA may provide a comforting presence.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Major Depressive Disorder",
-        description: "Ongoing low mood, loss of interest, and fatigue disrupting functioning. An ESA can offer companionship and emotional comfort during periods of low mood, fatigue, and reduced interest in activities.",
+        description: "Ongoing low mood, loss of interest, and fatigue disrupting functioning. An ESA can offer companionship and emotional comfort.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Post-Traumatic Stress Disorder (PTSD)",
-        description: "Distressing memories or avoidance behaviors after traumatic experiences. An ESA may provide a sense of familiarity and security, offering support when distressing memories or avoidance affect daily life.",
+        description: "Distressing memories or avoidance behaviors after traumatic experiences. An ESA may provide a sense of familiarity and security.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Seasonal Affective Disorder (SAD)",
-        description: "Depression linked to seasonal light changes. An ESA can offer companionship and emotional support during seasonal changes that may affect mood, energy, and daily routines.",
+        description: "Depression linked to seasonal light changes. An ESA can offer companionship and emotional support through seasonal shifts in mood and energy.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
@@ -16615,22 +16615,22 @@ export const STATES_DATA: Record<string, StateData> = {
     whoQualifiesConditions: [
       {
         title: "Anxiety-Related Conditions",
-        description: "Living with constant worry, moments of panic, or feeling overwhelmed when around others. An ESA may provide comfort and companionship, helping individuals feel supported when dealing with worry, panic, or social stress.",
+        description: "Living with constant worry, moments of panic, or feeling overwhelmed when around others. An ESA may provide comfort and companionship.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Mood-Related Conditions",
-        description: "Dealing with emotional ups and downs that affect mood, motivation, and how you feel throughout the day. An ESA can offer emotional support and companionship during changes in mood, motivation, and daily well-being.",
+        description: "Dealing with emotional ups and downs that affect mood, motivation, and how you feel throughout the day. An ESA can offer emotional support and companionship.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Trauma-Related Conditions",
-        description: "Coping with PTSD and stress responses caused by past experiences that were overwhelming or deeply upsetting. An ESA may provide a sense of comfort and security while individuals cope with trauma-related stress and emotional distress.",
+        description: "Coping with PTSD and stress responses caused by past experiences that were overwhelming or deeply upsetting. An ESA may provide a sense of comfort and security.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Neurodevelopmental & Cognitive Conditions",
-        description: "Seeking emotional support while managing autism, bipolar shifts, or the daily challenges of ADHD. An ESA can offer a familiar, supportive presence that may help individuals manage daily stress, emotional challenges, and changes in routine.",
+        description: "Seeking emotional support while managing autism, bipolar shifts, or the daily challenges of ADHD. An ESA can offer a familiar, supportive presence.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
@@ -17001,18 +17001,18 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA letters issued only when a clinician determines it is clinically appropriate.",
     ],
     processNote: "Note: ESA documentation should be based on an appropriate, individualized assessment. Housing providers may request reliable supporting documentation when the disability or disability-related need is not readily apparent or already known. The documentation must confirm the disability and the relationship between the disability and the requested accommodation, consistent with applicable law. A specific diagnosis does not universally need to be disclosed in the letter.",
-    whoQualifiesTitle: "Who May Qualify for an ESA Letter South Dakota?",
+    whoQualifiesTitle: "Who May Qualify for an ESA Letter in South Dakota?",
     whoQualifiesSubtitle: "To ensure privacy and confidentiality, all consultations are conducted over secure, HIPAA-compliant telehealth systems. A qualified clinician examines mental health issues that may affect a person’s day-to-day activities and general functioning during the assessment. Here are a few instances:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Persistent Depressive Disorder (Dysthymia)",
-        description: "Long-term mild depression affecting mood, energy, and motivation. An ESA may provide ongoing companionship and emotional comfort during periods of low mood, fatigue, and reduced motivation.",
+        description: "Long-term mild depression affecting mood, energy, and motivation. An ESA may provide ongoing companionship and emotional comfort.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Avoidant Personality Disorder",
-        description: "Extreme fear of rejection causing social withdrawal. An ESA can offer familiar companionship and reassurance, helping individuals feel more supported when facing social fears or rejection.",
+        description: "Extreme fear of rejection causing social withdrawal. An ESA can offer familiar companionship and reassurance.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
@@ -17022,7 +17022,7 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         title: "Illness Anxiety Disorder",
-        description: "Excessive fear of serious illness despite minimal symptoms. An ESA can provide comfort and companionship, helping individuals feel supported when persistent health-related worries become distressing.",
+        description: "Excessive fear of serious illness despite minimal symptoms. An ESA can provide comfort and companionship.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
@@ -17410,12 +17410,12 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         title: "Post-Traumatic Stress Disorder",
-        description: "Trauma-related flashbacks and hypervigilance. An ESA may create a sense of safety and familiarity, offering support during trauma-related flashbacks or heightened alertness.",
+        description: "Trauma-related flashbacks and hypervigilance. An ESA may create a sense of safety and familiarity.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Panic Disorder with Agoraphobia",
-        description: "Recurrent panic attacks and avoidance behavior. An ESA can provide reassurance and a familiar presence, helping individuals feel more secure during panic episodes or anxiety about leaving safe spaces.",
+        description: "Recurrent panic attacks and avoidance behavior. An ESA can provide reassurance and a familiar presence.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
@@ -17803,12 +17803,12 @@ export const STATES_DATA: Record<string, StateData> = {
       },
       {
         title: "Illness Anxiety Disorder",
-        description: "Constant fear of serious illness. An ESA may provide reassurance and companionship, helping individuals feel more supported when health-related worries become overwhelming.",
+        description: "Constant fear of serious illness. An ESA may provide reassurance and companionship.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Selective Mutism",
-        description: "Unable to speak in certain situations. An ESA can offer a familiar and calming presence, helping individuals feel more secure in situations where speaking is difficult.",
+        description: "Unable to speak in certain situations. An ESA can offer a familiar and calming presence.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
     ],
@@ -18178,23 +18178,23 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA letters signed by a mental health expert.",
     ],
     processNote: "Note: ESA recommendations should be based on an individualized assessment by a qualified professional. For housing accommodation requests, reliable documentation may be requested when the disability or disability-related need is not readily apparent or already known. Documentation should support the disability-related need for the assistance animal, but a specific diagnosis does not necessarily need to be disclosed. My ESA Therapist issues letters only when the evaluating clinician independently determines that a recommendation is appropriate.",
-    whoQualifiesTitle: "Who May Qualify For an ESA Letter in Virginia?",
+    whoQualifiesTitle: "Who May Qualify for an ESA Letter in Virginia?",
     whoQualifiesSubtitle: "Clinicians may evaluate individuals for mental or emotional health conditions that interfere with daily functioning and day-to-day activities. Evaluations are conducted on an individual basis and may reference DSM-5-TR criteria as part of a licensed clinician’s professional assessment.",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Bipolar and Related Disorders",
-        description: "Conditions involving significant mood changes that may affect emotional regulation and daily functioning. An ESA may provide companionship and emotional support, helping individuals feel more grounded during changes in mood and daily functioning.",
+        description: "Conditions involving significant mood changes that may affect emotional regulation and daily functioning. An ESA may provide companionship and emotional support.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Neurodevelopmental Disorders",
-        description: "Including conditions such as ASD or ADHD that may impact focus, emotional regulation, or daily life activities. An ESA can offer a familiar and supportive presence, which may help individuals manage daily stress, emotional challenges, or changes in routine.",
+        description: "Including conditions such as ASD or ADHD that may impact focus, emotional regulation, or daily life activities. An ESA can offer a familiar and supportive presence.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
       {
         title: "Obsessive-Compulsive and Related Disorders (OCRDs)",
-        description: "Conditions characterized by intrusive thoughts that may interfere with normal routines. An ESA may provide calming companionship and reassurance while individuals cope with intrusive thoughts, repetitive behaviors, or related distress.",
+        description: "Conditions characterized by intrusive thoughts that may interfere with normal routines. An ESA may provide calming companionship and reassurance.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
@@ -18566,28 +18566,28 @@ export const STATES_DATA: Record<string, StateData> = {
       "ESA documentation issued only when the clinician determines a legitimate clinical need for an emotional support animal",
     ],
     processNote: "Note: An ESA letter should be based on an appropriate individual evaluation. Telehealth consultations must comply with applicable privacy and security requirements. When supporting documentation is necessary, it should provide reliable information about the individual’s disability-related need for an assistance animal; disclosure of a specific diagnosis is not universally required.",
-    whoQualifiesTitle: "Who May Qualify For an ESA Letter in West Virginia?",
+    whoQualifiesTitle: "Who May Qualify for an ESA Letter in West Virginia?",
     whoQualifiesSubtitle: "All consultations are conducted via secure, HIPAA-compliant telehealth platforms to ensure privacy. During the evaluation, a licensed clinician reviews mental health concerns that could affect daily life and overall functioning. These may include, but are not limited to:",
     whoQualifiesSectionHeading: "Qualifying Conditions",
     whoQualifiesConditions: [
       {
         title: "Chronic Adjustment Disorder",
-        description: "Difficulty coping with major life changes. An ESA may provide companionship and reassurance, helping individuals feel supported while coping with significant life changes.",
+        description: "Difficulty coping with major life changes. An ESA may provide companionship and reassurance.",
         icon: "/states/whomayqualifies-california-chronicworry.svg",
       },
       {
         title: "Persistent Dysthymia",
-        description: "Long-term mild depression affecting daily functioning. An ESA can offer steady emotional comfort and companionship during prolonged periods of low mood and reduced daily functioning.",
+        description: "Long-term mild depression affecting daily functioning. An ESA can offer steady emotional comfort and companionship.",
         icon: "/states/whomayqualifies-moodconditions.svg",
       },
       {
         title: "Post-Traumatic Stress from Appalachian Work",
-        description: "Trauma from mining or industrial occupational experiences. An ESA may provide a sense of comfort and security, offering support while individuals cope with trauma-related stress from occupational experiences.",
+        description: "Trauma from mining or industrial occupational experiences. An ESA may provide a sense of comfort and security.",
         icon: "/states/whomayqualifies-california-posttrauma.svg",
       },
       {
         title: "Social Isolation-Related Anxiety",
-        description: "Anxiety caused by prolonged rural isolation. An ESA can offer familiar companionship and emotional reassurance, helping individuals feel less alone when social situations become difficult.",
+        description: "Anxiety caused by prolonged rural isolation. An ESA can offer familiar companionship and emotional reassurance.",
         icon: "/states/whomayqualifies-panicattack.svg",
       },
     ],
