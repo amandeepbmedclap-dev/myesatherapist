@@ -29,9 +29,9 @@ export function EsaOnlineWhatIs() {
           mobile={{ src: "/esa-online/esa-online-whatisesa-mobile.webp", w: 390, h: 425, crop: { x: 3, y: 3, w: 384, h: 415 } }}
           tablet={{ src: "/esa-online/esa-online-whatisesa-tablet.webp", w: 834, h: 521, crop: { x: 14, y: 14, w: 806, h: 502 } }}
         />
-        <div className="w-full max-w-[737px] lg:max-w-[min(42.4vw,610px)] text-center lg:text-left flex flex-col gap-10 lg:gap-[min(3.75vw,54px)]">
+        <div className="w-full max-w-[737px] lg:max-w-[min(42.4vw,610px)] text-center lg:text-left flex flex-col gap-12 lg:gap-[min(4.2vw,60px)]">
           <div className="flex flex-col gap-4">
-            <h2 className="heading-h2" className={H2}>What Is an ESA Letter, and Who Can Issue One?</h2>
+            <h2 className={`heading-h2 ${H2}`}>What Is an ESA Letter, and Who Can Issue One?</h2>
             <p className={P}>
               An Emotional Support Animal (ESA) letter is a written recommendation from a licensed mental health professional stating that an emotional support animal may help support a person’s mental or emotional well-being. The recommendation is based on an individual evaluation and is provided when clinically appropriate.
             </p>
@@ -41,7 +41,7 @@ export function EsaOnlineWhatIs() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <h2 className="heading-h2" className={H2}>What Does an ESA Letter Do for You and Your Animal?</h2>
+            <h2 className={`heading-h2 ${H2}`}>What Does an ESA Letter Do for You and Your Animal?</h2>
             <p className={P}>
               An ESA letter provides documentation supporting the need for an emotional support animal as part of a person’s mental or emotional health care. It is not an{" "}
               <a href="/blog/esa-guide/is-esa-registration-legit/" className="text-primary underline underline-offset-2">ESA registration</a>, certification, or ID card, and simply owning an animal does not make it an emotional support animal.
