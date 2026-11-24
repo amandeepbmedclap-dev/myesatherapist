@@ -18,7 +18,7 @@ export function EsaHousingMoveForward() {
       </div>
 
       <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16 flex flex-col items-center gap-6 text-center">
-        <h2 className="font-heading text-3xl sm:text-4xl xl:text-[44px] font-bold text-background leading-[1.2] xl:leading-[54px] tracking-[-0.00015em] max-w-[888px] lg:max-w-[min(61vw,888px)]">
+        <h2 className="heading-h2 font-heading font-bold text-background tracking-[-0.00015em] max-w-[888px] lg:max-w-[min(61vw,888px)]">
           Move Forward With Clarity About Your Housing Options
         </h2>
         <p className="body-large text-background max-w-[932px] lg:max-w-[min(64vw,932px)]">

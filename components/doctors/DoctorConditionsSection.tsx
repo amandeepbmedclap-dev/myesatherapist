@@ -38,7 +38,7 @@ export function DoctorConditionsSection({
               className="bg-[#F7F3EC] rounded-[16px] shadow-[0px_1px_4px_rgba(0,0,0,0.06)] flex items-center overflow-hidden min-h-[64px]"
             >
               <div className="w-[8px] self-stretch bg-accent shrink-0" />
-              <span className="font-sans font-semibold text-[15px] sm:text-[16px] leading-[26px] text-primary px-5 py-4">
+              <span className="font-sans font-semibold text-base sm:text-[16px] leading-[26px] text-primary px-5 py-4">
                 {condition}
               </span>
             </div>

@@ -1,11 +1,11 @@
 import React from "react";
 
 export const SECTION_H2 =
-  "font-heading text-3xl sm:text-4xl xl:text-[44px] font-bold text-primary leading-[1.2] xl:leading-[54px] tracking-[-0.00015em]";
+  "font-heading text-[28px] sm:text-[40px] xl:text-[40px] font-bold text-primary leading-[1.2] xl:leading-[54px] tracking-[-0.00015em]";
 export const SECTION_LEAD = "body-large text-body-text";
 
 export const SCALED_H2 =
-  "font-heading text-3xl sm:text-4xl lg:text-[length:min(3.06vw,44px)] font-bold text-primary leading-[1.2] lg:leading-[min(3.75vw,54px)] tracking-[-0.00015em]";
+  "font-heading text-[28px] sm:text-[40px] font-bold text-primary leading-[1.2] lg:leading-[min(3.75vw,54px)] tracking-[-0.00015em]";
 export const SCALED_P = "body-large text-body-text";
 
 export function SectionHeader({
@@ -21,7 +21,7 @@ export function SectionHeader({
 }) {
   return (
     <div className="flex flex-col items-center gap-4 text-center">
-      <h2 className={`${SECTION_H2} ${titleMax}`}>{title}</h2>
+      <h2 className={`heading-h2 ${SECTION_H2} ${titleMax}`}>{title}</h2>
       {children && <p className={`${SECTION_LEAD} ${leadMax}`}>{children}</p>}
     </div>
   );

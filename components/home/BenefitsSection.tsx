@@ -61,10 +61,10 @@ export function BenefitsSection() {
     <section id="benefits" className="py-20 lg:py-28 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E6F3F0] text-[#0F5B4C] text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E6F3F0] text-[#0F5B4C] text-sm font-bold uppercase tracking-wider">
             Key ESA Advantages
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight">
+          <h2 className="heading-h2 font-extrabold text-primary tracking-tight">
             Why Choose My ESA Therapist?
           </h2>
           <p className="text-base sm:text-lg text-body-text leading-relaxed">
@@ -85,12 +85,12 @@ export function BenefitsSection() {
                     <div className="w-12 h-12 rounded-2xl bg-[#E6F3F0] text-[#0F5B4C] flex items-center justify-center group-hover:scale-110 transition-transform">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="text-xs font-bold text-emerald-800 bg-white border border-emerald-200 px-3 py-1 rounded-full shadow-xs">
+                    <span className="text-sm font-bold text-emerald-800 bg-white border border-emerald-200 px-3 py-1 rounded-full shadow-xs">
                       {benefit.badge}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-primary mb-3 group-hover:text-[#0F5B4C] transition-colors">
+                  <h3 className="heading-h3 font-bold text-primary mb-3 group-hover:text-[#0F5B4C] transition-colors">
                     {benefit.title}
                   </h3>
 
@@ -99,7 +99,7 @@ export function BenefitsSection() {
                   </p>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-slate-200/60 flex items-center gap-2 text-xs font-bold text-[#0F5B4C]">
+                <div className="pt-6 mt-6 border-t border-slate-200/60 flex items-center gap-2 text-sm font-bold text-[#0F5B4C]">
                   <CheckCircle2 className="w-4 h-4" />
                   <span>May apply with an ESA letter</span>
                 </div>

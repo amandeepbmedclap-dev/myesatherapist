@@ -84,7 +84,7 @@ export function StateSelectModal() {
           <X className="h-5 w-5" />
         </button>
 
-        <h2 id="state-select-title" className="heading-h3 text-center text-primary">
+        <h2 id="state-select-title" className="heading-h2 text-center text-primary">
           Select Your State
         </h2>
         <p className="body-text text-body-text mx-auto mt-3 max-w-[360px] text-center">

@@ -72,10 +72,10 @@ function SituationCard({ entry }: { entry: SituationEntry }) {
         />
       </div>
       <div className="flex flex-col gap-3 sm:gap-4 p-5 sm:p-7">
-        <h3 className="font-heading font-bold text-[20px] sm:text-[24px] leading-[28px] sm:leading-[32px] text-primary">
+        <h3 className="heading-h3 font-heading font-bold text-primary">
           {entry.title}
         </h3>
-        <p className="font-sans font-semibold text-[15px] sm:text-[16px] leading-[24px] sm:leading-[26px] text-body-text">
+        <p className="font-sans font-semibold text-base sm:text-[16px] leading-[24px] sm:leading-[26px] text-body-text">
           {entry.description}
         </p>
         <ul className="flex flex-col gap-2 sm:gap-2.5">
@@ -97,7 +97,7 @@ export function EsaLawsSituationSection() {
   return (
     <section className="w-full bg-white py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1178px] mx-auto flex flex-col items-center gap-10 sm:gap-14">
-        <h2 className="font-heading font-bold text-[28px] sm:text-[36px] lg:text-[44px] leading-[1.2] lg:leading-[54px] tracking-[-0.00015em] text-primary text-center">
+        <h2 className="heading-h2 font-heading font-bold tracking-[-0.00015em] text-primary text-center">
           ESA Laws by Situation: What Applies in Common Scenarios
         </h2>
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">

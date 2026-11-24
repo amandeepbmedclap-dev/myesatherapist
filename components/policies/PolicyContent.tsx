@@ -111,7 +111,7 @@ export function PolicyContent({ policy }: PolicyContentProps) {
               </span>
             )}
             {block.title && (
-              <h3 className="heading-h4">
+              <h3 className="heading-h3">
                 {block.title}
               </h3>
             )}
@@ -233,7 +233,7 @@ export function PolicyContent({ policy }: PolicyContentProps) {
                 <circle cx="12" cy="12" r="3" />
               </svg>
             </div>
-            <h2 className="heading-h3">
+            <h2 className="heading-h2">
               {policy.sections[0].title}
             </h2>
           </div>
@@ -256,7 +256,7 @@ export function PolicyContent({ policy }: PolicyContentProps) {
                   {sec.number}
                 </span>
               </div>
-              <h2 className="heading-h3">
+              <h2 className="heading-h2">
                 {sec.title}
               </h2>
             </div>
@@ -274,7 +274,7 @@ export function PolicyContent({ policy }: PolicyContentProps) {
             <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-accent font-heading font-bold text-base shadow-xs">
               ✓
             </span>
-            <h2 className="heading-h3">
+            <h2 className="heading-h2">
               Key Takeaways
             </h2>
           </div>
@@ -285,7 +285,7 @@ export function PolicyContent({ policy }: PolicyContentProps) {
                 key={tIdx}
                 className="flex items-start gap-3.5 p-5 rounded-[18px] bg-white border border-[#EAE5DC] shadow-xs hover:border-primary/30 transition-colors"
               >
-                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/20 text-primary mt-0.5 font-bold text-xs">
+                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/20 text-primary mt-0.5 font-bold text-sm">
                   ✓
                 </div>
                 <p className="body-strong text-body-text">

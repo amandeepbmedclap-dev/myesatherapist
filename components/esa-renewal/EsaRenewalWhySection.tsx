@@ -98,7 +98,7 @@ export function EsaRenewalWhySection() {
                   </div>
 
                   <div className="flex flex-col gap-1.5 flex-1">
-                    <h3 className="font-heading font-bold text-lg sm:text-[20px] lg:text-[1.4vw] xl:text-[20px] text-primary leading-tight xl:leading-7">
+                    <h3 className="heading-h3 font-heading font-bold text-primary">
                       {card.title}
                     </h3>
                     <p className="body text-body-text">

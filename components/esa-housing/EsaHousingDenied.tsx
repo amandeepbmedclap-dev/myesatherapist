@@ -47,7 +47,7 @@ export function EsaHousingDenied() {
           />
         </div>
         <div className="w-full max-w-[626px] lg:max-w-[min(41vw,590px)] flex flex-col gap-8 lg:gap-[min(2.5vw,36px)]">
-          <h2 className={`${SCALED_H2} text-center lg:text-left lg:max-w-[min(43.5vw,626px)]`}>What to Do If Your ESA Is Denied Without a Valid Reason?</h2>
+          <h2 className={`heading-h2 ${SCALED_H2} text-center lg:text-left lg:max-w-[min(43.5vw,626px)]`}>What to Do If Your ESA Is Denied Without a Valid Reason?</h2>
 
           <div className="flex flex-col gap-5 lg:gap-[min(1.5vw,22px)]">
             {STEPS.map((s) => (
@@ -59,7 +59,7 @@ export function EsaHousingDenied() {
           sizes="32px" height={32} unoptimized className="h-8 w-8 object-contain" />
                   </div>
                   <div className="flex flex-col gap-1">
-                    <h3 className="font-heading font-bold text-[20px] lg:text-[length:min(1.39vw,20px)] leading-7 lg:leading-[min(1.94vw,28px)] text-primary">{s.title}</h3>
+                    <h3 className="heading-h3 font-heading font-bold text-primary">{s.title}</h3>
                     <p className="body text-body-text">{s.description}</p>
                   </div>
                 </div>

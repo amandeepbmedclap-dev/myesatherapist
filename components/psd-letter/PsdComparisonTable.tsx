@@ -116,7 +116,7 @@ export function PsdComparisonTable() {
           <div className="w-full bg-background rounded-[20px] shadow-[0px_2px_5.2px_rgba(0,0,0,0.15)] relative z-0 pb-4">
             <div className="flex items-center justify-between px-2 sm:px-6 h-[64px] sm:h-[72px]">
               <div className="w-[88px] sm:w-[150px] md:w-[170px] text-center">
-                <h3 className="heading-h3 text-base sm:text-xl">
+                <h3 className="heading-h3">
                   Features
                 </h3>
               </div>
@@ -124,7 +124,7 @@ export function PsdComparisonTable() {
               <div className="w-[130px] sm:w-[210px] md:w-[230px] shrink-0" />
 
               <div className="w-[96px] sm:w-[150px] md:w-[170px] text-center">
-                <h3 className="heading-h3 text-base sm:text-xl">
+                <h3 className="heading-h3">
                   ESA Letter
                 </h3>
               </div>
@@ -160,7 +160,7 @@ export function PsdComparisonTable() {
               className="h-[68px] sm:h-[76px] rounded-b-[20px] flex flex-col items-center justify-center px-2 text-center shadow-md"
               style={{ backgroundImage: TEAL_GRADIENT }}
             >
-              <h3 className="heading-h3 text-background text-base sm:text-xl leading-tight tracking-tight">
+              <h3 className="heading-h3 text-background tracking-tight">
                 PSD
                 <br />
                 Letter

@@ -20,7 +20,7 @@ export function StateAvailableCitiesSection({ data, tone = "cream" }: { data: St
     <section className={`w-full ${tone === "cream" ? "bg-background" : "bg-white"} py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8`}>
       <div className="max-w-[1280px] mx-auto">
         <div className="text-center max-w-[840px] mx-auto mb-10 sm:mb-12 lg:mb-14">
-          <h2 className="font-heading text-2xl sm:text-3xl lg:text-[40px] xl:text-[44px] font-bold text-primary leading-[1.2] tracking-tight">
+          <h2 className="heading-h2 font-heading font-bold text-primary tracking-tight">
             {title}
           </h2>
           <p className="body-large text-body-text mt-3 max-w-[760px] mx-auto">
@@ -37,9 +37,9 @@ export function StateAvailableCitiesSection({ data, tone = "cream" }: { data: St
                     <Image quality={90} src={city.icon} alt={`${city.name} map`} fill unoptimized className="object-contain" sizes="40px" />
                   </span>
                 </span>
-                <h3 className="mt-5 font-heading !text-[21px] font-bold !leading-[28px] text-primary">{city.name}</h3>
+                <h3 className="heading-h3 mt-5 font-heading font-bold text-primary">{city.name}</h3>
                 {city.description && (
-                  <p className="mt-2 flex-1 font-sans text-[14.5px] leading-[24px] text-body-text">{city.description}</p>
+                  <p className="mt-2 flex-1 font-sans text-sm leading-[24px] text-body-text">{city.description}</p>
                 )}
               </div>
             ))}
@@ -67,7 +67,7 @@ export function StateAvailableCitiesSection({ data, tone = "cream" }: { data: St
                   </h3>
                 </div>
                 {city.description && (
-                  <p className="font-sans text-[13px] sm:text-[14px] lg:text-[14.5px] text-body-text font-medium leading-relaxed flex-1">
+                  <p className="font-sans text-sm sm:text-[14px] lg:text-sm text-body-text font-medium leading-relaxed flex-1">
                     {city.description}
                   </p>
                 )}

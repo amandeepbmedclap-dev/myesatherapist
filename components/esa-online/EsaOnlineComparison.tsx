@@ -99,18 +99,18 @@ export function EsaOnlineComparison() {
           <div className="w-full bg-background rounded-[20px] shadow-[0px_2px_5.2px_rgba(0,0,0,0.15)] relative z-0 pb-4">
             <div className="flex items-center justify-between px-2 sm:px-6 h-[64px] sm:h-[72px]">
               <div className="w-[88px] sm:w-[150px] md:w-[170px] text-center">
-                <h3 className="font-heading text-[15px] sm:text-lg md:text-xl font-bold text-primary">Features</h3>
+                <h3 className="heading-h3 font-heading font-bold text-primary">Features</h3>
               </div>
               <div className="w-[130px] sm:w-[210px] md:w-[230px] shrink-0" />
               <div className="w-[96px] sm:w-[150px] md:w-[170px] text-center">
-                <h3 className="font-heading text-[15px] sm:text-lg md:text-xl font-bold text-primary">Others</h3>
+                <h3 className="heading-h3 font-heading font-bold text-primary">Others</h3>
               </div>
             </div>
             <div className="divide-y divide-[#C8B9A7]/40">
               {ROWS.map((row) => (
                 <div key={row.feature} className="flex items-center justify-between h-[84px] sm:h-[92px] px-2 sm:px-6">
                   <div className="w-[88px] sm:w-[150px] md:w-[170px] flex items-center justify-center text-center">
-                    <span className="font-heading font-bold text-[13.5px] sm:text-[15px] md:text-[16px] text-primary leading-tight">{row.feature}</span>
+                    <span className="font-heading font-bold text-sm sm:text-base md:text-[16px] text-primary leading-tight">{row.feature}</span>
                   </div>
                   <div className="w-[130px] sm:w-[210px] md:w-[230px] shrink-0" />
                   <div className="w-[96px] sm:w-[150px] md:w-[170px] flex flex-col items-center justify-center text-center px-1 gap-1.5">
@@ -129,7 +129,7 @@ export function EsaOnlineComparison() {
             style={{ backgroundImage: TEAL_GRADIENT }}
           >
             <div className="h-[68px] sm:h-[76px] rounded-b-[20px] flex items-center justify-center px-2 text-center bg-[#1A3D4F]/35">
-              <h3 className="font-heading font-bold text-[14.5px] sm:text-[17px] text-background leading-[17px] tracking-tight">
+              <h3 className="heading-h3 font-heading font-bold text-background tracking-tight">
                 MY ESA
                 <br />
                 THERAPIST

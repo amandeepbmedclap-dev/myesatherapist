@@ -148,10 +148,10 @@ export function StateWhoQualifiesV2({ data }: { data: StateData }) {
         </div>
 
         <div className="lg:col-start-1 lg:row-start-2">
-          <h3 className="flex items-center gap-3 !font-sans !text-[12px] font-extrabold uppercase !leading-4 tracking-[0.14em] text-[#8A6A12]">
+          <p className="eyebrow flex items-center gap-3 text-[#8A6A12]">
             <span aria-hidden className="h-px w-8 bg-accent" />
             {sectionHeading}
-          </h3>
+          </p>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             {conditions.map((item, idx) => (
               <div key={item.title} className="flex flex-col rounded-[20px] bg-background p-5 ring-1 ring-line-200 sm:p-6">
@@ -159,9 +159,9 @@ export function StateWhoQualifiesV2({ data }: { data: StateData }) {
                   <span className="flex size-11 shrink-0 items-center justify-center rounded-[14px] bg-white shadow-[0_6px_16px_-10px_rgba(26,61,79,0.5)]">
                     <Image quality={90} src={icons[idx]} alt="" width={24} height={24} sizes="24px" unoptimized className="size-6 object-contain" />
                   </span>
-                  <h4 className="min-w-0 font-heading text-[18px] font-bold leading-[24px] text-primary sm:text-[19px]">{item.title.replace(/\//g, "/\u200B")}</h4>
+                  <h4 className="heading-h4 min-w-0 font-heading font-bold text-primary">{item.title.replace(/\//g, "/\u200B")}</h4>
                 </div>
-                <div className="mt-3 font-sans text-[15px] leading-[24px] text-body-text">{item.description}</div>
+                <div className="mt-3 font-sans text-base leading-[24px] text-body-text">{item.description}</div>
               </div>
             ))}
           </div>

@@ -2,15 +2,17 @@
 
 import React, { useState } from "react";
 import { BreakpointImage } from "@/components/common/BreakpointImage";
-import { ChevronDown } from "lucide-react";
+// import { ChevronDown } from "lucide-react";
 import { StateData } from "@/data/statesData";
 import { ReviewBadges } from "@/components/common/ReviewBadges";
 import { HeroStatPills } from "@/components/common/HeroStatPills";
 import { CtaButton } from "@/components/common/CtaButton";
-import { STATE_INDEX } from "@/data/stateIndex";
+// import { STATE_INDEX } from "@/data/stateIndex";
 import {
+  EMAIL_MAX_LENGTH,
   evaluationDestination,
   formatPhone,
+  NAME_MAX_LENGTH,
   // trackHeallySubmit,
   validateEvaluationLead,
   type EvaluationErrors,
@@ -74,6 +76,7 @@ type HeroFormData = {
 interface EvaluationFormCardProps {
   formData: HeroFormData;
   setFormData: React.Dispatch<React.SetStateAction<HeroFormData>>;
+  setErrors: React.Dispatch<React.SetStateAction<EvaluationErrors>>;
   handleSubmit: (e: React.FormEvent) => void;
   errors: EvaluationErrors;
   compact?: boolean;
@@ -95,6 +98,7 @@ function inputClass(value: string, settled: boolean) {
 function EvaluationFormCard({
   formData,
   setFormData,
+  setErrors,
   handleSubmit,
   errors,
   compact = false,
@@ -109,6 +113,34 @@ function EvaluationFormCard({
     },
   });
 
+  const changeField = (partial: Partial<HeroFormData>) => {
+    const next = { ...formData, ...partial };
+    setFormData(next);
+    setErrors((current) => {
+      if (Object.keys(current).length === 0) return current;
+      const validated = validateEvaluationLead(
+        {
+          firstName: next.firstName,
+          lastName: next.lastName,
+          email: next.email,
+          phone: next.phone,
+          stateName: next.state,
+        },
+        next.terms,
+      );
+      const updated: EvaluationErrors = { ...current };
+      let changed = false;
+      (Object.keys(partial) as (keyof HeroFormData)[]).forEach((key) => {
+        if (key !== "firstName" && key !== "lastName" && key !== "email" && key !== "phone" && key !== "terms") return;
+        if (updated[key] && !validated[key]) {
+          delete updated[key];
+          changed = true;
+        }
+      });
+      return changed ? updated : current;
+    });
+  };
+
   return (
     <div
       data-state-hero-form
@@ -122,7 +154,7 @@ function EvaluationFormCard({
     >
       <div className={`text-center ${compact || tight ? "mb-4" : "mb-[30px]"}`}>
         {/* Form title is a label, not a document heading: the hero's only heading is the H1. */}
-        <div className={`font-heading font-bold text-primary ${compact ? "text-[22px] leading-[28px]" : "text-[26px] leading-[32px] xl:text-[28px] xl:leading-[34px]"}`}>
+        <div className={`font-heading font-bold text-primary ${compact ? "text-xl leading-[28px]" : "text-[28px] leading-[32px] xl:text-[28px] xl:leading-[34px]"}`}>
           Start Your Evaluation
         </div>
         <p className={`text-body-text mt-1.5 ${compact ? "body-small" : "body-text"}`}>
@@ -137,9 +169,10 @@ function EvaluationFormCard({
               <input
                 type="text"
                 required
+                maxLength={NAME_MAX_LENGTH}
                 placeholder="First Name"
                 value={formData.firstName}
-                onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                onChange={(e) => changeField({ firstName: e.target.value.slice(0, NAME_MAX_LENGTH) })}
                 {...fieldEvents("firstName")}
                 className={inputClass(formData.firstName, !!settledFields.firstName)}
               />
@@ -150,9 +183,10 @@ function EvaluationFormCard({
               <input
                 type="text"
                 required
+                maxLength={NAME_MAX_LENGTH}
                 placeholder="Last Name"
                 value={formData.lastName}
-                onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                onChange={(e) => changeField({ lastName: e.target.value.slice(0, NAME_MAX_LENGTH) })}
                 {...fieldEvents("lastName")}
                 className={inputClass(formData.lastName, !!settledFields.lastName)}
               />
@@ -165,9 +199,10 @@ function EvaluationFormCard({
             <input
               type="email"
               required
+              maxLength={EMAIL_MAX_LENGTH}
               placeholder="your@email.com"
               value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+              onChange={(e) => changeField({ email: e.target.value.slice(0, EMAIL_MAX_LENGTH) })}
                 {...fieldEvents("email")}
                 className={inputClass(formData.email, !!settledFields.email)}
               />
@@ -180,16 +215,17 @@ function EvaluationFormCard({
               type="tel"
               required
               inputMode="numeric"
-              placeholder="999-999-9999"
+              placeholder="(555) 123-4567"
               value={formData.phone}
-              onChange={(e) => setFormData({ ...formData, phone: formatPhone(e.target.value) })}
+              onChange={(e) => changeField({ phone: formatPhone(e.target.value) })}
               {...fieldEvents("phone")}
               className={inputClass(formData.phone, !!settledFields.phone)}
             />
             {errors.phone && <p className="body-small mt-1 text-[#c00]">{errors.phone}</p>}
           </div>
 
-          <div>
+          {/* State dropdown is hidden on state pages. The page's state is still submitted with the form. */}
+          {/* <div>
             <label className={labelClass} htmlFor="hero-state">Your State</label>
             <div className="relative">
               <select
@@ -207,14 +243,14 @@ function EvaluationFormCard({
               </select>
               <ChevronDown className="pointer-events-none absolute right-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-primary" />
             </div>
-          </div>
+          </div> */}
 
           <div className="space-y-2">
             <label className="flex items-start gap-2 text-left body-small text-body-text">
               <input
                 type="checkbox"
                 checked={formData.terms}
-                onChange={(e) => setFormData({ ...formData, terms: e.target.checked })}
+                onChange={(e) => changeField({ terms: e.target.checked })}
                 className="mt-1 h-4 w-4 shrink-0 accent-primary"
               />
               <span className="min-w-0 flex-1 text-left">
@@ -229,7 +265,7 @@ function EvaluationFormCard({
               <input
                 type="checkbox"
                 checked={formData.promotion}
-                onChange={(e) => setFormData({ ...formData, promotion: e.target.checked })}
+                onChange={(e) => changeField({ promotion: e.target.checked })}
                 className="mt-1 h-4 w-4 shrink-0 accent-primary"
               />
               <span className="min-w-0 flex-1 text-left">
@@ -345,6 +381,7 @@ export function StateHeroSection({ data }: { data: StateData }) {
           <EvaluationFormCard
             formData={formData}
             setFormData={setFormData}
+            setErrors={setErrors}
             handleSubmit={handleSubmit}
             errors={errors}
             tight

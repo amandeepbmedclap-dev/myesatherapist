@@ -14,7 +14,7 @@ function RequestRow({ title, intro, items, allowed }: { title: string; intro?: s
         >
           {allowed ? <Check strokeWidth={3} className="size-5" /> : <X strokeWidth={3} className="size-5" />}
         </span>
-        <h2 className="mt-4 font-heading !text-[24px] font-bold !leading-[32px] text-primary sm:!text-[28px] sm:!leading-[36px]">{title}</h2>
+        <h2 className="heading-h2 mt-4 font-heading font-bold text-primary">{title}</h2>
       </div>
       <div className="min-w-0">
         {intro ? <p className="font-sans text-[16px] leading-[27px] text-body-text">{intro}</p> : null}
@@ -64,7 +64,7 @@ export function StateHousingRequestsSection({ data }: { data: StateData }) {
     <section id="housing-requests" className="w-full bg-background pt-4 pb-16 sm:pb-20 lg:pb-24">
       <div className="max-w-[1040px] mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-10 sm:space-y-12">
         <div className="space-y-6 sm:space-y-8">
-          <h2 className="font-heading text-2xl sm:text-4xl lg:text-[34px] xl:text-[44px] font-bold text-primary leading-tight sm:leading-[54px] lg:leading-[42px] xl:leading-[54px] tracking-tight max-w-[980px] mx-auto">
+          <h2 className="heading-h2 font-heading font-bold text-primary tracking-tight max-w-[980px] mx-auto">
             {requests.mayRequestTitle}
           </h2>
           <div className="space-y-4 max-w-[960px] mx-auto text-base sm:text-lg text-body-text font-semibold leading-[1.7] font-sans">
@@ -76,7 +76,7 @@ export function StateHousingRequestsSection({ data }: { data: StateData }) {
         </div>
 
         <div className="space-y-6 sm:space-y-8">
-          <h2 className="font-heading text-2xl sm:text-4xl lg:text-[34px] xl:text-[44px] font-bold text-primary leading-tight sm:leading-[54px] lg:leading-[42px] xl:leading-[54px] tracking-tight max-w-[980px] mx-auto">
+          <h2 className="heading-h2 font-heading font-bold text-primary tracking-tight max-w-[980px] mx-auto">
             {requests.cannotRequestTitle}
           </h2>
           <div className="space-y-4 max-w-[960px] mx-auto text-base sm:text-lg text-body-text font-semibold leading-[1.7] font-sans">

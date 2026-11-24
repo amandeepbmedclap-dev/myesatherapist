@@ -25,7 +25,7 @@ export function EsaHousingCredentials() {
         />
         <div className="w-full max-w-[626px] lg:max-w-[min(43.5vw,626px)] text-center lg:text-left flex flex-col gap-8 lg:gap-[min(2.2vw,32px)]">
           <div className="flex flex-col gap-4 lg:gap-[min(1.9vw,28px)]">
-            <h2 className={`${SCALED_H2} lg:max-w-[min(37.6vw,541px)]`}>Why Do Professional Credentials Matter for an ESA Letter?</h2>
+            <h2 className={`heading-h2 ${SCALED_H2} lg:max-w-[min(37.6vw,541px)]`}>Why Do Professional Credentials Matter for an ESA Letter?</h2>
             <p className={SCALED_P}>
               Under the Fair Housing Act, ESA protections apply only when documentation is issued by a licensed professional. Housing providers may verify licensing information, which is why letters from online registries or instant-approval sites are often rejected.
             </p>
@@ -38,7 +38,7 @@ export function EsaHousingCredentials() {
           <div className="flex overflow-hidden text-left rounded-[20px] bg-background shadow-[0px_2px_4px_rgba(0,0,0,0.1)]">
             <div className="w-[10px] sm:w-[13px] shrink-0 bg-[#1D6E72]" />
             <div className="flex flex-col gap-1 px-5 py-4">
-              <h3 className="font-heading font-bold text-[20px] leading-7 text-primary">Important</h3>
+              <h3 className="heading-h3 font-heading font-bold text-primary">Important</h3>
               <p className="body-small text-body-text">
                 ESA registrations, certificates, or ID cards purchased online do not replace a professional evaluation and are not considered valid documentation.
               </p>

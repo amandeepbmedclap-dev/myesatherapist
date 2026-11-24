@@ -22,13 +22,13 @@ export function EsaGuideIntro() {
         />
 
         <div className="flex w-full flex-col items-center gap-8 lg:gap-[2.8vw] xl:gap-10">
-          <h3 className="text-center font-heading text-[22px] font-bold leading-8 text-primary sm:text-2xl lg:text-[1.67vw] lg:leading-[2.2vw] xl:text-[24px] xl:leading-8">
+          <h3 className="heading-h3 text-center font-heading font-bold text-primary">
             Topics Covered
           </h3>
           <ul className="grid w-full grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2 lg:grid-cols-5">
             {TOPICS.map((topic) => (
               <li key={topic} className="hover-card flex flex-col rounded-[20px] bg-accent pt-1.5 shadow-[0px_2px_4px_rgba(0,0,0,0.15)]">
-                <span className="hover-surface flex min-h-[75px] flex-1 items-center justify-center rounded-[20px] bg-white px-4 py-4 text-center font-sans text-base font-semibold leading-[26px] text-body-text lg:min-h-[5.2vw] lg:px-[1vw] lg:text-[1.1vw] lg:leading-[1.8vw] xl:min-h-[75px] xl:text-base xl:leading-[26px]">
+                <span className="hover-surface flex min-h-[75px] flex-1 items-center justify-center rounded-[20px] bg-white px-4 py-4 text-center font-sans text-base font-semibold leading-[26px] text-body-text lg:min-h-[5.2vw] lg:px-[1vw] lg:text-lg lg:leading-[1.8vw] xl:min-h-[75px] xl:text-base xl:leading-[26px]">
                   {topic}
                 </span>
               </li>

@@ -21,7 +21,7 @@ export function ArticleCtaCard({ className = "" }: { className?: string }) {
           </span>
         ))}
       </div>
-      <div className="relative mt-4 font-heading text-[22px] font-bold leading-[29px]">Talk to a licensed clinician about an ESA letter</div>
+      <div className="relative mt-4 font-heading text-xl font-bold leading-[29px]">Talk to a licensed clinician about an ESA letter</div>
       <ul className="relative mt-4 space-y-2 font-sans text-[14px] leading-[21px] text-white/90">
         {["Evaluation by a clinician licensed in your state", "$99, no hidden fees", "Secure, HIPAA-compliant telehealth"].map((t) => (
           <li key={t} className="flex gap-2">
@@ -30,7 +30,7 @@ export function ArticleCtaCard({ className = "" }: { className?: string }) {
         ))}
       </ul>
       <CtaButton className="relative mt-5 w-full">Start My ESA Evaluation</CtaButton>
-      <div className="relative mt-3 text-center font-sans text-[12.5px] text-white/70">
+      <div className="relative mt-3 text-center font-sans text-sm text-white/70">
         Covered by our <Link href="/refund-policy/" className="underline decoration-accent/80 underline-offset-2 hover:text-white">money-back guarantee</Link>
       </div>
     </div>

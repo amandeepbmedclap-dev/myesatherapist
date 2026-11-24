@@ -39,7 +39,7 @@ const legalLinks = [
 ];
 
 function FooterHeading({ children }: { children: React.ReactNode }) {
-  return <div className="font-sans text-[12px] font-extrabold uppercase leading-4 tracking-[0.16em] text-accent">{children}</div>;
+  return <div className="font-sans text-base font-extrabold uppercase leading-5 tracking-[0.16em] text-accent">{children}</div>;
 }
 
 function FooterLinks({ title, links }: { title: string; links: { label: string; href: string }[] }) {
@@ -49,7 +49,7 @@ function FooterLinks({ title, links }: { title: string; links: { label: string; 
       <ul className="space-y-3">
         {links.map((link) => (
           <li key={link.label}>
-            <Link href={link.href} className="font-sans text-[15px] leading-[22px] text-white/75 transition-colors hover:text-accent">
+            <Link href={link.href} className="font-sans text-base leading-[22px] text-white/75 transition-colors hover:text-accent">
               {link.label}
             </Link>
           </li>
@@ -85,7 +85,7 @@ export function Footer({ bgColor = "bg-background" }: { bgColor?: string }) {
             <Link href="/" aria-label="My ESA Therapist home" className="relative block h-[60px] w-[150px]">
               <Image quality={90} src="/common/myesa-logo-light.svg" alt="My ESA Therapist" fill unoptimized loading="eager" sizes="150px" className="object-contain object-left" />
             </Link>
-            <p className="max-w-[340px] font-sans text-[15px] leading-[24px] text-white/70">
+            <p className="max-w-[340px] font-sans text-base leading-[24px] text-white/70">
               A telehealth platform providing emotional support animal evaluations to those who live with a mental or emotional disability. Trusted, professional &amp; confidential.
             </p>
           </div>
@@ -106,11 +106,11 @@ export function Footer({ bgColor = "bg-background" }: { bgColor?: string }) {
                   </span>
                   <span className="min-w-0 font-sans">
                     {href ? (
-                      <a href={href} aria-label={aria} className="block break-words text-[15px] leading-[22px] text-white hover:text-accent">{main}</a>
+                      <a href={href} aria-label={aria} className="block break-words text-base leading-[22px] text-white hover:text-accent">{main}</a>
                     ) : (
-                      <span className="block text-[15px] leading-[22px] text-white">{main}</span>
+                      <span className="block text-base leading-[22px] text-white">{main}</span>
                     )}
-                    <span className="block text-[13px] leading-[20px] text-white/55">{sub}</span>
+                    <span className="block text-sm leading-[20px] text-white/55">{sub}</span>
                   </span>
                 </li>
               ))}
@@ -118,7 +118,7 @@ export function Footer({ bgColor = "bg-background" }: { bgColor?: string }) {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 border-t border-white/10 py-6 font-sans text-[13.5px] leading-[20px] text-white/55 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-2 border-t border-white/10 py-6 font-sans text-sm leading-[20px] text-white/55 sm:flex-row sm:items-center sm:justify-between">
           <p>&copy; 2026 My ESA Therapist. All rights reserved.</p>
           <p>
             <Link href="/" className="text-white/75 hover:text-accent">myesatherapist.com</Link>

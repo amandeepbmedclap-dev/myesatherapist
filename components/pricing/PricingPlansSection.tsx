@@ -57,7 +57,7 @@ export function PricingPlansSection({
                 className="w-14 h-14 sm:w-16 sm:h-16 object-contain shrink-0"
               />
               <div className="flex flex-col justify-center min-w-0">
-                <h4 className="font-sans font-bold text-[18px] leading-[26px] text-primary">
+                <h4 className="heading-h4 font-sans font-bold text-primary">
                   More Than One Pet?
                 </h4>
                 <p className="font-sans font-medium text-[14px] leading-[22px] text-[#5F6B6F] max-w-[620px]">

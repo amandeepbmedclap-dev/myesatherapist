@@ -112,10 +112,10 @@ export function DoctorsAllStatesSection() {
                   </div>
 
                   <div className="flex flex-col justify-center min-w-0 pl-3 sm:pl-4 xl:pl-6 pr-3 sm:pr-4">
-                    <h3 className="font-heading font-bold text-[16px] sm:text-[18px] xl:text-[20px] leading-[22px] sm:leading-[26px] xl:leading-[28px] text-primary truncate">
+                    <h3 className="heading-h3 font-heading font-bold text-primary truncate">
                       {card.title}
                     </h3>
-                    <p className="font-sans font-semibold text-[12px] sm:text-[13px] xl:text-[14px] leading-[18px] sm:leading-[22px] xl:leading-[26px] text-body-text truncate mt-0.5">
+                    <p className="font-sans font-semibold text-sm sm:text-sm xl:text-[14px] leading-[18px] sm:leading-[22px] xl:leading-[26px] text-body-text truncate mt-0.5">
                       {card.subtitle}
                     </p>
                   </div>

@@ -72,7 +72,7 @@ export function StateProcessSection({ data }: { data: StateData }) {
     >
       <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-12 lg:gap-16">
         <div className="mx-auto max-w-[1030px] space-y-3 text-center sm:space-y-4">
-          <h2 className="font-heading text-3xl font-bold leading-tight tracking-[-0.00015em] text-primary sm:text-4xl lg:text-[44px] lg:leading-[54px]">
+          <h2 className="heading-h2 font-heading font-bold tracking-[-0.00015em] text-primary">
             {title}
           </h2>
           <p className="body-large mx-auto max-w-[885px] text-body-text">{subtitle}</p>
@@ -87,7 +87,7 @@ export function StateProcessSection({ data }: { data: StateData }) {
             >
               <div className="relative row-span-2 hidden size-14 items-center justify-center self-start rounded-full bg-cream-100 sm:flex sm:size-[72px] lg:row-span-1 lg:size-[88px] lg:self-center">
                 <Image quality={90} src={processIcon(step.icon)} alt="" width={30} sizes="30px" height={30} unoptimized className="size-6 object-contain sm:size-[30px]" />
-                <span className="absolute -right-1 -top-1 flex size-7 items-center justify-center rounded-full bg-primary font-sans text-[12px] font-extrabold text-white">
+                <span className="absolute -right-1 -top-1 flex size-7 items-center justify-center rounded-full bg-primary font-sans text-sm font-extrabold text-white">
                   {step.number}
                 </span>
               </div>
@@ -96,11 +96,11 @@ export function StateProcessSection({ data }: { data: StateData }) {
                   <span className="flex size-10 items-center justify-center rounded-full bg-cream-100 sm:hidden">
                     <Image quality={90} src={processIcon(step.icon)} alt="" width={22} sizes="22px" height={22} unoptimized className="size-[22px] object-contain" />
                   </span>
-                  <span className="font-sans text-[12px] font-extrabold uppercase tracking-[0.12em] text-[#8A6A12]">Step {step.number}</span>
+                  <span className="font-sans text-sm font-extrabold uppercase tracking-[0.12em] text-[#8A6A12]">Step {step.number}</span>
                 </div>
-                <h3 className="mt-2 sm:mt-1 font-heading text-[21px] font-bold leading-[28px] text-primary sm:text-[24px] sm:leading-[32px]">{step.title}</h3>
+                <h3 className="heading-h3 mt-2 sm:mt-1 font-heading font-bold text-primary">{step.title}</h3>
               </div>
-              <div className="min-w-0 font-sans sm:col-start-2 text-[15px] leading-[25px] text-body-text sm:text-[16px] sm:leading-[26px] lg:col-start-3">
+              <div className="min-w-0 font-sans sm:col-start-2 text-base leading-[25px] text-body-text sm:text-[16px] sm:leading-[26px] lg:col-start-3">
                 {step.description}
               </div>
             </li>
@@ -109,7 +109,7 @@ export function StateProcessSection({ data }: { data: StateData }) {
 
         {/* Differentiators */}
         <div className="grid w-full gap-7 overflow-hidden rounded-[28px] p-7 color-gradient sm:p-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.3fr)] lg:grid-rows-[auto_1fr] lg:gap-x-12 lg:gap-y-6 lg:p-12">
-          <div role="heading" aria-level={3} className="font-heading text-[26px] font-bold leading-[34px] text-white sm:text-[32px] sm:leading-[40px] lg:col-start-1 lg:row-start-1">
+          <div role="heading" aria-level={3} className="font-heading text-[28px] font-bold leading-[34px] text-white sm:text-[28px] sm:leading-[40px] lg:col-start-1 lg:row-start-1">
             {data.processDifferentiatorsTitle || "Why Our Process Is Different"}
           </div>
 
@@ -119,7 +119,7 @@ export function StateProcessSection({ data }: { data: StateData }) {
                 <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-accent text-[#163545]">
                   <Check aria-hidden strokeWidth={3} className="size-3.5" />
                 </span>
-                <span className="font-sans text-[15px] leading-[24px] text-white sm:text-[16px]">{item}</span>
+                <span className="font-sans text-base leading-[24px] text-white sm:text-[16px]">{item}</span>
               </div>
             ))}
             {data.processNote && (

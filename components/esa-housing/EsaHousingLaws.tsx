@@ -63,7 +63,7 @@ export function EsaHousingLaws() {
             quality={90} src={col.image} alt={col.alt} fill className="object-cover" sizes="(min-width: 1024px) 620px, (max-width: 639px) 430px, 100vw" />
               </div>
               <div className="flex flex-col items-center gap-6 px-6 sm:px-10 pt-8 pb-10 flex-1">
-                <h3 className="font-heading text-2xl sm:text-[28px] font-bold text-primary leading-9 text-center">{col.title}</h3>
+                <h3 className="heading-h3 font-heading font-bold text-primary text-center">{col.title}</h3>
                 <ul className="w-full flex flex-col gap-3">
                   {col.items.map((item) => (
                     <li key={item} className="flex items-start gap-3">

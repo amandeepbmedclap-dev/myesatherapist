@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, CreditCard, HeartHandshake, Laptop, MonitorSmartphone, PawPrint, Receipt, RotateCcw, ShieldCheck, Stethoscope, UserRound, Video } from "lucide-react";
 
-const label = "font-sans text-[12px] font-extrabold uppercase tracking-[0.16em] text-[#8A6A12]";
+const label = "font-sans text-sm font-extrabold uppercase tracking-[0.16em] text-[#8A6A12]";
 
 /** "Why do individuals trust…" as one connected strip of four facts. */
 export function AboutTrustStrip() {
@@ -26,8 +26,8 @@ export function AboutTrustStrip() {
                 <Icon aria-hidden className="size-6" />
               </span>
               <div>
-                <h3 className="font-heading !text-[20px] font-bold !leading-[27px] text-primary">{title}</h3>
-                <p className="mt-1 font-sans text-[15px] leading-[24px] text-body-text">{description}</p>
+                <h3 className="heading-h3 font-heading font-bold text-primary">{title}</h3>
+                <p className="mt-1 font-sans text-base leading-[24px] text-body-text">{description}</p>
               </div>
             </div>
           ))}
@@ -53,7 +53,7 @@ export function AboutMission() {
           </div>
           <div className="absolute -bottom-6 left-6 right-6 flex items-center gap-3 rounded-[18px] bg-white p-4 shadow-[0_18px_40px_-24px_rgba(26,61,79,0.6)] ring-1 ring-line-200 sm:left-auto sm:right-[-24px] sm:w-[260px]">
             <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-accent text-primary"><HeartHandshake aria-hidden className="size-5" /></span>
-            <span className="font-sans text-[13.5px] leading-[19px] text-primary"><b className="block font-semibold">Independent clinical assessment</b>by a licensed provider</span>
+            <span className="font-sans text-sm leading-[19px] text-primary"><b className="block font-semibold">Independent clinical assessment</b>by a licensed provider</span>
           </div>
         </div>
         <div className="pt-6 lg:pt-0">
@@ -65,10 +65,10 @@ export function AboutMission() {
           <ol className="mt-8 divide-y divide-primary/10 border-y border-primary/10">
             {items.map((it, i) => (
               <li key={it.title} className="flex gap-5 py-5">
-                <span className="font-heading text-[26px] font-bold leading-[30px] text-gold-600 tabular-nums">0{i + 1}</span>
+                <span className="font-heading text-[28px] font-bold leading-[30px] text-gold-600 tabular-nums">0{i + 1}</span>
                 <div>
-                  <h3 className="font-heading !text-[20px] font-bold !leading-[27px] text-primary">{it.title}</h3>
-                  <p className="mt-1.5 font-sans text-[15.5px] leading-[25px] text-body-text">{it.description}</p>
+                  <h3 className="heading-h3 font-heading font-bold text-primary">{it.title}</h3>
+                  <p className="mt-1.5 font-sans text-base leading-[25px] text-body-text">{it.description}</p>
                 </div>
               </li>
             ))}
@@ -102,8 +102,8 @@ export function AboutWhoWeHelp() {
               <span className="flex size-11 items-center justify-center rounded-[13px] bg-white text-[#1D6E72] shadow-[0_6px_16px_-10px_rgba(26,61,79,0.5)]">
                 <Icon aria-hidden className="size-5" />
               </span>
-              <h3 className="mt-5 font-heading !text-[20px] font-bold !leading-[27px] text-primary">{title}</h3>
-              <p className="mt-2 font-sans text-[15px] leading-[24px] text-body-text">{description}</p>
+              <h3 className="heading-h3 mt-5 font-heading font-bold text-primary">{title}</h3>
+              <p className="mt-2 font-sans text-base leading-[24px] text-body-text">{description}</p>
             </div>
           ))}
         </div>
@@ -131,10 +131,10 @@ export function AboutPolicies() {
             <div key={title} className="flex flex-col rounded-[22px] bg-background p-6 ring-1 ring-line-200 sm:p-7">
               <div className="flex items-center gap-3">
                 <span className="flex size-10 items-center justify-center rounded-full bg-accent text-primary"><Icon aria-hidden className="size-5" /></span>
-                <h3 className="font-heading !text-[20px] font-bold !leading-[27px] text-primary">{title}</h3>
+                <h3 className="heading-h3 font-heading font-bold text-primary">{title}</h3>
               </div>
-              <p className="mt-4 flex-1 font-sans text-[15px] leading-[24px] text-body-text">{description}</p>
-              <Link href={href} className="mt-5 inline-flex items-center gap-1.5 font-sans text-[14.5px] font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4 hover:text-[#1D6E72]">
+              <p className="mt-4 flex-1 font-sans text-base leading-[24px] text-body-text">{description}</p>
+              <Link href={href} className="mt-5 inline-flex items-center gap-1.5 font-sans text-sm font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4 hover:text-[#1D6E72]">
                 {link} <ArrowRight aria-hidden className="size-4" />
               </Link>
             </div>

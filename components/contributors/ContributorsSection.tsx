@@ -118,7 +118,7 @@ export function ContributorsSection({
     <section id={id} className={`w-full ${bg} py-16 sm:py-20 lg:py-24 scroll-mt-20`}>
       <div className="w-full max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-14 max-w-[860px] mx-auto space-y-3 sm:space-y-4">
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-[44px] text-primary leading-[1.2] lg:leading-[54px] tracking-[-0.00015em]">
+          <h2 className="heading-h2 font-heading font-bold text-primary tracking-[-0.00015em]">
             {title}
           </h2>
           <p className="body-large text-body-text max-w-[813px] mx-auto">

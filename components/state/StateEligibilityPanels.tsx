@@ -69,7 +69,7 @@ export function StateEligibilityPanels({ data }: { data: StateData }) {
 
         <div className={twoPanel ? "grid gap-5 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]" : ""}>
           <div className="rounded-[26px] bg-white p-6 shadow-[0_18px_40px_-30px_rgba(26,61,79,0.5)] ring-1 ring-line-200 sm:p-8">
-            <div className="font-sans text-[12px] font-extrabold uppercase tracking-[0.14em] text-[#8A6A12]">{twoPanel ? "Who may qualify" : "Key considerations"}</div>
+            <div className="font-sans text-sm font-extrabold uppercase tracking-[0.14em] text-[#8A6A12]">{twoPanel ? "Who may qualify" : "Key considerations"}</div>
             <ul className={`mt-5 grid gap-4 ${twoPanel ? "" : "md:grid-cols-2 md:gap-x-10 md:gap-y-5"}`}>
               {criteria.map((item) => {
                 const Icon = criterionIcon(item);
@@ -88,7 +88,7 @@ export function StateEligibilityPanels({ data }: { data: StateData }) {
           {twoPanel && (
             <div className="relative overflow-hidden rounded-[26px] p-6 color-gradient sm:p-8">
               <span aria-hidden className="pointer-events-none absolute -bottom-28 -right-24 size-64 rounded-full border border-accent/25" />
-              <div className="relative font-sans text-[12px] font-extrabold uppercase tracking-[0.14em] text-accent">
+              <div className="relative font-sans text-sm font-extrabold uppercase tracking-[0.14em] text-accent">
                 What the {stateName} process involves
               </div>
               <ol className="relative mt-5 flex flex-col">

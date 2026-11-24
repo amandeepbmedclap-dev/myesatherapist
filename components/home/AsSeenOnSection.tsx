@@ -125,7 +125,7 @@ export function AsSeenOnSection({ bgColor = "bg-white/40" }: AsSeenOnSectionProp
     <section className={`relative z-10 overflow-hidden py-10 sm:py-12 ${bgColor}`}>
       <div className="mb-7 flex items-center justify-center gap-4 px-4 sm:mb-8">
         <span aria-hidden className="h-px w-10 bg-accent sm:w-16" />
-        <div role="heading" aria-level={2} className="font-sans text-[13px] font-extrabold uppercase tracking-[0.2em] text-primary">Press &amp; Mentions</div>
+        <h3 className="heading-h3 text-primary">Press &amp; Mentions</h3>
         <span aria-hidden className="h-px w-10 bg-accent sm:w-16" />
       </div>
 

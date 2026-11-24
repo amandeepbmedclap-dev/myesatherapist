@@ -3,7 +3,7 @@ import Image from "next/image";
 import { CtaButton, WaveImage } from "./EsaOnlineShared";
 
 const H2 =
-  "font-heading text-3xl sm:text-4xl lg:text-[length:min(3.06vw,44px)] font-bold text-primary leading-[1.2] lg:leading-[min(3.75vw,54px)] tracking-[-0.00015em] lg:max-w-[min(28.4vw,409px)]";
+  "font-heading text-[28px] sm:text-[40px]  font-bold text-primary leading-[1.2] lg:leading-[min(3.75vw,54px)] tracking-[-0.00015em] lg:max-w-[min(28.4vw,409px)]";
 const P = "body-large text-body-text";
 
 export function EsaOnlineWhatIs() {
@@ -31,7 +31,7 @@ export function EsaOnlineWhatIs() {
         />
         <div className="w-full max-w-[737px] lg:max-w-[min(42.4vw,610px)] text-center lg:text-left flex flex-col gap-10 lg:gap-[min(3.75vw,54px)]">
           <div className="flex flex-col gap-4">
-            <h2 className={H2}>What Is an ESA Letter, and Who Can Issue One?</h2>
+            <h2 className="heading-h2" className={H2}>What Is an ESA Letter, and Who Can Issue One?</h2>
             <p className={P}>
               An Emotional Support Animal (ESA) letter is a written recommendation from a licensed mental health professional stating that an emotional support animal may help support a person’s mental or emotional well-being. The recommendation is based on an individual evaluation and is provided when clinically appropriate.
             </p>
@@ -41,7 +41,7 @@ export function EsaOnlineWhatIs() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <h2 className={H2}>What Does an ESA Letter Do for You and Your Animal?</h2>
+            <h2 className="heading-h2" className={H2}>What Does an ESA Letter Do for You and Your Animal?</h2>
             <p className={P}>
               An ESA letter provides documentation supporting the need for an emotional support animal as part of a person’s mental or emotional health care. It is not an{" "}
               <a href="/blog/esa-guide/is-esa-registration-legit/" className="text-primary underline underline-offset-2">ESA registration</a>, certification, or ID card, and simply owning an animal does not make it an emotional support animal.

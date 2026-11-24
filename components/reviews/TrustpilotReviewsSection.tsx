@@ -72,7 +72,7 @@ function ReviewCard({
             <StarRating />
           </div>
 
-          <p className="font-sans font-semibold text-[15px] sm:text-[16px] text-background leading-[26px]">
+          <p className="font-sans font-semibold text-base sm:text-[16px] text-background leading-[26px]">
             {review.quote}
           </p>
         </div>
@@ -85,7 +85,7 @@ function ReviewCard({
           <InitialsAvatar name={review.name} index={review.id - 1} className="absolute inset-0 text-[20px]" />
         </div>
         <div className="flex flex-col justify-center gap-0.5">
-          <h3 className="font-heading font-bold text-[19px] sm:text-[20px] leading-[26px] sm:leading-[28px] text-[#2C2C2C]">
+          <h3 className="heading-h3 font-heading font-bold text-[#2C2C2C]">
             {review.name}
           </h3>
           <span className="font-sans text-[14px] sm:text-[16px] leading-[20px] text-body-text">

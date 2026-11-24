@@ -120,9 +120,9 @@ export function ComparisonTable() {
         <div className="block lg:hidden w-full max-w-[370px] sm:max-w-[620px] md:max-w-[700px] relative mx-auto pt-[14px]">
           <div className="w-full bg-background rounded-[20px] shadow-[0px_2px_5.2px_rgba(0,0,0,0.15)] relative z-0 pb-3">
             <div className="grid grid-cols-[minmax(0,1.28fr)_132px_minmax(0,0.86fr)] sm:grid-cols-[1fr_214px_1fr] md:grid-cols-[1fr_234px_1fr] items-center h-[62px] sm:h-[70px]">
-              <h3 className="font-heading font-bold text-center text-xs sm:text-base text-primary">Features</h3>
+              <h3 className="heading-h3 font-heading font-bold text-center text-primary">Features</h3>
               <div />
-              <h3 className="font-heading font-bold text-center text-xs sm:text-base text-primary">Others</h3>
+              <h3 className="heading-h3 font-heading font-bold text-center text-primary">Others</h3>
             </div>
 
             <div className="divide-y divide-[#C8B9A7]/60 border-t border-[#C8B9A7]/60">
@@ -132,12 +132,12 @@ export function ComparisonTable() {
                   className="grid grid-cols-[minmax(0,1.28fr)_132px_minmax(0,0.86fr)] sm:grid-cols-[1fr_214px_1fr] md:grid-cols-[1fr_234px_1fr] items-center h-16 sm:h-[80px]"
                 >
                   <div className="px-2 sm:px-2 flex items-center justify-center text-center min-w-0">
-                    <h4 className="font-heading font-bold text-center text-[11px] sm:text-[13px] md:text-sm leading-tight text-primary">{row.feature}</h4>
+                    <h4 className="heading-h4 font-heading font-bold text-center text-primary">{row.feature}</h4>
                   </div>
                   <div />
                   <div className="px-1.5 sm:px-2 flex flex-col items-center justify-center text-center gap-1">
                     {row.othersType === "cross" ? <RedCrossIcon /> : <WarningOrangeIcon />}
-                    <span className="hidden sm:block font-sans font-medium text-[12px] md:text-[13px] leading-[17px] text-body-text">
+                    <span className="hidden sm:block font-sans font-medium text-sm md:text-sm leading-[17px] text-body-text">
                       {row.others}
                     </span>
                   </div>
@@ -150,7 +150,7 @@ export function ComparisonTable() {
             className="absolute top-0 bottom-[-14px] w-[132px] sm:w-[214px] md:w-[234px] left-[calc((100%-132px)*1.28/2.14)] sm:left-1/2 sm:-translate-x-1/2 rounded-[20px] shadow-[3px_3px_47.6px_1px_rgba(0,0,0,0.1)] z-10 overflow-hidden color-gradient"
           >
             <div className="h-[76px] sm:h-[84px] rounded-b-[20px] flex items-center justify-center px-3 text-center bg-[#1A3D4F]/35">
-              <h3 className="font-heading font-bold text-background text-center leading-[30px] text-[24px]! sm:text-[26px]!">
+              <h3 className="heading-h3 font-heading font-bold text-background text-center">
                 My ESA
                 <br />
                 Therapist
@@ -160,7 +160,7 @@ export function ComparisonTable() {
               {comparisonRows.map((row, idx) => (
                 <div key={idx} className="h-16 sm:h-[80px] px-1.5 sm:px-2.5 flex flex-col items-center justify-center text-center gap-1">
                   <GreenCheckIcon />
-                  <span className="hidden sm:block font-sans font-medium text-[12px] md:text-[13px] leading-[17px] text-background">
+                  <span className="hidden sm:block font-sans font-medium text-sm md:text-sm leading-[17px] text-background">
                     {row.myEsa}
                   </span>
                 </div>

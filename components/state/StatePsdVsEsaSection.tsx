@@ -54,7 +54,7 @@ export function StatePsdVsEsaSection({ data }: { data: StateData }) {
     <section className="w-full bg-background py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto w-full max-w-[1060px]">
         <div className="text-center max-w-[840px] mx-auto mb-10 sm:mb-12 lg:mb-14">
-          <h2 className="font-heading text-2xl sm:text-3xl lg:text-[38px] xl:text-[44px] font-bold text-primary leading-[1.2] tracking-tight">
+          <h2 className="heading-h2 font-heading font-bold text-primary tracking-tight">
             {title}
           </h2>
           <p className="body-large text-body-text mt-3 max-w-[760px] mx-auto">
@@ -80,7 +80,7 @@ export function StatePsdVsEsaSection({ data }: { data: StateData }) {
               </div>
 
               <div className="flex min-w-0 flex-1 flex-col p-5 sm:p-6 lg:p-7">
-                <h3 className="font-heading text-xl sm:text-2xl lg:text-[23px] xl:text-[28px] font-bold text-primary mb-4 sm:mb-5 leading-snug">
+                <h3 className="heading-h3 font-heading font-bold text-primary mb-4 sm:mb-5">
                   {card.title}
                 </h3>
                 <ul className="space-y-3 mb-5">
@@ -117,10 +117,10 @@ export function StatePsdVsEsaSection({ data }: { data: StateData }) {
             <div className="w-[14px] sm:w-[19px] self-stretch min-h-[140px] sm:min-h-[181px] bg-accent shrink-0 rounded-l-[10px]" />
 
             <div className="py-5 sm:py-8 flex flex-col justify-center items-start gap-1.5 max-w-[849px] flex-1">
-              <h3 className="font-heading font-bold text-[18px] sm:text-[20px] leading-[26px] sm:leading-[28px] text-primary">
+              <h3 className="heading-h3 font-heading font-bold text-primary">
                 {calloutTitle}
               </h3>
-              <p className="font-sans font-medium text-[13px] sm:text-[14px] leading-[20px] sm:leading-[22px] text-body-text whitespace-pre-line">
+              <p className="font-sans font-medium text-sm sm:text-[14px] leading-[20px] sm:leading-[22px] text-body-text whitespace-pre-line">
                 {calloutText}
               </p>
             </div>

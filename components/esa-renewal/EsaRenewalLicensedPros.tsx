@@ -43,7 +43,7 @@ export function EsaRenewalLicensedPros() {
         />
         <div className="w-full max-w-[626px] lg:max-w-[39vw] xl:max-w-[590px] flex flex-col gap-10 lg:gap-[2.8vw] xl:gap-14">
           <div className="flex flex-col gap-5 lg:gap-[1.9vw] xl:gap-7 text-center lg:text-left">
-            <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.8vw] xl:text-[44px] font-bold text-primary leading-[1.2] lg:leading-[3.5vw] xl:leading-[54px] tracking-[-0.00015em] max-w-[541px] mx-auto lg:mx-0">
+            <h2 className="heading-h2 font-heading font-bold text-primary tracking-[-0.00015em] max-w-[541px] mx-auto lg:mx-0">
               Licensed Professionals Across All 50 States
             </h2>
             <p className="body-large text-body-text xl:max-w-[560px]">
@@ -76,7 +76,7 @@ export function EsaRenewalLicensedPros() {
                   </div>
 
                   <div className="flex flex-1 flex-col gap-1.5">
-                    <h3 className="font-heading font-bold text-lg sm:text-[20px] lg:text-[1.5vw] xl:text-[20px] text-primary leading-tight xl:leading-7">
+                    <h3 className="heading-h3 font-heading font-bold text-primary">
                       {feat.title}
                     </h3>
                     <p className="body text-body-text">

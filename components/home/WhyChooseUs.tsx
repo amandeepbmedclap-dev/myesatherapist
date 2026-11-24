@@ -89,8 +89,8 @@ export function WhyChooseUs({
             <span aria-hidden className="pointer-events-none absolute -right-8 -top-8 size-48 rounded-full border border-white/10" />
             <span aria-hidden className="pointer-events-none absolute -bottom-28 -left-16 size-72 rounded-full bg-white/[0.04]" />
             <div className="relative">
-              <h2 className="font-heading text-[30px] font-bold leading-[38px] text-white sm:text-[40px] sm:leading-[48px] lg:!text-[38px] lg:!leading-[46px]">{title}</h2>
-              <div className="mt-4 max-w-[520px] font-sans text-[16px] leading-[26px] text-white/85 sm:text-[17px] sm:leading-[28px]">
+              <h2 className="heading-h2 font-heading font-bold text-white">{title}</h2>
+              <div className="mt-4 max-w-[520px] font-sans text-[16px] leading-[26px] text-white/85 sm:text-lg sm:leading-[28px]">
                 {subtitle ||
                   "We simplify online emotional support animal evaluations while maintaining efficiency and legal compliance. Here's what makes us different from other providers."}
               </div>
@@ -110,15 +110,15 @@ export function WhyChooseUs({
                 key={itemTitle}
                 className={`group relative overflow-hidden rounded-[24px] p-6 transition-transform duration-300 hover:-translate-y-1 sm:p-7 ${bento ? `${tone[idx]} ${span[idx]} ${row[idx]}` : "bg-white ring-1 ring-line-200 lg:col-span-4"}`}
               >
-                <span aria-hidden className="pointer-events-none absolute right-5 top-3 select-none font-heading text-[56px] font-bold leading-none text-primary/[0.07]">
+                <span aria-hidden className="pointer-events-none absolute right-5 top-3 select-none font-heading text-[48px] font-bold leading-none text-primary/[0.07]">
                   {String(idx + 1).padStart(2, "0")}
                 </span>
                 <span className="relative flex size-14 shrink-0 items-center justify-center rounded-[16px] bg-white shadow-[0_8px_20px_-12px_rgba(26,61,79,0.5)]">
                   <Image quality={90} src={resolvedIcon} alt="" width={28} sizes="28px" height={28} unoptimized className="size-7 object-contain transition-transform duration-300 group-hover:scale-110" />
                 </span>
                 <div className={`relative min-w-0 ${bento ? textGap[idx] : "mt-5"}`}>
-                  <h3 className="font-heading text-[21px] font-bold leading-[28px] text-primary">{itemTitle}</h3>
-                  <div className="mt-2 font-sans text-[15px] leading-[25px] text-body-text">{description}</div>
+                  <h3 className="heading-h3 font-heading font-bold text-primary">{itemTitle}</h3>
+                  <div className="mt-2 font-sans text-base leading-[25px] text-body-text">{description}</div>
                 </div>
               </div>
             );

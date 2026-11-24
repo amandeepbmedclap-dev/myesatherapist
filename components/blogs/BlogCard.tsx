@@ -38,7 +38,7 @@ export function BlogCard({ article, priority = false, showAuthor = true }: BlogC
 
       <div className="w-full max-w-[374px] px-4 sm:px-0 flex-1 flex flex-col justify-between pt-[20px]">
         <div className="h-[108px] overflow-hidden">
-          <h3 className="heading-h3 text-primary text-[26px] sm:text-[28px] leading-[34px] sm:leading-[36px] tracking-[-0.0003em] line-clamp-3">
+          <h3 className="heading-h3 text-primary tracking-[-0.0003em] line-clamp-3">
             <Link
               href={article.url}
               className="group-hover:text-[#1D6E72] transition-colors"
@@ -46,7 +46,7 @@ export function BlogCard({ article, priority = false, showAuthor = true }: BlogC
               {article.cardTitle || article.title}
             </Link>
             {authorDisplayName && (
-              <span className="font-sans font-medium text-[15px] sm:text-[16px] leading-[24px] text-body-text whitespace-nowrap ml-1.5 normal-case tracking-normal inline-block align-baseline font-normal">
+              <span className="font-sans font-medium text-base sm:text-[16px] leading-[24px] text-body-text whitespace-nowrap ml-1.5 normal-case tracking-normal inline-block align-baseline font-normal">
                 by{" "}
                 {authorHref ? (
                   <Link

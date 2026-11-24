@@ -19,8 +19,8 @@ export function SectionHeader({
   return (
     <div className={`flex flex-col items-center gap-2 lg:gap-[0.6vw] xl:gap-2 text-center ${className}`}>
       <h2
-        className={`font-heading font-bold text-primary text-[28px] leading-[36px] sm:text-4xl sm:leading-[46px] lg:text-[3.05vw] lg:leading-[3.75vw] xl:text-[44px] xl:leading-[54px] tracking-[-0.00015em] ${titleClassName}`}
-      >
+ className={`heading-h2 font-heading font-bold text-primary tracking-[-0.00015em] ${titleClassName}`}
+>
         {title}
       </h2>
       {subtitle && (
@@ -51,9 +51,9 @@ export function GoldPill({
       <div className="w-[12px] sm:w-[19px] shrink-0 bg-accent sm:rounded-l-[10px]" />
       <div className="flex min-h-[64px] flex-1 flex-col justify-center gap-1 py-3 pl-4 pr-5 sm:pl-6 lg:pl-[2vw] lg:pr-[3vw] xl:pl-6 xl:pr-[67px]">
         {title && (
-          <h3 className="font-heading font-bold text-[18px] leading-7 sm:text-[20px] text-primary">{title}</h3>
+          <h3 className="heading-h3 font-heading font-bold text-primary">{title}</h3>
         )}
-        <p className="font-sans font-semibold text-sm leading-[24px] sm:text-base sm:leading-[26px] lg:text-[1.15vw] lg:leading-[1.9vw] xl:text-base xl:leading-[26px] text-body-text">
+        <p className="font-sans font-semibold text-sm leading-[24px] sm:text-base sm:leading-[26px] lg:text-lg lg:leading-[1.9vw] xl:text-base xl:leading-[26px] text-body-text">
           {children}
         </p>
       </div>
@@ -80,22 +80,22 @@ export function IconCard({
       <div className="absolute inset-x-0 top-0 bottom-1 rounded-[20px] bg-accent shadow-[0px_2px_4px_rgba(0,0,0,0.15)]" />
       <div className="hover-surface relative mt-2 flex flex-1 flex-col items-center rounded-[20px] bg-white px-6 pb-8 pt-[58px] text-center shadow-[0px_2px_4px_rgba(0,0,0,0.15)] lg:px-[1.3vw] lg:pb-[2vw] lg:pt-[4.4vw] xl:px-3.5 xl:pb-[37px] xl:pt-[62px]">
         <h3
-          className={`font-bold leading-[29px] text-primary text-[22px] sm:text-2xl ${
-            titleFont === "playfair" ? "font-heading" : ""
-          } ${
-            compact ? "lg:text-[1.75vw] lg:leading-[2.2vw]" : "lg:text-[1.9vw] lg:leading-[2.3vw]"
-          } xl:text-[24px] xl:leading-[29px]`}
-          style={
-            titleFont === "playfair"
-              ? { fontFamily: "var(--font-heading), 'Playfair Display', Georgia, serif" }
-              : LATO
-          }
-        >
+ className={`heading-h3 font-bold text-primary ${
+ titleFont=== "playfair" ? "font-heading" : ""
+ } ${
+ compact ? " " : " "
+ } `}
+ style={
+ titleFont=== "playfair"
+ ? { fontFamily: "var(--font-heading), 'Playfair Display', Georgia, serif" }
+ : LATO
+ }
+>
           {title}
         </h3>
         <p
           className={`mt-2 font-sans font-semibold leading-[26px] text-body-text text-base ${
-            compact ? "lg:text-[1.1vw] lg:leading-[1.9vw]" : "lg:text-[1.2vw] lg:leading-[2vw]"
+            compact ? "lg:text-lg lg:leading-[1.9vw]" : "lg:text-lg lg:leading-[2vw]"
           } xl:text-base xl:leading-[26px]`}
         >
           {text}

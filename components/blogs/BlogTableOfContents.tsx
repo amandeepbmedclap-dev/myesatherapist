@@ -118,7 +118,7 @@ export function BlogTableOfContents({ items }: BlogTableOfContentsProps = {}) {
           style={{ background: "var(--color-gradient)" }}
         >
           <div className="shrink-0 mb-5 lg:mb-6">
-            <h2 className="heading-h2 text-background max-w-[283px] leading-[1.15] mb-4 sm:mb-5">
+            <h2 className="heading-h2 text-background max-w-[283px] mb-4 sm:mb-5">
               Table Of<br />Contents
             </h2>
 

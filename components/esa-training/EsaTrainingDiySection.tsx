@@ -55,14 +55,14 @@ export function EsaTrainingDiySection() {
             quality={90} src={card.image} alt={card.alt} fill className="object-cover object-center" sizes="(min-width: 1280px) 626px, (min-width: 1024px) 45vw, 100vw" />
               </div>
               <div className="mx-auto flex w-full max-w-[498px] flex-col items-center gap-8 px-6 pb-10 pt-8 sm:px-8 lg:max-w-none lg:gap-[2.8vw] lg:px-[4.6vw] lg:pt-[2.6vw] xl:max-w-[498px] xl:gap-10 xl:px-0 xl:pt-[37px]">
-                <h3 className="text-center font-heading text-[24px] font-bold leading-[32px] text-primary sm:text-[28px] sm:leading-9 lg:text-[2vw] lg:leading-[2.5vw] xl:text-[28px] xl:leading-9">
+                <h3 className="heading-h3 text-center font-heading font-bold text-primary">
                   {card.title}
                 </h3>
                 <ul className="flex w-full flex-col gap-5 lg:gap-[1.7vw] xl:gap-6">
                   {card.items.map((item) => (
                     <li key={item} className="flex items-start gap-[18px] lg:gap-[1.2vw] xl:gap-[18px]">
                       <Check />
-                      <span className="font-sans text-base font-semibold leading-[1.65] text-body-text sm:text-[18px] lg:text-[1.25vw] xl:text-[18px] xl:leading-[30px]">
+                      <span className="font-sans text-base font-semibold leading-[1.65] text-body-text sm:text-[18px] lg:text-lg xl:text-[18px] xl:leading-[30px]">
                         {item}
                       </span>
                     </li>

@@ -40,7 +40,7 @@ export function EsaOnlineHousingRights() {
           </div>
 
           <div className="flex flex-col items-center gap-6 px-5 sm:px-10 pt-8 pb-10">
-            <h2 className="font-heading text-2xl sm:text-4xl font-bold text-primary leading-[1.2] sm:leading-[44px] text-center">
+            <h2 className="heading-h2 font-heading font-bold text-primary text-center">
               Your Housing Rights With a Valid ESA Letter, Explained
             </h2>
 
@@ -52,7 +52,7 @@ export function EsaOnlineHousingRights() {
           sizes="22px" height={22} unoptimized className="h-[22px] w-[22px] object-contain" />
                   </span>
                   <div className="flex flex-col">
-                    <h3 className="font-sans font-semibold text-base sm:text-[18px] leading-[30px] text-primary">{p.title}</h3>
+                    <h3 className="heading-h3 font-sans font-semibold text-primary">{p.title}</h3>
                     <p className="body text-body-text">{p.description}</p>
                   </div>
                 </li>

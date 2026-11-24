@@ -52,7 +52,7 @@ export function StateReviewerBanner({
       <div className={`flex items-center gap-4 ${className}`}>
         {profileHref ? <Link href={profileHref} aria-label={`${reviewerName} profile`} className="shrink-0">{avatar}</Link> : avatar}
         <div className="min-w-0 font-sans">
-          <p className="flex flex-wrap items-center gap-x-1.5 text-[15px] leading-[22px] text-white/75">
+          <p className="flex flex-wrap items-center gap-x-1.5 text-base leading-[22px] text-white/75">
             <span>{reviewLabel}</span>
             {profileHref ? (
               <Link href={profileHref} className="font-semibold text-white underline decoration-accent/70 decoration-2 underline-offset-4 hover:text-accent">{reviewerName}</Link>
@@ -69,7 +69,7 @@ export function StateReviewerBanner({
               </a>
             ) : null}
           </p>
-          <p className="text-[13.5px] leading-[20px] text-white/55">Last updated: {updatedDate}</p>
+          <p className="text-sm leading-[20px] text-white/55">Last updated: {updatedDate}</p>
         </div>
       </div>
     );
@@ -122,7 +122,7 @@ export function StateReviewerBanner({
             )}
 
             <div className="flex flex-col items-center sm:items-start space-y-1 sm:space-y-1.5">
-              <h3 className="font-heading font-bold text-xl sm:text-[22px] lg:text-[24px] leading-tight sm:leading-[32px] text-background flex flex-wrap items-center justify-center sm:justify-start gap-x-2 gap-y-1">
+              <h3 className="heading-h3 font-heading font-bold text-background flex flex-wrap items-center justify-center sm:justify-start gap-x-2 gap-y-1">
                 <span>{reviewLabel}</span>
                 {profileHref ? (
                   <Link
@@ -150,7 +150,7 @@ export function StateReviewerBanner({
                   </a>
                 ) : null}
               </h3>
-              <p className="font-sans font-semibold text-xs sm:text-[14px] leading-tight sm:leading-[26px] text-background">
+              <p className="font-sans font-semibold text-sm sm:text-[14px] leading-tight sm:leading-[26px] text-background">
                 Last updated: {updatedDate}
               </p>
             </div>

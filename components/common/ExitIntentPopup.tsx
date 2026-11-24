@@ -203,8 +203,8 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
               <Image src="/downloads/kit-2026-cover-v3.webp" alt="" width={210} height={272} className="exit-cover absolute left-0 top-0 w-[200px] -rotate-[4deg] rounded-md shadow-[0_22px_40px_-18px_rgba(26,61,79,0.7)] ring-1 ring-line-200" />
               <span className="absolute -right-4 bottom-2 grid size-[74px] rotate-[10deg] place-items-center rounded-full bg-accent text-center text-[#1A3D4F] shadow-[0_0_0_5px_rgba(232,185,44,0.25)]">
                 <span className="leading-none">
-                  <span className="block font-heading text-[19px] font-bold">Free</span>
-                  <span className="mt-0.5 block text-[8px] font-extrabold tracking-[0.12em]">8 PAGES</span>
+                  <span className="block font-heading text-xl font-bold">Free</span>
+                  <span className="mt-0.5 block text-sm font-extrabold tracking-[0.12em]">8 PAGES</span>
                 </span>
               </span>
             </div>
@@ -223,13 +223,13 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
                   className="w-[64px] shrink-0 -rotate-[4deg] rounded shadow-[0_10px_20px_-10px_rgba(26,61,79,0.6)] ring-1 ring-line-200 md:hidden"
                 />
                 <div className="min-w-0 pr-8">
-                  <div className="text-[12px] font-bold uppercase tracking-[0.14em] text-gold-600">Before you go</div>
-                  <h2 id="exit-title" className="mt-1 font-heading text-[28px] font-bold leading-[1.12] text-[#1A3D4F] sm:text-[32px]">
+                  <div className="text-sm font-bold uppercase tracking-[0.14em] text-gold-600">Before you go</div>
+                  <h2 id="exit-title" className="heading-h2 mt-1 font-heading font-bold text-[#1A3D4F]">
                     Take the Renter&apos;s ESA Kit with you.
                   </h2>
                 </div>
               </div>
-              <div className="mt-3 text-[15px] leading-relaxed text-body-text">
+              <div className="mt-3 text-base leading-relaxed text-body-text">
                 Free PDF, updated for HUD&apos;s May 2026 change. Everything you need to ask your landlord the right way:
               </div>
               <ol className="mt-4 space-y-2">
@@ -238,8 +238,8 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
                   "The seven marks of a landlord-ready ESA letter",
                   "Calm answers to the questions landlords ask",
                 ].map((t, i) => (
-                  <li key={t} className="flex items-start gap-3 !text-[15px] !leading-snug text-[#1A3D4F]">
-                    <span className="grid size-6 shrink-0 place-items-center rounded-full bg-[#1A3D4F] font-heading text-[12px] font-bold text-accent">
+                  <li key={t} className="flex items-start gap-3 text-base !leading-snug text-[#1A3D4F]">
+                    <span className="grid size-6 shrink-0 place-items-center rounded-full bg-[#1A3D4F] font-heading text-sm font-bold text-accent">
                       {i + 1}
                     </span>
                     <span className="pt-0.5 font-semibold">{t}</span>
@@ -268,7 +268,7 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
                   <button
                     type="submit"
                     disabled={status === "sending"}
-                    className="inline-flex h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-accent px-6 text-[15px] font-bold text-[#1A3D4F] transition-colors hover:bg-gold-600 disabled:opacity-70"
+                    className="inline-flex h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-accent px-6 text-base font-bold text-[#1A3D4F] transition-colors hover:bg-gold-600 disabled:opacity-70"
                   >
                     {status === "sending" ? "Sending..." : "Email me the kit"}
                     {status !== "sending" && <ArrowRight aria-hidden className="size-4" />}
@@ -279,7 +279,7 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
                     {error}
                   </div>
                 )}
-                <label className="mt-3 flex items-start gap-2.5 text-[13px] leading-snug text-body-text">
+                <label className="mt-3 flex items-start gap-2.5 text-sm leading-snug text-body-text">
                   <input
                     type="checkbox"
                     checked={updates}
@@ -300,7 +300,7 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
                 <button
                   type="button"
                   onClick={checkEligibility}
-                  className="group/e inline-flex min-h-[44px] items-center gap-1.5 text-[14.5px] font-semibold text-[#1D6E72]"
+                  className="group/e inline-flex min-h-[44px] items-center gap-1.5 text-sm font-semibold text-[#1D6E72]"
                 >
                   Ready now? Check if you qualify, free
                   <ArrowRight aria-hidden className="size-4 transition-transform group-hover/e:translate-x-0.5" />
@@ -315,10 +315,10 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
               <span className="grid size-14 place-items-center rounded-full bg-accent text-[#1A3D4F]">
                 <Check aria-hidden className="size-7" strokeWidth={2.5} />
               </span>
-              <h2 id="exit-title" className="mt-5 font-heading text-[30px] font-bold leading-tight text-[#1A3D4F]">
+              <h2 id="exit-title" className="heading-h2 mt-5 font-heading font-bold text-[#1A3D4F]">
                 Your kit is ready.
               </h2>
-              <div className="mt-2 text-[15px] leading-relaxed text-body-text">
+              <div className="mt-2 text-base leading-relaxed text-body-text">
                 {emailed ? <>Open it now. We&apos;ve also sent a copy to {email.trim()}.</> : "Open it now, or save it to read later."}
               </div>
               <a
@@ -326,14 +326,14 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
                 target="_blank"
                 rel="noopener"
                 onClick={() => track("file_download", { file_name: "renters-esa-kit-2026.pdf", link_url: PDF })}
-                className="mt-6 inline-flex h-12 w-fit items-center gap-2 rounded-full bg-[#1A3D4F] px-6 text-[15px] font-bold text-white transition-colors hover:bg-primary"
+                className="mt-6 inline-flex h-12 w-fit items-center gap-2 rounded-full bg-[#1A3D4F] px-6 text-base font-bold text-white transition-colors hover:bg-primary"
               >
                 <Download aria-hidden className="size-5" /> Open the kit (PDF)
               </a>
               <button
                 type="button"
                 onClick={checkEligibility}
-                className="group/e mt-5 inline-flex w-fit items-center gap-1.5 text-[14.5px] font-semibold text-[#1D6E72]"
+                className="group/e mt-5 inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-[#1D6E72]"
               >
                 Check if you qualify, free
                 <ArrowRight aria-hidden className="size-4 transition-transform group-hover/e:translate-x-0.5" />

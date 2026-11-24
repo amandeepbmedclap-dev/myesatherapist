@@ -132,12 +132,7 @@ export default function EsaTrainingPage() {
 
         <CtaBanner
           title="Training Helps. A Licensed Evaluation Makes It Official."
-          description={
-            "Training makes your ESA a better companion, but it's not what qualifies\n" +
-            "them as an ESA. That comes from a licensed mental health professional\n" +
-            "who evaluates your need and confirms the therapeutic benefit\n" +
-            "your animal provides."
-          }
+          description="Training makes your ESA a better companion, but it's not what qualifies them as an ESA. That comes from a licensed mental health professional who evaluates your need and confirms the therapeutic benefit your animal provides."
           buttonText="Start Your ESA Evaluation Now"
           buttonHref="/pricing/"
           bgColor="bg-background"

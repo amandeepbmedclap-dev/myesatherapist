@@ -21,7 +21,7 @@ function DoctorName({
   const comma = name.indexOf(",");
   const first = comma === -1 ? name : name.slice(0, comma + 1);
   const rest = comma === -1 ? "" : name.slice(comma + 1).trim();
-  // Only one real <h1> per page; the other breakpoint copy keeps heading
+  // Only one real <h1 className="heading-h1"> per page; the other breakpoint copy keeps heading
   // semantics for assistive tech without adding a duplicate H1 tag.
   const Tag = primary ? "h1" : "div";
   const headingProps = primary ? {} : { role: "heading", "aria-level": 1 };
@@ -51,7 +51,7 @@ function LinkedInMark({ href, name }: { href: string; name: string }) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`${name} on LinkedIn`}
-      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white text-[13px] font-sans font-bold hover:opacity-90 transition-opacity align-middle ml-1"
+      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white text-sm font-sans font-bold hover:opacity-90 transition-opacity align-middle ml-1"
     >
       {/* Label drawn via CSS so it does not become part of the H1 text. */}
       <span aria-hidden="true" className="before:content-['in']" />

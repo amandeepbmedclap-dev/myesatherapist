@@ -41,7 +41,7 @@ export function BlogNextStep({ slug, categorySlug }: { slug: string; categorySlu
     <section aria-labelledby="blog-next-step" className="w-full bg-background pt-12 sm:pt-16">
       <div className="max-w-[900px] mx-auto px-4 sm:px-6">
         <div className="rounded-[20px] border border-[#EAE5DC] bg-white p-6 sm:p-8">
-          <h2 id="blog-next-step" className="heading-h3 text-primary">
+          <h2 id="blog-next-step" className="heading-h2 text-primary">
             Your Next Step
           </h2>
           <p className="mt-2 body-text text-body-text">

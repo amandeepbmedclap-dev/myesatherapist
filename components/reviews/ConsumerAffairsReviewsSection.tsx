@@ -75,7 +75,7 @@ export function ConsumerAffairsReviewsSection() {
               href="https://www.consumeraffairs.com/pets/my-esa-therapist.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="cta3d cta3d--outline inline-flex items-center justify-center px-7 h-[46px] font-sans text-[15px] leading-[22px] whitespace-nowrap shrink-0"
+              className="cta3d cta3d--outline inline-flex items-center justify-center px-7 h-[46px] font-sans text-base leading-[22px] whitespace-nowrap shrink-0"
             >
               View Source
             </a>
@@ -117,7 +117,7 @@ function ReviewCard({
             <StarRating rating={review.rating} />
           </div>
 
-          <p className="font-sans font-semibold text-[15px] sm:text-[16px] text-background leading-[26px]">
+          <p className="font-sans font-semibold text-base sm:text-[16px] text-background leading-[26px]">
             {review.quote}
           </p>
         </div>
@@ -130,7 +130,7 @@ function ReviewCard({
           <InitialsAvatar name={review.name} index={review.id} className="absolute inset-0 text-[20px]" />
         </div>
         <div className="flex flex-col justify-center gap-0.5">
-          <h3 className="font-heading font-bold text-[19px] sm:text-[20px] leading-[26px] sm:leading-[28px] text-[#2C2C2C]">
+          <h3 className="heading-h3 font-heading font-bold text-[#2C2C2C]">
             {review.name}
           </h3>
           <span className="font-sans text-[14px] sm:text-[16px] leading-[20px] text-body-text">

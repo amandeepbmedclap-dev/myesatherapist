@@ -10,7 +10,7 @@ export function PricingHelpStrip() {
         <HelpCircle aria-hidden className="size-6" />
       </span>
       <div className="min-w-0 flex-1">
-        <div className="font-sans text-[17px] font-bold leading-6 text-primary">Not sure which letter you need?</div>
+        <div className="font-sans text-lg font-bold leading-6 text-primary">Not sure which letter you need?</div>
         <div className="font-sans text-[14px] leading-[22px] text-body-text">
           Answer a few quick questions and see whether an ESA letter fits your situation before you pay.
         </div>
@@ -18,7 +18,7 @@ export function PricingHelpStrip() {
       <button
         type="button"
         onClick={() => openEsaEligibilityChecker()}
-        className="cta3d cta3d--outline inline-flex h-[48px] shrink-0 items-center justify-center gap-2 px-5 font-sans text-[15px]"
+        className="cta3d cta3d--outline inline-flex h-[48px] shrink-0 items-center justify-center gap-2 px-5 font-sans text-base"
       >
         Check My Eligibility, Free
         <ArrowRight aria-hidden strokeWidth={2.5} className="cta-arrow size-4" />

@@ -50,7 +50,7 @@ export function StateScamsSection({ data }: { data: StateData }) {
     <section className="w-full bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1060px] mx-auto">
         <div className="text-center max-w-[840px] mx-auto mb-8 sm:mb-10 lg:mb-12">
-          <h2 className="font-heading text-2xl sm:text-3xl lg:text-[40px] xl:text-[44px] font-bold text-primary leading-[1.2] tracking-tight">
+          <h2 className="heading-h2 font-heading font-bold text-primary tracking-tight">
             {title}
           </h2>
           <p className="body-large text-body-text mt-3 max-w-[760px] mx-auto">
@@ -72,7 +72,7 @@ export function StateScamsSection({ data }: { data: StateData }) {
               />
             </div>
             <div className="flex-1">
-              <h3 className="font-sans text-[18px] leading-[26px] font-bold text-[#D6292B] mb-1">
+              <h3 className="heading-h3 font-sans font-bold text-[#D6292B] mb-1">
                 {alertTitle}
               </h3>
               <p className="body text-body-text">
@@ -96,7 +96,7 @@ export function StateScamsSection({ data }: { data: StateData }) {
             </div>
 
             <div className="flex items-center justify-center px-5 pt-5 sm:px-6 sm:pt-6 lg:px-7 lg:pt-7">
-              <h3 className="font-heading text-xl sm:text-2xl lg:text-[23px] xl:text-[28px] font-bold text-primary text-center leading-snug">
+              <h3 className="heading-h3 font-heading font-bold text-primary text-center">
                 {whatYouNeedTitle}
               </h3>
             </div>
@@ -113,7 +113,7 @@ export function StateScamsSection({ data }: { data: StateData }) {
                       </div>
                     </div>
                     <div>
-                      <h4 className="font-sans text-[18px] leading-[26px] font-bold text-primary mb-1">
+                      <h4 className="heading-h4 font-sans font-bold text-primary mb-1">
                         {item.title}
                       </h4>
                       <p className="body text-body-text">
@@ -139,14 +139,14 @@ export function StateScamsSection({ data }: { data: StateData }) {
             </div>
 
             <div className="flex items-center justify-center px-5 pt-5 sm:px-6 sm:pt-6 lg:px-7 lg:pt-7">
-              <h3 className="font-heading text-xl sm:text-2xl lg:text-[23px] xl:text-[28px] font-bold text-[#D6292B] text-center leading-snug">
+              <h3 className="heading-h3 font-heading font-bold text-[#D6292B] text-center">
                 {commonTitle}
               </h3>
             </div>
             <div className="flex flex-col flex-1 px-5 pb-5 pt-5 sm:px-6 sm:pb-6 sm:pt-6 lg:px-7 lg:pb-7">
 
               {commonSubtitle && (
-                <h4 className="font-sans text-sm sm:text-base lg:text-[16px] font-bold text-primary text-left mb-4">
+                <h4 className="heading-h4 font-sans font-bold text-primary text-left mb-4">
                   {commonSubtitle}
                 </h4>
               )}
@@ -159,7 +159,7 @@ export function StateScamsSection({ data }: { data: StateData }) {
                         <X className="w-3.5 h-3.5 stroke-[3]" />
                       </div>
                     </div>
-                    <p className="font-sans text-xs sm:text-[13.5px] lg:text-[14.5px] font-semibold text-body-text leading-[26px]">
+                    <p className="font-sans text-sm sm:text-sm lg:text-sm font-semibold text-body-text leading-[26px]">
                       {item}
                     </p>
                   </div>

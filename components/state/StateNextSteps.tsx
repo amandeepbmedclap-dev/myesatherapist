@@ -100,7 +100,7 @@ export function StateNextSteps({ data, tone = "white", withCities = false }: { d
             {data.citiesSubtitle ? <p className="body-large mx-auto mt-3 max-w-[760px] text-body-text">{data.citiesSubtitle}</p> : null}
             <ul className="mt-7 flex flex-wrap justify-center gap-2.5">
               {(data.cities || []).map((city) => (
-                <li key={city.name} className="flex items-center gap-1.5 rounded-full bg-white px-4 py-2 font-sans text-[14.5px] font-semibold text-primary ring-1 ring-line-200">
+                <li key={city.name} className="flex items-center gap-1.5 rounded-full bg-white px-4 py-2 font-sans text-sm font-semibold text-primary ring-1 ring-line-200">
                   <MapPin aria-hidden className="size-4 text-gold-600" />
                   {city.name}
                 </li>
@@ -142,7 +142,7 @@ function LinkGroup({
 }) {
   return (
     <div className={`rounded-[20px] border border-[#EAE5DC] ${cardBg} p-6`}>
-      <h3 className="font-heading font-bold text-[20px] leading-[28px] text-primary">{title}</h3>
+      <h3 className="heading-h3 font-heading font-bold text-primary">{title}</h3>
       <ul className="mt-4 flex flex-col gap-3">
         {links.map((l) => (
           <li key={l.href}>

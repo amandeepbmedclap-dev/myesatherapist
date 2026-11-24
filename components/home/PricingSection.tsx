@@ -167,7 +167,7 @@ function PricingCardButton({
       label={label}
       letter={letter}
       evaluationCta
-      className={`cta3d ${featured ? "cta3d--gold" : "cta3d--teal"} inline-flex h-auto min-h-[54px] w-full min-w-0 items-center justify-center gap-2 px-3 py-2 font-sans text-[15px] leading-5 lg:text-[16px]`}
+      className={`cta3d ${featured ? "cta3d--gold" : "cta3d--teal"} inline-flex h-auto min-h-[54px] w-full min-w-0 items-center justify-center gap-2 px-3 py-2 font-sans text-base leading-5 lg:text-[16px]`}
     >
       <span className="min-w-0 text-balance text-center">{ctaLabel(label, letter)}</span>
       <ArrowRight aria-hidden strokeWidth={2.5} className="cta-arrow size-[18px] shrink-0" />
@@ -229,20 +229,20 @@ function RenderCardsContainer({
               }`}
             >
               {featured && (
-                <span className="absolute -top-3.5 left-6 rounded-full bg-accent px-3.5 py-1 font-sans text-[12px] font-extrabold uppercase tracking-[0.08em] text-[#163545] shadow-sm sm:left-8">
+                <span className="absolute -top-3.5 left-6 rounded-full bg-accent px-3.5 py-1 font-sans text-sm font-extrabold uppercase tracking-[0.08em] text-[#163545] shadow-sm sm:left-8">
                   Most Popular
                 </span>
               )}
 
-              <h3 className={`font-heading text-[24px] font-bold leading-[1.2] sm:text-[26px] ${featured ? "text-white" : "text-primary"}`}>
+              <h3 className={`heading-h3 font-heading font-bold ${featured ? "text-white" : "text-primary"}`}>
                 {card.title.replace("\n", " ")}
               </h3>
-              <div className={`mt-2 font-sans text-[15px] leading-[23px] ${featured ? "text-white/85" : "text-body-text"}`}>
+              <div className={`mt-2 font-sans text-base leading-[23px] ${featured ? "text-white/85" : "text-body-text"}`}>
                 {audience}
               </div>
 
               <div className="mt-6 flex items-end gap-2">
-                <span className={`font-heading text-[52px] font-bold leading-none tracking-tight ${featured ? "text-accent" : "text-primary"}`}>
+                <span className={`font-heading text-[48px] font-bold leading-none tracking-tight ${featured ? "text-accent" : "text-primary"}`}>
                   {card.price}
                 </span>
                 <span className={`pb-1.5 font-sans text-[14px] font-semibold leading-5 ${featured ? "text-white/80" : "text-body-text"}`}>
@@ -250,7 +250,7 @@ function RenderCardsContainer({
                 </span>
               </div>
               {card.note && (
-                <div className={`mt-3 inline-flex w-fit rounded-full px-3 py-1 font-sans text-[13px] font-bold leading-5 ${featured ? "bg-accent/15 text-accent" : "bg-[#E7F2EF] text-[#1D6E72]"}`}>
+                <div className={`mt-3 inline-flex w-fit rounded-full px-3 py-1 font-sans text-sm font-bold leading-5 ${featured ? "bg-accent/15 text-accent" : "bg-[#E7F2EF] text-[#1D6E72]"}`}>
                   {card.note}
                 </div>
               )}
@@ -258,12 +258,12 @@ function RenderCardsContainer({
               <div className="mt-6">
                 <PricingCardButton href={ctaHref} label={card.buttonText} letter={letter} featured={featured} />
               </div>
-              <div className={`mt-3 flex items-center justify-center gap-1.5 font-sans text-[13px] font-medium leading-5 ${featured ? "text-white/80" : "text-body-text"}`}>
+              <div className={`mt-3 flex items-center justify-center gap-1.5 font-sans text-sm font-medium leading-5 ${featured ? "text-white/80" : "text-body-text"}`}>
                 <ShieldCheck aria-hidden className="size-4 shrink-0" /> No hidden fees. Pay once.
               </div>
 
               <div className={`mt-6 border-t pt-5 ${featured ? "border-white/15" : "border-line-200"}`}>
-                <div className={`mb-3 font-sans text-[12px] font-extrabold uppercase tracking-[0.1em] ${featured ? "text-accent" : "text-gold-600"}`}>
+                <div className={`mb-3 font-sans text-base font-extrabold uppercase leading-5 tracking-[0.1em] ${featured ? "text-accent" : "text-gold-600"}`}>
                   What&apos;s included
                 </div>
                 <ul className="flex flex-col gap-2.5">
@@ -279,7 +279,7 @@ function RenderCardsContainer({
                           {has ? <Check aria-hidden strokeWidth={3} className="size-3" /> : <Minus aria-hidden strokeWidth={3} className="size-3" />}
                         </span>
                         <span
-                          className={`font-sans text-[15px] leading-[22px] ${
+                          className={`font-sans text-base leading-[22px] ${
                             has ? (featured ? "text-white" : "text-primary") : featured ? "text-white/45 line-through" : "text-body-text/55 line-through"
                           }`}
                         >
@@ -344,7 +344,7 @@ export function PricingSection({
     <section id={sectionId} className={`${sectionClassName} ${bgColor} relative overflow-hidden`}>
       <div className="mx-auto flex max-w-[1442px] flex-col items-center gap-10 px-4 sm:px-6 lg:px-4 xl:px-0">
         <div className="mx-auto max-w-[760px] space-y-3 text-center">
-          <h2 className={headingClassName}>{heading}</h2>
+          <h2 className="heading-h2" className={headingClassName}>{heading}</h2>
           <p className="body-large">{descriptionOverride ?? PLANS[defaultPlan].description}</p>
         </div>
 

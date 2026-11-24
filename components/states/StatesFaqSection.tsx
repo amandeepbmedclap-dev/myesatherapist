@@ -61,7 +61,7 @@ export function StatesFaqSection() {
       <div className="max-w-[1260px] mx-auto">
         
         <div className="flex flex-col items-center text-center max-w-[780px] mx-auto mb-12 lg:mb-16">
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-[44px] lg:leading-[54px] tracking-tight text-primary mb-3">
+          <h2 className="heading-h2 font-heading font-bold tracking-tight text-primary mb-3">
             Frequently Asked Questions About ESA Letters in Your State
           </h2>
           <p className="font-sans font-semibold text-base sm:text-lg leading-relaxed text-body-text">
@@ -101,12 +101,12 @@ export function StatesFaqSection() {
                   >
                     <div className="flex items-center gap-4 sm:gap-6">
                       <div className="w-[52px] h-[52px] sm:w-[60px] sm:h-[60px] rounded-xl bg-accent flex items-center justify-center shrink-0 shadow-xs">
-                        <span className="font-sans font-extrabold text-xl sm:text-2xl text-primary">
+                        <span className="font-sans font-extrabold text-xl sm:text-[28px] text-primary">
                           {faq.num}
                         </span>
                       </div>
 
-                      <h3 className="heading-h3 text-white group-hover:text-accent transition-colors text-base sm:text-xl xl:text-[28px] leading-snug sm:leading-[32px] xl:leading-[36px] m-0 capitalize">
+                      <h3 className="heading-h3 text-white group-hover:text-accent transition-colors m-0 capitalize">
                         {faq.question}
                       </h3>
                     </div>

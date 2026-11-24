@@ -16,30 +16,36 @@ export type EvaluationErrors = Partial<
 
 const NAME_PATTERN = /^[a-zA-Z'\-\s]+$/;
 const EMAIL_PATTERN = /^\S+@\S+\.\S+$/;
-const PHONE_PATTERN = /^\d{3}-\d{3}-\d{4}$/;
+export const NAME_MAX_LENGTH = 50;
+export const EMAIL_MAX_LENGTH = 100;
 
 export function formatPhone(value: string) {
   const digits = value.replace(/\D/g, "").slice(0, 10);
-  let formatted = "";
-  if (digits.length > 0) formatted += digits.slice(0, 3);
-  if (digits.length >= 4) formatted += `-${digits.slice(3, 6)}`;
-  if (digits.length >= 7) formatted += `-${digits.slice(6, 10)}`;
-  return formatted;
+  if (digits.length === 0) return "";
+  if (digits.length < 4) return `(${digits}`;
+  if (digits.length < 7) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+  return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
 }
 
 export function validateEvaluationLead(lead: EvaluationLead, termsAccepted: boolean): EvaluationErrors {
   const errors: EvaluationErrors = {};
-  if (!NAME_PATTERN.test(lead.firstName.trim())) {
+  const firstName = lead.firstName.trim();
+  const lastName = lead.lastName.trim();
+  const email = lead.email.trim();
+  if (!NAME_PATTERN.test(firstName) || firstName.length > NAME_MAX_LENGTH) {
     errors.firstName = "Please enter a valid first name.";
   }
-  if (!NAME_PATTERN.test(lead.lastName.trim())) {
+  if (!NAME_PATTERN.test(lastName) || lastName.length > NAME_MAX_LENGTH) {
     errors.lastName = "Please enter a valid last name.";
   }
-  if (!EMAIL_PATTERN.test(lead.email.trim())) {
+  if (!EMAIL_PATTERN.test(email) || email.length > EMAIL_MAX_LENGTH) {
     errors.email = "Enter a valid email.";
   }
-  if (!PHONE_PATTERN.test(lead.phone.trim())) {
-    errors.phone = "Use format: 999-999-9999";
+  const phoneDigits = lead.phone.replace(/\D/g, "");
+  if (!lead.phone.trim() || phoneDigits.length === 0) {
+    errors.phone = "Please enter your phone number.";
+  } else if (phoneDigits.length !== 10 || /[a-zA-Z]/.test(lead.phone)) {
+    errors.phone = "Please enter a valid 10-digit phone number.";
   }
   if (!termsAccepted) {
     errors.terms = "You must accept the terms.";

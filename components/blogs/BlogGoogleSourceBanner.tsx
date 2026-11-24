@@ -37,10 +37,10 @@ export function BlogGoogleSourceBanner({ className = "" }: { className?: string 
           </div>
 
           <div className="space-y-1 text-left">
-            <h4 className="heading-h4 text-primary text-left text-[18px]! sm:text-[20px]! leading-[26px] sm:leading-[28px] tracking-[-0.00015em]">
+            <h4 className="heading-h4 text-primary text-left tracking-[-0.00015em]">
               See Our Articles Highlighted In Google Search
             </h4>
-            <p className="body-text text-[#5F6B6F] text-left text-[15px] sm:text-[16px] leading-[24px] sm:leading-[26px]">
+            <p className="body-text text-[#5F6B6F] text-left text-base sm:text-[16px] leading-[24px] sm:leading-[26px]">
               Add My ESA Therapist as a preferred resource.
             </p>
           </div>

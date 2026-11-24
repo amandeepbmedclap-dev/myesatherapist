@@ -40,10 +40,10 @@ export function EsaLawsFaqSection() {
     <section className="w-full bg-background py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1178px] mx-auto">
         <div className="text-center max-w-[900px] mx-auto mb-10 sm:mb-14 space-y-2">
-          <h2 className="font-heading text-[28px] sm:text-4xl lg:text-[44px] font-bold text-primary leading-tight sm:leading-[46px] lg:leading-[54px] tracking-[-0.0066em]">
+          <h2 className="heading-h2 font-heading font-bold text-primary tracking-[-0.0066em]">
             Common Questions About ESA Laws and Housing Accommodations
           </h2>
-          <p className="text-body-text text-[15px] sm:text-[18px] font-semibold leading-[26px] sm:leading-[30px] font-sans">
+          <p className="text-body-text text-base sm:text-[18px] font-semibold leading-[26px] sm:leading-[30px] font-sans">
             Get clear answers to the most frequently asked questions about emotional support animal laws and regulations.
           </p>
         </div>
@@ -78,7 +78,7 @@ export function EsaLawsFaqSection() {
                     </div>
 
                     <div className="flex-1 py-2.5 sm:py-3 px-3.5 sm:px-6 flex items-center justify-between gap-3 sm:gap-4">
-                      <h3 className="heading-h3 text-white text-base sm:text-xl xl:text-[28px] leading-snug sm:leading-[32px] xl:leading-[36px] m-0 capitalize">
+                      <h3 className="heading-h3 text-white m-0 capitalize">
                         {faq.q}
                       </h3>
                       <span

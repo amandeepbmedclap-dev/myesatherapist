@@ -107,8 +107,8 @@ function SpecRow({ icon, label, value }: { icon: React.ReactNode; label: string;
     <div className="flex items-start gap-3 py-2.5">
       <span className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-full bg-cream-100 text-primary">{icon}</span>
       <div className="min-w-0">
-        <div className="font-sans text-[12px] font-bold uppercase leading-4 tracking-[0.08em] text-[#8A6A12]">{label}</div>
-        <div className="font-sans text-[15px] font-semibold leading-[22px] text-primary">{value}</div>
+        <div className="font-sans text-base font-bold uppercase leading-5 tracking-[0.08em] text-[#8A6A12]">{label}</div>
+        <div className="font-sans text-base font-semibold leading-[22px] text-primary">{value}</div>
       </div>
     </div>
   );
@@ -140,9 +140,9 @@ function ClinicianCard({ t }: { t: Therapist }) {
       </div>
 
       <div className="flex flex-1 flex-col px-6 pb-6 pt-5">
-        <h3 className="font-heading text-[24px] font-bold leading-[1.2] text-primary">{t.name}</h3>
-        <div className="mt-1 font-sans text-[15px] font-semibold leading-[22px] text-[#1D6E72]">{t.title}</div>
-        <div className="mt-3 font-sans text-[15px] leading-[24px] text-body-text">{t.bio}</div>
+        <h3 className="heading-h3 font-heading font-bold text-primary">{t.name}</h3>
+        <div className="mt-1 font-sans text-base font-semibold leading-[22px] text-[#1D6E72]">{t.title}</div>
+        <div className="mt-3 font-sans text-base leading-[24px] text-body-text">{t.bio}</div>
 
         <div className="mt-4 divide-y divide-line-200 border-y border-line-200">
           <SpecRow icon={<MapPin aria-hidden className="size-4" />} label="Licensed In" value={t.licensedIn} />
@@ -152,7 +152,7 @@ function ClinicianCard({ t }: { t: Therapist }) {
 
         <Link
           href={getTherapistProfileHref(t)}
-          className="mt-auto inline-flex items-center gap-2 pt-5 font-sans text-[15px] font-bold text-primary underline-offset-4 hover:underline"
+          className="mt-auto inline-flex items-center gap-2 pt-5 font-sans text-base font-bold text-primary underline-offset-4 hover:underline"
         >
           View Profile <ArrowRight aria-hidden className="size-4 transition-transform group-hover:translate-x-0.5" />
         </Link>
@@ -243,7 +243,7 @@ export function TherapistsSection({
         )}
 
         {licensureNote && (
-          <div className="mx-auto mt-8 max-w-[900px] text-center font-sans text-[13px] leading-[21px] text-body-text lg:mt-10">
+          <div className="mx-auto mt-8 max-w-[900px] text-center font-sans text-sm leading-[21px] text-body-text lg:mt-10">
             {noteMatch ? (
               <>
                 <strong className="font-bold text-primary">{noteMatch}</strong> {licensureNote.replace(/^A Note on Licensure Levels:?\s*/i, "")}

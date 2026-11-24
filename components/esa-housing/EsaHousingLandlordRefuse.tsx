@@ -63,7 +63,7 @@ export function EsaHousingLandlordRefuse() {
           sizes="22px" height={22} unoptimized className="h-[22px] w-[22px] object-contain" />
                 </span>
                 <div className="flex flex-col">
-                  <h3 className="font-sans font-semibold text-base sm:text-[18px] leading-[30px] text-[#CC191D]">{r.title}</h3>
+                  <h3 className="heading-h3 font-sans font-semibold text-[#CC191D]">{r.title}</h3>
                   <p className="body text-body-text">{r.description}</p>
                 </div>
               </li>

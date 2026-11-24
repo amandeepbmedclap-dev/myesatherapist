@@ -85,7 +85,7 @@ export function FeatureCard({
       </div>
       <div className="hover-badge absolute left-1/2 -translate-x-1/2 -top-8 z-10 flex h-[74.56px] w-[74.56px] items-center justify-center rounded-full bg-white shadow-[0px_1.89px_3.78px_rgba(0,0,0,0.25)]">
         {stat ? (
-          <span className="font-heading font-bold text-[22px] leading-none text-[#2E5A66]">{stat}</span>
+          <span className="font-heading font-bold text-xl leading-none text-[#2E5A66]">{stat}</span>
         ) : (
           <Image quality={90}
             src={icon || ""} alt={iconAlt || title || "Icon"} width={iconW} height={iconH} sizes={`${iconW}px`} unoptimized style={{ width: iconW, height: iconH }} className="object-contain" />

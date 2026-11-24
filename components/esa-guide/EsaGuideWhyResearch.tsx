@@ -7,13 +7,13 @@ const ART_ALT = "Woman resting on the floor with her fluffy dog";
 
 export function EsaGuideWhyResearch() {
   return (
-    <section className="relative w-full overflow-hidden bg-white lg:min-h-[36vw] xl:min-h-0 xl:h-[486px]">
-      <div className="absolute inset-y-0 right-0 hidden aspect-[1911/1458] lg:block">
+    <section className="relative w-full overflow-hidden bg-white lg:min-h-[420px] xl:min-h-[486px]">
+      <div className="absolute inset-y-0 right-0 hidden w-[min(46%,640px)] lg:block">
         <Image
-            quality={90} src={ART} alt={ART_ALT} fill className="object-cover object-right" sizes="(min-width: 1024px) 637px, 1px" />
+            quality={90} src={ART} alt={ART_ALT} fill className="object-cover object-right" sizes="(min-width: 1440px) 640px, 46vw" />
       </div>
 
-      <div className="relative z-10 mx-auto flex w-full max-w-[1448px] flex-col px-4 pb-14 sm:px-8 lg:h-full lg:justify-center lg:py-[4vw] lg:pl-[5.8vw] lg:pr-0 xl:py-0 xl:pl-[83px]">
+      <div className="relative z-10 mx-auto flex w-full max-w-[1448px] flex-col px-4 pb-14 sm:px-8 lg:h-full lg:min-h-[420px] lg:justify-center lg:py-16 lg:pl-[5.8vw] lg:pr-[min(48%,680px)] xl:min-h-[486px] xl:py-0 xl:pl-[83px]">
         <div className="relative -mx-4 mb-12 sm:-mx-8 lg:hidden">
           <div className="sm:hidden">
             <WaveImageFrame alt={ART_ALT} img={{ src: "/esa-guide/esa-guide-whypeopleresearch-mobile.webp", w: 390, h: 512, crop: { x: 0, y: 68, w: 390, h: 444 } }} />
@@ -32,8 +32,8 @@ export function EsaGuideWhyResearch() {
           />
         </div>
 
-        <div className="flex w-full max-w-[626px] flex-col gap-5 text-center lg:max-w-[42vw] lg:gap-[1.9vw] lg:text-left xl:max-w-[626px] xl:gap-7">
-          <h2 className="mx-auto max-w-[626px] font-heading text-[28px] font-bold leading-[36px] tracking-[-0.00015em] text-primary sm:text-4xl sm:leading-[46px] lg:mx-0 lg:text-[3.05vw] lg:leading-[3.75vw] xl:text-[44px] xl:leading-[54px]">
+        <div className="flex w-full max-w-[626px] flex-col gap-5 text-center lg:text-left lg:gap-7">
+          <h2 className="heading-h2 mx-auto max-w-[626px] font-heading font-bold tracking-[-0.00015em] text-primary lg:mx-0">
             Why Do People Research Emotional Support Animals?
           </h2>
           <div className="body-large flex flex-col gap-[22px] text-body-text lg:gap-[1.6vw] xl:gap-[22px]">

@@ -44,7 +44,7 @@ function MobileSection({
         onClick={onToggle}
         className="flex min-h-[64px] w-full items-center justify-between gap-4 text-left"
       >
-        <span className={`font-heading text-[26px] font-bold leading-tight transition-colors ${open ? "text-[#1D6E72]" : "text-[#1A3D4F]"}`}>
+        <span className={`font-heading text-[28px] font-bold leading-tight transition-colors ${open ? "text-[#1D6E72]" : "text-[#1A3D4F]"}`}>
           {title}
         </span>
         <span
@@ -71,7 +71,7 @@ function MobileLinks({ items }: { items: { label: string; href: string; note?: s
           <Link href={item.href} className="flex min-h-[52px] items-center justify-between gap-3 rounded-xl bg-white px-4 py-2.5 ring-1 ring-line-200">
             <span>
               <span className="block text-[16px] font-semibold leading-snug text-[#1A3D4F]">{item.label}</span>
-              {item.note && <span className="block text-[13px] leading-snug text-body-text">{item.note}</span>}
+              {item.note && <span className="block text-sm leading-snug text-body-text">{item.note}</span>}
             </span>
             <ArrowRight aria-hidden className="size-4 shrink-0 text-gold-600" />
           </Link>
@@ -108,11 +108,11 @@ function MobileSheet({ open, close, isPsd }: { open: boolean; close: () => void;
 
         <MobileSection id="learn" title={learn.label} open={section === "learn"} onToggle={() => toggle("learn")}>
           <MobileLinks items={learn.items} />
-          <div className="mb-1 mt-5 text-[12px] font-bold uppercase tracking-[0.14em] text-gold-600">Most read</div>
+          <div className="mb-1 mt-5 text-sm font-bold uppercase tracking-[0.14em] text-gold-600">Most read</div>
           <ul>
             {MOST_READ.map((item) => (
               <li key={item.href} className="border-b border-line-200 last:border-0">
-                <Link href={item.href} className="flex min-h-[48px] items-center text-[15px] font-semibold text-[#1A3D4F]">
+                <Link href={item.href} className="flex min-h-[48px] items-center text-base font-semibold text-[#1A3D4F]">
                   {item.label}
                 </Link>
               </li>
@@ -126,13 +126,13 @@ function MobileSheet({ open, close, isPsd }: { open: boolean; close: () => void;
 
         <Link
           href="/pricing/"
-          className="flex min-h-[64px] items-center justify-between border-b border-line-200 font-heading text-[26px] font-bold text-[#1A3D4F]"
+          className="flex min-h-[64px] items-center justify-between border-b border-line-200 font-heading text-[28px] font-bold text-[#1A3D4F]"
         >
           Pricing
           <ArrowRight aria-hidden className="size-5 text-gold-600" />
         </Link>
 
-        <div className="mt-6 space-y-1 text-[15px]">
+        <div className="mt-6 space-y-1 text-base">
           <a href={PHONE.href} className="flex min-h-[44px] items-center gap-3 font-semibold text-[#1A3D4F]">
             <Phone aria-hidden className="size-[18px] text-[#1D6E72]" /> {PHONE.display}
           </a>
@@ -151,7 +151,7 @@ function MobileSheet({ open, close, isPsd }: { open: boolean; close: () => void;
               close();
               openEsaEligibilityChecker();
             }}
-            className="cta3d cta3d--outline flex h-[50px] w-full items-center justify-center gap-2 text-[15px]"
+            className="cta3d cta3d--outline flex h-[50px] w-full items-center justify-center gap-2 text-base"
           >
             <ClipboardCheck aria-hidden className="size-[18px]" /> Check My Eligibility, Free
           </button>
@@ -292,7 +292,7 @@ export function Header() {
                     setMenu((m) => (m === item.key ? null : item.key));
                   }}
                   onMouseEnter={() => schedule(() => setMenu(item.key), menu ? 60 : 140)}
-                  className="group/nav relative flex items-center gap-1 px-3.5 text-[15.5px] font-semibold text-[#1A3D4F] xl:px-5"
+                  className="group/nav relative flex items-center gap-1 px-3.5 text-base font-semibold text-[#1A3D4F] xl:px-5"
                 >
                   <span className={`transition-colors ${active ? "text-[#1D6E72]" : "group-hover/nav:text-[#1D6E72]"}`}>{item.label}</span>
                   <ChevronDown aria-hidden className={`size-4 text-gold-600 transition-transform duration-200 ${active ? "rotate-180" : ""}`} />
@@ -308,7 +308,7 @@ export function Header() {
             <Link
               href="/pricing/"
               onMouseEnter={() => menu && schedule(() => setMenu(null), 120)}
-              className={`group/nav relative flex items-center px-3.5 text-[15.5px] font-semibold xl:px-5 ${
+              className={`group/nav relative flex items-center px-3.5 text-base font-semibold xl:px-5 ${
                 pathname === "/pricing/" ? "text-[#1D6E72]" : "text-[#1A3D4F] hover:text-[#1D6E72]"
               }`}
             >
@@ -336,7 +336,7 @@ export function Header() {
                 <button
                   type="button"
                   onClick={() => openEsaEligibilityChecker()}
-                  className="group/chk hidden items-center gap-2 text-[15px] font-semibold text-[#1D6E72] xl:inline-flex"
+                  className="group/chk hidden items-center gap-2 text-base font-semibold text-[#1D6E72] xl:inline-flex"
                 >
                   <span className="grid size-9 place-items-center rounded-full bg-background transition-colors group-hover/chk:bg-accent group-hover/chk:text-[#1A3D4F]">
                     <ClipboardCheck aria-hidden className="size-[18px]" />
@@ -369,7 +369,7 @@ export function Header() {
               aria-label={sheet ? "Close menu" : "Open menu"}
               aria-expanded={sheet}
               aria-controls="mobile-navigation"
-              className="flex h-11 items-center gap-2 rounded-full pl-2 pr-0.5 text-[15px] font-semibold text-[#1A3D4F]"
+              className="flex h-11 items-center gap-2 rounded-full pl-2 pr-0.5 text-base font-semibold text-[#1A3D4F]"
             >
               <span className={sheet ? "" : "sr-only sm:not-sr-only"}>{sheet ? "Close" : "Menu"}</span>
               <span aria-hidden className="relative grid size-10 place-items-center rounded-full bg-primary text-white">

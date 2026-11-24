@@ -190,7 +190,7 @@ export function StateTableOfContents({ stateName, data }: Props) {
             </div>
 
             <div className="space-y-2 mb-3 sm:mb-4">
-              <h2 className="font-heading text-2xl sm:text-[28px] font-bold text-background leading-tight tracking-[-0.00015em]">
+              <h2 className="heading-h2 font-heading font-bold text-background tracking-[-0.00015em]">
                 Table of Contents
               </h2>
             </div>
@@ -212,7 +212,7 @@ export function StateTableOfContents({ stateName, data }: Props) {
                       <a
                         href={`#${item.id}`}
                         onClick={(e) => scrollToSection(e, item.id)}
-                        className={`font-sans text-[13px] sm:text-[14px] leading-[22px] sm:leading-[26px] transition-all hover:text-accent ${
+                        className={`font-sans text-sm sm:text-[14px] leading-[22px] sm:leading-[26px] transition-all hover:text-accent ${
                           isActive ? "text-accent font-bold" : "text-background font-semibold"
                         }`}
                       >

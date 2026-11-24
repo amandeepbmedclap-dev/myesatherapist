@@ -188,7 +188,7 @@ export function NumberedItem({
     <div className="flex items-start gap-4 sm:gap-6 max-w-[824px]">
       <span
         aria-hidden="true"
-        className="font-heading font-bold text-[32px] leading-[40px] sm:text-[44px] sm:leading-[54px] text-body-text opacity-[0.46] shrink-0 w-[46px] sm:mt-3"
+        className="font-heading font-bold text-[28px] leading-[40px] sm:text-[40px] sm:leading-[54px] text-body-text opacity-[0.46] shrink-0 w-[46px] sm:mt-3"
       >
         {number}
       </span>

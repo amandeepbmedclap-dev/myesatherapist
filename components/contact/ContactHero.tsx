@@ -71,7 +71,7 @@ export function ContactHero() {
             <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-accent text-xl font-bold text-[#04161C]">
               ✓
             </div>
-            <h2 className="heading-h3 text-white">Thank You!</h2>
+            <h2 className="heading-h2 text-white">Thank You!</h2>
             <p className="body-text text-white">Your message has been sent successfully.</p>
           </div>
         ) : (

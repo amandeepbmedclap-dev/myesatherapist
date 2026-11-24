@@ -96,17 +96,17 @@ export function PsdCapabilitiesSection() {
                 className="bg-white rounded-[10px] p-4 sm:p-5 shadow-[0px_2px_4px_rgba(0,0,0,0.15)] flex items-start gap-4"
               >
                 <div className="w-[50px] h-[50px] sm:w-[59px] sm:h-[59px] rounded-full bg-[#AEBBBE33] flex items-center justify-center shrink-0">
-                  <span className="heading-h3 text-[#5F6B6F] font-bold text-[22px] sm:text-[28px] leading-[30px] sm:leading-[36px]">
+                  <span className="heading-h3 text-[#5F6B6F] font-bold text-xl sm:text-[28px] leading-[30px] sm:leading-[36px]">
                     {item.number}
                   </span>
                 </div>
 
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-center gap-2 mb-1.5">
-                    <h3 className="heading-h3 text-color-gradient capitalize text-[20px] sm:text-[24px] leading-tight">
+                    <h3 className="heading-h3 text-color-gradient capitalize">
                       {item.title}
                     </h3>
-                    <span className="bg-primary text-[#FAF7F2] font-semibold text-[12px] sm:text-[14px] px-3 h-[24px] sm:h-[26px] rounded-[16px] flex items-center justify-center shrink-0">
+                    <span className="bg-primary text-[#FAF7F2] font-semibold text-sm sm:text-[14px] px-3 h-[24px] sm:h-[26px] rounded-[16px] flex items-center justify-center shrink-0">
                       {item.framework}
                     </span>
                   </div>
@@ -151,7 +151,7 @@ export function PsdCapabilitiesSection() {
 
                   <div className="flex flex-col justify-center items-start gap-1 flex-1 min-w-0">
                     <div className="flex items-center gap-3">
-                      <h3 className="heading-h3 text-color-gradient capitalize text-[28px] leading-[36px]">
+                      <h3 className="heading-h3 text-color-gradient capitalize">
                         {item.title}
                       </h3>
                       <span className="bg-primary text-[#FAF7F2] font-semibold text-[14px] leading-[26px] px-[13px] h-[26px] rounded-[16px] flex items-center justify-center shrink-0">

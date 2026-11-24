@@ -171,14 +171,14 @@ small,
 
   h2,
   .heading-h2 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 48px;
   }
 
   h3,
   .heading-h3 {
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 28px;
+    line-height: 36px;
   }
 
   h4,
@@ -194,8 +194,8 @@ small,
 
   h1,
   .heading-h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 48px;
   }
 
   h2,
@@ -206,16 +206,16 @@ small,
 
   h3,
   .heading-h3 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 28px;
+    line-height: 36px;
   }
 
   h4,
   h5,
   h6,
   .heading-h4 {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .lead,
@@ -794,9 +794,25 @@ h2 {
   }
 }
 
-/* Blog article v2 typography */
-.article-v2 h2.heading-h2 { font-size: 28px; line-height: 36px; }
-@media (min-width: 640px) { .article-v2 h2.heading-h2 { font-size: 32px; line-height: 40px; } }
-.article-v2 h3.heading-h3 { font-size: 22px; line-height: 30px; }
-.article-v2 p.body-text, .article-v2 li.body-text, .article-v2 .body-text { font-size: 17px; line-height: 29px; }
+/* Blog articles use the same scale: h2 40, h3 28, body 18 */
+.article-v2 h2.heading-h2 { font-size: 40px; line-height: 48px; }
+.article-v2 h3.heading-h3 { font-size: 28px; line-height: 36px; }
+.article-v2 p.body-text, .article-v2 li.body-text, .article-v2 .body-text { font-size: 18px; line-height: 28px; }
+@media (max-width: 768px) {
+  .article-v2 h2.heading-h2 { font-size: 28px; line-height: 36px; }
+}
 .article-v2 [id] { scroll-margin-top: 110px; }
+
+/* The heading tag decides the size, even if a smaller heading class is also present. */
+h1, h1.heading-h1, h1.heading-h2, h1.heading-h3, h1.heading-h4 { font-size: 48px !important; line-height: 56px !important; }
+h2, h2.heading-h1, h2.heading-h2, h2.heading-h3, h2.heading-h4 { font-size: 40px !important; line-height: 48px !important; }
+h3, h3.heading-h1, h3.heading-h2, h3.heading-h3, h3.heading-h4 { font-size: 28px !important; line-height: 36px !important; }
+h4, h4.heading-h1, h4.heading-h2, h4.heading-h3, h4.heading-h4,
+h5, h6 { font-size: 20px !important; line-height: 28px !important; }
+@media (max-width: 1023px) {
+  h1, h1.heading-h1, h1.heading-h2, h1.heading-h3, h1.heading-h4 { font-size: 40px !important; line-height: 48px !important; }
+}
+@media (max-width: 768px) {
+  h1, h1.heading-h1, h1.heading-h2, h1.heading-h3, h1.heading-h4 { font-size: 40px !important; line-height: 48px !important; }
+  h2, h2.heading-h1, h2.heading-h2, h2.heading-h3, h2.heading-h4 { font-size: 28px !important; line-height: 36px !important; }
+}

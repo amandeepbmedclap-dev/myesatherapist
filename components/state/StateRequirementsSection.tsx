@@ -26,7 +26,7 @@ export function StateRequirementsSection({ data }: { data: StateData }) {
     <section className="w-full bg-background py-10 sm:py-14 lg:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[895px] mx-auto">
         <div className="bg-[rgba(232,185,44,0.1)] rounded-[30px] p-6 sm:p-8 lg:p-10 shadow-sm text-center">
-          <h2 className="font-heading text-xl sm:text-2xl lg:text-[24px] xl:text-[28px] font-bold text-primary text-center mb-3 sm:mb-4 tracking-tight">
+          <h2 className="heading-h2 font-heading font-bold text-primary text-center mb-3 sm:mb-4 tracking-tight">
             {title}
           </h2>
 

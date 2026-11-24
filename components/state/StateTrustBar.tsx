@@ -25,8 +25,8 @@ export function StateTrustBar({ data }: { data: StateData }) {
               <Icon aria-hidden className="size-6" strokeWidth={1.8} />
             </span>
             <div className="min-w-0">
-              <div className="font-heading text-[26px] font-bold leading-[30px] text-primary xl:text-[28px]">{value}</div>
-              <div className="mt-1 font-sans text-[14px] leading-[20px] text-body-text">{label}</div>
+              <div className="font-heading text-[28px] font-bold leading-[30px] text-primary xl:text-[28px]">{value}</div>
+              <div className="mt-1 font-sans text-base leading-[22px] text-body-text">{label}</div>
             </div>
           </div>
         ))}

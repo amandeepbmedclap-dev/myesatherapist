@@ -36,7 +36,7 @@ export function AccordionItem({
       >
         <div className="flex items-center gap-3 pr-4">
           {category && (
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#0F5B4C] bg-[#E6F3F0] px-2.5 py-1 rounded-full shrink-0">
+            <span className="text-sm font-semibold uppercase tracking-wider text-[#0F5B4C] bg-[#E6F3F0] px-2.5 py-1 rounded-full shrink-0">
               {category}
             </span>
           )}

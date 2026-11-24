@@ -77,7 +77,7 @@ export function ArticleFeedback({ slug, compact = false }: { slug: string; compa
           <div className="font-sans text-[14px] font-semibold text-primary">What was missing?</div>
           <div className="mt-2 flex flex-wrap gap-2">
             {REASONS.map((r) => (
-              <button key={r} type="button" onClick={() => pickReason(r)} className="rounded-full bg-cream-100 px-3 py-1.5 font-sans text-[13px] text-primary ring-1 ring-line-200 hover:ring-primary/40">
+              <button key={r} type="button" onClick={() => pickReason(r)} className="rounded-full bg-cream-100 px-3 py-1.5 font-sans text-sm text-primary ring-1 ring-line-200 hover:ring-primary/40">
                 {r}
               </button>
             ))}
@@ -85,7 +85,7 @@ export function ArticleFeedback({ slug, compact = false }: { slug: string; compa
         </div>
       )}
       {thanks && (
-        <p className="mt-3 flex items-center gap-2 font-sans text-[13.5px] text-body-text">
+        <p className="mt-3 flex items-center gap-2 font-sans text-sm text-body-text">
           <Check aria-hidden className="size-4 text-[#1D6E72]" /> Thanks, your feedback helps us improve this guide.
         </p>
       )}
@@ -106,7 +106,7 @@ export function ArticleShare({ title, url }: { title: string; url: string }) {
   };
   return (
     <div>
-      <div className="font-sans text-[12px] font-extrabold uppercase tracking-[0.16em] text-[#8A6A12]">Share this guide</div>
+      <div className="font-sans text-sm font-extrabold uppercase tracking-[0.16em] text-[#8A6A12]">Share this guide</div>
       <div className="mt-3 flex flex-wrap gap-2">
         <button
           type="button"
@@ -139,7 +139,7 @@ export function ArticleShare({ title, url }: { title: string; url: string }) {
           <Mail aria-hidden className="size-4" />
         </a>
       </div>
-      {copied && <p className="mt-2 font-sans text-[13px] text-[#1D6E72]">Link copied</p>}
+      {copied && <p className="mt-2 font-sans text-sm text-[#1D6E72]">Link copied</p>}
     </div>
   );
 }
@@ -161,8 +161,8 @@ export function PreferredSource() {
         <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3a12 12 0 0 1-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z" />
       </svg>
       <span className="min-w-0 font-sans">
-        <span className="block text-[14.5px] font-semibold leading-[20px] text-primary">Add as a preferred source</span>
-        <span className="block text-[12.5px] leading-[18px] text-body-text">See My ESA Therapist first in Google</span>
+        <span className="block text-sm font-semibold leading-[20px] text-primary">Add as a preferred source</span>
+        <span className="block text-sm leading-[18px] text-body-text">See My ESA Therapist first in Google</span>
       </span>
     </a>
   );

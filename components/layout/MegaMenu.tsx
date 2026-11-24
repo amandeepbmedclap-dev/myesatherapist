@@ -91,12 +91,12 @@ export function IndexRow({ item, n }: { item: NavItem; n: number }) {
       href={item.href}
       className="group/row grid grid-cols-[36px_1fr_auto] items-baseline gap-x-3 border-b border-line-200 py-3.5 transition-colors hover:border-[#1D6E72]"
     >
-      <span className="font-heading text-[15px] font-bold text-gold-600">{String(n).padStart(2, "0")}</span>
+      <span className="font-heading text-base font-bold text-gold-600">{String(n).padStart(2, "0")}</span>
       <span className="min-w-0">
-        <span className="block font-heading text-[19px] font-bold leading-snug text-[#1A3D4F] transition-colors group-hover/row:text-[#1D6E72]">
+        <span className="block font-heading text-xl font-bold leading-snug text-[#1A3D4F] transition-colors group-hover/row:text-[#1D6E72]">
           {item.label}
         </span>
-        {item.note && <span className="mt-0.5 block text-[13.5px] leading-snug text-body-text">{item.note}</span>}
+        {item.note && <span className="mt-0.5 block text-sm leading-snug text-body-text">{item.note}</span>}
       </span>
       <ArrowRight
         aria-hidden
@@ -109,15 +109,15 @@ export function IndexRow({ item, n }: { item: NavItem; n: number }) {
 function Rail({ title, intro, children }: { title: string; intro: string; children?: ReactNode }) {
   return (
     <div className="flex flex-col rounded-[22px] bg-background p-7 xl:p-8">
-      <div className="font-heading text-[30px] font-bold leading-[1.15] text-primary">{title}</div>
-      <div className="mt-3 text-[15px] leading-relaxed text-body-text">{intro}</div>
+      <div className="font-heading text-[28px] font-bold leading-[1.15] text-primary">{title}</div>
+      <div className="mt-3 text-base leading-relaxed text-body-text">{intro}</div>
       {children}
     </div>
   );
 }
 
 export function Eyebrow({ children, className = "" }: { children: ReactNode; className?: string }) {
-  return <div className={`mb-1 text-[12px] font-bold uppercase tracking-[0.14em] text-gold-600 ${className}`}>{children}</div>;
+  return <div className={`mb-1 text-sm font-bold uppercase tracking-[0.14em] text-gold-600 ${className}`}>{children}</div>;
 }
 
 /** Photo with a caption block underneath on a deep teal ground. */
@@ -126,8 +126,8 @@ function Feature({ src, alt, eyebrow, title, children }: { src: string; alt: str
     <figure className="relative self-start overflow-hidden rounded-[22px] bg-[#1A3D4F]">
       <Image src={src} alt={alt} width={420} height={420} sizes="340px" loading="lazy" className="h-[210px] w-full object-cover xl:h-[230px]" />
       <figcaption className="p-5 text-white">
-        <div className="text-[12px] font-bold uppercase tracking-[0.14em] text-accent">{eyebrow}</div>
-        <div className="mt-1 font-heading text-[21px] font-bold leading-snug">{title}</div>
+        <div className="text-sm font-bold uppercase tracking-[0.14em] text-accent">{eyebrow}</div>
+        <div className="mt-1 font-heading text-xl font-bold leading-snug">{title}</div>
         <div className="mt-4">{children}</div>
       </figcaption>
     </figure>
@@ -182,7 +182,7 @@ export function StateDirectory({
 }) {
   if (!groups.length) {
     return (
-      <div className="py-6 text-[15px] text-body-text">
+      <div className="py-6 text-base text-body-text">
         No match. Try another spelling or{" "}
         <Link href="/state/" className="font-semibold text-[#1D6E72] underline underline-offset-4">
           browse all states
@@ -195,10 +195,10 @@ export function StateDirectory({
     <div className={`${columns} gap-x-8`}>
       {groups.map(([letter, states]) => (
         <div key={letter} className="mb-3 break-inside-avoid">
-          <div className="font-heading text-[17px] font-bold text-gold-600">{letter}</div>
+          <div className="font-heading text-lg font-bold text-gold-600">{letter}</div>
           <ul>
             {states.map((s) => (
-              <li key={s.slug} className="!text-[14.5px] !leading-[1.95]">
+              <li key={s.slug} className="text-sm !leading-[1.95]">
                 <Link
                   href={`/esa-letter-${s.slug}/`}
                   className="font-medium text-[#1A3D4F] decoration-gold-600 decoration-2 underline-offset-4 hover:text-[#1D6E72] hover:underline"
@@ -251,10 +251,10 @@ function LettersPanel({ onNavigate }: { onNavigate: () => void }) {
         eyebrow="100% money-back guarantee"
         title="Every evaluation is backed by our money-back guarantee."
       >
-        <CtaButton href="#pricing" forceStateModal className="w-full !h-[50px] !text-[15px]" onClick={onNavigate}>
+        <CtaButton href="#pricing" forceStateModal className="w-full !h-[50px] text-base" onClick={onNavigate}>
           Start Your ESA Evaluation
         </CtaButton>
-        <Link href="/refund-policy/" className="mt-3 inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-white/80 hover:text-accent">
+        <Link href="/refund-policy/" className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-white/80 hover:text-accent">
           How refunds work <ArrowUpRight aria-hidden className="size-4" />
         </Link>
       </Feature>
@@ -320,7 +320,7 @@ function LearnPanel({ onNavigate }: { onNavigate: () => void }) {
             <li key={item.href} className="border-b border-line-200">
               <Link
                 href={item.href}
-                className="group/m flex items-center justify-between gap-3 py-3.5 text-[15.5px] font-semibold leading-snug text-[#1A3D4F] hover:text-[#1D6E72]"
+                className="group/m flex items-center justify-between gap-3 py-3.5 text-base font-semibold leading-snug text-[#1A3D4F] hover:text-[#1D6E72]"
               >
                 {item.label}
                 <ArrowUpRight aria-hidden className="size-4 shrink-0 text-gold-600 transition-transform group-hover/m:-translate-y-0.5 group-hover/m:translate-x-0.5" />
@@ -341,7 +341,7 @@ function LearnPanel({ onNavigate }: { onNavigate: () => void }) {
             onNavigate();
             openEsaEligibilityChecker();
           }}
-          className="inline-flex h-[48px] w-full items-center justify-center gap-2 rounded-full bg-white text-[15px] font-bold text-[#1A3D4F] transition-colors hover:bg-accent"
+          className="inline-flex h-[48px] w-full items-center justify-center gap-2 rounded-full bg-white text-base font-bold text-[#1A3D4F] transition-colors hover:bg-accent"
         >
           Free Eligibility Checker <ArrowRight aria-hidden className="size-4" />
         </button>
@@ -362,7 +362,7 @@ function AboutPanel() {
       </div>
       <div className="flex flex-col rounded-[22px] bg-[#1A3D4F] p-7 text-white">
         <Eyebrow>Talk to us</Eyebrow>
-        <div className="font-heading text-[22px] font-bold leading-snug">Questions before you start?</div>
+        <div className="font-heading text-xl font-bold leading-snug">Questions before you start?</div>
         <a href={PHONE.href} className="mt-5 flex items-center gap-3 text-[16px] font-semibold hover:text-accent">
           <Phone aria-hidden className="size-[18px] text-accent" /> {PHONE.display}
         </a>

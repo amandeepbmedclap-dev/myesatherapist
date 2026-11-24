@@ -114,7 +114,7 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
           <div className="w-[14px] sm:w-[17px] self-stretch bg-accent rounded-l-[15px] shrink-0" />
           <div className="py-5 sm:py-6 space-y-3 sm:space-y-3.5 flex-1 min-w-0">
             {v2 ? (
-              <div className="font-sans text-[12px] font-extrabold uppercase tracking-[0.16em] text-[#8A6A12]">Quick answer</div>
+              <div className="font-sans text-sm font-extrabold uppercase tracking-[0.16em] text-[#8A6A12]">Quick answer</div>
             ) : (
             <h2 className="heading-h2 text-primary">
               Quick Answer:
@@ -122,9 +122,9 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
             )}
             <div className="space-y-2">
               {v2 ? (
-                <div className="font-heading text-[21px] font-bold leading-[29px] text-primary">{article.questionCallout.question}</div>
+                <div className="font-heading text-xl font-bold leading-[29px] text-primary">{article.questionCallout.question}</div>
               ) : (
-              <h3 className="body-large font-bold text-primary">
+              <h3 className="heading-h3 font-bold text-primary">
                 {article.questionCallout.question}
               </h3>
               )}
@@ -186,23 +186,23 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
                 return (
                   <div
                     key={card.value}
-                    className={`flex flex-col justify-center items-center sm:items-start gap-2.5 rounded-[20px] px-4 py-4 min-h-[168px] text-center sm:text-left ${
+                    className={`no-measure flex h-full flex-col items-center justify-start gap-2.5 rounded-[20px] p-6 min-h-[168px] text-center sm:items-start sm:text-left ${
                       v === "white" ? "bg-white" : v === "gold" ? "bg-accent/20" : ""
                     }`}
                     style={v === "teal" ? { backgroundImage: "var(--color-gradient)" } : undefined}
                   >
                     <h2
-                      className={`heading-h2 m-0 ${
-                        v === "teal" ? "text-background" : "text-body-text"
-                      }`}
-                    >
+ className={`heading-h2 m-0 ${
+ v=== "teal" ? "text-background" : "text-body-text"
+ }`}
+>
                       {card.value}
                     </h2>
-                    <div className="flex flex-col gap-1">
-                      <p className={`body-text ${v === "teal" ? "text-background" : "text-body-text"}`}>
+                    <div className="flex w-full flex-col gap-1">
+                      <p className={`body-text text-balance ${v === "teal" ? "text-background" : "text-body-text"}`}>
                         {card.label}
                       </p>
-                      <p className={`body ${v === "teal" ? "text-background" : "text-body-text"}`}>
+                      <p className={`body whitespace-pre-line ${v === "teal" ? "text-background" : "text-body-text"}`}>
                         {card.description}
                       </p>
                     </div>
@@ -344,14 +344,14 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
 
           {sec.sampleLetter && (
             <div className="w-full my-8 rounded-[20px] bg-white border border-[#DECDBB] shadow-[0px_4px_16px_rgba(0,0,0,0.06)] overflow-hidden">
-              <div className="bg-background border-b border-[#DECDBB] px-6 py-3.5 text-xs sm:text-sm font-sans font-semibold text-body-text">
+              <div className="bg-background border-b border-[#DECDBB] px-6 py-3.5 text-sm sm:text-sm font-sans font-semibold text-body-text">
                 {sec.sampleLetter.disclaimer}
               </div>
               <div className="p-6 sm:p-10 font-sans text-sm sm:text-base leading-relaxed text-body-text space-y-5">
                 <div className="border-b border-[#EAE5DC] pb-4 font-bold text-base sm:text-lg text-[#1D6E72] tracking-wide">
                   {sec.sampleLetter.letterhead}
                 </div>
-                <div className="text-xs sm:text-sm text-body-text font-medium">
+                <div className="text-sm sm:text-sm text-body-text font-medium">
                   {sec.sampleLetter.date}
                 </div>
                 <div className="font-semibold text-primary">
@@ -367,7 +367,7 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
                 <div className="pt-4 border-t border-[#EAE5DC] space-y-1">
                   <p className="font-semibold text-body-text">{sec.sampleLetter.closing}</p>
                   {sec.sampleLetter.signoff.map((s, sIdx) => (
-                    <p key={sIdx} className="text-xs sm:text-sm text-body-text font-medium">
+                    <p key={sIdx} className="text-sm sm:text-sm text-body-text font-medium">
                       {s}
                     </p>
                   ))}
@@ -379,7 +379,7 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
           {sec.checklist && (
             <div className="w-full my-8 rounded-[20px] bg-white border border-[#DECDBB] shadow-[0px_4px_16px_rgba(0,0,0,0.06)] overflow-hidden">
               <div className="color-gradient px-6 sm:px-8 py-5 text-white">
-                <h3 className="font-heading font-bold text-xl sm:text-2xl text-white">
+                <h3 className="heading-h3 font-heading font-bold text-white">
                   {sec.checklist.title}
                 </h3>
               </div>
@@ -390,17 +390,17 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
                       ✓
                     </span>
                     <div className="space-y-0.5">
-                      <h4 className="font-sans font-bold text-sm sm:text-base text-primary">
+                      <h4 className="heading-h4 font-sans font-bold text-primary">
                         {item.title}
                       </h4>
-                      <p className="text-xs sm:text-sm text-body-text font-medium leading-relaxed">
+                      <p className="text-sm sm:text-sm text-body-text font-medium leading-relaxed">
                         {item.description}
                       </p>
                     </div>
                   </div>
                 ))}
                 {sec.checklist.footerNote && (
-                  <div className="mt-6 pt-4 border-t border-[#EAE5DC] text-xs sm:text-sm font-medium text-body-text italic">
+                  <div className="mt-6 pt-4 border-t border-[#EAE5DC] text-sm sm:text-sm font-medium text-body-text italic">
                     {sec.checklist.footerNote}
                   </div>
                 )}
@@ -415,13 +415,13 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
                   <thead>
                     <tr>
                       <th className="bg-[#134c5f] text-center px-4 sm:px-6 py-4 sm:py-5 border-r border-b border-white/15 w-1/2">
-                        <h3 className="font-heading font-normal text-lg sm:text-[22px] lg:text-[25px] leading-tight text-white m-0">
+                        <h3 className="heading-h3 font-heading font-normal text-white m-0">
                           {sec.comparisonTable.col1Header}
                         </h3>
                         <span className="block w-9 h-[3px] bg-[#efbf2f] mx-auto mt-2 rounded-[2px]" />
                       </th>
                       <th className="bg-[#134c5f] text-center px-4 sm:px-6 py-4 sm:py-5 border-b border-white/15 w-1/2">
-                        <h3 className="font-heading font-normal text-lg sm:text-[22px] lg:text-[25px] leading-tight text-white m-0">
+                        <h3 className="heading-h3 font-heading font-normal text-white m-0">
                           {sec.comparisonTable.col2Header}
                         </h3>
                         <span className="block w-9 h-[3px] bg-[#efbf2f] mx-auto mt-2 rounded-[2px]" />
@@ -434,11 +434,11 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
                         key={rIdx}
                         className={rIdx % 2 === 1 ? "bg-[#f5f9fa]" : "bg-white"}
                       >
-                        <td className="relative px-4 sm:px-6 py-4 sm:py-[18px] text-[14px] sm:text-[15px] leading-[1.5] text-body-text border border-[#e3e9eb] align-top">
+                        <td className="relative px-4 sm:px-6 py-4 sm:py-[18px] text-[14px] sm:text-base leading-[1.5] text-body-text border border-[#e3e9eb] align-top">
                           <span className="absolute left-0 top-0 bottom-0 w-1 bg-[#efbf2f]" />
                           {row.mayDeny}
                         </td>
-                        <td className="px-4 sm:px-6 py-4 sm:py-[18px] text-[14px] sm:text-[15px] leading-[1.5] text-body-text border border-[#e3e9eb] align-top">
+                        <td className="px-4 sm:px-6 py-4 sm:py-[18px] text-[14px] sm:text-base leading-[1.5] text-body-text border border-[#e3e9eb] align-top">
                           {row.cannotDeny}
                         </td>
                       </tr>
@@ -740,7 +740,7 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
               {article.disclaimer.label}
             </p>
           )}
-          <h2 className="heading-h3 mt-1 text-[#082935]">{article.disclaimer.title}</h2>
+          <h2 className="heading-h2 mt-1 text-[#082935]">{article.disclaimer.title}</h2>
           <p className="body-text mt-4 text-body-text">{article.disclaimer.intro}</p>
           <ul className="mt-4 space-y-3">
             {article.disclaimer.items.map((item) => (

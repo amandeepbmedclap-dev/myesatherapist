@@ -106,8 +106,8 @@ export function FaqSection({
                 </div>
                 <div className="rounded-[20px] bg-cream-100 p-5">
                   <div className="font-heading text-[20px] font-bold leading-[28px] text-primary">Still have a question?</div>
-                  <div className="mt-1 font-sans text-[14.5px] leading-[23px] text-body-text">Our team is happy to help.</div>
-                  <div className="mt-3 flex flex-col gap-1.5 font-sans text-[15px] font-semibold">
+                  <div className="mt-1 font-sans text-base leading-[26px] text-body-text">Our team is happy to help.</div>
+                  <div className="mt-3 flex flex-col gap-1.5 font-sans text-base font-semibold">
                     <a href="tel:+18884124041" className="text-primary underline decoration-accent decoration-2 underline-offset-4 hover:text-[#1D6E72]">+1 (888) 412-4041</a>
                     <a href="mailto:info@myesatherapist.com" className="text-primary underline decoration-accent decoration-2 underline-offset-4 hover:text-[#1D6E72]">info@myesatherapist.com</a>
                   </div>
@@ -126,8 +126,8 @@ export function FaqSection({
 
             <div className="rounded-[20px] bg-cream-100 p-5 lg:hidden">
               <div className="font-heading text-[20px] font-bold leading-[28px] text-primary">Still have a question?</div>
-              <div className="mt-1 font-sans text-[14.5px] leading-[23px] text-body-text">Our team is happy to help.</div>
-              <div className="mt-3 flex flex-col gap-1.5 font-sans text-[15px] font-semibold">
+              <div className="mt-1 font-sans text-base leading-[26px] text-body-text">Our team is happy to help.</div>
+              <div className="mt-3 flex flex-col gap-1.5 font-sans text-base font-semibold">
                 <a href="tel:+18884124041" className="text-primary underline decoration-accent decoration-2 underline-offset-4">+1 (888) 412-4041</a>
                 <a href="mailto:info@myesatherapist.com" className="text-primary underline decoration-accent decoration-2 underline-offset-4">info@myesatherapist.com</a>
               </div>
@@ -192,9 +192,9 @@ export function FaqSection({
                     </div>
 
                     <div className="flex-1 py-2.5 sm:py-3 px-3.5 sm:px-6 flex items-center justify-between gap-3 sm:gap-4">
-                      <h3 className="heading-h3 text-white m-0">
+                      <h4 className="heading-h4 text-white m-0">
                         {faq.q}
-                      </h3>
+                      </h4>
 
                       <span
                         className={`w-[18px] h-[18px] sm:w-[20px] sm:h-[20px] flex items-center justify-center shrink-0 transition-transform duration-300 ${
@@ -245,7 +245,7 @@ export function FaqRow({ num, q, a, open, onToggle }: { num?: string; q: string;
         className="flex w-full cursor-pointer list-none items-start gap-4 py-5 text-left sm:gap-6 [&::-webkit-details-marker]:hidden"
       >
         <span className="mt-[3px] w-7 shrink-0 font-heading text-[16px] font-bold leading-[24px] text-gold-600 tabular-nums">{num?.replace(/\.$/, "")}</span>
-        <h3 className={`m-0 flex-1 font-heading !text-[18px] font-bold !leading-[27px] transition-colors sm:!text-[19px] ${open ? "text-primary" : "text-primary/90 group-hover:text-primary"}`}>{q}</h3>
+        <h4 className={`heading-h4 m-0 flex-1 font-heading font-bold transition-colors ${open ? "text-primary" : "text-primary/90 group-hover:text-primary"}`}>{q}</h4>
         <span
           aria-hidden
           className={`mt-[2px] flex size-7 shrink-0 items-center justify-center rounded-full ring-1 transition-all duration-300 ${open ? "rotate-45 bg-accent text-primary ring-accent" : "text-primary ring-primary/20 group-hover:ring-primary/40"}`}

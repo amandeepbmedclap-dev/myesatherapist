@@ -157,7 +157,7 @@ export function TrustedByPetOwnersSection({
                 {reviewerName}
               </h3>
 
-              <div className="flex items-center justify-center gap-1 ">
+              <div className="flex items-center justify-center gap-1">
                 {list.map((_, idx) => (
                   <button
                     key={idx}

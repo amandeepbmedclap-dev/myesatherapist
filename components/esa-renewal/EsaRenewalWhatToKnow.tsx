@@ -34,7 +34,7 @@ export function EsaRenewalWhatToKnow() {
     <section className="w-full bg-white py-16 sm:py-20 xl:py-[86px]">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-0 flex flex-col gap-10 lg:gap-12 xl:gap-[60px]">
         <div className="flex flex-col items-center gap-2 text-center">
-          <h2 className="font-heading text-2xl sm:text-4xl lg:text-[34px] xl:text-[44px] font-bold text-primary leading-tight sm:leading-[54px] lg:leading-[42px] xl:leading-[54px] tracking-[-0.00015em]">
+          <h2 className="heading-h2 font-heading font-bold text-primary tracking-[-0.00015em]">
             What Should You Know Before You Start Your ESA Renewal?
           </h2>
           <p className="body-large text-body-text">
@@ -60,7 +60,7 @@ export function EsaRenewalWhatToKnow() {
               </div>
 
               <div className="flex flex-1 flex-col gap-[10px] p-6 sm:py-8 sm:pl-[25px] sm:pr-8 lg:pl-5 lg:pr-6 xl:py-[50px] xl:pl-[25px] xl:pr-[47px]">
-                <h3 className="font-heading font-bold text-xl sm:text-[24px] lg:text-[22px] xl:text-[28px] tracking-[-0.00015em] text-primary leading-snug xl:leading-9">
+                <h3 className="heading-h3 font-heading font-bold tracking-[-0.00015em] text-primary">
                   {card.title}
                 </h3>
                 <p className="body text-body-text">

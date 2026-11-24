@@ -24,7 +24,7 @@ export function EsaRenewalForWhom() {
     <section className="w-full bg-background py-16 sm:py-20 lg:py-24">
       <div className="max-w-[1312px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-[850px] mx-auto mb-14 sm:mb-16 space-y-3">
-          <h2 className="font-heading text-2xl sm:text-4xl lg:text-[34px] xl:text-[44px] font-bold text-primary leading-tight sm:leading-[54px] lg:leading-[42px] xl:leading-[54px] tracking-tight">
+          <h2 className="heading-h2 font-heading font-bold text-primary tracking-tight">
             Who Is the ESA Letter Renewal Service Designed For?
           </h2>
           <p className="body-large text-body-text">
@@ -46,7 +46,7 @@ export function EsaRenewalForWhom() {
             </div>
 
             <div className="p-6 sm:p-8 lg:p-10 space-y-6 flex-1 flex flex-col">
-              <h3 className="font-heading font-bold text-2xl sm:text-[28px] text-primary text-center">
+              <h3 className="heading-h3 font-heading font-bold text-primary text-center">
                 Ideal For
               </h3>
 
@@ -59,7 +59,7 @@ export function EsaRenewalForWhom() {
                       </svg>
                     </div>
 
-                    <p className="font-sans text-sm sm:text-[16px] lg:text-[17px] font-semibold text-body-text leading-[1.5]">
+                    <p className="font-sans text-sm sm:text-[16px] lg:text-lg font-semibold text-body-text leading-[1.5]">
                       {point}
                     </p>
                   </div>
@@ -81,7 +81,7 @@ export function EsaRenewalForWhom() {
             </div>
 
             <div className="p-6 sm:p-8 lg:p-10 space-y-6 flex-1 flex flex-col">
-              <h3 className="font-heading font-bold text-2xl sm:text-[28px] text-[#CC191D] text-center">
+              <h3 className="heading-h3 font-heading font-bold text-[#CC191D] text-center">
                 Not Intended For
               </h3>
 
@@ -95,7 +95,7 @@ export function EsaRenewalForWhom() {
                       </svg>
                     </div>
 
-                    <p className="font-sans text-sm sm:text-[16px] lg:text-[17px] font-semibold text-[#CC191D] leading-[1.5]">
+                    <p className="font-sans text-sm sm:text-[16px] lg:text-lg font-semibold text-[#CC191D] leading-[1.5]">
                       {point}
                     </p>
                   </div>

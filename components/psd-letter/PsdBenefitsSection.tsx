@@ -102,10 +102,10 @@ export function PsdBenefitsSection() {
               )}
 
               <h3
-                className={`heading-h3 capitalize mb-3 mt-2 ${
-                  item.isDark ? "text-background" : "text-color-gradient"
-                }`}
-              >
+ className={`heading-h3 capitalize mb-3 mt-2 ${
+ item.isDark ? "text-background" : "text-color-gradient"
+ }`}
+>
                 {item.title}
               </h3>
 

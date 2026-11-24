@@ -229,9 +229,9 @@ export function PolicyLeftSidebar({ currentSlug, policy }: PolicyLeftSidebarProp
                   <div className="w-full h-[0.5px] bg-white/30 mb-4" />
 
                   <div className="space-y-1 pb-3">
-                    <h2 className="heading-h3 text-background leading-tight">
+                    <h3 className="heading-h3 text-background">
                       Table of Contents
-                    </h2>
+                    </h3>
                     <p className="eyebrow text-accent">
                       On this page
                     </p>

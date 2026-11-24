@@ -282,7 +282,7 @@ function StateCard({ entry }: { entry: StateLawEntry }) {
           )}
         </div>
         <div className="flex flex-col gap-2.5 sm:gap-3 w-full">
-          <h3 className="font-heading font-bold text-[20px] sm:text-[24px] leading-[28px] sm:leading-[32px] text-primary">
+          <h3 className="heading-h3 font-heading font-bold text-primary">
             {entry.name}
           </h3>
           <ul className="flex flex-col gap-2.5 sm:gap-3">
@@ -331,7 +331,7 @@ export function EsaLawsStateSection() {
     <section className="w-full bg-background py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1178px] mx-auto flex flex-col items-center gap-14 sm:gap-[72px]">
         <div className="no-measure flex flex-col items-center gap-4 sm:gap-5 max-w-[1178px] text-center">
-          <h2 className="font-heading font-bold text-[28px] sm:text-[36px] lg:text-[44px] leading-[1.2] lg:leading-[54px] tracking-[-0.00015em] text-primary">
+          <h2 className="heading-h2 font-heading font-bold tracking-[-0.00015em] text-primary">
             ESA Laws by State: Find the Housing Rules Where You Live
           </h2>
           <div className="flex max-w-[1156px] flex-col gap-5 sm:gap-6">
@@ -344,7 +344,7 @@ export function EsaLawsStateSection() {
         </div>
 
         <div className="w-full flex flex-col items-center gap-10 sm:gap-14">
-          <h3 className="font-heading font-bold text-[22px] sm:text-[28px] leading-[1.3] text-primary text-center">
+          <h3 className="heading-h3 font-heading font-bold text-primary text-center">
             State-Specific ESA Laws and Requirements
           </h3>
           <div className="w-full grid grid-cols-1 gap-6 sm:gap-8">

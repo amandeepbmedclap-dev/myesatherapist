@@ -69,10 +69,10 @@ export function ContactSection() {
             <div className="bg-[#F8DFBE]/95 backdrop-blur-sm rounded-[32px] sm:rounded-[40px] p-6 sm:p-10 border border-[#EAC9A0]/60 shadow-2xl space-y-6">
               
               <div className="text-center space-y-2">
-                <h2 className="font-heading text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#1E3942] leading-tight">
+                <h2 className="heading-h2 font-heading font-bold text-[#1E3942]">
                   Request Info
                 </h2>
-                <p className="text-xs sm:text-sm text-body-text font-sans font-medium">
+                <p className="text-sm sm:text-sm text-body-text font-sans font-medium">
                   Feel Free To Connect With Us! (24×7 Available At Your Service)
                 </p>
               </div>
@@ -82,14 +82,14 @@ export function ContactSection() {
                   <div className="w-10 h-10 rounded-full bg-accent text-[#04161C] font-bold text-xl flex items-center justify-center mx-auto">
                     ✓
                   </div>
-                  <h3 className="font-heading text-xl font-bold">Thank You!</h3>
+                  <h3 className="heading-h3 font-heading font-bold">Thank You!</h3>
                   <p className="text-sm font-sans">Your message has been sent successfully.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
-                      <label className="block text-xs sm:text-sm font-sans font-semibold text-[#1E3942]">
+                      <label className="block text-sm sm:text-sm font-sans font-semibold text-[#1E3942]">
                         First Name
                       </label>
                       <input
@@ -103,7 +103,7 @@ export function ContactSection() {
                     </div>
 
                     <div className="space-y-1.5">
-                      <label className="block text-xs sm:text-sm font-sans font-semibold text-[#1E3942]">
+                      <label className="block text-sm sm:text-sm font-sans font-semibold text-[#1E3942]">
                         Last Name
                       </label>
                       <input
@@ -118,7 +118,7 @@ export function ContactSection() {
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="block text-xs sm:text-sm font-sans font-semibold text-[#1E3942]">
+                    <label className="block text-sm sm:text-sm font-sans font-semibold text-[#1E3942]">
                       Email Address
                     </label>
                     <input
@@ -132,7 +132,7 @@ export function ContactSection() {
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="block text-xs sm:text-sm font-sans font-semibold text-[#1E3942]">
+                    <label className="block text-sm sm:text-sm font-sans font-semibold text-[#1E3942]">
                       Message
                     </label>
                     <textarea
@@ -154,7 +154,7 @@ export function ContactSection() {
                       <span className="group-hover:translate-x-1 transition-transform">→</span>
                     </button>
 
-                    <p className="text-xs text-body-text font-sans font-medium text-center">
+                    <p className="text-sm text-body-text font-sans font-medium text-center">
                       Your information is 100% secure and private.
                     </p>
                   </div>
@@ -188,7 +188,7 @@ export function ContactSection() {
                 </div>
 
                 <div>
-                  <div className="text-xs font-sans font-bold text-accent tracking-wider uppercase mb-1">
+                  <div className="text-sm font-sans font-bold text-accent tracking-wider uppercase mb-1">
                     {card.title}
                   </div>
                   <div className="text-base font-sans font-bold text-[#1E3942] group-hover:text-[#1D6E72] transition-colors leading-snug">

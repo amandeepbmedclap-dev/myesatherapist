@@ -35,7 +35,7 @@ export function EsaTrainingBondSection() {
         <div className="flex w-full flex-col items-center gap-8 text-center lg:items-start lg:gap-[2.6vw] lg:text-left xl:gap-[37px]">
           <div className="flex w-full max-w-[626px] flex-col items-center gap-7 lg:max-w-[40vw] lg:items-start lg:gap-[2.6vw] xl:max-w-[626px] xl:gap-14">
             <div className="flex flex-col gap-5 lg:gap-[1.9vw] xl:gap-7">
-              <h2 className="mx-auto max-w-[541px] font-heading text-[28px] font-bold leading-[36px] tracking-[-0.00015em] text-primary sm:text-4xl sm:leading-[46px] lg:mx-0 lg:text-[3.05vw] lg:leading-[3.75vw] xl:text-[44px] xl:leading-[54px]">
+              <h2 className="heading-h2 mx-auto max-w-[541px] font-heading font-bold tracking-[-0.00015em] text-primary lg:mx-0">
                 How Training Strengthens The ESA-Owner Bond
               </h2>
               <p className="body-large text-body-text">
@@ -51,7 +51,7 @@ export function EsaTrainingBondSection() {
             style={{ backgroundImage: TEAL_GRADIENT }}
           >
             <div className="w-[13px] shrink-0 bg-accent" />
-            <blockquote className="flex flex-1 items-center px-5 py-6 font-heading text-lg font-bold leading-7 text-white sm:px-8 sm:text-[20px] lg:px-[1.6vw] lg:py-[1.6vw] lg:text-[1.55vw] lg:leading-[2.2vw] xl:px-6 xl:py-[32px] xl:text-[20px] xl:leading-7">
+            <blockquote className="flex flex-1 items-center px-5 py-6 font-heading text-lg font-bold leading-7 text-white sm:px-8 sm:text-[20px] lg:px-[1.6vw] lg:py-[1.6vw] lg:text-xl lg:leading-[2.2vw] xl:px-6 xl:py-[32px] xl:text-[20px] xl:leading-7">
               “Training Sessions Build More Than Obedience. The Repetition Creates Routine, And Routine Is Genuinely
               Therapeutic, Especially On Harder Days.”
             </blockquote>

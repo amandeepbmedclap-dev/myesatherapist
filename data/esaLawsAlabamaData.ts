@@ -22,7 +22,7 @@ export const ALABAMA_SECTIONS: BlogSection[] = [
     id: "alabama-esa-laws-at-a-glance",
     title: "Alabama ESA Laws At A Glance",
     statCards: [
-      { value: "363A", label: "Alabama’s own Statue", description: "Alabama Human Right Act - housing discrimination", variant: "teal" },
+      { value: "363A", label: "Alabama’s own Statue", description: "Alabama Human Right Act -\nhousing discrimination", variant: "teal" },
       { value: "Moderate", label: "Effect of HUD’s May 2026 change", description: "State laws exits; how the agency treats untrained animals is still settling", variant: "white" },
       { value: "MDHR", label: "Where to escalate", description: "Alabama Department of Human Rights", variant: "gold" },
     ],

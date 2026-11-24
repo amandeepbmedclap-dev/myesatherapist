@@ -36,11 +36,11 @@ export function BlogsFeaturedArticle({
           <div className="w-full lg:w-[53%] xl:w-[701px] min-h-[340px] sm:min-h-[372px] bg-white rounded-[20px] lg:rounded-[28px] p-6 sm:p-8 lg:p-10 xl:p-12 shadow-[0px_8px_30px_rgba(26,61,79,0.08)] lg:-ml-16 xl:-ml-[49px] relative z-10 flex flex-col justify-center space-y-4 sm:space-y-5 my-auto mt-4 lg:mt-auto">
             
             <div className="space-y-3 sm:space-y-4">
-              <h2 className="font-heading text-2xl sm:text-3xl lg:text-[44px] font-bold text-primary leading-tight lg:leading-[54px] tracking-[-0.00015em]">
+              <h2 className="heading-h2 font-heading font-bold text-primary tracking-[-0.00015em]">
                 7 Things to Know Before Getting an ESA Letter
               </h2>
 
-              <p className="font-sans font-semibold text-[15px] sm:text-[18px] text-body-text leading-[24px] sm:leading-[30px] max-w-[541px]">
+              <p className="font-sans font-semibold text-base sm:text-[18px] text-body-text leading-[24px] sm:leading-[30px] max-w-[541px]">
                 Thinking about getting an ESA letter? Here are important things to understand before beginning the process.
               </p>
             </div>

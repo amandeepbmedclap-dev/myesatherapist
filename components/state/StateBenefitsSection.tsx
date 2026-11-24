@@ -97,7 +97,7 @@ function BenefitCard({ title, description, icon }: { title: string; description:
         <Image quality={90} src={icon} alt={title} width={26}
           sizes="26px" height={26} unoptimized className="h-[26px] w-[26px] object-contain" />
       </div>
-      <h4 className="font-heading text-[18px] sm:text-[20px] font-bold text-primary leading-snug">{title}</h4>
+      <h4 className="heading-h4 font-heading font-bold text-primary">{title}</h4>
       <p className="body text-[#5F6B6F]">{description}</p>
     </div>
   );
@@ -256,7 +256,7 @@ export function StateBenefitsSection({ data }: { data: StateData }) {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-5 max-w-[860px] mb-8">
               <div className="flex flex-col gap-4">
-                <h3 className="font-heading text-[22px] md:text-[26px] font-bold text-primary leading-tight whitespace-pre-line">
+                <h3 className="heading-h3 font-heading font-bold text-primary whitespace-pre-line">
                   {financialHeading}
                 </h3>
                 {financialBenefits.map((item, idx) => (
@@ -269,7 +269,7 @@ export function StateBenefitsSection({ data }: { data: StateData }) {
                 ))}
               </div>
               <div className="flex flex-col gap-4">
-                <h3 className="font-heading text-[22px] md:text-[26px] font-bold text-primary leading-tight whitespace-pre-line">
+                <h3 className="heading-h3 font-heading font-bold text-primary whitespace-pre-line">
                   {emotionalHeading}
                 </h3>
                 {emotionalBenefits.map((item, idx) => (
@@ -321,10 +321,10 @@ function BenefitList({
 }) {
   return (
     <div className={`flex h-full flex-col rounded-[26px] p-6 sm:p-7 ${tone === "cream" ? "bg-cream-100" : "bg-[#E7F2EF]"}`}>
-      <h3 className="flex items-center gap-3 !font-sans !text-[12px] font-extrabold uppercase !leading-4 tracking-[0.14em] text-[#8A6A12]">
+      <p className="eyebrow flex items-center gap-3 text-[#8A6A12]">
         <span aria-hidden className="h-px w-8 bg-accent" />
         {heading.replace(/\s*\n\s*/g, " ").replace(/\s*:\s*$/, "")}
-      </h3>
+      </p>
       <ul className="mt-4 flex flex-1 flex-col">
         {items.map((item, idx) => (
           <li key={item.title} className={`flex gap-4 py-5 ${idx > 0 ? "border-t border-primary/10" : "pt-3"} last:pb-0`}>
@@ -332,8 +332,8 @@ function BenefitList({
               <Image quality={90} src={icons[idx]} alt="" width={24} height={24} sizes="24px" unoptimized className="size-6 object-contain" />
             </span>
             <div className="min-w-0">
-              <h4 className="font-heading text-[18px] font-bold leading-[24px] text-primary sm:text-[19px]">{item.title}</h4>
-              <div className="mt-1.5 font-sans text-[15px] leading-[24px] text-body-text">{item.description}</div>
+              <h4 className="heading-h4 font-heading font-bold text-primary">{item.title}</h4>
+              <div className="mt-1.5 font-sans text-base leading-[24px] text-body-text">{item.description}</div>
             </div>
           </li>
         ))}

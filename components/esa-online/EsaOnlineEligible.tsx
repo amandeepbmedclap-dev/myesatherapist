@@ -53,7 +53,7 @@ export function EsaOnlineEligible() {
         />
         <div className="w-full max-w-[628px] lg:max-w-[min(43.6vw,628px)] text-center lg:text-left flex flex-col gap-8 lg:gap-[min(2.2vw,32px)]">
           <div className="flex flex-col gap-4">
-            <h2 className="font-heading text-3xl sm:text-4xl lg:text-[length:min(3.06vw,44px)] font-bold text-primary leading-[1.2] lg:leading-[min(3.75vw,54px)] tracking-[-0.00015em] lg:max-w-[min(32.6vw,470px)]">
+            <h2 className="heading-h2 font-heading font-bold text-primary tracking-[-0.00015em] lg:max-w-[min(32.6vw,470px)]">
               Who May Be Eligible for an ESA Letter?
             </h2>
             <p className="body-large text-body-text lg:max-w-[min(39.4vw,568px)]">
@@ -62,7 +62,7 @@ export function EsaOnlineEligible() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <h3 className="font-heading text-2xl sm:text-[28px] lg:text-[length:min(1.94vw,28px)] font-bold text-primary leading-9 lg:leading-[min(2.5vw,36px)]">
+            <h3 className="heading-h3 font-heading font-bold text-primary">
               Qualifying Conditions
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3 lg:gap-x-[min(1.1vw,16px)] lg:gap-y-[min(0.83vw,12px)]">
@@ -80,13 +80,13 @@ export function EsaOnlineEligible() {
                     unoptimized
                     className="h-7 w-7 object-contain"
                   />
-                  <span className="font-sans text-[16px] sm:text-[18px] lg:text-[length:min(1.25vw,18px)] font-semibold text-primary leading-[30px] lg:leading-[min(2.1vw,30px)]">
+                  <span className="font-sans text-[16px] sm:text-[18px] font-semibold text-primary leading-[30px] lg:leading-[min(2.1vw,30px)]">
                     {c.label}
                   </span>
                 </div>
               ))}
             </div>
-            <p className="font-sans text-base sm:text-[18px] lg:text-[length:min(1.25vw,18px)] text-body-text font-semibold leading-[1.67]">
+            <p className="font-sans text-base sm:text-[18px] text-body-text font-semibold leading-[1.67]">
               Licensed clinicians will refer to established clinical guidelines, including the Diagnostic and Statistical Manual of Mental Disorders (DSM-5), as a standard part of every individualized evaluation.
             </p>
           </div>
@@ -96,7 +96,7 @@ export function EsaOnlineEligible() {
           </GoldCallout>
 
           <div className="flex flex-col gap-4">
-            <h3 className="font-heading text-2xl sm:text-[28px] lg:text-[length:min(1.94vw,28px)] font-bold text-primary leading-9 lg:leading-[min(2.5vw,36px)]">
+            <h3 className="heading-h3 font-heading font-bold text-primary">
               Factors Considered May Include:
             </h3>
             <div className="flex flex-col gap-3 lg:gap-[min(0.83vw,12px)]">
@@ -114,7 +114,7 @@ export function EsaOnlineEligible() {
                     unoptimized
                     className="h-7 w-7 object-contain shrink-0"
                   />
-                  <span className="font-sans text-[16px] sm:text-[18px] lg:text-[length:min(1.25vw,18px)] font-semibold text-primary leading-[28px] lg:leading-[min(2.1vw,30px)]">
+                  <span className="font-sans text-[16px] sm:text-[18px] font-semibold text-primary leading-[28px] lg:leading-[min(2.1vw,30px)]">
                     {factor.text}
                   </span>
                 </div>

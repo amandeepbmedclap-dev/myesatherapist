@@ -50,8 +50,8 @@ export function EsaRenewalTrustCards() {
 
               <div className="hover-surface relative mt-2 flex min-h-[160px] flex-1 flex-col items-center justify-center gap-2 rounded-[20px] bg-white px-4 pt-[60px] pb-[37px] text-center shadow-[0px_2px_4px_rgba(0,0,0,0.15)]">
                 <h3
-                  className="heading-h3 text-color-gradient"
-                >
+ className="heading-h3 text-color-gradient"
+>
                   {card.title}
                 </h3>
                 <p className="body">
