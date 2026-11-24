@@ -344,7 +344,7 @@ export function PricingSection({
     <section id={sectionId} className={`${sectionClassName} ${bgColor} relative overflow-hidden`}>
       <div className="mx-auto flex max-w-[1442px] flex-col items-center gap-10 px-4 sm:px-6 lg:px-4 xl:px-0">
         <div className="mx-auto max-w-[760px] space-y-3 text-center">
-          <h2 className="heading-h2" className={headingClassName}>{heading}</h2>
+          <h2 className={headingClassName}>{heading}</h2>
           <p className="body-large">{descriptionOverride ?? PLANS[defaultPlan].description}</p>
         </div>
 
