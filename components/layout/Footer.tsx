@@ -73,7 +73,7 @@ export function Footer({ bgColor = "bg-background" }: { bgColor?: string }) {
       <div className="mx-auto max-w-[1280px] px-5 sm:px-8 lg:px-10">
         <div className="flex flex-col gap-5 border-b border-white/10 py-7 sm:flex-row sm:items-center sm:justify-between">
           <SiteReviewerBanner placement="footer" />
-          <div className="flex h-11 w-[118px] shrink-0 items-center justify-center rounded-[10px] bg-white px-2.5">
+          <div className="ml-auto flex h-11 w-[118px] shrink-0 items-center justify-center self-end rounded-[10px] bg-white px-2.5 sm:self-auto">
             <span className="relative block h-full w-full">
               <Image quality={90} src="/common/hipaa-logo.webp" alt="HIPAA Compliant" fill className="object-contain" sizes="118px" />
             </span>

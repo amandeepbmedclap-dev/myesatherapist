@@ -5,15 +5,9 @@ import { notFound } from "next/navigation";
 import { TopBanner } from "@/components/layout/TopBanner";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { BlogHeroSection } from "@/components/blogs/BlogHeroSection";
-import { BlogMetaBar } from "@/components/blogs/BlogMetaBar";
-import { BlogTableOfContents } from "@/components/blogs/BlogTableOfContents";
-import { BlogArticleContent } from "@/components/blogs/BlogArticleContent";
-import { BlogGoogleSourceBanner } from "@/components/blogs/BlogGoogleSourceBanner";
-import { BlogAuthorBio } from "@/components/blogs/BlogAuthorBio";
 import { BlogMoreResources } from "@/components/blogs/BlogMoreResources";
-import { BlogNextStep } from "@/components/blogs/BlogNextStep";
 import { CtaBanner } from "@/components/home/CtaBanner";
+import { ArticleLayoutV2 } from "@/components/blogs/v2/ArticleLayoutV2";
 import { getBlogBySlug, getAllBlogs } from "@/data/blogsData";
 import { socialImage, hasSocialImage, withFeatureImage } from "@/data/socialImages";
 import { applySheetSeo } from "@/lib/seo";
@@ -137,50 +131,19 @@ export default async function EsaTrainingBlogPage({ params }: PageProps) {
       <Header />
 
       <main className="flex-1 bg-background">
-        <BlogHeroSection
-          title={article.title}
-          subtitle={article.shortDescription}
-          category={article.category}
-          categorySlug={article.categorySlug}
-          meta={
-            <BlogMetaBar
-              authorName={article.author.name}
-              authorRole={article.author.role}
-              authorCredentials={article.author.credentials}
-              authorImage={article.author.image}
-              publishDate={article.publishDate}
-              lastUpdated={article.lastUpdated}
-              reviewerName={article.reviewedBy.name}
-              reviewerCredentials={article.reviewedBy.credentials}
-              reviewerImage={article.reviewedBy.image}
-            />
-          }
-        />
-
-        <div className="relative w-full">
-          <div className="w-full relative flex flex-col lg:flex-row items-start justify-start z-10 pb-8 lg:pb-12">
-            <BlogTableOfContents items={article.tocItems} />
-            <div className="flex-1 min-w-0 max-w-[960px] xl:max-w-[1020px] px-4 sm:px-8 lg:pl-10 xl:pl-16 lg:pr-8 xl:pr-16 pt-8 sm:pt-10 lg:pt-[84px] xl:pt-[94px]">
-              <BlogArticleContent article={article} />
-            </div>
-          </div>
-        </div>
-
-        <section className="w-full bg-background flex justify-center px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 lg:pt-20 pb-14 sm:pb-20 relative z-30">
-          <BlogGoogleSourceBanner />
-        </section>
-
-        <BlogAuthorBio />
-
-        <BlogNextStep slug={article.slug} categorySlug={article.categorySlug} />
-        <BlogMoreResources currentSlug={article.slug} categorySlug={article.categorySlug} />
+        <ArticleLayoutV2 article={article} />
+        <BlogMoreResources currentSlug={article.slug} categorySlug={article.categorySlug} bg="bg-background" />
 
         <CtaBanner
-          title="Need help with an ESA letter?"
-          description="Connect with a state-licensed mental health professional to discuss your needs and see if an emotional support animal letter may be right for you."
-          buttonText="Start Your Evaluation"
-          buttonHref="#faq"
-          bgColor="bg-background"
+          title={article.bottomCta?.title || "Need help with an ESA letter?"}
+          description={
+            article.bottomCta?.description ||
+            "Connect with a state-licensed mental health professional to discuss your needs and see if an emotional support animal letter may be right for you."
+          }
+          buttonText={article.bottomCta?.buttonText || "Start Your Evaluation"}
+          buttonHref={article.bottomCta?.buttonHref || "#faq"}
+          note={article.bottomCta?.note}
+          bgColor="bg-white"
         />
       </main>
 
