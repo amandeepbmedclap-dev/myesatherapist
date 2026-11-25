@@ -36,7 +36,7 @@ export function AccordionItem({
       >
         <div className="flex items-center gap-3 pr-4">
           {category && (
-            <span className="text-sm font-semibold uppercase tracking-wider text-[#0F5B4C] bg-[#E6F3F0] px-2.5 py-1 rounded-full shrink-0">
+            <span className="text-base font-semibold uppercase tracking-wider text-[#0F5B4C] bg-[#E6F3F0] px-2.5 py-1 rounded-full shrink-0">
               {category}
             </span>
           )}
@@ -56,7 +56,7 @@ export function AccordionItem({
         </div>
       </button>
 
-      <div className={isOpen ? "px-5 md:px-6 pb-6 pt-1 text-body-text text-sm md:text-base leading-relaxed border-t border-slate-100" : "sr-only"}>
+      <div className={isOpen ? "px-5 md:px-6 pb-6 pt-1 text-body-text text-base md:text-base leading-relaxed border-t border-slate-100" : "sr-only"}>
         {typeof answer === "string" ? <p>{answer}</p> : answer}
       </div>
     </div>

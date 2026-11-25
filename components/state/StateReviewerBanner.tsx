@@ -69,7 +69,7 @@ export function StateReviewerBanner({
               </a>
             ) : null}
           </p>
-          <p className="text-sm leading-[20px] text-white/55">Last updated: {updatedDate}</p>
+          <p className="text-base leading-[20px] text-white/55">Last updated: {updatedDate}</p>
         </div>
       </div>
     );
@@ -150,7 +150,7 @@ export function StateReviewerBanner({
                   </a>
                 ) : null}
               </h3>
-              <p className="font-sans font-semibold text-sm sm:text-[14px] leading-tight sm:leading-[26px] text-background">
+              <p className="font-sans font-semibold text-base sm:text-base leading-tight sm:leading-[26px] text-background">
                 Last updated: {updatedDate}
               </p>
             </div>

@@ -137,7 +137,7 @@ export function PsdComparisonTable() {
                   className="flex items-center justify-between min-h-[94px] sm:min-h-[102px] px-2 sm:px-6"
                 >
                   <div className="w-[88px] sm:w-[150px] md:w-[170px] flex items-center justify-center text-center">
-                    <span className="heading-h4 text-sm sm:text-base leading-tight">
+                    <span className="heading-h4 text-base sm:text-base leading-tight">
                       {row.feature}
                     </span>
                   </div>

@@ -162,7 +162,7 @@ export function StateScamsSection({ data }: { data: StateData }) {
                         <X className="w-3.5 h-3.5 stroke-[3]" />
                       </div>
                     </div>
-                    <p className="font-sans text-sm sm:text-sm lg:text-sm font-semibold text-body-text leading-[26px]">
+                    <p className="font-sans text-base sm:text-base lg:text-base font-semibold text-body-text leading-[26px]">
                       {item}
                     </p>
                   </div>

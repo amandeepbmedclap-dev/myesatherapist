@@ -41,10 +41,11 @@ export function StatesPsdCtaSection() {
           <div className="lg:col-span-5 relative w-full h-[280px] sm:h-[340px] lg:h-[380px] flex items-end justify-center lg:justify-end">
             <div className="relative w-full h-full max-w-[440px]">
               <Image
-            quality={90}
+                quality={90}
                 src="/common/cta-banner-background.webp"
                 alt="Woman smiling with golden retriever"
                 fill
+                loading="eager"
                 className="object-contain object-bottom drop-shadow-2xl"
                 sizes="(max-width: 1024px) 100vw, 40vw"
               />

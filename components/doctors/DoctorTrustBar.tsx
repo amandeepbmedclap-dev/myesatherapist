@@ -44,7 +44,7 @@ export function DoctorTrustBar({ doctor }: DoctorTrustBarProps) {
               <div className="font-heading text-xl sm:text-[28px] lg:text-[28px] xl:text-[40px] font-bold text-primary leading-none tracking-tight whitespace-nowrap">
                 {stat.value}
               </div>
-              <div className="font-sans text-sm sm:text-sm font-medium text-body-text mt-2.5 leading-tight">
+              <div className="font-sans text-[14px] font-medium text-body-text mt-2.5 leading-[22px]">
                 {stat.label}
               </div>
             </div>

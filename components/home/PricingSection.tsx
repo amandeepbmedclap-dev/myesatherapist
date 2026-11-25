@@ -229,7 +229,7 @@ function RenderCardsContainer({
               }`}
             >
               {featured && (
-                <span className="absolute -top-3.5 left-6 rounded-full bg-accent px-3.5 py-1 font-sans text-sm font-extrabold uppercase tracking-[0.08em] text-[#163545] shadow-sm sm:left-8">
+                <span className="absolute -top-3.5 left-6 rounded-full bg-accent px-3.5 py-1 font-sans text-base font-extrabold uppercase tracking-[0.08em] text-[#163545] shadow-sm sm:left-8">
                   Most Popular
                 </span>
               )}
@@ -245,12 +245,12 @@ function RenderCardsContainer({
                 <span className={`font-heading text-[48px] font-bold leading-none tracking-tight ${featured ? "text-accent" : "text-primary"}`}>
                   {card.price}
                 </span>
-                <span className={`pb-1.5 font-sans text-[14px] font-semibold leading-5 ${featured ? "text-white/80" : "text-body-text"}`}>
+                <span className={`pb-1.5 font-sans text-base font-semibold leading-5 ${featured ? "text-white/80" : "text-body-text"}`}>
                   one-time fee
                 </span>
               </div>
               {card.note && (
-                <div className={`mt-3 inline-flex w-fit rounded-full px-3 py-1 font-sans text-sm font-bold leading-5 ${featured ? "bg-accent/15 text-accent" : "bg-[#E7F2EF] text-[#1D6E72]"}`}>
+                <div className={`mt-3 inline-flex w-fit rounded-full px-3 py-1 font-sans text-base font-bold leading-5 ${featured ? "bg-accent/15 text-accent" : "bg-[#E7F2EF] text-[#1D6E72]"}`}>
                   {card.note}
                 </div>
               )}
@@ -258,7 +258,7 @@ function RenderCardsContainer({
               <div className="mt-6">
                 <PricingCardButton href={ctaHref} label={card.buttonText} letter={letter} featured={featured} />
               </div>
-              <div className={`mt-3 flex items-center justify-center gap-1.5 font-sans text-sm font-medium leading-5 ${featured ? "text-white/80" : "text-body-text"}`}>
+              <div className={`mt-3 flex items-center justify-center gap-1.5 font-sans text-base font-medium leading-5 ${featured ? "text-white/80" : "text-body-text"}`}>
                 <ShieldCheck aria-hidden className="size-4 shrink-0" /> No hidden fees. Pay once.
               </div>
 

@@ -106,11 +106,11 @@ export function PsdCapabilitiesSection() {
                     <h3 className="heading-h3 text-color-gradient capitalize">
                       {item.title}
                     </h3>
-                    <span className="bg-primary text-[#FAF7F2] font-semibold text-sm sm:text-[14px] px-3 h-[24px] sm:h-[26px] rounded-[16px] flex items-center justify-center shrink-0">
+                    <span className="bg-primary text-[#FAF7F2] font-semibold text-base leading-tight px-3 py-1 rounded-[16px] inline-flex items-center justify-center shrink-0">
                       {item.framework}
                     </span>
                   </div>
-                  <p className="body-text text-body-text text-[14px] sm:text-[16px] leading-[22px] sm:leading-[26px]">
+                  <p className="body-text text-body-text text-base sm:text-[16px] leading-[22px] sm:leading-[26px]">
                     {item.description}
                   </p>
                 </div>
@@ -154,7 +154,7 @@ export function PsdCapabilitiesSection() {
                       <h3 className="heading-h3 text-color-gradient capitalize">
                         {item.title}
                       </h3>
-                      <span className="bg-primary text-[#FAF7F2] font-semibold text-[14px] leading-[26px] px-[13px] h-[26px] rounded-[16px] flex items-center justify-center shrink-0">
+                      <span className="bg-primary text-[#FAF7F2] font-semibold text-base leading-tight px-[13px] py-1 rounded-[16px] inline-flex items-center justify-center shrink-0">
                         {item.framework}
                       </span>
                     </div>

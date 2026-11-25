@@ -59,7 +59,7 @@ export function StateRequirementsSection({ data }: { data: StateData }) {
 
           <div className="max-w-[711px] mx-auto relative overflow-hidden bg-background rounded-[10px] py-3.5 px-4 sm:px-6 shadow-xs flex items-center pl-6 sm:pl-7 text-left">
             <div className="absolute left-0 top-0 bottom-0 w-3 bg-accent rounded-l-[10px]" />
-            <p className="font-sans text-[14px]! leading-[22px]! font-semibold text-body-text">
+            <p className="font-sans text-base! leading-[22px]! font-semibold text-body-text">
               <span className="font-bold text-primary uppercase tracking-wider">
                 {/^important\s*note/i.test(note) ? "IMPORTANT NOTE - " : "IMPORTANT - "}
               </span>

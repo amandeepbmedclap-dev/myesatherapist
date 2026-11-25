@@ -55,7 +55,7 @@ export function FaqAccordionSection() {
                   e.currentTarget.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
                 }}
                 aria-pressed={active}
-                className={`shrink-0 whitespace-nowrap px-5 py-2.5 rounded-full font-sans font-semibold text-[14px] leading-[22px] border transition-colors cursor-pointer ${
+                className={`shrink-0 whitespace-nowrap px-5 py-2.5 rounded-full font-sans font-semibold text-base leading-[22px] border transition-colors cursor-pointer ${
                   active
                     ? "bg-primary text-white border-primary"
                     : "bg-white text-primary border-[#EAE5DC] hover:bg-primary/5"

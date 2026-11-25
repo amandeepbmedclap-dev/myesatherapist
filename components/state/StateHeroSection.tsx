@@ -84,7 +84,7 @@ interface EvaluationFormCardProps {
 }
 
 const INPUT_CLASS =
-  "w-full h-[44px] rounded-[5px] border-[0.2px] border-body-text px-3.5 text-[16px] lg:text-[14px] font-medium text-body-text placeholder:text-body-text/70 focus:outline-none focus:ring-2 focus:ring-primary/25 focus:!border-primary transition-[background-color,border-color,color,box-shadow] duration-150 font-sans";
+  "w-full h-[44px] rounded-[5px] border-[0.2px] border-body-text px-3.5 text-[16px] lg:text-base font-medium text-body-text placeholder:text-body-text/70 focus:outline-none focus:ring-2 focus:ring-primary/25 focus:!border-primary transition-[background-color,border-color,color,box-shadow] duration-150 font-sans";
 
 function inputClass(value: string, settled: boolean) {
   const filled = settled && value.trim().length > 0;
@@ -233,7 +233,7 @@ function EvaluationFormCard({
                 required
                 value={formData.state}
                 onChange={(e) => setFormData({ ...formData, state: e.target.value })}
-                className="h-[44px] w-full cursor-pointer appearance-none rounded-[5px] border-[0.2px] border-primary/30 bg-background px-3.5 pr-10 font-sans text-[16px] font-semibold text-primary focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/25 lg:text-[14px]"
+                className="h-[44px] w-full cursor-pointer appearance-none rounded-[5px] border-[0.2px] border-primary/30 bg-background px-3.5 pr-10 font-sans text-[16px] font-semibold text-primary focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/25 lg:text-base"
               >
                 {STATE_INDEX.map((s) => (
                   <option key={s.slug} value={s.name}>

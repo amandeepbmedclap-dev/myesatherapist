@@ -7,9 +7,6 @@ import { ArticleCtaCard } from "./ArticleCtaCard";
 import { ReadingProgress } from "./ReadingProgress";
 import { ArticleFooter } from "./ArticleFooter";
 
-/** Articles using the redesigned template (pilot). */
-export const ARTICLE_V2 = new Set(["who-can-write-an-esa-letter"]);
-
 const CATEGORY_HREF: Record<string, string> = {
   "esa-guide": "/blog/esa-guide/",
   "esa-training": "/blog/esa-training/",

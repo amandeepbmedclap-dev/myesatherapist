@@ -72,7 +72,7 @@ export function ContactSection() {
                 <h2 className="heading-h2 font-heading font-bold text-[#1E3942]">
                   Request Info
                 </h2>
-                <p className="text-sm sm:text-sm text-body-text font-sans font-medium">
+                <p className="text-base sm:text-base text-body-text font-sans font-medium">
                   Feel Free To Connect With Us! (24×7 Available At Your Service)
                 </p>
               </div>
@@ -83,13 +83,13 @@ export function ContactSection() {
                     ✓
                   </div>
                   <h3 className="heading-h3 font-heading font-bold">Thank You!</h3>
-                  <p className="text-sm font-sans">Your message has been sent successfully.</p>
+                  <p className="text-base font-sans">Your message has been sent successfully.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
-                      <label className="block text-sm sm:text-sm font-sans font-semibold text-[#1E3942]">
+                      <label className="block text-base sm:text-base font-sans font-semibold text-[#1E3942]">
                         First Name
                       </label>
                       <input
@@ -98,12 +98,12 @@ export function ContactSection() {
                         placeholder="First Name"
                         value={formData.firstName}
                         onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                        className="w-full h-[46px] sm:h-[50px] px-4 rounded-[12px] bg-[#F5D8B4]/80 border border-[#E5C49B] font-sans text-sm sm:text-base text-[#1E3942] placeholder-[#A68C6D] focus:outline-none focus:border-[#1E3942] focus:bg-[#FAF0DD] transition-all"
+                        className="w-full h-[46px] sm:h-[50px] px-4 rounded-[12px] bg-[#F5D8B4]/80 border border-[#E5C49B] font-sans text-base sm:text-base text-[#1E3942] placeholder-[#A68C6D] focus:outline-none focus:border-[#1E3942] focus:bg-[#FAF0DD] transition-all"
                       />
                     </div>
 
                     <div className="space-y-1.5">
-                      <label className="block text-sm sm:text-sm font-sans font-semibold text-[#1E3942]">
+                      <label className="block text-base sm:text-base font-sans font-semibold text-[#1E3942]">
                         Last Name
                       </label>
                       <input
@@ -112,13 +112,13 @@ export function ContactSection() {
                         placeholder="Last Name"
                         value={formData.lastName}
                         onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                        className="w-full h-[46px] sm:h-[50px] px-4 rounded-[12px] bg-[#F5D8B4]/80 border border-[#E5C49B] font-sans text-sm sm:text-base text-[#1E3942] placeholder-[#A68C6D] focus:outline-none focus:border-[#1E3942] focus:bg-[#FAF0DD] transition-all"
+                        className="w-full h-[46px] sm:h-[50px] px-4 rounded-[12px] bg-[#F5D8B4]/80 border border-[#E5C49B] font-sans text-base sm:text-base text-[#1E3942] placeholder-[#A68C6D] focus:outline-none focus:border-[#1E3942] focus:bg-[#FAF0DD] transition-all"
                       />
                     </div>
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="block text-sm sm:text-sm font-sans font-semibold text-[#1E3942]">
+                    <label className="block text-base sm:text-base font-sans font-semibold text-[#1E3942]">
                       Email Address
                     </label>
                     <input
@@ -127,12 +127,12 @@ export function ContactSection() {
                       placeholder="your@email.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full h-[46px] sm:h-[50px] px-4 rounded-[12px] bg-[#F5D8B4]/80 border border-[#E5C49B] font-sans text-sm sm:text-base text-[#1E3942] placeholder-[#A68C6D] focus:outline-none focus:border-[#1E3942] focus:bg-[#FAF0DD] transition-all"
+                      className="w-full h-[46px] sm:h-[50px] px-4 rounded-[12px] bg-[#F5D8B4]/80 border border-[#E5C49B] font-sans text-base sm:text-base text-[#1E3942] placeholder-[#A68C6D] focus:outline-none focus:border-[#1E3942] focus:bg-[#FAF0DD] transition-all"
                     />
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="block text-sm sm:text-sm font-sans font-semibold text-[#1E3942]">
+                    <label className="block text-base sm:text-base font-sans font-semibold text-[#1E3942]">
                       Message
                     </label>
                     <textarea
@@ -141,7 +141,7 @@ export function ContactSection() {
                       placeholder="Your Message"
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full p-4 rounded-[12px] bg-[#F5D8B4]/80 border border-[#E5C49B] font-sans text-sm sm:text-base text-[#1E3942] placeholder-[#A68C6D] focus:outline-none focus:border-[#1E3942] focus:bg-[#FAF0DD] transition-all resize-none"
+                      className="w-full p-4 rounded-[12px] bg-[#F5D8B4]/80 border border-[#E5C49B] font-sans text-base sm:text-base text-[#1E3942] placeholder-[#A68C6D] focus:outline-none focus:border-[#1E3942] focus:bg-[#FAF0DD] transition-all resize-none"
                     />
                   </div>
 
@@ -154,7 +154,7 @@ export function ContactSection() {
                       <span className="group-hover:translate-x-1 transition-transform">→</span>
                     </button>
 
-                    <p className="text-sm text-body-text font-sans font-medium text-center">
+                    <p className="text-base text-body-text font-sans font-medium text-center">
                       Your information is 100% secure and private.
                     </p>
                   </div>
@@ -188,7 +188,7 @@ export function ContactSection() {
                 </div>
 
                 <div>
-                  <div className="text-sm font-sans font-bold text-accent tracking-wider uppercase mb-1">
+                  <div className="text-base font-sans font-bold text-accent tracking-wider uppercase mb-1">
                     {card.title}
                   </div>
                   <div className="text-base font-sans font-bold text-[#1E3942] group-hover:text-[#1D6E72] transition-colors leading-snug">

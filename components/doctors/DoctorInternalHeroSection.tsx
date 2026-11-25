@@ -51,7 +51,7 @@ function LinkedInMark({ href, name }: { href: string; name: string }) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`${name} on LinkedIn`}
-      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white text-sm font-sans font-bold hover:opacity-90 transition-opacity align-middle ml-1"
+      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white text-base font-sans font-bold hover:opacity-90 transition-opacity align-middle ml-1"
     >
       {/* Label drawn via CSS so it does not become part of the H1 text. */}
       <span aria-hidden="true" className="before:content-['in']" />

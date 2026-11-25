@@ -120,7 +120,7 @@ export function StatePsdVsEsaSection({ data }: { data: StateData }) {
               <h3 className="heading-h3 font-heading font-bold text-primary">
                 {calloutTitle}
               </h3>
-              <p className="font-sans font-medium text-sm sm:text-[14px] leading-[20px] sm:leading-[22px] text-body-text whitespace-pre-line">
+              <p className="font-sans font-medium text-base sm:text-base leading-[20px] sm:leading-[22px] text-body-text whitespace-pre-line">
                 {calloutText}
               </p>
             </div>

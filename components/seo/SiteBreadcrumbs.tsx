@@ -122,7 +122,7 @@ export function SiteBreadcrumbs({
       {includeSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeLd(schema) }} />
       )}
-      <ol className="no-scrollbar flex min-w-0 items-center gap-x-2 overflow-x-auto whitespace-nowrap font-sans text-sm leading-5 sm:text-[14px]">
+      <ol className="no-scrollbar flex min-w-0 items-center gap-x-2 overflow-x-auto whitespace-nowrap font-sans text-base leading-5 sm:text-base">
         {crumbs.map((crumb, index) => {
           const current = !isBlogPost && index === crumbs.length - 1;
           return (

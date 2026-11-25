@@ -204,7 +204,7 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
               <span className="absolute -right-4 bottom-2 grid size-[74px] rotate-[10deg] place-items-center rounded-full bg-accent text-center text-[#1A3D4F] shadow-[0_0_0_5px_rgba(232,185,44,0.25)]">
                 <span className="leading-none">
                   <span className="block font-heading text-xl font-bold">Free</span>
-                  <span className="mt-0.5 block text-sm font-extrabold tracking-[0.12em]">8 PAGES</span>
+                  <span className="mt-0.5 block text-base font-extrabold tracking-[0.12em]">8 PAGES</span>
                 </span>
               </span>
             </div>
@@ -223,7 +223,7 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
                   className="w-[64px] shrink-0 -rotate-[4deg] rounded shadow-[0_10px_20px_-10px_rgba(26,61,79,0.6)] ring-1 ring-line-200 md:hidden"
                 />
                 <div className="min-w-0 pr-8">
-                  <div className="text-sm font-bold uppercase tracking-[0.14em] text-gold-600">Before you go</div>
+                  <div className="text-base font-bold uppercase tracking-[0.14em] text-gold-600">Before you go</div>
                   <h2 id="exit-title" className="heading-h2 mt-1 font-heading font-bold text-[#1A3D4F]">
                     Take the Renter&apos;s ESA Kit with you.
                   </h2>
@@ -239,7 +239,7 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
                   "Calm answers to the questions landlords ask",
                 ].map((t, i) => (
                   <li key={t} className="flex items-start gap-3 text-base !leading-snug text-[#1A3D4F]">
-                    <span className="grid size-6 shrink-0 place-items-center rounded-full bg-[#1A3D4F] font-heading text-sm font-bold text-accent">
+                    <span className="grid size-7 shrink-0 place-items-center rounded-full bg-[#1A3D4F] font-heading text-base font-bold leading-none text-accent">
                       {i + 1}
                     </span>
                     <span className="pt-0.5 font-semibold">{t}</span>
@@ -275,11 +275,11 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
                   </button>
                 </div>
                 {error && (
-                  <div id="exit-error" role="alert" className="mt-2 text-[14px] font-semibold text-[#B3261E]">
+                  <div id="exit-error" role="alert" className="mt-2 text-base font-semibold text-[#B3261E]">
                     {error}
                   </div>
                 )}
-                <label className="mt-3 flex items-start gap-2.5 text-sm leading-snug text-body-text">
+                <label className="mt-3 flex items-start gap-2.5 text-base leading-snug text-body-text">
                   <input
                     type="checkbox"
                     checked={updates}
@@ -300,12 +300,12 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
                 <button
                   type="button"
                   onClick={checkEligibility}
-                  className="group/e inline-flex min-h-[44px] items-center gap-1.5 text-sm font-semibold text-[#1D6E72]"
+                  className="group/e inline-flex min-h-[44px] items-center gap-1.5 text-base font-semibold text-[#1D6E72]"
                 >
                   Ready now? Check if you qualify, free
                   <ArrowRight aria-hidden className="size-4 transition-transform group-hover/e:translate-x-0.5" />
                 </button>
-                <button type="button" onClick={onClose} className="min-h-[44px] text-[14px] font-medium text-body-text underline underline-offset-4 hover:text-[#1A3D4F]">
+                <button type="button" onClick={onClose} className="min-h-[44px] text-base font-medium text-body-text underline underline-offset-4 hover:text-[#1A3D4F]">
                   No thanks
                 </button>
               </div>
@@ -333,7 +333,7 @@ function ExitDialog({ path, onClose }: { path: string; onClose: () => void }) {
               <button
                 type="button"
                 onClick={checkEligibility}
-                className="group/e mt-5 inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-[#1D6E72]"
+                className="group/e mt-5 inline-flex w-fit items-center gap-1.5 text-base font-semibold text-[#1D6E72]"
               >
                 Check if you qualify, free
                 <ArrowRight aria-hidden className="size-4 transition-transform group-hover/e:translate-x-0.5" />

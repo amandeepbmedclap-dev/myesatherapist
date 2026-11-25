@@ -39,7 +39,7 @@ export function StateAvailableCitiesSection({ data, tone = "cream" }: { data: St
                 </span>
                 <h3 className="heading-h3 mt-5 font-heading font-bold text-primary">{city.name}</h3>
                 {city.description && (
-                  <p className="mt-2 flex-1 font-sans text-sm leading-[24px] text-body-text">{city.description}</p>
+                  <p className="mt-2 flex-1 font-sans text-base leading-[24px] text-body-text">{city.description}</p>
                 )}
               </div>
             ))}
@@ -67,7 +67,7 @@ export function StateAvailableCitiesSection({ data, tone = "cream" }: { data: St
                   </h3>
                 </div>
                 {city.description && (
-                  <p className="font-sans text-sm sm:text-[14px] lg:text-sm text-body-text font-medium leading-relaxed flex-1">
+                  <p className="font-sans text-base sm:text-base lg:text-base text-body-text font-medium leading-relaxed flex-1">
                     {city.description}
                   </p>
                 )}

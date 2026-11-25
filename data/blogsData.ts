@@ -246,6 +246,13 @@ export const BLOG_POSTS: BlogArticle[] = [
       "Not sure if an ESA letter is valid? Use this step-by-step checklist to verify ESA documentation, identify warning signs, and understand housing compliance requirements.",
     shortDescription:
       "The easiest way to verify an ESA letter is to review the provider’s credentials, evaluation process, and compliance with the current housing requirements. Landlords and tenants can also watch for red flags such as ESA registrations, fake certificates, or websites that guarantee approval.",
+    keyHighlights: [
+      "Review the provider’s credentials, the evaluation process, and whether the letter fits current housing requirements.",
+      "A legitimate letter is personalized and includes the professional’s licensing information.",
+      "Registrations, fake certificates, and sites that guarantee approval are warning signs.",
+      "Landlords can check that the provider is licensed and that the letter uses individualized language.",
+      "A landlord can verify the documentation without requiring the tenant’s full diagnosis.",
+    ],
     category: "ESA Guide",
     author: {
       name: "Allyson Valley",
@@ -523,6 +530,13 @@ export const BLOG_POSTS: BlogArticle[] = [
       "Is ESA registration required or legitimate? Learn the truth about ESA registries, ID cards, certificates, and what documentation actually matters for housing.",
     shortDescription:
       "No, ESA registration does not make an animal legally recognized as an emotional support animal. While many websites sell ESA registrations, certificates, and ID cards, the key factor for housing accommodations is proper documentation supporting an individual’s need for an ESA.",
+    keyHighlights: [
+      "ESA registration does not make an animal legally recognized as an emotional support animal.",
+      "There is no official national ESA registry in the United States.",
+      "Certificates, ID cards, vests, and registration numbers are not legal proof.",
+      "What matters for housing is documentation from a licensed professional supporting a disability-related need.",
+      "A landlord cannot require you to buy an ESA registration.",
+    ],
     category: "ESA Guide",
     author: {
       name: "Allyson Valley",
@@ -890,6 +904,13 @@ export const BLOG_POSTS: BlogArticle[] = [
     title: "ESA for Children and Minors: How It Works and Who Signs the Letter",
     shortDescription:
       "For children and minors, the ESA evaluation process includes parental or guardian consent. If the child qualifies, the emotional support animal letter is issued and signed by a licensed mental health professional, not by a parent or guardian.",
+    keyHighlights: [
+      "A child may qualify for an ESA when a licensed professional determines a disability-related need.",
+      "The letter is signed by a licensed mental health professional, not by a parent or guardian.",
+      "Parental or guardian consent is part of the evaluation for a minor.",
+      "An ESA letter for housing is not the same as permission to bring an animal to school.",
+      "A childhood ESA does not automatically carry over to a college dorm. The student needs their own evaluation.",
+    ],
     category: "ESA Guide",
     author: {
       name: "Allyson Valley",
@@ -1226,6 +1247,13 @@ export const BLOG_POSTS: BlogArticle[] = [
     schema: esaLetterSampleSchema,
     title: "ESA Letter Sample: What a Legitimate ESA Letter Looks Like in 2026",
     shortDescription: "A legitimate ESA letter in 2026 should come from a licensed mental health professional and include essentials like provider credentials, clinical determination of a need, and a housing accommodation recommendation. This guide provides an ESA letter sample and explains what a valid ESA letter should include, along with the red flags that may indicate fake or invalid documentation.",
+    keyHighlights: [
+      "A legitimate ESA letter comes from a licensed mental health professional.",
+      "It should include the provider’s credentials, a clinical determination of need, and a housing recommendation.",
+      "The letter should be signed and dated.",
+      "A sample shows the usual contents, but it cannot replace an individual evaluation.",
+      "Registrations and certificates are not a substitute for the letter.",
+    ],
     category: "ESA Guide",
     author: {
       name: "Allyson Valley",
@@ -1484,6 +1512,13 @@ export const BLOG_POSTS: BlogArticle[] = [
     title: "HUD ESA Guidance 2026: What Changed for Emotional Support Animal Housing?",
     shortDescription:
       "HUD’s 2026 ESA guidance changes how emotional support animal housing complaints are handled, shifting greater responsibility to state laws and documentation. Learn what protections remain, what has changed, and how ESA owners can better protect their housing rights.",
+    keyHighlights: [
+      "HUD’s 2026 guidance changes how ESA housing complaints are handled.",
+      "More of the process now depends on state law and the quality of the documentation.",
+      "Fair Housing Act protections for assistance animals have not disappeared.",
+      "An ESA letter can still support a housing request when a landlord asks for documentation.",
+      "Keep current, individualized documentation, and know what to do if a request is denied.",
+    ],
     category: "ESA Guide",
     author: {
       name: "Allyson Valley",
@@ -1730,6 +1765,13 @@ export const BLOG_POSTS: BlogArticle[] = [
     title: "Can a Landlord Deny an Emotional Support Animal? Know What the Law Says",
     shortDescription:
       "Emotional support animal requests are evaluated under Fair Housing Act guidelines rather than standard pet rules. Whether an accommodation is approved often depends on the supporting documentation, housing circumstances, and any relevant exemptions like health or safety issues.",
+    keyHighlights: [
+      "ESA requests are reviewed under the Fair Housing Act, not ordinary pet rules.",
+      "A landlord can deny a request only in limited cases, such as a direct threat or certain housing exemptions.",
+      "Breed and weight rules that apply to pets do not decide an ESA request.",
+      "Approval depends on the documentation, the housing situation, and any health or safety issue with that animal.",
+      "If a request is denied, ask for the reason and follow up with the steps in this article.",
+    ],
     category: "ESA Guide",
     author: {
       name: "Allyson Valley",
@@ -1927,6 +1969,13 @@ export const BLOG_POSTS: BlogArticle[] = [
     title: "What Is an Emotional Support Animal? Everything You Need to Know",
     shortDescription:
       "This complete guide covers everything you need to know about emotional support animals, including how ESAs work, who qualifies, federal ESA laws, housing rights, and the difference between ESAs and service animals. It also explains landlord rules, common misconceptions, and how emotional support animals help improve mental well-being.",
+    keyHighlights: [
+      "An ESA provides comfort through its presence. It is not a task-trained service animal.",
+      "Dogs, cats, and other animals can be ESAs. The species is not what creates ESA status.",
+      "Housing protections come from the Fair Housing Act, not from a registry or certificate.",
+      "ESAs do not have the same public-access rights as service animals, including on most flights.",
+      "Getting an ESA starts with an evaluation by a licensed mental health professional.",
+    ],
     category: "ESA Guide",
     author: {
       name: "Allyson Valley",
@@ -2349,6 +2398,13 @@ export const BLOG_POSTS: BlogArticle[] = [
   schema: conditionsThatMayQualifySchema,
   "title": "Which DSM-5 Conditions Qualify for an ESA? A Condition-by-Condition Guide",
   "shortDescription": "Anxiety, PTSD, depression, ADHD, bipolar disorder, and several other DSM-5 conditions qualify for an emotional support animal. Learn how eligibility is assessed and how licensed professionals determine eligibility for an ESA letter.",
+  keyHighlights: [
+    "Anxiety, PTSD, depression, ADHD, bipolar disorder, and other DSM-5 conditions may be considered.",
+    "A diagnosis by itself does not guarantee an ESA letter.",
+    "A licensed professional looks at symptoms, daily functioning, and whether an animal would help.",
+    "Eligibility is decided one person at a time.",
+    "The letter documents a disability-related need. It does not promise that housing will be approved.",
+  ],
   "category": "Qualifying Conditions",
   "author": {
     "name": "Allyson Valley",
@@ -2555,6 +2611,13 @@ export const BLOG_POSTS: BlogArticle[] = [
   schema: esaForAnxietySchema,
   "title": "ESA for Anxiety: Eligibility, Benefits, and How to Qualify",
   "shortDescription": "An emotional support animal can offer comfort, companionship, and stability for people living with anxiety. For those whose anxiety affects daily life, an ESA may offer meaningful emotional support as part of their care.",
+  keyHighlights: [
+    "Anxiety can be part of an ESA evaluation when it affects daily life.",
+    "An ESA may offer comfort, companionship, and stability. It does not replace treatment.",
+    "A diagnosis of anxiety alone does not automatically qualify someone.",
+    "A state-licensed mental health professional decides whether there is a disability-related need.",
+    "If a letter is issued, it can support a housing accommodation request.",
+  ],
   "category": "Qualifying Conditions",
   "author": {
     "name": "Allyson Valley",
@@ -2774,6 +2837,13 @@ export const BLOG_POSTS: BlogArticle[] = [
   "ogDescription": "Learn the 8 basic obedience commands every emotional support animal should know, including sit, stay, come, down, leave it, quiet, place, and heel.",
   "title": "8 Basic Obedience Commands Every ESA Should Know.",
   "shortDescription": "The 8 basic obedience commands every ESA should know are sit, stay, come, down, leave it, quiet, place, and heel. These commands support better behavior, safety, control, and calmer everyday interactions.",
+  keyHighlights: [
+    "The commands are sit, stay, come, down, leave it, quiet, place, and heel.",
+    "They support safer, calmer behavior in shared housing.",
+    "Training is about manners and control. It does not create legal ESA status.",
+    "Short, consistent practice with praise works better than long sessions.",
+    "Federal housing law does not require a specific training certificate.",
+  ],
   "category": "ESA Training",
   "author": {
     "name": "Allyson Valley",
@@ -2961,6 +3031,13 @@ export const BLOG_POSTS: BlogArticle[] = [
   "metaDescription": "Learn how to qualify for an ESA for depression, who can evaluate your eligibility, and how emotional support animals may help with daily life.",
   "ogDescription": "Learn how to qualify for an ESA for depression, who can evaluate your eligibility, and how emotional support animals may help with daily life.",
   "shortDescription": "Depression may qualify you for an ESA if it affects your daily life and a state-licensed mental health professional determines that an ESA could help. The process involves an individual evaluation of your symptoms and mental health needs. If an ESA is appropriate, the professional may issue an ESA letter.",
+  keyHighlights: [
+    "Depression may qualify someone when it affects daily life and a professional finds a disability-related need.",
+    "The evaluation looks at that person’s symptoms, not the diagnosis alone.",
+    "An ESA may offer companionship and routine. It does not replace therapy or medication.",
+    "If appropriate, a state-licensed professional may issue an ESA letter.",
+    "An ESA does not have the same public-access rights as a service animal.",
+  ],
   "category": "Qualifying Conditions",
   "author": {
     "name": "Allyson Valley, Ph.D., LPC",
@@ -3190,6 +3267,13 @@ export const BLOG_POSTS: BlogArticle[] = [
   metaDescription: "Wondering if PTSD qualifies for an ESA? Explore how eligibility is determined, how an emotional support animal may help, and what housing protections may be available.",
   ogDescription: "Wondering if PTSD qualifies for an ESA? Explore how eligibility is determined, how an emotional support animal may help, and what housing protections may be available.",
   shortDescription: "PTSD can qualify someone for an emotional support animal when a licensed mental health professional determines it’s medically necessary based on symptoms and daily functioning, not just from having a diagnosis alone. The evaluation looks at how symptoms affect daily life and whether an ESA would genuinely help manage them.",
+  keyHighlights: [
+    "PTSD can qualify someone when a licensed professional finds an ESA is appropriate based on symptoms and daily functioning.",
+    "A PTSD diagnosis by itself is not enough.",
+    "An ESA may offer comfort and stability. It does not replace treatment for PTSD.",
+    "Housing protections depend on a valid disability-related need and proper documentation.",
+    "The cause of the trauma does not by itself decide eligibility.",
+  ],
   category: "Qualifying Conditions",
   author: {
     name: "Allyson Valley",
@@ -3411,6 +3495,13 @@ export const BLOG_POSTS: BlogArticle[] = [
     metaDescription: "Learn how to prepare your ESA for rental housing with basic obedience, house training, barking control, calm behavior, vaccinations, and proper ESA documentation.",
     ogDescription: "Learn how to prepare your ESA for rental housing with basic obedience, house training, barking control, calm behavior, vaccinations, and proper ESA documentation.",
     shortDescription: "To prepare your ESA for rental housing, focus on basic obedience, house training, barking control, and calm behavior around neighbors and other animals. Help your ESA adjust to apartment noises, hallways, elevators, and short periods alone. Keep vaccinations and veterinary records updated, and have your ESA housing documentation ready before moving.",
+    keyHighlights: [
+      "Focus on house training, barking, and calm behavior around neighbors and other animals.",
+      "Practice apartment sounds, hallways, elevators, and short periods alone.",
+      "Keep vaccinations and veterinary records current.",
+      "Have the ESA housing letter ready before the move.",
+      "Breed and weight limits for pets do not apply to a qualifying ESA.",
+    ],
     category: "ESA Training",
     author: {
       name: "Allyson Valley",
@@ -3617,6 +3708,13 @@ export const BLOG_POSTS: BlogArticle[] = [
     metaDescription: "Learn whether ESA training is legally required, what the Fair Housing Act says, and how documentation and animal behavior affect housing accommodations.",
     ogDescription: "Learn whether ESA training is legally required, what the Fair Housing Act says, and how documentation and animal behavior affect housing accommodations.",
     shortDescription: "ESA training is not federally required for housing protections. What matters is a legitimate disability-related need, proper documentation from a licensed mental health professional, and an animal that behaves responsibly. Certificates, registries, and paid training packages do not create legal ESA status.",
+    keyHighlights: [
+      "Federal housing law does not require formal ESA training.",
+      "What matters is a disability-related need, a letter from a licensed professional, and responsible behavior.",
+      "Certificates, registries, and paid training packages do not create ESA status.",
+      "An ESA should still be reasonably well behaved in housing.",
+      "An ESA is not a service animal and does not need task training to qualify.",
+    ],
     category: "ESA Training",
     author: {
       name: "Allyson Valley",

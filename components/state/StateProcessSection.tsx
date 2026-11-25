@@ -87,7 +87,7 @@ export function StateProcessSection({ data }: { data: StateData }) {
             >
               <div className="relative row-span-2 hidden size-14 items-center justify-center self-start rounded-full bg-cream-100 sm:flex sm:size-[72px] lg:row-span-1 lg:size-[88px] lg:self-center">
                 <Image quality={90} src={processIcon(step.icon)} alt="" width={30} sizes="30px" height={30} unoptimized className="size-6 object-contain sm:size-[30px]" />
-                <span className="absolute -right-1 -top-1 flex size-7 items-center justify-center rounded-full bg-primary font-sans text-sm font-extrabold text-white">
+                <span className="absolute -right-1 -top-1 flex size-7 items-center justify-center rounded-full bg-primary font-sans text-base font-extrabold leading-none text-white">
                   {step.number}
                 </span>
               </div>
@@ -96,7 +96,7 @@ export function StateProcessSection({ data }: { data: StateData }) {
                   <span className="flex size-10 items-center justify-center rounded-full bg-cream-100 sm:hidden">
                     <Image quality={90} src={processIcon(step.icon)} alt="" width={22} sizes="22px" height={22} unoptimized className="size-[22px] object-contain" />
                   </span>
-                  <span className="font-sans text-sm font-extrabold uppercase tracking-[0.12em] text-[#8A6A12]">Step {step.number}</span>
+                  <span className="font-sans text-base font-extrabold uppercase tracking-[0.12em] text-[#8A6A12]">Step {step.number}</span>
                 </div>
                 <h3 className="heading-h3 mt-2 sm:mt-1 font-heading font-bold text-primary">{step.title}</h3>
               </div>

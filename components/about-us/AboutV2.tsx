@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, CreditCard, HeartHandshake, Laptop, MonitorSmartphone, PawPrint, Receipt, RotateCcw, ShieldCheck, Stethoscope, UserRound, Video } from "lucide-react";
 
-const label = "font-sans text-sm font-extrabold uppercase tracking-[0.16em] text-[#8A6A12]";
+const label = "font-sans text-base font-extrabold uppercase tracking-[0.16em] text-[#8A6A12]";
 
 /** "Why do individuals trust…" as one connected strip of four facts. */
 export function AboutTrustStrip() {
@@ -53,7 +53,7 @@ export function AboutMission() {
           </div>
           <div className="absolute -bottom-6 left-6 right-6 flex items-center gap-3 rounded-[18px] bg-white p-4 shadow-[0_18px_40px_-24px_rgba(26,61,79,0.6)] ring-1 ring-line-200 sm:left-auto sm:right-[-24px] sm:w-[260px]">
             <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-accent text-primary"><HeartHandshake aria-hidden className="size-5" /></span>
-            <span className="font-sans text-sm leading-[19px] text-primary"><b className="block font-semibold">Independent clinical assessment</b>by a licensed provider</span>
+            <span className="font-sans text-base leading-snug text-primary"><b className="block font-semibold">Independent clinical assessment</b>by a licensed provider</span>
           </div>
         </div>
         <div className="pt-6 lg:pt-0">
@@ -134,7 +134,7 @@ export function AboutPolicies() {
                 <h3 className="heading-h3 font-heading font-bold text-primary">{title}</h3>
               </div>
               <p className="mt-4 flex-1 font-sans text-base leading-[24px] text-body-text">{description}</p>
-              <Link href={href} className="mt-5 inline-flex items-center gap-1.5 font-sans text-sm font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4 hover:text-[#1D6E72]">
+              <Link href={href} className="mt-5 inline-flex items-center gap-1.5 font-sans text-base font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4 hover:text-[#1D6E72]">
                 {link} <ArrowRight aria-hidden className="size-4" />
               </Link>
             </div>

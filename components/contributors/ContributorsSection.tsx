@@ -45,7 +45,7 @@ function Badge({ label, value, icon }: { label: string; value: string; icon?: st
             className="w-4 h-4 object-contain"
           />
         </div>
-        <div className="font-heading font-bold text-[14px] leading-[18px] text-primary w-full">
+        <div className="font-heading font-bold text-base leading-[22px] text-primary w-full">
           {label}
         </div>
         <div className="body-small text-body-text mt-1 w-full">{value}</div>

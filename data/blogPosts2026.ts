@@ -276,6 +276,13 @@ export const NEW_BLOG_POSTS: BlogArticle[] = [
       "An emotional support animal (ESA) may offer companionship, comfort, and routine for some people living with bipolar disorder. Learn about potential benefits, ESA eligibility, the mental health evaluation process, and how an ESA letter may support a housing accommodation request.",
     shortDescription:
       "An ESA may help people with bipolar disorder manage emotional distress and loneliness through companionship and comfort. You may qualify if a state-licensed mental health professional determines that an ESA provides disability-related support. An ESA complements, but does not replace, medical treatment.",
+    keyHighlights: [
+      "An ESA may offer companionship, routine, and comfort for some people with bipolar disorder.",
+      "A bipolar diagnosis alone does not guarantee eligibility.",
+      "A state-licensed professional looks at symptoms, daily life, and what the animal actually does for you.",
+      "An ESA complements treatment. It does not replace medication or therapy.",
+      "If a letter is appropriate, it can support a housing accommodation request.",
+    ],
     category: "Qualifying Conditions",
     author: allyson,
     reviewedBy: { ...maxPhillips, date: "October 21, 2026" },
@@ -530,6 +537,13 @@ export const NEW_BLOG_POSTS: BlogArticle[] = [
       "ADHD can affect focus, emotional regulation, and everyday routines. An emotional support animal may offer companionship, comfort, and structure. Learn about ESA eligibility for ADHD, potential benefits, and how the evaluation process works.",
     shortDescription:
       "An ESA may help people with ADHD manage stress and daily routines through companionship and comfort. You may qualify if your symptoms significantly affect daily life and a state-licensed mental health professional determines you have a disability-related need for an ESA. Eligibility is assessed individually, and an ESA does not replace ADHD treatment.",
+    keyHighlights: [
+      "ADHD can affect focus, emotional regulation, and daily routines.",
+      "An ESA may help through companionship, comfort, and structure. It does not treat ADHD.",
+      "An ADHD diagnosis alone does not guarantee an ESA letter.",
+      "Eligibility depends on a disability-related need found in an individual evaluation.",
+      "Housing approval is never guaranteed, even with a letter.",
+    ],
     category: "Qualifying Conditions",
     author: allyson,
     reviewedBy: { ...maxPhillips, date: "October 30, 2026" },

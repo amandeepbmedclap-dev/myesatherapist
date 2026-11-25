@@ -71,7 +71,7 @@ function MobileLinks({ items }: { items: { label: string; href: string; note?: s
           <Link href={item.href} className="flex min-h-[52px] items-center justify-between gap-3 rounded-xl bg-white px-4 py-2.5 ring-1 ring-line-200">
             <span>
               <span className="block text-[16px] font-semibold leading-snug text-[#1A3D4F]">{item.label}</span>
-              {item.note && <span className="block text-sm leading-snug text-body-text">{item.note}</span>}
+              {item.note && <span className="block text-base leading-snug text-body-text">{item.note}</span>}
             </span>
             <ArrowRight aria-hidden className="size-4 shrink-0 text-gold-600" />
           </Link>
@@ -108,7 +108,7 @@ function MobileSheet({ open, close, isPsd }: { open: boolean; close: () => void;
 
         <MobileSection id="learn" title={learn.label} open={section === "learn"} onToggle={() => toggle("learn")}>
           <MobileLinks items={learn.items} />
-          <div className="mb-1 mt-5 text-sm font-bold uppercase tracking-[0.14em] text-gold-600">Most read</div>
+          <div className="mb-1 mt-5 text-base font-bold uppercase tracking-[0.14em] text-gold-600">Most read</div>
           <ul>
             {MOST_READ.map((item) => (
               <li key={item.href} className="border-b border-line-200 last:border-0">
@@ -358,7 +358,7 @@ export function Header() {
                 variant="accent"
                 letter={isPsd ? "psd" : "esa"}
                 forceStateModal
-                className="!h-11 w-auto !gap-1.5 !px-4 !text-[14px] [&_.cta-arrow]:!size-4"
+                className="!h-11 w-auto !gap-1.5 !px-4 !text-base [&_.cta-arrow]:!size-4"
               >
                 Start Evaluation
               </CtaButton>

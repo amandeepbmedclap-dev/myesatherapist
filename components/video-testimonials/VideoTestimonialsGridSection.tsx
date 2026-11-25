@@ -349,7 +349,7 @@ export function VideoTestimonialsGridSection() {
                 </p>
 
                 <div className="text-right pt-2 border-t border-slate-100 sm:border-0">
-                  <span className="font-sans font-semibold text-sm sm:text-[14px] leading-[26px] text-body-text">
+                  <span className="font-sans font-semibold text-base sm:text-base leading-[26px] text-body-text">
                     {review.date}
                   </span>
                 </div>

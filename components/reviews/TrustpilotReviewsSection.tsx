@@ -88,7 +88,7 @@ function ReviewCard({
           <h3 className="heading-h3 font-heading font-bold text-[#2C2C2C]">
             {review.name}
           </h3>
-          <span className="font-sans text-[14px] sm:text-[16px] leading-[20px] text-body-text">
+          <span className="font-sans text-base sm:text-[16px] leading-[20px] text-body-text">
             {review.location} · {review.date}
           </span>
         </div>

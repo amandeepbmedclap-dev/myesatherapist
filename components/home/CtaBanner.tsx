@@ -55,6 +55,7 @@ export function CtaBanner({
             src="/common/cta-banner-background.webp"
             alt="Woman embracing emotional support dog"
             fill
+            loading="eager"
             className="object-contain object-right-bottom"
             sizes="620px"
           />
@@ -90,6 +91,7 @@ export function CtaBanner({
             src="/common/cta-banner-background.webp"
             alt=""
             fill
+            loading="eager"
             className="object-contain object-bottom"
             sizes="(max-width: 1023px) 100vw, 1px"
           />

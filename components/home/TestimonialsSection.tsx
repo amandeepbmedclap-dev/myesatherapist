@@ -108,7 +108,7 @@ export function TestimonialsSection({
                   </span>
                   <span className="absolute inset-x-0 bottom-0 p-6 text-left">
                     <span className="block font-heading text-[28px] font-bold leading-tight text-white">{current.name}</span>
-                    <span className="mt-1 inline-flex items-center gap-1.5 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-accent">
+                    <span className="mt-1 inline-flex items-center gap-1.5 font-sans text-base font-semibold uppercase tracking-[0.1em] text-accent">
                       <Play aria-hidden className="size-3 fill-accent" /> Video review
                     </span>
                   </span>
@@ -154,7 +154,7 @@ function QuoteCard({ review, active, onSelect }: { review: (typeof reviews)[numb
       </span>
       <span className="min-w-0">
         <span className={`block font-sans text-base leading-[24px] sm:text-[16px] sm:leading-[26px] ${active ? "text-white" : "text-body-text"}`}>{review.quote}</span>
-        <span className={`mt-2 block font-sans text-[14px] font-bold ${active ? "text-accent" : "text-primary"}`}>{review.name}</span>
+        <span className={`mt-2 block font-sans text-base font-bold ${active ? "text-accent" : "text-primary"}`}>{review.name}</span>
       </span>
     </button>
   );
