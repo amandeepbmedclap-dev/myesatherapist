@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGES } from "@/data/socialImages";
 import { applySheetSeo } from "@/lib/seo";
 import React from "react";
 import { serializeLd } from "@/lib/site";
@@ -24,6 +25,7 @@ export const metadata: Metadata = applySheetSeo({
     canonical: CANONICAL,
   },
   openGraph: {
+    images: DEFAULT_OG_IMAGES,
     title: "Consent for Telehealth | My ESA Therapist",
     description:
       "Review My ESA Therapist’s telehealth consent information, including virtual care, communication, privacy, and important considerations before receiving services online.",

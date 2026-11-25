@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGES } from "@/data/socialImages";
 import { applySheetSeo } from "@/lib/seo";
 import React from "react";
 import { serializeLd } from "@/lib/site";
@@ -35,6 +36,7 @@ export const metadata: Metadata = applySheetSeo({
     "max-image-preview": "large",
   },
   openGraph: {
+    images: DEFAULT_OG_IMAGES,
     title: "ESA Training: Commands, Tips & Guides | My ESA Therapist",
     description:
       "Explore our full library of ESA training guides from HUD rules and legal requirements to breed-specific tips, FAQs, and expert advice, updated for 2026.",

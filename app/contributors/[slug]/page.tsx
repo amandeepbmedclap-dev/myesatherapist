@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGES } from "@/data/socialImages";
 import { applySheetSeo } from "@/lib/seo";
 import { Metadata } from "next";
 import { serializeLd } from "@/lib/site";
@@ -52,6 +53,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: canonicalUrl,
     },
     openGraph: {
+      images: DEFAULT_OG_IMAGES,
       title,
       description,
       url: canonicalUrl,

@@ -216,3 +216,8 @@ export function withFeatureImage<T>(schema: T, key: string, caption?: string): T
   }
   return next as T;
 }
+
+/** Default 1200x630 share image for pages without a dedicated one. */
+export const DEFAULT_OG_IMAGES = [
+  { url: assetUrl("/og/default-1200x630.jpg"), width: 1200, height: 630, alt: "My ESA Therapist", type: "image/jpeg" },
+];

@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGES } from "@/data/socialImages";
 import { applySheetSeo } from "@/lib/seo";
 import React from "react";
 import { serializeLd } from "@/lib/site";
@@ -22,6 +23,7 @@ export const metadata: Metadata = applySheetSeo({
     canonical: "https://myesatherapist.com/editorial-policy/",
   },
   openGraph: {
+    images: DEFAULT_OG_IMAGES,
     title: "Editorial Policy | My ESA Therapist",
     description:
       "Learn how My ESA Therapist creates, reviews, updates, and maintains accurate, trustworthy, and helpful educational content about emotional support animals and mental health.",

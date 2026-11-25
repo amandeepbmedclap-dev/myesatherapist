@@ -76,6 +76,19 @@ const LEGACY: Record<string, string> = {
   "/new-emotional-support-animal-law-in-california-2022": "/esa-letter-california/",
   "/new-emotional-support-animal-law-in-california-2023": "/esa-letter-california/",
 
+  "/applying-for-an-esa-letter-2": "/blog/esa-guide/how-to-verify-an-esa-letter/",
+  "/applying-for-an-esa-letter-look-out-for-these-red-flags-to-spot-the-fakes": "/blog/esa-guide/how-to-verify-an-esa-letter/",
+  "/benefits-of-esa-letter": "/esa-letter-for-housing/",
+  "/best-emotional-support-animal-letter-services-in-california-2022": "/esa-letter-california/",
+  "/best-emotional-support-animal-letter-services-in-california-2023": "/esa-letter-california/",
+  "/blog/esa-guide/can-landlords-reject-emotional-support-animals": "/blog/esa-guide/can-landlords-deny-emotional-support-animals/",
+  "/can-i-get-an-esa-letter-before-adopting-a-dog": "/blog/esa-guide/emotional-support-animal/",
+  "/difference-between-the-fair-housing-act-and-ada": "/blog/esa-guide/hud-guidance-for-emotional-support-animals/",
+  "/do-i-need-an-esa-letter-or-a-service-dog-certification": "/blog/esa-guide/is-esa-registration-legit/",
+  "/emotional-support-animal-doctor-near-me": "/esa-doctors/",
+  "/emotional-support-animal-law-guide": "/esa-laws/",
+  "/category/uncategorized": "/blog/",
+
   // Common mistyped URLs seen in Search Console / GA4
   "/bloh": "/blog/",
   "/californi": "/esa-letter-california/",
@@ -105,6 +118,15 @@ const GONE = new Set([
   "/wp-login.php",
   "/xmlrpc.php",
   "/wp-admin",
+  "/card",
+  "/card-2",
+  "/chihuahua",
+  "/corgi",
+  "/darren",
+  "/darren-2",
+  "/cut-out",
+  "/dog_1",
+  "/business_01",
 ]);
 
 const IMAGE_MAP = wpImageMap as Record<string, string>;
@@ -204,6 +226,17 @@ export function proxy(request: NextRequest) {
     const url = request.nextUrl.clone();
     url.pathname = "/contributors/";
     return NextResponse.redirect(url, 302);
+  }
+
+  // WordPress attachment pages under an old post (/old-post/some-image) → the post's new home
+  const child = /^(\/[a-z0-9-]+)\/[a-z0-9-]+$/.exec(key);
+  if (child && (LEGACY[child[1]] || GONE.has(child[1]))) {
+    return LEGACY[child[1]] ? redirectTo(request, LEGACY[child[1]]) : gone();
+  }
+
+  // Top-level WordPress media attachment pages (/4-star, /1-2, /darren-circle-image-300x300-1)
+  if (/^\/(\d+(-\d+)*|[a-z0-9-]*(-image|image|-min|-\d+x\d+(-\d+)?|-star(-\d+)?|subheading(-\d+)?|background[a-z0-9-]*|-\d+-\d+))$/.test(key) && !STATES.has(key.slice(1))) {
+    return gone();
   }
 
   const legacy = LEGACY[key] ?? ALIASES[key];

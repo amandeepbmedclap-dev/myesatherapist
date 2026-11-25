@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGES } from "@/data/socialImages";
 import { applySheetSeo } from "@/lib/seo";
 import React from "react";
 import { serializeLd } from "@/lib/site";
@@ -40,6 +41,7 @@ export const metadata: Metadata = applySheetSeo({
     canonical: "https://myesatherapist.com/esa-laws/alabama/",
   },
   openGraph: {
+    images: DEFAULT_OG_IMAGES,
     title: "Alabama ESA Laws: Rules for Tenants & Landlords | My ESA Therapist",
     description:
       "Learn Alabama ESA laws, FHA housing protections, ESA letter requirements, tenant rights, landlord rules, fees, and assistance animal regulations.",

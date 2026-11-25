@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGES } from "@/data/socialImages";
 import { applySheetSeo } from "@/lib/seo";
 import React from "react";
 import { serializeLd } from "@/lib/site";
@@ -23,6 +24,7 @@ export const metadata: Metadata = applySheetSeo({
     "max-image-preview": "large",
   },
   openGraph: {
+    images: DEFAULT_OG_IMAGES,
     title: "Frequently Asked Questions About ESA Letters | My ESA Therapist",
     description:
       "Find answers to frequently asked questions about ESA letters, eligibility, the evaluation process, housing accommodations, and emotional support animals.",
