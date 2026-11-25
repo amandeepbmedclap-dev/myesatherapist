@@ -8,11 +8,15 @@ const allowIndexing = process.env.ALLOW_INDEXING === "true";
 const nextConfig: NextConfig = {
   trailingSlash: true,
   async headers() {
-    if (allowIndexing) return [];
+    const noindex = [{ key: "X-Robots-Tag", value: "noindex, nofollow" }];
+    // Before launch everything is noindex. After launch only the real domain is
+    // indexable; staging and *.vercel.app hosts stay noindex.
+    if (!allowIndexing) return [{ source: "/:path*", headers: noindex }];
     return [
       {
         source: "/:path*",
-        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+        missing: [{ type: "host", value: "myesatherapist.com" }],
+        headers: noindex,
       },
     ];
   },
