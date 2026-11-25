@@ -170,7 +170,7 @@ export async function generateMetadata({ params }: PolicyPageProps): Promise<Met
       siteName: "My ESA Therapist",
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       site: "@MyESATherapist",
       creator: "@MyESATherapist",
       title,

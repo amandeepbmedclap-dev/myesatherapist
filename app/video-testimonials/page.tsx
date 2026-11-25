@@ -38,7 +38,7 @@ export const metadata: Metadata = applySheetSeo({
     images: socialImage("video-testimonials", "Customer video testimonials").openGraph,
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@MyESATherapist",
     creator: "@MyESATherapist",
     title: "ESA Letter Reviews - Video Reviews | My ESA Therapist",

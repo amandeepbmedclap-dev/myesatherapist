@@ -41,7 +41,7 @@ export const metadata: Metadata = applySheetSeo({
     images: socialImage("esa-laws", "Emotional support animal laws by state").openGraph,
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@MyESATherapist",
     creator: "@MyESATherapist",
     title: "ESA Laws 2026: Federal & State Rules | My ESA Therapist",

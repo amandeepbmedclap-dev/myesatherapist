@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       ],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       site: "@MyESATherapist",
       creator: "@MyESATherapist",
       title,

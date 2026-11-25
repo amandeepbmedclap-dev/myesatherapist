@@ -33,7 +33,7 @@ export const metadata: Metadata = applySheetSeo({
     siteName: "My ESA Therapist",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@MyESATherapist",
     creator: "@MyESATherapist",
     title: "HIPAA Compliance & Data Privacy | My ESA Therapist",

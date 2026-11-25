@@ -40,7 +40,7 @@ export const metadata: Metadata = applySheetSeo({
     locale: "en_US",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@MyESATherapist",
     creator: "@MyESATherapist",
     title: "ESA Qualifying Conditions: What Conditions May Qualify? | My ESA Therapist",
