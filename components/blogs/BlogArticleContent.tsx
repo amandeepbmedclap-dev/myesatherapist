@@ -1,11 +1,11 @@
 "use client";
 
+import { BlogCtaBanner } from "@/components/blogs/BlogCtaBanner";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BlogArticle, BlogCalloutBox, BlogQuoteBox } from "@/data/blogsData";
 import { BlogFaqSection } from "@/components/blogs/BlogFaqSection";
-import { CtaButton } from "@/components/common/CtaButton";
 import { FaqRow } from "@/components/home/FaqSection";
 
 interface BlogArticleContentProps {
@@ -593,39 +593,12 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
           {sec.calloutBox && renderCalloutBox(sec.calloutBox)}
 
           {sec.ctaBox && (
-            <div
-              className="w-full relative overflow-hidden rounded-[24px] sm:rounded-[28px] p-7 sm:p-10 lg:p-12 shadow-[0px_10px_30px_rgba(26,61,79,0.18)] my-10 sm:my-12 text-left"
-              style={{ background: "var(--color-gradient)" }}
-            >
-              <div className="absolute right-0 bottom-0 w-[240px] sm:w-[320px] lg:w-[380px] h-[190px] sm:h-[230px] lg:h-[260px] pointer-events-none select-none z-0 opacity-25">
-                <Image
-                  quality={90}
-                  src="/common/cta-section-paw.webp"
-                  alt="Paw print"
-                  fill
-                  sizes="(min-width: 1024px) 380px, 320px"
-                  className="object-contain object-right-bottom"
-                />
-              </div>
-
-              <div className="relative z-10 flex flex-col items-start space-y-4 sm:space-y-5 max-w-[580px]">
-                <h3 className="heading-h3 text-background">
-                  {sec.ctaBox.heading}
-                </h3>
-                <p className="body-text text-background/90 max-w-[540px]">
-                  {sec.ctaBox.description}
-                </p>
-                <div className="pt-2 sm:pt-3">
-                  <CtaButton
-                    href={sec.ctaBox.buttonHref}
-                    stateModal
-                    variant="accent"
-                  >
-                    {sec.ctaBox.buttonText}
-                  </CtaButton>
-                </div>
-              </div>
-            </div>
+            <BlogCtaBanner
+              heading={sec.ctaBox.heading}
+              description={sec.ctaBox.description}
+              buttonText={sec.ctaBox.buttonText}
+              buttonHref={sec.ctaBox.buttonHref}
+            />
           )}
 
           {sec.bannerImage && sec.bannerPosition === "bottom" && (
@@ -659,40 +632,14 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
       ))}
 
       {article.cta && (
-        <div
+        <BlogCtaBanner
           id={article.cta.id || "request-housing-accommodation"}
-          className="w-full relative overflow-hidden rounded-[24px] sm:rounded-[28px] p-7 sm:p-10 lg:p-12 shadow-[0px_10px_30px_rgba(26,61,79,0.18)] my-10 sm:my-14 text-left scroll-mt-28"
-          style={{ background: "var(--color-gradient)" }}
-        >
-          <div className="absolute right-0 bottom-0 w-[240px] sm:w-[320px] lg:w-[380px] h-[190px] sm:h-[230px] lg:h-[260px] pointer-events-none select-none z-0 opacity-25">
-            <Image
-              quality={90}
-              src="/common/cta-section-paw.webp"
-              alt="Paw print"
-              fill
-              sizes="(min-width: 1024px) 380px, 320px"
-              className="object-contain object-right-bottom"
-            />
-          </div>
-
-          <div className="relative z-10 flex flex-col items-start space-y-4 sm:space-y-5 max-w-[560px]">
-            <h3 className="heading-h3 text-background">
-              {article.cta.heading}
-            </h3>
-            <p className="body-text text-background/90 max-w-[540px]">
-              {article.cta.description}
-            </p>
-            <div className="pt-2 sm:pt-3">
-              <CtaButton
-                href={article.cta.buttonHref}
-                stateModal
-                variant="accent"
-              >
-                {article.cta.buttonText}
-              </CtaButton>
-            </div>
-          </div>
-        </div>
+          eyebrow="Ready when you are"
+          heading={article.cta.heading}
+          description={article.cta.description}
+          buttonText={article.cta.buttonText}
+          buttonHref={article.cta.buttonHref}
+        />
       )}
 
       {article.finalThoughts && (
