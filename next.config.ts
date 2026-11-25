@@ -25,12 +25,12 @@ const nextConfig: NextConfig = {
       // Old WordPress booking page now lives on the intake survey.
       {
         source: "/booking",
-        destination: "https://survey.myesatherapist.com/v1",
+        destination: "https://staging.survey.myesatherapist.com/v1",
         statusCode: 301,
       },
       {
         source: "/booking/",
-        destination: "https://survey.myesatherapist.com/v1",
+        destination: "https://staging.survey.myesatherapist.com/v1",
         statusCode: 301,
       },
       {
@@ -95,7 +95,7 @@ const nextConfig: NextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 31536000,
-    qualities: [90, 95, 100],
+    qualities: [85, 90, 95, 100],
     remotePatterns: [
       {
         protocol: "https",

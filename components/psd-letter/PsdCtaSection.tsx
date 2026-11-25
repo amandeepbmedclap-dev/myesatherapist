@@ -59,6 +59,7 @@ export function PsdCtaSection() {
             src="/common/cta-banner-background.webp"
             alt="Woman embracing psychiatric service dog"
             fill
+            loading="eager"
             className="object-contain object-right-bottom"
             sizes="(max-width: 1280px) 490px, 653px"
           />
@@ -116,6 +117,7 @@ export function PsdCtaSection() {
             src="/common/cta-banner-background.webp"
             alt="Woman embracing psychiatric service dog"
             fill
+            loading="eager"
             className="object-contain object-bottom"
             sizes="(max-width: 1023px) 100vw, 1px"
           />
