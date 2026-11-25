@@ -137,7 +137,7 @@ export function ComparisonTable() {
                   <div />
                   <div className="px-1.5 sm:px-2 flex flex-col items-center justify-center text-center gap-1">
                     {row.othersType === "cross" ? <RedCrossIcon /> : <WarningOrangeIcon />}
-                    <span className="hidden sm:block font-sans font-medium text-sm md:text-sm leading-[17px] text-body-text">
+                    <span className="hidden sm:block font-sans font-medium text-base md:text-base leading-5 text-body-text">
                       {row.others}
                     </span>
                   </div>
@@ -160,7 +160,7 @@ export function ComparisonTable() {
               {comparisonRows.map((row, idx) => (
                 <div key={idx} className="h-16 sm:h-[80px] px-1.5 sm:px-2.5 flex flex-col items-center justify-center text-center gap-1">
                   <GreenCheckIcon />
-                  <span className="hidden sm:block font-sans font-medium text-sm md:text-sm leading-[17px] text-background">
+                  <span className="hidden sm:block font-sans font-medium text-base md:text-base leading-5 text-background">
                     {row.myEsa}
                   </span>
                 </div>

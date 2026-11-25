@@ -9,7 +9,7 @@ export function EsaTrainingAnswerCard() {
   return (
     <div className="relative overflow-hidden rounded-[28px] bg-[#1A3D4F] p-7 text-white shadow-[0_40px_70px_-40px_rgba(26,61,79,0.8)] sm:p-9">
       <div aria-hidden className="absolute -right-16 -top-16 size-52 rounded-full bg-accent/15" />
-      <div className="relative text-sm font-bold uppercase tracking-[0.16em] text-accent">The short answer</div>
+      <div className="relative text-base font-bold uppercase tracking-[0.16em] text-accent">The short answer</div>
       <h2 className="heading-h2 relative mt-3 font-heading font-bold text-white">
         No. Training Isn&apos;t Legally Required.
       </h2>

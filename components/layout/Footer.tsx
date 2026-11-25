@@ -110,7 +110,7 @@ export function Footer({ bgColor = "bg-background" }: { bgColor?: string }) {
                     ) : (
                       <span className="block text-base leading-[22px] text-white">{main}</span>
                     )}
-                    <span className="block text-sm leading-[20px] text-white/55">{sub}</span>
+                    <span className="block text-base leading-[20px] text-white/55">{sub}</span>
                   </span>
                 </li>
               ))}
@@ -118,7 +118,7 @@ export function Footer({ bgColor = "bg-background" }: { bgColor?: string }) {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 border-t border-white/10 py-6 font-sans text-sm leading-[20px] text-white/55 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-2 border-t border-white/10 py-6 font-sans text-base leading-[20px] text-white/55 sm:flex-row sm:items-center sm:justify-between">
           <p>&copy; 2026 My ESA Therapist. All rights reserved.</p>
           <p>
             <Link href="/" className="text-white/75 hover:text-accent">myesatherapist.com</Link>

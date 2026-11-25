@@ -36,15 +36,15 @@ export function ArticleHero({
           {p.image ? <Image src={p.image} alt={p.name} fill sizes="44px" className="object-cover" /> : null}
         </span>
         <span className="min-w-0 font-sans leading-tight">
-          <span className="block text-sm text-body-text">{label}</span>
+          <span className="block text-base text-body-text">{label}</span>
           {href ? (
-            <Link href={href} className="block truncate text-sm font-semibold text-primary underline decoration-accent/70 decoration-2 underline-offset-4 hover:text-[#1D6E72]">
+            <Link href={href} className="block truncate text-base font-semibold text-primary underline decoration-accent/70 decoration-2 underline-offset-4 hover:text-[#1D6E72]">
               {p.name}
             </Link>
           ) : (
-            <span className="block truncate text-sm font-semibold text-primary">{p.name}</span>
+            <span className="block truncate text-base font-semibold text-primary">{p.name}</span>
           )}
-          {p.credentials ? <span className="block truncate text-sm text-body-text/80">{p.credentials}</span> : null}
+          {p.credentials ? <span className="block truncate text-base text-body-text/80">{p.credentials}</span> : null}
         </span>
       </div>
     );
@@ -55,7 +55,7 @@ export function ArticleHero({
       <span aria-hidden className="pointer-events-none absolute -right-40 -top-40 size-[520px] rounded-full bg-[radial-gradient(closest-side,rgba(232,185,44,0.16),transparent)]" />
       <div className={`relative mx-auto grid max-w-[1280px] gap-10 ${highlights?.length ? "lg:grid-cols-[minmax(0,1fr)_420px] lg:gap-14" : ""}`}>
         <div className="min-w-0 self-center">
-          <div className="flex flex-wrap items-center gap-2.5 font-sans text-sm">
+          <div className="flex flex-wrap items-center gap-2.5 font-sans text-base">
             <Link href={categoryHref} className="rounded-full bg-primary px-3.5 py-1.5 font-semibold text-white hover:bg-[#1D6E72]">
               {category}
             </Link>
@@ -72,8 +72,8 @@ export function ArticleHero({
             {person(author, "Written by")}
             {person(reviewer, "Medically reviewed by")}
             <div className="font-sans leading-tight">
-              <span className="block text-sm text-body-text">Last updated</span>
-              <span className="block text-sm font-semibold text-primary">{updated}</span>
+              <span className="block text-base text-body-text">Last updated</span>
+              <span className="block text-base font-semibold text-primary">{updated}</span>
             </div>
           </div>
         </div>
@@ -81,14 +81,14 @@ export function ArticleHero({
         {highlights?.length ? (
           <aside aria-labelledby="key-highlights" className="relative self-center">
             <div className="relative rounded-[26px] bg-white p-6 shadow-[0_30px_60px_-40px_rgba(26,61,79,0.55)] ring-1 ring-line-200 sm:p-7">
-              <span aria-hidden className="absolute -top-3 left-7 rounded-full bg-accent px-3.5 py-1 font-sans text-sm font-extrabold uppercase tracking-[0.14em] text-primary">
+              <span aria-hidden className="absolute -top-3 left-7 rounded-full bg-accent px-3.5 py-1 font-sans text-base font-extrabold uppercase tracking-[0.14em] text-primary">
                 At a glance
               </span>
               <h2 id="key-highlights" className="heading-h2 font-heading font-bold text-primary">Key highlights</h2>
               <ol className="mt-4 space-y-3.5">
                 {highlights.map((h, i) => (
                   <li key={i} className="flex gap-3 font-sans text-base leading-[24px] text-body-text">
-                    <span className="mt-[1px] flex size-6 shrink-0 items-center justify-center rounded-[8px] bg-[#E7F2EF] text-sm font-bold text-[#1D6E72]">{i + 1}</span>
+                    <span className="mt-[1px] flex size-7 shrink-0 items-center justify-center rounded-[8px] bg-[#E7F2EF] text-base font-bold leading-none text-[#1D6E72]">{i + 1}</span>
                     <span>{h}</span>
                   </li>
                 ))}

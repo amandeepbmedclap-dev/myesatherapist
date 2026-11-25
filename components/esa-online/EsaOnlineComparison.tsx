@@ -110,7 +110,7 @@ export function EsaOnlineComparison() {
               {ROWS.map((row) => (
                 <div key={row.feature} className="flex items-center justify-between h-[84px] sm:h-[92px] px-2 sm:px-6">
                   <div className="w-[88px] sm:w-[150px] md:w-[170px] flex items-center justify-center text-center">
-                    <span className="font-heading font-bold text-sm sm:text-base md:text-[16px] text-primary leading-tight">{row.feature}</span>
+                    <span className="font-heading font-bold text-base sm:text-base md:text-[16px] text-primary leading-tight">{row.feature}</span>
                   </div>
                   <div className="w-[130px] sm:w-[210px] md:w-[230px] shrink-0" />
                   <div className="w-[96px] sm:w-[150px] md:w-[170px] flex flex-col items-center justify-center text-center px-1 gap-1.5">

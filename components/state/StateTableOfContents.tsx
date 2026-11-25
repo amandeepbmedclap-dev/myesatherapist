@@ -212,7 +212,7 @@ export function StateTableOfContents({ stateName, data }: Props) {
                       <a
                         href={`#${item.id}`}
                         onClick={(e) => scrollToSection(e, item.id)}
-                        className={`font-sans text-sm sm:text-[14px] leading-[22px] sm:leading-[26px] transition-all hover:text-accent ${
+                        className={`font-sans text-base sm:text-base leading-[22px] sm:leading-[26px] transition-all hover:text-accent ${
                           isActive ? "text-accent font-bold" : "text-background font-semibold"
                         }`}
                       >

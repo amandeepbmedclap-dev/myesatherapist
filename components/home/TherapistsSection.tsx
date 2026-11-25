@@ -243,7 +243,7 @@ export function TherapistsSection({
         )}
 
         {licensureNote && (
-          <div className="mx-auto mt-8 max-w-[900px] text-center font-sans text-sm leading-[21px] text-body-text lg:mt-10">
+          <div className="mx-auto mt-8 max-w-[900px] text-center font-sans text-base leading-[21px] text-body-text lg:mt-10">
             {noteMatch ? (
               <>
                 <strong className="font-bold text-primary">{noteMatch}</strong> {licensureNote.replace(/^A Note on Licensure Levels:?\s*/i, "")}

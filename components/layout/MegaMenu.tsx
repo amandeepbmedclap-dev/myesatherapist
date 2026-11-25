@@ -96,7 +96,7 @@ export function IndexRow({ item, n }: { item: NavItem; n: number }) {
         <span className="block font-heading text-xl font-bold leading-snug text-[#1A3D4F] transition-colors group-hover/row:text-[#1D6E72]">
           {item.label}
         </span>
-        {item.note && <span className="mt-0.5 block text-sm leading-snug text-body-text">{item.note}</span>}
+        {item.note && <span className="mt-0.5 block text-base leading-snug text-body-text">{item.note}</span>}
       </span>
       <ArrowRight
         aria-hidden
@@ -117,7 +117,7 @@ function Rail({ title, intro, children }: { title: string; intro: string; childr
 }
 
 export function Eyebrow({ children, className = "" }: { children: ReactNode; className?: string }) {
-  return <div className={`mb-1 text-sm font-bold uppercase tracking-[0.14em] text-gold-600 ${className}`}>{children}</div>;
+  return <div className={`mb-1 text-base font-bold uppercase tracking-[0.14em] text-gold-600 ${className}`}>{children}</div>;
 }
 
 /** Photo with a caption block underneath on a deep teal ground. */
@@ -126,7 +126,7 @@ function Feature({ src, alt, eyebrow, title, children }: { src: string; alt: str
     <figure className="relative self-start overflow-hidden rounded-[22px] bg-[#1A3D4F]">
       <Image src={src} alt={alt} width={420} height={420} sizes="340px" loading="lazy" className="h-[210px] w-full object-cover xl:h-[230px]" />
       <figcaption className="p-5 text-white">
-        <div className="text-sm font-bold uppercase tracking-[0.14em] text-accent">{eyebrow}</div>
+        <div className="text-base font-bold uppercase tracking-[0.14em] text-accent">{eyebrow}</div>
         <div className="mt-1 font-heading text-xl font-bold leading-snug">{title}</div>
         <div className="mt-4">{children}</div>
       </figcaption>
@@ -198,7 +198,7 @@ export function StateDirectory({
           <div className="font-heading text-lg font-bold text-gold-600">{letter}</div>
           <ul>
             {states.map((s) => (
-              <li key={s.slug} className="text-sm !leading-[1.95]">
+              <li key={s.slug} className="text-base !leading-[1.95]">
                 <Link
                   href={`/esa-letter-${s.slug}/`}
                   className="font-medium text-[#1A3D4F] decoration-gold-600 decoration-2 underline-offset-4 hover:text-[#1D6E72] hover:underline"
@@ -236,7 +236,7 @@ function LettersPanel({ onNavigate }: { onNavigate: () => void }) {
   return (
     <div className="grid grid-cols-[280px_1fr_300px] gap-8 xl:grid-cols-[310px_1fr_330px] xl:gap-10">
       <Rail title={nav.title} intro={nav.intro}>
-        <div className="mt-auto pt-6 text-[14px] leading-relaxed text-body-text">
+        <div className="mt-auto pt-6 text-base leading-relaxed text-body-text">
           Not sure where to start? <CheckerLink onNavigate={onNavigate}>Check your eligibility for free</CheckerLink>
         </div>
       </Rail>
@@ -254,7 +254,7 @@ function LettersPanel({ onNavigate }: { onNavigate: () => void }) {
         <CtaButton href="#pricing" forceStateModal className="w-full !h-[50px] text-base" onClick={onNavigate}>
           Start Your ESA Evaluation
         </CtaButton>
-        <Link href="/refund-policy/" className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-white/80 hover:text-accent">
+        <Link href="/refund-policy/" className="mt-3 inline-flex items-center gap-1.5 text-base font-semibold text-white/80 hover:text-accent">
           How refunds work <ArrowUpRight aria-hidden className="size-4" />
         </Link>
       </Feature>
@@ -280,14 +280,14 @@ function StatesPanel() {
               <Link
                 key={slug}
                 href={`/esa-letter-${slug}/`}
-                className="rounded-full border border-line-200 bg-white px-3.5 py-1.5 text-[14px] font-semibold text-[#1A3D4F] transition-colors hover:border-[#1D6E72] hover:text-[#1D6E72]"
+                className="rounded-full border border-line-200 bg-white px-3.5 py-1.5 text-base font-semibold text-[#1A3D4F] transition-colors hover:border-[#1D6E72] hover:text-[#1D6E72]"
               >
                 {s.name}
               </Link>
             );
           })}
         </div>
-        <Link href="/esa-laws/" className="mt-auto inline-flex items-center gap-1.5 pt-6 text-[14px] font-semibold text-[#1D6E72] hover:underline">
+        <Link href="/esa-laws/" className="mt-auto inline-flex items-center gap-1.5 pt-6 text-base font-semibold text-[#1D6E72] hover:underline">
           ESA laws by state <ArrowUpRight aria-hidden className="size-4" />
         </Link>
       </Rail>
@@ -303,7 +303,7 @@ function LearnPanel({ onNavigate }: { onNavigate: () => void }) {
   return (
     <div className="grid grid-cols-[280px_1fr_1fr_280px] gap-8 xl:grid-cols-[310px_1fr_1fr_300px] xl:gap-10">
       <Rail title={nav.title} intro={nav.intro}>
-        <Link href="/blog/" className="mt-auto inline-flex items-center gap-1.5 pt-6 text-[14px] font-semibold text-[#1D6E72] hover:underline">
+        <Link href="/blog/" className="mt-auto inline-flex items-center gap-1.5 pt-6 text-base font-semibold text-[#1D6E72] hover:underline">
           All articles <ArrowUpRight aria-hidden className="size-4" />
         </Link>
       </Rail>
@@ -369,7 +369,7 @@ function AboutPanel() {
         <a href={`mailto:${EMAIL}`} className="mt-3 flex items-center gap-3 text-[16px] font-semibold hover:text-accent">
           <Mail aria-hidden className="size-[18px] text-accent" /> {EMAIL}
         </a>
-        <Link href="/contact-us/" className="mt-auto inline-flex items-center gap-1.5 pt-6 text-[14px] font-semibold text-accent hover:underline">
+        <Link href="/contact-us/" className="mt-auto inline-flex items-center gap-1.5 pt-6 text-base font-semibold text-accent hover:underline">
           Contact page <ArrowUpRight aria-hidden className="size-4" />
         </Link>
       </div>

@@ -51,7 +51,7 @@ export function CategoryHubExplorer({
         <div aria-hidden className="absolute -bottom-48 -left-24 size-[420px] rounded-full bg-[#1D6E72]/[0.06]" />
         <div className="relative mx-auto grid max-w-[1278px] gap-10 px-4 pb-14 pt-6 sm:px-6 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)] lg:items-center lg:gap-14 lg:pb-20 lg:pt-10 xl:px-0">
           <div>
-            <div className="text-sm font-bold uppercase tracking-[0.16em] text-gold-600">The My ESA Therapist Journal · {name}</div>
+            <div className="text-base font-bold uppercase tracking-[0.16em] text-gold-600">The My ESA Therapist Journal · {name}</div>
             <h1 className="heading-h1 mt-3 max-w-[620px] text-primary">{title}</h1>
             <div className="mt-4 max-w-[600px] space-y-4 text-lg leading-[1.7] text-body-text [&_p]:text-lg [&_p]:leading-[1.7]">{intro}</div>
 
@@ -91,7 +91,7 @@ export function CategoryHubExplorer({
                   Search
                 </button>
               </div>
-              <div aria-live="polite" className="mt-3 min-h-[24px] text-[14px]">
+              <div aria-live="polite" className="mt-3 min-h-[24px] text-base">
                 {searching && (
                   <span className="font-semibold text-[#1A3D4F]">
                     {results.length} {results.length === 1 ? "article" : "articles"} found.{" "}
@@ -111,7 +111,7 @@ export function CategoryHubExplorer({
               ].map(([v, l]) => (
                 <div key={l} className="flex items-baseline gap-2">
                   <span className="font-heading text-[28px] font-bold leading-none text-[#1A3D4F]">{v}</span>
-                  <span className="text-[14px] text-body-text">{l}</span>
+                  <span className="text-base text-body-text">{l}</span>
                 </div>
               ))}
             </div>
@@ -122,7 +122,7 @@ export function CategoryHubExplorer({
               <Link href={featured.url} className="group relative flex flex-col overflow-hidden rounded-[28px] bg-[#1A3D4F] shadow-[0_40px_70px_-40px_rgba(26,61,79,0.8)]">
                 <span className="relative block aspect-[16/10] overflow-hidden">
                   <Image src={featured.image} alt="" fill priority sizes="(min-width:1024px) 560px, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
-                  <span className="absolute left-5 top-5 rounded-full bg-accent px-3.5 py-1.5 text-sm font-extrabold uppercase tracking-[0.12em] text-[#1A3D4F]">
+                  <span className="absolute left-5 top-5 rounded-full bg-accent px-3.5 py-1.5 text-base font-extrabold uppercase tracking-[0.12em] text-[#1A3D4F]">
                     Featured · {name}
                   </span>
                 </span>
@@ -151,13 +151,13 @@ export function CategoryHubExplorer({
                 key={c.slug}
                 href={c.href}
                 aria-current={on ? "page" : undefined}
-                className={`inline-flex h-11 shrink-0 items-center gap-2 rounded-full px-4 text-[14px] font-semibold transition-colors ${
+                className={`inline-flex h-11 shrink-0 items-center gap-2 rounded-full px-4 text-base font-semibold transition-colors ${
                   on ? "bg-[#1A3D4F] text-white" : "bg-background text-[#1A3D4F] hover:bg-cream-100"
                 }`}
               >
                 {c.name}
                 {c.count !== undefined && (
-                  <span className={`rounded-full px-2 py-0.5 text-sm ${on ? "bg-white/15 text-white" : "bg-white text-[#1D6E72]"}`}>{c.count}</span>
+                  <span className={`rounded-full px-2 py-0.5 text-base ${on ? "bg-white/15 text-white" : "bg-white text-[#1D6E72]"}`}>{c.count}</span>
                 )}
               </Link>
             );
@@ -170,11 +170,11 @@ export function CategoryHubExplorer({
         <div className="mx-auto max-w-[1278px] px-4 sm:px-6 xl:px-0">
           <div className="flex flex-wrap items-end justify-between gap-4 border-b border-line-200 pb-6">
             <div>
-              <div className="text-sm font-bold uppercase tracking-[0.16em] text-gold-600">{searching ? "Search results" : `${posts.length} articles`}</div>
+              <div className="text-base font-bold uppercase tracking-[0.16em] text-gold-600">{searching ? "Search results" : `${posts.length} articles`}</div>
               <h2 className="heading-h2 mt-2 text-primary">{searching ? <>Results for &ldquo;{q.trim()}&rdquo;</> : gridTitle}</h2>
             </div>
             {searching && (
-              <button type="button" onClick={() => setQ("")} className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-[#1D6E72] underline underline-offset-4">
+              <button type="button" onClick={() => setQ("")} className="inline-flex items-center gap-1.5 text-base font-semibold text-[#1D6E72] underline underline-offset-4">
                 <X aria-hidden className="size-4" /> Clear search
               </button>
             )}

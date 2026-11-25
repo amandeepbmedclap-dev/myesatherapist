@@ -139,8 +139,8 @@ small,
 .eyebrow {
   font-family: var(--font-sans), "Manrope", sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 22px;
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -156,8 +156,8 @@ small,
 .button-text-small {
   font-family: var(--font-sans), "Manrope", sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 22px;
   letter-spacing: 0;
 }
 

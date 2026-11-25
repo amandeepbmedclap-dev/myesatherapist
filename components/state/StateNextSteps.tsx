@@ -100,7 +100,7 @@ export function StateNextSteps({ data, tone = "white", withCities = false }: { d
             {data.citiesSubtitle ? <p className="body-large mx-auto mt-3 max-w-[760px] text-body-text">{data.citiesSubtitle}</p> : null}
             <ul className="mt-7 flex flex-wrap justify-center gap-2.5">
               {(data.cities || []).map((city) => (
-                <li key={city.name} className="flex items-center gap-1.5 rounded-full bg-white px-4 py-2 font-sans text-sm font-semibold text-primary ring-1 ring-line-200">
+                <li key={city.name} className="flex items-center gap-1.5 rounded-full bg-white px-4 py-2 font-sans text-base font-semibold text-primary ring-1 ring-line-200">
                   <MapPin aria-hidden className="size-4 text-gold-600" />
                   {city.name}
                 </li>

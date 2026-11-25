@@ -26,7 +26,7 @@ export function StateTrustBar({ data }: { data: StateData }) {
             </span>
             <div className="min-w-0">
               <div className="font-heading text-[28px] font-bold leading-[30px] text-primary xl:text-[28px]">{value}</div>
-              <div className="mt-1 font-sans text-base leading-[22px] text-body-text">{label}</div>
+              <div className="mt-1 font-sans text-[14px] leading-[22px] text-body-text">{label}</div>
             </div>
           </div>
         ))}

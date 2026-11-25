@@ -50,7 +50,7 @@ export function EsaTrainingBySpeciesSection() {
                   <h3 className="heading-h3 font-heading font-bold text-primary xl:whitespace-nowrap">
                     {animal.title}
                   </h3>
-                  <p className="font-sans text-sm font-semibold leading-[26px] text-body-text lg:text-base lg:leading-[1.8vw] xl:text-sm xl:leading-[26px]">
+                  <p className="font-sans text-base font-semibold leading-[26px] text-body-text lg:text-base lg:leading-[1.8vw] xl:text-base xl:leading-[26px]">
                     {animal.text}
                   </p>
                 </div>

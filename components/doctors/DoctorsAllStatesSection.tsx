@@ -115,7 +115,7 @@ export function DoctorsAllStatesSection() {
                     <h3 className="heading-h3 font-heading font-bold text-primary truncate">
                       {card.title}
                     </h3>
-                    <p className="font-sans font-semibold text-sm sm:text-sm xl:text-[14px] leading-[18px] sm:leading-[22px] xl:leading-[26px] text-body-text truncate mt-0.5">
+                    <p className="font-sans font-semibold text-base leading-[22px] xl:leading-[26px] text-body-text truncate mt-0.5">
                       {card.subtitle}
                     </p>
                   </div>

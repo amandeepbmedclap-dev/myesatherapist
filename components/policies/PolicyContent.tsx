@@ -285,7 +285,7 @@ export function PolicyContent({ policy }: PolicyContentProps) {
                 key={tIdx}
                 className="flex items-start gap-3.5 p-5 rounded-[18px] bg-white border border-[#EAE5DC] shadow-xs hover:border-primary/30 transition-colors"
               >
-                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/20 text-primary mt-0.5 font-bold text-sm">
+                <div className="flex size-7 shrink-0 items-center justify-center rounded-full bg-accent/20 text-primary mt-0.5 font-bold text-base leading-none">
                   ✓
                 </div>
                 <p className="body-strong text-body-text">
@@ -299,7 +299,7 @@ export function PolicyContent({ policy }: PolicyContentProps) {
 
       {policy.reviewerLine && (
         <div className="flex items-center gap-4 p-5 sm:p-6 rounded-[20px] bg-white border border-[#EAE5DC] shadow-xs">
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-accent font-bold text-sm">
+          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-accent font-bold text-base">
             ✓
           </div>
           <p className="body-text">

@@ -53,7 +53,7 @@ export function GoldPill({
         {title && (
           <h3 className="heading-h3 font-heading font-bold text-primary">{title}</h3>
         )}
-        <p className="font-sans font-semibold text-sm leading-[24px] sm:text-base sm:leading-[26px] lg:text-lg lg:leading-[1.9vw] xl:text-base xl:leading-[26px] text-body-text">
+        <p className="font-sans font-semibold text-base leading-[24px] sm:text-base sm:leading-[26px] lg:text-lg lg:leading-[1.9vw] xl:text-base xl:leading-[26px] text-body-text">
           {children}
         </p>
       </div>

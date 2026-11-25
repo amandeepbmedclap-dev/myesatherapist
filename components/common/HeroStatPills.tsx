@@ -25,7 +25,7 @@ export function HeroStatPills({
       {stats.map((stat) => (
         <div key={stat.label} className="flex min-w-0 flex-col items-center justify-center px-3 py-3 text-center sm:px-5 lg:items-start lg:text-left">
           <span className="font-heading text-[20px] font-bold leading-none text-primary sm:text-xl">{stat.value}</span>
-          <span className="mt-1.5 font-sans text-sm font-medium leading-[16px] text-body-text sm:whitespace-nowrap sm:text-sm">{stat.label}</span>
+          <span className="mt-1.5 font-sans text-base font-medium leading-5 text-body-text sm:whitespace-nowrap">{stat.label}</span>
         </div>
       ))}
     </div>

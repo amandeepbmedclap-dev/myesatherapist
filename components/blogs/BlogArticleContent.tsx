@@ -114,7 +114,7 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
           <div className="w-[14px] sm:w-[17px] self-stretch bg-accent rounded-l-[15px] shrink-0" />
           <div className="py-5 sm:py-6 space-y-3 sm:space-y-3.5 flex-1 min-w-0">
             {v2 ? (
-              <div className="font-sans text-sm font-extrabold uppercase tracking-[0.16em] text-[#8A6A12]">Quick answer</div>
+              <div className="font-sans text-base font-extrabold uppercase tracking-[0.16em] text-[#8A6A12]">Quick answer</div>
             ) : (
             <h2 className="heading-h2 text-primary">
               Quick Answer:
@@ -306,7 +306,7 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
               />
               {sec.bannerImage.caption && (
                 <div className="p-3 bg-white text-center border-t border-[#DECDBB]/30">
-                  <p className="text-sm italic text-body-text font-medium">
+                  <p className="text-base italic text-body-text font-medium">
                     {sec.bannerImage.caption}
                   </p>
                 </div>
@@ -344,14 +344,14 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
 
           {sec.sampleLetter && (
             <div className="w-full my-8 rounded-[20px] bg-white border border-[#DECDBB] shadow-[0px_4px_16px_rgba(0,0,0,0.06)] overflow-hidden">
-              <div className="bg-background border-b border-[#DECDBB] px-6 py-3.5 text-sm sm:text-sm font-sans font-semibold text-body-text">
+              <div className="bg-background border-b border-[#DECDBB] px-6 py-3.5 text-base sm:text-base font-sans font-semibold text-body-text">
                 {sec.sampleLetter.disclaimer}
               </div>
-              <div className="p-6 sm:p-10 font-sans text-sm sm:text-base leading-relaxed text-body-text space-y-5">
+              <div className="p-6 sm:p-10 font-sans text-base sm:text-base leading-relaxed text-body-text space-y-5">
                 <div className="border-b border-[#EAE5DC] pb-4 font-bold text-base sm:text-lg text-[#1D6E72] tracking-wide">
                   {sec.sampleLetter.letterhead}
                 </div>
-                <div className="text-sm sm:text-sm text-body-text font-medium">
+                <div className="text-base sm:text-base text-body-text font-medium">
                   {sec.sampleLetter.date}
                 </div>
                 <div className="font-semibold text-primary">
@@ -367,7 +367,7 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
                 <div className="pt-4 border-t border-[#EAE5DC] space-y-1">
                   <p className="font-semibold text-body-text">{sec.sampleLetter.closing}</p>
                   {sec.sampleLetter.signoff.map((s, sIdx) => (
-                    <p key={sIdx} className="text-sm sm:text-sm text-body-text font-medium">
+                    <p key={sIdx} className="text-base sm:text-base text-body-text font-medium">
                       {s}
                     </p>
                   ))}
@@ -386,21 +386,21 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
               <div className="p-6 sm:p-8 space-y-4">
                 {sec.checklist.items.map((item, cIdx) => (
                   <div key={cIdx} className="flex items-start gap-3.5">
-                    <span className="w-6 h-6 rounded-full bg-[#1D6E72]/10 text-[#1D6E72] flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+                    <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-[#1D6E72]/10 font-bold text-base leading-none text-[#1D6E72] mt-0.5">
                       ✓
                     </span>
                     <div className="space-y-0.5">
                       <h4 className="heading-h4 font-sans font-bold text-primary">
                         {item.title}
                       </h4>
-                      <p className="text-sm sm:text-sm text-body-text font-medium leading-relaxed">
+                      <p className="text-base sm:text-base text-body-text font-medium leading-relaxed">
                         {item.description}
                       </p>
                     </div>
                   </div>
                 ))}
                 {sec.checklist.footerNote && (
-                  <div className="mt-6 pt-4 border-t border-[#EAE5DC] text-sm sm:text-sm font-medium text-body-text italic">
+                  <div className="mt-6 pt-4 border-t border-[#EAE5DC] text-base sm:text-base font-medium text-body-text italic">
                     {sec.checklist.footerNote}
                   </div>
                 )}
@@ -434,11 +434,11 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
                         key={rIdx}
                         className={rIdx % 2 === 1 ? "bg-[#f5f9fa]" : "bg-white"}
                       >
-                        <td className="relative px-4 sm:px-6 py-4 sm:py-[18px] text-[14px] sm:text-base leading-[1.5] text-body-text border border-[#e3e9eb] align-top">
+                        <td className="relative px-4 sm:px-6 py-4 sm:py-[18px] text-base sm:text-base leading-[1.5] text-body-text border border-[#e3e9eb] align-top">
                           <span className="absolute left-0 top-0 bottom-0 w-1 bg-[#efbf2f]" />
                           {row.mayDeny}
                         </td>
-                        <td className="px-4 sm:px-6 py-4 sm:py-[18px] text-[14px] sm:text-base leading-[1.5] text-body-text border border-[#e3e9eb] align-top">
+                        <td className="px-4 sm:px-6 py-4 sm:py-[18px] text-base sm:text-base leading-[1.5] text-body-text border border-[#e3e9eb] align-top">
                           {row.cannotDeny}
                         </td>
                       </tr>
@@ -447,7 +447,7 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
                 </table>
               </div>
               {sec.comparisonTable.keyTakeaway && (
-                <div className="p-4 sm:p-5 rounded-[16px] bg-background border border-[#DECDBB] text-sm sm:text-base font-medium text-body-text leading-relaxed">
+                <div className="p-4 sm:p-5 rounded-[16px] bg-background border border-[#DECDBB] text-base sm:text-base font-medium text-body-text leading-relaxed">
                   <strong className="text-primary">Key takeaway: </strong>
                   {sec.comparisonTable.keyTakeaway}
                 </div>

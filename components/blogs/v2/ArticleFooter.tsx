@@ -24,9 +24,9 @@ export function ArticleFooter({ article }: { article: BlogArticle }) {
             {image ? <Image src={image} alt={name} fill sizes="80px" className="object-cover" /> : null}
           </span>
           <div className="min-w-0">
-            <div className="font-sans text-sm font-extrabold uppercase tracking-[0.16em] text-[#8A6A12]">About the author</div>
+            <div className="font-sans text-base font-extrabold uppercase tracking-[0.16em] text-[#8A6A12]">About the author</div>
             <h2 id="about-author-h" className="heading-h2 mt-1 font-heading font-bold text-primary">{name}</h2>
-            {title ? <div className="font-sans text-[14px] text-body-text">{title}</div> : null}
+            {title ? <div className="font-sans text-base text-body-text">{title}</div> : null}
             {bio ? <p className="mt-3 font-sans text-[16px] leading-[27px] text-body-text">{bio}</p> : null}
             {href ? (
               <Link href={href} className="mt-3 inline-flex items-center gap-1.5 font-sans text-base font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4 hover:text-[#1D6E72]">
