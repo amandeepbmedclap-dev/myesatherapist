@@ -3,11 +3,13 @@ import React from "react";
 import Image from "next/image";
 import { Check } from "lucide-react";
 import { StateData } from "@/data/statesData";
+import { stateImages } from "@/lib/imagePilot";
 import { CollapsibleNote } from "@/components/common/CollapsibleNote";
 import { isSectionPilot } from "@/lib/sectionPilot";
 
 export function StateLawsSection({ data }: { data: StateData }) {
   const stateName = data.name;
+  const img = stateImages(data.slug);
   const pilot = isSectionPilot(data.slug);
   const checkClass = pilot ? "w-5 h-5 rounded-full bg-accent text-primary flex items-center justify-center" : "w-5 h-5 rounded-full text-white flex items-center justify-center shadow-xs";
   const checkStyle = pilot ? undefined : { background: "var(--color-gradient)" };
@@ -30,10 +32,11 @@ export function StateLawsSection({ data }: { data: StateData }) {
             <div className="relative w-full aspect-[16/9] overflow-hidden shrink-0">
               <Image
             quality={90}
-                src="/states/esalaws-fairemployment-housing.webp"
-                alt="Federal Housing Guidelines"
+                src={img.lawsFederal?.src ?? "/states/esalaws-fairemployment-housing.webp"}
+                alt={img.lawsFederal?.alt ?? "Federal Housing Guidelines"}
                 fill
                 className="object-cover object-center"
+                style={img.lawsFederal?.position ? { objectPosition: img.lawsFederal.position } : undefined}
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
@@ -84,8 +87,8 @@ export function StateLawsSection({ data }: { data: StateData }) {
             <div className="relative w-full aspect-[16/9] overflow-hidden shrink-0">
               <Image
             quality={90}
-                src={data.slug === "california" ? "/states/esalaws-california-state.webp" : "/states/state-lawssection-secondcard.webp"}
-                alt="Housing Provider Roles & Responsibilities"
+                src={img.lawsProvider?.src ?? (data.slug === "california" ? "/states/esalaws-california-state.webp" : "/states/state-lawssection-secondcard.webp")}
+                alt={img.lawsProvider?.alt ?? "Housing Provider Roles & Responsibilities"}
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"

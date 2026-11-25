@@ -1,6 +1,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { stateImages } from "@/lib/imagePilot";
 import { StateData } from "@/data/statesData";
 import { CollapsibleNote } from "@/components/common/CollapsibleNote";
 import { WHO_QUALIFIES_FOCUS } from "./whoQualifiesFocus";
@@ -127,7 +128,8 @@ export function StateWhoQualifiesV2({ data }: { data: StateData }) {
   // One label for every state (approved Nov 2026); avoids implying a condition alone qualifies.
   const sectionHeading = "Conditions a Clinician May Consider";
   const icons = conditionIcons(conditions);
-  const photo = `/states/who-qualifies/${data.slug}.webp`;
+  const pilotImg = stateImages(data.slug).whoQualifies;
+  const photo = pilotImg?.src ?? `/states/who-qualifies/${data.slug}.webp`;
 
   return (
     <section data-section="who-qualifies" className="relative z-10 w-full bg-white px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
@@ -142,7 +144,7 @@ export function StateWhoQualifiesV2({ data }: { data: StateData }) {
           <span aria-hidden className="absolute -left-3 -top-3 hidden size-24 rounded-[24px] bg-accent/30 sm:block lg:-left-4 lg:-top-4 lg:size-28" />
           <span aria-hidden className="absolute -bottom-3 -right-3 hidden size-32 rounded-[28px] color-gradient opacity-90 sm:block lg:-bottom-4 lg:-right-4 lg:size-40" />
           <div className="relative aspect-[4/3] overflow-hidden rounded-[26px] bg-cream-100 shadow-[0_30px_60px_-34px_rgba(26,61,79,0.6)] sm:aspect-[4/5] lg:aspect-auto lg:h-full lg:min-h-[520px]">
-            <Image quality={85} src={photo} alt="A person relaxing at home with their pet" fill sizes="(min-width: 1024px) 420px, 92vw" className="object-cover" style={{ objectPosition: `${WHO_QUALIFIES_FOCUS[data.slug] ?? 50}% 25%` }} />
+            <Image quality={85} src={photo} alt={pilotImg?.alt ?? "A person relaxing at home with their pet"} fill sizes="(min-width: 1024px) 420px, 92vw" className="object-cover" style={{ objectPosition: pilotImg?.position ?? `${WHO_QUALIFIES_FOCUS[data.slug] ?? 50}% 25%` }} />
           </div>
           </div>
         </div>

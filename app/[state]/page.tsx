@@ -14,6 +14,7 @@ import { StateProcessSection } from "@/components/state/StateProcessSection";
 import { StateWhoQualifiesV2 } from "@/components/state/StateWhoQualifiesSection";
 import { StateEligibilityPanels } from "@/components/state/StateEligibilityPanels";
 import { isSectionPilot } from "@/lib/sectionPilot";
+import { stateImages } from "@/lib/imagePilot";
 import { StateBenefitsV2 } from "@/components/state/StateBenefitsSection";
 import { StateLawsSection } from "@/components/state/StateLawsSection";
 import { StateHousingRequestsSection } from "@/components/state/StateHousingRequestsSection";
@@ -174,6 +175,7 @@ export default async function DynamicStatePage({ params }: Props) {
             title={data.faqTitle}
             subtitle={data.faqSubtitle}
             faqs={data.faqs}
+            image={stateImages(data.slug).faq}
             bg={isSectionPilot(data.slug) ? (hasPricing ? "bg-white" : "bg-background") : hasPricing ? "bg-background" : "bg-white"}
             variant={isSectionPilot(data.slug) ? "light" : "classic"}
           />
