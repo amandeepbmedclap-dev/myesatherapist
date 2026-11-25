@@ -295,23 +295,27 @@ function StateCard({ entry }: { entry: StateLawEntry }) {
               </li>
             ))}
           </ul>
-          {entry.guideHref && entry.guideLabel ? (
-            <Link
-              prefetch={false}
-              href={entry.guideHref}
-              className="mt-1 font-sans font-semibold text-[16px] leading-[24px] text-primary underline underline-offset-4 transition-colors hover:text-[#8A6A0B]"
-            >
-              {entry.guideLabel}
-            </Link>
-          ) : null}
-          {STATE_INDEX_BY_SLUG[entry.slug] ? (
-            <Link
-              prefetch={false}
-              href={`/esa-letter-${entry.slug}/`}
-              className="mt-1 font-sans font-semibold text-[16px] leading-[24px] text-primary underline underline-offset-4 transition-colors hover:text-[#8A6A0B]"
-            >
-              Get an ESA letter in {entry.name}
-            </Link>
+          {(entry.guideHref && entry.guideLabel) || STATE_INDEX_BY_SLUG[entry.slug] ? (
+            <div className="mt-1 flex flex-wrap items-baseline gap-x-8 gap-y-2">
+              {entry.guideHref && entry.guideLabel ? (
+                <Link
+                  prefetch={false}
+                  href={entry.guideHref}
+                  className="font-sans font-semibold text-[16px] leading-[24px] text-primary underline underline-offset-4 transition-colors hover:text-[#8A6A0B]"
+                >
+                  {entry.guideLabel}
+                </Link>
+              ) : null}
+              {STATE_INDEX_BY_SLUG[entry.slug] ? (
+                <Link
+                  prefetch={false}
+                  href={`/esa-letter-${entry.slug}/`}
+                  className="font-sans font-semibold text-[16px] leading-[24px] text-primary underline underline-offset-4 transition-colors hover:text-[#8A6A0B]"
+                >
+                  Get an ESA letter in {entry.name}
+                </Link>
+              ) : null}
+            </div>
           ) : null}
         </div>
       </div>
