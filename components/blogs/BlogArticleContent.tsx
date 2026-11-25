@@ -295,6 +295,11 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
 
           {sec.bannerImage && (!sec.bannerPosition || sec.bannerPosition === "top") && (
             <div className={`w-full relative rounded-[20px] overflow-hidden shadow-md my-8 bg-white border border-[#DECDBB]/50 ${!sec.bannerImage.fullWidth && (sec.bannerImage.height ?? 550) > (sec.bannerImage.width ?? 870) ? "max-w-[560px] mx-auto" : ""}`}>
+              {sec.bannerImage.mobileSrc && (
+                <Image quality={90} src={sec.bannerImage.mobileSrc} alt={sec.bannerImage.alt}
+                  width={sec.bannerImage.mobileWidth ?? 1120} height={sec.bannerImage.mobileHeight ?? 1600}
+                  sizes="100vw" className="w-full h-auto object-contain rounded-[18px] sm:hidden" />
+              )}
               <Image
             quality={90}
                 src={sec.bannerImage.src}
@@ -302,7 +307,7 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
                 width={sec.bannerImage.width ?? 870}
                 height={sec.bannerImage.height ?? 550}
                 sizes="(max-width: 870px) 100vw, 870px"
-                className="w-full h-auto object-contain rounded-[18px]"
+                className={`w-full h-auto object-contain rounded-[18px] ${sec.bannerImage.mobileSrc ? "hidden sm:block" : ""}`}
               />
               {sec.bannerImage.caption && (
                 <div className="p-3 bg-white text-center border-t border-[#DECDBB]/30">
@@ -625,6 +630,11 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
 
           {sec.bannerImage && sec.bannerPosition === "bottom" && (
             <div className={`w-full relative rounded-[20px] overflow-hidden shadow-md my-8 bg-white border border-[#DECDBB]/50 ${!sec.bannerImage.fullWidth && (sec.bannerImage.height ?? 550) > (sec.bannerImage.width ?? 870) ? "max-w-[560px] mx-auto" : ""}`}>
+              {sec.bannerImage.mobileSrc && (
+                <Image quality={90} src={sec.bannerImage.mobileSrc} alt={sec.bannerImage.alt}
+                  width={sec.bannerImage.mobileWidth ?? 1120} height={sec.bannerImage.mobileHeight ?? 1600}
+                  sizes="100vw" className="w-full h-auto object-contain rounded-[18px] sm:hidden" />
+              )}
               <Image
                 quality={90}
                 src={sec.bannerImage.src}
@@ -632,7 +642,7 @@ export function BlogArticleContent({ article, variant = "classic" }: BlogArticle
                 width={870}
           sizes="870px"
                 height={550}
-                className="w-full h-auto object-contain rounded-[18px]"
+                className={`w-full h-auto object-contain rounded-[18px] ${sec.bannerImage.mobileSrc ? "hidden sm:block" : ""}`}
               />
               {sec.bannerImage.caption && (
                 <div className="p-3 bg-white text-center border-t border-[#DECDBB]/30">
