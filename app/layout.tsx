@@ -114,7 +114,9 @@ export default function RootLayout({
         suppressHydrationWarning
         className="min-h-full flex flex-col bg-background text-foreground antialiased selection:bg-accent/35 selection:text-current"
       >
-        <script
+        <Script
+          id="chunk-reload"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(){
   var key = 'met-chunk-reload';
@@ -219,7 +221,9 @@ events.forEach(function(e){w.addEventListener(e,onInteract,{passive:true,once:tr
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <script
+        <Script
+          id="desktop-scaler"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(){
   try {
