@@ -1,49 +1,38 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { Lock, RotateCcw, Stethoscope } from "lucide-react";
 import { SiteReviewerBanner } from "@/components/state/SiteReviewerBanner";
 
-const items = [
-  { icon: Stethoscope, title: "State-licensed clinicians", sub: "Evaluations by professionals licensed where you live", href: "/esa-doctors/" },
-  { icon: Lock, title: "Secure, encrypted checkout", sub: "Payments processed through encrypted systems", href: "/privacy-policy/" },
-  { icon: RotateCcw, title: "Money-back guarantee", sub: "See exactly how refunds work", href: "/refund-policy/" },
+/** Trust seals: only claims the business can substantiate. Each links to its proof page. */
+const SEALS = [
+  { src: "/badges/hipaa-compliant-seal.svg", alt: "HIPAA compliant seal", label: "HIPAA-compliant platform", href: "/hipaa-compliance/" },
+  { src: "/badges/state-licensed-clinicians-seal.svg", alt: "State-licensed clinicians seal", label: "State-licensed clinicians", href: "/esa-doctors/" },
+  { src: "/badges/secure-encrypted-checkout-seal.svg", alt: "Secure encrypted checkout seal", label: "Secure, encrypted checkout", href: "/privacy-policy/" },
+  { src: "/badges/money-back-guarantee-seal.svg", alt: "100% money-back guarantee seal", label: "Money-back guarantee", href: "/refund-policy/" },
+  { src: "/badges/clinician-reviewed-content-seal.svg", alt: "Clinician-reviewed content seal", label: "Clinician-reviewed content", href: "/editorial-policy/" },
 ];
 
-/** Top of the footer: reviewer credit and the trust signals we can substantiate. */
+/** Top of the footer: trust seals and the reviewer credit. */
 export function FooterTrustBand() {
   return (
-    <div className="border-b border-white/10 py-8 lg:py-9">
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0">
-        <div className="flex items-center gap-4 rounded-[18px] bg-white/[0.04] p-4 ring-1 ring-white/10 lg:rounded-none lg:bg-transparent lg:p-0 lg:pr-6 lg:ring-0">
-          <span className="flex h-12 w-[92px] shrink-0 items-center justify-center rounded-[12px] bg-white px-2">
-            <span className="relative block h-full w-full">
-              <Image quality={90} src="/common/hipaa-logo.webp" alt="HIPAA compliant" fill className="object-contain" sizes="92px" />
-            </span>
-          </span>
-          <span className="font-sans">
-            <span className="block text-[15px] font-semibold leading-[21px] text-white">HIPAA-compliant platform</span>
-            <span className="block text-[13px] leading-[19px] text-white/60">Your health information stays private</span>
-          </span>
-        </div>
-        {items.map(({ icon: Icon, title, sub, href }) => (
-          <Link
-            key={title}
-            href={href}
-            className="group flex items-center gap-4 rounded-[18px] bg-white/[0.04] p-4 ring-1 ring-white/10 transition-colors hover:bg-white/[0.07] lg:rounded-none lg:border-l lg:border-white/10 lg:bg-transparent lg:px-6 lg:py-0 lg:ring-0 lg:hover:bg-transparent"
-          >
-            <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-accent/15 text-accent ring-1 ring-accent/30">
-              <Icon aria-hidden className="size-5" />
-            </span>
-            <span className="font-sans">
-              <span className="block text-[15px] font-semibold leading-[21px] text-white group-hover:text-accent">{title}</span>
-              <span className="block text-[13px] leading-[19px] text-white/60">{sub}</span>
-            </span>
-          </Link>
+    <div className="border-b border-white/10 py-9 lg:py-10">
+      <ul className="flex flex-wrap justify-center gap-x-4 gap-y-7 sm:grid sm:grid-cols-5 lg:gap-x-8">
+        {SEALS.map((s) => (
+          <li key={s.src} className="w-[30%] sm:w-auto">
+            <Link href={s.href} className="group flex flex-col items-center gap-3 text-center">
+              <Image
+                src={s.src}
+                alt={s.alt}
+                width={112}
+                height={112}
+                unoptimized
+                className="size-[84px] drop-shadow-[0_10px_18px_rgba(0,0,0,0.35)] transition-transform duration-300 group-hover:-translate-y-1 group-hover:rotate-[-4deg] sm:size-[96px] lg:size-[108px]"
+              />
+              <span className="font-sans text-[12.5px] font-semibold leading-[17px] text-white/80 group-hover:text-accent sm:text-[13.5px]">{s.label}</span>
+            </Link>
+          </li>
         ))}
-      </div>
-      <div className="mt-7 border-t border-white/10 pt-6">
+      </ul>
+      <div className="mt-8 flex justify-center border-t border-white/10 pt-6">
         <SiteReviewerBanner placement="footer" />
       </div>
     </div>
