@@ -52,8 +52,8 @@ export function EsaLawsFaqSection() {
           <div className="w-full max-w-[551px] lg:w-[380px] xl:w-[500px] h-[360px] sm:h-[440px] lg:h-[500px] xl:h-[540px] relative rounded-[20px] overflow-hidden shrink-0 shadow-md">
             <Image
               quality={90}
-              src="/common/faq-section-image.webp"
-              alt="Woman with her emotional support dog outdoors"
+              src="/images/common/reading-esa-faqs-on-phone-with-dog.webp"
+              alt="Woman reading answers about ESA letters on her phone while her dog sleeps beside her"
               fill
               className="object-cover"
               loading="lazy"

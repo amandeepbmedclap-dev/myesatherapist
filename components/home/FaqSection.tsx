@@ -65,6 +65,8 @@ interface FaqSectionProps {
   className?: string;
   /** "light": white question rows with gold numbers (state-page redesign). */
   variant?: "classic" | "light";
+  /** Optional photo for the light variant's side column. */
+  image?: { src: string; alt: string; position?: string };
 }
 
 export function FaqSection({
@@ -75,6 +77,7 @@ export function FaqSection({
   bg = "bg-background",
   className,
   variant = "light",
+  image,
 }: FaqSectionProps = {}) {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
 
@@ -102,7 +105,7 @@ export function FaqSection({
             <aside className="hidden lg:block">
               <div className="sticky top-28 space-y-4">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-[24px] shadow-[0_24px_50px_-36px_rgba(26,61,79,0.6)]">
-                  <Image quality={85} src="/common/faq-section-image.webp" alt="Person with their emotional support dog outdoors" fill sizes="320px" className="object-cover" />
+                  <Image quality={85} src={image?.src ?? "/images/common/reading-esa-faqs-on-phone-with-dog.webp"} alt={image?.alt ?? "Woman reading answers about ESA letters on her phone while her dog sleeps beside her"} fill sizes="320px" className="object-cover" style={image?.position ? { objectPosition: image.position } : undefined} />
                 </div>
                 <div className="rounded-[20px] bg-cream-100 p-5">
                   <div className="font-heading text-[20px] font-bold leading-[28px] text-primary">Still have a question?</div>
@@ -162,8 +165,8 @@ export function FaqSection({
             <div className="relative w-full h-full rounded-[20px] overflow-hidden shadow-md">
               <Image
                 quality={90}
-                src="/common/faq-section-image.webp"
-                alt="Person holding emotional support animal"
+                src="/images/common/reading-esa-faqs-on-phone-with-dog.webp"
+                alt="Woman reading answers about ESA letters on her phone while her dog sleeps beside her"
                 fill
                 className="object-cover"
                 sizes="(min-width: 1280px) 551px, (min-width: 1024px) 380px, 90vw"

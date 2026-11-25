@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { StateData } from "@/data/statesData";
 import { BENEFITS_FOCUS_X, BENEFITS_FOCUS_Y } from "./benefitsFocus";
+import { stateImages } from "@/lib/imagePilot";
 import { CtaButton } from "@/components/common/CtaButton";
 
 const HOUSE = "/esa-icons/icon-20.svg";
@@ -364,7 +365,8 @@ export function StateBenefitsV2({ data }: { data: StateData }) {
   const used = new Set<string>();
   const financialIcons = assignBenefitIcons(financialBenefits, FINANCIAL_RULES, FINANCIAL_FALLBACKS, used);
   const emotionalIcons = assignBenefitIcons(emotionalBenefits, EMOTIONAL_RULES, EMOTIONAL_FALLBACKS, used);
-  const photo = `/states/benefits/${data.slug}.webp`;
+  const pilotImg = stateImages(data.slug).benefits;
+  const photo = pilotImg?.src ?? `/states/benefits/${data.slug}.webp`;
 
   return (
     <section data-section="benefits" className="relative z-10 w-full bg-white px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
@@ -377,8 +379,8 @@ export function StateBenefitsV2({ data }: { data: StateData }) {
         <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_300px_minmax(0,1fr)] lg:gap-6 xl:grid-cols-[minmax(0,1fr)_340px_minmax(0,1fr)]">
           <div className="relative order-first mx-auto w-full max-w-[520px] lg:order-none lg:col-start-2 lg:row-start-1 lg:max-w-none">
             <div className="relative aspect-[4/3] overflow-hidden rounded-[26px] bg-cream-100 shadow-[0_30px_60px_-34px_rgba(26,61,79,0.6)] sm:aspect-[16/10] lg:aspect-auto lg:h-full lg:min-h-[520px]">
-              <Image quality={85} src={photo} alt="A person spending time with their emotional support animal" fill sizes="(min-width: 1024px) 340px, 92vw" className="object-cover"
-                style={{ objectPosition: `${BENEFITS_FOCUS_X[data.slug] ?? 50}% ${BENEFITS_FOCUS_Y[data.slug] ?? 40}%` }} />
+              <Image quality={85} src={photo} alt={pilotImg?.alt ?? "A person spending time with their emotional support animal"} fill sizes="(min-width: 1024px) 340px, 92vw" className="object-cover"
+                style={{ objectPosition: pilotImg?.position ?? `${BENEFITS_FOCUS_X[data.slug] ?? 50}% ${BENEFITS_FOCUS_Y[data.slug] ?? 40}%` }} />
               <span aria-hidden className="absolute inset-x-0 bottom-0 h-1/3 bg-[linear-gradient(180deg,rgba(26,61,79,0)_0%,rgba(26,61,79,0.55)_100%)]" />
               <span className="absolute bottom-4 right-4 flex size-12 items-center lg:bottom-5 lg:right-auto lg:left-1/2 lg:size-14 lg:-translate-x-1/2 justify-center rounded-full bg-white shadow-[0_10px_24px_-10px_rgba(0,0,0,0.45)]">
                 <Image quality={90} src="/states/whomayqualifies-california-icon.webp" alt="" width={40} height={40} sizes="40px" className="size-9 object-contain" />

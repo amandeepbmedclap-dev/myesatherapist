@@ -74,8 +74,8 @@ export function StatesFaqSection() {
           <div className="lg:col-span-5 w-full relative min-h-[420px] lg:min-h-[640px] rounded-[20px] overflow-hidden shadow-md">
             <Image
             quality={90}
-              src="/common/faq-section-image.webp"
-              alt="Emotional support dog and owner in forest"
+              src="/images/common/reading-esa-faqs-on-phone-with-dog.webp"
+              alt="Woman reading answers about ESA letters on her phone while her dog sleeps beside her"
               fill
               className="object-cover object-center"
               sizes="(max-width: 1024px) 100vw, 45vw"

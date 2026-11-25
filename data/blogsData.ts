@@ -106,6 +106,9 @@ export interface BlogSection {
     width?: number;
     height?: number;
     fullWidth?: boolean;
+    mobileSrc?: string;
+    mobileWidth?: number;
+    mobileHeight?: number;
   };
   bannerPosition?: "top" | "bottom";
   statCards?: BlogStatCard[];
@@ -268,7 +271,7 @@ export const BLOG_POSTS: BlogArticle[] = [
     },
     publishDate: "June 19, 2026",
     lastUpdated: "June 19, 2026",
-    cardImage: "/blog-images/how-to-verify-if-an-esa-letter-is-legitimate-a-landlord-and-tenant-checklist-esa-guide/happily-living-with-emotional-support-animal-image.webp",
+    cardImage: "/blog-images/how-to-verify-if-an-esa-letter-is-legitimate-a-landlord-and-tenant-checklist-esa-guide/tenant-sharing-esa-letter-with-property-manager.webp",
     heroImageMobile: "/hero-image-for-mobile-all.png",
     heroImageTablet: "/blogs/blog-hero-section-tablet.webp",
     heroImageDesktop: "/blogs/blog-hero-section.webp",
@@ -309,8 +312,12 @@ export const BLOG_POSTS: BlogArticle[] = [
         id: "tenant-checklist",
         title: "Tenant Checklist: How to Ensure Your ESA Letter Is Legitimate",
         bannerImage: {
-          src: "/blog-images/how-to-verify-if-an-esa-letter-is-legitimate-a-landlord-and-tenant-checklist-esa-guide/tenant-checklist-to-verify-esa-letter-image.webp",
-          alt: "tenant checklist to verify esa letter",
+          src: "/blog-images/how-to-verify-if-an-esa-letter-is-legitimate-a-landlord-and-tenant-checklist-esa-guide/tenant-checklist-legitimate-esa-letter.webp",
+          alt: "Tenant checklist for a legitimate ESA letter: licensed provider, professional details, personalized letter, real assessment, plus red flags to avoid",
+          fullWidth: true,
+          mobileSrc: "/blog-images/how-to-verify-if-an-esa-letter-is-legitimate-a-landlord-and-tenant-checklist-esa-guide/tenant-checklist-legitimate-esa-letter-mobile.webp",
+          mobileWidth: 1120,
+          mobileHeight: 2948,
         },
         bannerPosition: "bottom",
         subsections: [
@@ -375,8 +382,12 @@ export const BLOG_POSTS: BlogArticle[] = [
         id: "landlord-checklist",
         title: "Landlord Checklist: How to Verify an ESA Letter?",
         bannerImage: {
-          src: "/blog-images/how-to-verify-if-an-esa-letter-is-legitimate-a-landlord-and-tenant-checklist-esa-guide/landlord-checklist-to-verify-esa-letter-image.webp",
-          alt: "landlord checklist to verify esa letter",
+          src: "/blog-images/how-to-verify-if-an-esa-letter-is-legitimate-a-landlord-and-tenant-checklist-esa-guide/landlord-checklist-verify-esa-letter.webp",
+          alt: "Landlord checklist for verifying an ESA letter, and what landlords cannot ask for",
+          fullWidth: true,
+          mobileSrc: "/blog-images/how-to-verify-if-an-esa-letter-is-legitimate-a-landlord-and-tenant-checklist-esa-guide/landlord-checklist-verify-esa-letter-mobile.webp",
+          mobileWidth: 1120,
+          mobileHeight: 2894,
         },
         bannerPosition: "bottom",
         subsections: [
@@ -544,7 +555,7 @@ export const BLOG_POSTS: BlogArticle[] = [
     },
     publishDate: "July 22, 2026",
     lastUpdated: "August 17, 2026",
-    cardImage: "/blog-images/does-esa-registration-actually-mean-anything/woman-with-emotional-support-dog.webp",
+    cardImage: "/blog-images/does-esa-registration-actually-mean-anything/woman-reviewing-esa-registry-site-with-cat.webp",
     heroImageMobile: "/hero-image-for-mobile-all.png",
     heroImageTablet: "/blogs/blog-hero-section-tablet.webp",
     heroImageDesktop: "/blogs/blog-hero-section.webp",
@@ -554,8 +565,8 @@ export const BLOG_POSTS: BlogArticle[] = [
       "Unlike what many websites suggest, there is no official federal ESA registry in the United States, and registering your animal with one of these sites does not grant any legal rights. This guide explains what ESA registration actually entails, why it’s necessary, what landlords really look for, and how to save money by avoiding services that have little to no legal value.",
     ],
     introImage: {
-      src: "/blog-images/does-esa-registration-actually-mean-anything/woman-with-emotional-support-dog.webp",
-      alt: "Woman hugging her emotional support dog at home",
+      src: "/blog-images/does-esa-registration-actually-mean-anything/woman-reviewing-esa-registry-site-with-cat.webp",
+      alt: "Woman at her kitchen table reviewing an online ESA registration offer on her laptop, her cat beside her",
     },
     tocItems: [
       {
@@ -658,8 +669,12 @@ export const BLOG_POSTS: BlogArticle[] = [
         id: "is-there-an-official-esa-registry-in-the-united-states",
         title: "Is There an Official ESA Registry in the United States?",
         bannerImage: {
-          src: "/blog-images/does-esa-registration-actually-mean-anything/esa-protection.webp",
-          alt: "ESA protection comes from legal rights, not registration",
+          src: "/blog-images/does-esa-registration-actually-mean-anything/no-official-esa-registry-infographic.webp",
+          alt: "Infographic: there is no federal, state or HUD ESA registry; what matters is an ESA letter from a licensed mental health professional",
+          fullWidth: true,
+          mobileSrc: "/blog-images/does-esa-registration-actually-mean-anything/no-official-esa-registry-infographic-mobile.webp",
+          mobileWidth: 1120,
+          mobileHeight: 1652,
         },
         bannerPosition: "bottom",
         paragraphs: ["No. There is currently:"],
@@ -702,8 +717,12 @@ export const BLOG_POSTS: BlogArticle[] = [
         title:
           "ESA Registration, ID Cards & Certificates: What Counts as Legal Proof?",
         bannerImage: {
-          src: "/blog-images/does-esa-registration-actually-mean-anything/common-esa-products-not-legal-proof.webp",
-          alt: "Common ESA products",
+          src: "/blog-images/does-esa-registration-actually-mean-anything/esa-products-not-legal-proof-infographic.webp",
+          alt: "Infographic showing that ESA certificates, ID cards, vests and registration numbers are not legal proof on their own",
+          fullWidth: true,
+          mobileSrc: "/blog-images/does-esa-registration-actually-mean-anything/esa-products-not-legal-proof-infographic-mobile.webp",
+          mobileWidth: 1120,
+          mobileHeight: 2618,
         },
         bannerPosition: "bottom",
         paragraphs: [
@@ -911,7 +930,7 @@ export const BLOG_POSTS: BlogArticle[] = [
     publishDate: "July 27, 2026",
     lastUpdated: "July 30, 2026",
     cardImage:
-      "/blog-images/esa-for-children-and-minors-how-it-works-and-who-signs-the-letter/esa-for-children.webp",
+      "/blog-images/esa-for-children-and-minors-how-it-works-and-who-signs-the-letter/parent-and-child-with-family-dog.webp",
     heroImageMobile: "/hero-image-for-mobile-all.png",
     heroImageTablet: "/blogs/blog-hero-section-tablet.webp",
     heroImageDesktop: "/blogs/blog-hero-section.webp",
@@ -922,10 +941,10 @@ export const BLOG_POSTS: BlogArticle[] = [
       "Understanding how ESA eligibility works for children can help families make informed decisions while avoiding common misconceptions about ESA rights, school accommodations, and housing protections.",
     ],
     introImage: {
-      src: "/blog-images/esa-for-children-and-minors-how-it-works-and-who-signs-the-letter/esa-for-children.webp",
-      alt: "Smiling child sitting on a sofa with a golden retriever emotional support dog",
-      width: 1081,
-      height: 1081,
+      src: "/blog-images/esa-for-children-and-minors-how-it-works-and-who-signs-the-letter/parent-and-child-with-family-dog.webp",
+      alt: "Mother and son sitting on the living room rug while the boy gently pets their golden retriever",
+      width: 1600,
+      height: 1063,
     },
     tocItems: [
       {
@@ -1016,8 +1035,8 @@ export const BLOG_POSTS: BlogArticle[] = [
           },
         ],
         bannerImage: {
-          src: "/blog-images/esa-for-children-and-minors-how-it-works-and-who-signs-the-letter/who-signs-the-esa-letter-for-a-mino.webp",
-          alt: "Woman on a video call at a round table while a boy pets a dog at home in a bright living room.",
+          src: "/blog-images/esa-for-children-and-minors-how-it-works-and-who-signs-the-letter/parent-on-telehealth-call-while-child-pets-dog.webp",
+          alt: "Father on a telehealth call taking notes while his daughter pets the family dog in the background",
         },
         bannerPosition: "bottom",
       },
@@ -1175,8 +1194,8 @@ export const BLOG_POSTS: BlogArticle[] = [
           },
         ],
         bannerImage: {
-          src: "/blog-images/esa-for-children-and-minors-how-it-works-and-who-signs-the-letter/how-to-talk-to-your-child.webp",
-          alt: "Parent talking with a child beside an emotional support dog at home",
+          src: "/blog-images/esa-for-children-and-minors-how-it-works-and-who-signs-the-letter/mother-talking-with-daughter-beside-dog.webp",
+          alt: "Mother talking gently with her daughter on the sofa, their small dog resting on the girl’s knee",
         },
         bannerPosition: "bottom",
       },
@@ -1253,7 +1272,7 @@ export const BLOG_POSTS: BlogArticle[] = [
     },
     publishDate: "July 30, 2026",
     lastUpdated: "August 17, 2026",
-    cardImage: "/blog-images/esa-letter-sample-what-a-legitimate-esa-letter-looks-like/emotional-support-animal-letter-sample-image.webp",
+    cardImage: "/blog-images/esa-letter-sample-what-a-legitimate-esa-letter-looks-like/reading-esa-letter-on-letterhead.webp",
     heroImageMobile: "/hero-image-for-mobile-all.png",
     heroImageTablet: "/blogs/blog-hero-section-tablet.webp",
     heroImageDesktop: "/blogs/blog-hero-section.webp",
@@ -1381,10 +1400,14 @@ export const BLOG_POSTS: BlogArticle[] = [
           ],
         },
         bannerImage: {
-          src: "/blog-images/esa-letter-sample-what-a-legitimate-esa-letter-looks-like/legitimate-esa-letter-sample-image.webp",
-          alt: "Sample emotional support animal letter from a licensed mental health professional",
-          width: 1786,
-          height: 2526,
+          src: "/blog-images/esa-letter-sample-what-a-legitimate-esa-letter-looks-like/esa-letter-sample-template.webp",
+          alt: "Sample ESA letter template with placeholders for the provider, patient, license and assessment details",
+          width: 1440,
+          height: 1936,
+          fullWidth: true,
+          mobileSrc: "/blog-images/esa-letter-sample-what-a-legitimate-esa-letter-looks-like/esa-letter-sample-template-mobile.webp",
+          mobileWidth: 1120,
+          mobileHeight: 2312,
         },
         bannerPosition: "bottom",
         calloutBox: {
@@ -1515,7 +1538,7 @@ export const BLOG_POSTS: BlogArticle[] = [
     publishDate: "June 09, 2026",
     lastUpdated: "June 09, 2026",
     cardImage:
-      "/blog-images/hud-esa-guidance-2026-what-changed-for-emotional-support-animal-housing/living-with-an-esa-in-rental-housing-image.webp",
+      "/blog-images/hud-esa-guidance-2026-what-changed-for-emotional-support-animal-housing/couple-unpacking-rental-apartment-with-beagle.webp",
     heroImageMobile: "/hero-image-for-mobile-all.png",
     heroImageTablet: "/blogs/blog-hero-section-tablet.webp",
     heroImageDesktop: "/blogs/blog-hero-section.webp",
@@ -1600,8 +1623,8 @@ export const BLOG_POSTS: BlogArticle[] = [
           "Because enforcement standards may now differ more significantly across jurisdictions, tenants may need stronger documentation supporting both their disability-related need for accommodation and an understanding of the protections available under their state’s housing laws.",
         ],
         bannerImage: {
-          src: "/blog-images/hud-esa-guidance-2026-what-changed-for-emotional-support-animal-housing/living-with-an-esa-in-rental-housing-image.webp",
-          alt: "living with an esa in rental housing",
+          src: "/blog-images/hud-esa-guidance-2026-what-changed-for-emotional-support-animal-housing/couple-unpacking-rental-apartment-with-beagle.webp",
+          alt: "Couple unpacking boxes in their newly rented apartment while their beagle explores",
           caption:
             "Housing accommodations can help ESA owners live with the animal that supports their emotional well-being.",
         },
@@ -1621,8 +1644,12 @@ export const BLOG_POSTS: BlogArticle[] = [
           "Understanding this distinction matters because enforcement guidance and federal law are not the same thing. Any currently open ESA cases will be reviewed on a case-by-case basis.",
         ],
         bannerImage: {
-          src: "/blog-images/hud-esa-guidance-2026-what-changed-for-emotional-support-animal-housing/hud-esa-guidance-what-has-not-changed-image.webp",
-          alt: "hud esa guidance what has not changed",
+          src: "/blog-images/hud-esa-guidance-2026-what-changed-for-emotional-support-animal-housing/hud-esa-guidance-what-has-not-changed-infographic.webp",
+          alt: "Infographic of what has not changed after HUD’s 2026 ESA guidance: the Fair Housing Act, state laws, existing approvals and private legal options",
+          fullWidth: true,
+          mobileSrc: "/blog-images/hud-esa-guidance-2026-what-changed-for-emotional-support-animal-housing/hud-esa-guidance-what-has-not-changed-infographic-mobile.webp",
+          mobileWidth: 1120,
+          mobileHeight: 2542,
         },
         bannerPosition: "bottom",
       },
@@ -1765,7 +1792,7 @@ export const BLOG_POSTS: BlogArticle[] = [
     publishDate: "May 27, 2026",
     lastUpdated: "August 17, 2026",
     cardImage:
-      "/blog-images/can-landlords-reject-emotional-support-animals-here-s-the-truth/can-landlords-reject-esas-image.webp",
+      "/blog-images/can-landlords-reject-emotional-support-animals-here-s-the-truth/tenant-talking-with-landlord-with-small-dog.webp",
     heroImageMobile: "/hero-image-for-mobile-all.png",
     heroImageTablet: "/blogs/blog-hero-section-tablet.webp",
     heroImageDesktop: "/blogs/blog-hero-section.webp",
@@ -1862,8 +1889,8 @@ export const BLOG_POSTS: BlogArticle[] = [
           "This means a denial based on an untrained ESA is no longer treated as a federal violation by HUD, though state fair housing laws may still apply separately",
         ],
         bannerImage: {
-          src: "/blog-images/can-landlords-reject-emotional-support-animals-here-s-the-truth/can-landlords-reject-esas-image.webp",
-          alt: "Can Landlords Reject Emotional Support Animals?",
+          src: "/blog-images/can-landlords-reject-emotional-support-animals-here-s-the-truth/tenant-talking-with-landlord-with-small-dog.webp",
+          alt: "Tenant talking with his landlord at the apartment door, his small terrier mix by his feet",
           caption: "Emotional support animals help create a sense of calm, security, and connection.",
         },
         bannerPosition: "bottom",
@@ -1968,7 +1995,7 @@ export const BLOG_POSTS: BlogArticle[] = [
     publishDate: "May 14, 2026",
     lastUpdated: "August 17, 2026",
     cardImage:
-      "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/emotional-support-animal-image.webp",
+      "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/man-reading-with-cat-and-dog-on-sofa.webp",
     heroImageMobile: "/hero-image-for-mobile-all.png",
     heroImageTablet: "/blogs/blog-hero-section-tablet.webp",
     heroImageDesktop: "/blogs/blog-hero-section.webp",
@@ -2044,10 +2071,10 @@ export const BLOG_POSTS: BlogArticle[] = [
               "The most common ESAs, dogs provide loyalty, companionship, and emotional security. They help with anxiety, depression, loneliness, and panic attacks, and they also encourage people to stick to a routine and be active.",
             ],
             image: {
-              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/dog-image.webp",
-              alt: "dog",
-              width: 200,
-              height: 200,
+              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/dog-icon.webp",
+              alt: "Dog icon",
+              width: 96,
+              height: 96,
             },
             imagePosition: "top",
           },
@@ -2057,10 +2084,10 @@ export const BLOG_POSTS: BlogArticle[] = [
               "Cats are ideal for people who prefer a calm and low-maintenance companion. Their affectionate nature helps reduce stress, loneliness, and emotional anxiety, especially in apartment living.",
             ],
             image: {
-              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/cat-image.webp",
-              alt: "cat icon",
-              width: 200,
-              height: 200,
+              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/cat-icon.webp",
+              alt: "Cat icon",
+              width: 96,
+              height: 96,
             },
             imagePosition: "top",
           },
@@ -2070,10 +2097,10 @@ export const BLOG_POSTS: BlogArticle[] = [
               "Quiet and gentle, rabbits are great for smaller spaces. They help create a peaceful environment and provide comfort for people dealing with stress or social anxiety.",
             ],
             image: {
-              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/rabbit-image.webp",
-              alt: "rabbit icon",
-              width: 200,
-              height: 200,
+              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/rabbit-icon.webp",
+              alt: "Rabbit icon",
+              width: 96,
+              height: 96,
             },
             imagePosition: "top",
           },
@@ -2083,10 +2110,10 @@ export const BLOG_POSTS: BlogArticle[] = [
               "Birds offer emotional connection through interaction and playful behavior. They help lift your mood, make you feel less alone, and bring good things into your life every day.",
             ],
             image: {
-              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/bird-image.webp",
-              alt: "bird icon",
-              width: 200,
-              height: 200,
+              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/bird-icon.webp",
+              alt: "Bird icon",
+              width: 96,
+              height: 96,
             },
             imagePosition: "top",
           },
@@ -2096,17 +2123,17 @@ export const BLOG_POSTS: BlogArticle[] = [
               "Hamsters, guinea pigs, and similar pets can also be ESAs. They are easy to manage and help create emotional stability through companionship and routine.",
             ],
             image: {
-              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/small-animals-image.webp",
-              alt: "small animals icon",
-              width: 200,
-              height: 200,
+              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/small-animals-icon.webp",
+              alt: "Small animals icon",
+              width: 96,
+              height: 96,
             },
             imagePosition: "top",
           },
         ],
         bannerImage: {
-          src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/emotional-support-animal-image.webp",
-          alt: "emotional support animal",
+          src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/man-reading-with-cat-and-dog-on-sofa.webp",
+          alt: "Man reading on the sofa with his cat on his lap and his dog dozing beside him",
           caption:
             "The bond between humans and emotional support animals provides powerful therapeutic benefits",
         },
@@ -2161,10 +2188,10 @@ export const BLOG_POSTS: BlogArticle[] = [
               "This is why many renters search: “Can a landlord deny ESA?” But the answer is, in most cases, no. If you have a valid ESA letter.",
             ],
             image: {
-              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/fair-housing-act-image.webp",
-              alt: "fair housing act",
-              width: 200,
-              height: 200,
+              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/fair-housing-act-icon.webp",
+              alt: "Fair Housing Act icon",
+              width: 96,
+              height: 96,
             },
             imagePosition: "top",
           },
@@ -2189,8 +2216,12 @@ export const BLOG_POSTS: BlogArticle[] = [
         id: "esa-vs-service-animals",
         title: "ESA vs. Service Animals: What’s the Difference?",
         bannerImage: {
-          src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/difference-between-esa-and-service-animal-image.webp",
-          alt: "difference between ESA and service animal",
+          src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/esa-vs-service-animal-comparison-table.webp",
+          alt: "Comparison table of emotional support animals and service animals: role, training, housing, public access, air travel, animal type and documentation",
+          fullWidth: true,
+          mobileSrc: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/esa-vs-service-animal-comparison-table-mobile.webp",
+          mobileWidth: 1120,
+          mobileHeight: 1904,
         },
         bannerPosition: "bottom",
         paragraphs: [
@@ -2229,10 +2260,10 @@ export const BLOG_POSTS: BlogArticle[] = [
               "Confirmation that your need for the ESA is genuine",
             ],
             image: {
-              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/do-image.webp",
-              alt: "do icon",
-              width: 200,
-              height: 200,
+              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/landlords-can-ask-icon.webp",
+              alt: "Check mark icon",
+              width: 96,
+              height: 96,
             },
             imagePosition: "top",
           },
@@ -2247,10 +2278,10 @@ export const BLOG_POSTS: BlogArticle[] = [
               "This is especially helpful for renters worried about pet restrictions.",
             ],
             image: {
-              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/dont-image.webp",
-              alt: "Don't Icon",
-              width: 200,
-              height: 200,
+              src: "/blog-images/what-is-an-emotional-support-animal-everything-you-need-to-know/landlords-cannot-do-icon.webp",
+              alt: "Cross icon",
+              width: 96,
+              height: 96,
             },
             imagePosition: "top",
           },
@@ -2392,7 +2423,7 @@ export const BLOG_POSTS: BlogArticle[] = [
   },
   "publishDate": "July 10, 2026",
   "lastUpdated": "July 10, 2026",
-  "cardImage": "/blog-images/which-dsm-5-conditions-qualify-for-an-esa-a-condition-by-condition-guide/who-qualifing-for-emotional-support-animal-featured-image.webp",
+  "cardImage": "/blog-images/which-dsm-5-conditions-qualify-for-an-esa-a-condition-by-condition-guide/woman-journaling-with-dog-resting-on-knee.webp",
   "heroImageMobile": "/hero-image-for-mobile-all.png",
   "heroImageTablet": "/blogs/blog-hero-section-tablet.webp",
   "heroImageDesktop": "/blogs/blog-hero-section.webp",
@@ -2405,10 +2436,10 @@ export const BLOG_POSTS: BlogArticle[] = [
     "An ESA is more than just a pet. It is an animal recommended by a licensed mental health professional to provide emotional support related to a person’s mental health condition. Unlike service animals, ESAs don’t require specialized training, but their presence can significantly improve an individual’s daily functioning and emotional stability."
   ],
   "introImage": {
-    "src": "/blog-images/which-dsm-5-conditions-qualify-for-an-esa-a-condition-by-condition-guide/who-qualifing-for-emotional-support-animal-featured-image.webp",
-    "alt": "Woman laughing and playing with her golden retriever on a living room rug",
-    "width": 1201,
-    "height": 901
+    "src": "/blog-images/which-dsm-5-conditions-qualify-for-an-esa-a-condition-by-condition-guide/woman-journaling-with-dog-resting-on-knee.webp",
+    "alt": "Woman writing in a journal on the sofa while her dog rests its head on her knee",
+    "width": 1600,
+    "height": 1063
   },
   "tocItems": [
     {
@@ -2534,7 +2565,7 @@ export const BLOG_POSTS: BlogArticle[] = [
     {
       "id": "conditions-that-do-not-qualify",
       "title": "Conditions That Usually Do Not Qualify and Why?",
-        bannerImage: {"src":"/blog-images/which-dsm-5-conditions-qualify-for-an-esa-a-condition-by-condition-guide/does-it-quealitfy-for-an-esa.webp","alt":"Infographic showing conditions that usually qualify and usually do not qualify for an Emotional Support Animal (ESA)"},
+        bannerImage: {"src":"/blog-images/which-dsm-5-conditions-qualify-for-an-esa-a-condition-by-condition-guide/conditions-that-may-qualify-for-an-esa-infographic.webp","alt":"Conditions often evaluated for an ESA compared with situations that usually do not qualify on their own", "fullWidth": true, "mobileSrc": "/blog-images/which-dsm-5-conditions-qualify-for-an-esa-a-condition-by-condition-guide/conditions-that-may-qualify-for-an-esa-infographic-mobile.webp", "mobileWidth": 1120, "mobileHeight": 2154},
         bannerPosition: "bottom",
       "paragraphs": [
         "Not every type of emotional distress qualifies someone for an ESA. Temporary challenges, such as stress from a breakup, job loss, or exams, usually do not qualify by themselves because they are common life experiences. However, if these struggles develop into a diagnosed mental health condition that affects daily functioning, an ESA may be considered.",
@@ -2605,7 +2636,7 @@ export const BLOG_POSTS: BlogArticle[] = [
   },
   "publishDate": "August 26, 2026",
   "lastUpdated": "August 26, 2026",
-  "cardImage": "/images/blog/esa-for-anxiety/how-can-esa-support-with-anxity-image.webp",
+  "cardImage": "/images/blog/esa-for-anxiety/woman-breathing-calmly-with-black-labrador.webp",
   "heroImageMobile": "/hero-image-for-mobile-all.png",
   "heroImageTablet": "/blogs/blog-hero-section-tablet.webp",
   "heroImageDesktop": "/blogs/blog-hero-section.webp",
@@ -2620,10 +2651,10 @@ export const BLOG_POSTS: BlogArticle[] = [
     "Having anxiety just by itself, though, does not automatically qualify someone for an ESA. Whether the animal offers support linked to a diagnosed mental health need and a professional assessment will help to determine an individual’s qualification for an ESA."
   ],
   "introImage": {
-    "src": "/images/blog/esa-for-anxiety/how-can-esa-support-with-anxity-image.webp",
-    "alt": "Woman sitting on a sofa calmly stroking her golden retriever emotional support dog",
-    "width": 1201,
-    "height": 801
+    "src": "/images/blog/esa-for-anxiety/woman-breathing-calmly-with-black-labrador.webp",
+    "alt": "Woman sitting against the sofa with her eyes closed, one hand resting on her black Labrador",
+    "width": 1600,
+    "height": 1063
   },
   "tocItems": [
     {
@@ -2720,7 +2751,7 @@ export const BLOG_POSTS: BlogArticle[] = [
     {
       "id": "esa-rights",
       "title": "What Rights Does an ESA Letter Provide?",
-        bannerImage: {"src":"/images/blog/esa-for-anxiety/rights-does-an-esa-letter-provide-image.webp","alt":"Rights does an ESA letter provide"},
+        bannerImage: {"src":"/images/blog/esa-for-anxiety/esa-letter-rights-housing-vs-public-places.webp","alt":"ESA letter rights: housing accommodation under the Fair Housing Act, with no guaranteed access to public places", "fullWidth": true, "mobileSrc": "/images/blog/esa-for-anxiety/esa-letter-rights-housing-vs-public-places-mobile.webp", "mobileWidth": 1120, "mobileHeight": 1228},
         bannerPosition: "bottom",
       "paragraphs": [
         "Many people look for ESA paperwork because of issues with their homes. People with qualified impairments may ask for reasonable housing for an emotional support animal under the Fair Housing Act (FHA), even in places with pet restrictions.",
@@ -2740,7 +2771,7 @@ export const BLOG_POSTS: BlogArticle[] = [
     {
       "id": "choosing-esa",
       "title": "How to Choose an ESA for Anxiety Support?",
-        bannerImage: {"src":"/images/blog/esa-for-anxiety/esas-for-anxiety-support-image.webp","alt":"ESAs for anxiety support"},
+        bannerImage: {"src":"/images/blog/esa-for-anxiety/meeting-a-calm-shelter-dog.webp","alt":"Man kneeling to meet a calm adult dog in an animal shelter meeting room"},
         bannerPosition: "bottom",
       "paragraphs": [
         "Choosing an emotional support animal should not depend on the size, breed, or color of the animal. The right choice depends on the person’s lifestyle, emotional connection, and ability to provide proper care.",
@@ -2831,7 +2862,7 @@ export const BLOG_POSTS: BlogArticle[] = [
   },
   "publishDate": "September 11, 2026",
   "lastUpdated": "September 11, 2026",
-  "cardImage": "/blog-images/8-basic-obedience-commands-every-esa-should-know/training-an-esa-image.webp",
+  "cardImage": "/blog-images/8-basic-obedience-commands-every-esa-should-know/teaching-dog-to-sit-with-treat.webp",
   "heroImageMobile": "/hero-image-for-mobile-all.png",
   "heroImageTablet": "/blogs/blog-hero-section-tablet.webp",
   "heroImageDesktop": "/blogs/blog-hero-section.webp",
@@ -2878,7 +2909,7 @@ export const BLOG_POSTS: BlogArticle[] = [
     {
       "id": "esa-commands",
       "title": "What Commands Should an ESA Know?",
-        bannerImage: {"src":"/blog-images/8-basic-obedience-commands-every-esa-should-know/basic-commands-for-esas-image.webp","alt":"8 Basic obedience commands every ESA should know"},
+        bannerImage: {"src":"/blog-images/8-basic-obedience-commands-every-esa-should-know/8-basic-commands-every-esa-should-know-infographic.webp","alt":"Eight basic commands for an ESA: sit, stay, come, down, leave it, quiet, place and heel", "fullWidth": true, "mobileSrc": "/blog-images/8-basic-obedience-commands-every-esa-should-know/8-basic-commands-every-esa-should-know-infographic-mobile.webp", "mobileWidth": 1120, "mobileHeight": 2986},
         bannerPosition: "top",
       "paragraphs": [
         "Teaching an ESA basic commands can make day-to-day routines safer and easier to manage.",
@@ -3025,7 +3056,7 @@ export const BLOG_POSTS: BlogArticle[] = [
   },
   "publishDate": "October 13, 2026",
   "lastUpdated": "October 13, 2026",
-  "cardImage": "/blog-images/esa-for-depression/emotional-support-through-canine-companionship-image.webp",
+  "cardImage": "/blog-images/esa-for-depression/man-by-window-with-golden-retriever.webp",
   "heroImageMobile": "/hero-image-for-mobile-all.png",
   "heroImageTablet": "/blogs/blog-hero-section-tablet.webp",
   "heroImageDesktop": "/blogs/blog-hero-section.webp",
@@ -3081,10 +3112,10 @@ export const BLOG_POSTS: BlogArticle[] = [
         "According to the National Institute of Mental Health (NIMH), depression can interfere with everyday activities, relationships, and work. It can also make it harder to maintain personal hygiene, manage household responsibilities, or stay connected with others. The severity of these effects varies from person to person, and symptoms may last for weeks or longer."
       ],
       "bannerImage": {
-        "src": "/blog-images/esa-for-depression/emotional-support-through-canine-companionship-image.webp",
-        "alt": "emotional support through canine companionship",
-        "width": 1200,
-        "height": 800
+        "src": "/blog-images/esa-for-depression/man-by-window-with-golden-retriever.webp",
+        "alt": "Man sitting by a window with a morning coffee, his golden retriever leaning against him",
+        "width": 1600,
+        "height": 1063
       },
       "bannerPosition": "bottom"
     },
@@ -3152,10 +3183,14 @@ export const BLOG_POSTS: BlogArticle[] = [
         }
       ],
       "bannerImage": {
-        "src": "/blog-images/esa-for-depression/how-esa-help-with-depression-image.webp",
-        "alt": "how esa help with depression",
-        "width": 980,
-        "height": 654
+        "src": "/blog-images/esa-for-depression/how-an-esa-can-help-with-depression-infographic.webp",
+        "alt": "Four ways an ESA may help with depression: companionship, routine, emotional comfort and staying engaged",
+        "width": 1440,
+        "height": 1440,
+        fullWidth: true,
+        mobileSrc: "/blog-images/esa-for-depression/how-an-esa-can-help-with-depression-infographic-mobile.webp",
+        mobileWidth: 1120,
+        mobileHeight: 2280,
       },
       "bannerPosition": "bottom"
     },
@@ -3257,7 +3292,7 @@ export const BLOG_POSTS: BlogArticle[] = [
   },
   publishDate: "September 30, 2026",
   lastUpdated: "September 30, 2026",
-  cardImage: "/blog-images/esa-for-ptsd/esa-for-ptsd-image.webp",
+  cardImage: "/blog-images/esa-for-ptsd/man-resting-with-shepherd-mix-on-couch.webp",
   heroImageMobile: "/hero-image-for-mobile-all.png",
   heroImageTablet: "/blogs/blog-hero-section-tablet.webp",
   heroImageDesktop: "/blogs/blog-hero-section.webp",
@@ -3271,10 +3306,10 @@ export const BLOG_POSTS: BlogArticle[] = [
     "A licensed mental health professional must make the decision through an independent, clinical assessment. Understanding this process can help you know what to expect before requesting an ESA letter."
   ],
   introImage: {
-    src: "/blog-images/esa-for-ptsd/esa-for-ptsd-image.webp",
-    alt: "esa for ptsd",
-    width: 1024,
-    height: 559,
+    src: "/blog-images/esa-for-ptsd/man-resting-with-shepherd-mix-on-couch.webp",
+    alt: "Man resting on the couch in the evening with his shepherd mix’s head on his lap",
+    width: 1600,
+    height: 1063,
     fullWidth: true
   },
   tocItems: [
@@ -3353,11 +3388,14 @@ export const BLOG_POSTS: BlogArticle[] = [
       id: "what-esa-for-ptsd-helps",
       title: "What an ESA for PTSD Actually Helps With?",
       bannerImage: {
-        src: "/blog-images/esa-for-ptsd/what-an-esa-for-ptsd-actually-helps-with-image.webp",
-        alt: "what an esa for ptsd actually helps with",
-        width: 1024,
-        height: 1536,
-        fullWidth: true
+        src: "/blog-images/esa-for-ptsd/what-an-esa-for-ptsd-helps-with-infographic.webp",
+        alt: "What an ESA for PTSD may help with: calm during hard moments, routine and connection, and a greater sense of safety",
+        width: 1440,
+        height: 1546,
+        fullWidth: true,
+        mobileSrc: "/blog-images/esa-for-ptsd/what-an-esa-for-ptsd-helps-with-infographic-mobile.webp",
+        mobileWidth: 1120,
+        mobileHeight: 1854,
       },
       bannerPosition: "top",
       paragraphs: [
@@ -3385,11 +3423,14 @@ export const BLOG_POSTS: BlogArticle[] = [
       id: "questions-esa-letter-ptsd",
       title: "Things People Usually Ask While Getting an ESA Letter for PTSD.",
       bannerImage: {
-        src: "/blog-images/esa-for-ptsd/things-people-ask-about-esa-letters-for-ptsd-image.webp",
-        alt: "things people ask about esa letters for ptsd",
-        width: 1254,
-        height: 1254,
-        fullWidth: true
+        src: "/blog-images/esa-for-ptsd/common-questions-esa-letter-for-ptsd-infographic.webp",
+        alt: "Common questions about an ESA letter for PTSD: eligibility, type of animal, training, online evaluation, registration and treatment",
+        width: 1440,
+        height: 1650,
+        fullWidth: true,
+        mobileSrc: "/blog-images/esa-for-ptsd/common-questions-esa-letter-for-ptsd-infographic-mobile.webp",
+        mobileWidth: 1120,
+        mobileHeight: 3166,
       },
       bannerPosition: "top",
       paragraphs: [
@@ -3479,7 +3520,7 @@ export const BLOG_POSTS: BlogArticle[] = [
     },
     publishDate: "October 05, 2026",
     lastUpdated: "October 16, 2026",
-    cardImage: "/blog-images/how-to-prepare-your-esa-for-rental-housing/moving-in-with-a-furry-friend-image.webp",
+    cardImage: "/blog-images/how-to-prepare-your-esa-for-rental-housing/apartment-walkthrough-with-corgi.webp",
     heroImageMobile: "/hero-image-for-mobile-all.png",
     heroImageTablet: "/blogs/blog-hero-section-tablet.webp",
     heroImageDesktop: "/blogs/blog-hero-section.webp",
@@ -3493,10 +3534,10 @@ export const BLOG_POSTS: BlogArticle[] = [
       "Before moving day, focus on a few practical areas: house-training, barking, leash manners, being comfortable around strangers and other animals, and adjusting to being alone in a new home. At the same time, make sure your [housing documentation is ready](/esa-letter-for-housing/) and understand your responsibilities as a tenant."
     ],
     introImage: {
-      src: "/blog-images/how-to-prepare-your-esa-for-rental-housing/moving-in-with-a-furry-friend-image.webp",
-      alt: "moving in with a furry friend",
-      width: 1200,
-      height: 800,
+      src: "/blog-images/how-to-prepare-your-esa-for-rental-housing/apartment-walkthrough-with-corgi.webp",
+      alt: "Renter doing an apartment walkthrough with a property manager, her corgi on a loose leash",
+      width: 1600,
+      height: 1063,
       fullWidth: true
     },
     introQuoteBox: {
@@ -3692,7 +3733,7 @@ export const BLOG_POSTS: BlogArticle[] = [
     },
     publishDate: "October 12, 2026",
     lastUpdated: "October 16, 2026",
-    cardImage: "/blog-images/esa-training-myths/esa-training-myth-vs-fact-image.webp",
+    cardImage: "/blog-images/esa-training-myths/loose-leash-practice-in-apartment-hallway.webp",
     heroImageMobile: "/hero-image-for-mobile-all.png",
     heroImageTablet: "/blogs/blog-hero-section-tablet.webp",
     heroImageDesktop: "/blogs/blog-hero-section.webp",
@@ -3705,10 +3746,10 @@ export const BLOG_POSTS: BlogArticle[] = [
       "With the rise in online ESA information, misleading claims about ESA training and certifications have made it even more difficult for ESA owners to understand the actual legal responsibilities. Knowing what the law actually requires can help ESA owners make informed decisions about their support animals and housing rights."
     ],
     introImage: {
-      src: "/blog-images/esa-training-myths/esa-training-myth-vs-fact-image.webp",
-      alt: "esa training myth vs fact",
-      width: 1200,
-      height: 800,
+      src: "/blog-images/esa-training-myths/loose-leash-practice-in-apartment-hallway.webp",
+      alt: "Woman practicing loose-leash walking with her dog in an apartment hallway",
+      width: 1600,
+      height: 1063,
       fullWidth: true
     },
     introQuoteBox: {

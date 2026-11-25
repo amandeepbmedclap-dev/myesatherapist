@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import { SiteReviewerBanner } from "@/components/state/SiteReviewerBanner";
+import { FooterTrustBand } from "@/components/layout/FooterTrustBand";
 
 const FOOTER_GRADIENT = "linear-gradient(180deg, #0C3240 0%, #082733 55%, #061E28 100%)";
 
