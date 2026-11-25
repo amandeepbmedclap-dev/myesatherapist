@@ -297,16 +297,6 @@ export function PolicyContent({ policy }: PolicyContentProps) {
         </section>
       )}
 
-      {policy.reviewerLine && (
-        <div className="flex items-center gap-4 p-5 sm:p-6 rounded-[20px] bg-white border border-[#EAE5DC] shadow-xs">
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-accent font-bold text-base">
-            ✓
-          </div>
-          <p className="body-text">
-            <span className="font-bold text-primary">{policy.reviewerLine}</span>
-          </p>
-        </div>
-      )}
     </article>
   );
 }

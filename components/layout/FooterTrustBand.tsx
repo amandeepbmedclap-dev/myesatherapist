@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SiteReviewerBanner } from "@/components/state/SiteReviewerBanner";
+import { FooterReviewer } from "@/components/layout/FooterReviewer";
 
 /** Trust seals: only claims the business can substantiate. Each links to its proof page. */
 const SEALS = [
@@ -11,7 +11,7 @@ const SEALS = [
   { src: "/badges/clinician-reviewed-content-seal.svg", alt: "Clinician-reviewed content seal", label: "Clinician-reviewed content", href: "/editorial-policy/" },
 ];
 
-/** Top of the footer: trust seals and the reviewer credit. */
+/** Top of the footer: trust seals, plus the reviewer credit on state landing pages. */
 export function FooterTrustBand() {
   return (
     <div className="border-b border-white/10 py-9 lg:py-10">
@@ -32,9 +32,7 @@ export function FooterTrustBand() {
           </li>
         ))}
       </ul>
-      <div className="mt-8 flex justify-center border-t border-white/10 pt-6">
-        <SiteReviewerBanner placement="footer" />
-      </div>
+      <FooterReviewer />
     </div>
   );
 }
