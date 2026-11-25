@@ -71,14 +71,7 @@ export function Footer({ bgColor = "bg-background" }: { bgColor?: string }) {
   return (
     <footer className="w-full text-white" style={{ backgroundImage: FOOTER_GRADIENT }}>
       <div className="mx-auto max-w-[1280px] px-5 sm:px-8 lg:px-10">
-        <div className="flex flex-col gap-5 border-b border-white/10 py-7 sm:flex-row sm:items-center sm:justify-between">
-          <SiteReviewerBanner placement="footer" />
-          <div className="ml-auto flex h-11 w-[118px] shrink-0 items-center justify-center self-end rounded-[10px] bg-white px-2.5 sm:self-auto">
-            <span className="relative block h-full w-full">
-              <Image quality={90} src="/common/hipaa-logo.webp" alt="HIPAA Compliant" fill className="object-contain" sizes="118px" />
-            </span>
-          </div>
-        </div>
+        <FooterTrustBand />
 
         <div className="grid grid-cols-2 gap-x-6 gap-y-10 py-12 sm:py-14 lg:grid-cols-[1.5fr_1fr_1.1fr_1.25fr_1.4fr] lg:gap-8">
           <div className="col-span-2 space-y-5 lg:col-span-1 lg:pr-6">
