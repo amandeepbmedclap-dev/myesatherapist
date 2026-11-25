@@ -1,7 +1,9 @@
 /**
  * Visual overhaul pilot: new art-directed images per state page (non-hero).
- * Only states listed here get the new images; every other page keeps its current ones.
+ * Florida has a hand-picked set; every other state uses STATE_PHOTO_SETS plus the shared DEFAULT scenes.
  */
+import { STATE_PHOTO_SETS } from "./stateImageSets";
+
 export type PilotImage = { src: string; alt: string; position?: string };
 
 export type StateImageSet = {
@@ -55,6 +57,6 @@ const DEFAULT: StateImageSet = {
   },
 };
 
-const SETS: Record<string, StateImageSet> = { florida: FLORIDA };
+const SETS: Record<string, StateImageSet> = { ...STATE_PHOTO_SETS, florida: FLORIDA };
 
 export const stateImages = (slug: string): StateImageSet => ({ ...DEFAULT, ...(SETS[slug] ?? {}) });
