@@ -93,7 +93,7 @@ export function ArticleFeedback({ slug, compact = false }: { slug: string; compa
   );
 }
 
-const shareIcon = "flex size-10 items-center justify-center rounded-full bg-white text-primary ring-1 ring-primary/15 transition-colors hover:bg-primary hover:text-white hover:ring-primary";
+const shareIcon = "flex size-10 items-center justify-center rounded-full bg-white text-primary ring-1 ring-primary/15 transition-colors hover:bg-primary hover:!text-white hover:ring-primary [&_svg]:text-current";
 
 /** Share row: copy link, X, Facebook, LinkedIn, WhatsApp, email. */
 export function ArticleShare({ title, url }: { title: string; url: string }) {
