@@ -37,18 +37,24 @@ const FLORIDA: StateImageSet = {
     src: "/images/florida/florida-telehealth-esa-evaluation-video-call.webp",
     alt: "Florida resident on a telehealth video call with a licensed clinician for her ESA evaluation, her golden retriever at her feet",
   },
-  scamsCommon: {
-    src: "/images/florida/hesitating-before-paying-online-esa-registry.webp",
-    alt: "Man pausing with his credit card before paying an online ESA registry site",
-    position: "50% 35%",
+};
+
+/** Shared defaults for every other state (no regional cues in the scenes). */
+const DEFAULT: StateImageSet = {
+  lawsFederal: {
+    src: "/images/common/tenant-reviewing-lease-with-cat.webp",
+    alt: "Tenant reading her lease at the kitchen table while her cat sits beside the papers",
   },
-  faq: {
-    src: "/images/florida/reading-esa-faqs-on-phone-with-dog.webp",
-    alt: "Woman reading answers about ESA letters on her phone while her Labrador sleeps beside her on the sofa",
-    position: "40% 50%",
+  lawsProvider: {
+    src: "/images/common/property-manager-reviewing-esa-letter.webp",
+    alt: "Property manager reviewing a tenant's ESA letter while he waits with his small dog",
+  },
+  scamsNeed: {
+    src: "/images/common/telehealth-esa-evaluation-video-call.webp",
+    alt: "Woman on a telehealth video call with a licensed clinician for her ESA evaluation, her golden retriever lying nearby",
   },
 };
 
 const SETS: Record<string, StateImageSet> = { florida: FLORIDA };
 
-export const stateImages = (slug: string): StateImageSet => SETS[slug] ?? {};
+export const stateImages = (slug: string): StateImageSet => ({ ...DEFAULT, ...(SETS[slug] ?? {}) });

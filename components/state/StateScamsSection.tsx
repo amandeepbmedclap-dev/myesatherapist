@@ -132,11 +132,11 @@ export function StateScamsSection({ data }: { data: StateData }) {
             <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] overflow-hidden shrink-0">
               <Image
             quality={90}
-                src={img.scamsCommon?.src ?? "/states/california-scams-commonesascams.webp"}
-                alt={img.scamsCommon?.alt ?? "Common ESA Scams to Avoid"}
+                src={img.scamsCommon?.src ?? "/images/common/hesitating-before-paying-online-esa-registry.webp"}
+                alt={img.scamsCommon?.alt ?? "Man pausing with his credit card before paying an online ESA registry site"}
                 fill
                 className="object-cover object-[center_20%]"
-                style={img.scamsCommon?.position ? { objectPosition: img.scamsCommon.position } : undefined}
+                style={{ objectPosition: img.scamsCommon?.position ?? "50% 35%" }}
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>

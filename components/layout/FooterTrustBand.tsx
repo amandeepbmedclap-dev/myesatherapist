@@ -2,12 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { Lock, RotateCcw, Stethoscope } from "lucide-react";
 import { SiteReviewerBanner } from "@/components/state/SiteReviewerBanner";
-
-/** Pages piloting the redesigned trust band (visual overhaul pilot). */
-const PILOT = new Set(["/esa-letter-florida/"]);
 
 const items = [
   { icon: Stethoscope, title: "State-licensed clinicians", sub: "Evaluations by professionals licensed where you live", href: "/esa-doctors/" },
@@ -16,9 +12,7 @@ const items = [
 ];
 
 /** Top of the footer: reviewer credit and the trust signals we can substantiate. */
-export function FooterTrustBand({ legacy }: { legacy: React.ReactNode }) {
-  const pathname = usePathname() ?? "";
-  if (!PILOT.has(pathname)) return <>{legacy}</>;
+export function FooterTrustBand() {
   return (
     <div className="border-b border-white/10 py-8 lg:py-9">
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0">
