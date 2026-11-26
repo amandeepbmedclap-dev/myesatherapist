@@ -43,7 +43,7 @@ export function CtaBanner({
     >
       <div className="relative mx-auto max-w-[1280px] rounded-[28px] color-gradient shadow-[0_40px_80px_-50px_rgba(26,61,79,0.8)] lg:rounded-[32px]">
         <div className="pointer-events-none absolute bottom-0 left-[40%] z-0 hidden h-[150px] w-[220px] md:block">
-          <Image quality={90} src="/common/cta-section-paw.webp" alt="" fill sizes="220px" className="object-contain object-bottom opacity-80" />
+          <Image quality={90} src="/common/cta-section-paw.webp" alt="Paw print" fill sizes="220px" className="object-contain object-bottom opacity-80" />
         </div>
 
         <div
@@ -89,7 +89,7 @@ export function CtaBanner({
           <Image
             quality={90}
             src="/common/cta-banner-background.webp"
-            alt=""
+            alt="Woman embracing emotional support dog"
             fill
             loading="eager"
             className="object-contain object-bottom"

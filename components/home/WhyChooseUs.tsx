@@ -114,7 +114,7 @@ export function WhyChooseUs({
                   {String(idx + 1).padStart(2, "0")}
                 </span>
                 <span className="relative flex size-14 shrink-0 items-center justify-center rounded-[16px] bg-white shadow-[0_8px_20px_-12px_rgba(26,61,79,0.5)]">
-                  <Image quality={90} src={resolvedIcon} alt="" width={28} sizes="28px" height={28} unoptimized className="size-7 object-contain transition-transform duration-300 group-hover:scale-110" />
+                  <Image quality={90} src={resolvedIcon} alt={itemTitle} width={28} sizes="28px" height={28} unoptimized className="size-7 object-contain transition-transform duration-300 group-hover:scale-110" />
                 </span>
                 <div className={`relative min-w-0 ${bento ? textGap[idx] : "mt-5"}`}>
                   <h3 className="heading-h3 font-heading font-bold text-primary">{itemTitle}</h3>

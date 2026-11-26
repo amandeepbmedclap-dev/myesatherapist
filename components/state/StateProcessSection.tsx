@@ -86,7 +86,7 @@ export function StateProcessSection({ data }: { data: StateData }) {
               className="grid grid-cols-1 gap-x-4 gap-y-2 border-b border-line-200 px-5 py-6 last:border-b-0 sm:grid-cols-[72px_minmax(0,1fr)] sm:px-8 sm:py-7 lg:grid-cols-[88px_minmax(0,340px)_minmax(0,1fr)] lg:items-center lg:gap-x-10 lg:px-10 lg:py-8"
             >
               <div className="relative row-span-2 hidden size-14 items-center justify-center self-start rounded-full bg-cream-100 sm:flex sm:size-[72px] lg:row-span-1 lg:size-[88px] lg:self-center">
-                <Image quality={90} src={processIcon(step.icon)} alt="" width={30} sizes="30px" height={30} unoptimized className="size-6 object-contain sm:size-[30px]" />
+                <Image quality={90} src={processIcon(step.icon)} alt={step.title} width={30} sizes="30px" height={30} unoptimized className="size-6 object-contain sm:size-[30px]" />
                 <span className="absolute -right-1 -top-1 flex size-7 items-center justify-center rounded-full bg-primary font-sans text-base font-extrabold leading-none text-white">
                   {step.number}
                 </span>
@@ -94,7 +94,7 @@ export function StateProcessSection({ data }: { data: StateData }) {
               <div className="min-w-0 self-center">
                 <div className="flex items-center gap-2.5">
                   <span className="flex size-10 items-center justify-center rounded-full bg-cream-100 sm:hidden">
-                    <Image quality={90} src={processIcon(step.icon)} alt="" width={22} sizes="22px" height={22} unoptimized className="size-[22px] object-contain" />
+                    <Image quality={90} src={processIcon(step.icon)} alt={step.title} width={22} sizes="22px" height={22} unoptimized className="size-[22px] object-contain" />
                   </span>
                   <span className="font-sans text-base font-extrabold uppercase tracking-[0.12em] text-[#8A6A12]">Step {step.number}</span>
                 </div>

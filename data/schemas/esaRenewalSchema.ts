@@ -350,6 +350,14 @@ export const esaRenewalSchemas = [
           },
           {
             "@type": "Question",
+            "name": "Do you auto-renew emotional support animal letters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. ESA recommendation letters are not auto-renewed. Every ESA renewal evaluation requires a real review by a state-licensed mental health professional, who independently determines whether updated documentation may be appropriate."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "Will my landlord accept the renewed documentation?",
             "acceptedAnswer": {
               "@type": "Answer",

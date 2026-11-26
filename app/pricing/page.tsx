@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { serializeLd } from "@/lib/site";
 import { pruneSchema } from "@/lib/schema";
 import type { Metadata } from "next";
@@ -98,9 +99,11 @@ export default function PricingPage() {
           title="Ready to Start Your ESA Evaluation With a Licensed Professional?"
           description={
             <>
-              Choose your package and book your appointment today. You are only{" "}
-              <br className="hidden sm:inline" />
-              charged when you book. See the Refund Policy for when a refund applies.
+              Choose your package and book your appointment today. You are only charged when you book. See the{" "}
+              <Link href="/refund-policy/" className="underline underline-offset-2 hover:text-white">
+                Refund Policy
+              </Link>{" "}
+              for when a refund applies.
             </>
           }
           buttonText="Start Your ESA Evaluation"

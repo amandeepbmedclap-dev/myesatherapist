@@ -330,7 +330,7 @@ function BenefitList({
         {items.map((item, idx) => (
           <li key={item.title} className={`flex gap-4 py-5 ${idx > 0 ? "border-t border-primary/10" : "pt-3"} last:pb-0`}>
             <span className="flex size-11 shrink-0 items-center justify-center rounded-[14px] bg-white shadow-[0_6px_16px_-10px_rgba(26,61,79,0.5)]">
-              <Image quality={90} src={icons[idx]} alt="" width={24} height={24} sizes="24px" unoptimized className="size-6 object-contain" />
+              <Image quality={90} src={icons[idx]} alt={item.title} width={24} height={24} sizes="24px" unoptimized className="size-6 object-contain" />
             </span>
             <div className="min-w-0">
               <h4 className="heading-h4 font-heading font-bold text-primary">{item.title}</h4>
@@ -383,7 +383,7 @@ export function StateBenefitsV2({ data }: { data: StateData }) {
                 style={{ objectPosition: pilotImg?.position ?? `${BENEFITS_FOCUS_X[data.slug] ?? 50}% ${BENEFITS_FOCUS_Y[data.slug] ?? 40}%` }} />
               <span aria-hidden className="absolute inset-x-0 bottom-0 h-1/3 bg-[linear-gradient(180deg,rgba(26,61,79,0)_0%,rgba(26,61,79,0.55)_100%)]" />
               <span className="absolute bottom-4 right-4 flex size-12 items-center lg:bottom-5 lg:right-auto lg:left-1/2 lg:size-14 lg:-translate-x-1/2 justify-center rounded-full bg-white shadow-[0_10px_24px_-10px_rgba(0,0,0,0.45)]">
-                <Image quality={90} src="/states/whomayqualifies-california-icon.webp" alt="" width={40} height={40} sizes="40px" className="size-9 object-contain" />
+                <Image quality={90} src="/states/whomayqualifies-california-icon.webp" alt="Emotional support animal" width={40} height={40} sizes="40px" className="size-9 object-contain" />
               </span>
             </div>
           </div>

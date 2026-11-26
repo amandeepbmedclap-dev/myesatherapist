@@ -115,7 +115,7 @@ export function HeroSection() {
                 <Image
                   quality={90}
                   src="/esa-icons/icon-37.svg"
-                  alt=""
+                  alt="Location"
                   width={20}
           sizes="20px"
                   height={20}
