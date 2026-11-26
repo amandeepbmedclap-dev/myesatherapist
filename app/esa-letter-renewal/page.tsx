@@ -62,42 +62,48 @@ export const metadata: Metadata = applySheetSeo({
 const esaRenewalFaqs = [
   {
     num: "01.",
-    q: "Is My ESA Therapist legitimate?",
-    a: "Yes. My ESA Therapist connects you directly with independent, state-licensed mental health professionals (LMHPs) who conduct clinical assessments in full compliance with federal Fair Housing Act (FHA) and HUD regulations. Every letter issued includes the clinician's official state license number, contact details, and clinical verification.",
+    q: "How recent does my ESA letter need to be for housing purposes?",
+    a: "Many housing providers prefer a current emotional support animal letter that reflects your present situation. While federal laws do not set an official expiration date, documentation is often expected to be no older than one year, based on housing provider review practices.",
   },
   {
     num: "02.",
-    q: "How does My ESA Therapist work?",
-    a: (
-      <div>
-        <p className="mb-2 body-large text-[18px] leading-[28px]">Our process is simple and transparent:</p>
-        <ol className="list-decimal list-outside pl-5 space-y-1.5 body-large text-[18px] leading-[28px]">
-          <li>Complete a confidential online pre-screening questionnaire</li>
-          <li>Schedule a telehealth consultation with a licensed clinician in your state</li>
-          <li>If qualified, receive your official ESA recommendation letter delivered securely via email.</li>
-        </ol>
-      </div>
-    ),
+    q: "How long does the ESA letter renewal process take?",
+    a: "The renewal process is completed online and typically takes 24–48 hours after the evaluation, depending on provider availability and review time. Timing may vary based on individual circumstances and scheduling.",
   },
   {
     num: "03.",
-    q: "Is my information safe with my ESA?",
-    a: "Yes. We take privacy extremely seriously. All personal and clinical information is encrypted, transmitted securely, and protected under strict HIPAA-compliant protocols. We will never share or sell your private information.",
+    q: "Will my evaluation be with the same provider every time or someone new?",
+    a: "Your ESA renewal evaluation is completed by a state-licensed mental health professional authorized in your state. The provider may differ from previous evaluations, but each review follows the same ethical and professional standards.",
   },
   {
     num: "04.",
-    q: "Do I need to renew my ESA letter every year?",
-    a: "Most housing providers and property managers request that an ESA recommendation letter be dated within the last 12 months. An annual renewal evaluation helps ensure that your documentation accurately reflects your current emotional support animal needs.",
+    q: "What kind of questions will the provider ask during the renewal evaluation?",
+    a: "During a renewal evaluation, the provider typically asks about your current emotional well-being, daily challenges, and how your emotional support animal has been helping over time.",
   },
   {
     num: "05.",
-    q: "Can a landlord reject an ESA letter?",
-    a: "Under the Fair Housing Act, landlords cannot deny reasonable accommodation for emotional support animals with valid documentation from a licensed provider, except under specific narrow exemptions (such as owner-occupied buildings with four or fewer units).",
+    q: "Is renewing an ESA letter different from getting a new ESA letter?",
+    a: "Yes. An ESA letter renewal focuses on reviewing your current circumstances and ongoing support needs, while a new ESA evaluation involves an initial review. Renewals are intended for individuals who previously had valid ESA documentation.",
   },
   {
     num: "06.",
-    q: "How quickly can I receive my renewal letter?",
-    a: "After your telehealth evaluation is completed and your renewal is approved by the licensed professional, your official renewed ESA letter is delivered electronically in PDF format within 24 to 48 hours.",
+    q: "What if my situation hasn’t changed much, do I still need a renewal?",
+    a: "Even if your circumstances feel similar, housing providers may request updated ESA documentation. A renewal allows a licensed professional to confirm whether ongoing emotional support may still be appropriate based on your current situation.",
+  },
+  {
+    num: "07.",
+    q: "Will the letter include today’s date or the evaluation date?",
+    a: "If approved, the emotional support animal letter is issued using the evaluation date, showing that the documentation reflects a recent professional review.",
+  },
+  {
+    num: "08.",
+    q: "Do you auto-renew emotional support animal letters?",
+    a: "No. ESA recommendation letters are not auto-renewed. Every ESA renewal evaluation requires a real review by a state-licensed mental health professional, who independently determines whether updated documentation may be appropriate.",
+  },
+  {
+    num: "09.",
+    q: "Will my landlord accept the renewed documentation?",
+    a: "Landlord acceptance is not guaranteed. However, a renewed ESA letter issued by a state-licensed professional can help support a housing accommodation request where permitted under fair housing guidelines.",
   },
 ];
 
