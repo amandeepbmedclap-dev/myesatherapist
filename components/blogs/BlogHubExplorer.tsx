@@ -84,7 +84,7 @@ export function PostCard({ p, wide = false, priority = false }: { p: HubPost; wi
       <span className={`relative block shrink-0 overflow-hidden bg-background ${wide ? "aspect-[16/10] md:aspect-auto md:min-h-[300px] md:w-[50%]" : "aspect-[16/10]"}`}>
         <Image
           src={p.image}
-          alt=""
+          alt={p.title}
           fill
           priority={priority}
           sizes={wide ? "(min-width:1024px) 420px, 100vw" : "(min-width:1024px) 400px, (min-width:640px) 50vw, 100vw"}
@@ -263,7 +263,7 @@ export function BlogHubExplorer({
           {/* Featured story */}
           <Link href={featured.url} className="group relative flex flex-col overflow-hidden rounded-[28px] bg-[#1A3D4F] shadow-[0_40px_70px_-40px_rgba(26,61,79,0.8)]">
             <span className="relative block aspect-[16/10] overflow-hidden">
-              <Image src={featured.image} alt="" fill priority sizes="(min-width:1024px) 560px, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+              <Image src={featured.image} alt={featured.title} fill priority sizes="(min-width:1024px) 560px, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
               <span className="absolute left-5 top-5 rounded-full bg-accent px-3.5 py-1.5 text-base font-extrabold uppercase tracking-[0.12em] text-[#1A3D4F]">
                 Featured · {featured.category}
               </span>
@@ -371,7 +371,7 @@ export function BlogHubExplorer({
                   <li key={p.slug}>
                     <Link href={p.url} className="group flex h-full items-center gap-4 sm:flex-col sm:items-stretch sm:gap-0">
                       <span className="relative block aspect-square w-24 shrink-0 overflow-hidden rounded-[16px] bg-white/10 sm:aspect-[4/3] sm:w-auto sm:rounded-[18px]">
-                        <Image src={p.image} alt="" fill sizes="(min-width:1024px) 300px, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.06]" />
+                        <Image src={p.image} alt={p.title} fill sizes="(min-width:1024px) 300px, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.06]" />
                       </span>
                       <span className="flex items-start gap-3 sm:mt-4">
                         <span className="font-heading text-[40px] font-bold leading-[0.9] text-accent">{String(i + 1).padStart(2, "0")}</span>

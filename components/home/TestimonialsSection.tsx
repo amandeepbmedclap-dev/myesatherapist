@@ -147,7 +147,7 @@ function QuoteCard({ review, active, onSelect }: { review: (typeof reviews)[numb
     >
       <span className={`relative size-14 shrink-0 overflow-hidden rounded-full ring-2 ${active ? "ring-accent" : "ring-white shadow-sm"}`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={thumb(review.id)} alt="" loading="lazy" decoding="async" className="absolute inset-0 size-full scale-[2] object-cover object-center" />
+        <img src={thumb(review.id)} alt={`${review.name} video review`} loading="lazy" decoding="async" className="absolute inset-0 size-full scale-[2] object-cover object-center" />
         <span className="absolute inset-0 flex items-center justify-center bg-black/25">
           <Play aria-hidden className="ml-0.5 size-4 fill-white text-white" />
         </span>

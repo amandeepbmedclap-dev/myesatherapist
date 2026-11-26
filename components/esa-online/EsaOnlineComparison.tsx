@@ -49,7 +49,7 @@ export function EsaOnlineComparison() {
                 <div key={row.feature} className="grid grid-cols-[1fr_297px_1fr] items-center h-[64px]">
                   <div className="flex items-center gap-3 pl-6 pr-2 min-w-0">
                     <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white shadow-[0px_1px_4px_rgba(0,0,0,0.25)]">
-                      <Image quality={90} src={row.icon} alt="" width={20}
+                      <Image quality={90} src={row.icon} alt={row.feature} width={20}
           sizes="20px" height={20} unoptimized className="h-5 w-5 object-contain" />
                     </span>
                     <h4 className="heading-h4 text-primary">
@@ -62,7 +62,7 @@ export function EsaOnlineComparison() {
                       <Image
                         quality={90}
                         src={`${P}-${row.other.type}-icon.svg`}
-                        alt=""
+                        alt={row.other.text}
                         width={22}
           sizes="22px"
                         height={22}

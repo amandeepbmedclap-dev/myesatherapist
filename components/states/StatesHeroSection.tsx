@@ -67,7 +67,7 @@ export function StatesHeroSection() {
         <Image
           quality={90}
           src="/esa-icons/icon-37.svg"
-          alt=""
+          alt="Available in all 50 states"
           width={28}
           sizes="28px"
           height={28}
@@ -102,7 +102,7 @@ export function StatesHeroSection() {
             className="inline-flex h-[48px] min-w-[220px] items-center justify-between gap-3 rounded-full border border-primary bg-background px-6 shadow-sm lg:h-[54px] lg:min-w-[246px]"
           >
             <span className="flex items-center gap-2">
-              <Image src="/esa-icons/icon-37.svg" alt="" width={20}
+              <Image src="/esa-icons/icon-37.svg" alt="Location" width={20}
           sizes="20px" height={20} unoptimized className="icon-sm shrink-0 object-contain" />
               <span className="body-text text-color-gradient">{stateLabel}</span>
             </span>

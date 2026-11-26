@@ -147,7 +147,7 @@ export function AsSeenOnSection({ bgColor = "bg-white/40" }: AsSeenOnSectionProp
                   </a>
                 ) : (
                   <span key={logo.name} className="flex h-12 shrink-0 items-center opacity-55 grayscale">
-                    <Image quality={90} unoptimized loading="lazy" src={logo.src} alt="" width={260} height={65} sizes="260px" className={`shrink-0 ${logoClass(logo)}`} />
+                    <Image quality={90} unoptimized loading="lazy" src={logo.src} alt={logo.name} width={260} height={65} sizes="260px" className={`shrink-0 ${logoClass(logo)}`} />
                   </span>
                 )
               )}

@@ -56,7 +56,7 @@ export function PsdWhyChooseSection() {
                 <div className="hover-badge absolute -top-6 left-1/2 flex h-[52px] w-[52px] -translate-x-1/2 items-center justify-center rounded-full border border-[#E2E8F0] bg-white shadow-[0px_2.5px_5px_rgba(0,0,0,0.25)] sm:-top-7 sm:h-[58px] sm:w-[58px] lg:h-[64px] lg:w-[64px]">
                   <Image quality={90}
                     src={item.icon}
-                    alt=""
+                    alt={item.title}
                     width={32}
           sizes="32px"
                     height={32}

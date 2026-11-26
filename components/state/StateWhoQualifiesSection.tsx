@@ -159,7 +159,7 @@ export function StateWhoQualifiesV2({ data }: { data: StateData }) {
               <div key={item.title} className="flex flex-col rounded-[20px] bg-background p-5 ring-1 ring-line-200 sm:p-6">
                 <div className="flex items-center gap-3 sm:min-h-[52px]">
                   <span className="flex size-11 shrink-0 items-center justify-center rounded-[14px] bg-white shadow-[0_6px_16px_-10px_rgba(26,61,79,0.5)]">
-                    <Image quality={90} src={icons[idx]} alt="" width={24} height={24} sizes="24px" unoptimized className="size-6 object-contain" />
+                    <Image quality={90} src={icons[idx]} alt={item.title} width={24} height={24} sizes="24px" unoptimized className="size-6 object-contain" />
                   </span>
                   <h4 className="heading-h4 min-w-0 font-heading font-bold text-primary">{item.title.replace(/\//g, "/\u200B")}</h4>
                 </div>

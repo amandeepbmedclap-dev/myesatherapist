@@ -121,7 +121,7 @@ export function CategoryHubExplorer({
             (featured && (
               <Link href={featured.url} className="group relative flex flex-col overflow-hidden rounded-[28px] bg-[#1A3D4F] shadow-[0_40px_70px_-40px_rgba(26,61,79,0.8)]">
                 <span className="relative block aspect-[16/10] overflow-hidden">
-                  <Image src={featured.image} alt="" fill priority sizes="(min-width:1024px) 560px, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+                  <Image src={featured.image} alt={featured.title} fill priority sizes="(min-width:1024px) 560px, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
                   <span className="absolute left-5 top-5 rounded-full bg-accent px-3.5 py-1.5 text-base font-extrabold uppercase tracking-[0.12em] text-[#1A3D4F]">
                     Featured · {name}
                   </span>
