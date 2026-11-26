@@ -31,10 +31,11 @@ export function HeroCtaGroup({
         href={selectedState ? psdStateDestination(selectedState) : undefined}
         onClick={selectedState ? undefined : () => openStateSelectModal("psd")}
         stateModal={false}
+        letter="psd"
         variant="accent"
         className={ctaClassName}
       >
-        Get Started
+        Start My PSD Evaluation
       </CtaButton>
     </div>
   );

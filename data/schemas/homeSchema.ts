@@ -70,12 +70,6 @@ export const homeSchema = {
         },
         {
           "@type": "CreativeWork",
-          "name": "The Pet Rent Trap: A Housing Cost Breakdown",
-          "url": "https://www.rentdeals.com/blog/the-pet-rent-trap-a-housing-cost-breakdown-with-insights-from-my-esa-therapist/",
-          "publisher": { "@type": "Organization", "name": "rentDEALS.com" }
-        },
-        {
-          "@type": "CreativeWork",
           "name": "ESA Therapist Highlights Growing Demand",
           "url": "https://finance.yahoo.com/sectors/healthcare/articles/esa-therapist-highlights-growing-demand-165000890.html",
           "publisher": { "@type": "Organization", "name": "Yahoo Finance" }

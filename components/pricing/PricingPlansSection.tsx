@@ -1,6 +1,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { CtaButton } from "@/components/common/CtaButton";
 import { PricingSection } from "@/components/home/PricingSection";
 
 const ESA_INTRO =
@@ -11,10 +12,8 @@ const PSD_INTRO =
 
 export function PricingPlansSection({
   ctaHref = "#evaluation",
-  addPetHref = "#add-pet",
 }: {
   ctaHref?: string;
-  addPetHref?: string;
 } = {}) {
   return (
     <div id="plans">
@@ -68,12 +67,9 @@ export function PricingPlansSection({
                 </p>
               </div>
             </div>
-            <a
-              href={addPetHref}
-              className="cta3d cta3d--outline inline-flex h-[48px] shrink-0 items-center justify-center px-8 font-sans text-[16px] leading-[22px]"
-            >
-              Add A Pet
-            </a>
+            <CtaButton forceStateModal wrap showIcon={false} variant="secondary" className="w-full px-5 sm:w-auto">
+              Start ESA Evaluation for Multiple Pets
+            </CtaButton>
           </div>
         </div>
       </div>

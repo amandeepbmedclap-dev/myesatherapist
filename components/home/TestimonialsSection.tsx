@@ -51,7 +51,7 @@ export function TestimonialsSection({
   title = "See What Our Clients Say About Their ESA Evaluation Experience",
   subtitle = "Here’s what our clients say about their experience.",
   buttonText = "See More Reviews",
-  buttonHref = "/reviews",
+  buttonHref = "/video-testimonials/",
 }: TestimonialsSectionProps = {}) {
   const [active, setActive] = useState(0);
   const [playing, setPlaying] = useState(false);
