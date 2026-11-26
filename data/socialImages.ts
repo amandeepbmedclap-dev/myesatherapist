@@ -88,6 +88,9 @@ const SIZES: Record<string, [number, number]> = {
   "blog-who-can-write-an-esa-letter": [1200, 630],
   "blog-esa-for-bipolar-disorder": [1200, 630],
   "blog-esa-for-adhd": [1200, 630],
+  "blog-esa-letter-for-college-dorms": [1200, 630],
+  "blog-esa-pet-rent-and-deposits": [1200, 630],
+  "blog-esa-vs-service-animal": [1200, 630],
 };
 
 const PATHS: Record<string, string> = {
@@ -123,6 +126,9 @@ const PATHS: Record<string, string> = {
   "blog-who-can-write-an-esa-letter": "/images/blog/og/who-can-write-an-esa-letter.jpg",
   "blog-esa-for-bipolar-disorder": "/images/blog/og/esa-for-bipolar-disorder.jpg",
   "blog-esa-for-adhd": "/images/blog/og/esa-for-adhd.jpg",
+  "blog-esa-letter-for-college-dorms": "/images/blog/og/esa-letter-for-college-dorms.jpg",
+  "blog-esa-pet-rent-and-deposits": "/images/blog/og/esa-pet-rent-and-deposits.jpg",
+  "blog-esa-vs-service-animal": "/images/blog/og/esa-vs-service-animal.jpg",
 };
 
 function imagePath(key: string) {

@@ -29,7 +29,7 @@ export const NAV: { key: MenuKey; label: string; title: string; intro: string; i
       { label: "ESA Letter for Housing", href: "/esa-letter-for-housing/", note: "Documentation for rentals and HOAs" },
       { label: "ESA Letter Renewal", href: "/esa-letter-renewal/", note: "Keep your documentation current" },
       { label: "PSD Letter", href: "/psd-letter/", note: "For trained psychiatric service dogs" },
-      { label: "ESA & PSD Combo", href: "/pricing/", note: "Both letters in one evaluation" },
+      { label: "Video Testimonials", href: "/video-testimonials/", note: "Real clients, in their own words" },
       { label: "Pricing", href: "/pricing/", note: "Plans, extra pets and renewals" },
     ],
   },

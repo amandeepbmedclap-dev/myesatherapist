@@ -1,4 +1,7 @@
 import type { BlogArticle } from "./blogsData";
+import { esaLetterForCollegeDormsSchema } from "./schemas/esaLetterForCollegeDormsSchema";
+import { esaPetRentAndDepositsSchema } from "./schemas/esaPetRentAndDepositsSchema";
+import { esaVsServiceAnimalSchema } from "./schemas/esaVsServiceAnimalSchema";
 
 const EVALUATION_HREF = "https://myesatherapist.videovisitmd.com/f/vshop-signIN?straitTo=schedule";
 
@@ -34,6 +37,653 @@ const bottomCta = {
 };
 
 export const NEW_BLOG_POSTS: BlogArticle[] = [
+  {
+    id: "esa-vs-service-animal",
+    slug: "esa-vs-service-animal",
+    categorySlug: "esa-guide",
+    url: "/blog/esa-guide/esa-vs-service-animal/",
+    canonicalUrl: "https://myesatherapist.com/blog/esa-guide/esa-vs-service-animal/",
+    schema: esaVsServiceAnimalSchema,
+    title: "ESA vs. Service Animal: Which One Fits Your Situation?",
+    cardTitle: "ESA vs. Service Animal: Which One Fits Your Situation?",
+    metaTitle: "ESA vs. Service Animal: What's the Difference? | My ESA Therapist",
+    metaDescription:
+      "Not sure if you need an ESA or a service animal? Compare training, documentation, housing protections, and public access rights under federal law.",
+    ogTitle: "ESA vs. Service Animal: Key Differences Explained",
+    ogDescription:
+      "ESA vs. service animal: compare training, documentation, housing protections, and public access rights under the ADA and FHA to see which fits you.",
+    shortDescription:
+      "Emotional support animals provide comfort and companionship to individuals with disabilities, while service animals are trained to perform specific disability-related tasks. Both offer support in different ways, but their training requirements, documentation, housing protections, and public access rights differ under federal law.",
+    category: "ESA Guide",
+    author: allyson,
+    reviewedBy: { ...maxPhillips, date: "November 26, 2026" },
+    publishDate: "November 26, 2026",
+    lastUpdated: "November 26, 2026",
+    cardImage: "/blog-images/esa-vs-service-animal/handler-with-service-dog-sharp.webp",
+    ...heroes,
+    keyHighlights: [
+      "An ESA offers comfort through presence and companionship. A service animal is trained to perform specific tasks related to a disability.",
+      "ESAs do not need specialized task training. A service dog must be individually trained, and a handler may train their own dog.",
+      "ESAs are mainly recognized for housing under the Fair Housing Act. Service dogs generally have public access under the ADA.",
+      "An ESA letter may support a housing request. A vest, certificate, or registry does not create public access or eligibility.",
+      "The same dog can be both only if it is individually trained to perform specific disability-related tasks. Comfort alone does not make it a service animal.",
+    ],
+    questionCallout: {
+      question: "Can the same dog be both an ESA and a service dog?",
+      answer:
+        "Yes, the same dog can serve as both an emotional support animal (ESA) and a service dog. However, to qualify as a service dog under the ADA, it must be individually trained to perform specific tasks related to a person's disability. Simply providing emotional comfort does not qualify a dog as a service animal.",
+    },
+    introParagraphs: [
+      "Emotional support animals and service animals both provide support to people with disabilities, but they do so in different ways. An [emotional support animal (ESA)](/blog/esa-guide/emotional-support-animal/) offers comfort through its presence and companionship, while a service animal receives specific training to perform tasks that help a person manage their disability.",
+      "Knowing the difference between an ESA and a service animal can help you understand what each one does and where they are legally recognized. Their roles, training requirements, housing protections, and public access rights are not the same. Although both can make everyday life easier for people with disabilities, federal law treats them differently.",
+    ],
+    introImage: {
+      src: "/blog-images/esa-vs-service-animal/handler-with-service-dog-sharp.webp",
+      alt: "Handler with a service dog at a cafe entrance",
+      width: 1280,
+      height: 720,
+      fullWidth: true,
+    },
+    tocItems: [
+      { id: "whatisanemotionalsupportanimal", label: "What Is an Emotional Support Animal?" },
+      { id: "whatisaserviceanimal", label: "What Is a Service Animal?" },
+      { id: "trainingrequirements", label: "Training Requirements" },
+      { id: "publicaccess", label: "Where Can Each Animal Go?" },
+      { id: "documentation", label: "ESA Letters vs. Service Dog Certification" },
+      { id: "servicedoglaws", label: "Service Dog Laws" },
+      { id: "faqs", label: "Frequently Asked Questions" },
+    ],
+    sections: [
+      {
+        id: "whatisanemotionalsupportanimal",
+        title: "What Is an Emotional Support Animal?",
+        paragraphs: [
+          "An emotional support animal (ESA) is an animal that offers emotional comfort and companionship to someone living with a disability. Simply having the animal around may help ease certain disability symptoms and make everyday life a little more manageable. Oftentimes, ESAs are helpful for mental health conditions, such as [anxiety](/blog/qualifying-conditions/esa-for-anxiety/), [depression](/blog/qualifying-conditions/esa-for-depression/), and trauma.",
+          "Unlike service dogs, ESAs don't need special training to perform specific tasks for the disabled individual. Their role is to provide emotional support through their presence, which can be helpful for people dealing with certain mental or emotional health conditions. Oftentimes, isolation is a vulnerability factor for those with mental health conditions, so animal companionship can help alleviate this.",
+          "People living with conditions such as anxiety disorders, depression, or [post-traumatic stress disorder (PTSD)](/blog/qualifying-conditions/esa-for-ptsd/) may benefit from an ESA. However, having a diagnosis doesn't automatically mean someone qualifies. A healthcare professional must assess whether the animal provides support related to the person's disability. If the healthcare provider determines an ESA would be beneficial for the disabled individual, they will write an ESA letter. This can act as supporting documentation for ESA accommodations.",
+          "ESAs are primarily recognized in housing situations under the Fair Housing Act (FHA). Depending on the circumstances, qualifying individuals may request reasonable accommodation to live with their emotional support animal, even in properties that generally have no-pets policies.",
+        ],
+      },
+      {
+        id: "whatisaserviceanimal",
+        title: "What Is a Service Animal?",
+        paragraphs: [
+          "A service animal is specially trained to perform tasks that help a person manage a disability. Under the Americans with Disabilities Act (ADA), these tasks must be directly related to the person's condition.",
+          "Unlike ESAs, service animals provide practical assistance rather than just emotional comfort. They may help people with physical, sensory, or psychiatric disabilities.",
+          "Some common examples include:",
+        ],
+        listItems: [
+          "Guiding people with visual impairments in both public and private places.",
+          "Alerting individuals with hearing loss to important sounds, such as sirens or alarms.",
+          "Retrieving medication or essential items for disability management.",
+          "Providing balance and mobility support.",
+          "Alerting handlers to an upcoming seizure or medical event.",
+          "Helping recognize and respond to anxiety attacks or PTSD flashbacks.",
+        ],
+        afterListParagraphs: [
+          "Service animals' specialized training allows them to support greater independence in the disabled individual's everyday life.",
+        ],
+      },
+      {
+        id: "trainingrequirements",
+        title: "Emotional Support Animal vs. Service Animal: Training Requirements",
+        paragraphs: ["One major difference between an ESA and a service animal is training."],
+        subsections: [
+          {
+            title: "Emotional Support Animals",
+            paragraphs: [
+              "ESAs don't need specialized training or formal certification. Their role is to provide comfort and help ease disability-related symptoms through companionship. Owners are still responsible for their animal's care and behavior. Typically, ESAs do not have public access rights. Just because you have an ESA does not mean you can bring them into public stores or onto public transportation. However, there are some [basic obedience commands](/blog/esa-training/8-basic-obedience-commands-every-esa-should-know/) an ESA should follow.",
+            ],
+          },
+          {
+            title: "Service Animals",
+            paragraphs: [
+              "Service animals must be individually trained to perform specific tasks related to their handler's disability. This may include mobility assistance, recognizing medical episodes, or interrupting certain harmful behaviors.",
+              "Under the ADA, handlers can train their own service dogs. Attending a professional training school isn't mandatory. However, the service animal will need to be able to provide specific skills in both public and private settings in order to be considered a service animal. Service animals typically do have public access rights.",
+            ],
+          },
+        ],
+        bannerImage: {
+          src: "/blog-images/esa-vs-service-animal/esa-vs-service-animal-comparison-infographic.webp",
+          alt: "ESA versus service animal: comfort and housing documentation compared with task training, no required certificate, and public access",
+          width: 864,
+          height: 1152,
+          fullWidth: true,
+          mobileSrc: "/blog-images/esa-vs-service-animal/esa-vs-service-animal-comparison-infographic-mobile.webp",
+          mobileWidth: 720,
+          mobileHeight: 1280,
+        },
+        bannerPosition: "bottom",
+      },
+      {
+        id: "publicaccess",
+        title: "ESA Public Access: Where Can Each Animal Go?",
+        paragraphs: [
+          "Public access rights are another important difference between ESAs and service dogs.",
+          "Under the ADA, service dogs can generally accompany their handlers in public places, including:",
+        ],
+        listItems: [
+          "Restaurants and cafes.",
+          "Grocery stores and shopping malls.",
+          "Hotels.",
+          "Public transportation.",
+          "Government buildings.",
+        ],
+        afterListParagraphs: [
+          "ESAs don't have the same public access rights. An ESA letter doesn't automatically allow an animal into restaurants, stores, or other places that don't allow pets. Furthermore, purchasing an ESA vest, patch, certificate, or other visual identifier does not grant your ESA public access rights.",
+          "Some state or local laws may offer additional protections, so it's worth checking the rules in your area. Consulting with a local disability rights agency may help grant further information.",
+        ],
+        bannerImage: {
+          src: "/blog-images/esa-vs-service-animal/where-service-dogs-can-go-infographic.webp",
+          alt: "Places a service dog can generally go under the ADA: restaurants, stores, hotels, public transportation, and government buildings",
+          width: 864,
+          height: 1152,
+          fullWidth: true,
+          mobileSrc: "/blog-images/esa-vs-service-animal/where-service-dogs-can-go-infographic-mobile.webp",
+          mobileWidth: 720,
+          mobileHeight: 1280,
+        },
+        bannerPosition: "bottom",
+      },
+      {
+        id: "documentation",
+        title: "Documentation: ESA Letters vs. Service Dog Certification",
+        paragraphs: ["ESA and service dog documentation requirements aren't the same."],
+        subsections: [
+          {
+            title: "For Emotional Support Animals",
+            paragraphs: [
+              "An [ESA letter](/blog/esa-guide/who-can-write-an-esa-letter/) issued by a licensed healthcare professional may support a housing accommodation request under the Fair Housing Act (FHA). It should establish the disability-related need for the animal.",
+              "Buying an ESA certificate, ID card, or registration number doesn't independently establish eligibility. Instant approval letters and online registries also do not grant ESA accommodation protections.",
+            ],
+          },
+          {
+            title: "For Service Dogs",
+            paragraphs: [
+              "The ADA doesn't require service dogs to have official certificates, ID cards, or registration documents.",
+              "If a service dog's role isn't obvious, businesses may ask:",
+            ],
+            listItems: [
+              "Is the dog required because of a disability?",
+              "What task has the dog been trained to perform?",
+            ],
+            afterListParagraphs: [
+              "They cannot ask about the person's diagnosis or demand a demonstration of the dog's training.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "servicedoglaws",
+        title: "Service Dog Laws: Understanding Your Rights",
+        paragraphs: ["Different federal laws protect assistance animals in different situations:"],
+        listItems: [
+          "**Americans with Disabilities Act (ADA):** Provides public access rights to qualifying service dogs.",
+          "**Fair Housing Act (FHA):** Allows qualifying individuals to request housing accommodations for assistance animals.",
+          "**State and Local Laws:** May offer additional protections depending on where you live.",
+        ],
+        afterListParagraphs: [
+          "Remember, an animal may qualify for housing accommodation under the FHA without having public access rights under the ADA.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is an ESA the same as a service animal?",
+        a: "No. An ESA provides emotional support through companionship, while a service dog performs specific tasks related to a person's disability. Service animals typically have some form of specialized or specific training, while ESAs do not.",
+      },
+      {
+        q: "Can an ESA go everywhere a service dog can?",
+        a: "No. ESAs don't have general public access rights under the ADA. Service animals generally can accompany their handlers in covered public places.",
+      },
+      {
+        q: "Does a service animal need certification?",
+        a: "No. The ADA doesn't require official certification, registration, or identification cards for service dogs. However, service animals are still held to safety and behavior standards in public, one of the many reasons why service animal training is important.",
+      },
+      {
+        q: "Can a service animal help with mental health conditions?",
+        a: "Yes. Psychiatric service animals can be trained to perform specific tasks that assist people with mental health disabilities. While service animals are typically dogs, there are cases of other animals being service animals.",
+      },
+      {
+        q: "Can an ESA and a service dog both live in rental housing?",
+        a: "Yes. Both may qualify as assistance animals under the FHA and the ADA, provided the applicable requirements are met and no legal exception applies.",
+      },
+    ],
+    faqSectionTitle: "Frequently Asked Questions",
+    faqSectionSubtitle: "",
+    faqSectionId: "faqs",
+    bottomCta,
+  },
+  {
+    id: "esa-pet-rent-and-deposits",
+    slug: "esa-pet-rent-and-deposits",
+    categorySlug: "esa-guide",
+    url: "/blog/esa-guide/esa-pet-rent-and-deposits/",
+    canonicalUrl: "https://myesatherapist.com/blog/esa-guide/esa-pet-rent-and-deposits/",
+    schema: esaPetRentAndDepositsSchema,
+    title: "Can Landlords Charge Pet Rent or Deposits for an ESA?",
+    cardTitle: "Can Landlords Charge Pet Rent or Deposits for an ESA?",
+    metaTitle: "Can a Landlord Charge Pet Rent or Deposit for an ESA? - My ESA Therapist",
+    metaDescription:
+      "Can landlords charge pet rent, deposits, or fees for an emotional support animal? Learn your FHA rights, the exceptions, and what to do if charged.",
+    ogTitle: "Do You Pay Pet Rent for an ESA? What the FHA Says",
+    ogDescription:
+      "Landlords generally can't charge pet rent or extra deposits for an ESA. See the FHA rules, damage exceptions, and what to do if you're charged.",
+    shortDescription:
+      "Under the Fair Housing Act (FHA), landlords generally cannot charge pet rent, separate pet deposits, or additional pet fees for a qualifying emotional support animal. However, tenants may still be responsible for damage caused by their ESA and may have to pay the same regular security deposit as other tenants.",
+    category: "ESA Guide",
+    author: allyson,
+    reviewedBy: { ...maxPhillips, date: "November 26, 2026" },
+    publishDate: "November 26, 2026",
+    lastUpdated: "November 26, 2026",
+    cardImage: "/blog-images/esa-pet-rent-and-deposits/tenant-esa-dog-reviewing-lease-with-landlord.webp",
+    ...heroes,
+    keyHighlights: [
+      "Under the Fair Housing Act, landlords generally cannot charge pet rent, a separate pet deposit, or extra pet fees for a qualifying ESA.",
+      "Tenants may still pay the same regular security deposit as other tenants and are responsible for damage the ESA causes.",
+      "A landlord may charge regular pet rent while a request is pending. Once it is approved, pet rent and separate pet fees generally cannot be charged.",
+      "If you already paid those charges, you can ask the landlord to review and adjust them.",
+      "An online ESA registration, certificate, or ID card alone does not establish a disability-related need.",
+    ],
+    questionCallout: {
+      question: "Can a landlord charge pet rent before approving an ESA letter?",
+      answer:
+        "A landlord may charge regular pet rent while an ESA accommodation request is pending, depending on the circumstances. However, once the request is approved, the landlord generally cannot charge pet rent or separate pet fees for a qualifying ESA under the Fair Housing Act. If you paid such charges, you can ask the landlord to review and adjust them.",
+    },
+    introParagraphs: [
+      "Renting a home with an [emotional support animal (ESA)](/blog/esa-guide/emotional-support-animal/) can raise questions about additional costs. You may wonder whether your landlord can charge monthly pet rent, ask for a separate pet deposit, or add fees because you have an emotional support animal.",
+      "In most cases, the answer is no. Under the Fair Housing Act (FHA), eligible tenants can request reasonable accommodations for assistance animals, including emotional support animals. When an accommodation is approved, the animal is not treated as an ordinary pet. This means standard pet fees and deposits generally do not apply.",
+      "However, tenants should understand a few important exceptions, including responsibility for property damage and differences in state and local housing laws.",
+    ],
+    introImage: {
+      src: "/blog-images/esa-pet-rent-and-deposits/tenant-esa-dog-reviewing-lease-with-landlord.webp",
+      alt: "Tenant with emotional support dog reviewing a lease with a landlord",
+      width: 1280,
+      height: 720,
+      fullWidth: true,
+    },
+    tocItems: [
+      { id: "canalandlordchargeesapetrent", label: "Can a Landlord Charge ESA Pet Rent?" },
+      { id: "canalandlordrequireanesapetdeposit", label: "Can a Landlord Require an ESA Pet Deposit?" },
+      { id: "canalandlorddeductesadamage", label: "Can a Landlord Deduct ESA Damage From a Security Deposit?" },
+      { id: "whatdoesthefhasayaboutesapetfees", label: "What Does the Fair Housing Act Say About ESA Pet Fees?" },
+      { id: "whatcanalandlordlegallyaskfor", label: "What Can a Landlord Legally Ask for When Someone Has an ESA?" },
+      { id: "whatshouldyoudoifcharged", label: "What Should You Do If a Landlord Charges Pet Fees for an ESA?" },
+      { id: "faqs", label: "Frequently Asked Questions" },
+    ],
+    sections: [
+      {
+        id: "canalandlordchargeesapetrent",
+        title: "Can a Landlord Charge ESA Pet Rent?",
+        paragraphs: [
+          "Generally, a landlord cannot charge monthly pet rent for a qualifying emotional support animal when a reasonable accommodation applies.",
+          "Pet rent is an additional monthly fee that landlords typically collect from tenants who keep ordinary pets. An ESA is different because it is not considered a pet; it provides emotional support that helps relieve one or more effects of a person's disability.",
+          "Under the Fair Housing Act (FHA), qualifying assistance animals are not considered pets. This means landlords may need to make exceptions to their regular pet policies, including allowing an ESA in a property that does not normally permit animals and not charging pet fees for the ESA since it is not a pet.",
+          "For tenants with an approved ESA accommodation:",
+        ],
+        listItems: [
+          "Landlords generally cannot charge monthly pet rent for the ESA.",
+          "A no-pet policy may need to be adjusted to allow for the assistance animal.",
+          "Tenants should not face additional pet charges simply for keeping a qualifying ESA.",
+        ],
+        bannerImage: {
+          src: "/blog-images/esa-pet-rent-and-deposits/esa-pet-fees-what-landlords-can-charge-infographic.webp",
+          alt: "What landlords can and cannot charge for a qualifying ESA: no pet rent, no separate pet deposit, no extra pet fees, a regular security deposit, and responsibility for actual damage",
+          width: 864,
+          height: 1152,
+          fullWidth: true,
+          mobileSrc: "/blog-images/esa-pet-rent-and-deposits/esa-pet-fees-what-landlords-can-charge-infographic-mobile.webp",
+          mobileWidth: 720,
+          mobileHeight: 1280,
+        },
+        bannerPosition: "bottom",
+      },
+      {
+        id: "canalandlordrequireanesapetdeposit",
+        title: "Can a Landlord Require an ESA Pet Deposit?",
+        paragraphs: [
+          "Generally, landlords cannot require a separate ESA deposit as a condition of allowing a qualifying assistance animal.",
+          "Pet deposits are usually collected to cover potential damage caused by ordinary pets. However, the FHA recognizes waiving pet deposits, fees, and similar charges as additional forms of reasonable accommodations.",
+          "This means a landlord generally cannot collect an additional ESA pet deposit simply because a tenant needs an emotional support animal.",
+          "There is one important distinction: Landlords may still collect the regular security deposit required under the lease, provided the same rules apply to other tenants. The restriction is on charging an additional deposit specifically because of the assistance animal.",
+        ],
+      },
+      {
+        id: "canalandlorddeductesadamage",
+        title: "Can a Landlord Deduct ESA Damage From a Security Deposit?",
+        paragraphs: [
+          "Yes. Being exempt from pet fees does not mean tenants are exempt from responsibility for property damage.",
+          "If an emotional support animal damages a rental property beyond normal wear and tear, the landlord may be able to recover the actual repair costs under the lease and applicable state law.",
+          "For example, if an ESA scratches the flooring or damages a door, the tenant may be responsible for the repairs to the property.",
+          "However, this is different from collecting an extra deposit before any damage occurs. Any deduction from a regular security deposit must follow applicable state and local housing laws.",
+        ],
+      },
+      {
+        id: "whatdoesthefhasayaboutesapetfees",
+        title: "What Does the Fair Housing Act Say About ESA Pet Fees?",
+        paragraphs: [
+          "The Fair Housing Act protects people with disabilities from certain forms of housing discrimination. It requires covered housing providers to make reasonable accommodations to their rules, policies, and practices when necessary to give people with disabilities an equal opportunity to enjoy their homes.",
+          "For ESA renters, this may mean allowing an emotional support animal despite a no-pet policy for a property, or a landlord waiving standard pet-related fees.",
+          "The FHA's assistance-animal guidance identifies waiving pet deposits and fees as examples of reasonable accommodations.",
+          "There is also a recent legal development worth understanding. The United States Department of Housing and Urban Development (HUD) issued [updated assistance-animal guidance](/blog/esa-guide/hud-guidance-for-emotional-support-animals/) in May 2026. According to the National Association of REALTORS®, this guidance does not automatically bind private litigants, state agencies, or courts. State and local fair housing laws may provide additional protections.",
+          "For this reason, tenants should consider the housing rules that apply in their area rather than assuming every situation follows exactly the same requirements.",
+        ],
+      },
+      {
+        id: "whatcanalandlordlegallyaskfor",
+        title: "What Can a Landlord Legally Ask for When Someone Has an ESA?",
+        paragraphs: [
+          "A landlord may request reliable supporting information when a tenant asks for an ESA accommodation and the disability or disability-related need for the animal is not apparent.",
+          "The information requested should help establish:",
+        ],
+        listItems: [
+          "That the person has a qualifying disability, when it is not already apparent or known.",
+          "The connection between the individual's disability and the need for an assistance animal.",
+          "How the animal helps address the effects of the disability.",
+        ],
+        afterListParagraphs: [
+          "Landlords should not demand unnecessary medical details or impose unreasonable documentation requirements on the individual requesting accommodation.",
+          "An [ESA letter from a qualified healthcare professional](/blog/esa-guide/who-can-write-an-esa-letter/) may help support an accommodation request. Legitimate telehealth evaluations should not automatically be rejected simply because they take place online.",
+          "However, an online ESA registration, certificate, or ID card alone does not establish a disability-related need for an ESA.",
+        ],
+      },
+      {
+        id: "whatshouldyoudoifcharged",
+        title: "What Should You Do If a Landlord Charges Pet Fees for an ESA?",
+        paragraphs: [
+          "If your landlord asks you to pay pet rent or an additional deposit for your emotional support animal, review the request before making any payment.",
+          "A few practical steps can help:",
+        ],
+        subsections: [
+          {
+            title: "Review your lease",
+            paragraphs: [
+              "Check the sections covering pets, deposits, monthly charges, and reasonable accommodations.",
+            ],
+          },
+          {
+            title: "Submit an accommodation request",
+            paragraphs: [
+              "Explain that you need to keep an emotional support animal as an accommodation related to your disability.",
+            ],
+          },
+          {
+            title: "Provide supporting documentation",
+            paragraphs: [
+              "If legally appropriate, share reliable information establishing your disability-related need for the animal, such as a letter by a qualified healthcare professional asserting your disability needs.",
+            ],
+          },
+          {
+            title: "Ask about the charges",
+            paragraphs: [
+              "If your landlord still requests pet rent or a separate deposit, ask for an explanation regarding the charge in writing.",
+            ],
+          },
+          {
+            title: "Keep communication records",
+            paragraphs: [
+              "Save emails, letters, payment requests, and other relevant documents.",
+            ],
+          },
+          {
+            title: "Seek local guidance",
+            paragraphs: [
+              "Contact a fair housing organization, state civil rights agency, or qualified attorney if you believe your rights have been violated. Contact one of these agencies for support prior to making any payment.",
+            ],
+          },
+        ],
+        afterSubsectionsParagraphs: [
+          "Keeping communication in writing can help prevent misunderstandings and provide a record if a disagreement develops.",
+        ],
+        bannerImage: {
+          src: "/blog-images/esa-pet-rent-and-deposits/what-to-do-if-landlord-charges-esa-pet-fees-steps.webp",
+          alt: "Six steps if a landlord charges pet fees for an ESA: review the lease, request an accommodation, provide documentation, ask about the charges, keep records, and seek local guidance",
+          width: 864,
+          height: 1152,
+          fullWidth: true,
+          mobileSrc: "/blog-images/esa-pet-rent-and-deposits/what-to-do-if-landlord-charges-esa-pet-fees-steps-mobile.webp",
+          mobileWidth: 720,
+          mobileHeight: 1280,
+        },
+        bannerPosition: "bottom",
+      },
+    ],
+    faqs: [
+      {
+        q: "Can a landlord charge monthly pet rent for an emotional support animal?",
+        a: "Generally, no. A qualifying assistance animal is not considered an ordinary pet under the Fair Housing Act. When a reasonable accommodation applies, landlords generally cannot charge monthly pet rent for the animal.",
+      },
+      {
+        q: "Can a landlord charge a nonrefundable pet fee for an ESA?",
+        a: "Generally, no. Landlords cannot usually impose pet-related fees simply because a tenant has a qualifying assistance animal. State and local housing protections may also apply.",
+      },
+      {
+        q: "Do I have to pay a regular security deposit if I have an ESA?",
+        a: "Yes. A landlord may generally collect the same standard security deposit required from other tenants. However, an additional deposit specifically for the ESA is generally not permitted.",
+      },
+      {
+        q: "Can a landlord refuse an ESA because the property has a no-pet policy?",
+        a: "Not automatically. A landlord may need to make an exception to a no-pet policy as a reasonable accommodation. However, certain exceptions to granting the accommodation may apply, including an undue financial burden, a fundamental alteration to the property, or an unresolved direct threat or risk of significant property damage.",
+      },
+      {
+        q: "Does an ESA letter automatically mean I can avoid pet fees?",
+        a: "Not automatically. Supporting documentation may help establish a disability-related need, but the accommodation process and applicable legal requirements still matter. Online registrations and certificates alone do not establish eligibility for an ESA.",
+      },
+    ],
+    faqSectionTitle: "Frequently Asked Questions",
+    faqSectionSubtitle: "",
+    faqSectionId: "faqs",
+    bottomCta,
+  },
+  {
+    id: "esa-letter-for-college-dorms",
+    slug: "esa-letter-for-college-dorms",
+    categorySlug: "esa-guide",
+    url: "/blog/esa-guide/esa-letter-for-college-dorms/",
+    canonicalUrl: "https://myesatherapist.com/blog/esa-guide/esa-letter-for-college-dorms/",
+    schema: esaLetterForCollegeDormsSchema,
+    title: "ESA Letter for College Dorms: How to Request ESA Housing Accommodations",
+    cardTitle: "ESA Letter for College Dorms: How to Request ESA Housing Accommodations",
+    metaTitle: "ESA Letter for College Dorms: Step-by-Step Guide | My ESA Therapist",
+    metaDescription:
+      "Moving into a dorm with an emotional support animal? Learn the ESA letter requirements, approval steps, and campus rules before move-in day.",
+    ogTitle: "How to Get an ESA in a College Dorm (2026 Guide)",
+    ogDescription:
+      "Do colleges accept online ESA letters for dorms? Learn FHA rights, documentation needs, application deadlines, and dorm rules for ESA students.",
+    shortDescription:
+      "Students can request an ESA accommodation in college dorms by contacting their university's housing or disability services department, getting an evaluation from a qualified mental health professional, and submitting the required documentation. Approval depends on meeting FHA requirements and the university's accommodation policies. Students must also follow dorm rules related to animal care, cleanliness, supervision, and shared living spaces.",
+    category: "ESA Guide",
+    author: allyson,
+    reviewedBy: { ...maxPhillips, date: "November 26, 2026" },
+    publishDate: "November 26, 2026",
+    lastUpdated: "November 26, 2026",
+    cardImage: "/blog-images/esa-letter-for-college-dorms/college-student-with-esa-in-dorm.webp",
+    ...heroes,
+    keyHighlights: [
+      "Students request a dorm ESA by contacting housing or disability services, completing an evaluation, and submitting the required documentation.",
+      "Approval depends on Fair Housing Act requirements and the university's own accommodation policies.",
+      "Colleges may accept an online ESA letter when a qualified professional issued it after an individual evaluation.",
+      "Students must follow dorm rules for animal care, cleanliness, supervision, and shared living spaces.",
+      "Pet fees generally do not apply to an approved assistance animal, but students are responsible for damage their ESA causes.",
+    ],
+    questionCallout: {
+      question: "Do colleges accept online ESA letters for dorms?",
+      answer:
+        "Yes, colleges may accept online ESA letters for dorm accommodations if they are issued by a qualified healthcare professional after an individualized evaluation. However, each college has its own documentation and accommodation review process, so check its housing or disability services requirements before submitting your letter.",
+    },
+    introParagraphs: [
+      "College is an exciting phase of life, filled with new experiences, academic pressure, and personal adjustments. For students facing mental health challenges, an [emotional support animal (ESA)](/blog/esa-guide/emotional-support-animal/) can provide comfort and stability while making daily campus life easier. But living with an ESA in a college dorm involves more than simply bringing an animal along when you move in. Each university has its own housing policies, documentation requirements, and deadlines for ESA applications that students must follow.",
+      "An ESA letter for college dorms can make campus life more comfortable by providing emotional support during stressful academic and personal situations. Let's understand the housing rights, documentation, and application steps involved in bringing an emotional support animal to a college dorm.",
+    ],
+    introImage: {
+      src: "/blog-images/esa-letter-for-college-dorms/college-student-with-esa-in-dorm.webp",
+      alt: "College student with emotional support animal in a dorm room",
+      width: 1280,
+      height: 720,
+      fullWidth: true,
+    },
+    tocItems: [
+      { id: "cancollegestudentshaveanesaindorms", label: "Can College Students Have an ESA in Dorms?" },
+      { id: "whataresauniversitypolicies", label: "What are ESA University Policies?" },
+      { id: "whatdocumentationisrequired", label: "What Documentation Is Required for an ESA Letter for Dorms?" },
+      { id: "howtorequestesaaccommodation", label: "How to Request an ESA Accommodation in College Housing" },
+      { id: "esadormrules", label: "Emotional Support Animal Dorm Rules" },
+      { id: "faqs", label: "Frequently Asked Questions" },
+    ],
+    sections: [
+      {
+        id: "cancollegestudentshaveanesaindorms",
+        title: "Can College Students Have an ESA in Dorms?",
+        paragraphs: [
+          "Yes, college students may be allowed to keep an emotional support animal in their dorm through a reasonable accommodation request. Under the Fair Housing Act (FHA), eligible housing providers are generally required to consider accommodation requests from individuals with disabilities who need an ESA.",
+          "This protection may also extend to university-owned dorms and student housing, depending on the specific housing arrangement and applicable state laws. Unlike regular pets, an ESA is considered an assistance animal when it meets the requirements for a disability-related accommodation.",
+          "However, getting ESA approval is not automatic. Students must show that they have a qualifying disability and that the animal helps with a related disability need. The university may also ask for supporting documentation before reviewing and approving the ESA request. Students should have a clear understanding of [who can write an ESA letter](/blog/esa-guide/who-can-write-an-esa-letter/). The university may also have additional requirements to ensure the animal is safe for other students as well as university property.",
+        ],
+      },
+      {
+        id: "whataresauniversitypolicies",
+        title: "What are ESA University Policies?",
+        paragraphs: [
+          "Each college has its own process for reviewing emotional support animal requests in campus housing. Although federal housing laws offer accommodation protection to eligible students, universities also have their own guidelines for handling applications and ensuring a comfortable living environment for everyone.",
+          "Most college ESA policies cover the following areas:",
+        ],
+        listItems: [
+          "**Documentation:** Students may need to provide supporting information explaining their disability-related need for an emotional support animal, including a letter by a qualified healthcare professional. The individual should have a mental health disability, usually listed in the DSM-5 for ESA eligibility.",
+          "**Housing Approval:** The college's housing or disability services department reviews the request before allowing an ESA in campus housing.",
+          "**Animal Responsibilities:** Students are expected to keep their animals clean, properly supervised, and under control. The ESA must be safe for other residents.",
+          "**Shared Living Arrangements:** Colleges may consider how an ESA could affect roommates and other students using shared residential spaces, including safety and medical considerations.",
+          "**Application Deadlines:** Students may need to submit their accommodation requests and supporting documents before their scheduled move-in date to the university dorm or apartments.",
+        ],
+        afterListParagraphs: [
+          "Before bringing an ESA to campus, check your college's official housing and disability accommodation guidelines. Requirements can vary between universities, so another student's experience or a different college's policy may not apply to your situation. Oftentimes, universities will require students to begin the ESA process and receive approval before the ESA will be allowed on campus.",
+        ],
+        bannerImage: {
+          src: "/blog-images/esa-letter-for-college-dorms/college-esa-policies-infographic.webp",
+          alt: "What most college ESA policies cover: documentation, housing approval, animal care, shared living, and deadlines",
+          width: 864,
+          height: 1152,
+          fullWidth: true,
+          mobileSrc: "/blog-images/esa-letter-for-college-dorms/college-esa-policies-infographic-mobile.webp",
+          mobileWidth: 720,
+          mobileHeight: 1280,
+        },
+        bannerPosition: "bottom",
+      },
+      {
+        id: "whatdocumentationisrequired",
+        title: "What Documentation Is Required for an ESA Letter for Dorms?",
+        paragraphs: [
+          "When requesting an ESA for college dorm housing, your school may ask for documentation to understand your need for an emotional support animal. An ESA letter for ESA dorm accommodation should come from a qualified healthcare professional who understands your situation and can assess your disability and daily living needs.",
+          "Depending on the university, the required documentation may include:",
+        ],
+        listItems: [
+          "Your demographic details and the healthcare professional's credentials as well as contact information.",
+          "Confirmation of a qualifying physical or mental health condition.",
+          "An explanation of your need for an emotional support animal.",
+          "How the animal helps with your disability-related needs.",
+        ],
+        afterListParagraphs: [
+          "You don't usually have to share your complete medical history or every detail of your diagnosis. A qualified mental health professional can help determine whether an ESA is suitable for your circumstances and disclose only the necessary information for the housing provider to make an accommodation determination.",
+          "Remember, buying an ESA certificate or vest online does not establish eligibility or guarantee dorm approval. There are no federal, national, or state registries for ESAs.",
+        ],
+      },
+      {
+        id: "howtorequestesaaccommodation",
+        title: "How to Request an ESA Accommodation in College Housing",
+        paragraphs: [
+          "Every college has its own application process, but requesting an ESA in campus housing generally involves a few steps.",
+        ],
+        subsections: [
+          {
+            title: "Contact Your College",
+            paragraphs: [
+              "Reach out to the disability services or housing department to understand the ESA application process, required documents, and submission deadlines. Doing this at least 30 days before your move-in date will help set you up for success.",
+            ],
+          },
+          {
+            title: "Consult a Mental Health Professional",
+            paragraphs: [
+              "Schedule an evaluation to speak with a qualified mental health professional who can evaluate your circumstances and determine whether an emotional support animal may help with your disability-related needs.",
+            ],
+          },
+          {
+            title: "Submit Your Documents",
+            paragraphs: [
+              "Complete the college's accommodation form and submit the requested supporting documentation, including your ESA letter. Check that all information is accurate and up to date before submitting.",
+            ],
+          },
+          {
+            title: "Wait for Approval",
+            paragraphs: [
+              "The university will review your application and may contact you if additional information is needed. Respond promptly to university communication to avoid delays.",
+            ],
+          },
+          {
+            title: "Understand the Housing Rules",
+            paragraphs: [
+              "Once approved, review the accommodation terms carefully. Make sure you understand your responsibilities for your ESA's care, cleanliness, and behavior in shared spaces.",
+            ],
+          },
+        ],
+        bannerImage: {
+          src: "/blog-images/esa-letter-for-college-dorms/how-to-request-esa-college-housing-steps.webp",
+          alt: "Five steps to request an ESA accommodation in college housing: contact your college, consult a professional, submit documents, wait for approval, and learn the housing rules",
+          width: 864,
+          height: 1152,
+          fullWidth: true,
+          mobileSrc: "/blog-images/esa-letter-for-college-dorms/how-to-request-esa-college-housing-steps-mobile.webp",
+          mobileWidth: 720,
+          mobileHeight: 1280,
+        },
+        bannerPosition: "bottom",
+      },
+      {
+        id: "esadormrules",
+        title: "Emotional Support Animal Dorm Rules: What Students Should Know",
+        paragraphs: [
+          "Getting approval for an ESA also comes with certain responsibilities. Colleges may have rules to keep dorms clean, safe, and comfortable for everyone, including students and staff on campus.",
+          "Students are generally expected to:",
+        ],
+        listItems: [
+          "Keep their animals supervised and under control.",
+          "Maintain cleanliness and clean up after their ESA.",
+          "Prevent behavior that unnecessarily disturbs other residents.",
+          "Provide proper food, water, and veterinary care.",
+          "Follow applicable vaccination and local animal health requirements.",
+        ],
+        afterListParagraphs: [
+          "Under the Fair Housing Act (FHA), housing providers generally cannot charge pet fees or deposits for an approved assistance animal. However, students may still be responsible for any damage their ESA causes.",
+          "It's also important to understand that an ESA does not have the same public-access rights as a service animal under the Americans with Disabilities Act (ADA). Permission to keep an ESA in campus housing does not automatically allow it in classrooms, libraries, dining halls, or other campus facilities. Your university disability office will be able to provide more information on regulations and restrictions in university-owned property.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can a college deny an ESA request?",
+        a: "Yes, a college may deny an ESA request if the student doesn't meet the applicable requirements or a legal exception applies. However, eligible requests should be reviewed individually, not rejected simply because the university has a no-pets policy.",
+      },
+      {
+        q: "Do college students need an ESA letter for dorm accommodation?",
+        a: "In many cases, yes. If your need for an emotional support animal isn't already known or obvious, the university may ask for supporting documentation from a qualified healthcare professional. The exact requirements can vary depending on your circumstances and the college's ESA accommodation process.",
+      },
+      {
+        q: "Can I bring my ESA to college without prior approval?",
+        a: "It's better to complete the accommodation process before moving your ESA into a dorm. Contact your college's housing or disability services department first, as having an ESA letter doesn't automatically mean you can bring your animal onto campus without following the required steps.",
+      },
+      {
+        q: "Are students with an ESA required to pay pet fees?",
+        a: "Generally, no. Under the Fair Housing Act, colleges and other covered housing providers cannot charge pet fees or deposits for an approved assistance animal. However, students can still be held responsible for any damage caused by their ESA.",
+      },
+      {
+        q: "What happens if my ESA letter expires during the semester?",
+        a: "If your ESA letter expires during the semester, contact your college's housing or disability services office to ask whether updated documentation is required. The Fair Housing Act doesn't set a universal expiration date for ESA letters, but colleges may have their own documentation renewal policies.",
+      },
+    ],
+    faqSectionTitle: "Frequently Asked Questions",
+    faqSectionSubtitle: "",
+    faqSectionId: "faqs",
+    bottomCta,
+  },
   {
     id: "who-can-write-an-esa-letter",
     slug: "who-can-write-an-esa-letter",

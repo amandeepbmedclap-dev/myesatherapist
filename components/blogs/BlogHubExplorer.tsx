@@ -87,7 +87,8 @@ export function PostCard({ p, wide = false, priority = false }: { p: HubPost; wi
           alt={p.title}
           fill
           priority={priority}
-          sizes={wide ? "(min-width:1024px) 420px, 100vw" : "(min-width:1024px) 400px, (min-width:640px) 50vw, 100vw"}
+          quality={90}
+          sizes={wide ? "(min-width:1024px) 720px, 100vw" : "(min-width:1024px) 480px, (min-width:640px) 50vw, 100vw"}
           className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
         />
       </span>

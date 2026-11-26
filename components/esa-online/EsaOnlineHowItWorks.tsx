@@ -52,6 +52,7 @@ export function EsaOnlineHowItWorks({
   note = "ESA letters are provided solely when deemed clinically appropriate by the evaluating clinician.",
   paymentNote,
   showCta = true,
+  className = "bg-background",
 }: {
   title?: string;
   subtitle?: string;
@@ -60,9 +61,10 @@ export function EsaOnlineHowItWorks({
   note?: string;
   paymentNote?: string;
   showCta?: boolean;
+  className?: string;
 } = {}) {
   return (
-    <section id="how-it-works" className="w-full bg-background py-16 sm:py-20 lg:py-24">
+    <section id="how-it-works" className={`w-full py-16 sm:py-20 lg:py-24 ${className}`}>
       <div className="max-w-[1276px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-14">
         <div className="flex flex-col items-center gap-2 text-center max-w-[820px]">
           <h2 className="heading-h2 text-primary">{title}</h2>

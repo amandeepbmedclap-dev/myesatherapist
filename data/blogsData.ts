@@ -161,6 +161,7 @@ export interface BlogArticle {
   metaTitle?: string;
   metaDescription?: string;
   ogDescription?: string;
+  ogTitle?: string;
   shortDescription: string;
   category: string;
   author: {

@@ -270,6 +270,50 @@ const VIDEO_REVIEWS: VideoReviewItem[] = [
     videoUrl: "https://www.youtube.com/embed/vId0sRVPY0I?autoplay=1&rel=0",
     thumbnail: "https://img.youtube.com/vi/vId0sRVPY0I/oardefault.jpg",
   },
+  {
+    id: 24,
+    name: "Nikki Spark",
+    rating: 5,
+    quote:
+      "“Thinking about getting an ESA letter? I wanted to share my honest experience with My ESA Therapist first.”",
+    date: "November 26, 2026",
+    videoId: "khGjdFzDIXM",
+    videoUrl: "https://www.youtube.com/embed/khGjdFzDIXM?autoplay=1&rel=0",
+    thumbnail: "https://img.youtube.com/vi/khGjdFzDIXM/oardefault.jpg",
+  },
+  {
+    id: 25,
+    name: "Summer W.",
+    rating: 5,
+    quote:
+      "“People ask what really happens during an ESA evaluation. I wanted to share my story with My ESA Therapist.”",
+    date: "November 26, 2026",
+    videoId: "kBGn5bHPSjs",
+    videoUrl: "https://www.youtube.com/embed/kBGn5bHPSjs?autoplay=1&rel=0",
+    thumbnail: "https://img.youtube.com/vi/kBGn5bHPSjs/oardefault.jpg",
+  },
+  {
+    id: 26,
+    name: "Lisa Bowers",
+    rating: 5,
+    quote:
+      "“I wanted to share my honest experience with My ESA Therapist.”",
+    date: "November 26, 2026",
+    videoId: "k3Vw_c87YUM",
+    videoUrl: "https://www.youtube.com/embed/k3Vw_c87YUM?autoplay=1&rel=0",
+    thumbnail: "https://img.youtube.com/vi/k3Vw_c87YUM/oardefault.jpg",
+  },
+  {
+    id: 27,
+    name: "Aspen",
+    rating: 5,
+    quote:
+      "“It changed everything. I wanted to share my ESA experience.”",
+    date: "November 26, 2026",
+    videoId: "vKHKf2Kxanc",
+    videoUrl: "https://www.youtube.com/embed/vKHKf2Kxanc?autoplay=1&rel=0",
+    thumbnail: "https://img.youtube.com/vi/vKHKf2Kxanc/oardefault.jpg",
+  },
 ];
 
 export function VideoTestimonialsGridSection() {
