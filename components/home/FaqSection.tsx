@@ -195,9 +195,9 @@ export function FaqSection({
                     </div>
 
                     <div className="flex-1 py-2.5 sm:py-3 px-3.5 sm:px-6 flex items-center justify-between gap-3 sm:gap-4">
-                      <h4 className="heading-h4 text-white m-0">
+                      <h3 className="heading-h3 text-white m-0">
                         {faq.q}
-                      </h4>
+                      </h3>
 
                       <span
                         className={`w-[18px] h-[18px] sm:w-[20px] sm:h-[20px] flex items-center justify-center shrink-0 transition-transform duration-300 ${
@@ -248,7 +248,7 @@ export function FaqRow({ num, q, a, open, onToggle }: { num?: string; q: string;
         className="flex w-full cursor-pointer list-none items-start gap-4 py-5 text-left sm:gap-6 [&::-webkit-details-marker]:hidden"
       >
         <span className="mt-[3px] w-7 shrink-0 font-heading text-[16px] font-bold leading-[24px] text-gold-600 tabular-nums">{num?.replace(/\.$/, "")}</span>
-        <h4 className={`heading-h4 m-0 flex-1 font-heading font-bold transition-colors ${open ? "text-primary" : "text-primary/90 group-hover:text-primary"}`}>{q}</h4>
+        <h3 className={`heading-h3 m-0 flex-1 font-heading font-bold transition-colors ${open ? "text-primary" : "text-primary/90 group-hover:text-primary"}`}>{q}</h3>
         <span
           aria-hidden
           className={`mt-[2px] flex size-7 shrink-0 items-center justify-center rounded-full ring-1 transition-all duration-300 ${open ? "rotate-45 bg-accent text-primary ring-accent" : "text-primary ring-primary/20 group-hover:ring-primary/40"}`}
