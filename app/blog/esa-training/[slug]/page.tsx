@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       images: image ? image.openGraph : [{ url: article.cardImage, alt: article.title }],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
       description: socialDescription,
       site: "@MyESATherapist",

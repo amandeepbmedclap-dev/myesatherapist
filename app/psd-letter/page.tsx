@@ -49,7 +49,7 @@ export const metadata: Metadata = applySheetSeo({
     images: socialImage("psd-letter", "Woman and service dog in sunlit comfort").openGraph,
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@MyESATherapist",
     creator: "@MyESATherapist",
     title: "Psychiatric Service Dog (PSD) Letter Online | My ESA Therapist",

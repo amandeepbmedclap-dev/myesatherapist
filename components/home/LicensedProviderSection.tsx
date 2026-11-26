@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@/lib/track";
 import React, { useState } from "react";
 import Image from "next/image";
 import { YouTubePlayIcon } from "./TestimonialsSection";
@@ -36,7 +37,7 @@ export function LicensedProviderSection() {
             ) : (
               <button
                 type="button"
-                onClick={() => setIsPlaying(true)}
+                onClick={() => { setIsPlaying(true); track("video_play", { video_id: VIDEO_ID, location: "licensed_provider" }); }}
                 aria-label={`Play video: ${VIDEO_TITLE}`}
                 className="group absolute inset-0 w-full h-full cursor-pointer"
               >

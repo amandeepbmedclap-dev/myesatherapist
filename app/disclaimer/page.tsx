@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGES } from "@/data/socialImages";
 import { applySheetSeo } from "@/lib/seo";
 import React from "react";
 import { serializeLd } from "@/lib/site";
@@ -22,6 +23,7 @@ export const metadata: Metadata = applySheetSeo({
     canonical: "https://myesatherapist.com/disclaimer/",
   },
   openGraph: {
+    images: DEFAULT_OG_IMAGES,
     title: "Disclaimer | My ESA Therapist",
     description:
       "Review the My ESA Therapist disclaimer covering website information, educational content, professional services, and important limitations of information provided online.",
@@ -31,7 +33,7 @@ export const metadata: Metadata = applySheetSeo({
     siteName: "My ESA Therapist",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@MyESATherapist",
     creator: "@MyESATherapist",
     title: "Disclaimer | My ESA Therapist",

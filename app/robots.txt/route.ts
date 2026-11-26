@@ -8,7 +8,6 @@ export async function GET() {
     "Allow: /",
     "Disallow: /api/",
     "Disallow: /admin/",
-    "Disallow: /_next/",
     "Disallow: /private/",
     "",
     `Sitemap: ${SITE_URL}/sitemap.xml`,

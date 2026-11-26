@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGES } from "@/data/socialImages";
 import { applySheetSeo } from "@/lib/seo";
 import React from "react";
 import { serializeLd } from "@/lib/site";
@@ -27,6 +28,7 @@ export const metadata: Metadata = applySheetSeo({
     canonical: "https://myesatherapist.com/contributors/",
   },
   openGraph: {
+    images: DEFAULT_OG_IMAGES,
     title: "My ESA Therapist Contributors: Authors & Reviewers",
     description:
       "Meet the authors, medical reviewers, and legal reviewers who contribute to My ESA Therapist’s educational content about emotional support animals, ESA letters, and housing.",
@@ -36,7 +38,7 @@ export const metadata: Metadata = applySheetSeo({
     locale: "en_US",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@MyESATherapist",
     creator: "@MyESATherapist",
     title: "My ESA Therapist Contributors: Authors & Reviewers",

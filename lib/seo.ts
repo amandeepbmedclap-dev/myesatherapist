@@ -46,7 +46,7 @@ export function applySheetSeo(metadata: Metadata): Metadata {
     },
     twitter: {
       ...twitter,
-      card: "summary",
+      card: "summary_large_image",
       title: row.title,
       ...(description ? { description } : {}),
       site: TWITTER_HANDLE,
@@ -112,7 +112,7 @@ export function pageSocial(options: {
       ...(options.images ? { images: options.images.openGraph } : {}),
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: options.title,
       description: options.description,
       site: TWITTER_HANDLE,

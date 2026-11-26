@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@/lib/track";
 import React, { useState, useRef } from "react";
 import Link from "next/link";
 import { ArrowRight, Play } from "lucide-react";
@@ -87,7 +88,7 @@ export function TestimonialsSection({
                   allowFullScreen
                 />
               ) : (
-                <button type="button" onClick={() => setPlaying(true)} className="group absolute inset-0 cursor-pointer" aria-label={`Play ${current.name}'s video review`}>
+                <button type="button" onClick={() => { setPlaying(true); track("video_play", { video_title: current.name, video_id: current.id, location: "home_testimonials" }); }} className="group absolute inset-0 cursor-pointer" aria-label={`Play ${current.name}'s video review`}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     key={current.id}

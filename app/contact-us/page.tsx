@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGES } from "@/data/socialImages";
 import { applySheetSeo } from "@/lib/seo";
 import { Metadata } from "next";
 import { serializeLd } from "@/lib/site";
@@ -23,6 +24,7 @@ export const metadata: Metadata = applySheetSeo({
     canonical: "https://myesatherapist.com/contact-us/",
   },
   openGraph: {
+    images: DEFAULT_OG_IMAGES,
     title: "Connect With Our Customer Support Team | My ESA Therapist",
     description:
       "Have a question? Our Customer Support team is ready to help you! Feel free to call us at (888) 412-4041 email us at info@myesatherapist.com",
@@ -32,7 +34,7 @@ export const metadata: Metadata = applySheetSeo({
     siteName: "My ESA Therapist",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@MyESATherapist",
     creator: "@MyESATherapist",
     title: "Connect With Our Customer Support Team | My ESA Therapist",

@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGES } from "@/data/socialImages";
 import { applySheetSeo } from "@/lib/seo";
 import React from "react";
 import { serializeLd } from "@/lib/site";
@@ -22,6 +23,7 @@ export const metadata: Metadata = applySheetSeo({
     canonical: "https://myesatherapist.com/accessibility-statement/",
   },
   openGraph: {
+    images: DEFAULT_OG_IMAGES,
     title: "Accessibility Statement | My ESA Therapist",
     description:
       "Learn about My ESA Therapist’s commitment to digital accessibility and efforts to provide an accessible, inclusive online experience for all visitors.",
@@ -31,7 +33,7 @@ export const metadata: Metadata = applySheetSeo({
     siteName: "My ESA Therapist",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@MyESATherapist",
     creator: "@MyESATherapist",
     title: "Accessibility Statement | My ESA Therapist",

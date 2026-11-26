@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@/lib/track";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -24,8 +25,10 @@ export function StateSelectModal() {
     const onOpen = (event: Event) => {
       const requested = (event as CustomEvent<{ letter?: StateModalLetter }>).detail?.letter;
       setSlug("");
-      setLetter(requested ?? letterFromPath(window.location.pathname));
+      const nextLetter = requested ?? letterFromPath(window.location.pathname);
+      setLetter(nextLetter);
       setOpen(true);
+      track("evaluation_modal_open", { letter_type: nextLetter });
     };
     window.addEventListener(OPEN_STATE_MODAL_EVENT, onOpen);
     return () => window.removeEventListener(OPEN_STATE_MODAL_EVENT, onOpen);
@@ -53,6 +56,7 @@ export function StateSelectModal() {
       return;
     }
     const destination = stateModalDestination(letter, slug);
+    track("begin_evaluation", { letter_type: letter, state: slug, method: "state_modal" });
     setOpen(false);
     if (destination.startsWith("/")) {
       router.push(destination);

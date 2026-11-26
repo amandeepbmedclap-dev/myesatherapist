@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGES } from "@/data/socialImages";
 import { applySheetSeo } from "@/lib/seo";
 import React from "react";
 import { serializeLd } from "@/lib/site";
@@ -22,6 +23,7 @@ export const metadata: Metadata = applySheetSeo({
     canonical: "https://myesatherapist.com/privacy-policy/",
   },
   openGraph: {
+    images: DEFAULT_OG_IMAGES,
     title: "Privacy Policy | My ESA Therapist Data Protection & Security",
     description:
       "Read the Privacy Policy of My ESA Therapist to learn how we collect, use, and protect your personal and health information with secure data practices.",
@@ -31,7 +33,7 @@ export const metadata: Metadata = applySheetSeo({
     siteName: "My ESA Therapist",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@MyESATherapist",
     creator: "@MyESATherapist",
     title: "Privacy Policy | My ESA Therapist Data Protection & Security",

@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGES } from "@/data/socialImages";
 import { applySheetSeo } from "@/lib/seo";
 import React from "react";
 import { serializeLd } from "@/lib/site";
@@ -29,6 +30,7 @@ export const metadata: Metadata = applySheetSeo({
     "max-video-preview": -1,
   },
   openGraph: {
+    images: DEFAULT_OG_IMAGES,
     title: "ESA Qualifying Conditions: What Conditions May Qualify? | My ESA Therapist",
     description:
       "Explore mental health conditions that may qualify for an ESA letter, including anxiety, depression, PTSD, ADHD, and panic disorder. Learn about ESA eligibility.",
@@ -38,7 +40,7 @@ export const metadata: Metadata = applySheetSeo({
     locale: "en_US",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@MyESATherapist",
     creator: "@MyESATherapist",
     title: "ESA Qualifying Conditions: What Conditions May Qualify? | My ESA Therapist",

@@ -38,7 +38,7 @@ export const metadata: Metadata = applySheetSeo({
     ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@MyESATherapist",
     creator: "@MyESATherapist",
     title: "Awais Arshad – Legal Reviewer | My ESA Therapist",

@@ -76,11 +76,11 @@ export function evaluationDestination(lead: EvaluationLead) {
   // });
 }
 
-export function trackHeallySubmit(email: string, stateAbbreviation: string) {
+export function trackHeallySubmit(_email: string, stateAbbreviation: string) {
+  // Never push emails or other personal data to the dataLayer / GA4.
   const layer = ((window as Window & { dataLayer?: Record<string, string>[] }).dataLayer ??= []);
   layer.push({
     event: "heallyValidatedSubmit",
-    user_email: email,
     user_state: stateAbbreviation,
   });
 }

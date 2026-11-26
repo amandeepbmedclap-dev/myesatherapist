@@ -145,7 +145,9 @@ export function hasSocialImage(key: string) {
 
 export function socialImage(key: string, alt: string) {
   if (!hasSocialImage(key)) throw new Error(`Unknown social image: ${key}`);
-  const url = assetUrl("/og/default-1200x630.jpg");
+  // Blog posts have their own 1200x630 JPG; everything else uses the brand default.
+  const own = PATHS[key];
+  const url = assetUrl(own && own.startsWith("/images/blog/og/") ? own : "/og/default-1200x630.jpg");
   return {
     openGraph: [{ url, width: 1200, height: 630, alt, type: "image/jpeg" }] as NonNullable<
       NonNullable<Metadata["openGraph"]>["images"]
@@ -222,3 +224,8 @@ export function withFeatureImage<T>(schema: T, key: string, caption?: string): T
   }
   return next as T;
 }
+
+/** Default 1200x630 share image for pages without a dedicated one. */
+export const DEFAULT_OG_IMAGES = [
+  { url: assetUrl("/og/default-1200x630.jpg"), width: 1200, height: 630, alt: "My ESA Therapist", type: "image/jpeg" },
+];

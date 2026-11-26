@@ -2322,7 +2322,7 @@ export const POLICIES_DATA: PolicyDocument[] = [
       }
     ],
     "takeaways": [
-      "Telehealth is voluntary — you can withdraw consent at any time",
+      "Telehealth is voluntary; you can withdraw consent at any time",
       "Not a substitute for emergency or in-person crisis care",
       "Your information is kept confidential, consistent with HIPAA and law",
       "Providers are matched to your state of licensure"
@@ -2684,8 +2684,8 @@ export const POLICIES_DATA: PolicyDocument[] = [
         "blocks": [
           {
             "type": "paragraph",
-            "html": "These are two different things — understanding the difference matters.",
-            "text": "These are two different things — understanding the difference matters."
+            "html": "These are two different things, and understanding the difference matters.",
+            "text": "These are two different things, and understanding the difference matters."
           },
           {
             "type": "subblock",
@@ -2798,7 +2798,7 @@ export const POLICIES_DATA: PolicyDocument[] = [
       "We take data privacy seriously",
       "HIPAA standards guide our security practices",
       "Licensed professionals control evaluations",
-      "No guarantees — only ethical, confidential care"
+      "No guarantees: only ethical, confidential care"
     ],
     "reviewerLine": "Content reviewed by Robert Staaf · Last updated: December 30, 2025"
   },
@@ -2808,7 +2808,7 @@ export const POLICIES_DATA: PolicyDocument[] = [
     "accentWord": "Policy",
     "rawTitle": "Editorial Policy | My ESA Therapist",
     "eyebrow": "Editorial & Content Standards",
-    "lede": "How we research, write, review, and maintain the educational content on My ESA Therapist — so what you read here is accurate, current, and clinically sound.",
+    "lede": "How we research, write, review, and maintain the educational content on My ESA Therapist, so what you read here is accurate, current, and clinically sound.",
     "updatedDate": "December 30, 2025",
     "heroStats": [],
     "relatedLinks": [
@@ -3562,7 +3562,7 @@ export const POLICIES_DATA: PolicyDocument[] = [
       "Website content is informational, not medical or legal advice",
       "Licensed providers make all clinical decisions independently",
       "No outcome or approval is guaranteed",
-      "Detailed policies govern each specific topic — this page is a summary"
+      "Detailed policies govern each specific topic; this page is a summary"
     ],
     "reviewerLine": "Content reviewed by Robert Staaf · Last updated: December 30, 2025"
   },
@@ -3679,20 +3679,20 @@ export const POLICIES_DATA: PolicyDocument[] = [
             "type": "checklist",
             "items": [
               {
-                "html": "<b>Perceivable</b> — content is presented in ways all users can perceive",
-                "text": "Perceivable — content is presented in ways all users can perceive"
+                "html": "<b>Perceivable</b>: content is presented in ways all users can perceive",
+                "text": "Perceivable: content is presented in ways all users can perceive"
               },
               {
-                "html": "<b>Operable</b> — interface components are navigable by keyboard and other tools",
-                "text": "Operable — interface components are navigable by keyboard and other tools"
+                "html": "<b>Operable</b>: interface components are navigable by keyboard and other tools",
+                "text": "Operable: interface components are navigable by keyboard and other tools"
               },
               {
-                "html": "<b>Understandable</b> — information and operation are clear and predictable",
-                "text": "Understandable — information and operation are clear and predictable"
+                "html": "<b>Understandable</b>: information and operation are clear and predictable",
+                "text": "Understandable: information and operation are clear and predictable"
               },
               {
-                "html": "<b>Robust</b> — content works reliably with current and future assistive technology",
-                "text": "Robust — content works reliably with current and future assistive technology"
+                "html": "<b>Robust</b>: content works reliably with current and future assistive technology",
+                "text": "Robust: content works reliably with current and future assistive technology"
               }
             ]
           }

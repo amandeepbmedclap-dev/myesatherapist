@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@/lib/track";
 import React, { useState } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
@@ -338,7 +339,7 @@ export function VideoTestimonialsGridSection() {
               className="hover-card hover-surface bg-white shadow-[0px_1px_4px_rgba(0,0,0,0.15)] rounded-[20px] overflow-hidden flex flex-col sm:flex-row items-stretch lg:last:col-span-2 lg:last:max-w-[616px] lg:last:w-full lg:last:mx-auto"
             >
               <div
-                onClick={() => setActiveVideo(review)}
+                onClick={() => { setActiveVideo(review); track("video_play", { video_title: review.name, location: "video_testimonials" }); }}
                 className="w-full sm:w-[301px] h-[340px] sm:h-auto sm:min-h-[370px] relative shrink-0 cursor-pointer group overflow-hidden bg-slate-900"
                 role="button"
                 tabIndex={0}

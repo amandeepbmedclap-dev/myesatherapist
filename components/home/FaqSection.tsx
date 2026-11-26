@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@/lib/track";
 import React, { useState } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
@@ -243,6 +244,7 @@ export function FaqRow({ num, q, a, open, onToggle }: { num?: string; q: string;
       <summary
         onClick={(event) => {
           event.preventDefault();
+          if (!open) track("faq_open", { question: q.slice(0, 100) });
           onToggle();
         }}
         className="flex w-full cursor-pointer list-none items-start gap-4 py-5 text-left sm:gap-6 [&::-webkit-details-marker]:hidden"

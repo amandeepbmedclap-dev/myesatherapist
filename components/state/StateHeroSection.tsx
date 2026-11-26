@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@/lib/track";
 import React, { useState } from "react";
 import { BreakpointImage } from "@/components/common/BreakpointImage";
 // import { ChevronDown } from "lucide-react";
@@ -315,6 +316,8 @@ export function StateHeroSection({ data }: { data: StateData }) {
     if (Object.keys(nextErrors).length > 0) return;
 
     const destination = evaluationDestination(lead);
+    track("generate_lead", { lead_source: "state_hero_form", state: data.slug });
+    track("begin_evaluation", { letter_type: "esa", state: data.slug, method: "state_hero_form" });
     // Heally handoff is disabled; every state now goes to the survey.
     // if (destination.includes("getheally.com")) {
     //   const abbreviation = STATE_INDEX.find((state) => state.name === formData.state)?.abbreviation || "CA";

@@ -51,7 +51,7 @@ export const metadata: Metadata = applySheetSeo({
     images: socialImage("esa-letter-for-housing", "Pet-friendly home comfort").openGraph,
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@MyESATherapist",
     creator: "@MyESATherapist",
     title: "ESA Letter for Housing Online | Licensed & FHA-Compliant - My ESA Therapist",

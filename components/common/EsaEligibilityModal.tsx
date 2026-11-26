@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@/lib/track";
 import { useEffect, useId, useRef, useState, type FormEvent } from "react";
 import { X } from "lucide-react";
 import { CtaButton } from "@/components/common/CtaButton";
@@ -43,7 +44,10 @@ export function EsaEligibilityModal() {
   const pendingEvaluation = useRef(false);
 
   useEffect(() => {
-    const onOpen = () => setOpen(true);
+    const onOpen = () => {
+      setOpen(true);
+      track("eligibility_check_start");
+    };
     window.addEventListener(OPEN_ESA_CHECKER_EVENT, onOpen);
     return () => window.removeEventListener(OPEN_ESA_CHECKER_EVENT, onOpen);
   }, []);
@@ -107,6 +111,7 @@ export function EsaEligibilityModal() {
     }
     setError(false);
     setShowResult(true);
+    track("eligibility_check_complete", { result: yesCount >= YES_THRESHOLD ? "likely" : "unclear", yes_count: yesCount });
   };
 
   const startEvaluation = () => {

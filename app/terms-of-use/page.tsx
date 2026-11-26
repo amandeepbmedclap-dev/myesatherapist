@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGES } from "@/data/socialImages";
 import { applySheetSeo } from "@/lib/seo";
 import React from "react";
 import { serializeLd } from "@/lib/site";
@@ -22,6 +23,7 @@ export const metadata: Metadata = applySheetSeo({
     canonical: "https://myesatherapist.com/terms-of-use/",
   },
   openGraph: {
+    images: DEFAULT_OG_IMAGES,
     title: "Terms of Use | My ESA Therapist Legal & Service Policies",
     description:
       "Read the Terms of Use for My ESA Therapist, including service policies, user responsibilities, payments, and ESA evaluation guidelines.",
@@ -31,7 +33,7 @@ export const metadata: Metadata = applySheetSeo({
     siteName: "My ESA Therapist",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@MyESATherapist",
     creator: "@MyESATherapist",
     title: "Terms of Use | My ESA Therapist Legal & Service Policies",
