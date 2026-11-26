@@ -20,9 +20,9 @@ const CARDS: KnowCard[] = [
       "Your payment provides access to a licensed professional’s evaluation. Approval is not guaranteed, as all outcomes are based on the provider’s independent clinical judgment.",
   },
   {
-    image: "/esa-renewal/esa-renewal-whattoknow-supportdocumentation-photo.webp",
-    alt: "Woman with golden retriever",
-    position: "object-left",
+    image: "/images/blog/woman-with-emotional-support-dog.webp",
+    alt: "Woman hugging her emotional support dog on the sofa",
+    position: "object-center",
     title: "Supports Documentation Integrity",
     description:
       "Renewal evaluations help ensure the letter accurately reflects a person’s current circumstances. Renewal helps maintain trust with housing providers and supports smoother accommodation discussions when a recent letter is requested",

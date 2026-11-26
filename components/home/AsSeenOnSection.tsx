@@ -92,11 +92,6 @@ const mediaLogos: MediaLogo[] = [
     imgClassName: "!max-w-none !h-[26px] sm:!h-[28px] lg:!h-[30px] xl:!h-[32px] !w-auto",
   },
   {
-    name: "RentDeals",
-    src: "/as-seen-on-images/rentdeals-logo.webp",
-    url: "https://www.rentdeals.com/blog/the-pet-rent-trap-a-housing-cost-breakdown-with-insights-from-my-esa-therapist/",
-  },
-  {
     name: "The Valdosta Daily Times",
     src: "/as-seen-on-images/the-valdosta-daily-times-logo.webp",
     url: "https://pr.valdostadailytimes.com/article/Why-My-ESA-Therapist-Prioritizes-Legitimate-ESA-Evaluations-and-Refuses-Instant-Approvals/6a50e6a116e7610b3c53dfdd",

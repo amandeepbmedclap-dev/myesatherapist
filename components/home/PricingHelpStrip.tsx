@@ -12,7 +12,7 @@ export function PricingHelpStrip() {
       <div className="min-w-0 flex-1">
         <div className="font-sans text-base font-bold leading-6 text-primary">Not sure which letter you need?</div>
         <div className="font-sans text-[14px] leading-[22px] text-body-text">
-          Answer a few quick questions and see whether an ESA letter fits your situation before you pay.
+          Answer a few quick questions and see which letter fits your situation before you pay.
         </div>
       </div>
       <button

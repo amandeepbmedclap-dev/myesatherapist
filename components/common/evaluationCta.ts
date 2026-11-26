@@ -62,6 +62,11 @@ function isStatePage(pathname: string) {
   return Boolean(match && STATE_INDEX_BY_SLUG[match[1]]);
 }
 
+function documentZoom() {
+  const raw = Number.parseFloat(getComputedStyle(document.body).zoom);
+  return Number.isFinite(raw) && raw > 0 ? raw : 1;
+}
+
 function scrollToStateHeroForm() {
   if (!isStatePage(window.location.pathname)) return false;
   const forms = Array.from(document.querySelectorAll<HTMLElement>("[data-state-hero-form]"));
@@ -73,10 +78,16 @@ function scrollToStateHeroForm() {
   if (window.location.hash) {
     window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
   }
+  // Between 1024px and 1439px the layout script zooms body to fit a 1440px
+  // design. getBoundingClientRect is in visual pixels and scrollY is in
+  // layout pixels, so the visual distance has to be multiplied by zoom.
+  // Windows Chrome also ignores smooth scrolling while that zoom is not 1,
+  // and the document's scroll-behavior is smooth, so "auto" would still be ignored.
+  const zoom = documentZoom();
   const header = document.querySelector("header");
   const offset = header ? header.getBoundingClientRect().bottom : 0;
-  const top = window.scrollY + form.getBoundingClientRect().top - offset - 16;
-  const behavior = window.innerWidth < 1024 ? "auto" : "smooth";
+  const top = window.scrollY + (form.getBoundingClientRect().top - offset - 16) * zoom;
+  const behavior: ScrollBehavior = zoom === 1 ? "smooth" : "instant";
   window.scrollTo({ top: Math.max(0, top), behavior });
   return true;
 }

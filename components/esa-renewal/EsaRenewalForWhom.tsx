@@ -25,7 +25,7 @@ export function EsaRenewalForWhom() {
       <div className="max-w-[1312px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-[850px] mx-auto mb-14 sm:mb-16 space-y-3">
           <h2 className="heading-h2 font-heading font-bold text-primary tracking-tight">
-            Who Is the ESA Letter Renewal Service Designed For?
+            Who Is This ESA Letter Renewal Service For?
           </h2>
           <p className="body-large text-body-text">
             A renewal evaluation may be helpful for individuals in the following circumstances.

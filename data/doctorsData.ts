@@ -365,9 +365,9 @@ export const DOCTORS_DATA: DoctorProfile[] = [
       ],
     },
     licensedStatesSection: {
-      heading: "States Where Dr. Gourav Patel Is Licensed",
+      heading: "States Where Dr. Gaurav Patel Is Licensed",
       description:
-        "Learn about the states where Dr. Gourav Patel serves patients through his medical practice.",
+        "Learn about the states where Dr. Gaurav Patel serves patients through his medical practice.",
       states: [
         "Georgia",
         "Vermont",

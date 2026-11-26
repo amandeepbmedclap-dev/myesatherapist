@@ -150,6 +150,9 @@ export default function EsaRenewalPage() {
         />
 
         <CtaBanner
+          title="Is Your ESA Letter Expiring Soon?"
+          description="Renew with a state-licensed professional and keep your housing documentation current."
+          buttonText="Renew My ESA Letter"
           buttonHref="#pricing"
           bgColor="bg-background"
         />
