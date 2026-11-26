@@ -31,11 +31,14 @@ export const metadata: Metadata = applySheetSeo({
   description: DESCRIPTION,
   alternates: { canonical: "https://myesatherapist.com/esa-letter-for-dogs/" },
   robots: {
-    index: true,
-    follow: true,
-    "max-snippet": -1,
-    "max-image-preview": "large",
-    "max-video-preview": -1,
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
   },
   ...pageSocial({
     title: TITLE,

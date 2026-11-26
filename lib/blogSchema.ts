@@ -9,6 +9,9 @@ const SITE = "https://myesatherapist.com";
 
 // datePublished / dateModified as published on the live WordPress site (Nov 2026).
 export const WP_POST_DATES: Record<string, { published: string; modified: string }> = {
+  "esa-vs-service-animal": { published: "2026-11-26", modified: "2026-11-26" },
+  "esa-pet-rent-and-deposits": { published: "2026-11-26", modified: "2026-11-26" },
+  "esa-letter-for-college-dorms": { published: "2026-11-26", modified: "2026-11-26" },
   "esa-for-adhd": { published: "2026-10-30", modified: "2026-11-16" },
   "who-can-write-an-esa-letter": { published: "2026-10-28", modified: "2026-10-28" },
   "esa-for-bipolar-disorder": { published: "2026-10-21", modified: "2026-10-21" },

@@ -47,7 +47,6 @@ function buildEntries(): SitemapEntry[] {
 
     { path: "/esa-letter-online/", changefreq: "monthly", priority: 0.9 },
     { path: "/esa-letter-for-housing/", changefreq: "monthly", priority: 0.9 },
-    { path: "/esa-letter-for-dogs/", changefreq: "monthly", priority: 0.9 },
     { path: "/psd-letter/", changefreq: "monthly", priority: 0.9 },
     { path: "/pricing/", changefreq: "monthly", priority: 0.9 },
     { path: "/esa-letter-renewal/", changefreq: "monthly", priority: 0.8 },

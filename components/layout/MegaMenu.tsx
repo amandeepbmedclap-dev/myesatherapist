@@ -27,7 +27,6 @@ export const NAV: { key: MenuKey; label: string; title: string; intro: string; i
     items: [
       { label: "ESA Letter Online", href: "/esa-letter-online/", note: "Start-to-finish online evaluation" },
       { label: "ESA Letter for Housing", href: "/esa-letter-for-housing/", note: "Documentation for rentals and HOAs" },
-      { label: "ESA Letter for Dogs", href: "/esa-letter-for-dogs/", note: "Housing letter for an emotional support dog" },
       { label: "ESA Letter Renewal", href: "/esa-letter-renewal/", note: "Keep your documentation current" },
       { label: "PSD Letter", href: "/psd-letter/", note: "For trained psychiatric service dogs" },
       { label: "Video Testimonials", href: "/video-testimonials/", note: "Real clients, in their own words" },
