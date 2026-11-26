@@ -13,6 +13,7 @@ const LABELS: Record<string, string> = {
   "esa-doctors": "Our Therapists",
   "esa-letter-online": "ESA Letter Online",
   "esa-letter-for-housing": "ESA Letter for Housing",
+  "esa-letter-for-dogs": "ESA Letter for Dogs",
   "esa-letter-renewal": "ESA Letter Renewal",
   "psd-letter": "PSD Letter",
   pricing: "ESA Letter Cost",
@@ -63,7 +64,7 @@ function titleCase(segment: string) {
     .join(" ");
 }
 
-const LETTER_PRODUCTS = ["esa-letter-online", "esa-letter-for-housing", "esa-letter-renewal"];
+const LETTER_PRODUCTS = ["esa-letter-online", "esa-letter-for-housing", "esa-letter-for-dogs", "esa-letter-renewal"];
 
 function isStateLetter(segment: string) {
   return segment.startsWith("esa-letter-") && !LETTER_PRODUCTS.includes(segment);
