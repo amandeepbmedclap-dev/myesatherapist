@@ -106,7 +106,7 @@ export const QUALIFYING_DOC_POSTS: BlogArticle[] = [
         title: "Can Social Anxiety Disorder Qualify You for an ESA?",
         paragraphs: [
           "Potentially, yes. But a diagnosis alone is not a guarantee for ESA approval.",
-          "An ESA might make sense when someone's mental or emotional condition is seriously affecting their daily life, and a licensed mental health professional decides the animal offers real emotional support tied to that condition. The evaluation has to look at the person, not just the diagnosis on paper. Social anxiety disorder is a recognized DSM-5 condition. However, a diagnosis alone does not establish eligibility for an ESA-related housing accommodation. The assessment must also consider whether the condition meets the applicable disability standard and whether the animal addresses a disability-related need.",
+          "An ESA might make sense when someone's mental or emotional condition is seriously affecting their daily life, and a licensed mental health professional decides the animal offers real emotional support tied to that condition. The evaluation has to look at the person, not just the diagnosis on paper. Social anxiety disorder is a recognized [DSM-5 condition](/blog/qualifying-conditions/conditions-that-may-qualify-for-an-esa/). However, a diagnosis alone does not establish eligibility for an ESA-related housing accommodation. The assessment must also consider whether the condition meets the applicable disability standard and whether the animal addresses a disability-related need.",
           "A clinician might weigh:",
         ],
         listItems: [
@@ -142,7 +142,7 @@ export const QUALIFYING_DOC_POSTS: BlogArticle[] = [
         id: "howesahelps",
         title: "How Can an ESA Help With Social Anxiety?",
         paragraphs: [
-          "What an ESA does for someone really depends on the person. For someone dealing with social anxiety or depression, it might mean having something familiar nearby when anxiety spikes or depressive symptoms become overwhelming. For others, caring for an animal can bring a sense of responsibility and purpose to their day.",
+          "What an ESA does for someone really depends on the person. For someone dealing with social anxiety or [depression](/blog/qualifying-conditions/esa-for-depression/), it might mean having something familiar nearby when anxiety spikes or depressive symptoms become overwhelming. For others, caring for an animal can bring a sense of responsibility and purpose to their day.",
         ],
         subsections: [
           {
@@ -166,7 +166,7 @@ export const QUALIFYING_DOC_POSTS: BlogArticle[] = [
           {
             title: "Help Settling Down",
             paragraphs: [
-              "A lot of people say just sitting with their animal helps them come back down when things feel like too much. It's not therapy, and it's not a replacement for treatment, but an ESA can be part of what actually helps in the day-to-day management of anxiety.",
+              "A lot of people say just sitting with their animal helps them come back down when things feel like too much. It's not therapy, and it's not a replacement for treatment, but an ESA can be part of what actually helps in the day-to-day management of [anxiety](/blog/qualifying-conditions/esa-for-anxiety/).",
             ],
           },
         ],
@@ -247,7 +247,7 @@ export const QUALIFYING_DOC_POSTS: BlogArticle[] = [
     introParagraphs: [
       "A panic attack can hit out of nowhere. Racing heartbeat. Tightness in the chest. Shaking. Dizziness. That sudden \"something's really wrong\" feeling. Many people who have experienced a panic attack describe feeling as though they can't breathe or that they are dying.",
       "And for someone with panic disorder, the distress doesn't always stop once the attack passes. You start worrying about the next one, and that worry creeps into your daily routines, making it harder to get through the day and do the things you want and need to do.",
-      "Some people find that an emotional support animal helps both during panic attacks as well as in between attacks. But just having panic disorder doesn't mean you automatically qualify for an ESA. So what actually matters?",
+      "Some people find that [an emotional support animal](/blog/esa-guide/emotional-support-animal/) helps both during panic attacks as well as in between attacks. But just having panic disorder doesn't mean you automatically qualify for an ESA. So what actually matters?",
     ],
     introImage: {
       src: "/blog-images/esa-for-panic-disorder/person-sitting-with-dog-during-a-hard-moment.webp",
@@ -333,7 +333,7 @@ export const QUALIFYING_DOC_POSTS: BlogArticle[] = [
         paragraphs: [
           "If you're dealing with panic disorder and feel like your animal genuinely supports you emotionally, an evaluation can help you figure out whether an ESA recommendation would be beneficial.",
           "Be honest going into the assessment. Talk about what your panic symptoms actually look like, how they affect your daily routine, and what changes when your animal is around. You don't need to prove your animal \"cures\" your panic attacks; you just need to explain what role it actually plays in helping manage your symptoms.",
-          "At My ESA Therapist, evaluations are done by licensed mental health professionals who look at your individual situation through a mental health assessment, not through an automatic approval process based on diagnosis alone.",
+          "At My ESA Therapist, evaluations are done by [licensed mental health professionals](/esa-doctors/) who look at your individual situation through a mental health assessment, not through an automatic approval process based on diagnosis alone.",
         ],
       },
     ],
@@ -471,7 +471,7 @@ export const QUALIFYING_DOC_POSTS: BlogArticle[] = [
         title: "What Do Therapists Say About Getting an ESA for Bereavement?",
         paragraphs: [
           "Therapists know how hard grief can be, and having emotional support during that time can make a real difference. An emotional support animal (ESA) can offer companionship, comfort, and a bit of routine while you adjust to life after a loss.",
-          "Robert Staaf, LCSW, a licensed therapist at My ESA Therapist, has experience in psychotherapy and animal-assisted therapy. He's also a pet owner and animal lover, so he understands how much the bond between people and animals can help emotional well-being. For someone who is grieving, an animal's company can bring comfort on the hard days. Still, everyone grieves differently; an ESA should be part of a treatment plan and work alongside professional mental health care when it's needed.",
+          "[Robert Staaf](/esa-doctors/dr-robert-staaf/), LCSW, a licensed therapist at My ESA Therapist, has experience in psychotherapy and animal-assisted therapy. He's also a pet owner and animal lover, so he understands how much the bond between people and animals can help emotional well-being. For someone who is grieving, an animal's company can bring comfort on the hard days. Still, everyone grieves differently; an ESA should be part of a treatment plan and work alongside professional mental health care when it's needed.",
           "Therapists also explain that an ESA letter for housing may be needed to request housing accommodations for an emotional support animal under the Fair Housing Act. A qualified mental health professional issues this letter after evaluating the person's mental health needs and determining whether an ESA may help with a qualifying disability. It explains the need for the animal and does not guarantee housing approval or eligibility based on grief alone.",
         ],
       },
@@ -498,7 +498,7 @@ export const QUALIFYING_DOC_POSTS: BlogArticle[] = [
         id: "conditions",
         title: "What Mental Health Conditions After a Loss May Qualify for an ESA?",
         paragraphs: [
-          "Grief can sometimes occur alongside DSM-5 qualifying conditions that affect your daily life. Depending on your symptoms and their impact on daily functioning, the following conditions may be considered during an ESA evaluation by a licensed mental health professional.",
+          "Grief can sometimes occur alongside [DSM-5 qualifying conditions](/blog/qualifying-conditions/conditions-that-may-qualify-for-an-esa/) that affect your daily life. Depending on your symptoms and their impact on daily functioning, the following conditions may be considered during an ESA evaluation by a licensed mental health professional.",
         ],
         subsections: [
           {

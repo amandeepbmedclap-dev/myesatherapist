@@ -77,7 +77,7 @@ export const DOC_BLOG_POSTS: BlogArticle[] = [
     },
     introParagraphs: [
       "Getting an emotional support animal (ESA) letter online can be convenient, especially if visiting a healthcare professional in person isn't easy. But with so many websites offering instant approvals, certificates, and ESA registrations, it's natural to wonder which services you can trust.",
-      "So, are online ESA letters legit? Yes, they can be. An ESA letter online may be legitimate when an appropriately licensed and qualified healthcare professional evaluates your individual circumstances and determines that an emotional support animal may help with your disability-related needs.",
+      "So, are online ESA letters legit? Yes, they can be. An [ESA letter online](/esa-letter-online/) may be legitimate when an appropriately licensed and qualified healthcare professional evaluates your individual circumstances and determines that an emotional support animal may help with your disability-related needs.",
       "However, not every website follows this evaluation process and standard. Some focus more on selling certificates than providing proper healthcare evaluations. Before choosing an online ESA service, it's worth knowing what separates a legitimate provider from a questionable one.",
     ],
     introImage: {
@@ -138,7 +138,7 @@ export const DOC_BLOG_POSTS: BlogArticle[] = [
           {
             title: "Transparent Pricing",
             paragraphs: [
-              "Check the complete cost of esa letter before booking. Find out whether the advertised price includes the consultation, any additional follow-up appointments, and written documentation, if recommended.",
+              "Check the complete [cost of esa letter](/pricing/) before booking. Find out whether the advertised price includes the consultation, any additional follow-up appointments, and written documentation, if recommended.",
               "Cancellation and refund policies should also be easy to find. Be cautious of services that advertise unusually low prices but reveal additional charges later. Some ESA letter providers are able to bill the evaluation through health insurance; your healthcare provider should be able to provide clarity on billing processes.",
             ],
           },
@@ -175,7 +175,7 @@ export const DOC_BLOG_POSTS: BlogArticle[] = [
           "**Hidden Charges:** Adds unexpected fees after initial payment.",
         ],
         afterListParagraphs: [
-          "Remember, there is no official federal ESA registration database or government-issued ESA ID card required for housing accommodation purposes. Buying a registration package doesn't independently establish a disability-related need.",
+          "Remember, there is [no official federal ESA registration](/blog/esa-guide/is-esa-registration-legit/) database or government-issued ESA ID card required for housing accommodation purposes. Buying a registration package doesn't independently establish a disability-related need.",
         ],
       },
       {
@@ -192,7 +192,7 @@ export const DOC_BLOG_POSTS: BlogArticle[] = [
         title: "What Should a Legitimate ESA Letter Include?",
         paragraphs: [
           "If a healthcare professional determines that an ESA is appropriate, they may provide documentation supporting your need for a housing accommodation.",
-          "Many people wonder what a legitimate ESA letter looks like. Depending on the circumstances, the ESA letter may include:",
+          "Many people wonder [what a legitimate ESA letter looks like](/blog/esa-guide/esa-letter-sample/). Depending on the circumstances, the ESA letter may include:",
         ],
         listItems: [
           "Your name.",
@@ -273,7 +273,7 @@ export const DOC_BLOG_POSTS: BlogArticle[] = [
     },
     introParagraphs: [
       "Emotional support animals (ESAs) can make a real difference for people dealing with certain mental health conditions or disabilities. Their companionship may offer comfort, emotional reassurance, and support with everyday challenges. However, simply having a pet doesn't make it an emotional support animal. A person must first be evaluated to determine whether they meet the requirements for an eligible disability and that the animal provides support in managing the disability.",
-      "If you're wondering how to get an ESA letter for housing, you may be able to complete the evaluation online through a qualified healthcare professional. Knowing who to contact, what information you may need, and how the process works can help you get started without confusion.",
+      "If you're wondering how to get an [ESA letter for housing](/esa-letter-for-housing/), you may be able to complete the evaluation online through a qualified healthcare professional. Knowing who to contact, what information you may need, and how the process works can help you get started without confusion.",
     ],
     introImage: {
       src: "/blog-images/how-to-get-an-esa-letter-online/reviewing-esa-housing-letter.webp",
@@ -303,7 +303,7 @@ export const DOC_BLOG_POSTS: BlogArticle[] = [
         id: "howdoget",
         title: "How Do I Get an ESA Letter Online?",
         paragraphs: [
-          "Getting an ESA letter online can be convenient for people who prefer remote consultations, have difficulty leaving their home, or do not have access to an in-person provider. Here is how the process generally works.",
+          "[Getting an ESA letter online](/esa-letter-online/) can be convenient for people who prefer remote consultations, have difficulty leaving their home, or do not have access to an in-person provider. Here is how the process generally works.",
         ],
         subsections: [
           {
@@ -397,14 +397,14 @@ export const DOC_BLOG_POSTS: BlogArticle[] = [
           "Hidden charges or unclear fees.",
         ],
         afterListParagraphs: [
-          "Remember, there is no official federal ESA registry or government-issued certification required under the Fair Housing Act. Online evaluations can be legitimate, but they must involve a qualified professional who can properly assess your disability needs. Simply buying a letter, certificate, or registration online isn't enough.",
+          "Remember, there is [no official federal ESA registry](/blog/esa-guide/is-esa-registration-legit/) or government-issued certification required under the Fair Housing Act. Online evaluations can be legitimate, but they must involve a qualified professional who can properly assess your disability needs. Simply buying a letter, certificate, or registration online isn't enough.",
         ],
       },
       {
         id: "howlong",
         title: "How Long Does It Take to Get an ESA Letter?",
         paragraphs: [
-          "The time required depends on the provider, appointment availability, and your individual circumstances. Some evaluations may be completed quickly, while others require additional appointments or follow-ups. For example, to get an ESA letter in California, it is required for the individual applying for the ESA to maintain a 30-day clinical relationship with their evaluator.",
+          "The time required depends on the provider, appointment availability, and your individual circumstances. Some evaluations may be completed quickly, while others require additional appointments or follow-ups. For example, to get an [ESA letter in California](/esa-letter-california/), it is required for the individual applying for the ESA to maintain a 30-day clinical relationship with their evaluator.",
           "If you need an ESA letter for housing, it's best to start early so there's enough time for your housing provider to review your request.",
           "Don't rush the process just to get a letter quickly. A proper evaluation matters more than a fast approval. By doing the process right, you are best setting yourself up for a smooth transition into ESA accommodation.",
         ],

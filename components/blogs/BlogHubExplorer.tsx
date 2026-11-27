@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { ArrowRight, ArrowUpRight, Clock, Search, X } from "lucide-react";
 import { openEsaEligibilityChecker } from "@/components/common/evaluationCta";
+import { contributorProfileHref } from "@/data/contributorsData";
 
 export type HubPost = {
   slug: string;
@@ -62,9 +63,22 @@ export function searchPosts(posts: HubPost[], q: string, cat = "all"): HubPost[]
 /* ───────────── cards ───────────── */
 
 export function Meta({ p, light }: { p: HubPost; light?: boolean }) {
+  const authorHref = contributorProfileHref(p.author);
   return (
     <span className={`flex flex-wrap items-center gap-x-3 gap-y-1 text-base ${light ? "text-white/75" : "text-body-text"}`}>
-      {p.author && <span className={`font-semibold ${light ? "text-white" : "text-[#1A3D4F]"}`}>{p.author}</span>}
+      {p.author &&
+        (authorHref ? (
+          <Link
+            href={authorHref}
+            className={`relative z-10 font-semibold underline decoration-current/40 underline-offset-2 transition-colors ${
+              light ? "text-white hover:text-accent" : "text-[#1A3D4F] hover:text-[#1D6E72]"
+            }`}
+          >
+            {p.author}
+          </Link>
+        ) : (
+          <span className={`font-semibold ${light ? "text-white" : "text-[#1A3D4F]"}`}>{p.author}</span>
+        ))}
       <span className="inline-flex items-center gap-1">
         <Clock aria-hidden className={`size-3.5 ${light ? "text-accent" : "text-[#1D6E72]"}`} /> {p.minutes} min read
       </span>
@@ -75,9 +89,8 @@ export function Meta({ p, light }: { p: HubPost; light?: boolean }) {
 
 export function PostCard({ p, wide = false, priority = false }: { p: HubPost; wide?: boolean; priority?: boolean }) {
   return (
-    <Link
-      href={p.url}
-      className={`group flex h-full overflow-hidden rounded-[22px] bg-white ring-1 ring-line-200 transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_24px_48px_-28px_rgba(26,61,79,0.55)] ${
+    <article
+      className={`group relative flex h-full overflow-hidden rounded-[22px] bg-white ring-1 ring-line-200 transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_24px_48px_-28px_rgba(26,61,79,0.55)] ${
         wide ? "flex-col md:flex-row" : "flex-col"
       }`}
     >
@@ -94,13 +107,14 @@ export function PostCard({ p, wide = false, priority = false }: { p: HubPost; wi
       </span>
       <span className={`flex flex-1 flex-col ${wide ? "p-6 md:p-8" : "p-5 sm:p-6"}`}>
         <span className="text-base font-bold uppercase tracking-[0.14em] text-gold-600">{p.category}</span>
-        <span
-          className={`mt-2 block font-heading font-bold leading-snug text-[#1A3D4F] transition-colors group-hover:text-[#1D6E72] ${
+        <Link
+          href={p.url}
+          className={`mt-2 block font-heading font-bold leading-snug text-[#1A3D4F] transition-colors group-hover:text-[#1D6E72] after:absolute after:inset-0 ${
             wide ? "text-[28px] md:text-[28px]" : "text-[20px]"
           }`}
         >
           {p.title}
-        </span>
+        </Link>
         <span className={`mt-2 text-base leading-relaxed text-body-text ${wide ? "line-clamp-3" : "line-clamp-2"}`}>{p.excerpt}</span>
         <span className="mt-auto block pt-5">
           <span className="flex items-end justify-between gap-3 border-t border-line-200 pt-4">
@@ -109,7 +123,7 @@ export function PostCard({ p, wide = false, priority = false }: { p: HubPost; wi
           </span>
         </span>
       </span>
-    </Link>
+    </article>
   );
 }
 
@@ -262,24 +276,26 @@ export function BlogHubExplorer({
           </div>
 
           {/* Featured story */}
-          <Link href={featured.url} className="group relative flex flex-col overflow-hidden rounded-[28px] bg-[#1A3D4F] shadow-[0_40px_70px_-40px_rgba(26,61,79,0.8)]">
+          <article className="group relative flex flex-col overflow-hidden rounded-[28px] bg-[#1A3D4F] shadow-[0_40px_70px_-40px_rgba(26,61,79,0.8)]">
             <span className="relative block aspect-[16/10] overflow-hidden">
               <Image src={featured.image} alt={featured.title} fill priority sizes="(min-width:1024px) 560px, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
               <span className="absolute left-5 top-5 rounded-full bg-accent px-3.5 py-1.5 text-base font-extrabold uppercase tracking-[0.12em] text-[#1A3D4F]">
                 Featured · {featured.category}
               </span>
             </span>
-            <span className="relative block p-6 sm:p-8">
-              <span className="relative block font-heading text-[28px] font-bold leading-tight text-white sm:text-[28px]">{featured.title}</span>
-              <span className="relative mt-3 line-clamp-2 text-base leading-relaxed text-white/80">{featured.excerpt}</span>
-              <span className="relative mt-5 flex items-center justify-between gap-4 border-t border-white/15 pt-4">
+            <span className="block p-6 sm:p-8">
+              <Link href={featured.url} className="block font-heading text-[28px] font-bold leading-tight text-white after:absolute after:inset-0 sm:text-[28px]">
+                {featured.title}
+              </Link>
+              <span className="mt-3 line-clamp-2 block text-base leading-relaxed text-white/80">{featured.excerpt}</span>
+              <span className="mt-5 flex items-center justify-between gap-4 border-t border-white/15 pt-4">
                 <Meta p={featured} light />
                 <span className="grid size-11 shrink-0 place-items-center rounded-full bg-accent text-[#1A3D4F] transition-transform group-hover:-rotate-45">
                   <ArrowRight aria-hidden className="size-5" />
                 </span>
               </span>
             </span>
-          </Link>
+          </article>
         </div>
       </section>
 

@@ -125,9 +125,9 @@ export default function QualifyingConditionsPage() {
         />
 
         <CtaBanner
-          title="The Importance of a Professional Clinical Evaluation"
-          description="Qualifying for an ESA letter depends on an individualized assessment conducted by a licensed mental health professional. A diagnosis alone does not automatically guarantee eligibility. The evaluation focuses on whether the presence of an emotional support animal is likely to help reduce symptoms and improve daily functioning and well-being."
-          buttonText="Start Your ESA Evaluation Now"
+          title="Not Sure If You Qualify? Let a Professional Help You Find Out"
+          description="Every person's situation is different. A licensed therapist in your state will review your symptoms, your daily challenges, and how an emotional support animal could help, then give you an honest recommendation."
+          buttonText="Start My ESA Evaluation"
           buttonHref="/pricing/"
           bgColor="bg-background"
         />

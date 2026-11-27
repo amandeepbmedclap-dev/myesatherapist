@@ -119,24 +119,26 @@ export function CategoryHubExplorer({
 
           {aside ??
             (featured && (
-              <Link href={featured.url} className="group relative flex flex-col overflow-hidden rounded-[28px] bg-[#1A3D4F] shadow-[0_40px_70px_-40px_rgba(26,61,79,0.8)]">
+              <article className="group relative flex flex-col overflow-hidden rounded-[28px] bg-[#1A3D4F] shadow-[0_40px_70px_-40px_rgba(26,61,79,0.8)]">
                 <span className="relative block aspect-[16/10] overflow-hidden">
                   <Image src={featured.image} alt={featured.title} fill priority sizes="(min-width:1024px) 560px, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
                   <span className="absolute left-5 top-5 rounded-full bg-accent px-3.5 py-1.5 text-base font-extrabold uppercase tracking-[0.12em] text-[#1A3D4F]">
                     Featured · {name}
                   </span>
                 </span>
-                <span className="relative block p-6 sm:p-8">
-                  <span className="relative block font-heading text-[28px] font-bold leading-tight text-white sm:text-[28px]">{featured.title}</span>
-                  <span className="relative mt-3 line-clamp-2 text-base leading-relaxed text-white/80">{featured.excerpt}</span>
-                  <span className="relative mt-5 flex items-center justify-between gap-4 border-t border-white/15 pt-4">
+                <span className="block p-6 sm:p-8">
+                  <Link href={featured.url} className="block font-heading text-[28px] font-bold leading-tight text-white after:absolute after:inset-0 sm:text-[28px]">
+                    {featured.title}
+                  </Link>
+                  <span className="mt-3 line-clamp-2 block text-base leading-relaxed text-white/80">{featured.excerpt}</span>
+                  <span className="mt-5 flex items-center justify-between gap-4 border-t border-white/15 pt-4">
                     <Meta p={featured} light />
                     <span className="grid size-11 shrink-0 place-items-center rounded-full bg-accent text-[#1A3D4F] transition-transform group-hover:-rotate-45">
                       <ArrowRight aria-hidden className="size-5" />
                     </span>
                   </span>
                 </span>
-              </Link>
+              </article>
             ))}
         </div>
       </section>

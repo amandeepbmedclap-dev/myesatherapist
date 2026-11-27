@@ -7,13 +7,13 @@ const ART_ALT = "Woman relaxing on her sofa with a fluffy white dog and a black 
 
 export function QualifyingConditionsReasons() {
   return (
-    <section className="relative w-full overflow-hidden bg-white lg:min-h-[42vw] xl:min-h-0 xl:h-[549px]">
-      <div className="absolute inset-y-0 right-0 hidden aspect-[1908/1647] lg:block">
+    <section className="relative w-full overflow-hidden bg-white lg:min-h-[460px] xl:min-h-[549px]">
+      <div className="absolute inset-y-0 right-0 hidden w-[min(46%,636px)] lg:block">
         <Image
-            quality={90} src={ART} alt={ART_ALT} fill className="object-cover object-right" sizes="(min-width: 1024px) 636px, 1px" />
+            quality={90} src={ART} alt={ART_ALT} fill className="object-cover object-right" sizes="(min-width: 1440px) 636px, 46vw" />
       </div>
 
-      <div className="relative z-10 mx-auto flex w-full max-w-[1448px] flex-col px-4 pb-14 sm:px-8 lg:h-full lg:justify-center lg:py-[4vw] lg:pl-[5.8vw] lg:pr-0 xl:py-0 xl:pl-[83px]">
+      <div className="relative z-10 mx-auto flex w-full max-w-[1448px] flex-col px-4 pb-14 sm:px-8 lg:h-full lg:min-h-[460px] lg:justify-center lg:py-16 lg:pl-[5.8vw] lg:pr-[min(48%,680px)] xl:min-h-[549px] xl:py-0 xl:pl-[83px]">
         <div className="relative -mx-4 mb-12 sm:-mx-8 lg:hidden">
           <div className="sm:hidden">
             <WaveImageFrame alt={ART_ALT} img={{ src: "/esa-qualifying-conditions/esa-qualifyingcondtions-commonreasons-mobile.webp", w: 390, h: 512, crop: { x: 0, y: 42, w: 390, h: 470 } }} />
@@ -32,7 +32,7 @@ export function QualifyingConditionsReasons() {
           />
         </div>
 
-        <div className="flex w-full max-w-[626px] flex-col gap-5 text-center lg:max-w-[42vw] lg:gap-[1.9vw] lg:text-left xl:max-w-[626px] xl:gap-7">
+        <div className="flex w-full max-w-[626px] flex-col gap-5 text-center lg:gap-[1.9vw] lg:text-left xl:gap-7">
           <h2 className="heading-h2 mx-auto max-w-[541px] font-heading font-bold tracking-[-0.00015em] text-primary lg:mx-0">
             Common Reasons People Explore ESAs
           </h2>

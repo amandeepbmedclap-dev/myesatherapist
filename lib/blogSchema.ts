@@ -146,7 +146,11 @@ export function cleanPostSchema(schema: unknown, post: PostInfo): unknown {
         else delete n.hasPart;
       }
       ensurePersonUrl(n.author);
-      ensurePersonUrl(n.reviewedBy);
+      if (n.reviewedBy) {
+        if (!n.editor) n.editor = n.reviewedBy;
+        delete n.reviewedBy;
+      }
+      ensurePersonUrl(n.editor);
     }
     ensurePersonUrl(n);
     for (const key of ["datePublished", "dateModified", "lastReviewed"]) {

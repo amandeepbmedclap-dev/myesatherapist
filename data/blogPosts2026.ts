@@ -384,7 +384,7 @@ export const NEW_BLOG_POSTS: BlogArticle[] = [
         afterListParagraphs: [
           "Landlords should not demand unnecessary medical details or impose unreasonable documentation requirements on the individual requesting accommodation.",
           "An [ESA letter from a qualified healthcare professional](/blog/esa-guide/who-can-write-an-esa-letter/) may help support an accommodation request. Legitimate telehealth evaluations should not automatically be rejected simply because they take place online.",
-          "However, an online ESA registration, certificate, or ID card alone does not establish a disability-related need for an ESA.",
+          "However, an [online ESA registration](/blog/esa-guide/is-esa-registration-legit/), certificate, or ID card alone does not establish a disability-related need for an ESA.",
         ],
       },
       {
@@ -548,7 +548,7 @@ export const NEW_BLOG_POSTS: BlogArticle[] = [
           "Most college ESA policies cover the following areas:",
         ],
         listItems: [
-          "**Documentation:** Students may need to provide supporting information explaining their disability-related need for an emotional support animal, including a letter by a qualified healthcare professional. The individual should have a mental health disability, usually listed in the DSM-5 for ESA eligibility.",
+          "**Documentation:** Students may need to provide supporting information explaining their disability-related need for an emotional support animal, including a letter by a qualified healthcare professional. The individual should have a mental health disability, usually listed in the [DSM-5 for ESA eligibility](/blog/qualifying-conditions/conditions-that-may-qualify-for-an-esa/).",
           "**Housing Approval:** The college's housing or disability services department reviews the request before allowing an ESA in campus housing.",
           "**Animal Responsibilities:** Students are expected to keep their animals clean, properly supervised, and under control. The ESA must be safe for other residents.",
           "**Shared Living Arrangements:** Colleges may consider how an ESA could affect roommates and other students using shared residential spaces, including safety and medical considerations.",
