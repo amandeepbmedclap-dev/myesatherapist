@@ -13,6 +13,7 @@ import { esaForPtsdSchema } from "./schemas/esaForPtsdSchema";
 import { prepareEsaForRentalHousingSchema } from "./schemas/prepareEsaForRentalHousingSchema";
 import { esaTrainingMythsSchema } from "./schemas/esaTrainingMythsSchema";
 import { NEW_BLOG_POSTS } from "./blogPosts2026";
+import { DOC_BLOG_POSTS } from "./blogPostsFromDocs";
 
 export interface BlogTocItem {
   id: string;
@@ -3897,6 +3898,7 @@ export const BLOG_POSTS: BlogArticle[] = [
     schema: esaTrainingMythsSchema,
   },
   ...NEW_BLOG_POSTS,
+  ...DOC_BLOG_POSTS,
 ];
 
 export function getBlogBySlug(slug: string): BlogArticle | undefined {
