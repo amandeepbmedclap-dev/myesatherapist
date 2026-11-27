@@ -137,6 +137,8 @@ interface QualifyingConditionsProps {
   description?: string;
   introMaxClass?: string;
   labelOverrides?: Record<string, string>;
+  descriptionOverrides?: Record<string, string>;
+  footer?: React.ReactNode;
 }
 
 export function QualifyingConditions({
@@ -146,6 +148,8 @@ export function QualifyingConditions({
   description = "A licensed mental health professional will assess whether an emotional support animal may be appropriate based on your individual needs. These are some mental health conditions that may support the need for an ESA.",
   introMaxClass = "max-w-[709px]",
   labelOverrides,
+  descriptionOverrides,
+  footer,
 }: QualifyingConditionsProps = {}) {
   const [hoveredCondition, setHoveredCondition] = useState<string | null>(null);
 
@@ -245,7 +249,7 @@ export function QualifyingConditions({
                       </div>
 
                       <p className="body mt-2 text-left">
-                        {c.description}
+                        {descriptionOverrides?.[c.label] ?? c.description}
                       </p>
                     </div>
                   )}
@@ -328,7 +332,7 @@ export function QualifyingConditions({
                         </div>
 
                         <p className="body text-left">
-                          {c.description}
+                          {descriptionOverrides?.[c.label] ?? c.description}
                         </p>
                       </div>
                     </>
@@ -338,6 +342,7 @@ export function QualifyingConditions({
             })}
           </div>
         </div>
+        {footer ? <div className="mt-8 pb-10 md:mt-10 md:pb-14">{footer}</div> : null}
       </div>
     </section>
   );

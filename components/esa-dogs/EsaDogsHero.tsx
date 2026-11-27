@@ -9,9 +9,9 @@ import { CtaButton } from "@/components/common/CtaButton";
 import { promptSelectState } from "@/components/common/promptSelectState";
 
 const POINTS = [
-  "Evaluation by a professional licensed in your state",
-  "Letter written for housing use, ready to hand to your landlord",
-  "Full refund if you don't qualify",
+  "HIPAA-compliant online ESA evaluation process",
+  "Secure ESA letter delivery via mail",
+  "100% refund if you do not qualify",
 ];
 
 export function EsaDogsHero() {
@@ -50,10 +50,10 @@ export function EsaDogsHero() {
       <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col px-5 py-12 sm:px-8 lg:min-h-[664px] lg:justify-center lg:py-16 lg:pl-[80px] lg:pr-20">
         <div className="flex w-full max-w-[560px] flex-col items-center text-center lg:items-start lg:text-left">
           <h1 className="heading-h1 text-primary">
-            Get an ESA Letter for Your Dog — Without the Hassle
+            Apply for an ESA Letter for Dog Today
           </h1>
           <p className="body-large mt-5 max-w-[486px] text-body-text">
-            Your dog already helps you cope. Speak with a licensed mental health professional online and, if you qualify, receive your ESA letter the same day.
+            Start your emotional support dog evaluation online and take the first step toward housing support. A state-licensed professional will review your needs and determine whether an ESA letter is appropriate.
           </p>
           <ul className="body mt-5 max-w-[520px] list-disc space-y-1 pl-5 text-left text-body-text">
             {POINTS.map((point) => (

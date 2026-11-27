@@ -79,16 +79,14 @@ function scrollToStateHeroForm() {
     window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
   }
   // Between 1024px and 1439px the layout script zooms body to fit a 1440px
-  // design. getBoundingClientRect is in visual pixels and scrollY is in
-  // layout pixels, so the visual distance has to be multiplied by zoom.
-  // Windows Chrome also ignores smooth scrolling while that zoom is not 1,
-  // and the document's scroll-behavior is smooth, so "auto" would still be ignored.
+  // design. scrollIntoView handles the active scroll container and CSS zoom
+  // natively; Windows Chrome ignores smooth scrolling while zoom is not 1.
   const zoom = documentZoom();
   const header = document.querySelector("header");
-  const offset = header ? header.getBoundingClientRect().bottom : 0;
-  const top = window.scrollY + (form.getBoundingClientRect().top - offset - 16) * zoom;
+  const headerHeight = header ? header.offsetHeight : 0;
+  form.style.scrollMarginTop = `${headerHeight + 16}px`;
   const behavior: ScrollBehavior = zoom === 1 ? "smooth" : "instant";
-  window.scrollTo({ top: Math.max(0, top), behavior });
+  form.scrollIntoView({ behavior, block: "start" });
   return true;
 }
 

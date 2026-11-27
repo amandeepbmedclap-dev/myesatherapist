@@ -47,6 +47,7 @@ function buildEntries(): SitemapEntry[] {
 
     { path: "/esa-letter-online/", changefreq: "monthly", priority: 0.9 },
     { path: "/esa-letter-for-housing/", changefreq: "monthly", priority: 0.9 },
+    { path: "/esa-letter-for-dog/", changefreq: "monthly", priority: 0.8 },
     { path: "/psd-letter/", changefreq: "monthly", priority: 0.9 },
     { path: "/pricing/", changefreq: "monthly", priority: 0.9 },
     { path: "/esa-letter-renewal/", changefreq: "monthly", priority: 0.8 },
@@ -68,7 +69,6 @@ function buildEntries(): SitemapEntry[] {
     { path: "/esa-laws/", changefreq: "weekly", priority: 0.7 },
     { path: "/esa-laws/alabama/", changefreq: "monthly", priority: 0.5 },
     { path: "/state/", changefreq: "weekly", priority: 0.7 },
-    { path: "/legal-reviewer/", changefreq: "monthly", priority: 0.4 },
     { path: "/disclaimer/", changefreq: "yearly", priority: 0.3 },
     { path: "/editorial-policy/", changefreq: "yearly", priority: 0.3 },
     { path: "/accessibility-statement/", changefreq: "yearly", priority: 0.3 },

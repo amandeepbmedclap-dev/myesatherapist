@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BadgeCheck, Clock3 } from "lucide-react";
+import { BadgeCheck, Calendar, Clock3 } from "lucide-react";
 import { AUTHORS, REVIEWERS } from "@/data/contributorsData";
 
 const PROFILE_HREF: Record<string, string> = Object.fromEntries([...AUTHORS, ...REVIEWERS].map((p) => [p.name, p.href]));
@@ -68,12 +68,20 @@ export function ArticleHero({
           </div>
           <h1 className="heading-h1 mt-5 font-heading font-bold text-primary">{title}</h1>
           <p className="mt-5 max-w-[680px] font-sans text-lg leading-[29px] text-body-text sm:text-[18px] sm:leading-[30px]">{subtitle}</p>
-          <div className="mt-7 flex flex-col gap-4 border-t border-primary/10 pt-6 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-8">
+          <div className="mt-7 flex flex-col gap-4 border-t border-primary/10 pt-6 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-6 md:flex-nowrap xl:gap-x-8">
             {person(author, "Written by")}
             {person(reviewer, "Medically reviewed by")}
-            <div className="font-sans leading-tight">
-              <span className="block text-base text-body-text">Last updated</span>
-              <span className="block text-base font-semibold text-primary">{updated}</span>
+            <div className="flex shrink-0 items-center gap-3">
+              <span
+                aria-hidden
+                className="flex size-11 shrink-0 items-center justify-center rounded-full bg-white text-[#1D6E72] ring-2 ring-white shadow-[0_4px_10px_-4px_rgba(26,61,79,0.5)]"
+              >
+                <Calendar className="size-5" />
+              </span>
+              <div className="font-sans leading-tight">
+                <span className="block text-base text-body-text">Last updated</span>
+                <span className="block whitespace-nowrap text-base font-semibold text-primary">{updated}</span>
+              </div>
             </div>
           </div>
         </div>
