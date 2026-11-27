@@ -3,7 +3,9 @@
 //   carried, plus any references to them.
 // - Adds a BreadcrumbList (Home > Blog > Category > Post) when a post has none.
 // - Fills missing datePublished / dateModified from the live WordPress site.
-// Images are intentionally not added here.
+// - Writes those dates as ISO 8601 datetimes with a timezone.
+// - Drops paywall markup. These articles are public.
+// Images are added by withFeatureImage before this runs.
 
 const SITE = "https://myesatherapist.com";
 
@@ -48,6 +50,45 @@ const typesOf = (n: Node): string[] => {
   return Array.isArray(t) ? (t as string[]) : t ? [t as string] : [];
 };
 
+const PROFILE_URLS: Record<string, string> = {
+  "Allyson Valley": `${SITE}/contributors/allyson-valley/`,
+  "Max Phillips": `${SITE}/contributors/max-phillips/`,
+  "Awais Arshad": `${SITE}/contributors/awais-arshad/`,
+};
+
+// Google's Article check expects a datetime with a timezone, not a bare date.
+function toSchemaDate(value: unknown): unknown {
+  if (typeof value !== "string") return value;
+  let v = value.trim();
+  if (!/^\d{4}-\d{2}-\d{2}/.test(v)) {
+    const t = Date.parse(`${v} 12:00 UTC`);
+    if (Number.isNaN(t)) return value;
+    v = new Date(t).toISOString().slice(0, 10);
+  }
+  if (/^\d{4}-\d{2}-\d{2}$/.test(v)) return `${v}T00:00:00+00:00`;
+  if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$/.test(v)) return `${v}+00:00`;
+  if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(v)) return v.replace("Z", "+00:00");
+  return v;
+}
+
+function ensurePersonUrl(person: unknown) {
+  if (!person || typeof person !== "object" || Array.isArray(person)) return;
+  const p = person as Node;
+  const types = typesOf(p);
+  if (!types.includes("Person") || typeof p.name !== "string" || p.url) return;
+  const profile = PROFILE_URLS[p.name as string];
+  if (profile) p.url = profile;
+}
+
+function isPaywallPart(part: unknown) {
+  if (!part || typeof part !== "object" || Array.isArray(part)) return false;
+  const p = part as Node;
+  if (p.isAccessibleForFree === false) return true;
+  const sel = p.cssSelector;
+  const selectors = Array.isArray(sel) ? sel : sel ? [sel] : [];
+  return selectors.some((s) => String(s).includes("paywall"));
+}
+
 export function cleanPostSchema(schema: unknown, post: PostInfo): unknown {
   const { schema: _ownSchema, ...postData } = post as PostInfo & { schema?: unknown };
   if (!schema || typeof schema !== "object") return schema;
@@ -88,17 +129,22 @@ export function cleanPostSchema(schema: unknown, post: PostInfo): unknown {
   const dates = WP_POST_DATES[post.slug];
   for (const n of nodes) {
     const ts = typesOf(n);
-    if (ts.includes("BlogPosting") || ts.includes("Article")) {
+    const isArticle = ts.includes("BlogPosting") || ts.includes("Article");
+    if (isArticle) {
       if (!n.datePublished && dates) n.datePublished = dates.published;
       if (!n.dateModified && dates) n.dateModified = dates.modified;
-      // Schema dates must be ISO 8601 ("October 30, 2026" -> "2026-10-30").
-      for (const key of ["datePublished", "dateModified"]) {
-        const v = n[key];
-        if (typeof v === "string" && !/^\d{4}-\d{2}-\d{2}/.test(v)) {
-          const t = Date.parse(`${v} 12:00 UTC`);
-          if (!Number.isNaN(t)) n[key] = new Date(t).toISOString().slice(0, 10);
-        }
+      delete n.isAccessibleForFree;
+      if (Array.isArray(n.hasPart)) {
+        const parts = (n.hasPart as unknown[]).filter((part) => !isPaywallPart(part));
+        if (parts.length) n.hasPart = parts;
+        else delete n.hasPart;
       }
+      ensurePersonUrl(n.author);
+      ensurePersonUrl(n.reviewedBy);
+    }
+    ensurePersonUrl(n);
+    for (const key of ["datePublished", "dateModified", "lastReviewed"]) {
+      if (key in n) n[key] = toSchemaDate(n[key]);
     }
   }
 

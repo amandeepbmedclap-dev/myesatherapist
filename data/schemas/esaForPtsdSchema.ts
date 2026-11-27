@@ -147,8 +147,7 @@ export const esaForPtsdSchema = {
           "name": "Housing accommodations"
         }
       ],
-      "inLanguage": "en-US",
-      "isAccessibleForFree": true
+      "inLanguage": "en-US"
     },
     {
       "@type": "BreadcrumbList",

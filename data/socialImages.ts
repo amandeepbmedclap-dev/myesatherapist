@@ -175,8 +175,12 @@ export function withFeatureImage<T>(schema: T, key: string, caption?: string): T
   if (!Array.isArray(graph)) {
     const single = source as Record<string, any>;
     const types = ([] as string[]).concat(single?.["@type"] ?? []);
-    if (!types.some((t) => PAGE_TYPE.test(t))) return source;
     const imageUrl = assetUrl(imagePath(key));
+    if (types.some((t) => /BlogPosting|Article/.test(t))) {
+      if (single.image) return source;
+      return { ...single, image: imageUrl } as T;
+    }
+    if (!types.some((t) => PAGE_TYPE.test(t))) return source;
     return {
       ...single,
       primaryImageOfPage: {

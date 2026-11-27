@@ -91,7 +91,6 @@ export const esaVsServiceAnimalSchema = {
         { "@type": "Thing", "name": "Fair Housing Act" },
       ],
       "inLanguage": "en-US",
-      "isAccessibleForFree": true,
     },
     {
       "@type": "BreadcrumbList",

@@ -98,7 +98,6 @@ export const esaPetRentAndDepositsSchema = {
         { "@type": "Thing", "name": "Fair Housing Act" },
       ],
       "inLanguage": "en-US",
-      "isAccessibleForFree": true,
     },
     {
       "@type": "BreadcrumbList",
