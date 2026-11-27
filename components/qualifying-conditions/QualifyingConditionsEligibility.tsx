@@ -37,7 +37,7 @@ export function QualifyingConditionsEligibility() {
         />
         <div className="grid w-full grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-4">
           {FACTORS.map((item) => (
-            <IconCard key={item.title} icon={item.icon} title={item.title} text={item.text} compact />
+            <IconCard key={item.title} icon={item.icon} title={item.title} text={item.text} compact titleFont="playfair" />
           ))}
         </div>
       </div>
