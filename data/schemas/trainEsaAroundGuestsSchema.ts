@@ -48,8 +48,8 @@ export const trainEsaAroundGuestsSchema = {
     {
       "@type": "ImageObject",
       "@id": "https://myesatherapist.com/blog/esa-training/train-esa-around-guests-and-strangers/#primaryimage",
-      "url": "https://myesatherapist.com/images/blog/og/train-esa-around-guests-and-strangers.jpg",
-      "contentUrl": "https://myesatherapist.com/images/blog/og/train-esa-around-guests-and-strangers.jpg",
+      "url": "https://myesatherapist.com/images/blog/og/train-esa-around-guests-and-strangers.webp",
+      "contentUrl": "https://myesatherapist.com/images/blog/og/train-esa-around-guests-and-strangers.webp",
       "width": 1200,
       "height": 630,
       "caption": "Woman asking a dog to sit on a mat while a guest waits at the door",

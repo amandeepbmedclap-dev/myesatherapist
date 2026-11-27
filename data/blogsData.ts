@@ -14,6 +14,7 @@ import { prepareEsaForRentalHousingSchema } from "./schemas/prepareEsaForRentalH
 import { esaTrainingMythsSchema } from "./schemas/esaTrainingMythsSchema";
 import { NEW_BLOG_POSTS } from "./blogPosts2026";
 import { DOC_BLOG_POSTS } from "./blogPostsFromDocs";
+import { QUALIFYING_DOC_POSTS } from "./blogPostsQualifyingDocs";
 
 export interface BlogTocItem {
   id: string;
@@ -3899,6 +3900,7 @@ export const BLOG_POSTS: BlogArticle[] = [
   },
   ...NEW_BLOG_POSTS,
   ...DOC_BLOG_POSTS,
+  ...QUALIFYING_DOC_POSTS,
 ];
 
 export function getBlogBySlug(slug: string): BlogArticle | undefined {

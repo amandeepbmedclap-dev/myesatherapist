@@ -48,8 +48,8 @@ export const areOnlineEsaLettersLegitSchema = {
     {
       "@type": "ImageObject",
       "@id": "https://myesatherapist.com/blog/esa-guide/are-online-esa-letters-legit/#primaryimage",
-      "url": "https://myesatherapist.com/images/blog/og/are-online-esa-letters-legit.jpg",
-      "contentUrl": "https://myesatherapist.com/images/blog/og/are-online-esa-letters-legit.jpg",
+      "url": "https://myesatherapist.com/images/blog/og/are-online-esa-letters-legit.webp",
+      "contentUrl": "https://myesatherapist.com/images/blog/og/are-online-esa-letters-legit.webp",
       "width": 1200,
       "height": 630,
       "caption": "Woman on a laptop at a kitchen table while a dog sleeps beside her",
