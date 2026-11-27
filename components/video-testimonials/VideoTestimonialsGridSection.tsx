@@ -275,44 +275,44 @@ const VIDEO_REVIEWS: VideoReviewItem[] = [
     name: "Nikki Spark",
     rating: 5,
     quote:
-      "“Thinking about getting an ESA letter? I wanted to share my honest experience with My ESA Therapist first.”",
+      "“Hey, I’m Nikki Spark, and here’s something I wish more people knew about ESA letters. Not every website that promises you a letter approaches the process the right way. That’s why I chose My ESA Therapist. I completed my ESA letter evaluation online, and I received my letter the next day after my evaluation.”",
     date: "November 26, 2026",
     videoId: "khGjdFzDIXM",
     videoUrl: "https://www.youtube.com/embed/khGjdFzDIXM?autoplay=1&rel=0",
-    thumbnail: "https://img.youtube.com/vi/khGjdFzDIXM/oardefault.jpg",
+    thumbnail: "https://img.youtube.com/vi/khGjdFzDIXM/hqdefault.jpg",
   },
   {
     id: 25,
     name: "Summer W.",
     rating: 5,
     quote:
-      "“People ask what really happens during an ESA evaluation. I wanted to share my story with My ESA Therapist.”",
+      "“Hey, I’m Summer and I recently came across My ESA Therapist, and what I liked was that the process involved an actual evaluation with a licensed mental health professional. No confusing myself with random information online. If an ESA letter is something you’re considering, My ESA Therapist is definitely worth looking into!”",
     date: "November 26, 2026",
     videoId: "kBGn5bHPSjs",
     videoUrl: "https://www.youtube.com/embed/kBGn5bHPSjs?autoplay=1&rel=0",
-    thumbnail: "https://img.youtube.com/vi/kBGn5bHPSjs/oardefault.jpg",
+    thumbnail: "https://img.youtube.com/vi/kBGn5bHPSjs/hqdefault.jpg",
   },
   {
     id: 26,
     name: "Lisa Bowers",
     rating: 5,
     quote:
-      "“I wanted to share my honest experience with My ESA Therapist.”",
+      "“Hi, I’m Lisa from Belleville, WI. I’d been thinking about getting an ESA letter, but kept putting it off because I didn’t know where to start. With so many ESA scams online, I was skeptical. Then I found My ESA Therapist, watched a few of their video testimonials, and felt like I could trust them. I connected with a licensed therapist, and the whole process was simple and straightforward.”",
     date: "November 26, 2026",
     videoId: "k3Vw_c87YUM",
     videoUrl: "https://www.youtube.com/embed/k3Vw_c87YUM?autoplay=1&rel=0",
-    thumbnail: "https://img.youtube.com/vi/k3Vw_c87YUM/oardefault.jpg",
+    thumbnail: "https://img.youtube.com/vi/k3Vw_c87YUM/hqdefault.jpg",
   },
   {
     id: 27,
     name: "Aspen",
     rating: 5,
     quote:
-      "“It changed everything. I wanted to share my ESA experience.”",
+      "“Hey, I’m Aspen from Seattle. So, I’d been looking into getting an ESA letter, but honestly, I had no idea where to start. I found My ESA Therapist, and the process was actually really straightforward. I talked with a licensed therapist, and they made me feel really comfortable. The complete process was easy and my ESA letter was delivered the same day.”",
     date: "November 26, 2026",
     videoId: "vKHKf2Kxanc",
     videoUrl: "https://www.youtube.com/embed/vKHKf2Kxanc?autoplay=1&rel=0",
-    thumbnail: "https://img.youtube.com/vi/vKHKf2Kxanc/oardefault.jpg",
+    thumbnail: "https://img.youtube.com/vi/vKHKf2Kxanc/hqdefault.jpg",
   },
 ];
 
