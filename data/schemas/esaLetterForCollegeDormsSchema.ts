@@ -119,7 +119,6 @@ export const esaLetterForCollegeDormsSchema = {
         },
       ],
       "inLanguage": "en-US",
-      "isAccessibleForFree": true,
     },
     {
       "@type": "BreadcrumbList",
