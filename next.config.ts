@@ -9,21 +9,15 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   async headers() {
     const noindex = [{ key: "X-Robots-Tag", value: "noindex, nofollow" }];
-    // The dogs letter page stays out of search results after the rest of the site is indexable.
-    const dogsNoindex = [
-      { source: "/esa-letter-for-dogs", headers: noindex },
-      { source: "/esa-letter-for-dogs/", headers: noindex },
-    ];
     // Before launch everything is noindex. After launch only the real domain is
     // indexable; staging and *.vercel.app hosts stay noindex.
-    if (!allowIndexing) return [{ source: "/:path*", headers: noindex }, ...dogsNoindex];
+    if (!allowIndexing) return [{ source: "/:path*", headers: noindex }];
     return [
       {
         source: "/:path*",
         missing: [{ type: "host", value: "myesatherapist.com" }],
         headers: noindex,
       },
-      ...dogsNoindex,
     ];
   },
   onDemandEntries: {
@@ -81,6 +75,26 @@ const nextConfig: NextConfig = {
       {
         source: "/author/mohammed-ziauddin/",
         destination: "/contributors/mohammed-ziauddin/",
+        statusCode: 301,
+      },
+      {
+        source: "/legal-reviewer",
+        destination: "/contributors/awais-arshad/",
+        statusCode: 301,
+      },
+      {
+        source: "/legal-reviewer/",
+        destination: "/contributors/awais-arshad/",
+        statusCode: 301,
+      },
+      {
+        source: "/esa-letter-for-dogs",
+        destination: "/esa-letter-for-dog/",
+        statusCode: 301,
+      },
+      {
+        source: "/esa-letter-for-dogs/",
+        destination: "/esa-letter-for-dog/",
         statusCode: 301,
       },
     ];

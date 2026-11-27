@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import { CtaButton } from "@/components/common/CtaButton";
+import { QualifyingConditions } from "@/components/home/QualifyingConditions";
 
 function Glyph({ src }: { src: string }) {
   return <Image src={src} alt="" width={32} height={32} unoptimized />;
@@ -16,40 +18,40 @@ function SectionIntro({ title, description }: { title: string; description: stri
 
 const WHY = [
   {
-    icon: "/esa-dogs/icon-housing.svg",
-    title: "Housing Protection",
-    description:
-      "Keep your dog with you in rental housing and request a reasonable accommodation under the Fair Housing Act — no pet rent or pet deposit for a valid ESA.",
-  },
-  {
-    icon: "/esa-dogs/icon-fast.svg",
-    title: "Fast & Simple",
-    description:
-      "Complete a short questionnaire, meet your provider by video or phone, and get your letter as soon as the same day.",
-  },
-  {
     icon: "/esa-dogs/icon-licensed.svg",
-    title: "Real Licensed Providers",
+    title: "One-on-One Evaluation",
     description:
-      "Every evaluation is done by a licensed therapist, counselor, or psychologist — never an automated form.",
-  },
-  {
-    icon: "/esa-dogs/icon-secure.svg",
-    title: "Private & Secure",
-    description:
-      "Your health information is encrypted and never shared with your landlord. They only see your letter.",
+      "Your dog is a part of your daily life. Discuss your emotional support needs directly with a licensed professional, never through group appointments or automated AI responses.",
   },
   {
     icon: "/esa-dogs/icon-verified.svg",
-    title: "Verifiable Letter",
+    title: "State-Specific Expertise",
     description:
-      "Includes provider license number, issue date, and verification contact so your landlord can confirm it's real.",
+      "You will be evaluated by a professional licensed in your state, who follows that state's requirements.",
+  },
+  {
+    icon: "/esa-dogs/icon-fast.svg",
+    title: "Clear & Honest Pricing",
+    description:
+      "Enjoy transparent pricing without hidden fees. The $99 ESA letter fee includes an individual professional evaluation and documentation, if applicable.",
   },
   {
     icon: "/esa-dogs/icon-phobia.svg",
-    title: "Risk-Free",
+    title: "No Guaranteed Approvals",
     description:
-      "Not approved after your evaluation? You get a full refund. No hidden fees, no auto-renewals.",
+      "ESA letter for dogs should reflect a genuine clinical need. Your provider makes an independent decision rather than promising a letter before the evaluation.",
+  },
+  {
+    icon: "/esa-dogs/icon-housing.svg",
+    title: "Support Beyond the Letter",
+    description:
+      "Getting an ESA letter for dog doesn’t mean our support stops after you receive the letter. Our support team remains available 24/7 to answer your questions and guide you further.",
+  },
+  {
+    icon: "/esa-dogs/icon-secure.svg",
+    title: "No Unnecessary Add-ons",
+    description:
+      "You don’t need to purchase registrations, vests, or certificates to get ESA letter for dog. Only relevant documentation issued by a state-licensed mental health professional matters.",
   },
 ];
 
@@ -58,8 +60,8 @@ export function EsaDogsWhy() {
     <section className="bg-background px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
       <div className="mx-auto flex max-w-[1283px] flex-col gap-16">
         <SectionIntro
-          title="Why Dog Owners Choose Us"
-          description="A legitimate letter from a real, licensed professional — the kind landlords actually accept."
+          title="Why Choose My ESA Therapist?"
+          description="Your ESA letter for emotional support dog request receives individual attention from a licensed professional. Each step is handled with care and confidentiality."
         />
         <div className="grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
           {WHY.map((item) => (
@@ -82,52 +84,52 @@ export function EsaDogsWhy() {
 
 const BENEFITS = [
   {
-    icon: "/esa-dogs/icon-anxiety.svg",
-    title: "Reduces Stress & Anxiety",
+    icon: "/esa-dogs/icon-support.svg",
+    title: "Emotional Comfort",
     description:
-      "Petting and being near your dog can help calm your nervous system, ease tension, and make stressful moments feel more manageable.",
+      "An emotional support dog can offer comfort during difficult moments and help you feel less alone when life gets hard.",
+  },
+  {
+    icon: "/esa-dogs/icon-anxiety.svg",
+    title: "Less Stress Daily",
+    description:
+      "Spending time with your support dog can create calming moments and help you take a break from daily worries and pressure.",
   },
   {
     icon: "/esa-dogs/icon-companionship.svg",
-    title: "Eases Loneliness",
+    title: "Steady Companionship",
     description:
-      "A loyal companion at home can reduce feelings of isolation and give you someone to come home to every day.",
+      "Having your dog can make everyday life feel less lonely and give you a familiar place to turn to each day.",
   },
   {
     icon: "/esa-dogs/icon-routine.svg",
-    title: "Builds Daily Routine",
+    title: "Better Daily Routines",
     description:
-      "Regular feeding times and daily walks add structure to your day, which may help with depression and low motivation.",
-  },
-  {
-    icon: "/esa-dogs/icon-activity.svg",
-    title: "Encourages Activity",
-    description:
-      "Daily walks with your dog mean more movement, more fresh air, and steady habits that can support better physical health.",
-  },
-  {
-    icon: "/esa-dogs/icon-sleep.svg",
-    title: "Better Sleep",
-    description:
-      "Many owners feel safer and more settled at night with their dog nearby, which can make it easier to rest.",
-  },
-  {
-    icon: "/esa-dogs/icon-social.svg",
-    title: "Social Connection",
-    description:
-      "Dogs make it easier to start conversations, meet neighbors, and gradually rebuild confidence when you are around other people.",
+      "Feeding, walking, and caring for your dog can add structure to your day and encourage more consistent daily habits.",
   },
   {
     icon: "/esa-dogs/icon-purpose.svg",
-    title: "Sense Of Purpose",
+    title: "A Sense of Purpose",
     description:
-      "Caring for another living being each day can restore a sense of meaning and responsibility to your daily life.",
+      "Caring for your dog gives a sense of responsibility and can bring a greater sense of purpose and connection to your routine.",
   },
   {
-    icon: "/esa-dogs/icon-support.svg",
-    title: "Unconditional Support",
+    icon: "/esa-dogs/icon-social.svg",
+    title: "Comfort During Change",
     description:
-      "Your dog offers constant, non-judgmental companionship during hard moments, stressful days, and panic episodes when you need it.",
+      "An emotional support dog can provide a lot of comfort, especially during life changes, new environments, and challenging periods.",
+  },
+  {
+    icon: "/esa-dogs/icon-sleep.svg",
+    title: "Improved Sleep Habits",
+    description:
+      "A consistent bedtime routine with your dog can create a sense of comfort and help evenings feel more settled.",
+  },
+  {
+    icon: "/esa-dogs/icon-activity.svg",
+    title: "Greater Self-Care",
+    description:
+      "Looking after your dog’s daily needs can encourage you to maintain daily habits, including regular meals, walks, and routines.",
   },
 ];
 
@@ -136,8 +138,8 @@ export function EsaDogsBenefits() {
     <section className="bg-white">
       <div className="mx-auto flex max-w-[1281px] flex-col gap-12 px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <SectionIntro
-          title="Benefits Of Having An Emotional Support Dog"
-          description="Dogs provide steady comfort and structure. Here's how an ESA dog can support your daily life."
+          title="Benefits of Having an Emotional Support Dog"
+          description="An emotional support dog can not only offer company, but also provide comfort and bring a sense of connection to everyday life."
         />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {BENEFITS.map((item) => (
@@ -155,63 +157,63 @@ export function EsaDogsBenefits() {
   );
 }
 
-const CONDITIONS = [
-  { icon: "/esa-dogs/icon-anxiety-2.svg", label: "Anxiety Disorders" },
-  { icon: "/esa-dogs/icon-depression.svg", label: "Depression" },
-  { icon: "/esa-dogs/icon-ocd.svg", label: "OCD" },
-  { icon: "/esa-dogs/icon-trauma.svg", label: "PTSD & Trauma" },
-  { icon: "/esa-dogs/icon-mood.svg", label: "Bipolar Disorders" },
-  { icon: "/esa-dogs/icon-neuro.svg", label: "ADHD" },
-  { icon: "/esa-dogs/icon-phobia-2.svg", label: "Phobias & Fears" },
-  { icon: "/esa-dogs/icon-companionship-2.svg", label: "Grief & Other" },
-];
+const CONDITION_DESCRIPTIONS: Record<string, string> = {
+  "Anxiety Disorders":
+    "An emotional support dog can make stressful days feel easier by offering a familiar presence when anxious thoughts become difficult to handle.",
+  "Panic Disorders":
+    "Having a dog nearby brings reassurance during frightening moments and helps individuals feel less alone when panic sets in.",
+  "Bipolar Disorders":
+    "A support dog can bring a sense of routine and familiarity during periods of changing moods and emotional ups and downs.",
+  "Social Anxiety":
+    "For those who feel uncomfortable around others, an emotional support dog can make everyday situations feel a little less intimidating.",
+  "Mood Disorders":
+    "A dog’s affection and daily presence can add moments of connection and familiarity when emotions feel difficult to manage.",
+  Depression:
+    "On days when getting out of bed feels difficult, caring for a dog can give daily activities a little more purpose.",
+  Agoraphobia:
+    "An emotional support dog can offer a familiar source of reassurance when certain places or everyday outings feel overwhelming.",
+  PTSD:
+    "A dog’s familiar presence can bring comfort during periods when past trauma is triggered and help people feel more at ease.",
+  OCD:
+    "An emotional support dog can offer a familiar source of comfort during periods of intrusive thoughts, recurring worries, and OCD stress.",
+  ADHD:
+    "Daily activities like feeding, walking, and playing with a dog can add structure and encourage more consistent routines.",
+  Schizophrenia:
+    "An emotional support dog can provide a familiar connection and a comforting presence throughout everyday activities.",
+  "Other Mental Health Conditions":
+    "People with other mental health conditions may also benefit from an emotional support dog, depending on their individual needs and circumstances.",
+};
 
 export function EsaDogsConditions() {
   return (
-    <section className="bg-background px-4 pb-16 pt-16 sm:px-6 sm:pb-16 lg:px-8 lg:pb-0 lg:pt-20">
-      <div className="mx-auto flex max-w-[1278px] flex-col items-center">
-        <SectionIntro
-          title="Conditions That May Qualify You For An ESA Letter"
-          description="To qualify, a licensed professional must find that you have a diagnosed mental or emotional condition that substantially limits a major life activity, and that your dog helps ease it."
-        />
-
-        <div className="relative mt-16 w-full">
-          <div className="relative mx-auto aspect-[952/493] w-full max-w-[952px]">
-            <Image
-              src="/esa-dogs/conditions-photo.webp"
-              alt="Woman sitting on a sofa with her golden retriever"
-              fill
-              quality={85}
-              sizes="(min-width: 1024px) 952px, 100vw"
-              className="object-contain"
-            />
-          </div>
-          <ul className="mt-6 flex flex-wrap justify-center gap-3 lg:absolute lg:inset-0 lg:mt-0 lg:block">
-            {CONDITIONS.map((item, index) => {
-              const spots = [
-                "lg:left-[18%] lg:top-[2%]",
-                "lg:left-[58%] lg:-top-8",
-                "lg:left-[2%] lg:top-[28%]",
-                "lg:left-[22%] lg:top-[24%]",
-                "lg:left-[74%] lg:top-[20%]",
-                "lg:left-[82%] lg:top-[40%]",
-                "lg:left-[0%] lg:top-[62%]",
-                "lg:right-0 lg:top-[58%]",
-              ];
-              return (
-                <li
-                  key={item.label}
-                  className={`flex h-12 items-center gap-2.5 rounded-[10px] bg-white px-6 shadow-[0px_2px_4px_rgba(0,0,0,0.15)] lg:absolute ${spots[index]}`}
-                >
-                  <Image src={item.icon} alt="" width={20} height={20} unoptimized />
-                  <span className="whitespace-nowrap font-sans text-[18px] font-medium leading-7 text-primary">{item.label}</span>
-                </li>
-              );
-            })}
-          </ul>
+    <QualifyingConditions
+      id="conditions"
+      className="bg-background"
+      title="Conditions That May Qualify You for an Emotional Support Dog Letter"
+      description="Mental health conditions affect everyone differently. A licensed healthcare professional considers your symptoms, daily challenges, and need for a support dog before issuing a letter for ESA dog."
+      introMaxClass="max-w-[1062px]"
+      descriptionOverrides={CONDITION_DESCRIPTIONS}
+      footer={
+        <div className="mx-auto w-full rounded-[20px] border-l-[5px] border-[#EFBF2F] bg-[#FEF8EC] p-6 shadow-[0px_1px_4px_rgba(0,0,0,0.06)] sm:p-8">
+          <p className="body text-body-text">
+            <strong className="font-bold text-primary">Important Note:</strong> Having the above conditions alone does not make you eligible for an emotional support dog. An emotional support dog is not a replacement for medical treatment. Approval for an ESA letter is not guaranteed. An{" "}
+            <Link href="/esa-letter-online/" className="font-semibold text-[#8A6A0B] hover:underline">
+              online ESA letter
+            </Link>{" "}
+            for dog from therapist is issued only after the professional determines it is appropriate after an individual evaluation. Since ESAs are not the same as Psychiatric Service Dogs, they are not covered under the Americans with Disabilities Act and have no public access rights. Under{" "}
+            <a
+              href="https://www.transportation.gov/briefing-room/us-department-transportation-announces-final-rule-traveling-air-service-animals"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#8A6A0B] hover:underline"
+            >
+              DOT rules
+            </a>
+            , airlines no longer have to accommodate ESAs. Airlines treat ESAs as pets, so check your airline&apos;s pet policy and fees before booking.
+          </p>
         </div>
-      </div>
-    </section>
+      }
+    />
   );
 }
 
@@ -264,17 +266,33 @@ export function EsaDogsVetting() {
   );
 }
 
+export function EsaDogsSampleNote() {
+  return (
+    <section className="bg-white px-4 pb-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1062px] rounded-[20px] border-l-[5px] border-[#EFBF2F] bg-[#FEF8EC] p-6 sm:p-8 shadow-[0px_1px_4px_rgba(0,0,0,0.06)]">
+        <p className="body text-body-text">
+          <strong className="font-bold text-primary">Note:</strong> Want to see what an emotional support letter for a dog looks like? View a{" "}
+          <Link href="/blog/esa-guide/esa-letter-sample/" className="font-semibold text-[#8A6A0B] hover:underline">
+            sample ESA letter for dog
+          </Link>{" "}
+          to understand what information is typically included in an ESA letter.
+        </p>
+      </div>
+    </section>
+  );
+}
+
 export function EsaDogsRights() {
   return (
     <IconRow
       tone="cream"
-      title="Your ESA Dog Housing Rights"
-      description="With a valid ESA letter, the Fair Housing Act gives you important protections when renting."
+      title="Your Emotional Support Dog Housing Rights"
+      description="A letter from a licensed professional who knows your condition can support a reasonable accommodation request under the Fair Housing Act. Landlords may verify it, while some housing is exempt."
       items={[
-        { icon: "/esa-dogs/icon-rights-pet.svg", title: "Pet Deposit", description: "ESAs are not treated as pets, so landlords generally can't charge pet fees for them" },
-        { icon: "/esa-dogs/icon-rights-phobia.svg", title: "Weight Limits", description: 'Standard "no large dogs" or breed rules generally don\'t apply to a valid ESA.' },
-        { icon: "/esa-dogs/icon-service-dog.svg", title: '"No Pets" Buildings', description: "You can request a reasonable accommodation even where pets are normally banned." },
-        { icon: "/esa-dogs/icon-rights-verified.svg", title: "Protection", description: "Landlords can't refuse housing just because you have an ESA, with limited exceptions." },
+        { icon: "/esa-dogs/icon-rights-pet.svg", title: "Pet Fee Relief", description: "An ESA letter may support a housing request and may waive pet rent or deposits. However, damage costs may still apply." },
+        { icon: "/esa-dogs/icon-rights-phobia.svg", title: "Breed Freedom", description: "Your dog’s breed or size alone generally cannot be used to deny a reasonable housing accommodation request." },
+        { icon: "/esa-dogs/icon-service-dog.svg", title: "No-Pet Policies", description: "A property’s no-pet policy does not automatically prevent you from requesting an ESA accommodation." },
+        { icon: "/esa-dogs/icon-rights-verified.svg", title: "Legal Support", description: "The Fair Housing Act protects renters from discrimination while requesting an ESA accommodation." },
       ]}
     />
   );
@@ -282,10 +300,10 @@ export function EsaDogsRights() {
 
 const COMPARE = [
   { icon: "/esa-dogs/icon-compare-purpose.svg", label: "Purpose", esa: "Comfort for a mental or emotional condition", service: "Trained tasks for a disability", pet: "Companionship" },
-  { icon: "/esa-dogs/icon-compare-agreement.svg", label: "Requires", esa: "Letter from a licensed professional", service: "Individual task training", pet: "Nothing" },
-  { icon: "/esa-dogs/icon-compare-law.svg", label: "Housing Rights", esa: "Yes (Fair Housing Act)", service: "Yes", pet: "No" },
+  { icon: "/esa-dogs/icon-compare-agreement.svg", label: "Requires", esa: "ESA letter from a licensed clinician", service: "Individual task training", pet: "Nothing" },
+  { icon: "/esa-dogs/icon-compare-law.svg", label: "Housing Rights", esa: "Yes (FHA & State-specific laws)", service: "Yes", pet: "No" },
   { icon: "/esa-dogs/icon-compare-social.svg", label: "Public Access", esa: "No", service: "Yes (ADA)", pet: "No" },
-  { icon: "/esa-dogs/icon-compare-pet.svg", label: "Pet Fees Waived", esa: "Yes", service: "Yes", pet: "No" },
+  { icon: "/esa-dogs/icon-compare-pet.svg", label: "Pet Fees Waived", esa: "Yes (with FHA approval)", service: "Yes", pet: "No" },
 ];
 
 export function EsaDogsComparison() {
@@ -293,8 +311,8 @@ export function EsaDogsComparison() {
     <section className="bg-white px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
       <div className="mx-auto flex max-w-[1210px] flex-col items-center gap-12">
         <SectionIntro
-          title="Compare To Other ESA Letter Services"
-          description="We set the standard for professional care, compliance, and trust."
+          title="Compared Emotional Support Dogs, Service Animals & Regular Pets"
+          description="Understand how emotional support dogs, service animals, and regular pets differ in their purpose, documentation, and legal protections"
         />
         <div className="w-full overflow-x-auto rounded-[24px] bg-background px-4 py-6 sm:px-8">
           <table className="w-full min-w-[720px] border-collapse text-left">
@@ -334,15 +352,15 @@ export function EsaDogsComparison() {
 }
 
 const BREEDS = [
-  { image: "/esa-dogs/breed-labrador.webp", name: "Labrador Retriever", text: "Gentle, patient, and eager to bond. A classic choice for emotional support.", tags: ["Large", "Friendly", "Loyal"] },
-  { image: "/esa-dogs/breed-golden.webp", name: "Golden Retriever", text: "Warm and intuitive, known for sensing and responding to their owner's mood.", tags: ["Large", "Gentle", "Affection"] },
-  { image: "/esa-dogs/breed-cavalier.webp", name: "Cavalier King Charles Spaniel", text: "Born companions who love cuddles and adapt well to apartment living.", tags: ["Small", "Cuddly", "Friendly"] },
-  { image: "/esa-dogs/breed-poodle.webp", name: "Poodle", text: "Smart, calm, and low-shedding. Great for allergy-prone owners.", tags: ["Toy–Standard", "Smart", "Hypoallergenic"] },
-  { image: "/esa-dogs/breed-pug.webp", name: "Pug", text: "Playful and clingy, a comforting lap companion with a big personality.", tags: ["Small", "Playful", "Low exercise"] },
-  { image: "/esa-dogs/breed-greyhound.webp", name: "Greyhound", text: "Surprisingly calm and quiet indoors. A gentle, low-key companion.", tags: ["Large", "Surprisingly calm", "Quiet"] },
-  { image: "/esa-dogs/breed-frenchie.webp", name: "French Bulldog", text: "Easygoing, quiet, and affectionate. Ideal for small homes.", tags: ["Small", "Quiet", "Loving"] },
-  { image: "/esa-dogs/breed-corgi.webp", name: "Pembroke Welsh Corgi", text: "Cheerful and loyal, lifting your mood with constant energy and humor.", tags: ["Medium", "Cheerful", "Loyal"] },
-  { image: "/esa-dogs/breed-bichon.webp", name: "Bichon Frise", text: "Happy, gentle, and social. Low-shedding and easy to love.", tags: ["Small", "Allergic", "Happy"] },
+  { image: "/esa-dogs/breed-labrador.webp", name: "Labrador Retriever", text: "Gentle, patient, and eager to bond. A classic choice for emotional support.", tags: ["Friendly", "Large", "Loyal"] },
+  { image: "/esa-dogs/breed-golden.webp", name: "Golden Retriever", text: "Warm and intuitive, known for sensing and responding to their owner's mood.", tags: ["Gentle", "Large", "Affection"] },
+  { image: "/esa-dogs/breed-cavalier.webp", name: "Cavalier King Charles Spaniel", text: "Born companions who love cuddles and adapt well to apartment living.", tags: ["Cuddly", "Small", "Friendly"] },
+  { image: "/esa-dogs/breed-poodle.webp", name: "Poodle", text: "Smart, calm, and low-shedding. Great for allergy-prone owners.", tags: ["Intelligent", "Toy–Standard", "Hypoallergenic"] },
+  { image: "/esa-dogs/breed-pug.webp", name: "Pug", text: "Playful and clingy, a comforting lap companion with a big personality.", tags: ["Playful", "Small", "Low exercise"] },
+  { image: "/esa-dogs/breed-greyhound.webp", name: "Greyhound", text: "Surprisingly calm and quiet indoors. A gentle, low-key companion.", tags: ["Calm", "Large", "Quiet"] },
+  { image: "/esa-dogs/breed-frenchie.webp", name: "French Bulldog", text: "Easygoing, quiet, and affectionate. Ideal for small homes.", tags: ["Easygoing", "Small", "Loving"] },
+  { image: "/esa-dogs/breed-corgi.webp", name: "Pembroke Welsh Corgi", text: "Cheerful and loyal, lifting your mood with constant energy and humor.", tags: ["Cheerful", "Medium", "Loyal"] },
+  { image: "/esa-dogs/breed-bichon.webp", name: "Bichon Frisé", text: "Happy, gentle, and social. Low-shedding and easy to love.", tags: ["Happy", "Small", "Allergic"] },
 ];
 
 export function EsaDogsBreeds() {
@@ -350,8 +368,8 @@ export function EsaDogsBreeds() {
     <section className="bg-background px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
       <div className="mx-auto flex max-w-[1280px] flex-col gap-12">
         <SectionIntro
-          title="Best ESA Dog Breeds"
-          description="Any dog can be an ESA, whatever the breed, size, or age. These breeds are popular for their calm, affectionate temperaments."
+          title="Top Emotional Support Dog Breeds"
+          description="There is no single breed or size that makes the perfect emotional support dog. Some breeds are especially popular for their calm, affectionate, and gentle temperaments."
         />
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {BREEDS.map((breed) => (
