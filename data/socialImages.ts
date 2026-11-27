@@ -94,6 +94,9 @@ const SIZES: Record<string, [number, number]> = {
   "blog-are-online-esa-letters-legit": [1200, 630],
   "blog-how-to-get-an-esa-letter-online": [1200, 630],
   "blog-train-esa-around-guests-and-strangers": [1200, 630],
+  "blog-esa-for-social-anxiety": [1200, 630],
+  "blog-esa-for-panic-disorder": [1200, 630],
+  "blog-esa-for-grief-and-bereavement": [1200, 630],
 };
 
 const PATHS: Record<string, string> = {
@@ -132,9 +135,12 @@ const PATHS: Record<string, string> = {
   "blog-esa-letter-for-college-dorms": "/images/blog/og/esa-letter-for-college-dorms.jpg",
   "blog-esa-pet-rent-and-deposits": "/images/blog/og/esa-pet-rent-and-deposits.jpg",
   "blog-esa-vs-service-animal": "/images/blog/og/esa-vs-service-animal.jpg",
-  "blog-are-online-esa-letters-legit": "/images/blog/og/are-online-esa-letters-legit.jpg",
-  "blog-how-to-get-an-esa-letter-online": "/images/blog/og/how-to-get-an-esa-letter-online.jpg",
-  "blog-train-esa-around-guests-and-strangers": "/images/blog/og/train-esa-around-guests-and-strangers.jpg",
+  "blog-are-online-esa-letters-legit": "/images/blog/og/are-online-esa-letters-legit.webp",
+  "blog-how-to-get-an-esa-letter-online": "/images/blog/og/how-to-get-an-esa-letter-online.webp",
+  "blog-train-esa-around-guests-and-strangers": "/images/blog/og/train-esa-around-guests-and-strangers.webp",
+  "blog-esa-for-social-anxiety": "/images/blog/og/esa-for-social-anxiety.webp",
+  "blog-esa-for-panic-disorder": "/images/blog/og/esa-for-panic-disorder.webp",
+  "blog-esa-for-grief-and-bereavement": "/images/blog/og/esa-for-grief-and-bereavement.webp",
 };
 
 function imagePath(key: string) {
@@ -154,8 +160,9 @@ export function socialImage(key: string, alt: string) {
   // Blog posts have their own 1200x630 JPG; everything else uses the brand default.
   const own = PATHS[key];
   const url = assetUrl(own && own.startsWith("/images/blog/og/") ? own : "/og/default-1200x630.jpg");
+  const type = url.endsWith(".webp") ? "image/webp" : "image/jpeg";
   return {
-    openGraph: [{ url, width: 1200, height: 630, alt, type: "image/jpeg" }] as NonNullable<
+    openGraph: [{ url, width: 1200, height: 630, alt, type }] as NonNullable<
       NonNullable<Metadata["openGraph"]>["images"]
     >,
     twitter: [url] as NonNullable<NonNullable<Metadata["twitter"]>["images"]>,

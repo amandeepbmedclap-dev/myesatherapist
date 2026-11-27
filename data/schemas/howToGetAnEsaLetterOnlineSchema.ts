@@ -48,8 +48,8 @@ export const howToGetAnEsaLetterOnlineSchema = {
     {
       "@type": "ImageObject",
       "@id": "https://myesatherapist.com/blog/esa-guide/how-to-get-an-esa-letter-online/#primaryimage",
-      "url": "https://myesatherapist.com/images/blog/og/how-to-get-an-esa-letter-online.jpg",
-      "contentUrl": "https://myesatherapist.com/images/blog/og/how-to-get-an-esa-letter-online.jpg",
+      "url": "https://myesatherapist.com/images/blog/og/how-to-get-an-esa-letter-online.webp",
+      "contentUrl": "https://myesatherapist.com/images/blog/og/how-to-get-an-esa-letter-online.webp",
       "width": 1200,
       "height": 630,
       "caption": "Man reviewing housing papers at a desk with an orange cat nearby",

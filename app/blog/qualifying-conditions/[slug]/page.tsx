@@ -40,8 +40,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const title = article.metaTitle || `${article.title} | My ESA Therapist`;
   const description = article.metaDescription || article.shortDescription;
   const imageKey = `blog-${article.slug}`;
-  const image = hasSocialImage(imageKey) ? socialImage(imageKey, article.title) : null;
-  const socialDescription = description;
+  const socialTitle = article.ogTitle || title;
+  const socialDescription = article.ogDescription || description;
+  const image = hasSocialImage(imageKey) ? socialImage(imageKey, socialTitle) : null;
 
   return applySheetSeo({
     title,
@@ -57,7 +58,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: article.canonicalUrl,
     },
     openGraph: {
-      title,
+      title: socialTitle,
       description: socialDescription,
       url: article.canonicalUrl,
       type: "article",
@@ -67,7 +68,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: socialTitle,
       description: socialDescription,
       site: "@MyESATherapist",
       creator: "@MyESATherapist",
