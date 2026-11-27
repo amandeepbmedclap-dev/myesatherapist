@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { TEAL_GRADIENT } from "@/components/esa-online/EsaOnlineShared";
-import { MaybeStateModalButton } from "@/components/common/MaybeStateModalButton";
+import { CtaButton } from "@/components/common/CtaButton";
 
 export function EsaHousingMoveForward() {
   return (
@@ -24,12 +24,9 @@ export function EsaHousingMoveForward() {
         <p className="body-large text-background max-w-[932px] lg:max-w-[min(64vw,932px)]">
           Learn whether an Emotional Support Animal may be appropriate for you and how housing protections may support your situation.
         </p>
-        <MaybeStateModalButton
-          href="/pricing/"
-          className="mt-2 inline-flex h-[46px] items-center rounded-[30px] bg-accent px-8 button-text text-primary shadow-[0px_2px_4px_rgba(0,0,0,0.25)] hover:opacity-95 transition-opacity"
-        >
-          Start Your Evaluation
-        </MaybeStateModalButton>
+        <CtaButton href="/pricing/" forceStateModal className="mt-2 h-[52px] w-auto text-[16px]">
+          Start Your ESA Evaluation
+        </CtaButton>
         <p className="body-small text-background max-w-[640px]">
           100% Refund If No ESA Letter Is Issued
         </p>
